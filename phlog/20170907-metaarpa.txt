@@ -1,0 +1,21 @@
+----------------------------------------
+MetaARPA
+September 07th, 2017
+----------------------------------------
+
+I've moved up to MetaARPA status on SDF, so I finally have access to some
+of the most vital shell tools in my arsenal: tmux & git. I have cloned my
+dotfiles down and set everything up properly, and I have my weechat
+session riding in a tmux pane like God intended.
+
+Still on my list of things to "fix" about SDF:
+
+    - Weechat needs to be rebuilt with python & perl plugin support
+    - Newsbeuter needs to be compiled from the latest git source to work
+      at all
+    - GNU stow should be installed so I don't need to manually symlink
+      everything all the time
+    - FZF would be helpful. Not sure why that's failing to install the
+      binary for NetBSD
+
+I have requests on bboard for a few of those. Anyone wanna help out?

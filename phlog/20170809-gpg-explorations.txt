@@ -1,0 +1,23 @@
+----------------------------------------
+gpg explorations
+August 9th, 2017
+----------------------------------------
+
+When I started using unix systems in college I quickly realized that there
+are some programs that are insanely useful but impossible to use. That
+list included things like vim, sed, and awk. I saw the power users around
+me fly through tasks and do the impossible because they knew the internals
+so well. Regular expressions in searches are a game changer when you're
+new to the game.
+
+These days my technical mountain to climb is that of privacy and security,
+and the tool I need to grok to get there is gpg. I can use things like
+Kleopatra to manage my keys or Enigmail to sign, encode/decode emails, but
+even simple command line tasks like verifying key signatures of Tails
+distributions requires me to bust out a how-to guide. GPG is a core
+program to key management and I cannot suffer myself to stay ignorant.
+
+Starting today I'm adding another major item on my todo list: grok gpg
+
+If any of you gopher folks out there read this and have any advice for me,
+hit me up at: my last name AT lavabit dot com

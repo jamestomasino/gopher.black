@@ -1,0 +1,13 @@
+# Learn You a Haskell for Great Good
+
+## Chapter 3 : Syntax in Functions
+
+- As-patterns - Appear easy to overlook/forget
+- guards, where, let, and case - Need practice in all of them. They look
+  like they'll be easy to confuse. "Let" in particular looks tricky.
+
+## Chapter 5 : Higher-Order Functions
+
+- (.) vs ($) was confusing. This summarizes their fundemental differences
+  thanks to the #haskell channel on freenode:
+  (f $ g x) === f (g x)  --while--  (f . g x) === (\y -> f ((g x) y))

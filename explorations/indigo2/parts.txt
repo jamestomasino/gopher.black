@@ -1,0 +1,46 @@
+           Indigo2 System Specs:
+
+              System: IP22 / PM3
+           Processor: 200 Mhz R4400, with FPU
+Primary I-cache size: 16 kbytes
+Primary D-cache size: 16 kbytes
+Secondary cache size: 1024 kbytes
+         Memory size: 128 Mbytes
+            Graphics: GR3-Elan [XZ with 4GEs]
+           SCSI Disk: scsi(0)disk(1)
+
+Memory:
+
+  Type:                   36bit wide 72pin SIMMs (fast page mode, parity, 70 or 60ns)
+  Sockets:                12 (3 * 4 sockets)
+  Minimum configuration:  16 MB (4 * 4 MB SIMMs)
+  Maximum configuration:  384 MB (12 * 32 MB SIMMs)
+
+Connectors:
+
+  Multimedia:
+    5 stereo 1/8" phone jacks, for headphone, microphone, speakers, etc.
+  Networking:
+    15 pin AUI network connector
+    RJ45 10BaseT network connector (same device as AUI)
+  Input/Output:
+    2 Mini-DIN 6 pin PS/2 compatible mouse and keyboard ports
+    2 Mini-DIN 8 pin Mac compatible serial ports (RS422 - 38.4 Baud)
+    50 pin SCSI-2 connector
+    DB25 female bidirectional parallel port
+  Graphics:
+    13W3 connector
+
+--------------------------------------------------------------------------------
+
+Costs:
+
+SGI Indigo2 - $60 (gifted + shipping)
+Samsung SyncMaster 940BW 19" Widescreen LCD Monitor - $37.75 (ebay)
+Logitech PS/2 Optical Wheel Mouse - $6.75 (Amazon)
+Monoprice 100071 Sun 13W3-M to HD15-F, VGA, Video-Port Adapter - $9.08 (Amazon)
+SGI Indigo2 Workstation Owner's Guide 1993 Edition - $10.99 (ebay)
+
+----
+
+Total: $124.57

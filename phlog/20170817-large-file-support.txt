@@ -1,0 +1,38 @@
+----------------------------------------
+Large File Support
+August 17th, 2017
+----------------------------------------
+
+Today I had a bit of a scare when one of my git repos failed to clone from
+gitlab. It gave a familiar looking malloc error and I thought I was facing
+a packSize limitation. I upped my numbers and tried again and... nothing.
+Was the repo corrupted on the remote after all? Horrifying idea!
+
+I had the project checked out already on another machine, so I wasn't too
+freaked out about losing everything, but I did need to get to the bottom
+of this. In the end, it was sort of the packSize after all, but to a much
+more extreme degree.
+
+When we moved our work repos to gitlab, I was thrilled that I'd be on
+a system that had built in large file support. I talked with our devops
+and they had told me that we didn't need to do anything special to use it,
+that it would just work. There was probably some communication error in
+that, in retrospect. I bet the guy was imagining I was asking about extra
+gitlab config, and it's true, you don't need to do anything. The same is
+not true of the repo itself.
+
+After about 20 minutes of reading up on it, I've got my repo all cleaned
+up and using LFS properly. As a note to myself, and in case you find
+yourself in the same rabbit hole, here's some helpful commands you'll want
+to know to get going.
+
+# Installing & using git lfs
+brew install git-lfs # or apt install
+sudo git lfs install --global
+git lfs track "*.mp4"
+git add .gitattributes
+
+# Cloning a repo with LFS content
+git clone .....
+git lfs fetch origin master
+git lfs pull

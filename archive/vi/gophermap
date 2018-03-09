@@ -1,0 +1,83 @@
+ The Vi/Ex Editor
+
+ By Walter Alan Zintz.
+ 
+ [Editor's Note: This tutorial series is a 'work in progress' and
+ will evolve over time.  We'll announce each new addition and
+ expand this table of contents.]
+
+1Part 1: Vi Editor Fundamentals	part1
+  Why Vi?
+  A Heartwarming Edit
+  The Plan Of This Ongoing Tutorial
+  The Editor's Basic Concepts
+  Search Patterns
+  Searching From Where You Are Now
+  The Find-Them-All Search
+  Simple Search Patterns
+  Metacharacters
+  Table Of Search Pattern Metacharacters
+  Character Classes.
+
+1Part 2: Line-Mode Addresses	part2
+  Line-Mode Addressing
+  Addressing a Section of Text
+  Now You Try It
+
+1Part 3: The Global Command	part3
+  The Details of Global Operations
+  A Few More Uses for Global Commands
+  Now You Give It A Try
+
+1Part 4: The Substitute Command	part4
+  Making Changes Within Lines
+  A Few More Metacharacters
+  Replacement-Pattern Metacharacters
+  Other Uses for Substitution
+  A Start on Script Writing
+  Don't Lose Your Files
+  Reader Feedback
+
+1Part 5: Take Control of Your Editing Environment	part5
+  The 'set' Command
+  'set ' Command Variables that Control How to Paint the Screen 
+  Playing ``'tag''' 
+  Making Your Environment Setup Automatic
+
+1Part 6: Addresses and Columns	part6
+  Screen-Mode Addresses
+  A Few Address Principles
+  Useful Addresses
+  Editing in Columns
+  Single-Character Columns
+  Multi-Character Columns 
+
+1Part 7: The Replacement Commands	part7
+  There's more to 'R' than to 'r'
+  Quoting in Characters
+  Readers Ask
+  Tommy Spratlin
+  Thai-Nghia Dinh
+
+1Part 8: Indent, Like a Typewriter	part8
+  Automatic Indentation
+  Backing off Indentation
+  Juggling a few ':set' options
+  An Exercise for You
+  Hard Tabs
+  Enable and Disable 'autoindent'
+  Next Time
+
+1Part 9: Take Charge with Macros	part9
+  Text-Insertion Macros
+  What These Tools Do
+  Working Principles
+  Time for another exercise
+  Command-Submode Macros
+  ':map ' Macros
+  Buffer Macros
+  ':source' Macros
+  Another Exercise
+  Write and Read Macros
+  In The Next Installment of this Tutorial
+  SIDEBAR: The 'timeout' Function

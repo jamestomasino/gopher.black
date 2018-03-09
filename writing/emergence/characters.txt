@@ -1,0 +1,53 @@
+Frank
+    - Online July 18th, 2042 - 10:27AM GMT
+    - Program executed July 18th, 2042 - 12:00PM GMT
+
+David Simms
+    - Project Owner
+    - Billionaire
+    - Sociopath
+
+9 Scientists:
+
+Vibudh Sahu
+    - Creator of Frank’s central directive of algorithmic efficiency. He was responsible for the idea that an analytical self-improvement model would eventually lead to a natural emergence of artificial intelligence.
+    - His family is from northern India. He has a deep respect for Hinduism and mysticism from early in his life. He has been a contract programmer and entrepreneur since his early 20s when he moved to Wales for his first startup endeavor.
+    - Slender, Tall, and Athletic (Runner)
+    - Black hair
+    - Brown eyes
+    - 41 years old
+    - Small apartment on Korgmakargränd
+
+Pierre-Jean Trauffaut
+    - Named Frank
+
+Viktor Nilsson
+    - Heavyset, extra weight around middle
+    - Blue eyes
+    - Blonde (Balding)
+    - 28 years old
+
+Filip Strömberg
+    - Young programmer
+    - Avid reader, hiker, outdoorsman
+    - Perpetually cold, poor circulation
+    - Drinks too much coffee
+    - Writes mysteries in spare time
+    - 26 years old (youngest on team)
+    - Large, but thin nose
+    - Stylish hair
+    - Grey eyes
+
+
+
+Lucas Jönsson
+    - Dagens Nyheter reporter
+    - Regularly boats
+    - Vacations outside of Gothenburg
+    - Deep creases on forehead
+    - Sunken eyes, perpetual squint
+    - Shadow of goatee
+    - 40 years old
+    - Greying blonde
+    - Divorced
+    - Considers himself pragmatic, not especially principled

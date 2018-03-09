@@ -1,0 +1,57 @@
+ ----------------------------------------
+ Keygen music
+ February 22nd, 2018
+ ----------------------------------------
+ 
+ I listened to Solderpunk's awesome new anonradio show, Half Hour
+ of Power, which was a fantastic assortment of chiptunes. I had
+ forgotten how fun chiptunes can be and I'd also forgotten about
+ a similar school of music that I used to be really into, Keygen
+ Music!
+ 
+ First, some background for those of you not immediately familiar
+ with the concept. When downloading illegal software you often have
+ to find a crack or serial number to use it. Most software that
+ requires registration uses some mathematical and programatic
+ method to validate the serial number that you enter. Fantastically
+ brilliant coders will use special software to freeze the operation
+ of the program and step through its assembly operations in order
+ to discover what these validation mechanisms are. 
+ 
+ If they are amazing enough, they can write a small patch to the
+ executable that will bypass or falsely validate a serial number as
+ valid. The patch literally rewrites the machine code to "JMP" past
+ the validation to a success area in memory. That's a crack!
+ 
+ If the coder is ever more amazing and sly, rather than changing
+ the application--like a crack--they'll write their own program
+ that can create a valid serial number by working backwards. If
+ they can decypher how a program is validated, they can create
+ a successful string of data. This is a keygen, and in my opinion
+ some of the most sophisticated and beautiful demonstrations of
+ code in existence.
+ 
+ I don't know when keygens started adding music to their little
+ programs, but the popularity quickly took off. Interestingly, the
+ music used for keygens often used the same technologies and
+ formats as game chiptunes: MOD, XM, or S3M [0] for example. These
+ tracker formats have some amazing, unique sounds and offer quite
+ a bit of control for their musicians.
+ 
+ As the years went by, I've saved my favorite tunes, often by
+ ripping them from the keygens themselves. I like to think of the
+ act of "cracking" a keygen as a kind of computer nerd poetry.
+ Also, the music is awesome.
+ 
+ If you want to try out some keygen music for yourself, it's much
+ easier these days. There's a great site that archives so much of
+ the scene's music [1]. If you want to listen to my personal keygen
+ music mix, grab the rar of my archive here [2]
+ 
+ Perhaps I should have made an anonradio show of it myself, but
+ I'd rather share it secretly with all you foxy gophers.
+ 
+
+h[0] S3M format	http://www.shikadi.net/moddingwiki/S3M_Format
+h[1] Keygen Music	URL:http://keygenmusic.net/
+h[2] Tomasino's Keygen Mix	URL:http://ma.sdf.org/nc/index.php/s/Az2aQeyBMmKamcB

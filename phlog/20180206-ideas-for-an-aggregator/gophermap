@@ -1,0 +1,66 @@
+ ----------------------------------------
+ Ideas for an aggregator
+ February 06th, 2018
+ ----------------------------------------
+ 
+ I want to build a new gopher aggregator, specifically for phlogs,
+ and I want it to work in a very particular way. I'm not sure this
+ is going to be a general solve for everyone, but if I can do it
+ right it will work for my personal use.
+ 
+ Version 1 Plan:
+ 
+   - It should know that a phlog has been updated, not a whole
+     gopherhole.
+ 
+     - I should provide it an array of gophermaps to keep track of.
+ 
+     - The gophermap will be hashed each day--store the hashes in
+       a file for simplicity, or a sqlite db-- and if the hash
+       changed from the previous day, that link is added to the
+       daily list.
+ 
+     - If the link doesn't resolve, ignore. It might be temporary.
+ 
+   - It should organize phlog updates by date so I can go back if
+     I missed a couple entries (like Bongusta)
+ 
+   - It should auto-update daily
+ 
+   - Output should be simple:
+ 
+     - Master gophermap is a symlink to the current month.
+ 
+     - Each gophermap is a year-month for easy archival
+ 
+     - Viewing the directory will list the archive and current
+ 
+     - Linking to current will include a link to the archive
+       (directory view)
+ 
+ Version 2 Plan:
+ 
+   - The link added to the aggregated list should point to the new
+     entry, not the main gophermap. 
+ 
+     - Potentially do a diff on the gophermap if the hash has
+       changed and try to identify new links?
+ 
+     - Grab any new links and drop them in verbatim, potentially
+ 
+       - Relative links might need to be rewritten
+ 
+       - Problems with changed links?
+ 
+     - Would this be instead of linking to the map, or in addition
+       (sub links under a heading?)
+ 
+     - Allow a way for people to submit their phlog to the list and
+       make it a public system instead of a private aggregator
+     
+ My plan was to implement this in Perl as a way to learn Perl.
+ I may still go ahead with that, but it might be easier for me to
+ build with my current knowledge in python. Regardless, if anyone
+ reading this wants to take a stab at it, go right ahead. I'd
+ rather have the tool than be the one to write it.
+ 

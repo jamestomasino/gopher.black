@@ -1,0 +1,6 @@
+My first exposure to *nix was at Rowan University in the computer
+science department on IRIX systems running on SGI Indys and
+Indigo2s. In early 2018, @louks@mastodon.sdf.org on Mastodon sent
+me an Indigo2 he had but wasn't using. These documents will
+chronical my efforts to get the system up and running and offering
+free public access.

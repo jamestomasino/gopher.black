@@ -1,0 +1,23 @@
+2018-01-24 13:48
+  First attempt to start up.
+  Successful power-up & boot.
+  No video appearing over VGA adaptor.
+    @vurpo@mstdn.io informs me it's likely due to sync-on-green requirement.
+    Ordered Samsung SyncMaster 940BW 19" LCD Monitor.
+
+2018-01-27 11:56
+  Second attempt to start up.
+  Successful power-up & boot.
+  Video shows on Samsung SyncMaster perfectly.
+  Login sequence shows network settings which need changing.
+    Manually setting gateway to an IP address.
+      Requires some research.
+    Attempting to mount NFS volumes.
+      Can be removed by wiping settings in /etc/fstab.
+  Login screen only has option for root.
+    Password attempts failed.
+    Resetting password requires one of the following:
+      CD drive & IRIX discs to remove password
+      Mounting SCSI harddrive on a linux system to remove password
+      Ask former owner if he happens to know password
+

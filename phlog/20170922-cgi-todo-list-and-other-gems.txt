@@ -1,0 +1,62 @@
+----------------------------------------
+CGI TODO list and other gems
+September 22nd, 2017
+----------------------------------------
+
+# TODO Lists & Gopher:
+
+I've converted my previously static todo list on this phlog into a dynamic
+cgi-bin script that pulls all my todo items out of the tool I wrote for
+command line use. Let me back up there for a second.
+
+First of all, I write a lot of bash nonsense for myself in the form of
+functions. Why functions? Mainly because of how easy it is to add
+autocompletion to them in bash, and because I've got them all hooked into
+my dotfiles repo and they happily deploy with next to no effort.
+
+Take my `todo` function [0] as an example. This sexy thing has a help
+file, changes context automatically based on your TMUX session name, can
+mark tasks completed with regex patterns and logs completed tasks to an
+archive with the completion datetime prepended. Fun & Profit! Anyway,
+I use it all the time on pretty much all my machines. Generally I sync the
+TODOs over Dropbox, but I have a unique set here on SDF.
+
+Well, now I've got a handy cgi script that pulls all my TODO files
+together, reads the context, and outputs them all prettily into gopher.
+You can keep tabs on me easily!
+
+(Small side-note, I have yet to decide if I should include my "completed"
+tasks in some fashion on the gopher page. I'm ignoring the archives for
+now. Thoughts?)
+
+# Other new goodies
+
+I've added a section on the gopher hole called "food". In it I have
+created a food log [1] and a recipe box [2]. To support these I've
+modified my "newphlog" script and made both "newfood" and "newrecipe". In
+an effort to get back on track with my diet I hope a simpler food log
+without all the overhead of calculations and dietary lookups will keep me
+on track. It's nice to have a simple index as well.
+
+The recipes in the box so far are ones I had added to AllRecipes before
+that site became a completely unusable advertising sink hole. The gopher
+manifesto is right about taking back hypertext. These simple things don't
+need all the bells and whistles! The majority of my recipes are on index
+cards in my cupboard. When I'm back home I'll start going through those
+and adding them here.
+
+If any of you have amazing recipes you want to share, I have a particular
+interest in:
+
+    1) Family recipes handed down with love and history
+    2) Historic or homesteading type things
+    3) Dutch oven recipes
+    4) Open fire recipes
+    5) Ketogenic recipes (low carb, high fat)
+
+Got any to share, hit me up. My email is at the bottom of the main menu to
+this gopher hole.
+
+[0] https://github.com/jamestomasino/dotfiles/blob/master/bash/.functions/todo
+[1] gopher://sdf.org/0/users/tomasino/food/log/20170921.txt
+[2] gopher://sdf.org/0/users/tomasino/food/recipes

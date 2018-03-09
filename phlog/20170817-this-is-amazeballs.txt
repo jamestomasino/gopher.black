@@ -1,0 +1,43 @@
+----------------------------------------
+This is amazeballs
+August 17th, 2017
+----------------------------------------
+
+I just wrote a super quick bash script to generate new phlog entries, stub
+them out, link up the gophermap... all of it. Here's the contents in case
+you, like me, are running this place manually:
+
+#!/usr/bin/env bash
+
+DaySuffix() {
+	case $(date +%d) in
+		1|21|31) echo "st";;
+		2|22)    echo "nd";;
+		3|23)    echo "rd";;
+		*)       echo "th";;
+	esac
+}
+
+read -p "Enter a title for your post: " title
+title_slug=$(echo ${title:-Untitled} | sed -E -e 's/[^[:alnum:]]/-/g' -e 's/^-+|-+$//g' | tr -s '-' | tr A-Z a-z)
+post_path="$HOME/gopher/phlog/`date +%Y%m%d`-$title_slug.txt"
+test -f $post_path && { echo "Error: $post_path already exists" ; exit 1; }
+echo "Creating $post_path"
+echo "----------------------------------------" >> "$post_path"
+echo "$title"                                   >> "$post_path"
+echo "$(date +"%B %d$(DaySuffix), %Y")"          >> "$post_path"
+echo "----------------------------------------" >> "$post_path"
+echo " "                                        >> "$post_path"
+echo " "                                        >> "$post_path"
+
+# Add entry to Phlog gophermap
+echo -e "0$(date +%Y-%m-%d) - $title\t$(basename $post_path)\n$(cat "$HOME/gopher/phlog/gophermap")" > "$HOME/gopher/phlog/gophermap"
+
+# Update Last Updated date in index gophermap
+sed -i "s/.*Last\ Updated:.*/        ==== Last Updated: $(date +"%B %d$(DaySuffix), %Y") ====/" "$HOME/gopher/gophermap"
+
+# Write post
+vim $post_path
+
+phlog # disable phlog listing
+phlog # relist phlog

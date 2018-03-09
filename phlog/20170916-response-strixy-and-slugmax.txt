@@ -1,0 +1,44 @@
+----------------------------------------
+Response: strixy and slugmax
+September 16th, 2017
+----------------------------------------
+
+Strixy writes [0] about backup systems in a post Crashplan world. I don't
+know that I have too much to add to the discussion, though. I used
+Backblaze for a couple years when attempting to back up my entire system.
+They had no limit on the amount of data you could back up, but the
+bandwidth to do so was limited. It took me over 6 months to get a full
+backup at that rate. They also didn't have a very good system for getting
+that data back to you in the event of a loss. Getting a package of
+eleventy-billion DVDs? Not so good. Shipping hard drives had an outragious
+cost. Eventually I dropped it completely.
+
+These days I am very selective of what content needs to be safe. I store
+that content--financial docs, personal docs, work archives, etc--on synced
+drives using services like Spideroak, Nextcloud or Dropbox (depending on
+sensitivity). I keep code projects and writing projects in plain text, and
+therefore use git and private repositories on bitbucket. I may also add
+a remote on the SDF meta array.
+
+When it comes to storing bigger things, like movies and music, I don't
+really have anything reliable. That content is so easily found again that
+I don't consider it very often. I do keep my Doctor Who episodes
+duplicated on two drives in case of a drive failure, but that's the only
+exception for video. My audiobooks also have a Nextcloud spot on S3.
+
+I wish strixy luck in finding a reliable, easy-to-use, and well-licensed
+system. I hope he writes more about his eventual solution. Maybe I'll join
+him at that point.
+
+
+Also on gopher, slugmax celebrates his son receiving his Canadian
+citizenship certificate this week [1]. First I want to add my
+congratulations to slugmax and his family. That's surely the culmination
+of an incredible amount of work and dedication. Canada is a great place
+and I suspect it just got a little bit better with his citizenship. I am
+planning on living the expat lifestyle soon, and strongly considering
+emmigration from the US. I hope, when the time comes, I'll have the
+fortitude to see it through like you guys.
+
+[0] gopher://sdf.org/0/users/strixy/phlog/20170915-backups.txt
+[1] gopher://sdf.org/0/users/slugmax/phlog/citizenship-ceremony-immigration

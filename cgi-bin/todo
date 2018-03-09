@@ -1,0 +1,30 @@
+#!/sdf/sys/pkg6_amd64/bin/bash
+
+echo "-------------------------------------------------------------------------------"
+echo "                                TODO Lists"
+echo "-------------------------------------------------------------------------------"
+echo ""
+
+FILES="/ftp/pub/users/tomasino/.todo/*"
+
+count=1
+for f in $(ls -1 $FILES); do
+  if [[ $f != *"archive"* ]]; then
+    b=$(basename "$f")
+    b=${b%%.*}
+    echo "${b^^}"
+    nl -v $count -s " - " -w 5 "$f"
+    count=$(expr $count + $(wc -l < "$f"))
+    echo ""
+  fi
+done
+
+echo ""
+echo "-------------------------------------------------------------------------------"
+echo "TODO items are aggregated from individual TODO logs. TODO logs"
+echo "are relevant to and stored in each TMUX context."
+echo ""
+echo "See: https://github.com/jamestomasino/dotfiles/blob/master/bash/.functions/todo"
+echo "-------------------------------------------------------------------------------"
+echo ""
+

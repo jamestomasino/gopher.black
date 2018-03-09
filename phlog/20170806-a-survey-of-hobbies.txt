@@ -1,0 +1,46 @@
+----------------------------------------
+A survey of hobbies
+August 6th, 2017
+----------------------------------------
+
+This year has been a major collection of hobbies and interests. Here's
+a quick list:
+
+- Shakuhachi: I started playing the Japanese bamboo flute a couple years
+  back as part of my study of Escrima. One of the areas in my martial art
+  focus was spiritual, and my teacher's preferred method was via this zen
+  instrument. Although I stopped my weekly lessons a year ago (budget),
+  I've continued playing.
+
+- Morse Code: We learned morse in the Navy. Every few years I dust off my
+  skills to keep sharp. I ran through some mobile apps this time and was
+  comfortable encoding and decoding.
+
+- Gregg Shorthand: Writing by hand has always been cumbersome for me. I'm
+  not fast and my hand cramps. My goal with Gregg Shorthand is to develop
+  a method of taking notes that can approach casual typing speed. I want
+  to be able to go to meetings with just a notebook and a pen instead of
+  lugging a laptop or tablet with me.
+
+- Stenography: In addition to speeding up my handwriting, I don't see any
+  reason not to do the same with my typing as well. Plover is a great
+  open-sourced stenography package. If I can get my input with plover over
+  200wpm, that will speed up my writing and coding dramatically. It's rare
+  that my typing can keep up with my thinking. Any method to close that
+  gap should be explored.
+
+- Wireless network penetration testing: On the technical list, I started
+  looking into pentesting late last year. The industry is huge, and while
+  I had entertained getting some certs and exploring it as an alternative
+  branch to my current employment, the attitudes and personalities I've
+  run into already make me second-guess that path. Instead I'm going to
+  focus on smaller areas for my own knowledge and skill. Penetrating
+  wireless networks is a pretty simple task with hardware and software
+  I already have. It's fun to explore without causing any harm.
+
+- I Ching: On the spiritual side, I've expanded my research into mysticism
+  of the East. I had been looking into Qigong a couple years ago. Now
+  I turn my focus onto the book of changes. I'm using the yarrow stalk
+  method and learning how the hexograms relate. So far it's fascinating
+  and I see echos of the randomness found in many other divination
+  techniques, including Tarot.

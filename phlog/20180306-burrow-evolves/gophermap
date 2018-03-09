@@ -1,0 +1,64 @@
+ ----------------------------------------
+ Burrow evolves
+ March 06th, 2018
+ ----------------------------------------
+ 
+ Big thanks to christyotwisty [0] for daring to be the first person
+ to dive into the world of burrow with me. It was fun getting her
+ up and running and I picked up a few todo items as a result. She's
+ using burrow on the SDF cluster, which comes with a couple
+ complications. Still, I think we managed to get everything running
+ pretty quickly.
+ 
+ Some notes from the experience:
+ 
+   SDF Specific Stuff
+ 
+   - SDF umask settings are weird by default. Had to change those
+     to 022 to get her posts to show up automatically.
+ 
+   - PATH variables are also lacking by default. I carry my
+     dotfiles with me from system to system so I hadn't noticed. We
+     couldn't run "source" at one point because of it, though.
+ 
+   Burrow Specific Stuff
+ 
+   - Christy wants to add categories to her phlog. My phlog action
+     in burrow currently assumes a single directory and posts over
+     time or alphabetically (if you're weird). I'll have to think
+     about how best to add category support, or maybe tags? Hmm...
+ 
+   - There were some pain points in updating burrow when not
+     cloning the repo and using git commands. This led me to add a
+     new action to burrow: update-burrow.
+ 
+     "burrow update-burrow" will attempt to auto-update the
+     application. If you are running it from a local folder that is
+     a git repo, it'll pull the latest version of the repo. If you
+     have it in a local non-repo folder it will attempt to use cURL
+     to update each of the files in that directory that start with
+     "burrow" (the app, man page, and bash-completion). If you have
+     installed the app with "sudo make install" you'll need to run
+     "sudo burrow update-burrow" to update the app. It will not
+     update the man page or bash-completion, though... just the
+     app. If it gets a lot of use I may try to make it smarter and
+     update more, but for now it's a good-enough feature.
+ 
+     Oh, since it's sorta dangerous (as in it could break your
+     burrow install) I prompt for confirmation on this one.
+ 
+   - We needed to update the configuration file a bunch while
+     getting started. Remembering where that is can be confusing
+     for new users so I added another action: edit-config.
+ 
+     "burrow edit-config" will open up your configuration file. If
+     you don't have one it spits out a warning for now. I'll
+     probably have that prompt to create one instead in the future.
+     Perhaps that would be a good addition when I add the burrow
+     menu interface. For now, good enough.
+ 
+ Thanks again to christyotwisty. I'm looking forward to more phlog
+ posts from you.
+ 
+1[0] christyotwisty	/users/christyotwisty/phlog	sdf.org	70
+

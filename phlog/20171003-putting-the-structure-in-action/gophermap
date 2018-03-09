@@ -1,0 +1,21 @@
+ ----------------------------------------
+ Putting the Structure in Action
+ October 03rd, 2017
+ ----------------------------------------
+ 
+ Okay, my sed skills are definitely not up to what they once were.
+ I tried and tried to find a way to automatically add a space
+ before every line until I reached the links at the bottom of the
+ page. Did it work? Oh hells, no. I got so friggin close. I could
+ use sed to get only the lines I wanted by using pattern ranges,
+ and I could make those ranges add a space. I couldn't get that to
+ work with the -i parameter, though. It doubled up my content
+ instead of changing the lines I wanted changed.
+ 
+ So instead I'm being lazy. I cut the links out, format the doc,
+ then append the links back in after.
+ 
+ This whole thing is happening because of Maiki [0] on Mastodon.
+ I hope his hugo to gopher solution is a big hit.
+
+h[0] Maiki's Website	URL:http://interi.org

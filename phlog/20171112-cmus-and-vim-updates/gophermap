@@ -1,0 +1,38 @@
+ ----------------------------------------
+ cmus and vim updates
+ November 12th, 2017
+ ----------------------------------------
+ 
+ I have been avoiding using cmus for years because of the stupidest
+ reason. I didn't know how to sort the sorted library view into
+ album view. My collection is 100% full albums, and that's how
+ I prefer to listen to music, so this was really annoying. I could
+ use the main library view and expand individual artists to get to
+ their albums, but it didn't feel right. After looking all around
+ the web and finding nada, I stumbled on screen 7 (settings) and
+ found the key myself... (A)!
+ 
+ Now cmus is a dream and I'm in album-y bliss. We do the stupidest
+ things, don't we? That reminds me that I should really get back
+ around to using mutt instead of Alpine.
+ 
+ Over in vim world, I did a major restructure of my dotfiles by
+ recombining all the various parts into a single .vimrc file. I had
+ broken out things like bundles and mappings and autocommands into
+ separate files to keep things organized. Now that I really grok
+ what's going on in my config it felt bloated. I stripped out a ton
+ of code and plugins and replaced things with simpler settings. No
+ more Airline or Eleline, just plain old statusline. I annotated
+ all my bundles as well so I know at a glance what each is there
+ for. That was a problem in the past (not a good sign).
+ 
+ I dropped the solarized theme from my shell as well and got some
+ sane colors. Things are crisp and clear again.
+ 
+ Finally, I grabbed dbucklin's timestamp mapping from his recent
+ phlog entry [0]. It's super cool and I can't wait to use it.
+ 
+ :wq
+ 
+
+0[0] dbucklin - Journal to Timesheet	/users/dbucklin/posts/2017-11-10-journal-to-timesheet.markdown	sdf.org	70

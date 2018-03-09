@@ -1,0 +1,44 @@
+ ----------------------------------------
+ awk is the best
+ January 23rd, 2018
+ ----------------------------------------
+ 
+ I have a section on this phlog called "Current Books" [0]. That is
+ the output of a cgi script that queries my Goodreads reading list
+ via RSS, selects the relevant data, formats and displays it.
+ 
+ This is the heart of that script. It's 1 line of code.
+ 
+ (Fake linebreaks for easy reading)
+ 
+ curl -s "<RSS FEED>" |
+   /usr/pkg/bin/xml sel 
+     -t
+     -m "/rss/channel/item"
+     -v "title"
+     -o "^"
+     -v "author_name"
+     -o "^"
+     -v "book/num_pages" -n |
+ 
+   awk 'BEGIN { 
+          FS="^"; 
+          books="\n"; 
+          print "Books I am currently reading:" 
+        }
+ 
+        $3 ~ /[0-9]+/ {
+          pages+=$3; 
+          books=(books $1 "\n  by " $2 "\n") 
+        }
+ 
+        END {
+          print "(" pages " pages left to read)\n", books 
+        }' |
+ 
+   fold -s -w 66 >
+     "/sdf/arpa/tz/t/tomasino/gopher/reading/currentbooks.txt"
+ 
+ I love awk and I don't get to use it nearly enough.
+ 
+0[0] Currently Reading	/users/tomasino/reading/currentbooks.txt	sdf.org	70

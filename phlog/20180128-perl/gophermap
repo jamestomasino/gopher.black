@@ -1,0 +1,22 @@
+ ----------------------------------------
+ Perl
+ January 28th, 2018
+ ----------------------------------------
+ 
+ I guess it's about time I bite the bullet and learn perl. Michael
+ Conrad posted a link to his blog [0] about his absolutely
+ incredible car project where he's designed a custom dash that's
+ actually a little linux machine. He's done just about everything 
+ in perl 5 and opened my eyes to some of its power.
+ 
+ I've always thought of perl as a write-only (because the syntax is
+ so dumb) glue language. Since I'm so comfortable with shell
+ scripting, it seemed like an unnecessary step to take. It seems
+ that some of that syntax has gotten better, and the way it
+ interacts with c is pretty cool. Availablity on a huge range of
+ systems is a plus.
+ 
+ I found a few decent quickstart guides. I'll give this a go.
+ 
+h[0] My Delorean Runs Perl	URL:http://opensource.com/article/18/1/my-delorean-runs-perl
+

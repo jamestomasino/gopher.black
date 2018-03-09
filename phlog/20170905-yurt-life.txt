@@ -1,0 +1,40 @@
+----------------------------------------
+Yurt Life
+September 05th, 2017
+----------------------------------------
+
+
+I'm off in the Shenandoah Mountains with the family this week. We're
+staying in a yurt! It's a luxury yurt, with AC, full kitchen, king sized
+bed, WiFi, the works. My wife isn't into camping so this is as close of an
+experience as I was going to get with her. The kid is enjoying it too,
+though I hope to get him back country camping in the next few months.
+
+I just paused writing this to close the tent-flap style windows because
+a rain storm has started. I love the sound of rain on a tent roof.
+
+I've been overwhelmingly stressed in the last few weeks. My early warning
+signs, like my eye twitch and heart palpitations, have been going off like
+crazy. I also developed some TMJ symptoms for the first time ever. I woke
+up multiple times with ear & jaw pain, and once with a dislocated jaw.
+I developed an ear infection at one point and spent a couple weeks on
+antibiotics.
+
+The stress isn't work, per se, but that doesn't help. It's a result of
+a feeling of helplessness in the world around me. I see injustice, idiocy,
+hatred, disaster. I see all these things and I want to take an active role
+in fixing it. I want to grab the US leadership and shake them into sanity.
+Moreover, I want to get out of this country altogether. I've been working
+on that angle for two decades now and it's not quite ready yet. But
+I blogged about that in detail already over on my HTML thingy [0].
+
+This week is a disconnection. I'm on SDF doing some phlogging, sure, and
+a bit of text-browsing, but generally I'm spending time with the family
+and reading trashy fantasy novels. It's good for the soul.
+
+For those of you following along, I did bring my Haskell book. I'll give
+some attention to that this week as well. Maybe one day I'll give Papa's
+ABC's a shot with it.
+
+[0] https://blog.tomasino.org/post/italian-citizenship/
+

@@ -1,0 +1,37 @@
+ ----------------------------------------
+ Keyboards and Clipboards
+ November 04th, 2017
+ ----------------------------------------
+ 
+ Real quick notes tonight. First, there was some chatter on
+ Mastodon earlier about terminal emulators leading me to remark how
+ I'm still using konsole here on my laptop because I haven't quite
+ cracked the nut on xterm clipboards. Well, that's not quite
+ accurate anymore. I do have a decent copypasta going now via tmux
+ locally using xsel and tmux-yank. It seems promising, so I may
+ give xterm a go in the not-so distant future. It performs so much
+ better with almost no memory footprint. That could be cool.
+ 
+ Sad thing, though... tmux-yank says I should be able to copy
+ & paste over remote terminal sessions if I have xsel on the remote
+ and do a few other minor thingies. So far, no luck there. I would
+ love to be able to cut & paste to SDF or at least the meta array,
+ but that will have to wait. xterm first!
+ 
+ Also, welcome to our happy gopher land to elsa [0]. She wrote
+ about using dvorak at work and qwerty at home. I'm a dvorak user
+ but didn't do it as smart as elsa. I transfered to this layout
+ when I was in religious life and not using a computer for work.
+ For that reason, I chose to switch completely all at once. As
+ a result, I really can't type in qwerty anymore. She seems to be
+ able to swap back and forth (even if it does take a paragraph to
+ do it). That's a super-power as far as I'm concerned. I also agree
+ that it's short sighted to continue teaching qwerty over dvorak,
+ or even colemak. I understand the things that lead to that
+ continuation, the things already in motion, but I think they're stupid.
+ Learn to type in a way that makes sense and does the least damage.
+ 
+ Rock on, elsa. Looking forward to more phosts!
+ 
+
+0[0] elsa - A City of Mine Own	/users/elsa/Phlog/Entry	sdf.org	70

@@ -1,0 +1,28 @@
+----------------------------------------
+Letterboxing
+September 08th, 2017
+----------------------------------------
+
+My friends got into letterboxing a few years back. It's a hobby that
+combines treasure hunting with crafting. If you're familiar with
+geocaching, it's the same thing but without a GPS. For those not familiar,
+you follow clues like a scavenger hunt in order to locate a hidden box
+somewhere which contains a stamp and logbook. You stamp your own logbook
+with the one in the box and you stamp the box's logbook with your own
+stamp to claim that you found it. It's a nice little hobby, and something
+I will introduce my son to in the near future as a way to add a bit of
+activity to hiking.
+
+I want to develop a series of letterboxes based around historic
+cryptographic techniques like rotation cyphers to straddling checkerboards
+and the VIC cypher. My plan is to carve individual stamps that need to be
+layered on top of one another to reveal a QR code once you have found them
+all. The QR code could then lead to a final hunt for a master box, or
+maybe some other special treat.
+
+As I tell the developers on my team and the jr folks around the company,
+a good idea is only worth 1%. It's the dedication and follow through that
+make up the other 99% of any endeavor. I don't know if I'll ever get
+around to building my crypto-box series or not. If you read this and do it
+instead, more power to you. Let me know so I can attempt to find the
+letterboxes myself.

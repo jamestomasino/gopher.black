@@ -1,0 +1,1401 @@
+--------------------------------------------------------------------------------
+               FREQUENTLY ASKED QUESTIONS ON SCI.PHYSICS - Part 4/4
+--------------------------------------------------------------------------------
+Item 24. Special Relativistic Paradoxes - part (a)
+
+The Barn and the Pole                   updated 4-AUG-1992 by SIC
+---------------------                   original by Robert Firth
+
+	These are the props.  You own a barn, 40m long, with automatic
+doors at either end, that can be opened and closed simultaneously by a
+switch. You also have a pole, 80m long, which of course won't fit in the
+barn.
+
+	Now someone takes the pole and tries to run (at nearly the speed of
+light) through the barn with the pole horizontal.  Special Relativity (SR)
+says that a moving object is contracted in the direction of motion: this is
+called the Lorentz Contraction.  So, if the pole is set in motion
+lengthwise, then it will contract in the reference frame of a stationary
+observer.
+
+	You are that observer, sitting on the barn roof.  You see the pole
+coming towards you, and it has contracted to a bit less than 40m. So, as
+the pole passes through the barn, there is an instant when it is completely
+within the barn.  At that instant, you close both doors.  Of course, you
+open them again pretty quickly, but at least momentarily you had the
+contracted pole shut up in your barn.  The runner emerges from the far door
+unscathed.
+
+	But consider the problem from the point of view of the runner.  She
+will regard the pole as stationary, and the barn as approaching at high
+speed. In this reference frame, the pole is still 80m long, and the barn
+is less than 20 meters long.  Surely the runner is in trouble if the doors
+close while she is inside.  The pole is sure to get caught.
+
+	Well does the pole get caught in the door or doesn't it?  You can't
+have it both ways.  This is the "Barn-pole paradox."  The answer is buried
+in the misuse of the word "simultaneously" back in the first sentence of
+the story.  In SR, that events separated in space that appear simultaneous
+in one frame of reference need not appear simultaneous in another frame of
+reference. The closing doors are two such separate events.
+
+	SR explains that the two doors are never closed at the same time in
+the runner's frame of reference.  So there is always room for the pole.  In
+fact, the Lorentz transformation for time is t'=(t-v*x/c^2)/sqrt(1-v^2/c^2).
+It's the v*x term in the numerator that causes the mischief here.  In the
+runner's frame the further event (larger x) happens earlier.  The far door
+is closed first.  It opens before she gets there, and the near door closes
+behind her. Safe again - either way you look at it, provided you remember
+that simultaneity is not a constant of physics.
+
+References:  Taylor and Wheeler's _Spacetime Physics_ is the classic.
+Feynman's _Lectures_ are interesting as well.
+
+********************************************************************************
+Item 24. Special Relativistic Paradoxes - part (b)
+
+The Twin Paradox                                updated 04-MAR-1994 by SIC
+----------------                                original by Kurt Sonnenmoser
+
+A Short Story about Space Travel:
+
+	Two twins, conveniently named A and B, both know the rules of
+Special Relativity.  One of them, B, decides to travel out into space with
+a velocity near the speed of light for a time T, after which she returns to
+Earth. Meanwhile, her boring sister A sits at home posting to Usenet all
+day.  When B finally comes home, what do the two sisters find?  Special
+Relativity (SR) tells A that time was slowed down for the relativistic
+sister, B, so that upon her return to Earth, she knows that B will be
+younger than she is, which she suspects was the the ulterior motive of the
+trip from the start.
+
+	But B sees things differently.  She took the trip just to get away
+>from the conspiracy theorists on Usenet, knowing full well that from her
+point of view, sitting in the spaceship, it would be her sister, A, who
+was travelling ultrarelativistically for the whole time, so that she would
+arrive home to find that A was much younger than she was.  Unfortunate, but
+worth it just to get away for a while.
+
+	What are we to conclude?  Which twin is really younger?  How can SR
+give two answers to the same question?  How do we avoid this apparent
+paradox? Maybe twinning is not allowed in SR?  Read on.
+
+Paradox Resolved:
+
+	Much of the confusion surrounding the so-called Twin Paradox
+originates from the attempts to put the two twins into different frames ---
+without the useful concept of the proper time of a moving body.
+
+	SR offers a conceptually very clear treatment of this problem.
+First chose _one_ specific inertial frame of reference; let's call it S.
+Second define the paths that A and B take, their so-called world lines. As
+an example, take (ct,0,0,0) as representing the world line of A, and
+(ct,f(t),0,0) as representing the world line of B (assuming that the the
+rest frame of the Earth was inertial). The meaning of the above notation is
+that at time t, A is at the spatial location (x1,x2,x3)=(0,0,0) and B is at
+(x1,x2,x3)=(f(t),0,0) --- always with respect to S.
+
+	Let us now assume that A and B are at the same place at the time t1
+and again at a later time t2, and that they both carry high-quality clocks
+which indicate zero at time t1. High quality in this context means that the
+precision of the clock is independent of acceleration. [In principle, a
+bunch of muons provides such a device (unit of time: half-life of their
+decay).]
+
+	The correct expression for the time T such a clock will indicate at
+time t2 is the following [the second form is slightly less general than the
+first, but it's the good one for actual calculations]:
+
+            t2          t2      _______________
+            /           /      /             2 |
+      T  =  | d\tau  =  | dt \/  1 - [v(t)/c]              (1)
+            /           /
+          t1          t1
+
+where d\tau is the so-called proper-time interval, defined by
+
+              2         2      2      2      2
+     (c d\tau)  = (c dt)  - dx1  - dx2  - dx3 .
+
+Furthermore,
+                   d                          d
+           v(t) = -- (x1(t), x2(t), x3(t)) = -- x(t)
+                  dt                         dt
+
+is the velocity vector of the moving object. The physical interpretation
+of the proper-time interval, namely that it is the amount the clock time
+will advance if the clock moves by dx during dt, arises from considering
+the inertial frame in which the clock is at rest at time t --- its
+so-called momentary rest frame (see the literature cited below). [Notice
+that this argument is only of heuristic value, since one has to assume
+that the absolute value of the acceleration has no effect. The ultimate
+justification of this interpretation must come from experiment.]
+
+	The integral in (1) can be difficult to evaluate, but certain
+important facts are immediately obvious. If the object is at rest with
+respect to S, one trivially obtains T = t2-t1. In all other cases, T must
+be strictly smaller than t2-t1, since the integrand is always less than or
+equal to unity. Conclusion: the traveling twin is younger. Furthermore, if
+she moves with constant velocity v most of the time (periods of
+acceleration short compared to the duration of the whole trip), T will
+approximately be given by      ____________
+                              /          2 |
+                    (t2-t1) \/  1 - [v/c]    .             (2)
+
+The last expression is exact for a round trip (e.g. a circle) with constant
+velocity v. [At the times t1 and t2, twin B flies past twin A and they
+compare their clocks.]
+
+	Now the big deal with SR, in the present context, is that T (or
+d\tau, respectively) is a so-called Lorentz scalar. In other words, its
+value does not depend on the choice of S. If we Lorentz transform the
+coordinates of the world lines of the twins to another inertial frame S',
+we will get the same result for T in S' as in S. This is a mathematical
+fact. It shows that the situation of the traveling twins cannot possibly
+lead to a paradox _within_ the framework of SR. It could at most be in
+conflict with experimental results, which is also not the case.
+
+	Of course the situation of the two twins is not symmetric, although
+one might be tempted by expression (2) to think the opposite. Twin A is
+at rest in one and the same inertial frame for all times, whereas twin B
+is not.  [Formula (1) does not hold in an accelerated frame.]  This breaks
+the apparent symmetry of the two situations, and provides the clearest
+nonmathematical hint that one twin will in fact be younger than the other
+at the end of the trip.  To figure out *which* twin is the younger one, use
+the formulae above in a frame in which they are valid, and you will find
+that B is in fact younger, despite her expectations.
+
+	It is sometimes claimed that one has to resort to General
+Relativity in order to "resolve" the Twin "Paradox". This is not true. In
+flat, or nearly flat, space-time (no strong gravity), SR is completely
+sufficient, and it has also no problem with world lines corresponding to
+accelerated motion.
+
+References:
+        Taylor and Wheeler, _Spacetime Physics_  (An *excellent* discussion)
+        Goldstein, _Classical Mechanics_, 2nd edition, Chap.7 (for a good
+        general discussion of Lorentz transformations and other SR basics.)
+
+********************************************************************************
+Item 24. Special Relativistic Paradoxes - part (c)
+
+The Superluminal Scissors                           updated 31-MAR-1993
+-------------------------                           original by Scott I.Chase
+
+
+	A Gedankenexperiment:
+
+	Imagine a huge pair of scissors, with blades one light-year long.
+The handle is only about two feet long, creating a huge lever arm,
+initially open by a few degrees.  Then you suddenly close the scissors.
+This action takes about a tenth of a second.  Doesn't the contact point
+where the two blades touch move down the blades *much* faster than the
+speed of light? After all, the scissors close in a tenth of a second, but
+the blades are a light-year long.  That seems to mean that the contact
+point has moved down the blades at the remarkable speed of 10 light-years
+per second.  This is more than 10^8 times the speed of light!  But this
+seems to violate the most important rule of Special Relativity - no signal
+can travel faster than the speed of light.  What's going on here?
+
+	Explanation:
+
+	We have mistakenly assumed that the scissors do in fact close when
+you close the handle.  But, in fact, according to Special Relativity, this
+is not at all what happens.  What *does* happen is that the blades of the
+scissors flex.  No matter what material you use for the scissors, SR sets a
+theoretical upper limit to the rigidity of the material.  In short, when
+you close the scissors, they bend.
+
+	The point at which the blades bend propagates down the blade at
+some speed less than the speed of light.  On the near side of this point,
+the scissors are closed.  On the far side of this point, the scissors
+remain open.  You have, in fact, sent a kind of wave down the scissors,
+carrying the information that the scissors have been closed.  But this wave
+does not travel faster than the speed of light.  It will take at least one
+year for the tips of the blades, at the far end of the scissors, to feel
+any force whatsoever, and, ultimately, to come together to completely close
+the scissors.
+
+	As a practical matter, this theoretical upper limit to the rigidity
+of the metal in the scissors is *far* higher than the rigidity of any real
+material, so it would, in practice, take much much longer to close a real
+pair of metal scissors with blades as long as these.
+
+	One can analyze this problem microscopically as well.  The
+electromagnetic force which binds the atoms of the scissors together
+propagates at the speeds of light. So if you displace some set of atoms in
+the scissor (such as the entire handles), the force will not propagate down
+the scissor instantaneously, This means that a scissor this big *must*
+cease to act as a rigid body. You can move parts of it without other parts
+moving at the same time. It takes some finite time for the changing forces
+on the scissor to propagate from atom to atom, letting the far tip of the
+blades "know" that the scissors have been closed.
+
+	Caveat:
+
+	The contact point where the two blades meet is not a physical
+object.  So there is no fundamental reason why it could not move faster
+than the speed of light, provided that you arrange your experiment correctly.
+In fact it can be done with scissors provided that your scissors are short
+enough and wide open to start, very different conditions than those spelled
+out in the gedankenexperiment above.  In this case it will take you quite
+a while to bring the blades together - more than enough time for light to
+travel to the tips of the scissors.  When the blades finally come together,
+if they have the right shape, the contact point can indeed move faster
+than light.
+
+	Think about the simpler case of two rulers pinned together at an
+edge point at the ends.  Slam the two rulers together and the contact point
+will move infinitely fast to the far end of the rulers at the instant
+they touch.  So long as the rulers are short enough that contact does not
+happen until the signal propagates to the far ends of the rulers, the
+rulers will indeed be straight when they meet.  Only if the rulers are
+too long will they be bent like our very long scissors, above, when they
+touch.  The contact point can move faster than the speed of light, but
+the energy (or signal) of the closing force can not.
+
+	An analogy, equivalent in terms of information content, is, say, a
+line of strobe lights.  You want to light them up one at a time, so that
+the `bright' spot travels faster than light.  To do so, you can send a
+_luminal_ signal down the line, telling each strobe light to wait a
+little while before flashing.  If you decrease the wait time with
+each successive strobe light, the apparent bright spot will travel faster
+than light, since the strobes on the end didn't wait as long after getting
+the go-ahead, as did the ones at the beginning.  But the bright spot
+can't pass the original signal, because then the strobe lights wouldn't
+know to flash.
+
+
+********************************************************************************
+
+Item 25.  Can You See the Lorentz-Fitzgerald Contraction?           12-Oct-1995
+          Or: Penrose-Terrell Rotation                              by Michael Weiss
+
+People sometimes argue over whether the Lorentz-Fitzgerald contraction is
+"real" or not.  That's a topic for another FAQ entry, but here's a short
+answer: the contraction can be measured, but the measurement is
+frame-dependent.  Whether that makes it "real" or not has more to do with your
+choice of words than the physics.
+
+Here we ask a subtly different question.  If you take a snapshot of a rapidly
+moving object, will it *look* flattened when you develop the film?  What is the
+difference between measuring and photographing?  Isn't seeing believing?  Not
+always!  When you take a snapshot, you capture the light-rays that hit the
+*film* at one instant (in the reference frame of the film).  These rays may
+have left the *object* at different instants; if the object is moving with
+respect to the film, then the photograph may give a distorted picture.
+(Strictly speaking snapshots aren't instantaneous, but we're idealizing.)
+
+Oddly enough, though Einstein published his famous relativity paper in
+1905, and Fitzgerald proposed his contraction several years earlier,
+no one seems to have asked this question until the late '50s.  Then
+Roger Penrose and James Terrell independently discovered that the
+object will *not* appear flattened [1,2].  People sometimes say that
+the object appears rotated, so this effect is called the
+Penrose-Terrell rotation.
+
+Calling it a rotation can be a bit confusing though.  Rotating an object brings
+its backside into view, but it's hard to see how a contraction could do that.
+Among other things, this entry will try to explain in just what sense
+the Penrose-Terrell effect is a "rotation".
+
+It will clarify matters to imagine *two* snapshots of the same object, taken by
+two cameras moving uniformly with respect to each other.  We'll call them *his*
+camera and *her* camera.  The cameras pass through each other at the origin at
+t=0, when they take their two snapshots.  Say that the object is at rest with
+respect to his camera, and moving with respect to hers.  By analysing the
+process of taking a snapshot, the meaning of "rotation" will become clearer.
+
+How should we think of a snapshot?  Here's one way: consider a pinhole camera.
+(Just one camera, for the moment.)  The pinhole is located at the origin, and
+the film occupies a patch on a sphere surrounding the origin.  We'll ignore all
+technical difficulties(!), and pretend that the camera takes full spherical
+pictures: the film occupies the entire sphere.
+
+We need more than just a pinhole and film, though: we also need a shutter.  At
+t=0, the shutter snaps open for an instant to let the light-rays through the
+pinhole; these spread out in all directions, and at t=1 (in the rest-frame of
+the camera) paint a picture on the spherical film.
+
+Let's call points in the snapshot *pixels*.  Each pixel gets its color due to
+an event, namely a light-ray hitting the sphere at t=1.  Now let's consider his
+& her cameras, as we said before.  We'll use t for his time, and t' for hers.
+At t=t'=0, the two pinholes coincide at the origin, the two shutters snap
+simultaneously, and the light rays spread out.  At t=1 for *his* camera, they
+paint *his* pixels; at t'=1 for *her* camera, they paint *hers*.  So the
+definition of a snapshot is frame-dependent.  But you already knew that.  (Pop
+quiz: what shape does *he* think *her* film has?  Not spherical!)  (More
+technical difficulties: the rays have to pass right through one film to hit the
+other.)
+
+So there's a one-one correspondence between pixels in the two snapshots.  Two
+pixels correspond if they are painted by the same light-ray.  You can see now
+that her snapshot is just a distortion of his (and vice versa).  You could take
+his snapshot, scan it into a computer, run an algorithm to move the pixels
+around, and print out hers.
+
+So what does the pixel mapping look like?  Simple: if we put the usual
+latitude/longitude grid on the spheres, chosen so that the relative motion is
+along the north-south axis, then each pixel slides up towards the north pole
+along a line of longitude.  (Or down towards the south pole, depending on
+various choices I haven't specified.)  This should ring a bell if you know
+about the aberration of light: if our snapshots portray the night-sky, then the
+stars are white pixels, and aberration changes their apparent positions.
+
+Now let's consider the object--- let's say a galaxy.  In passing from his
+snapshot to hers, the image of the galaxy slides up the sphere, keeping the
+same face to us.  In this sense, it has rotated.  Its apparent size will also
+change, but not its shape (to a first approximation).
+
+The mathematical details are beautiful, but best left to the textbooks [3,4].
+Just to entice you if you have the background: if we regard the two spheres as
+Riemann spheres, then the pixel mapping is given by a fractional linear
+transformation.  Well-known facts from complex analysis now tell us two things.
+First, circles go to circles under the pixel mapping, so a sphere will *always*
+photograph as a sphere.  Second, shapes of objects are preserved in the
+infinitesimally small limit.  (If you know about the double-covering of SL(2),
+that also comes into play.  [3] is a good reference.)
+
+References: [1] and [2] are the original articles.  [3] and [4] are textbook
+treatments.  [5] has beautiful computer-generated pictures of the
+Penrose-Terrell rotation.  The authors of [5] later made a video [6] of this
+and other effects of "SR photography".
+
+[1] Penrose, R.,"The Apparent Shape of a Relativistically Moving Sphere",
+    Proc. Camb. Phil. Soc., vol 55 Jul 1958.
+[2] Terrell, J., "Invisibility of the Lorentz Contraction",
+    Phys. Rev. vol 116 no. 4 pp. 1041-1045 (1959).
+[3] Penrose, R., and W. Rindler, "Spinors and Space-Time", vol I chapter 1.
+[4] Marion, "Classical Dynamics", Section 10.5.
+[5] Hsiung, Ping-Kang, Robert H. Thibadeau, and Robert H. P. Dunn,
+    "Ray-Tracing Relativity", Pixel, vol 1 no. 1 (Jan/Feb 1990).
+[6] Hsiung, Ping-Kang, and Robert H. Thibadeau, "Spacetime
+    Visualizations," a video, Imaging Systems Lab, Robotics Institute,
+    Carnegie Mellon University.
+
+
+
+********************************************************************************
+
+Item 26.
+Tachyons                                        updated: 22-MAR-1993 by SIC
+--------                                        original by Scott I. Chase
+
+                There was a young lady named Bright,
+                Whose speed was far faster than light.
+                She went out one day,
+                In a relative way,
+                And returned the previous night!
+
+                        -Reginald Buller
+
+
+	It is a well known fact that nothing can travel faster than the
+speed of light. At best, a massless particle travels at the speed of light.
+But is this really true?  In 1962, Bilaniuk, Deshpande, and Sudarshan, Am.
+J. Phys. _30_, 718 (1962), said "no".  A very readable paper is Bilaniuk
+and Sudarshan, Phys. Today _22_,43 (1969).  I give here a brief overview.
+
+	Draw a graph, with momentum (p) on the x-axis, and energy (E) on
+the y-axis.  Then draw the "light cone", two lines with the equations E =
++/- p. This divides our 1+1 dimensional space-time into two regions.  Above
+and below are the "timelike" quadrants, and to the left and right are the
+"spacelike" quadrants.
+
+	Now the fundamental fact of relativity is that E^2 - p^2 = m^2.
+(Let's take c=1 for the rest of the discussion.)  For any non-zero value of
+m (mass), this is an hyperbola with branches in the timelike regions.  It
+passes through the point (p,E) = (0,m), where the particle is at rest.  Any
+particle with mass m is constrained to move on the upper branch of this
+hyperbola.  (Otherwise, it is "off-shell", a term you hear in association
+with virtual particles - but that's another topic.) For massless particles,
+E^2 = p^2, and the particle moves on the light-cone.
+
+	These two cases are given the names tardyon (or bradyon in more
+modern usage) and luxon, for "slow particle" and "light particle".  Tachyon
+is the name given to the supposed "fast particle" which would move with v>c.
+
+	Now another familiar relativistic equation is E =
+m*[1-(v/c)^2]^(-.5).  Tachyons (if they exist) have v > c.  This means that
+E is imaginary!  Well, what if we take the rest mass m, and take it to be
+imaginary?  Then E is negative real, and E^2 - p^2 = m^2 < 0.  Or, p^2 -
+E^2 = M^2, where M is real.  This is a hyperbola with branches in the
+spacelike region of spacetime.  The energy and momentum of a tachyon must
+satisfy this relation.
+
+	You can now deduce many interesting properties of tachyons.  For
+example, they accelerate (p goes up) if they lose energy (E goes down).
+Futhermore, a zero-energy tachyon is "transcendent," or infinitely fast.
+This has profound consequences.  For example, let's say that there were
+electrically charged tachyons.  Since they would move faster than the speed
+of light in the vacuum, they should produce Cerenkov radiation. This would
+*lower* their energy, causing them to accelerate more!  In other words,
+charged tachyons would probably lead to a runaway reaction releasing an
+arbitrarily large amount of energy.  This suggests that coming up with a
+sensible theory of anything except free (noninteracting) tachyons is likely
+to be difficult.  Heuristically, the problem is that we can get spontaneous
+creation of tachyon-antitachyon pairs, then do a runaway reaction, making
+the vacuum unstable.  To treat this precisely requires quantum field theory,
+which gets complicated.  It is not easy to summarize results here.  However,
+one reasonably modern reference is _Tachyons, Monopoles, and Related
+Topics_, E. Recami, ed. (North-Holland, Amsterdam, 1978).
+
+	However, tachyons are not entirely invisible.  You can imagine that
+you might produce them in some exotic nuclear reaction.  If they are
+charged, you could "see" them by detecting the Cerenkov light they produce
+as they speed away faster and faster.  Such experiments have been done.  So
+far, no tachyons have been found.  Even neutral tachyons can scatter off
+normal matter with experimentally observable consequences.  Again, no such
+tachyons have been found.
+
+	How about using tachyons to transmit information faster than the
+speed of light, in violation of Special Relativity?  It's worth noting
+that when one considers the relativistic quantum mechanics of tachyons, the
+question of whether they "really" go faster than the speed of light becomes
+much more touchy!  In this framework, tachyons are *waves* that satisfy a
+wave equation.  Let's treat free tachyons of spin zero, for simplicity.
+We'll set c = 1 to keep things less messy.  The wavefunction of a single
+such tachyon can be expected to satisfy the usual equation for spin-zero
+particles, the Klein-Gordon equation:
+
+                (BOX + m^2)phi = 0
+
+where BOX is the D'Alembertian, which in 3+1 dimensions is just
+
+                BOX = (d/dt)^2 - (d/dx)^2 - (d/dy)^2 - (d/dz)^2.
+
+The difference with tachyons is that m^2 is *negative*, and m is
+imaginary.
+
+To simplify the math a bit, let's work in 1+1 dimensions, with
+coordinates x and t, so that
+
+                BOX = (d/dt)^2 - (d/dx)^2
+
+Everything we'll say generalizes to the real-world 3+1-dimensional case.
+Now - regardless of m, any solution is a linear combination, or
+superposition, of solutions of the form
+
+                phi(t,x) = exp(-iEt + ipx)
+
+where E^2 - p^2 = m^2.  When m^2 is negative there are two essentially
+different cases.  Either |p| >= |E|, in which case E is real and
+we get solutions that look like waves whose crests move along at the
+rate |p|/|E| >= 1, i.e., no slower than the speed of light.  Or |p| <
+|E|, in which case E is imaginary and we get solutions that look waves
+that amplify exponentially as time passes!
+
+We can decide as we please whether or not we want to consider the second
+sort of solutions.   They seem weird, but then the whole business is
+weird, after all.
+
+1)	If we *do* permit the second sort of solution, we can solve the
+Klein-Gordon equation with any reasonable initial data - that is, any
+reasonable values of phi and its first time derivative at t = 0.  (For
+the precise definition of "reasonable," consult your local
+mathematician.)  This is typical of wave equations.  And, also typical
+of wave equations, we can prove the following thing: If the solution phi
+and its time derivative are zero outside the interval [-L,L] when t = 0,
+they will be zero outside the interval [-L-|t|, L+|t|] at any time t.
+In other words, localized disturbances do not spread with speed faster
+than the speed of light!  This seems to go against our notion that
+tachyons move faster than the speed of light, but it's a mathematical
+fact, known as "unit propagation velocity".
+
+2)	If we *don't* permit the second sort of solution, we can't solve the
+Klein-Gordon equation for all reasonable initial data, but only for initial
+data whose Fourier transforms vanish in the interval [-|m|,|m|].  By the
+Paley-Wiener theorem this has an odd consequence: it becomes
+impossible to solve the equation for initial data that vanish outside
+some interval [-L,L]!  In other words, we can no longer "localize" our
+tachyon in any bounded region in the first place, so it becomes
+impossible to decide whether or not there is "unit propagation
+velocity" in the precise sense of part 1).    Of course, the crests of
+the waves exp(-iEt + ipx) move faster than the speed of light, but these
+waves were never localized in the first place!
+
+	The bottom line is that you can't use tachyons to send information
+faster than the speed of light from one place to another.  Doing so would
+require creating a message encoded some way in a localized tachyon field,
+and sending it off at superluminal speed toward the intended receiver. But
+as we have seen you can't have it both ways - localized tachyon disturbances
+are subluminal and superluminal disturbances are nonlocal.
+
+********************************************************************************
+Item 27.
+
+The Particle Zoo                                updated 4-JUL-1995 by MCW
+----------------                                original by Matt Austern
+
+	If you look in the Particle Data Book, you will find more than 150
+particles listed there.  It isn't quite as bad as that, though...
+
+	The (observed) particles are divided into two major classes:
+the material particles, and the gauge bosons.  We'll discuss the gauge
+bosons further down.  The material particles in turn fall into three
+categories: leptons, mesons, and baryons. Leptons are particles that
+are like the electron: they have spin 1/2, and they do not undergo the
+strong interaction.  There are three charged leptons, the electron,
+muon, and tau, and three corresponding neutral leptons, or neutrinos.
+(The muon and the tau are both short-lived.)
+
+	Mesons and baryons both undergo strong interactions.  The
+difference is that mesons have integral spin (0, 1,...), while baryons have
+half-integral spin (1/2, 3/2,...).  The most familiar baryons are the
+proton and the neutron; all others are short-lived.  The most familiar
+meson is the pion; its lifetime is 26 nanoseconds, and all other mesons
+decay even faster.
+
+	Most of those 150+ particles are mesons and baryons, or,
+collectively, hadrons.  The situation was enormously simplified in the
+1960s by the "quark model," which says that hadrons are made out of
+spin-1/2 particles called quarks.  A meson, in this model, is made out
+of a quark and an anti-quark, and a baryon is made out of three
+quarks.  We don't see free quarks, but only hadrons; nevertheless, the
+evidence for quarks is compelling. Quark masses are not very well
+defined, since they are not free particles, but we can give estimates.
+The masses below are in GeV; the first is current mass and the second
+constituent mass (which includes some of the effects of the binding
+energy):
+
+      Generation:       1             2            3
+      U-like:     u=.006/.311   c=1.50/1.65   t=91-200/91-200
+      D-like:     d=.010/.315   s=.200/.500   b=5.10/5.10
+
+	In the quark model, there are only 12 elementary particles,
+which appear in three "generations."  The first generation consists of
+the up quark, the down quark, the electron, and the electron
+neutrino. (Each of these also has an associated antiparticle.)  These
+particles make up all of the ordinary matter we see around us.  There
+are two other generations, which are essentially the same, but with
+heavier particles.  The second consists of the charm quark, the
+strange quark, the muon, and the muon neutrino; and the third consists
+of the top quark, the bottom quark, the tau, and the tau neutrino.
+These three generations are sometimes called the "electron family",
+the "muon family", and the "tau family."
+
+	Finally, according to quantum field theory, particles interact by
+exchanging "gauge bosons," which are also particles.  The most familiar on
+is the photon, which is responsible for electromagnetic interactions.
+There are also eight gluons, which are responsible for strong interactions,
+and the W+, W-, and Z, which are responsible for weak interactions.
+
+The picture, then, is this:
+
+                FUNDAMENTAL PARTICLES OF MATTER
+  Charge        -------------------------
+    -1          |  e    |  mu   |  tau  |
+     0          | nu(e) |nu(mu) |nu(tau)|
+                -------------------------       + antiparticles
+   -1/3         | down  |strange|bottom |
+    2/3         |  up   | charm |  top  |
+                -------------------------
+
+                        GAUGE BOSONS
+  Charge                                                Force
+     0                  photon                          electromagnetism
+     0                  gluons (8 of them)              strong force
+    +-1                 W+ and W-                       weak force
+     0                  Z                               weak force
+
+	The Standard Model of particle physics also predicts the
+existence of a "Higgs boson," which has to do with breaking a symmetry
+involving these forces, and which is responsible for the masses of all the
+other particles.  It has not yet been found.  More complicated theories
+predict additional particles, including, for example, gauginos and sleptons
+and squarks (from supersymmetry), W' and Z' (additional weak bosons), X and
+Y bosons (from GUT theories), Majorons, familons, axions, paraleptons,
+ortholeptons, technipions (from technicolor models), B' (hadrons with
+fourth generation quarks), magnetic monopoles, e* (excited leptons), etc.
+None of these "exotica" have yet been seen.  The search is on!
+
+REFERENCES:
+
+	The best reference for information on which particles exist,
+their masses, etc., is the Particle Data Book.  It is published every
+two years; the most recent edition is Physical Review D vol.50 No.3
+part 1 August 1994.  The Web version can be accessed through
+http://pdg.lbl.gov/.
+
+	There are several good books that discuss particle physics on a
+level accessible to anyone who knows a bit of quantum mechanics.  One is
+_Introduction to High Energy Physics_, by Perkins.  Another, which takes a
+more historical approach and includes many original papers, is
+_Experimental Foundations of Particle Physics_, by Cahn and Goldhaber.
+
+	For a book that is accessible to non-physicists, you could try _The
+Particle Explosion_ by Close, Sutton, and Marten.  This book has fantastic
+photography.
+
+	For a Web introduction by the folks at Fermilab, take a look
+at http://fnnews.fnal.gov/hep_overview.html .
+********************************************************************************
+Item 28.                                         original by Scott I. Chase
+
+Does Antimatter Fall Up or Down?
+--------------------------------
+
+This question has never been subject to a successful direct experiment.
+In other words, nobody has ever directly measured the gravititational
+acceleration of antimatter.  So the bottom line is that we don't know yet.
+However, there is a lot more to say than just that, with regard to both
+theory and experiment.  Here is a summary of the current state of affairs.
+
+(1) Is is even theoretically possible for antimatter to fall up?
+
+Answer: According to GR, antimatter falls down.
+
+If you believe that General Relativity is the exact true theory of
+gravity, then there is only one possible conclusion - by the equivalence
+principle, antiparticles must fall down with the same acceleration as
+normal matter.
+
+On the other hand: there are other models of gravity which are not ruled out
+by direct experiment which are distinct from GR in that antiparticles can
+fall down at different rates than normal matter, or even fall up, due to
+additional forces which couple to the mass of the particle in ways which are
+different than GR.  Some people don't like to call these new couplings
+'gravity.'  They call them, generically, the 'fifth force,' defining gravity
+to be only the GR part of the force.  But this is mostly a semantic
+distinction.  The bottom line is that antiparticles won't fall like normal
+particles if one of these models is correct.
+
+There are also a variety of arguments, based upon different aspects of
+physics, against the possibility of antigravity.  These include constraints
+imposed by conservation of energy (the "Morrison argument"), the detectable
+effects of virtual antiparticles (the "Schiff argument"), and the absense
+of gravitational effect in kaon regeneration experiments.  Each of these
+does in fact rule out *some* models of antigravity.  But none of them
+absolutely excludes all possible models of antigravity.  See the reference
+below for all the details on these issues.
+
+(2) Haven't people done experiments to study this question?
+
+There are no valid *direct* experimental tests of whether antiparticles
+fall up or down.  There was one well-known experiment by Fairbank at
+Stanford in which he tried to measure the fall of positrons.  He found that
+they fell normally, but later analyses of his experiment revealed that
+he had not accounted for all the sources of stray electromagnetic fields.
+Because gravity is so much weaker than EM, this is a difficult experimental
+problem.  A modern assessment of the Fairbank experiment is that it was
+inconclusive.
+
+In order to reduce the effect of gravity, it would be nice to repeat the
+Fairbank experiment using objects with the same magnitude of electric
+charge as positrons, but with much more mass, to increase the relative
+effect of gravity on the motion of the particle.  Antiprotons are 1836
+times more massive than positrons, so give you three orders of magnitude
+more sensitivity.  Unfortunately, making many slow antiprotons which you
+can watch fall is very difficult.  An experiment is under development
+at CERN right now to do just that, and within the next couple of years
+the results should be known.
+
+Most people expect that antiprotons *will* fall.  But it is important
+to keep an open mind - we have never directly observed the effect of
+gravity on antiparticles.  This experiment, if successful, will definitely
+be "one for the textbooks."
+
+Reference: Nieto and Goldman, "The Arguments Against 'Antigravity' and
+the Gravitational Acceleration of Antimatter,"  Physics Reports, v.205,
+No. 5, p.221.
+
+********************************************************************************
+Item 29.
+
+What is the Mass of a Photon?                   updated 24-JUL-1992 by SIC
+                                                original by Matt Austern
+
+Or, "Does the mass of an object depend on its velocity?"
+
+	This question usually comes up in the context of wondering whether
+photons are really "massless," since, after all, they have nonzero energy.
+The problem is simply that people are using two different definitions of
+mass.  The overwhelming consensus among physicists today is to say that
+photons are massless.  However, it is possible to assign a "relativistic
+mass" to a photon which depends upon its wavelength.  This is based upon
+an old usage of the word "mass" which, though not strictly wrong, is not
+used much today.
+
+	The old definition of mass, called "relativistic mass," assigns
+a mass to a particle proportional to its total energy E, and involved
+the speed of light, c, in the proportionality constant:
+
+                m = E / c^2.                                        (1)
+
+This definition gives every object a velocity-dependent mass.
+
+	The modern definition assigns every object just one mass, an
+invariant quantity that does not depend on velocity.  This is given by
+
+                m = E_0 / c^2,                                      (2)
+
+where E_0 is the total energy of that object at rest.
+
+	The first definition is often used in popularizations, and in some
+elementary textbooks.  It was once used by practicing physicists, but for
+the last few decades, the vast majority of physicists have instead used the
+second definition.  Sometimes people will use the phrase "rest mass," or
+"invariant mass," but this is just for emphasis: mass is mass.  The
+"relativistic mass" is never used at all.  (If you see "relativistic mass"
+in your first-year physics textbook, complain! There is no reason for books
+to teach obsolete terminology.)
+
+	Note, by the way, that using the standard definition of mass, the
+one given by Eq. (2), the equation "E = m c^2" is *not* correct.  Using the
+standard definition, the relation between the mass and energy of an object
+can be written as
+
+                E   = m c^2 / sqrt(1 -v^2/c^2),                     (3)
+or as
+
+                E^2 = m^2 c^4  +  p^2 c^2,                          (4)
+
+where v is the object's velocity, and p is its momentum.
+
+	In one sense, any definition is just a matter of convention.  In
+practice, though, physicists now use this definition because it is much
+more convenient.  The "relativistic mass" of an object is really just the
+same as its energy, and there isn't any reason to have another word for
+energy: "energy" is a perfectly good word.  The mass of an object, though,
+is a fundamental and invariant property, and one for which we do need a
+word.
+
+	The "relativistic mass" is also sometimes confusing because it
+mistakenly leads people to think that they can just use it in the Newtonian
+relations
+                F = m a                                             (5)
+and
+                F = G m1 m2 / r^2.                                  (6)
+
+In fact, though, there is no definition of mass for which these
+equations are true relativistically: they must be generalized.  The
+generalizations are more straightforward using the standard definition
+of mass than using "relativistic mass."
+
+	Oh, and back to photons: people sometimes wonder whether it makes
+sense to talk about the "rest mass" of a particle that can never be at
+rest.  The answer, again, is that "rest mass" is really a misnomer, and it
+is not necessary for a particle to be at rest for the concept of mass to
+make sense.  Technically, it is the invariant length of the particle's
+four-momentum.  (You can see this from Eq. (4).)  For all photons this is
+zero. On the other hand, the "relativistic mass" of photons is frequency
+dependent. UV photons are more energetic than visible photons, and so are
+more "massive" in this sense, a statement which obscures more than it
+elucidates.
+
+	Reference: Lev Okun wrote a nice article on this subject in the
+June 1989 issue of Physics Today, which includes a historical discussion
+of the concept of mass in relativistic physics.
+
+********************************************************************************
+Item 30.                                           original by David Brahm
+
+Baryogenesis - Why Are There More Protons Than Antiprotons?
+-----------------------------------------------------------
+
+(I) How do we really *know* that the universe is not matter-antimatter
+symmetric?
+
+(a) The Moon:  Neil Armstrong did not annihilate, therefore the moon
+is made of matter.
+(b) The Sun:  Solar cosmic rays are matter, not antimatter.
+(c) The other Planets:  We have sent probes to almost all.  Their survival
+demonstrates that the solar system is made of matter.
+(d) The Milky Way:  Cosmic rays sample material from the entire galaxy.
+In cosmic rays, protons outnumber antiprotons 10^4 to 1.
+(e) The Universe at large: This is tougher.  If there were antimatter
+galaxies then we should see gamma emissions from annihilation.  Its absence
+is strong evidence that at least the nearby clusters of galaxies (e.g., Virgo)
+are matter-dominated.  At larger scales there is little proof.
+    However,  there is a problem, called the "annihilation catastrophe"
+which probably eliminates the possibility of a matter-antimatter symmetric
+universe.  Essentially, causality prevents the separation of large chucks
+of antimatter from matter fast enough to prevent their mutual annihilation
+in in the early universe.  So the Universe is most likely matter dominated.
+
+(II) How did it get that way?
+
+	Annihilation has made the asymmetry much greater today than in the
+early universe.  At the high temperature of the first microsecond, there
+were large numbers of thermal quark-antiquark pairs.  K&T estimate 30
+million antiquarks for every 30 million and 1 quarks during this epoch.
+That's a tiny asymmetry.  Over time most of the antimatter has annihilated
+with matter, leaving the very small initial excess of matter to dominate
+the Universe.
+
+	Here are a few possibilities for why we are matter dominated today:
+
+a) The Universe just started that way.
+   Not only is this a rather sterile hypothesis, but it doesn't work under
+   the popular "inflation" theories, which dilute any initial abundances.
+b) Baryogenesis occurred around the Grand Unified (GUT) scale (very early).
+   Long thought to be the only viable candidate, GUT's generically have
+   baryon-violating reactions, such as proton decay (not yet observed).
+c) Baryogenesis occurred at the Electroweak Phase Transition (EWPT).
+   This is the era when the Higgs first acquired a vacuum expectation value
+   (vev), so other particles acquired masses.  Pure Standard Model physics.
+
+	Sakharov enumerated 3 necessary conditions for baryogenesis:
+
+	(1)  Baryon number violation.  If baryon number is conserved in all
+reactions, then the present baryon asymmetry can only reflect asymmetric
+initial conditions, and we are back to case (a), above.
+	(2) C and CP violation.  Even in the presence of B-violating
+reactions, without a preference for matter over antimatter the B-violation
+will take place at the same rate in both directions, leaving no excess.
+	(3) Thermodynamic Nonequilibrium.  Because CPT guarantees equal
+masses for baryons and antibaryons, chemical equilibrium would drive the
+necessary reactions to correct for any developing asymmetry.
+
+	It turns out the Standard Model satisfies all 3 conditions:
+
+	(1) Though the Standard Model conserves B classically (no terms in
+the Lagrangian violate B), quantum effects allow the universe to tunnel
+between vacua with different values of B.  This tunneling is _very_
+suppressed at energies/temperatures below 10 TeV (the "sphaleron mass"),
+_may_ occur at e.g. SSC energies (controversial), and _certainly_ occurs at
+higher temperatures.
+
+	(2) C-violation is commonplace.  CP-violation (that's "charge
+conjugation" and "parity") has been experimentally observed in kaon
+decays, though strictly speaking the Standard Model probably has
+insufficient CP-violation to give the observed baryon asymmetry.
+
+	(3) Thermal nonequilibrium is achieved during first-order phase
+transitions in the cooling early universe, such as the EWPT (at T = 100 GeV
+or so).  As bubbles of the "true vacuum" (with a nonzero Higgs vev)
+percolate and grow, baryogenesis can occur at or near the bubble walls.
+
+	A major theoretical problem, in fact, is that there may be _too_
+_much_ B-violation in the Standard Model, so that after the EWPT is
+complete (and condition 3 above is no longer satisfied) any previously
+generated baryon asymmetry would be washed out.
+
+References: Kolb and Turner, _The Early Universe_;
+  Dine, Huet, Singleton & Susskind, Phys.Lett.B257:351 (1991);
+  Dine, Leigh, Huet, Linde & Linde, Phys.Rev.D46:550 (1992).
+
+********************************************************************************
+Item 31.
+
+The EPR Paradox and Bell's Inequality Principle    updated 31-AUG-1993 by SIC
+-----------------------------------------------    original by John Blanton
+
+	In 1935 Albert Einstein and two colleagues, Boris Podolsky and
+Nathan Rosen (EPR) developed a thought experiment to demonstrate what they
+felt was a lack of completeness in quantum mechanics.  This so-called "EPR
+paradox" has led to much subsequent, and still on-going, research. This
+article is an introduction to EPR, Bell's inequality, and the real
+experiments which have attempted to address the interesting issues raised
+by this discussion.
+
+	One of the principal features of quantum mechanics is that not all
+the classical physical observables of a system can be simultaneously known,
+either in practice or in principle.  Instead, there may be several sets of
+observables which give qualitatively different, but nonetheless complete
+(maximal possible) descriptions of a quantum mechanical system.  These sets
+are sets of "good quantum numbers," and are also known as "maximal sets of
+commuting observables."  Observables from different sets are "noncommuting
+observables."
+
+	A well known example of noncommuting observables is position and
+momentum.  You can put a subatomic particle into a state of well-defined
+momentum, but then you cannot know where it is - it is, in fact, everywhere
+at once.  It's not just a matter of your inability to measure, but rather,
+an intrinsic property of the particle.  Conversely, you can put a particle
+in a definite position, but then its momentum is completely ill-defined.
+You can also create states of intermediate knowledge of both observables:
+If you confine the particle to some arbitrarily large region of space,
+you can define the momentum more and more precisely.  But you can never
+know both, exactly, at the same time.
+
+	Position and momentum are continuous observables.  But the same
+situation can arise for discrete observables such as spin.  The quantum
+mechanical spin of a particle along each of the three space axes is a set
+of mutually noncommuting observables.  You can only know the spin along one
+axis at a time.  A proton with spin "up" along the x-axis has undefined
+spin along the y and z axes.  You cannot simultaneously measure the x and y
+spin projections of a proton. EPR sought to demonstrate that this
+phenomenon could be exploited to construct an experiment which would
+demonstrate a paradox which they believed was inherent in the
+quantum-mechanical description of the world.
+
+	They imagined two physical systems that are allowed to interact
+initially so that they subsequently will be defined by a single Schrodinger
+wave equation (SWE).   [For simplicity, imagine a simple physical
+realization of this idea - a neutral pion at rest in your lab, which decays
+into a pair of back-to-back photons.  The pair of photons is described
+by a single two-particle wave function.]  Once separated, the two systems
+[read: photons] are still described by the same SWE, and a measurement of
+one observable of the first system will determine the measurement of the
+corresponding observable of the second system.  [Example:  The neutral pion
+is a scalar particle - it has zero angular momentum.  So the two photons
+must speed off in opposite directions with opposite spin. If photon 1
+is found to have spin up along the x-axis, then photon 2 *must* have spin
+down along the x-axis, since the total angular momentum of the final-state,
+two-photon, system must be the same as the angular momentum of the intial
+state, a single neutral pion.  You know the spin of photon 2 even without
+measuring it.] Likewise, the measurement of another observable of the first
+system will determine the measurement of the corresponding observable of the
+second system, even though the systems are no longer physically linked in
+the traditional sense of local coupling.
+
+	However, QM prohibits the simultaneous knowledge of more than one
+mutually noncommuting observable of either system.  The paradox of EPR is
+the following contradiction:  For our coupled systems, we can measure
+observable A of system I [for example, photon 1 has spin up along the
+x-axis; photon 2 must therefore have x-spin down.] and observable B of
+system II [for example, photon 2 has spin down along the y-axis; therefore
+the y-spin of photon 1 must be up.] thereby revealing both observables for
+both systems, contrary to QM.
+
+	QM dictates that this should be impossible, creating the
+paradoxical implication that measuring one system should "poison" any
+measurement of the other system, no matter what the distance between
+them. [In one commonly studied interpretation, the mechanism by which
+this proceeds is 'instantaneous collapse of the wavefunction'.  But
+the rules of QM do not require this interpretation, and several
+other perfectly valid interpretations exist.]  The second system
+would instantaneously be put into a state of well-defined observable A,
+and, consequently, ill-defined observable B, spoiling the measurement.
+Yet, one could imagine the two measurements were so far apart in
+space that special relativity would prohibit any influence of one
+measurement over the other.  [After the neutral-pion decay, we can wait until
+the two photons are a light-year apart, and then "simultaneously" measure
+the x-spin of photon 1 and the y-spin of photon 2.  QM suggests that if,
+for example, the measurement of the photon 1 x-spin happens first, this
+measurement must instantaneously force photon 2 into a state of ill-defined
+y-spin, even though it is light-years away from photon 1.
+
+	How do we reconcile the fact that photon 2 "knows" that the x-spin
+of photon 1 has been measured, even though they are separated by
+light-years of space and far too little time has passed for information
+to have travelled to it according to the rules of Special Relativity?
+There are basically two choices.  You can accept the postulates of QM
+as a fact of life, in spite of its seemingly uncomfortable coexistence
+with special relativity, or you can postulate that QM is not complete,
+that there *was* more information available for the description of the
+two-particle system at the time it was created, carried away by both
+photons, and that you just didn't know it because QM does not properly
+account for it.
+
+	So, EPR postulated that the existence of hidden variables, some
+so-far unknown properties, of the systems should account for the discrepancy.
+Their claim was that QM theory is incomplete; it does not completely
+describe the physical reality.  System II knows all about System I
+long before the scientist measures any of the observables, thereby
+supposedly consigning the other noncommuting observables to obscurity.
+No instantaneous action-at-a-distance is necessary in this picture,
+which postulates that each System has more parameters than are
+accounted by QM. Niels Bohr, one of the founders of QM, held the opposite
+view and defended a strict interpretation, the Copenhagen Interpretation,
+of QM.
+
+	In 1964 John S. Bell proposed a mechanism to test for the existence
+of these hidden parameters, and he developed his inequality principle as
+the basis for such a test.
+
+	Use the example of two photons configured in the singlet state,
+consider this:  After separation, each photon will have spin values for
+each of the three axes of space, and each spin can have one of two values;
+call them up and down.  Call the axes A, B and C and call the spin in the A
+axis A+ if it is up in that axis, otherwise call it A-.  Use similar
+definitions for the other two axes.
+
+	Now perform the experiment.  Measure the spin in one axis of one
+particle and the spin in another axis of the other photon.  If EPR were
+correct, each photon will simultaneously have properties for spin in each
+of axes A, B and C.
+
+	Look at the statistics.  Perform the measurements with a number of
+sets of photons.  Use the symbol N(A+, B-) to designate the words "the
+number of photons with A+ and B-."  Similarly for N(A+, B+), N(B-, C+),
+etc.  Also use the designation N(A+, B-, C+) to mean "the number of photons
+with A+, B- and C+," and so on.  It's easy to demonstrate that for a set of
+photons
+
+(1)    N(A+, B-) = N(A+, B-, C+) + N(A+, B-, C-)
+
+because all of the (A+, B-, C+) and all of the (A+, B-, C-) photons are
+included in the designation (A+, B-), and nothing else is included in N(A+,
+B-).  You can make this claim if these measurements are connected to some
+real properties of the photons.
+
+	Let n[A+, B+] be the designation for "the number of measurements of
+pairs of photons in which the first photon measured A+, and the second
+photon measured B+."  Use a similar designation for the other possible
+results.  This is necessary because this is all it is possible to measure.
+You can't measure both A and B of the same photon.  Bell demonstrated that
+in an actual experiment, if (1) is true (indicating real properties), then
+the following must be true:
+
+(2)    n[A+, B+] <= n[A+, C+] + n[B+, C-].
+
+	Additional inequality relations can be written by just making the
+appropriate permutations of the letters A, B and C and the two signs.  This
+is Bell's inequality principle, and it is proved to be true if there are
+real (perhaps hidden) parameters to account for the measurements.
+
+    	At the time Bell's result first became known, the experimental
+record was reviewed to see if any known results provided evidence against
+locality. None did. Thus an effort began to develop tests of Bell's
+inequality. A series of experiments was conducted by Aspect ending with one
+in which polarizer angles were changed while the photons were `in flight'.
+This was widely regarded at the time as being a reasonably conclusive
+experiment confirming the predictions of QM.
+
+	Three years later Franson published a paper showing that the timing
+constraints in this experiment were not adequate to confirm that locality
+was violated. Aspect measured the time delays between detections of photon
+pairs. The critical time delay is that between when a polarizer angle is
+changed and when this affects the statistics of detecting photon pairs.
+Aspect estimated this time based on the speed of a photon and the distance
+between the polarizers and the detectors. Quantum mechanics does not allow
+making assumptions about *where* a particle is between detections. We
+cannot know *when* a particle traverses a polarizer unless we detect the
+particle *at* the polarizer.
+
+	Experimental tests of Bell's inequality are ongoing but none has
+yet fully addressed the issue raised by Franson. In addition there is an
+issue of detector efficiency. By postulating new laws of physics one can
+get the expected correlations without any nonlocal effects unless the
+detectors are close to 90% efficient. The importance of these issues is a
+matter of judgement.
+
+	The subject is alive theoretically as well.  In the 1970's
+Eberhard derived Bell's result without reference to local hidden variable
+theories; it applies to all local theories.  Eberhard also showed that the
+nonlocal effects that QM predicts cannot be used for superluminal
+communication.  The subject is not yet closed, and may yet provide more
+interesting insights into the subtleties of quantum mechanics.
+
+REFERENCES:
+
+1.  A. Einstein, B. Podolsky, N. Rosen:  "Can quantum-mechanical
+description of physical reality be considered complete?"
+Physical Review 41, 777 (15 May 1935).  (The original EPR paper)
+
+2.  D. Bohm:  Quantum Theory, Dover, New York (1957).  (Bohm
+discusses some of his ideas concerning hidden variables.)
+
+3.  N. Herbert:  Quantum Reality, Doubleday.  (A very good
+popular treatment of EPR and related issues)
+
+4.  M. Gardner: Science - Good, Bad and Bogus, Prometheus Books.
+(Martin Gardner gives a skeptics view of the fringe science
+associated with EPR.)
+
+5.  J. Gribbin:  In Search of Schrodinger's Cat, Bantam Books.
+(A popular treatment of EPR and the paradox of "Schrodinger's
+cat" that results from the Copenhagen interpretation)
+
+6.  N. Bohr:  "Can quantum-mechanical description of physical
+reality be considered  complete?" Physical Review 48, 696 (15 Oct
+1935).  (Niels Bohr's response to EPR)
+
+7.  J. Bell:  "On the Einstein Podolsky Rosen paradox" Physics 1
+#3, 195 (1964).
+
+8.  J. Bell:  "On the problem of hidden variables in quantum
+mechanics" Reviews of  Modern Physics 38 #3, 447 (July 1966).
+
+9.  D. Bohm, J. Bub:  "A proposed solution of the measurement
+problem in quantum  mechanics by a hidden variable theory"
+Reviews of Modern Physics 38  #3, 453 (July 1966).
+
+10.  B. DeWitt:  "Quantum mechanics and reality" Physics Today p.
+30 (Sept 1970).
+
+11.  J. Clauser, A. Shimony:  "Bell's theorem: experimental
+tests and implications" Rep.  Prog. Phys. 41, 1881 (1978).
+
+12.  A. Aspect, Dalibard, Roger:  "Experimental test of Bell's
+inequalities using time- varying analyzers" Physical Review
+Letters 49 #25, 1804 (20 Dec 1982).
+
+13.  A. Aspect, P. Grangier, G. Roger:  "Experimental realization
+of Einstein-Podolsky-Rosen-Bohm gedankenexperiment; a new
+violation of Bell's inequalities" Physical  Review Letters 49
+#2, 91 (12 July 1982).
+
+14.  A. Robinson: "Loophole closed in quantum mechanics test"
+Science 219, 40 (7 Jan 1983).
+
+15.  B. d'Espagnat:  "The quantum theory and reality" Scientific
+American 241 #5 (November 1979).
+
+16. "Bell's Theorem and Delayed Determinism", Franson, Physical Review D,
+pgs. 2529-2532, Vol. 31, No. 10, May 1985.
+
+17. "Bell's Theorem without Hidden Variables", P. H. Eberhard, Il Nuovo
+Cimento, 38 B 1, pgs. 75-80, (1977).
+
+18. "Bell's Theorem and the Different Concepts of Locality", P. H.
+Eberhard, Il Nuovo Cimento 46 B, pgs. 392-419, (1978).
+
+********************************************************************************
+Item 32.
+
+Some Frequently Asked Questions About Virtual Particles
+-------------------------------------------------------
+                                                       original By Matt McIrvin
+
+Contents:
+
+     1. What are virtual particles?
+     2. How can they be responsible for attractive forces?
+     3. Do they violate energy conservation?
+     4. Do they go faster than light?  Do virtual particles contradict
+        relativity or causality?
+     5. I hear physicists saying that the "quantum of the gravitational
+        force" is something called a graviton.  Doesn't general
+        relativity say that gravity isn't a force at all?
+
+1. What are virtual particles?
+
+	One of the first steps in the development of quantum mechanics was
+Max Planck's idea that a harmonic oscillator (classically, anything that
+wiggles like a mass bobbing on the end of an ideal spring) cannot have just
+any energy.  Its possible energies come in a discrete set of equally spaced
+levels.
+
+	An electromagnetic field wiggles in the same way when it possesses
+waves.  Applying quantum mechanics to this oscillator reveals that it must
+also have discrete, evenly spaced energy levels.  These energy levels are
+what we usually identify as different numbers of photons. The higher the
+energy level of a vibrational mode, the more photons there are.  In this
+way, an electromagnetic wave acts as if it were made of particles.  The
+electromagnetic field is a quantum field.
+
+	Electromagnetic fields can do things other than vibration.  For
+instance, the electric field produces an attractive or repulsive force
+between charged objects, which varies as the inverse square of distance.
+The force can change the momenta of the objects.
+
+	Can this be understood in terms of photons as well?  It turns out
+that, in a sense, it can.  We can say that the particles exchange "virtual
+photons" which carry the transferred momentum.  Here is a picture (a
+"Feynman diagram") of the exchange of one virtual photon.
+
+                    \                /
+                     \   <- p       /
+                      >~~~         /          ^ time
+                     /    ~~~~    /           |
+                    /         ~~~<            |
+                   /              \            ---> space
+                  /                \
+
+	The lines on the left and right represent two charged particles,
+and the wavy line (jagged because of the limitations of ASCII) is a virtual
+photon, which transfers momentum from one to the other.  The particle that
+emits the virtual photon loses momentum p in the recoil, and the other
+particle gets the momentum.
+
+	This is a seemingly tidy explanation.  Forces don't happen because
+of any sort of action at a distance, they happen because of virtual
+particles that spew out of things and hit other things, knocking them
+around.  However, this is misleading.  Virtual particles are really not
+just like classical bullets.
+
+2. How can they be responsible for attractive forces?
+
+	The most obvious problem with a simple, classical picture of
+virtual particles is that this sort of behavior can't possibly result in
+attractive forces.  If I throw a ball at you, the recoil pushes me back;
+when you catch the ball, you are pushed away from me.  How can this attract
+us to each other?  The answer lies in Heisenberg's uncertainty principle.
+
+	Suppose that we are trying to calculate the probability (or,
+actually, the probability amplitude) that some amount of momentum, p, gets
+transferred between a couple of particles that are fairly well- localized.
+The uncertainty principle says that definite momentum is associated with a
+huge uncertainty in position.  A virtual particle with momentum p
+corresponds to a plane wave filling all of space, with no definite position
+at all.  It doesn't matter which way the momentum points; that just
+determines how the wavefronts are oriented.  Since the wave is everywhere,
+the photon can be created by one particle and absorbed by the other, no
+matter where they are.  If the momentum transferred by the wave points in
+the direction from the receiving particle to the emitting one, the effect
+is that of an attractive force.
+
+	The moral is that the lines in a Feynman diagram are not to be
+interpreted literally as the paths of classical particles.  Usually, in
+fact, this interpretation applies to an even lesser extent than in my
+example, since in most Feynman diagrams the incoming and outgoing particles
+are not very well localized; they're supposed to be plane waves too.
+
+3. Do they violate energy conservation?
+
+	We are really using the quantum-mechanical approximation method
+known as perturbation theory.  In perturbation theory, systems can go
+through intermediate "virtual states" that normally have energies different
+>from that of the initial and final states.  This is because of another
+uncertainty principle, which relates time and energy.
+
+	In the pictured example, we consider an intermediate state with a
+virtual photon in it.  It isn't classically possible for a charged particle
+to just emit a photon and remain unchanged (except for recoil) itself.  The
+state with the photon in it has too much energy, assuming conservation of
+momentum.  However, since the intermediate state lasts only a short time,
+the state's energy becomes uncertain, and it can actually have the same
+energy as the initial and final states.  This allows the system to pass
+through this state with some probability without violating energy
+conservation.
+
+	Some descriptions of this phenomenon instead say that the energy of
+the *system* becomes uncertain for a short period of time, that energy is
+somehow "borrowed" for a brief interval.  This is just another way of
+talking about the same mathematics.  However, it obscures the fact that all
+this talk of virtual states is just an approximation to quantum mechanics,
+in which energy is conserved at all times.  The way I've described it also
+corresponds to the usual way of talking about Feynman diagrams, in which
+energy is conserved, but virtual particles can carry amounts of energy not
+normally allowed by the laws of motion.
+
+	(General relativity creates a different set of problems for energy
+conservation; that's described elsewhere in the sci.physics FAQ.)
+
+4. Do they go faster than light?  Do virtual particles contradict
+   relativity or causality?
+
+	In section 2, the virtual photon's plane wave is seemingly created
+everywhere in space at once, and destroyed all at once.  Therefore, the
+interaction can happen no matter how far the interacting particles are from
+each other.  Quantum field theory is supposed to properly apply special
+relativity to quantum mechanics.  Yet here we have something that, at least
+at first glance, isn't supposed to be possible in special relativity: the
+virtual photon can go from one interacting particle to the other faster
+than light!  It turns out, if we sum up all possible momenta, that the
+amplitude for transmission drops as the virtual particle's final position
+gets further and further outside the light cone, but that's small
+consolation.  This "superluminal" propagation had better not transmit any
+information if we are to retain the principle of causality.
+
+	I'll give a plausibility argument that it doesn't in the context of
+a thought experiment.  Let's try to send information faster than light with
+a virtual particle.
+
+	Suppose that you and I make repeated measurements of a quantum
+field at distant locations.  The electromagnetic field is sort of a
+complicated thing, so I'll use the example of a field with just one
+component, and call it F.  To make things even simpler, we'll assume that
+there are no "charged" sources of the F field or real F particles
+initially.  This means that our F measurements should fluctuate quantum-
+mechanically around an average value of zero.  You measure F (really, an
+average value of F over some small region) at one place, and I measure it a
+little while later at a place far away.  We do this over and over, and wait
+a long time between the repetitions, just to be safe.
+
+                                .
+                                .
+                                .
+                                   ------X
+                             ------
+                      X------
+
+
+
+                                                     ^ time
+                                   ------X me        |
+                             ------                  |
+                  you X------                         ---> space
+
+After a large number of repeated field measurements we compare notes.
+We discover that our results are not independent; the F values are
+correlated with each other-- even though each individual set of
+measurements just fluctuates around zero, the fluctuations are not
+completely independent.  This is because of the propagation of virtual
+quanta of the F field, represented by the diagonal lines.  It happens
+even if the virtual particle has to go faster than light.
+
+	However, this correlation transmits no information.  Neither of us
+has any control over the results we get, and each set of results looks
+completely random until we compare notes (this is just like the resolution
+of the famous EPR "paradox").
+
+	You can do things to fields other than measure them.  Might you
+still be able to send a signal?  Suppose that you attempt, by some series
+of actions, to send information to me by means of the virtual particle. If
+we look at this from the perspective of someone moving to the right at a
+high enough speed, special relativity says that in that reference frame,
+the effect is going the other way:
+
+           .
+            .
+             .
+
+          X------
+                 ------
+                       ------X
+
+
+
+            you X------                        ^ time
+                       ------                  |
+                             ------X me        |
+                                                ---> space
+
+Now it seems as if I'm affecting what happens to you rather than the
+other way around.  (If the quanta of the F field are not the same as
+their antiparticles, then the transmission of a virtual F particle
+>from you to me now looks like the transmission of its antiparticle
+>from me to you.)  If all this is to fit properly into special
+relativity, then it shouldn't matter which of these processes "really"
+happened; the two descriptions should be equally valid.
+
+	We know that all of this was derived from quantum mechanics, using
+perturbation theory.  In quantum mechanics, the future quantum state of a
+system can be derived by applying the rules for time evolution to its
+present quantum state.  No measurement I make when I "receive" the particle
+can tell me whether you've "sent" it or not, because in one frame that
+hasn't happened yet!  Since my present state must be derivable from past
+events, if I have your message, I must have gotten it by other means.  The
+virtual particle didn't "transmit" any information that I didn't have
+already; it is useless as a means of faster-than-light communication.
+
+	The order of events does *not* vary in different frames if the
+transmission is at the speed of light or slower.  Then, the use of virtual
+particles as a communication channel is completely consistent with quantum
+mechanics and relativity.  That's fortunate: since all particle
+interactions occur over a finite time interval, in a sense *all* particles
+are virtual to some extent.
+
+5. I hear physicists saying that the "quantum of the gravitational
+   force" is something called a graviton.  Doesn't general relativity
+   say that gravity isn't a force at all?
+
+	You don't have to accept that gravity is a "force" in order to
+believe that gravitons might exist.  According to QM, anything that behaves
+like a harmonic oscillator has discrete energy levels, as I said in part 1.
+ General relativity allows gravitational waves, ripples in the geometry of
+spacetime which travel at the speed of light.  Under a certain definition
+of gravitational energy (a tricky subject), the wave can be said to carry
+energy.  If QM is ever successfully applied to GR, it seems sensible to
+expect that these oscillations will also possess discrete "gravitational
+energies," corresponding to different numbers of gravitons.
+
+	Quantum gravity is not yet a complete, established theory, so
+gravitons are still speculative.  It is also unlikely that individual
+gravitons will be detected anytime in the near future.
+
+	Furthermore, it is not at all clear that it will be useful to think
+of gravitational "forces," such as the one that sticks you to the earth's
+surface, as mediated by virtual gravitons.  The notion of virtual particles
+mediating static forces comes from perturbation theory, and if there is one
+thing we know about quantum gravity, it's that the usual way of doing
+perturbation theory doesn't work.
+
+	Quantum field theory is plagued with infinities, which show up in
+diagrams in which virtual particles go in closed loops.  Normally these
+infinities can be gotten rid of by "renormalization," in which infinite
+"counterterms" cancel the infinite parts of the diagrams, leaving finite
+results for experimentally observable quantities. Renormalization works for
+QED and the other field theories used to describe particle interactions,
+but it fails when applied to gravity. Graviton loops generate an infinite
+family of counterterms.  The theory ends up with an infinite number of free
+parameters, and it's no theory at all.  Other approaches to quantum gravity
+are needed, and they might not describe static fields with virtual
+gravitons.
+
+********************************************************************************
+END OF FAQ

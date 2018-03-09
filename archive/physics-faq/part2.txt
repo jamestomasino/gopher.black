@@ -1,0 +1,1352 @@
+--------------------------------------------------------------------------------
+               FREQUENTLY ASKED QUESTIONS ON SCI.PHYSICS - Part 2/4
+--------------------------------------------------------------------------------
+Item 6.
+
+Gravitational Radiation                         updated 20-May-1992 by SIC
+-----------------------                         original by Scott I. Chase
+
+	Gravitational Radiation is to gravity what light is to
+electromagnetism. It is produced when massive bodies accelerate.  You can
+accelerate any body so as to produce such radiation, but due to the feeble
+strength of gravity, it is entirely undetectable except when produced by
+intense astrophysical sources such as supernovae, collisions of black
+holes, etc.  These are quite far from us, typically, but they are so
+intense that they dwarf all possible laboratory sources of such radiation.
+
+	Gravitational waves have a polarization pattern that causes objects
+to expand in one direction, while contracting in the perpendicular
+direction. That is, they have spin two.  This is because gravity waves are
+fluctuations in the tensorial metric of space-time.
+
+	All oscillating radiation fields can be quantized, and in the case
+of gravity,  the intermediate boson is called the "graviton" in analogy
+with the photon. But quantum gravity is hard, for several reasons:
+        (1) The quantum field theory of gravity is hard, because gauge
+interactions of spin-two fields are not renormalizable.  See Cheng and Li,
+Gauge Theory of Elementary Particle Physics (search for "power counting").
+        (2) There are conceptual problems - what does it mean to quantize
+geometry, or space-time?
+
+	It is possible to quantize weak fluctuations in the gravitational
+field.  This gives rise to the spin-2 graviton.  But full quantum gravity
+has so far escaped formulation.  It is not likely to look much like the
+other quantum field theories.  In addition, there are models of gravity
+which include additional bosons with different spins.  Some are the
+consequence of non-Einsteinian models, such as Brans-Dicke which has a
+spin-0 component. Others are included by hand, to give "fifth force"
+components to gravity. For example, if you want to add a weak repulsive
+short range component, you will need a massive spin-1 boson.  (Even-spin
+bosons always attract.  Odd-spin bosons can attract or repel.)  If
+antigravity is real, then this has implications for the boson spectrum as
+well.
+
+	The spin-two polarization provides the method of detection.  Most
+experiments to date use a "Weber bar."  This is a cylindrical, very
+massive, bar suspended  by fine wire, free to oscillate in response to a
+passing graviton.   A high-sensitivity, low noise, capacitive transducer
+can turn the oscillations of the bar into an electric signal for analysis.
+So far such searches have failed.  But they are expected to be
+insufficiently sensitive for typical  radiation intensity from known types
+of sources.
+
+	A more sensitive technique uses very long baseline laser
+interferometry.  This is the principle of LIGO (Laser Interferometric
+Gravity wave Observatory).  This is a two-armed detector, with
+perpendicular laser beams each travelling several km before meeting to
+produce an interference pattern which fluctuates if a gravity wave distorts
+the geometry of the detector.  To eliminate noise from seismic effects as
+well as human noise sources, two detectors separated by hundreds to
+thousands of miles are necessary.  A coincidence measurement then provides
+evidence of gravitational radiation.  In order to determine the source of
+the signal, a third detector, far from either of the first two, would be
+necessary.  Timing differences in the arrival of the signal to the three
+detectors would allow triangulation of the angular position in the sky of
+the signal.
+
+	The first stage of LIGO, a two detector setup in the U.S., has been
+approved by Congress in 1992.  LIGO researchers have started designing a
+prototype detector, and are hoping to enroll another nation, probably in
+Europe, to fund and be host to the third detector.
+
+	The speed of gravitational radiation (C_gw) depends upon the
+specific model of Gravitation that you use.  There are quite a few
+competing models (all consistent with all experiments to date) including of
+course Einstein's but also Brans-Dicke and several families of others.
+All metric models can support gravity waves.  But not all predict radiation
+travelling at C_gw = C_em.  (C_em is the speed of electromagnetic waves.)
+
+	There is a class of theories with "prior geometry", in which, as I
+understand it, there is an additional metric which does not depend only on
+the local matter density.  In such theories, C_gw != C_em in general.
+
+	However, there is good evidence that C_gw is in fact at least
+almost C_em. We observe high energy cosmic rays in the 10^20-10^21 eV
+region.  Such particles are travelling at up to (1-10^-18)*C_em.  If C_gw <
+C_em, then particles with C_gw < v < C_em will radiate Cerenkov
+gravitational radiation into the vacuum, and decelerate from the back
+reaction.  So evidence of these very fast cosmic rays is good evidence that
+C_gw >= (1-10^-18)*C_em, very close indeed to C_em.  Bottom line: in a
+purely Einsteinian universe, C_gw = C_em. However, a class of models not
+yet ruled out experimentally does make other predictions.
+
+	A definitive test would be produced by LIGO in coincidence with
+optical measurements of some catastrophic event which generates enough
+gravitational radiation to be detected.  Then the "time of flight" of both
+gravitons and photons from the source to the Earth could be measured, and
+strict direct limits could be set on C_gw.
+
+	For more information, see Gravitational Radiation (NATO ASI -
+Les Houches 1982), specifically the introductory essay by Kip Thorne.
+
+********************************************************************************
+Item 7.
+
+IS ENERGY CONSERVED IN GENERAL RELATIVITY?            original by Michael Weiss
+------------------------------------------                    and John Baez
+
+	In special cases, yes.  In general--- it depends on what you mean
+by "energy", and what you mean by "conserved".
+
+	In flat spacetime (the backdrop for special relativity) you can
+phrase energy conservation in two ways: as a differential equation, or as
+an equation involving integrals (gory details below).  The two formulations
+are mathematically equivalent.  But when you try to generalize this to
+curved spacetimes (the arena for general relativity) this equivalence
+breaks down.  The differential form extends with nary a hiccup; not so the
+integral form.
+
+	The differential form says, loosely speaking, that no energy is
+created in any infinitesimal piece of spacetime.  The integral form says
+the same for a finite-sized piece.  (This may remind you of the
+"divergence" and "flux" forms of Gauss's law in electrostatics, or the
+equation of continuity in fluid dynamics.  Hold on to that thought!)
+
+	An infinitesimal piece of spacetime "looks flat", while the effects
+of curvature become evident in a finite piece.  (The same holds for curved
+surfaces in space, of course).  GR relates curvature to gravity.  Now, even
+in Newtonian physics, you must include gravitational potential energy to
+get energy conservation.  And GR introduces the new phenomenon of
+gravitational waves; perhaps these carry energy as well?  Perhaps we need
+to include gravitational energy in some fashion, to arrive at a law of
+energy conservation for finite pieces of spacetime?
+
+	Casting about for a mathematical expression of these ideas,
+physicists came up with something called an energy pseudo-tensor. (In fact,
+several of 'em!)  Now, GR takes pride in treating all coordinate systems
+equally.  Mathematicians invented tensors precisely to meet this sort of
+demand--- if a tensor equation holds in one coordinate system, it holds in
+all.  Pseudo-tensors are not tensors (surprise!), and this alone raises
+eyebrows in some circles. In GR, one must always guard against mistaking
+artifacts of a particular coordinate system for real physical effects.
+(See the FAQ entry on black holes for some examples.)
+
+	These pseudo-tensors have some rather strange properties.  If you
+choose the "wrong" coordinates, they are non-zero even in flat empty
+spacetime.  By another choice of coordinates, they can be made zero at any
+chosen point, even in a spacetime full of gravitational radiation.  For
+these reasons, most physicists who work in general relativity do not
+believe the pseudo-tensors give a good *local* definition of energy
+density, although their integrals are sometimes useful as a measure of
+total energy.
+
+	One other complaint about the pseudo-tensors deserves mention.
+Einstein argued that all energy has mass, and all mass acts
+gravitationally.  Does "gravitational energy" itself act as a source of
+gravity?  Now, the Einstein field equations are
+
+            G_{mu,nu} = 8pi T_{mu,nu}
+
+	Here G_{mu,nu} is the Einstein curvature tensor, which encodes
+information about the curvature of spacetime, and T_{mu,nu} is the
+so-called stress-energy tensor, which we will meet again below.  T_{mu,nu}
+represents the energy due to matter and electromagnetic fields, but
+includes NO contribution from "gravitational energy".  So one can argue
+that "gravitational energy" does NOT act as a source of gravity.  On the
+other hand, the Einstein field equations are non-linear; this implies that
+gravitational waves interact with each other (unlike light waves in
+Maxwell's (linear) theory).  So one can argue that "gravitational energy"
+IS a source of gravity.
+
+	In certain special cases, energy conservation works out with fewer
+caveats. The two main examples are static spacetimes and asymptotically
+flat spacetimes.
+
+	Let's look at four examples before plunging deeper into the math.
+Three examples involve redshift, the other, gravitational radiation.
+
+(1) Very fast objects emitting light.
+
+	According to *special* relativity, you will see light coming from a
+receding object as redshifted.  So if you, and someone moving with the
+source, both measure the light's energy, you'll get different answers.
+Note that this has nothing to do with energy conservation per se.  Even in
+Newtonian physics, kinetic energy (mv^2/2) depends on the choice of
+reference frame.  However, relativity serves up a new twist.  In Newtonian
+physics, energy conservation and momentum conservation are two separate
+laws.  Special relativity welds them into one law, the conservation of the
+*energy-momentum 4-vector*.  To learn the whole scoop on 4-vectors, read a
+text on SR, for example Taylor and Wheeler (see refs.)  For our purposes,
+it's enough to remark that 4-vectors are vectors in spacetime, which most
+people privately picture just like ordinary vectors (unless they have
+*very* active imaginations).
+
+(2) Very massive objects emitting light.
+
+	Light from the Sun appears redshifted to an Earthbound astronomer.
+In quasi-Newtonian terms, we might say that light loses kinetic energy as
+it climbs out of the gravitational well of the Sun, but gains potential
+energy.  General relativity looks at it differently.  In GR, gravity is
+described not by a "potential" but by the "metric" of spacetime.  But "no
+problem", as the saying goes.  The Schwarzschild metric describes spacetime
+around a massive object, if the object is spherically symmetrical,
+uncharged, and "alone in the universe".  The Schwarzschild metric is both
+static and asymptotically flat, and energy conservation holds without major
+pitfalls.  For further details, consult MTW, chapter 25.
+
+(3) Gravitational waves.
+
+	A binary pulsar emits gravitational waves, according to GR, and one
+expects (innocent word!) that these waves will carry away energy.  So its
+orbital period should change.  Einstein derived a formula for the rate of
+change (known as the quadrapole formula), and in the centenary of
+Einstein's birth, Russell Hulse and Joseph Taylor reported that the binary
+pulsar PSR1913+16 bore out Einstein's predictions within a few percent.
+Hulse and Taylor were awarded the Nobel prize in 1993.
+
+	Despite this success, Einstein's formula remained controversial for
+many years, partly because of the subtleties surrounding energy
+conservation in GR.  The need to understand this situation better has kept
+GR theoreticians busy over the last few years.  Einstein's formula now
+seems well-established, both theoretically and observationally.
+
+(4) Expansion of the universe leading to cosmological redshift.
+
+	The Cosmic Background Radiation (CBR) has red-shifted over billions
+of years.  Each photon gets redder and redder.  What happens to this
+energy? Cosmologists model the expanding universe with
+Friedmann-Robertson-Walker (FRW) spacetimes.  (The familiar "expanding
+balloon speckled with galaxies" belongs to this class of models.)  The FRW
+spacetimes are neither static nor asymptotically flat.  Those who harbor no
+qualms about pseudo-tensors will say that radiant energy becomes
+gravitational energy.  Others will say that the energy is simply lost.
+
+	It's time to look at mathematical fine points.  There are many to
+choose from!  The definition of asymptotically flat, for example, calls for
+some care (see Stewart); one worries about "boundary conditions at
+infinity".  (In fact, both spatial infinity and "null infinity" clamor for
+attention--- leading to different kinds of total energy.)  The static case
+has close connections with Noether's theorem (see Goldstein or Arnold).  If
+the catch-phrase "time translation symmetry implies conservation of energy"
+rings a bell (perhaps from quantum mechanics), then you're on the right
+track. (Check out "Killing vector" in the index of MTW, Wald, or Sachs and
+Wu.)
+
+	But two issues call for more discussion.  Why does the equivalence
+between the two forms of energy conservation break down?  How do the
+pseudo-tensors slide around this difficulty?
+
+	We've seen already that we should be talking about the
+energy-momentum 4-vector, not just its time-like component (the energy).
+Let's consider first the case of flat Minkowski spacetime.  Recall that the
+notion of "inertial frame" corresponds to a special kind of coordinate
+system (Minkowskian coordinates).
+
+	Pick an inertial reference frame.  Pick a volume V in this frame,
+and pick two times t=t_0 and t=t_1.  One formulation of energy-momentum
+conservation says that the energy-momentum inside V changes only because of
+energy-momentum flowing across the boundary surface (call it S).  It is
+"conceptually difficult, mathematically easy" to define a quantity T so
+that the captions on the Equation 1 (below) are correct.  (The quoted
+phrase comes from Sachs and Wu.)
+
+  Equation 1:  (valid in flat Minkowski spacetime, when Minkowskian
+                coordinates are used)
+
+                                               t=t_1
+       /                  /                    /
+       |                  |                    |
+       | T dV     -       | T dV       =       | T dt dS
+       /                  /                    /
+      V,t=t_0           V,t=t_1               t=t_0
+
+   p contained       p contained            p flowing out through
+   in volume V    -  in volume V       =    boundary S of V
+   at time t_0       at time t_1            during t=t_0 to t=t_1
+
+   (Note: p = energy-momentum 4-vector)
+
+T is called the stress-energy tensor.  You don't need to know what
+that means! ---just that you can integrate T, as shown, to get
+4-vectors.  Equation 1 may remind you of Gauss's theorem, which deals
+with flux across a boundary.  If you look at Equation 1 in the right
+4-dimensional frame of mind, you'll discover it really says that the
+flux across the boundary of a certain 4-dimensional hypervolume is
+zero.  (The hypervolume is swept out by V during the interval t=t_0
+to t=t_1.)  MTW, chapter 7, explains this with pictures galore.  (See
+also Wheeler.)
+
+	A 4-dimensional analogue to Gauss's theorem shows that Equation 1
+is equivalent to:
+
+  Equation 2:  (valid in flat Minkowski spacetime, with Minkowskian
+                coordinates)
+
+       coord_div(T) = sum_mu (partial T/partial x_mu) = 0
+
+We write "coord_div" for the divergence, for we will meet another
+divergence in a moment.  Proof?  Quite similar to Gauss's theorem: if
+the divergence is zero throughout the hypervolume, then the flux
+across the boundary must also be zero.  On the other hand, the flux
+out of an infinitesimally small hypervolume turns out to be the
+divergence times the measure of the hypervolume.
+
+	Pass now to the general case of any spacetime satisfying Einstein's
+field equation.  It is easy to generalize the differential form of
+energy-momentum conservation, Equation 2:
+
+  Equation 3:  (valid in any GR spacetime)
+
+        covariant_div(T) = sum_mu nabla_mu(T) = 0
+
+                    (where nabla_mu = covariant derivative)
+
+(Side comment: Equation 3 is the correct generalization of Equation 1 for
+SR when non-Minkowskian coordinates are used.)
+
+	GR relies heavily on the covariant derivative, because the
+covariant derivative of a tensor is a tensor, and as we've seen, GR loves
+tensors.  Equation 3 follows from Einstein's field equation (because
+something called Bianchi's identity says that covariant_div(G)=0). But
+Equation 3 is no longer equivalent to Equation 1!
+
+	Why not?  Well, the familiar form of Gauss's theorem (from
+electrostatics) holds for any spacetime, because essentially you are
+summing fluxes over a partition of the volume into infinitesimally small
+pieces.  The sum over the faces of one infinitesimal piece is a divergence.
+ But the total contribution from an interior face is zero, since what flows
+out of one piece flows into its neighbor.  So the integral of the
+divergence over the volume equals the flux through the boundary.  "QED".
+
+	But for the equivalence of Equations 1 and 3, we would need an
+extension of Gauss's theorem.  Now the flux through a face is not a scalar,
+but a vector (the flux of energy-momentum through the face). The argument
+just sketched involves adding these vectors, which are defined at different
+points in spacetime.  Such "remote vector comparison" runs into trouble
+precisely for curved spacetimes.
+
+	The mathematician Levi-Civita invented the standard solution to
+this problem, and dubbed it "parallel transport".  It's easy to picture
+parallel transport: just move the vector along a path, keeping its
+direction "as constant as possible".  (Naturally, some non-trivial
+mathematics lurks behind the phrase in quotation marks.  But even
+pop-science expositions of GR do a good job explaining parallel transport.)
+ The parallel transport of a vector depends on the transportation path; for
+the canonical example, imagine parallel transporting a vector on a sphere.
+But parallel transportation over an "infinitesimal distance" suffers no
+such ambiguity. (It's not hard to see the connection with curvature.)
+
+	To compute a divergence, we need to compare quantities (here
+vectors) on opposite faces.  Using parallel transport for this leads to the
+covariant divergence.  This is well-defined, because we're dealing with an
+infinitesimal hypervolume.  But to add up fluxes all over a finite-sized
+hypervolume (as in the contemplated extension of Gauss's theorem) runs
+smack into the dependence on transportation path. So the flux integral is
+not well-defined, and we have no analogue for Gauss's theorem.
+
+	One way to get round this is to pick one coordinate system, and
+transport vectors so their *components* stay constant.  Partial derivatives
+replace covariant derivatives, and Gauss's theorem is restored.  The energy
+pseudo-tensors take this approach (at least some of them do).  If you can
+mangle Equation 3 (covariant_div(T) = 0) into the form:
+
+       coord_div(Theta) = 0
+
+then you can get an "energy conservation law" in integral form.
+Einstein was the first to do this; Dirac, Landau and Lifshitz, and
+Weinberg all came up with variations on this theme.  We've said
+enough already on the pros and cons of this approach.
+
+	We will not delve into definitions of energy in general relativity
+such as the Hamiltonian (amusingly, the energy of a closed universe always
+works out to zero according to this definition), various kinds of energy
+one hopes to obtain by "deparametrizing" Einstein's equations, or
+"quasilocal energy".  There's quite a bit to say about this sort of thing!
+Indeed, the issue of energy in general relativity has a lot to do with the
+notorious "problem of time" in quantum gravity.... but that's another can
+of worms.
+
+References (vaguely in order of difficulty):
+
+  Clifford Will, "The renaissance of general relativity", in "The New
+    Physics" (ed. Paul Davies) gives a semi-technical discussion of the
+    controversy over gravitational radiation.
+  Wheeler, "A Journey into Gravity and Spacetime".  Wheeler's try at
+    a "pop-science" treatment of GR.  Chapters 6 and 7 are a
+    tour-de-force: Wheeler tries for a non-technical explanation of
+    Cartan's formulation of Einstein's field equation.  It might be
+    easier just to read MTW!)
+  Taylor and Wheeler, "Spacetime Physics".
+  Goldstein, "Classical Mechanics".
+  Arnold, "Mathematical Methods in Classical Mechanics".
+  Misner, Thorne, and Wheeler (MTW), "Gravitation", chapters 7, 20,
+    and 25
+  Wald, "General Relativity", Appendix E.  This has the Hamiltonian
+     formalism and a bit about deparametrizing, and chapter 11
+     discusses energy in asymptotically flat spacetimes.
+  H. A. Buchdahl, "Seventeen Simple Lectures on General Relativity Theory"
+    Lecture 15 derives the energy-loss formula for the binary star, and
+    criticizes the derivation.
+  Sachs and Wu, "General Relativity for Mathematicians", chapter 3
+  John Stewart, "Advanced General Relativity".  Chapter 3 ("Asymptopia")
+    shows just how careful one has to be in asymptotically flat spacetimes
+    to recover energy conservation.  Stewart also discusses the Bondi-Sachs
+    mass, another contender for "energy".
+  Damour, in "300 Years of Gravitation" (ed. Hawking and Israel). Damour
+    heads the "Paris group", which has been active in the theory of
+    gravitational radiation.
+  Penrose and Rindler, "Spinors and Spacetime", vol II, chapter 9.  The
+    Bondi-Sachs mass generalized.
+  J. David Brown and James York Jr., "Quasilocal energy in general
+    relativity", in "Mathematical Aspects of Classical Field Theory".
+
+********************************************************************************
+Item 8.
+
+Olbers' Paradox                                updated: 24-JAN-1993 by SIC
+---------------                                original by Scott I. Chase
+
+	Why isn't the night sky as uniformly bright as the surface of the
+Sun? If the Universe has infinitely many stars, then it should be.  After
+all, if you move the Sun twice as far away from us, we will intercept
+one-fourth as many  photons, but the Sun will subtend one-fourth of the
+angular area.  So the areal intensity remains constant.  With infinitely
+many stars, every angular element of the sky should have a star, and the
+entire heavens should be as bright as the sun.  We should have the
+impression that we live in the center of a hollow black body whose
+temperature is about 6000 degrees Centigrade.   This is Olbers' paradox.
+It can be traced as far back as Kepler in 1610.  It was rediscussed by
+Halley and Cheseaux in the eighteen century, but was not popularized as
+a paradox until Olbers took up the issue in the nineteenth century.
+
+	There are many possible explanations which have been considered.
+Here are a few:
+        (1) There's too much dust to see the distant stars.
+        (2) The Universe has only a finite number of stars.
+        (3) The distribution of stars is not uniform.  So, for example,
+            there could be an infinity of stars, but they hide behind one
+            another so that only a finite angular area is subtended by them.
+        (4) The Universe is expanding, so distant stars are red-shifted into
+            obscurity.
+        (5) The Universe is young.  Distant light hasn't even reached us yet.
+
+	The first explanation is just plain wrong.  In a black body, the
+dust will  heat up too.  It does act like a radiation shield, exponentially
+damping the  distant starlight.  But you can't put enough dust into the
+universe to get rid of enough starlight without also obscuring our own Sun.
+So this idea is bad.
+
+	The premise of the second explanation may technically be correct.
+But the number of stars, finite as it might be, is still large enough to
+light up the entire sky, i.e., the total amount of luminous matter  in the
+Universe is too large to allow this escape.  The number of stars is close
+enough to infinite for the purpose of lighting up the sky.  The third
+explanation might be partially correct.  We just don't know.  If the stars
+are distributed fractally, then there could be large patches of empty space,
+and the sky could appear dark except in small areas.
+
+	But the final two possibilities are are surely each correct and
+partly responsible.  There are numerical arguments that suggest that the
+effect of the finite age of the Universe is the larger effect.  We live
+inside a spherical shell of "Observable Universe" which has radius equal to
+the lifetime of the Universe.  Objects more than about 15 billion years
+old are too far away for their light ever to reach us.
+
+	Historically, after Hubble discovered that the Universe was
+expanding, but before the Big Bang was firmly established by the discovery
+of the cosmic background radiation, Olbers' paradox was presented as proof
+of special relativity.  You needed the red-shift (an SR effect) to get rid
+of the starlight.  This effect certainly contributes.  But the finite age
+of the Universe is the most important effect.
+
+References:  Ap. J. _367_, 399 (1991). The author, Paul Wesson, is said to
+be on a personal crusade to end the confusion surrounding Olbers' paradox.
+
+_Darkness at Night: A Riddle of the Universe_, Edward Harrison, Harvard
+University Press, 1987
+
+********************************************************************************
+Item 9.
+
+What is Dark Matter?                            updated 11-MAY-1993 by SIC
+--------------------                            original by Scott I. Chase
+
+	The story of dark matter is best divided into two parts.  First we
+have the reasons that we know that it exists.  Second is the collection of
+possible explanations as to what it is.
+
+Why the Universe Needs Dark Matter
+----------------------------------
+
+	We believe that that the Universe is critically balanced between
+being open and closed.  We derive this fact from the observation of the
+large scale structure of the Universe.  It requires a certain amount of
+matter to accomplish this result.  Call it M.
+
+	We can estimate the total BARYONIC matter of the universe by
+studying Big Bang nucleosynthesis.  This is done by connecting the observed
+He/H ratio of the Universe today to the amount of baryonic matter present
+during the early hot phase when most of the helium was produced.  Once the
+temperature of the Universe dropped below the neutron-proton mass difference,
+neutrons began decaying into protons.  If the early baryon density was low,
+then it was hard for a proton to find a neutron with which to make helium
+before too many of the neutrons decayed away to account for the amount of
+helium we see today.  So by measuring the He/H ratio today, we can estimate
+the necessary baryon density shortly after the Big Bang, and, consequently,
+the total number of baryons today.  It turns out that you need about 0.05 M
+total baryonic matter to account for the known ratio of light isotopes.  So
+only 1/20 of the total mass of the Universe is baryonic matter.
+
+	Unfortunately, the best estimates of the total mass of everything
+that we can see with our telescopes is roughly 0.01 M.  Where is the other
+99% of the stuff of the Universe?  Dark Matter!
+
+	So there are two conclusions.  We only see 0.01 M out of 0.05 M
+baryonic matter in the Universe.  The rest must be in baryonic dark matter
+halos surrounding galaxies.  And there must be some non-baryonic dark matter
+to account for the remaining 95% of the matter required to give omega, the
+mass of the Universe, in units of critical mass, equal to unity.
+
+	For those who distrust the conventional Big Bang models, and don't
+want to rely upon fancy cosmology to derive the presence of dark matter,
+there are other more direct means.   It has been observed in clusters of
+galaxies that the motion of galaxies within a cluster suggests that they
+are bound by a total gravitational force due to about 5-10 times as much
+matter as can be accounted for from luminous matter in said galaxies.  And
+within an individual galaxy, you can measure the rate of rotation of the
+stars about the galactic center of rotation.  The resultant "rotation
+curve" is simply related to the distribution of matter in the galaxy.  The
+outer stars in galaxies seem to rotate too fast for the amount of matter
+that we see in the galaxy.  Again, we need about 5 times more matter than
+we can see via electromagnetic radiation.  These results can be explained
+by assuming that there is a "dark matter halo" surrounding every galaxy.
+
+What is Dark Matter
+-------------------
+
+	This is the open question.  There are many possibilities, and
+nobody really knows much about this yet.  Here are a few of the many
+published suggestions, which are being currently hunted for by
+experimentalists all over the world.  Remember, you need at least one
+baryonic candidate and one non-baryonic candidate to make everything
+work out, so there there may be more than one correct choice among
+the possibilities given here.
+
+(1) Normal matter which has so far eluded our gaze, such as
+        (a) dark galaxies
+        (b) brown dwarfs
+        (c) planetary material (rock, dust, etc.)
+
+(2) Massive Standard Model neutrinos.  If any of the neutrinos are massive,
+then this could be the missing mass.  On the other hand, if they are
+too heavy, as the purported 17 KeV neutrino would have been, massive
+neutrinos create almost as many problems as they solve in this regard.
+
+(3) Exotica (See the "Particle Zoo" FAQ entry for some details)
+
+	Massive exotica would provide the missing mass.  For our purposes,
+these fall into two classes: those which have been proposed for other
+reasons but happen to solve the dark matter problem, and those which have
+been proposed specifically to provide the missing dark matter.
+
+	Examples of objects in the first class are axions, additional
+neutrinos, supersymmetric particles, and a host of others. Their properties
+are constrained by the theory which predicts them, but by virtue of their
+mass, they solve the dark matter problem if they exist in the correct
+abundance.
+
+	Particles in the second class are generally classed in loose groups.
+Their properties are not specified, but they are merely required to be
+massive and have other properties such that they would so far have eluded
+discovery in the many experiments which have looked for new particles.
+These include WIMPS (Weakly Interacting Massive Particles), CHAMPS, and a
+host of others.
+
+References:  _Dark Matter in the Universe_ (Jerusalem Winter School for
+Theoretical Physics, 1986-7), J.N. Bahcall, T. Piran, & S. Weinberg editors.
+_Dark Matter_ (Proceedings of the XXIIIrd Recontre de Moriond) J. Audouze and
+J. Tran Thanh Van. editors.
+
+********************************************************************************
+Item 10.
+
+Some Frequently Asked Questions About Black Holes   updated 02-FEB-1995 by MM
+-------------------------------------------------   original by Matt McIrvin
+
+Contents:
+
+1. What is a black hole, really?
+2. What happens to you if you fall in?
+3. Won't it take forever for you to fall in?  Won't it take forever
+   for the black hole to even form?
+4. Will you see the universe end?
+5. What about Hawking radiation?  Won't the black hole evaporate
+   before you get there?
+6. How does the gravity get out of the black hole?
+7. Where did you get that information?
+
+1. What is a black hole, really?
+
+	In 1916, when general relativity was new, Karl Schwarzschild worked
+out a useful solution to the Einstein equation describing the evolution of
+spacetime geometry.  This solution, a possible shape of spacetime, would
+describe the effects of gravity *outside* a spherically symmetric,
+uncharged, nonrotating object (and would serve approximately to describe
+even slowly rotating objects like the Earth or Sun).  It worked in much the
+same way that you can treat the Earth as a point mass for purposes of
+Newtonian gravity if all you want to do is describe gravity *outside* the
+Earth's surface.
+
+	What such a solution really looks like is a "metric," which is a
+kind of generalization of the Pythagorean formula that gives the length of
+a line segment in the plane.  The metric is a formula that may be used to
+obtain the "length" of a curve in spacetime.  In the case of a curve
+corresponding to the motion of an object as time passes (a "timelike
+worldline,") the "length" computed by the metric is actually the elapsed
+time experienced by an object with that motion.  The actual formula depends
+on the coordinates chosen in which to express things, but it may be
+transformed into various coordinate systems without affecting anything
+physical, like the spacetime curvature.  Schwarzschild expressed his metric
+in terms of coordinates which, at large distances from the object,
+resembled spherical coordinates with an extra coordinate t for time.
+Another coordinate, called r, functioned as a radial coordinate at large
+distances; out there it just gave the distance to the massive object.
+
+	Now, at small radii, the solution began to act strangely.  There
+was a "singularity" at the center, r=0, where the curvature of spacetime
+was infinite.  Surrounding that was a region where the "radial" direction
+of decreasing r was actually a direction in *time* rather than in space.
+Anything in that region, including light, would be obligated to fall toward
+the singularity, to be crushed as tidal forces diverged. This was separated
+>from the rest of the universe by a place where Schwarzschild's coordinates
+blew up, though nothing was wrong with the curvature of spacetime there.
+(This was called the Schwarzschild radius.  Later, other coordinate systems
+were discovered in which the blow-up didn't happen; it was an artifact of
+the coordinates, a little like the problem of defining the longitude of the
+North Pole.  The physically important thing about the Schwarzschild radius
+was not the coordinate problem, but the fact that within it the direction
+into the hole became a direction in time.)
+
+	Nobody really worried about this at the time, because there was no
+known object that was dense enough for that inner region to actually be
+outside it, so for all known cases, this odd part of the solution would not
+apply.  Arthur Stanley Eddington considered the possibility of a dying star
+collapsing to such a density,  but rejected it as aesthetically unpleasant
+and proposed that some new physics must intervene.  In 1939, Oppenheimer
+and Snyder finally took seriously the possibility that stars a few times
+more massive than the sun might be doomed to collapse to such a state at
+the end of their lives.
+
+	Once the star gets smaller than the place where Schwarzschild's
+coordinates fail (called the Schwarzschild radius for an uncharged,
+nonrotating object, or the event horizon) there's no way it can avoid
+collapsing further.  It has to collapse all the way to a singularity for
+the same reason that you can't keep from moving into the future! Nothing
+else that goes into that region afterward can avoid it either, at least in
+this simple case.  The event horizon is a point of no return.
+
+	In 1971 John Archibald Wheeler named such a thing a black hole,
+since light could not escape from it.  Astronomers have many candidate
+objects they think are probably black holes, on the basis of several kinds
+of evidence (typically they are dark objects whose large mass can be
+deduced from their gravitational effects on other objects, and which
+sometimes emit X-rays, presumably from infalling matter).  But the
+properties of black holes I'll talk about here are entirely theoretical.
+They're based on general relativity, which is a theory that seems supported
+by available evidence.
+
+2. What happens to you if you fall in?
+
+	Suppose that, possessing a proper spacecraft and a self-destructive
+urge, I decide to go black-hole jumping and head for an uncharged,
+nonrotating ("Schwarzschild") black hole.  In this and other kinds of hole,
+I won't, before I fall in, be able to see anything within the event
+horizon.  But there's nothing *locally* special about the event horizon;
+when I get there it won't seem like a particularly unusual place, except
+that I will see strange optical distortions of the sky around me from all
+the bending of light that goes on.  But as soon as I fall through, I'm
+doomed.  No bungee will help me, since bungees can't keep Sunday from
+turning into Monday.  I have to hit the singularity eventually, and before
+I get there there will be enormous tidal forces-- forces due to the
+curvature of spacetime-- which will squash me and my spaceship in some
+directions and stretch them in another until I look like a piece of
+spaghetti.  At the singularity all of present physics is mute as to what
+will happen, but I won't care.  I'll be dead.
+
+	For ordinary black holes of a few solar masses, there are actually
+large tidal forces well outside the event horizon, so I probably wouldn't
+even make it into the hole alive and unstretched.  For a black hole of 8
+solar masses, for instance, the value of r at which tides become fatal is
+about 400 km, and the Schwarzschild radius is just 24 km.  But tidal
+stresses are proportional to M/r^3.  Therefore the fatal r goes as the cube
+root of the mass, whereas the Schwarzschild radius of the black hole is
+proportional to the mass.  So for black holes larger than about 1000 solar
+masses I could probably fall in alive, and for still larger ones I might
+not even notice the tidal forces until I'm through the horizon and doomed.
+
+3. Won't it take forever for you to fall in?  Won't it take forever
+   for the black hole to even form?
+
+	Not in any useful sense.  The time I experience before I hit the
+event horizon, and even until I hit the singularity-- the "proper time"
+calculated by using Schwarzschild's metric on my worldline -- is finite.
+The same goes for the collapsing star; if I somehow stood on the surface of
+the star as it became a black hole, I would experience the star's demise in
+a finite time.
+
+	On my worldline as I fall into the black hole, it turns out that
+the Schwarzschild coordinate called t goes to infinity when I go through
+the event horizon.  That doesn't correspond to anyone's proper time,
+though; it's just a coordinate called t.  In fact, inside the event
+horizon, t is actually a *spatial* direction, and the future corresponds
+instead to decreasing r.  It's only outside the black hole that t even
+points in a direction of increasing time.  In any case, this doesn't
+indicate that I take forever to fall in, since the proper time involved is
+actually finite.
+
+	At large distances t *does* approach the proper time of someone who
+is at rest with respect to the black hole.  But there isn't any
+non-arbitrary sense in which you can call t at smaller r values "the proper
+time of a distant observer," since in general relativity there is no
+coordinate-independent way to say that two distant events are happening "at
+the same time."  The proper time of any observer is only defined locally.
+
+	A more physical sense in which it might be said that things take
+forever to fall in is provided by looking at the paths of emerging light
+rays.  The event horizon is what, in relativity parlance, is called a
+"lightlike surface"; light rays can remain there.  For an ideal
+Schwarzschild hole (which I am considering in this paragraph) the horizon
+lasts forever, so the light can stay there without escaping.  (If you
+wonder how this is reconciled with the fact that light has to travel at the
+constant speed c-- well, the horizon *is* traveling at c! Relative speeds
+in GR are also only unambiguously defined locally, and if you're at the
+event horizon you are necessarily falling in; it comes at you at the speed
+of light.)  Light beams aimed directly outward from just outside the
+horizon don't escape to large distances until late values of t.  For
+someone at a large distance from the black hole and approximately at rest
+with respect to it, the coordinate t does correspond well to proper time.
+
+	So if you, watching from a safe distance, attempt to witness my
+fall into the hole, you'll see me fall more and more slowly as the light
+delay increases.  You'll never see me actually *get to* the event horizon.
+My watch, to you, will tick more and more slowly, but will never reach the
+time that I see as I fall into the black hole.  Notice that this is really
+an optical effect caused by the paths of the light rays.
+
+	This is also true for the dying star itself.  If you attempt to
+witness the black hole's formation, you'll see the star collapse more and
+more slowly, never precisely reaching the Schwarzschild radius.
+
+	Now, this led early on to an image of a black hole as a strange
+sort of suspended-animation object, a "frozen star" with immobilized
+falling debris and gedankenexperiment astronauts hanging above it in
+eternally slowing precipitation.  This is, however, not what you'd see. The
+reason is that as things get closer to the event horizon, they also get
+*dimmer*.  Light from them is redshifted and dimmed, and if one considers
+that light is actually made up of discrete photons, the time of escape of
+*the last photon* is actually finite, and not very large.  So things would
+wink out as they got close, including the dying star, and the name "black
+hole" is justified.
+
+	As an example, take the eight-solar-mass black hole I mentioned
+before.  If you start timing from the moment the you see the object half a
+Schwarzschild radius away from the event horizon, the light will dim
+exponentially from that point on with a characteristic time of about 0.2
+milliseconds, and the time of the last photon is about a hundredth of a
+second later.  The times scale proportionally to the mass of the black
+hole.  If I jump into a black hole, I don't remain visible for long.
+
+	Also, if I jump in, I won't hit the surface of the "frozen star."
+It goes through the event horizon at another point in spacetime from
+where/when I do.
+
+	(Some have pointed out that I really go through the event horizon a
+little earlier than a naive calculation would imply.  The reason is that my
+addition to the black hole increases its mass, and therefore moves the
+event horizon out around me at finite Schwarzschild t coordinate.  This
+really doesn't change the situation with regard to whether an external
+observer sees me go through, since the event horizon is still lightlike;
+light emitted at the event horizon or within it will never escape to large
+distances, and light emitted just outside it will take a long time to get
+to an observer, timed, say, from when the observer saw me pass the point
+half a Schwarzschild radius outside the hole.)
+
+	All this is not to imply that the black hole can't also be used for
+temporal tricks much like the "twin paradox" mentioned elsewhere in this
+FAQ.  Suppose that I don't fall into the black hole-- instead, I stop and
+wait at a constant r value just outside the event horizon, burning
+tremendous amounts of rocket fuel and somehow withstanding the huge
+gravitational force that would result.  If I then return home, I'll have
+aged less than you.  In this case, general relativity can say something
+about the difference in proper time experienced by the two of us, because
+our ages can be compared *locally* at the start and end of the journey.
+
+4. Will you see the universe end?
+
+	If an external observer sees me slow down asymptotically as I fall,
+it might seem reasonable that I'd see the universe speed up
+asymptotically-- that I'd see the universe end in a spectacular flash as I
+went through the horizon.  This isn't the case, though.  What an external
+observer sees depends on what light does after I emit it.  What I see,
+however, depends on what light does before it gets to me.  And there's no
+way that light from future events far away can get to me.  Faraway events
+in the arbitrarily distant future never end up on my "past light-cone," the
+surface made of light rays that get to me at a given time.
+
+	That, at least, is the story for an uncharged, nonrotating black
+hole.  For charged or rotating holes, the story is different.  Such holes
+can contain, in the idealized solutions, "timelike wormholes" which serve
+as gateways to otherwise disconnected regions-- effectively, different
+universes.  Instead of hitting the singularity, I can go through the
+wormhole.  But at the entrance to the wormhole, which acts as a kind of
+inner event horizon, an infinite speed-up effect actually does occur.  If I
+fall into the wormhole I see the entire history of the universe outside
+play itself out to the end.  Even worse, as the picture speeds up the light
+gets blueshifted and more energetic, so that as I pass into the wormhole an
+"infinite blueshift" happens which fries me with hard radiation.  There is
+apparently good reason to believe that the infinite blueshift would imperil
+the wormhole itself, replacing it with a singularity no less pernicious
+than the one I've managed to miss.  In any case it would render wormhole
+travel an undertaking of questionable practicality.
+
+5. What about Hawking radiation?  Won't the black hole evaporate
+   before you get there?
+
+	(First, a caveat: Not a lot is really understood about evaporating
+black holes.  The following is largely deduced from information in Wald's
+GR text, but what really happens-- especially when the black hole gets very
+small-- is unclear.  So take the following with a grain of salt.)
+
+Short answer:  No, it won't.  This demands some elaboration.
+
+	From thermodynamic arguments Stephen Hawking realized that a black
+hole should have a nonzero temperature, and ought therefore to emit
+blackbody radiation.  He eventually figured out a quantum- mechanical
+mechanism for this.  Suffice it to say that black holes should very, very
+slowly lose mass through radiation, a loss which accelerates as the hole
+gets smaller and eventually evaporates completely in a burst of radiation.
+This happens in a finite time according to an outside observer.
+
+	But I just said that an outside observer would *never* observe an
+object actually entering the horizon!  If I jump in, will you see the black
+hole evaporate out from under me, leaving me intact but marooned in the
+very distant future from gravitational time dilation?
+
+	You won't, and the reason is that the discussion above only applies
+to a black hole that is not shrinking to nil from evaporation. Remember
+that the apparent slowing of my fall is due to the paths of outgoing light
+rays near the event horizon.  If the black hole *does* evaporate, the delay
+in escaping light caused by proximity to the event horizon can only last as
+long as the event horizon does!  Consider your external view of me as I
+fall in.
+
+	If the black hole is eternal, events happening to me (by my watch)
+closer and closer to the time I fall through happen divergingly later
+according to you (supposing that your vision is somehow not limited by the
+discreteness of photons, or the redshift).
+
+	If the black hole is mortal, you'll instead see those events happen
+closer and closer to the time the black hole evaporates.  Extrapolating,
+you would calculate my time of passage through the event horizon as the
+exact moment the hole disappears!  (Of course, even if you could see me,
+the image would be drowned out by all the radiation from the evaporating
+hole.)  I won't experience that cataclysm myself, though; I'll be through
+the horizon, leaving only my light behind. As far as I'm concerned, my
+grisly fate is unaffected by the evaporation.
+
+	All of this assumes you can see me at all, of course.  In practice
+the time of the last photon would have long been past.  Besides, there's
+the brilliant background of Hawking radiation to see through as the hole
+shrinks to nothing.
+
+	(Due to considerations I won't go into here, some physicists think
+that the black hole won't disappear completely, that a remnant hole will be
+left behind.  Current physics can't really decide the question, any more
+than it can decide what really happens at the singularity. If someone ever
+figures out quantum gravity, maybe that will provide an answer.)
+
+6. How does the gravity get out of the black hole?
+
+Purely in terms of general relativity, there is no problem here.  The
+gravity doesn't have to get out of the black hole.  General relativity
+is a local theory, which means that the field at a certain point in
+spacetime is determined entirely by things going on at places that can
+communicate with it at speeds less than or equal to c.  If a star
+collapses into a black hole, the gravitational field outside the
+black hole may be calculated entirely from the properties of the star
+and its external gravitational field *before* it becomes a black hole.
+Just as the light registering late stages in my fall takes longer and
+longer to get out to you at a large distance, the gravitational
+consequences of events late in the star's collapse take longer and
+longer to ripple out to the world at large.  In this sense the black
+hole *is* a kind of "frozen star": the gravitational field is a fossil
+field.  The same is true of the electromagnetic field that a black
+hole may possess.
+
+Often this question is phrased in terms of gravitons, the hypothetical
+quanta of spacetime distortion.  If things like gravity correspond to the
+exchange of "particles" like gravitons, how can they get out of the
+event horizon to do their job?
+
+Gravitons don't exist in general relativity, because GR is not a
+quantum theory.  They might be part of a theory of quantum gravity
+when it is completely developed, but even then it might not be best to
+describe gravitational attraction as produced by virtual gravitons.
+See the FAQ on virtual particles for a discussion of this.
+
+Nevertheless, the question in this form is still worth asking, because
+black holes *can* have static electric fields, and we know that these
+may be described in terms of virtual photons.  So how do the virtual
+photons get out of the event horizon?  Well, for one thing, they can
+come from the charged matter prior to collapse, just like classical
+effects.  In addition, however, virtual particles aren't confined to
+the interiors of light cones: they can go faster than light!
+Consequently the event horizon, which is really just a surface that
+moves at the speed of light, presents no barrier.
+
+I couldn't use these virtual photons after falling into the hole to
+communicate with you outside the hole; nor could I escape from the
+hole by somehow turning myself into virtual particles.  The reason is
+that virtual particles don't carry any *information* outside the light
+cone.  See the FAQ on virtual particles for details.
+
+7. Where did you get that information?
+
+	The numbers concerning fatal radii, dimming, and the time of the
+last photon came from Misner, Thorne, and Wheeler's _Gravitation_ (San
+Francisco: W. H. Freeman & Co., 1973), pp. 860-862 and 872-873. Chapters 32
+and 33 (IMHO, the best part of the book) contain nice descriptions of some
+of the phenomena I've described.
+
+	Information about evaporation and wormholes came from Robert Wald's
+_General Relativity_ (Chicago: University of Chicago Press, 1984). The
+famous conformal diagram of an evaporating hole on page 413 has resolved
+several arguments on sci.physics (though its veracity is in question).
+
+	Steven Weinberg's _Gravitation and Cosmology_ (New York: John Wiley
+and Sons, 1972) provided me with the historical dates.  It discusses some
+properties of the Schwarzschild solution in chapter 8 and describes
+gravitational collapse in chapter 11.
+
+********************************************************************************
+Item 11.
+
+The Solar Neutrino Problem                          original by Bruce Scott
+--------------------------			    updated 5-JUN-1994 by SIC
+
+The Short Story:
+
+	Fusion reactions in the core of the Sun produce a huge flux of
+neutrinos. These neutrinos can be detected on Earth using large underground
+detectors, and the flux measured to see if it agrees with theoretical
+calculations based upon our understanding of the workings of the Sun and
+the details of the Standard Model (SM) of particle physics. The measured
+flux is roughly one-half of the flux expected from theory. The cause of the
+deficit is a mystery.  Is our particle physics wrong? Is our model of the
+Solar interior wrong?  Are the experiments in error?  This is the "Solar
+Neutrino Problem."
+
+	There are precious few experiments which seem to stand in
+disagreement with the SM, which can be studied in the hope of making
+breakthroughs in particle physics.  The study of this problem may yield
+important new insights which may help us go beyond the Standard Model.
+There are many experiments in progress, so stay tuned.
+
+The Long Story:
+
+	A middle-aged main-sequence star like the Sun is in a
+slowly-evolving equilibrium, in which pressure exerted by the hot gas
+balances the self-gravity of the gas mass. Slow evolution results from the
+star radiating energy away in the form of light, fusion reactions occurring
+in the core heating the gas and replacing the energy lost by radiation, and
+slow structural adjustment to compensate the changes in entropy and
+composition.
+
+	We cannot directly observe the center, because the mean-free path
+of a photon against absorption or scattering is very short, so short that
+the radiation-diffusion time scale is of order 10 million years. But the
+main proton-proton reaction (PP1) in the Sun involves emission of a
+neutrino:
+
+        p + p --> D + positron + neutrino(0.26 MeV),
+
+which is directly observable since the cross-section for interaction with
+ordinary matter is so small (the 0.26 MeV is the average energy carried
+away by the neutrino).  Essentially all the neutrinos make it to the Earth.
+Of course, this property also makes it difficult to detect the neutrinos.
+The first experiments by Davis and collaborators, involving large tanks of
+chloride fluid placed underground, could only detect higher-energy
+neutrinos from small side-chains in the solar fusion:
+
+
+        PP2:    Be(7) + electron --> Li(7) + neutrino(0.80 MeV),
+        PP3:    B(8) --> Be(8) + positron + neutrino(7.2 MeV).
+
+Recently, however, the GALLEX experiment, using a gallium-solution detector
+system, has observed the PP1 neutrinos to provide the first unambiguous
+confirmation of proton-proton fusion in the Sun.
+
+	There is a "neutrino problem", however, and that is the fact that
+every experiment has measured a shortfall of neutrinos. About one- to
+two-thirds of the neutrinos expected are observed, depending on
+experimental error. In the case of GALLEX, the data read 80 units where 120
+are expected, and the discrepancy is about two standard deviations. To
+explain the shortfall, one of two things must be the case: (1) either the
+temperature at the center is slightly less than we think it is, or (2)
+something happens to the neutrinos during their flight over the
+150-million-km journey to Earth. A third possibility is that the Sun
+undergoes relaxation oscillations in central temperature on a time scale
+shorter than 10 Myr, but since no-one has a credible mechanism this
+alternative is not seriously entertained.
+
+(1) The fusion reaction rate is a very strong function of the temperature,
+because particles much faster than the thermal average account for most of
+it. Reducing the temperature of the standard solar model by 6 per cent
+would entirely explain GALLEX; indeed, Bahcall has recently published an
+article arguing that there may be no solar neutrino problem at all.
+However, the community of solar seismologists, who observe small
+oscillations in spectral line strengths due to pressure waves traversing
+through the Sun, argue that such a change is not permitted by their
+results.
+
+(2) A mechanism (called MSW, after its authors) has been proposed, by which
+the neutrinos self-interact to periodically change flavor between electron,
+muon, and tau neutrino types. Here, we would only expect to observe a
+fraction of the total, since only electron neutrinos are detected in the
+experiments. (The fraction is not exactly 1/3 due to the details of the
+theory.) Efforts continue to verify this theory in the laboratory. The MSW
+phenomenon, also called "neutrino oscillation", requires that the three
+neutrinos have finite and differing mass, which is also still unverified.
+
+	To use explanation (1) with the Sun in thermal equilibrium
+generally requires stretching several independent observations to the
+limits of their errors, and in particular the earlier chloride results must
+be explained away as unreliable (there was significant scatter in the
+earliest ones, casting doubt in some minds on the reliability of the
+others).  Further data over longer times will yield better statistics so
+that we will better know to what extent there is a problem. Explanation (2)
+depends of course on a proposal whose veracity has not been determined.
+Until the MSW phenomenon is observed or ruled out in the laboratory, the
+matter will remain open.
+
+	In summary, fusion reactions in the Sun can only be observed
+through their neutrino emission. Fewer neutrinos are observed than
+expected, by two standard deviations in the best result to date. This can
+be explained either by a slightly cooler center than expected or by a
+particle-physics mechanism by which neutrinos oscillate between flavors.
+The problem is not as severe as the earliest experiments indicated, and
+further data with better statistics are needed to settle the matter.
+
+References:
+
+[0] The main-sequence Sun: D. D. Clayton, Principles of Stellar Evolution
+    and Nucleosynthesis, McGraw-Hill, 1968. Still the best text.
+[0] Solar neutrino reviews: J. N. Bahcall and M. Pinsonneault, Reviews of
+    Modern Physics, vol 64, p 885, 1992; S. Turck-Chieze and I. Lopes,
+    Astrophysical Journal, vol 408, p 347, 1993. See also J. N. Bahcall,
+    Neutrino Astrophysics (Cambridge, 1989).
+[1] Experiments by R. Davis et al: See October 1990 Physics Today, p 17.
+[2] The GALLEX team: two articles in Physics Letters B, vol 285, p 376
+    and p 390. See August 1992 Physics Today, p 17. Note that 80 "units"
+    correspond to the production of 9 atoms of Ge(71) in 30 tons of
+    solution containing 12 tons Ga(71), after three weeks of run time!
+[3] Bahcall arguing for new physics: J. N. Bahcall and H. A. Bethe,
+    Physical Review D, vol 47, p 1298, 1993; against new physics: J. N.
+    Bahcall et al, "Has a Standard Model Solution to the Solar Neutrino
+    Problem Been Found?", preprint IASSNS-94/13 received at the National
+    Radio Astronomy Observatory, 1994.
+[4] The MSW mechanism, after Mikheyev, Smirnov, and Wolfenstein: See the
+    second GALLEX paper.
+[5] Solar seismology and standard solar models: J. Christensen-Dalsgaard
+    and W. Dappen, Astronomy and Astrophysics Reviews, vol 4, p 267, 1992;
+    K. G. Librecht and M. F. Woodard, Science, vol 253, p 152, 1992. See
+    also the second GALLEX paper.
+
+********************************************************************************
+Item 12.
+
+The Expanding Universe                          original by Michael Weiss
+----------------------				updated 5-DEC-1994 by SIC
+
+Here are the answers to some commonly asked questions about exactly
+what it means to say that the Universe is expanding.
+
+(1) IF THE UNIVERSE IS EXPANDING, DOES THAT MEAN ATOMS ARE GETTING BIGGER?
+IS THE SOLAR SYSTEM EXPANDING?
+
+Mrs. Felix:  Why don't you do your homework?
+Allen Felix: The Universe is expanding.  Everything will fall
+             apart, and we'll all die.  What's the point?
+Mrs. Felix:  We live in Brooklyn.  Brooklyn is not expanding!
+             Go do your homework.
+
+                        -from "Annie Hall" by Woody Allen.
+
+Mrs. Felix is right.  Neither Brooklyn, nor its atoms, nor the solar
+system, nor even the galaxy, is expanding.  The Universe expands
+(according to standard cosmological models) only when averaged over a very
+large scale.
+
+	The phrase "expansion of the Universe" refers both to experimental
+observation and to theoretical cosmological models.  Lets look at them one
+at a time, starting with the observations.
+
+Observation
+-----------
+
+	The observation is Hubble's redshift law.
+
+	In 1929, Hubble reported that the light from distant galaxies is
+redshifted.  If you interpret this redshift as a Doppler shift, then the
+galaxies are receding according to the law:
+
+    (velocity of recession) = H * (distance from Earth)
+
+H is called Hubble's constant; Hubble's original value for H was 550
+kilometers per second per megaparsec (km/s/Mpc).  Current estimates range
+>from 40 to 100 km/s/Mpc.  (Measuring redshift is easy; estimating distance
+is hard.  Roughly speaking, astronomers fall into two "camps", some
+favoring an H around 80 km/s/Mpc, others an H around 40-55).
+
+	Hubble's redshift formula does *not* imply that the Earth is in
+particularly bad oder in the universe.  The familiar model of the universe
+as an expanding balloon speckled with galaxies shows that Hubble's alter
+ego on any other galaxy would make the same observation.
+
+	But astronomical objects in our neck of the woods--- our solar
+system, our galaxy, nearby galaxies--- show no such Hubble redshifts.
+Nearby stars and galaxies *do* show motion with respect to the Earth
+(known as "peculiar velocities"), but this does not look like the
+"Hubble flow" that is seen for distant galaxies.  For example, the
+Andromeda galaxy shows blueshift instead of redshift.  So the verdict
+of observation is: our galaxy is not expanding.
+
+	By the way, Hubble's constant, is not, in spite of its name,
+constant in time. In fact, it is decreasing.  Imagine a galaxy D
+light-years from the Earth, receding at a velocity V = H*D.  D is
+always increasing because of the recession.  But does V increase?  No.
+In fact, V is decreasing.  (If you are fond of Newtonian analogies,
+you could say that "gravitational attraction" is causing this
+deceleration.  But be warned: some general relativists would object
+strenuously to this way of speaking.)  So H is going down over time.
+But it *is* constant over space, i.e., it is the same number for all
+distant objects as we observe them today.
+
+Theory
+------
+
+The theoretical models are, typically, Friedmann-Robertson-Walker (FRW)
+spacetimes.
+
+	Cosmologists model the universe using "spacetimes", that is to say,
+solutions to the field equations of Einstein's theory of general
+relativity.  The Russian mathematician Alexander Friedmann discovered an
+important class of global solutions in 1923.  The familiar image of the
+universe as an expanding balloon speckled with galaxies is a "movie
+version" of one of Friedmann's solutions.  Robertson and Walker later
+extended Friedmann's work, so you'll find references to
+"Friedmann-Robertson-Walker" (FRW) spacetimes in the literature.
+
+	FRW spacetimes come in a great variety of styles--- expanding,
+contracting, flat, curved, open, closed, ....  The "expanding balloon"
+picture corresponds to just a few of these.
+
+	A concept called the metric plays a starring role in general
+relativity. The metric encodes a lot of information; the part we care about
+(for this FAQ entry) is distances between objects.  In an FRW expanding
+universe, the distance between any two "points on the balloon" does
+increase over time. However, the FRW model is NOT meant to describe OUR
+spacetime accurately on a small scale--- where "small" is interpreted
+pretty liberally!
+
+	You can picture this in a couple of ways.  You may want to think of
+the "continuum approximation" in fluid dynamics--- by averaging the motion
+of individual molecules over a large enough scale, you obtain a continuous
+flow.  (Droplets can condense even as a gas expands.)  Similarly, it is
+generally believed that if we average the actual metric of the universe
+over a large enough scale, we'll get an FRW spacetime.
+
+	Or you may want to alter your picture of the "expanding balloon".
+The galaxies are not just painted on, but form part of the substance of the
+balloon (poetically speaking), and locally affect its "elasticity".
+
+	The FRW spacetimes ignore these small-scale variations.  Think of a
+uniformly elastic balloon, with the galaxies modelled as mere points.
+"Points on the balloon" correspond to a mathematical concept known as a
+*comoving geodesic*.  Any two comoving geodesics drift apart over time, in
+an expanding FRW spacetime.
+
+	At the scale of the Solar System, we get a pretty good
+approximation to the spacetime metric by using another solution to
+Einstein's equations, known as the Schwarzschild metric.  Using evocative
+but dubious terminology, we can say this models the gravitational field of
+the Sun.  (Dubious because what does "gravitational field" mean in GR, if
+it's not just a synonym for "metric"?)  The geodesics in the Schwarzschild
+metric do NOT display the "drifting apart" behavior typical of the FRW
+comoving geodesics--- or in more familiar terms, the Earth is not drifting
+away from the Sun.
+
+	The "true metric" of the universe is, of course, fantastically
+complicated; you can't expect idealized simple solutions (like the FRW and
+Schwarzschild metrics) to capture all the complexity.  Our knowledge of the
+large-scale structure of the universe is fragmentary and imprecise.
+
+	In old-fashioned, Newtonian terms, one says that the Solar System
+is "gravitationally bound" (ditto the galaxy, the local group).  So the
+Solar System is not expanding.  The case for Brooklyn is even clearer: it
+is bound by atomic forces, and its atoms do not typically follow geodesics.
+So Brooklyn is not expanding.  Now go do your homework.
+
+References: (My thanks to Jarle Brinchmann, who helped with this list.)
+
+Misner, Thorne, and Wheeler, "Gravitation", chapters 27 and 29.  Page 719
+discusses this very question; Box 29.4 outlines the "cosmic distance
+ladder" and the difficulty of measuring cosmic distances; Box 29.5 presents
+Hubble's work.  MTW refer to Noerdlinger and Petrosian, Ap.J., vol. 168
+(1971), pp. 1--9, for an exact mathematical treatment of gravitationally
+bound systems in an expanding universe.
+
+M.V.Berry, "Principles of Cosmology and Gravitation".  Chapter 2 discusses
+the cosmic distance ladder; chapters 6 and 7 explain FRW spacetimes.
+
+Steven Weinberg, "The First Three Minutes", chapter 2.  A non-technical
+treatment.
+
+Hubble's original paper: "A Relation Between Distance And Radial
+Velocity Among Extra-Galactic Nebulae", Proc. Natl. Acad. Sci., Vol. 15,
+No. 3, pp. 168-173, March 1929.
+
+Sidney van den Bergh, "The cosmic distance scale", Astronomy & Astrophysics
+Review 1989 (1) 111-139.
+
+M. Rowan-Robinson, "The Cosmological Distance Ladder", Freeman.
+
+A new method has been devised recently to estimate Hubble's constant, using
+gravitational lensing.  The method is described in:
+
+\O Gr\on and Sjur Refsdal, "Gravitational Lenses and the age of the
+universe", Eur. J. Phys. 13, 1992 178-183.
+
+S. Refsdal & J. Surdej, Rep. Prog. Phys. 56, 1994 (117-185)
+
+and H is estimated with this method in:
+
+H.Dahle, S.J. Maddox, P.B. Lilje, to appear in ApJ Letters.
+
+Two books may be consulted for what is known (or believed) about the
+large-scale structure of the universe:
+
+P.J.E.Peebles, "An Introduction to Physical Cosmology".
+T. Padmanabhan, "Structure Formation in the Universe".
+
+======================================================================
+
+(2) WHAT CAUSES THE HUBBLE REDSHIFT?  ARE THE LIGHT-WAVES "STRETCHED" AS
+THE UNIVERSE EXPANDS, OR IS THE LIGHT DOPPLER-SHIFTED BECAUSE DISTANT
+GALAXIES ARE MOVING AWAY FROM US?
+
+	In a word: yes.  In two sentences: the Doppler-shift explanation is
+a linear approximation to the "stretched-light" explanation.  Switching
+>from one viewpoint to the other amounts to a change of coordinate systems
+in (curved) spacetime.
+
+	A detailed explanation requires looking at Friedmann-Robertson-Walker
+(FRW) models of spacetime.  The famous "expanding balloon speckled with
+galaxies" provides a visual analogy for one of these; like any analogy, it
+will mislead you if taken too literally, but handled with caution it can
+furnish some insight.
+
+	Draw a latitude/longitude grid on the balloon.  These define
+*co-moving* coordinates.  Imagine a couple of speckles ("galaxies")
+imbedded in the rubber surface.  The co-moving coordinates of the speckles
+don't change as the balloon expands, but the distance between the speckles
+steadily increases.  In co-moving coordinates, we say that the speckles
+don't move, but "space itself" stretches between them.
+
+	A bug starts crawling from one speckle to the other.  A second
+after the first bug leaves, his brother follows him.  (Think of the bugs as
+two light-pulses, or successive wave-crests in a beam of light.)  Clearly
+the separation between the bugs will increase during their journey.  In
+co-moving coordinates, light is "stretched" during its journey.
+
+	Now we switch to a different coordinate system, this one valid only
+in a neighborhood (but one large enough to cover both speckles).  Imagine a
+clear, flexible, non-stretching patch, attached to the balloon at one
+speckle.  The patch clings to the surface of the balloon, which slides
+beneath it as the balloon inflates.  (The bugs crawl along *under* the
+patch.)  We draw a coordinate grid on the patch.  In the patch coordinates,
+the second speckle recedes from the first speckle.  And so in patch
+coordinates, we can regard the redshift as a Doppler shift.
+
+	Is this visually appealing?  I think so.  However, this explanation
+glosses over one crucial point: the time coordinate.  FRW spacetimes come
+fully-equipped with a specially distinguished time coordinate (called the
+co-moving or cosmological time).  For example, a co-moving observer could
+set her clock by the average density of surrounding speckles, or by the
+temperature of the Cosmic Background Radiation.  (From a purely
+mathematical standpoint, the co-moving time coordinate is singled out by a
+certain symmetry property.)
+
+	We have many choices of time-coordinate to go with the
+space-coordinates drawn on our patch.  Let's use cosmological time.  Notice
+that this is *not* the choice usually made in Special Relativity: though
+the two speckles separate rapidly, their cosmological clocks remain
+synchronized. Bugs embarking on their journey from the "moving" speckle
+appear to crawl "upstream" against flowing space as they head towards the
+"home" speckle. The current diminishes as they approach home.  (In other
+words, bug-speed is anisotropic in these coordinates.)  These differences
+>from the usual SR picture are symptoms of a deeper fact: besides the
+obvious "spatial" curvature of the balloon's surface, FRW spacetimes have
+"temporal" curvature as well.  Indeed, not all FRW spacetimes exhibit
+spatial curvature, but (with one exception) all have temporal curvature.
+
+	You can work out the magnitude of the redshift using patch
+coordinates.  I leave this as an exercise, with a couple of hints. (1)
+Since bug-speed is anisotropic far from the home speckle, consider also a
+patch attached to the "moving" speckle.  Compute the initial distance
+between the bugs (the "wavelength") in both patch coordinate systems, using
+the standard *non-relativistic* Doppler formula for a stationary source,
+moving receiver.  (2) Now think about how the bug-distance changes as the
+bugs journey to the home speckle (this time sticking with home patch
+coordinates).  The bug-distance does *not* propagate unchanged.  Consider
+instead the analog of the period of a lightwave: the time between
+bug-crossings of a grid line on the patch.  This *does* propagate almost
+unchanged, *provided* the rate of balloon expansion stays pretty much the
+same throughout the bugs' perilous trek.  The final result: the magnitude
+of the redshift, computed using Doppler's formula, agrees to first-order
+with magnitude computed using the "stretched-light" explanation.  (To the
+cognoscenti: the assumptions are that Hx<<1 and (dH/dt)x<<1, where
+H(t)=dR(t)/dt, R(t) is the scale factor, t is cosmological time, and x is
+the average distance between the "speckles" (co-moving geodesics) during
+the course of the journey.)
+
+	(This long-winded "proof of equivalence" between the Doppler and
+"stretched-light" explanations substitutes a paragraph of imagery for a
+half-page of calculus.)
+
+	Let me close by emphasizing the word "approximation" from the first
+paragraph of this entry.  The Doppler explanation fails for very large
+redshifts, for then we must consider how Hubble's "constant" changes over
+the course of the journey.
+
+References:
+
+Misner, Thorne, and Wheeler, "Gravitation", chapter 29.
+
+M.V.Berry, "Principles of Cosmology and Gravitation", chapter 6.
+
+Steven Weinberg, "The First Three Minutes", chapter 2, especially pp. 13
+and 30.
+
+********************************************************************************
+END OF PART 2/4

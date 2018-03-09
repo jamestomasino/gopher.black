@@ -1,0 +1,12 @@
+----------------------------------------
+Phlog Streaming
+September 24th, 2017
+----------------------------------------
+
+Something I read on the bboard gave me the idea to put a stream in
+place for my phlog. It's not quite RSS formatted, though I may go
+ahead and build one of those as well for folks. I'm just combing
+through my phlog directory and using cat to drop all the contents
+into a single cgi output. If you're the type that wants a
+continuous scroll with all my posts, there you are. Newest ones are
+at the top.

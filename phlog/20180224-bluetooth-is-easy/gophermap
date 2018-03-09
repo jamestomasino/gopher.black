@@ -1,0 +1,48 @@
+ ----------------------------------------
+ Bluetooth is easy
+ February 24th, 2018
+ ----------------------------------------
+ 
+ I ran across a little demo project the other day showing how a $7
+ component could connect an Arduino to any bluetooth device. It was
+ a bit of a revelation for me. I had assumed that there was a lot
+ going on in Bluetooth land, and that it wasn't worth the effort
+ diving into all the protocol nonsense. It turns out it's
+ a glorified serial port.
+ 
+ Enter the HC-05 and it's brother the HC-06. These little 4-pin
+ components handle all the parts of Bluetooth you don't care about.
+ Here's what you get: 5V input, Ground, Tx, Rx. Sound familiar?
+ 
+ I plopped a Lucky Shield onto my Arduino so I had some sensors
+ going, ran the example Lucky Shield Test, which outputs a bunch of
+ data from those sensors to the Serial debug panel, and plugged in
+ a HC-06. I paired the HC-06 with my phone by entering the default
+ 1234 code. Then I opened up a serial debugger on my phone. 
+ 
+ I was pleasently greeted by a bunch of information about the
+ light, humidity, air pressure, and so on. No fuss, no muss. I love
+ it when things just work.
+ 
+ The HC-05 and HC-06 are very similar in features and price. The
+ HC-05 can do more, act as a master bluetooth device instead of
+ a slave, and send some funky control stuff that I don't care
+ about. I got the HC-06 because I found one on Amazon Prime and
+ I was impatient. I saw these in bulk on Alibaba for under $2.
+ 
+ I'm going to rig up a little voltage divider circuit with
+ a handful of push buttons, flash it onto an ATTiny85, and try to
+ design and print a PCB for the unit. It'll connect with the HC-06,
+ and eventually I'll 3D print a case for it. I want a little
+ component based, battery powered, bluetooth button controller that
+ I can use for random acts of silliness.
+ 
+ In other, less fun, news, my latest raspberry pi zero w is
+ refusing to play nice with the wifi. I set it up identically to
+ the last one which worked flawlessly, but nada. I'm going to bring
+ it in to work and swap the SD card I have in the working one to
+ check if the problem is hardware related or software caused.
+ 
+ Moops.
+ 
+

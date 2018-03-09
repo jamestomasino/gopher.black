@@ -1,0 +1,34 @@
+Persistence (session-like behavior)
+
+Gopher does not provide any native method for session management
+or persistence. This simplifies the protocol overhead, but it
+limits the applicability of applications which can be developed.
+
+Possible persistence implementation:
+
+    Using a unique menu identifier (∞ used here only as example),
+    we can direct our server to process requests so that they
+    return tokenized menu items going forward. For example,
+    following a menu item like
+
+    ∞Session Link\t/path/to/service\tserver.org\t70
+
+    it could return a menu with partially hijacked links which
+    will maintain persistence:
+
+    ∞Menu Item 1\t /session:<id>/path/to/service\tserver.org\t70
+
+    Content served via a persistent type will maintain an existing
+    session ID if it exists, or generate a new one otherwise. If
+    the id is set, actions could theoretically be captured to that
+    ID and stored server-side, potentially changing the content
+    that is served with each request.
+
+    The server would be responsible for parsing menu items of
+    ∞ type to detect and handle session ids. If the output is
+    a gophermap, logic must determine whether the generated links
+    would also be of type ∞ or traditional types. It is
+    recommended for simplicity that any menu item of type ∞ would
+    prefix future menu items of the same type but not affect other
+    types. This allows parallel development of alternative type
+    handlers and avoids collisions.

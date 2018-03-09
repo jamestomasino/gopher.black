@@ -1,0 +1,35 @@
+ ----------------------------------------
+ Response to solderpunk re: Pocket Gopher
+ January 04th, 2018
+ ----------------------------------------
+ 
+ solderpunk phlogged [0] about the Android gopher client, Pocket
+ Gopher, available on F-Droid. I downloaded it when I heard about
+ it on Mastodon a few months back and my experiences are similar to
+ those he brings up. Many complaints I have apply to all gopher
+ clients and proxies I've used.
+ 
+ Complains about gopher on a phone:
+ 
+   - Colors are often black text on white bg. That sucks. (not
+     a problem in Pocket Gopher)
+   - Fonts are often bad, not changable. (Pocket Gopher is pretty,
+     but not customizable)
+   - Text width is a challenge in portrait. Most clients give no
+     option to toggle between auto-wrapping and preformatted, let
+     alone do an interpretive reflow like solderpunk suggests.
+   - Lack of bookmarking / start-page configuration (nicely solved
+     in Pocket Gopher)
+ 
+ Pocket Gopher specific complaints:
+ 
+   - If I tap the screen and miss a link the font size changes and
+     shrinks slightly. I can repeat this a few times before it
+     settles. Sometimes the screen jumps as a result and I end up
+     tapping the wrong link.
+ 
+ It's nice having options in clients but nothing in the Android
+ market has wow'd me yet. There's some active development on the
+ iOS side, so maybe we'll see some of those new clients port over.
+ 
+0[0] solderpunk - Pocket Gopher	/users/solderpunk/phlog/pocket-gopher-grumpy-old-man-phone-rant.txt

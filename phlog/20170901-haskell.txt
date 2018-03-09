@@ -1,0 +1,39 @@
+----------------------------------------
+Haskell
+September 1st, 2017
+----------------------------------------
+
+I've been toying around with Haskell for a couple months in my spare time
+at home and work. It started initially as an exploration of Common Lisp,
+which I learned in passing in college.
+
+The languages I have used primarily at work have been very similar.
+Whether it is some version of JavaScript, ActionScript 3 in my Flash days,
+or even some server-side work in PHP or Python, the origins and roots all
+find a common ground. More importantly, they all have the same sort of
+imperative mentality. In effect, they cause me to think a certain way
+about problem solving.
+
+Common Lisp, Prolog, and a bunch of other languages present a different
+way of thinking, a different way of problem solving. That was the origin
+of my interest in revisiting Common Lisp in the beginning of the year. It
+was fascinating and really did change the way I approach certain problems.
+All the while, though, I kept thinking about the few minutes I'd toyed
+around with Haskell.
+
+Haskell has some really cool "stuff" in it. The syntax is beautifully
+sparse, almost elegant. There's the higher order functions, badass type
+system, laziness!, and the immutability factor. At the heart of things
+I could see all these bits of Lisp coming to the surface but in much more
+sophisticated ways.
+
+It had me on the fence pretty quickly. Do I spend more time in Lisp or
+jump to Haskell? The deciding factor was the difficulty. Haskell has
+a horrible reputation for being difficult to learn. As any good vimmer
+will tell you, that's kind of a big draw for us.
+
+So, here I am. I'm watching videos on category theory, I've binged a few
+online tutorials and courses, I've done some exercism.io problems, and now
+I'm finally sitting down to work through Learn You a Haskell for Great
+Good and Real World Haskell. I'm going to grok this. It's going to be
+glorious.

@@ -1,0 +1,17 @@
+----------------------------------------
+An introduction
+August 5th, 2017
+----------------------------------------
+
+This is my second time creating a gopher hole. I had one running
+previously on an EC2 instance on Amazon before I had an epic screw-up that
+hosed the box. I never bothered to write anything interesting in that
+site. In fact, I think the entire site was just a copy of the Epic of
+Gilgamesh.
+
+This time around I'd like to do something better. I already have a blog
+site at https://blog.tomasino.org and a labs blog where I write about
+hacky stuff at https://labs.tomasino.org. I'm not sure if I'll put
+a theme here or not. Maybe I can use it to document my side interests. One
+thing I do know is that I'm not going to force myself into any strict
+patterns or requirements. That way lies madness (or a lack of writing).

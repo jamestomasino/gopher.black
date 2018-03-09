@@ -1,0 +1,40 @@
+ ----------------------------------------
+ Custom Stylesheet for Firefox/Tor
+ December 28th, 2017
+ ----------------------------------------
+ 
+ I use overbiteFF on TorBrowser and the new one on Firefox but the
+ terrible styles of the browsers annoys the hell out of me. I did
+ some digging and found out you can add a user stylesheet pretty
+ easily [0]. If you do, here's the one I'm using. It's simple and
+ easy on the eyes. I'm documenting it here for that inevitable
+ moment when I lose it, but maybe you can use it too. Enjoy.
+ 
+   @-moz-document domain(sdf.org),
+                  domain(grex.org),
+                  domain(i-logout.cz),
+                  domain(tilde.town),
+                  domain(bitreich.org),
+                  domain(uninformativ.de) {
+     html > body {
+       background-color: rgb(51, 51, 51);
+       color: rgb(221, 221, 221);
+       font-size: 13px;
+       font-family: courier, sans-serif;
+       line-height: 1.3em;
+     }
+ 
+     a {
+       color: rgb(240, 255, 102) !important;
+     }
+ 
+     a:hover {
+       color: rgb(255, 254, 197) !important;
+     }
+ 
+     a:visited {
+       color: #660066 !important;
+     }
+   }
+
+h[0] How to use a custom stylesheet...	URL:http://tor.stackexchange.com/questions/6307/how-to-use-a-custom-stylesheet-with-tor-browser

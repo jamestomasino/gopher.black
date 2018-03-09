@@ -1,0 +1,41 @@
+----------------------------------------
+Snownews on SDF
+September 30th, 2017
+----------------------------------------
+
+I like rss.
+
+I like newsbeuter.
+
+I do not like that newsbeuter doesn't work on SDF and I can't get
+any help from bboard to upgrade it to the newest git version.
+Pkgsrc has a horribly out-of-date version that fails to launch.
+
+Then there's snownews. I never had any luck with it in the past. It
+rejects most RSS feeds and pisses me off. There aren't many
+customization optons.
+
+I have tt-rss set up, but every time I want to login it tells me my
+password is wrong and I have to go reset it in maint. Half the time
+the site is down or too slow to use. It's also not available to me
+on the command line, where I live my life. If newsbeuter were
+working, I could route my tt-rss stuff through it for fun & profit,
+but... yeah.
+
+So I'm back to snownews, the only other option on SDF. Here's what
+I found:
+
+SNOWNEWS DOESN'T SUPPORT HTTPS!
+
+That's the heart of the problem. And the solution is pretty simple.
+Don't rely on snownews to fetch your content. When adding a feed,
+add it this way:
+
+exec:wget -q -O - https://web.address/of/a/feed
+
+Wget handles the request and passes it in to snownews and
+everything is good in life. Well, at least everything isn't
+complete crap. It's a start!
+
+PS: If you can help me get newsbeuter working on SDF I'll buy you
+ice cream

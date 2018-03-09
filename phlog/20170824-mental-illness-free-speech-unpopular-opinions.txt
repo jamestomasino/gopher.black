@@ -1,0 +1,135 @@
+----------------------------------------
+Mental illness, free speech, unpopular opinions
+August 24th, 2017
+----------------------------------------
+
+
+Mental Illness --
+
+I've lately become aware of a trend on social media for people to hold up
+their mental illnesses or spectrum diagnoses as badges of honor. It's
+particularly noticble on Mastodon, and seems to overlap in increased
+density with LGBT identification, especially in the non-binary or
+gender-fluid groups. In the brief "about me" sections on bios, Asperger's
+becomes one of the most defining characteristics of identity.
+
+(Warning: Unpopular opinions to follow)
+
+This has triggered a mix of emotional responses in me. In my
+experience I've seen that type of behavior before, and from groups of
+people I can see as analagous to the communities online. Unfortunately,
+I'm very biased aganist those particular people from my personal life, but
+not because of their identity, diganosis, issues, or abilities, but
+because they were self-indulgent, attention-seeking, and annoying. One
+woman that pops to mind immediately would happily walk to the center of
+a room and fake feinting so she could publically attribute it to whatever
+she was highlighting that week. She would cry at dinner if the
+conversation had turned to a topic she didn't know about. Playing the
+victim or the poor, suffering soul, was a defining part of her character.
+
+I understand there are people who want to own their conditions as a way of
+finding strength. I know that not everyone I see online with a bio ending
+in "autistic" is putting it there for attention. I know I am facing a bias
+developed through my own experiences in high school and college, where
+people are more prone to be assholes trying to find their identity than
+elsewhere in life. Despite all of these things, it still makes me cringe.
+That is a limitation in myself.
+
+Before wrapping up this little observation I will say this: if you are
+highlighting your fibromyalgia to your friends or complaining about your
+gluten intollerance, or whatever else, take a moment and ask yourself if
+you're doing it for the right reasons. Are you sharing intimate knowledge
+of yourself in a blog to help work through challenges, or talking to
+a friend and seeking support? Are you drawing attention to the condition
+to help educate people? Are you promoting better understanding of living
+the way you do? Or, after all is said and done, are you hoping someone
+will pay attention to you and treat you special?
+
+
+Free Speech --
+
+There's so much crazy in the world these days it's hard to state a strong
+opinion on any topic without the "Actually" police coming in to fight you.
+Arguments online or in person--of which there are plenty--descend again
+and again into logical fallacy and ultimately go nowhere. Perhaps it's
+a lack of education on formal rhetoric in the United States, or maybe it's
+willful ignorance. Straw man, slippery-slope, ad hominem, false dilemma,
+or Trump's favorite "what-about-ism" are permeating everything. It's so
+hard to have a resonable discussion even if you find someone who really
+wants to.
+
+That brings me to free speech (sort of). I am an advocate for free speech,
+especially a free press. I think it is incredibly important to avoid
+dangerous power-grabbing at the hights of leadership. I also think
+protected free speech is empowering for groups that would otherwise be
+oppressed.
+
+(Warning: Here be unpopular opinions)
+
+Free speech, though, does not have an inherent morality. Much like
+capitalism as an economic model, there is no right or wrong. In the United
+States, from which I write this phost (thanks for the term Maiki), there
+has been heated debate about the limits of free speech from almost the day
+the bill of rights was signed. There are the purists who say there is no
+limitation whatsoever on free speech, and there are those who will attempt
+to apply a limited moral judgement on to the character of the term.
+
+One of my favorite American leaders, Oliver Wendell Holmes, coined the
+famous "shouting fire in a theater" example in a Supreme Court case about
+people handing out fliers to young men showing them how to avoid the draft
+during WWI. He also wrote the words used for almost all exemptions to free
+speech used from that day on, "clear and present danger". Justice Holmes
+was firmly in the second camp, which is where I find myself as well.
+
+There are some types of speech I feel should not be protected because they
+endanger.  In one sense you could say that the expression of those ideas
+or that speeech is intended to limit the inalienable rights of other
+individuals. It is speech that silences. That's a nice argument against
+hate speech certainly, but I don't think it conveys enough coverage of the
+types of speech Holmes saw in WWI. These were men attempting to subvert
+the power of the nation to call forth defense from its population.
+
+Most telling of all from that case is a sentiment that I feel has gone
+undiscussed. In his summary, Holmes wrote, "when a nation is at war, many
+things that might be said in time of peace are such a hindrance to its
+effort that their utterance will not be endured so long as men fight, and
+that no Court could regard them as protected by any constitutional right."
+The Court unanimously upheld the idea that the speech itself may not have
+been illegal at a time of peace. It was the circumstance of that speech,
+the time and place, that lent to its criminality.
+
+When we think about that framing of the events at Charlottesville, does it
+have an impact into the words they are expressing? The claims of white
+supremacists are intended to do harm to a community regardless of time and
+place, surely. Is it more damaging now? Are the words of Trump? I think
+we're experiencing such threats to our democracy in the ridicule and
+suppression of the press and the institutional injustice against people of
+color, that such talk that would normally be considered harmful now
+presents a Clear and Present Danger to the United States of America.
+
+
+One final note --
+
+I haven't addressed private industry or technology and their role in free
+speech or the suppression thereof. I do support the individal choice to
+allow or not allow speech on a private platform. Google's decision to fire
+the writer of the misogynist manifesto is a great example of this. He used
+the company as a platform for his memo. Had he posted it on a personal
+blog I might feel differently, but it's not always what the words say, but
+how they are said, when they are said, and where they are said. The Daily
+Stormer, a white supremacist inspired website, has hopped from host to
+host trying to find a company who will allow their site to stay public. In
+each case we are dealing with private companies offering these services,
+and I agree that they are freely in their rights to establish their own
+rules for what can be said or not said on their "land".
+
+The internet as a network of machines is not controlled by the United
+States, no matter how hard they try. The Daily Stormer has found a home on
+the Tor network, much to their chagrin. The Tor Group, who I fully
+endorse, are arguably on the other side of the free speech argument than
+me. They believe in an fully unrestricted system, no matter how painful it
+might be. I respect that decision while I disagree with it. In a direct
+implementation of their own beliefs, they have created a system which
+ensures that no one can censor information, not even them. I respect this
+choice just as I repsect Godaddy and Google for theirs. I don't think this
+is a contradiction at all.

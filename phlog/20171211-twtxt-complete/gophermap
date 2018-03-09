@@ -1,0 +1,41 @@
+ ----------------------------------------
+ twtxt complete
+ December 11th, 2017
+ ----------------------------------------
+ 
+ I installed twtxt on ma.sdf.org today. It was easy. I just used
+ virtualenv-3.6 to set up a nice ecosystem, then did the pip
+ install method in the documentation. After install I ran the
+ quickstart. It asked to overwrite my twtxt.txt file (which I had
+ backed up) but it turns out it didn't mess with it at all. All
+ good there!
+ 
+ Next I found a list of people to follow as a starting point on
+ github [0]. I forked the repo and added a pull request to add my
+ name to the list which was promptly accepted (whee!). Installing
+ those folks is an easy one-liner at the bottom of the readme.
+ 
+ Finally, I didn't want to have to log into ma.sdf.org every time
+ I wanted to check my timeline, so I added a little alias:
+ 
+   alias twtxt='ssh -t meta twtxt timeline'
+ 
+ I have a ssh alias for meta array in my ssh config, so that
+ handles it all in one line nicely. Oh! I had to edit the config
+ file for twtxt to set the display order to ascending instead of
+ the default descending so that the newest messages are at the
+ bottom. Now I don't need to worry about passing it to a pager to
+ see the latest.
+ 
+ There's a #twtxt channel on freenode. I informed them of my
+ stream, but I haven't seen any responses yet. @elw also set up his
+ own twtxt stream, so it's already paying off!
+ 
+ I have no idea if I'll stick with it or if it'll end up having
+ a different feel from Mastodon, but what the hell. It's plain text
+ and that's awesome.
+ 
+
+h[0] We are twtxt @ mdom's github	URL:http://github.com/mdom/we-are-twtxt
+
+

@@ -1,0 +1,64 @@
+ ----------------------------------------
+ OSX lynx over tor
+ November 14th, 2017
+ ----------------------------------------
+ 
+ The fine gentlemen on #freenode's gopher channel were showing off
+ some of their gopher sites served over tor. I wanted to test it
+ out while I was at work on my MacBook Air. This machine wasn't
+ configured to use tor at all, so here's the process I went through
+ to get everything working. (It's really easy)
+ 
+ Step 1: Install tor and torsocks and lynx if you don't have them
+ 
+   brew install tor torsocks lynx
+ 
+ Step 2: Use this wrapper [0] to launch tor and create the proper
+ networking configuration to use the socks proxy, and disable that
+ proxy when you kill tor.
+ 
+   #!/usr/bin/env bash
+ 
+   # 'Wi-Fi' or 'Ethernet' or 'Display Ethernet'
+   INTERFACE=Wi-Fi
+ 
+   # Ask for the administrator password upfront
+   sudo -v
+ 
+   # Keep-alive: update existing `sudo` time stamp until finished
+   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+ 
+   # trap ctrl-c and call disable_proxy()
+   function disable_proxy() {
+       sudo networksetup -setsocksfirewallproxystate $INTERFACE off
+       echo "$(tput setaf 64)" #green
+       echo "SOCKS proxy disabled."
+       echo "$(tput sgr0)" # color reset
+   }
+   trap disable_proxy INT
+ 
+   # Let's roll
+   sudo networksetup -setsocksfirewallproxy $INTERFACE 127.0.0.1 9050 off
+   sudo networksetup -setsocksfirewallproxystate $INTERFACE on
+ 
+   echo "$(tput setaf 64)" # green
+   echo "SOCKS proxy 127.0.0.1:9050 enabled."
+   echo "$(tput setaf 136)" # orange
+   echo "Starting Tor..."
+   echo "$(tput sgr0)" # color reset
+ 
+   tor
+ 
+ Step 3: Use torify to launch lynx
+ 
+   torify lynx gopher://hg6vgqziawt5s4dj.onion/1/
+ 
+ Your tor service should run fine as-is for browser usage, but it
+ looks like you'll need to use torify if you want to launch
+ a command line app that uses tor. This "just works" for me, so
+ hopefully it will for you as well.
+ 
+ Next up, solving this for Linux!
+ 
+
+h[0] Simple Tor setup on macOS	URL:http://kremalicious.com/simple-tor-setup-on-mac-os-x/

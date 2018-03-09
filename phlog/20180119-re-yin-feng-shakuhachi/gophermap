@@ -1,0 +1,78 @@
+ ----------------------------------------
+ Re: Yin Feng - Shakuhachi
+ January 19th, 2018
+ ----------------------------------------
+ 
+ I'm absolutely astounded that I found another shakuhachi player on
+ gopher. Seriously, I'm in awe.
+ 
+ I'll have to pull your gopher hole up on a different device to try
+ and decypher your notation system. It didn't come through clearly
+ in lynx. I just did a little search and it looks like some of the
+ characters used for notation (the Katakana characters) are
+ available in UTF-8. Let me give this a try:
+ 
+      Notes:
+
+      ロ    - Ro
+      ツ    - Tsu
+      レ    - Re
+      チ    - Chi
+      リ    - Ri
+      ヒ    - Hi
+      ウ    - U
+      イ    - I
+      ル    - Ru
+      コロ  - Ko Ro
+      ゴロ  - Go Ro
+      ヵラ  - Ka Ra
+
+      Decorations:
+
+      メ    - Meri
+      ー    - Breath mark
+      ヽ    - Repeated note
+      ゠    - Song ends
+ 
+ I'm not sure how to make reference the vertical speed changes yet,
+ but we can figure things out as we go.
+ 
+ And with that, using a vertical 66 column wide R->L format, and
+ trying to take into account the japanese double-wide characters,
+ here's a really simple children's song (I really hope this works): 
+ 
+ ------------------------------------------------------------------
+                             Hinomaru
+ ------------------------------------------------------------------
+ 
+                        リ.             ツ.
+                       .ヽ             .ヽ
+                        チ.             レ.
+                       .ツ             .ヽ
+                        レ.             チ.
+                        ー             .ヽ
+                        リ.             レ.
+                       .ヽ              ー
+                        チ.             チ.
+                       .ツ             .ヽ
+                        レ.             リ.
+                       .チ             .ヽ
+                        ツ.             ロ.
+                        ゠             .ヽ
+                                        リ.
+                                        ー
+                                        ロ.
+                                       .ヽ
+ 
+ ------------------------------------------------------------------
+ 
+ Whew! That was a bit of work for even a simple song, but I really
+ like the final look of it. Please, please, please work on gopher!
+ If it does, I may transcribe a bunch of my music, including fun
+ little tunes I improvise.
+
+1More Shakuhachi stuff here	/users/tomasino/explorations/shakuhachi	sdf.org	70
+ 
+ Yin Feng, you made my whole week!
+ 
+

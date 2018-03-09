@@ -1,0 +1,59 @@
+----------------------------------------
+Response: Papa and Git
+September 06th, 2017
+----------------------------------------
+
+Papa phlogged [0] about breaking down and finally learning git. I have
+read a few things recently on the bboard at SDF and on Mastodon about
+people's preference for older VCS's like RCS over git. There's a general
+sentiment that it's 'too much' or 'too complex' for the needs of the
+individual. I wholeheartedly disagree with both points.
+
+Too difficult/complex:
+
+While git is definitely different than the VCS's that came before it,
+I can't call it difficult at all for a community that regularly operates
+retro operating systems and deals with archaic source packages on a daily
+basis. I recommend reading the first six or seven chapters of The Git Book
+[1], freely available online. It can be read in an hour or two and will
+give all the background necessary to use git reasonably well.
+
+Too much for individual needs:
+
+Git gives the full power of version control in a local environment. You
+can use literally everything in the toolbox when you're offline in your
+basement or on a cruise or wherever. You don't need to connect to the
+internet to commit that last change, or cherry-pick a fix from another
+branch you were playing around with for fun. That's amazing! It's also
+absolutely fantastic to have an an individual.
+
+I drop nearly everything I do in the shell into a git repo. This gopher
+hole? Yep, it's in git. Why? Why not!? Every phost is versioned, as are my
+experiments. If I want to do something bananas, I create a new branch and
+give it a go. Didn't work out? I'll swap back to master and carry on. That
+experimental shenanigans is in version control now and one day I may go
+play around with it again.
+
+In some cases I back up these git repos to a remote, like bitbucket, that
+allows for free private repos, but not always. Sometimes I'm just playing
+around with an email, or taking notes on something I'm reading. I create
+a folder, init git, and type away. Git is like a silent partner there to
+help me out in whatever I might need. 90% of the time, that means I run:
+
+$ git init
+$ git add <filename>
+$ git commit -m '<commit message>
+
+And that's about it. Once in a blue moon I'll bust out some logs or check
+out an old commit to grab at something old. For instance, earlier today
+I was trying to remember some settings I had been using with Lastpass-CLI
+when I was using mutt. I had that in my dotfiles repo about 6 months ago,
+so I just jumped to a commit from around that time and grabbed the code
+I needed.
+
+This response got away from me.
+
+TL;DR: Git is awesome. Not difficult at all. Great for personal use.
+
+[0] gopher://grex.org/0/~papa/pgphlog/afu-Inevitable_git
+[1] https://git-scm.com/book/en/v2

@@ -1,0 +1,28 @@
+----------------------------------------
+Connections
+August 17th, 2017
+----------------------------------------
+
+I'm already getting more engagement and feedback from my gopher phlog than
+I have in years of blogging on the web. I think it's mostly due to this
+community structure on SDF, and it's something I haven't really considered
+or given its due.
+
+With my websites I have full control of structure and design and content
+and all that jazz. But I live on an island floating in a sea of nonsense.
+SEO is a concern. Sharing on social media is important. Driving interest
+to my stuff takes center stage. And for what?
+
+Why spend all that time and energy on building my island and getting
+people to it when I could join the community and just speak here. I like
+the organic connections that are happening here much more. Slugmax wrote
+a wonderfully thought out response to my last phlog. Flono emailed me last
+week about my gpg explorations.
+
+Who needs aggregators and commenting systems? Who needs HTML or CSS?
+Community is a great alternative!
+
+PS:
+
+All that being said, you can find my peronal blog at blog.tomasino.org and
+my codey/techy blog at labs.tomasino.org.

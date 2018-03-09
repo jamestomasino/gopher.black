@@ -1,0 +1,31 @@
+----------------------------------------
+Explorations and Welcomes
+September 06th, 2017
+----------------------------------------
+
+I've finally added something to my gopher site besides the phlog and
+links. I've called this other section "Explorations". Right now it's
+keeping track of my public TODO list for things SDF related and I've added
+a stub where I can keep notes on my Haskell learnings as well. I'm
+committed to moving to MetaARPA and I want to make sure I get full
+exposure to everything SDF has to offer.
+
+Last week I was having trouble connecting to faeroes.sdf.org over
+MOSH/SSH. Eventually I realized I could connect to the naked sdf.org
+instead and I used that connection to jump into IRC. The helpful people in
+#sdf informed me that I should use tty.sdf.org to connect since it would
+load-balance. The documentation I've found online so far indicated that as
+an ARPA member I should be using faeroes. This sort of disconnect between
+sometimes ancient and out-of-date documentation and the everyday realities
+of the service means there's more out there than meets the eye.
+
+Unrelated: I'm up and running on SiP. Like many others, I'm not eager to
+suddenly get a voice call from strangers, but I really dig the concept. If
+you are using the VoIP stuff on SDF, drop me a voicemail. I'm
+1897@sip.sdf.org.
+
+Finally, I want to welcome back sparcipx to gopherspace. It's been a while
+since your last phlog and I'm excited to see your thoughts on the future.
+I've got a special love of BBS's, so please go into more detail on the
+systems you're using. Other than Bryan Lunduke's box, I'm not really using
+anything at the moment. I've added the one you mentioned to my TODO list.
