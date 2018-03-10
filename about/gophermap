@@ -31,12 +31,6 @@
  fingerprint:    368CD75F5CD5F1E9A72F639F4E0FEB0E09DDD7DF
 0 public key	/users/tomasino/about/james-tomasino.public.asc	sdf.org	70
 
-
- ==== Host ====
-
-=echo -n " " && uname -n
-=echo -n " " && uname -sr
-
  ==== SDF System Info ====
 0Software for validated users	/users/tomasino/cgi-bin/software-user	sdf.org	70
 0Software for ARPA members	/users/tomasino/cgi-bin/software-arpa	sdf.org	70
