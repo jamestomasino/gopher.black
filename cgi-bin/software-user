@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo -e "The following software is available on SDF to verified users:\n"
-/usr/local/bin/software user | awk '{print $9;}' | sort -u
