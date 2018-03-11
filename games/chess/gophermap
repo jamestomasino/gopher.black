@@ -1,15 +1,18 @@
- === Chess Games ===
+i                         |
+i                      _|   \   -_)(_-<(_-<
+i                    \__|_| _|\___|___/___/
 
-  ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
-  ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙
-  . . . . . . . .
-  . . . . . . . .
-  . . . . . . . .
-  . . . . . . . .
-  ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
-  ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
 
-Game                   Description
+i                       ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
+i                       ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙
+i                       . . . . . . . .
+i                       . . . . . . . .
+i                       . . . . . . . .
+i                       . . . . . . . .
+i                       ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
+i                       ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
+
+iGame                   Description
 
 0Wins                   PGNs of my winning games	pgn/tomasino-wins.pgn
 0Losses                 PGNs of my losing games	pgn/tomasino-loss.pgn
