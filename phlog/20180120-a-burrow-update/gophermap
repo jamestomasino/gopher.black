@@ -1,32 +1,32 @@
- ----------------------------------------
- A burrow update
- January 20th, 2018
- ----------------------------------------
- 
- I'm very happy with the way burrow is turning out. I've learned
- a lot about man files and how to properly install bash completion
- files. 
- 
- It think the later is going to be a little problematic if this
- scales beyond my personal use. I don't trust my methods for
- determining where to install the bash completion files, and
- there's no error checking at all. I'll add an issue for myself on
- that front.
- 
- Regardless, things are working well. I'll try to use it for a week
- or two and hammer it from different angles:
- 
-   - I'm using it on sdf.org as part of a cronjob to update my
-     gopher repo using the 'update-git' action. This should allow
-     me to post from any machine using burrow and the content will
-     make its way to production within an hour.
- 
-   - I'm using it on SDF's meta array and my home laptops to add
-     content from different operating systems and different
-     configurations. So far so good.
- 
- I've put a few issues on github for myself as a roadmap of
- improvements. If any of you are interested in this thing and want
- some special feature, just say the word.
- 
+i----------------------------------------
+iA burrow update
+iJanuary 20th, 2018
+i----------------------------------------
+i
+iI'm very happy with the way burrow is turning out. I've learned
+ia lot about man files and how to properly install bash completion
+ifiles. 
+i
+iIt think the later is going to be a little problematic if this
+iscales beyond my personal use. I don't trust my methods for
+idetermining where to install the bash completion files, and
+ithere's no error checking at all. I'll add an issue for myself on
+ithat front.
+i
+iRegardless, things are working well. I'll try to use it for a week
+ior two and hammer it from different angles:
+i
+i  - I'm using it on sdf.org as part of a cronjob to update my
+i    gopher repo using the 'update-git' action. This should allow
+i    me to post from any machine using burrow and the content will
+i    make its way to production within an hour.
+i
+i  - I'm using it on SDF's meta array and my home laptops to add
+i    content from different operating systems and different
+i    configurations. So far so good.
+i
+iI've put a few issues on github for myself as a roadmap of
+iimprovements. If any of you are interested in this thing and want
+isome special feature, just say the word.
+i
 

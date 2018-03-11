@@ -1,43 +1,43 @@
- ----------------------------------------
- New Format Test
- October 03rd, 2017
- ----------------------------------------
- 
- In this phlog entry, I've changed my type to 1 instead of 0--that
- is I've moved my entry to a gophermap instead of a text file.
- This allows me to make links in the file. I'm going to do that in
- a footnote pattern, like I've been doing in my text entries. That
- should avoid breaking things visually.
- 
- This first entry I'm building by hand as a way of discovering all
- the different things I'll need to tweak to make this work. The
- first is obviously that I'll be creating a folder for entries
- instead of a single text file. That will break my "Phlog Stream"
- option, so I'll likely remove it for the short term. The next
- change I'm making is changing my textwidth to 69 instead of 80.
- I did 66 instead of 67 because I'm going to add a blank space
- character in the front of every line in the document before the
- links footer. That should avoid any problems with accidentally
- starting a line with a number and having it interpretted as
- a gophermap menu item. I think I'll author everything normally
- and handle that extra space with a sed [0] command in my script.
- 
- The links in the footer are interesting. I'm not sure there's
- a good way to automate those. I added a reference to sed in the
- paragraph above in the link style I was using before. Maybe I'll
- prefix the link word or phrase in the footer with the
- cooresponding number for reference. That should be enough
- context.
- 
- Adding the entry to the gophermap seems no harder than before.
- Honestly, this is going to be pretty simple to do, and should
- help my rendering on phones and small screens. 67 characters is
- the gopher spec, so I should try to stick to it.
- 
- What do you all think? Is there anything else I could do to make
- this format work better? It's a lot to change in my generator
- just to support links, but I think it'll be really nice to be
- able to not only reference other people's phlogs but link to the
- entries as well.
- 
+i----------------------------------------
+iNew Format Test
+iOctober 03rd, 2017
+i----------------------------------------
+i
+iIn this phlog entry, I've changed my type to 1 instead of 0--that
+iis I've moved my entry to a gophermap instead of a text file.
+iThis allows me to make links in the file. I'm going to do that in
+ia footnote pattern, like I've been doing in my text entries. That
+ishould avoid breaking things visually.
+i
+iThis first entry I'm building by hand as a way of discovering all
+ithe different things I'll need to tweak to make this work. The
+ifirst is obviously that I'll be creating a folder for entries
+iinstead of a single text file. That will break my "Phlog Stream"
+ioption, so I'll likely remove it for the short term. The next
+ichange I'm making is changing my textwidth to 69 instead of 80.
+iI did 66 instead of 67 because I'm going to add a blank space
+icharacter in the front of every line in the document before the
+ilinks footer. That should avoid any problems with accidentally
+istarting a line with a number and having it interpretted as
+ia gophermap menu item. I think I'll author everything normally
+iand handle that extra space with a sed [0] command in my script.
+i
+iThe links in the footer are interesting. I'm not sure there's
+ia good way to automate those. I added a reference to sed in the
+iparagraph above in the link style I was using before. Maybe I'll
+iprefix the link word or phrase in the footer with the
+icooresponding number for reference. That should be enough
+icontext.
+i
+iAdding the entry to the gophermap seems no harder than before.
+iHonestly, this is going to be pretty simple to do, and should
+ihelp my rendering on phones and small screens. 67 characters is
+ithe gopher spec, so I should try to stick to it.
+i
+iWhat do you all think? Is there anything else I could do to make
+ithis format work better? It's a lot to change in my generator
+ijust to support links, but I think it'll be really nice to be
+iable to not only reference other people's phlogs but link to the
+ientries as well.
+i
 h[0] sed	URL:http://www.gnu.org/software/sed/

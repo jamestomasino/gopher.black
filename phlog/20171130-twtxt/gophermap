@@ -1,54 +1,54 @@
- ----------------------------------------
- twtxt
- November 30th, 2017
- ----------------------------------------
- 
- I finally got around to setting up twtxt! [0]
- 
- I didn't install the utility yet. I was more concerned with
- writing microblogs than reading them for now. I knew I wanted to
- host it on my sdf site, which is hosted on meta (ma.sdf.org).
- I also knew I wanted to be able to author the microblog from any
- of my servers. It's not as robust as the phlog, so I shouldn't
- need to log in somewhere specific with a bunch of environment
- variables or scripts or anything. Here's what I've got:
- 
-   #!/usr/bin/env bash
-   
-   twt(){
-     local TWTXT=${TWTXT:-"/meta/www/t/tomasino/twtxt.txt"}
-   
-     if [ $# -eq 0 ]; then
-       read -ep 'Message: ' input
-       if [ ! -z "$input" ]; then
-         echo -e "`date -Im`\t$input" >> "$TWTXT"
-       else
-         echo "No message. Abort."
-       fi
-     else
-       echo -e "`date -Im`\t$@" >> "$TWTXT"
-     fi
-   }
-   
-   meta="ma.sdf.org"
-   host=$(hostname)
-   
-   if [ $host != $meta ]; then
-     ssh -t tomasino@ma.sdf.org twt "$@"
-   else
-     twt "$@"
-   fi
- 
- It's not super clean or polished, but it works. If I'm not on
- meta, it ssh's to ma silently and runs the twt script on the right
- server. I can either 1-line it or I can just run the command and
- have it prompt me for my message. Then it's a simple append to the
- file with the datestamp and done.
- 
- I guess I'll link it on the phlog? I'll have to figure out what
- I want to do about reading other people's twtxt's too. I think
- I need to write my own phlog aggregator before that, though.
- 
+i----------------------------------------
+itwtxt
+iNovember 30th, 2017
+i----------------------------------------
+i
+iI finally got around to setting up twtxt! [0]
+i
+iI didn't install the utility yet. I was more concerned with
+iwriting microblogs than reading them for now. I knew I wanted to
+ihost it on my sdf site, which is hosted on meta (ma.sdf.org).
+iI also knew I wanted to be able to author the microblog from any
+iof my servers. It's not as robust as the phlog, so I shouldn't
+ineed to log in somewhere specific with a bunch of environment
+ivariables or scripts or anything. Here's what I've got:
+i
+i  #!/usr/bin/env bash
+i  
+i  twt(){
+i    local TWTXT=${TWTXT:-"/meta/www/t/tomasino/twtxt.txt"}
+i  
+i    if [ $# -eq 0 ]; then
+i      read -ep 'Message: ' input
+i      if [ ! -z "$input" ]; then
+i        echo -e "`date -Im`\t$input" >> "$TWTXT"
+i      else
+i        echo "No message. Abort."
+i      fi
+i    else
+i      echo -e "`date -Im`\t$@" >> "$TWTXT"
+i    fi
+i  }
+i  
+i  meta="ma.sdf.org"
+i  host=$(hostname)
+i  
+i  if [ $host != $meta ]; then
+i    ssh -t tomasino@ma.sdf.org twt "$@"
+i  else
+i    twt "$@"
+i  fi
+i
+iIt's not super clean or polished, but it works. If I'm not on
+imeta, it ssh's to ma silently and runs the twt script on the right
+iserver. I can either 1-line it or I can just run the command and
+ihave it prompt me for my message. Then it's a simple append to the
+ifile with the datestamp and done.
+i
+iI guess I'll link it on the phlog? I'll have to figure out what
+iI want to do about reading other people's twtxt's too. I think
+iI need to write my own phlog aggregator before that, though.
+i
 
 h[0] tomasino's twtxt	URL:http://tomasino.sdf.org/twtxt.txt
 

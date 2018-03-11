@@ -1,23 +1,23 @@
- ----------------------------------------
- books
- December 12th, 2017
- ----------------------------------------
- 
- I was thinking about Goodreads this morning and it occurred to me
- that my book lists are probably available as RSS feeds. I took
- a look and I was right!
- 
- I took my read books & currently reading books lists and fetched
- them via curl and piped them to xmlstarlet to parse. I grabbed the
- book names & authors, and output the results to a text file on my
- gopher hole [0][1].
- 
- I wanted to run this as a cgi originally. I got it all working to
- standard out, but on SDF, cgi's run with very little access to the
- systsem and xmlstarlet is not allowed. Instead I set up a cron to
- run my script each night at midnight. We'll see how that goes,
- I guess.
- 
+i----------------------------------------
+ibooks
+iDecember 12th, 2017
+i----------------------------------------
+i
+iI was thinking about Goodreads this morning and it occurred to me
+ithat my book lists are probably available as RSS feeds. I took
+ia look and I was right!
+i
+iI took my read books & currently reading books lists and fetched
+ithem via curl and piped them to xmlstarlet to parse. I grabbed the
+ibook names & authors, and output the results to a text file on my
+igopher hole [0][1].
+i
+iI wanted to run this as a cgi originally. I got it all working to
+istandard out, but on SDF, cgi's run with very little access to the
+isystsem and xmlstarlet is not allowed. Instead I set up a cron to
+irun my script each night at midnight. We'll see how that goes,
+iI guess.
+i
 
-0[0] Recently read books	/users/tomasino/reading/recentbooks.txt	sdf.org	70
-0[1] Reading books	/users/tomasino/reading/currentbooks.txt	sdf.org	70
+0[0] Recently read books	/reading/recentbooks.txt	sdf.org	70
+0[1] Reading books	/reading/currentbooks.txt	sdf.org	70

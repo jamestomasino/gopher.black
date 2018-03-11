@@ -1,48 +1,48 @@
- ----------------------------------------
- Kindles
- January 13th, 2018
- ----------------------------------------
- 
- I was researching Raspberry Pis as a potential off-grid computer
- hook-up. I wanted a wifi enabled, solar powered, ruggedized
- system. Preferrably it would have a local keyboard and display,
- but a model that I could only access over local wifi would be
- sufficient. Seriously air-gapped, like in-the-woods, style. That'd
- be neat.
- 
- Anyway, I got sidetracked when I saw someone using a Kindle as
- a display for their pi. I had the first generation Kindle and
- I jailbroke it and was able to get a shell running at one time. It
- was neat, but pretty useless. The new ones, like my Kindle Voyage,
- have a much better display and faster refresh. It's actually
- useful as a terminal.
- 
- So I went looking down that rabbit hole. I documented my process
- [0] but I wasn't able to get it working with the research I did so
- far. My Voyage is running a firmware that's too far upgraded to
- work with the published tricks. I've got a Kindle Touch downstairs
- that's not in use which I might try instead. I'll keep an eye out
- for new rooting methods too.
- 
- I don't even care about the Pi part anymore. I just want to have
- a Kindle as a terminal screen. That will be fantastic!
+i----------------------------------------
+iKindles
+iJanuary 13th, 2018
+i----------------------------------------
+i
+iI was researching Raspberry Pis as a potential off-grid computer
+ihook-up. I wanted a wifi enabled, solar powered, ruggedized
+isystem. Preferrably it would have a local keyboard and display,
+ibut a model that I could only access over local wifi would be
+isufficient. Seriously air-gapped, like in-the-woods, style. That'd
+ibe neat.
+i
+iAnyway, I got sidetracked when I saw someone using a Kindle as
+ia display for their pi. I had the first generation Kindle and
+iI jailbroke it and was able to get a shell running at one time. It
+iwas neat, but pretty useless. The new ones, like my Kindle Voyage,
+ihave a much better display and faster refresh. It's actually
+iuseful as a terminal.
+i
+iSo I went looking down that rabbit hole. I documented my process
+i[0] but I wasn't able to get it working with the research I did so
+ifar. My Voyage is running a firmware that's too far upgraded to
+iwork with the published tricks. I've got a Kindle Touch downstairs
+ithat's not in use which I might try instead. I'll keep an eye out
+ifor new rooting methods too.
+i
+iI don't even care about the Pi part anymore. I just want to have
+ia Kindle as a terminal screen. That will be fantastic!
 
- EDIT:
+iEDIT:
 
- I've switched to my Kindle Touch and we're getting progress. The
- jailbreak was easy but I struggled for a bit getting networking
- working properly. There's again 7,000 versions of advice for
- configuring this thing online, but I didn't find the key info
- until reading a readme inside a zip. The Kindle's system mounts
- read-only and the root password is jibberish by default. To get
- logged in, I had to set up an authorized key. With that done it
- was just a matter of connecting. I did get both USB networking
- and Wifi working. In the end, Wifi was way easier.
+iI've switched to my Kindle Touch and we're getting progress. The
+ijailbreak was easy but I struggled for a bit getting networking
+iworking properly. There's again 7,000 versions of advice for
+iconfiguring this thing online, but I didn't find the key info
+iuntil reading a readme inside a zip. The Kindle's system mounts
+iread-only and the root password is jibberish by default. To get
+ilogged in, I had to set up an authorized key. With that done it
+iwas just a matter of connecting. I did get both USB networking
+iand Wifi working. In the end, Wifi was way easier.
 
- I'll document all this new effort in the explorations notes, and
- I'll continue to share as features are added. Next up: app
- launchers.
- 
+iI'll document all this new effort in the explorations notes, and
+iI'll continue to share as features are added. Next up: app
+ilaunchers.
+i
 
-1[0] Kindle Explorations	/users/tomasino/explorations/kindle	sdf.org	70
+1[0] Kindle Explorations	/explorations/kindle	sdf.org	70
 

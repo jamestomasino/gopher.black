@@ -1,78 +1,78 @@
- ----------------------------------------
- Re: Yin Feng - Shakuhachi
- January 19th, 2018
- ----------------------------------------
- 
- I'm absolutely astounded that I found another shakuhachi player on
- gopher. Seriously, I'm in awe.
- 
- I'll have to pull your gopher hole up on a different device to try
- and decypher your notation system. It didn't come through clearly
- in lynx. I just did a little search and it looks like some of the
- characters used for notation (the Katakana characters) are
- available in UTF-8. Let me give this a try:
- 
-      Notes:
+i----------------------------------------
+iRe: Yin Feng - Shakuhachi
+iJanuary 19th, 2018
+i----------------------------------------
+i
+iI'm absolutely astounded that I found another shakuhachi player on
+igopher. Seriously, I'm in awe.
+i
+iI'll have to pull your gopher hole up on a different device to try
+iand decypher your notation system. It didn't come through clearly
+iin lynx. I just did a little search and it looks like some of the
+icharacters used for notation (the Katakana characters) are
+iavailable in UTF-8. Let me give this a try:
+i
+i     Notes:
 
-      ロ    - Ro
-      ツ    - Tsu
-      レ    - Re
-      チ    - Chi
-      リ    - Ri
-      ヒ    - Hi
-      ウ    - U
-      イ    - I
-      ル    - Ru
-      コロ  - Ko Ro
-      ゴロ  - Go Ro
-      ヵラ  - Ka Ra
+i     ロ    - Ro
+i     ツ    - Tsu
+i     レ    - Re
+i     チ    - Chi
+i     リ    - Ri
+i     ヒ    - Hi
+i     ウ    - U
+i     イ    - I
+i     ル    - Ru
+i     コロ  - Ko Ro
+i     ゴロ  - Go Ro
+i     ヵラ  - Ka Ra
 
-      Decorations:
+i     Decorations:
 
-      メ    - Meri
-      ー    - Breath mark
-      ヽ    - Repeated note
-      ゠    - Song ends
- 
- I'm not sure how to make reference the vertical speed changes yet,
- but we can figure things out as we go.
- 
- And with that, using a vertical 66 column wide R->L format, and
- trying to take into account the japanese double-wide characters,
- here's a really simple children's song (I really hope this works): 
- 
- ------------------------------------------------------------------
-                             Hinomaru
- ------------------------------------------------------------------
- 
-                        リ.             ツ.
-                       .ヽ             .ヽ
-                        チ.             レ.
-                       .ツ             .ヽ
-                        レ.             チ.
-                        ー             .ヽ
-                        リ.             レ.
-                       .ヽ              ー
-                        チ.             チ.
-                       .ツ             .ヽ
-                        レ.             リ.
-                       .チ             .ヽ
-                        ツ.             ロ.
-                        ゠             .ヽ
-                                        リ.
-                                        ー
-                                        ロ.
-                                       .ヽ
- 
- ------------------------------------------------------------------
- 
- Whew! That was a bit of work for even a simple song, but I really
- like the final look of it. Please, please, please work on gopher!
- If it does, I may transcribe a bunch of my music, including fun
- little tunes I improvise.
+i     メ    - Meri
+i     ー    - Breath mark
+i     ヽ    - Repeated note
+i     ゠    - Song ends
+i
+iI'm not sure how to make reference the vertical speed changes yet,
+ibut we can figure things out as we go.
+i
+iAnd with that, using a vertical 66 column wide R->L format, and
+itrying to take into account the japanese double-wide characters,
+ihere's a really simple children's song (I really hope this works): 
+i
+i------------------------------------------------------------------
+i                            Hinomaru
+i------------------------------------------------------------------
+i
+i                       リ.             ツ.
+i                      .ヽ             .ヽ
+i                       チ.             レ.
+i                      .ツ             .ヽ
+i                       レ.             チ.
+i                       ー             .ヽ
+i                       リ.             レ.
+i                      .ヽ              ー
+i                       チ.             チ.
+i                      .ツ             .ヽ
+i                       レ.             リ.
+i                      .チ             .ヽ
+i                       ツ.             ロ.
+i                       ゠             .ヽ
+i                                       リ.
+i                                       ー
+i                                       ロ.
+i                                      .ヽ
+i
+i------------------------------------------------------------------
+i
+iWhew! That was a bit of work for even a simple song, but I really
+ilike the final look of it. Please, please, please work on gopher!
+iIf it does, I may transcribe a bunch of my music, including fun
+ilittle tunes I improvise.
 
-1More Shakuhachi stuff here	/users/tomasino/explorations/shakuhachi	sdf.org	70
- 
- Yin Feng, you made my whole week!
- 
+1More Shakuhachi stuff here	/explorations/shakuhachi	sdf.org	70
+i
+iYin Feng, you made my whole week!
+i
 

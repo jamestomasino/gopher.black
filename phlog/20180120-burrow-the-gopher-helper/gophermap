@@ -1,23 +1,23 @@
- ----------------------------------------
- burrow - the gopher helper
- January 20, 2018
- ----------------------------------------
- 
- I've done a good deal of work on my new gopher helper program
- named 'burrow' [0]. For now it's taking my existing helper scripts
- and merging them into a single program that can take switches and
- arguments. I'm also moving the configuration out of environment
- variables and into a proper config file.
- 
- Once I get back to where I started, I'm going to start broadening
- the settings. I'm including template support for phlogs & recipes,
- and I'm going to modularize some things like my auto-space-indent
- of non-links in gophermaps.
- 
- I'm also getting some practice with man writing. 
- 
- If you've got a gopher helper script or two lying around, have
- a look at this and maybe make a pull request to add your coolness.
- 
+i----------------------------------------
+iburrow - the gopher helper
+iJanuary 20, 2018
+i----------------------------------------
+i
+iI've done a good deal of work on my new gopher helper program
+inamed 'burrow' [0]. For now it's taking my existing helper scripts
+iand merging them into a single program that can take switches and
+iarguments. I'm also moving the configuration out of environment
+ivariables and into a proper config file.
+i
+iOnce I get back to where I started, I'm going to start broadening
+ithe settings. I'm including template support for phlogs & recipes,
+iand I'm going to modularize some things like my auto-space-indent
+iof non-links in gophermaps.
+i
+iI'm also getting some practice with man writing. 
+i
+iIf you've got a gopher helper script or two lying around, have
+ia look at this and maybe make a pull request to add your coolness.
+i
 h[0] burrow	URL:http://github.com/jamestomasino/burrow
 

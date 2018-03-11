@@ -1,26 +1,26 @@
- ----------------------------------------
- i3
- October 15th, 2017
- ----------------------------------------
- 
- I converted my Mint laptop from KDE to i3 today based on some
- helpful feedback on Mastodon. I had no idea that it was so easy to
- install another window manager and swap between them. All you have
- to do is install the package, log out, and log back in!
- 
- Anyway, i3 [0] is a fantastic minimalist window mananger that
- treats all your windows pretty much like tmux or screen treats
- terminals. You can split vertically, horizontally, resize, shift,
- launch things to different workspaces, etc. There's a ton of
- configuration you can do to really make it yours, but it's pretty
- stellar with the defaults. I changed a few of the key mappings
- around, added a screensaver and that's about it.
- 
- I also messed with systemd and put my suspend settings in when
- closing the laptop lid. I've wrapped up screensaver and i3lock to
- make a cool minimal lock-to-resume thingy. Basically I feel like
- a wizard. All hail my basic linuxing!
- 
- 
+i----------------------------------------
+ii3
+iOctober 15th, 2017
+i----------------------------------------
+i
+iI converted my Mint laptop from KDE to i3 today based on some
+ihelpful feedback on Mastodon. I had no idea that it was so easy to
+iinstall another window manager and swap between them. All you have
+ito do is install the package, log out, and log back in!
+i
+iAnyway, i3 [0] is a fantastic minimalist window mananger that
+itreats all your windows pretty much like tmux or screen treats
+iterminals. You can split vertically, horizontally, resize, shift,
+ilaunch things to different workspaces, etc. There's a ton of
+iconfiguration you can do to really make it yours, but it's pretty
+istellar with the defaults. I changed a few of the key mappings
+iaround, added a screensaver and that's about it.
+i
+iI also messed with systemd and put my suspend settings in when
+iclosing the laptop lid. I've wrapped up screensaver and i3lock to
+imake a cool minimal lock-to-resume thingy. Basically I feel like
+ia wizard. All hail my basic linuxing!
+i
+i
 
 0[0] i3 Window Manager	/I3_(window_manager)	gopherpedia.com	70

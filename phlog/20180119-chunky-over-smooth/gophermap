@@ -1,64 +1,64 @@
- ----------------------------------------
- Chunky over Smooth
- January 19th, 2018
- ----------------------------------------
- 
- This phost is not about peanut butter,
- but about plain text.
- I recently read a blog post [0]
- shared by dbucklin [1]
- over on the #gopher channel on irc.sdf.org
- about writing text that breaks text 
- into chunks of semantic ideas or sentences.
- While it seems to make the text a bit longer
- it really does help with readability
- as well as version controll diffs
- and even editing.
- 
- As I've been writing this phost
- I've been moving sentences around
- either in part or in whole.
- Having a period always at the end of a line
- and sentences always begin on a new line
- is remarkably helpful.
- There is a bit of a congative disconnect
- while I adjust to breaking up my text
- in a way that doesn't feel as natural
- as my writing style normally is,
- but that can be attributed to it being new
- and my forced attention on the style
- to ensure I'm doing it properly.
- Even now,
- as I end this second paragraph
- the technique is becoming more natural in flow.
- 
- I'd like to know
- whether this format 
- makes things more difficult for you to read
- or makes it easier to scan.
- Please send me an email,
- a toot on mastodon,
- or a phlog reply
- with your thoughts.
- 
- I see this as an easy way to
- author my markdown blogs,
- since the natural formatting of markdown
- will ride these paragarphs into a single block.
- Writing this way for drafts
- also makes a lot of sense.
- I'm really only concerned about
- using it in its broken--almost poetry-like--format
- in a medium like gopher
- where people will read it this way,
- or in my books
- where I will want to
- eventually refomat things into manuscript form
- with clear dialogue formatting
- and section breaks.
- 
- I think I'll give this a try for a while.
- 
+i----------------------------------------
+iChunky over Smooth
+iJanuary 19th, 2018
+i----------------------------------------
+i
+iThis phost is not about peanut butter,
+ibut about plain text.
+iI recently read a blog post [0]
+ishared by dbucklin [1]
+iover on the #gopher channel on irc.sdf.org
+iabout writing text that breaks text 
+iinto chunks of semantic ideas or sentences.
+iWhile it seems to make the text a bit longer
+iit really does help with readability
+ias well as version controll diffs
+iand even editing.
+i
+iAs I've been writing this phost
+iI've been moving sentences around
+ieither in part or in whole.
+iHaving a period always at the end of a line
+iand sentences always begin on a new line
+iis remarkably helpful.
+iThere is a bit of a congative disconnect
+iwhile I adjust to breaking up my text
+iin a way that doesn't feel as natural
+ias my writing style normally is,
+ibut that can be attributed to it being new
+iand my forced attention on the style
+ito ensure I'm doing it properly.
+iEven now,
+ias I end this second paragraph
+ithe technique is becoming more natural in flow.
+i
+iI'd like to know
+iwhether this format 
+imakes things more difficult for you to read
+ior makes it easier to scan.
+iPlease send me an email,
+ia toot on mastodon,
+ior a phlog reply
+iwith your thoughts.
+i
+iI see this as an easy way to
+iauthor my markdown blogs,
+isince the natural formatting of markdown
+iwill ride these paragarphs into a single block.
+iWriting this way for drafts
+ialso makes a lot of sense.
+iI'm really only concerned about
+iusing it in its broken--almost poetry-like--format
+iin a medium like gopher
+iwhere people will read it this way,
+ior in my books
+iwhere I will want to
+ieventually refomat things into manuscript form
+iwith clear dialogue formatting
+iand section breaks.
+i
+iI think I'll give this a try for a while.
+i
 
 h[0] One sentence per line	URL:http://rhodesmill.org/brandon/2012/one-sentence-per-line/
 1[1] dbucklin	/users/dbucklin	sdf.org	70

@@ -1,43 +1,43 @@
- ----------------------------------------
- Little updates
- March 03rd, 2018
- ----------------------------------------
- 
- Welcome to a few new gopher folks on sdf: mre, ja, oms. We love
- you already.
- 
- Yesterday we got nailed pretty hard by a storm and lost power for
- a day or so. We avoided property damage in general, which is
- awesome, but one of the big pines in our front yard is now at a 45
- degree angle and will probably have to come down. My basement is
- flooded and I slept poorly. All-in-all, it wasn't too bad.
- 
- My son is old enough to know what's going on now, so this was his
- first substantial power outtage and he had plenty of questions. He
- learned a lot about electricity, and about ways to stay warm
- without fancy heating systems. Talking by candle light is a great
- way to spend time with the family.
- 
- -------
- 
- Today I spent a few hours updating my gopher hole helper utility,
- burrow [0]. I've had this lingering issue with how I'd constructed
- a few of the functions. One of the problems was actually giving me
- a linting error in shellcheck, and that I cannot abide.
- Regardless, I added a bunch of new functionality, made a ton of
- things configurable, updated releases, and put a Getting Started
- page up on the Github wiki. 
- 
- If you don't have anything in place to manage your gopher hole and
- are not happy with doing everything manually, please give it
- a try. I'd love some feedback on the tool, my documentation, the
- guide, whatever. Bug me on Mastodon (tomasino@mastodon.sdf.org) or
- over on #gopher on irc.sdf.org. You can also find me a bunch of
- other ways if you look at the About [1] section on this gopher
- hole.
- 
- Cheers!
- 
+i----------------------------------------
+iLittle updates
+iMarch 03rd, 2018
+i----------------------------------------
+i
+iWelcome to a few new gopher folks on sdf: mre, ja, oms. We love
+iyou already.
+i
+iYesterday we got nailed pretty hard by a storm and lost power for
+ia day or so. We avoided property damage in general, which is
+iawesome, but one of the big pines in our front yard is now at a 45
+idegree angle and will probably have to come down. My basement is
+iflooded and I slept poorly. All-in-all, it wasn't too bad.
+i
+iMy son is old enough to know what's going on now, so this was his
+ifirst substantial power outtage and he had plenty of questions. He
+ilearned a lot about electricity, and about ways to stay warm
+iwithout fancy heating systems. Talking by candle light is a great
+iway to spend time with the family.
+i
+i-------
+i
+iToday I spent a few hours updating my gopher hole helper utility,
+iburrow [0]. I've had this lingering issue with how I'd constructed
+ia few of the functions. One of the problems was actually giving me
+ia linting error in shellcheck, and that I cannot abide.
+iRegardless, I added a bunch of new functionality, made a ton of
+ithings configurable, updated releases, and put a Getting Started
+ipage up on the Github wiki. 
+i
+iIf you don't have anything in place to manage your gopher hole and
+iare not happy with doing everything manually, please give it
+ia try. I'd love some feedback on the tool, my documentation, the
+iguide, whatever. Bug me on Mastodon (tomasino@mastodon.sdf.org) or
+iover on #gopher on irc.sdf.org. You can also find me a bunch of
+iother ways if you look at the About [1] section on this gopher
+ihole.
+i
+iCheers!
+i
 
 h[0] Burrow	URL:http://github.com/jamestomasino/burrow
-1[1] About this gopher hole	/users/tomasino/about	sdf.org	70
+1[1] About this gopher hole	/about	sdf.org	70

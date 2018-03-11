@@ -1,21 +1,21 @@
- ----------------------------------------
- Response to jynx re: on backups
- December 11th, 2017
- ----------------------------------------
- 
- I agree with jynx [0] recent phlog about the awesomeness of gnu
- stow. I use it for my dotfiles [1] and you should too!
- 
- Regarding git for gopher & html, I'm doing that myself. My gopher
- hole is all in git, and part of my newphlog [2] script
- automatically adds a commit before doing a pull & push. The one
- barrier you may run into on SDF is using stow. I was able to get
- stow set up on ma.sdf.org, but it is not on the core sdf servers
- and I can't get it to compile. Maybe you'll have better luck than
- I did.
- 
- Good luck!
- 
+i----------------------------------------
+iResponse to jynx re: on backups
+iDecember 11th, 2017
+i----------------------------------------
+i
+iI agree with jynx [0] recent phlog about the awesomeness of gnu
+istow. I use it for my dotfiles [1] and you should too!
+i
+iRegarding git for gopher & html, I'm doing that myself. My gopher
+ihole is all in git, and part of my newphlog [2] script
+iautomatically adds a commit before doing a pull & push. The one
+ibarrier you may run into on SDF is using stow. I was able to get
+istow set up on ma.sdf.org, but it is not on the core sdf servers
+iand I can't get it to compile. Maybe you'll have better luck than
+iI did.
+i
+iGood luck!
+i
 
 0[0] jynx - on backups	/users/jynx/dat/20171211.post	sdf.org	70
 h[1] My Dotfiles	URL:http://github.com/jamestomasino/dotfiles

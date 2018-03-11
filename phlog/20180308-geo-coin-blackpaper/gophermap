@@ -1,65 +1,65 @@
- ----------------------------------------
- Geo-Coin Blackpaper
- March 08th, 2018
- ----------------------------------------
- 
- In 2013 I had a conversation with a coworker about Bitcoin. What
- is it? I asked. No, no, I mean, how does it all work? I repeated.
- We went on like this for a few days before he eventually just told
- me to read this whitepaper [0]. Ahh, now I get it... well mostly.
- 
- It makes sense from a logical point of view: how do you build
- a platform that can naturally prove things true without needing
- a 3rd party? Well, you build truth into its very existence. What
- if the universe were nothing but a giant ledger?
- 
- At that time my coworker had become involved in a community
- takeover of an alt-coin, a crypo-currency which had become
- abandoned by its creator. He had some grand plans but the coin
- failed to gain traction. In a sense theirs was a precursor to
- Z-Cash and Dash in the anonymity space. It had great plans and
- lofty goals, but no clear path to reach them.
- 
- Around that time I also gave some thought to another
- crypto-currency which I thought had potential to be meaningful
- from an economic point of view. My premise was a coin with a value
- that relative to its transaction-point geographically. In short:
- 
-   Geo-Coin
- 
-   A crypto-currency designed for the development of local markets.
-   At the heart of the Geo-Coin system is the addition of geographic
-   proof to proof-of-work. Every mined coin is done so with
-   a specific geographic location attached to its identity.
-   Wallets, as points of reception in a transaction, also hold
-   geographic location as part of their identity. A wallet can hold
-   coin values without degradation if they share geographies. As
-   the wallet and coin increase distance, part of the value of the
-   coin is lost. In this way, the further a coin "travels" the less
-   its net worth in the system.
- 
- Why didn't I pursue this idea, you might ask (unless you're
- already prepared to tear the idea apart, you vicious bastard)?
- Well, I'm not sure it's sound, first-of-all. It's possible that if
- you expend a great deal of resources you could create wallets
- using a false location shared by the source coin, hold it all in
- trust in a billion little wallets, and then trade without loss.
- That is, assuming that the proof of geography is something that
- can be spoofed.
- 
- That's surely part of the reason. The other big factor is that
- it's a lot of work, and I don't care all that much. Great ideas
- (if this even counts) aren't worth 1% of success. Well over 99% is
- the effort you put in. I don't need to spend that amount of time
- in crypto. The idea makes me feel gross.
- 
- Finally, I could never crack the big problem. How do you prove
- location? Give it some thought and see if you can come up with
- something that can't be manipulated. With that piece of the puzzle
- the rest should be doable. If you can make it work, take it and
- run. More power to you. All license or copyright or other legal
- shenanigans is hereby revoked.
- 
- Enjoy (you vicious bastard)
- 
+i----------------------------------------
+iGeo-Coin Blackpaper
+iMarch 08th, 2018
+i----------------------------------------
+i
+iIn 2013 I had a conversation with a coworker about Bitcoin. What
+iis it? I asked. No, no, I mean, how does it all work? I repeated.
+iWe went on like this for a few days before he eventually just told
+ime to read this whitepaper [0]. Ahh, now I get it... well mostly.
+i
+iIt makes sense from a logical point of view: how do you build
+ia platform that can naturally prove things true without needing
+ia 3rd party? Well, you build truth into its very existence. What
+iif the universe were nothing but a giant ledger?
+i
+iAt that time my coworker had become involved in a community
+itakeover of an alt-coin, a crypo-currency which had become
+iabandoned by its creator. He had some grand plans but the coin
+ifailed to gain traction. In a sense theirs was a precursor to
+iZ-Cash and Dash in the anonymity space. It had great plans and
+ilofty goals, but no clear path to reach them.
+i
+iAround that time I also gave some thought to another
+icrypto-currency which I thought had potential to be meaningful
+ifrom an economic point of view. My premise was a coin with a value
+ithat relative to its transaction-point geographically. In short:
+i
+i  Geo-Coin
+i
+i  A crypto-currency designed for the development of local markets.
+i  At the heart of the Geo-Coin system is the addition of geographic
+i  proof to proof-of-work. Every mined coin is done so with
+i  a specific geographic location attached to its identity.
+i  Wallets, as points of reception in a transaction, also hold
+i  geographic location as part of their identity. A wallet can hold
+i  coin values without degradation if they share geographies. As
+i  the wallet and coin increase distance, part of the value of the
+i  coin is lost. In this way, the further a coin "travels" the less
+i  its net worth in the system.
+i
+iWhy didn't I pursue this idea, you might ask (unless you're
+ialready prepared to tear the idea apart, you vicious bastard)?
+iWell, I'm not sure it's sound, first-of-all. It's possible that if
+iyou expend a great deal of resources you could create wallets
+iusing a false location shared by the source coin, hold it all in
+itrust in a billion little wallets, and then trade without loss.
+iThat is, assuming that the proof of geography is something that
+ican be spoofed.
+i
+iThat's surely part of the reason. The other big factor is that
+iit's a lot of work, and I don't care all that much. Great ideas
+i(if this even counts) aren't worth 1% of success. Well over 99% is
+ithe effort you put in. I don't need to spend that amount of time
+iin crypto. The idea makes me feel gross.
+i
+iFinally, I could never crack the big problem. How do you prove
+ilocation? Give it some thought and see if you can come up with
+isomething that can't be manipulated. With that piece of the puzzle
+ithe rest should be doable. If you can make it work, take it and
+irun. More power to you. All license or copyright or other legal
+ishenanigans is hereby revoked.
+i
+iEnjoy (you vicious bastard)
+i
 h[0] - Satoshi Nakamoto Bitcoin Whitepaper	URL:http://bitcoin.org/bitcoin.pdf

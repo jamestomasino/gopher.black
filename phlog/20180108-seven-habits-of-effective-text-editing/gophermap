@@ -1,15 +1,15 @@
- ----------------------------------------
- Seven habits of effective text editing
- January 08th, 2018
- ----------------------------------------
- 
- Hey everyone, I've archived a copy of Bram Moolenaar's fantastic
- work from 2000 on how to master vim for speed. [0]
- 
- It's archived at this gopher URI for future reference:
- 
-   gopher://sdf.org/0/users/tomasino/archive/seven.txt
- 
- Enjoy!
- 
-0[0] Seven Habits of effective text editing	/users/tomasino/archive/seven.txt	sdf.org	70
+i----------------------------------------
+iSeven habits of effective text editing
+iJanuary 08th, 2018
+i----------------------------------------
+i
+iHey everyone, I've archived a copy of Bram Moolenaar's fantastic
+iwork from 2000 on how to master vim for speed. [0]
+i
+iIt's archived at this gopher URI for future reference:
+i
+i  gopher://sdf.org/0/archive/seven.txt
+i
+iEnjoy!
+i
+0[0] Seven Habits of effective text editing	/archive/seven.txt	sdf.org	70

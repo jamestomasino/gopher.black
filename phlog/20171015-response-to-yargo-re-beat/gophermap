@@ -1,27 +1,27 @@
- ----------------------------------------
- Response to yargo re: beat
- October 15th, 2017
- ----------------------------------------
- 
- Yargo, I totally agree about the problems with Swatch Internet
- time. It  frustrates me because I built a metric-time
- implementation in high school a few years before Swatch did their
- thing, and I was so proud of it. Then Swatch came and squished my
- cool teenage thing.
- 
- In mine, 1 day was 1 unit. The epoch was unix epoch--because it
- was easy--aligned with GMT, with no time zones or daylight
- savings. I called it a quant (this part was cheesy) and deciquants
- or DQ counted through a 100 intervals of the day (about 14.4
- minutes). Days were just integer counters without respect to year
- or month or season or anything. I thought that those should be
- descriptors you could add on, like weather. Later I'd think of it
- in terms of metadata. Datetime as one float. 
- 
- Regardless, Swatch Internet time was close to a cool idea. I do
- respect that they got rid of timezones. They never really
- addressed dates, just time, so that's short sighted too. I guess
- I don't have a lot of faith in the crazy mechanisms of a watch
- company.
- 
+i----------------------------------------
+iResponse to yargo re: beat
+iOctober 15th, 2017
+i----------------------------------------
+i
+iYargo, I totally agree about the problems with Swatch Internet
+itime. It  frustrates me because I built a metric-time
+iimplementation in high school a few years before Swatch did their
+ithing, and I was so proud of it. Then Swatch came and squished my
+icool teenage thing.
+i
+iIn mine, 1 day was 1 unit. The epoch was unix epoch--because it
+iwas easy--aligned with GMT, with no time zones or daylight
+isavings. I called it a quant (this part was cheesy) and deciquants
+ior DQ counted through a 100 intervals of the day (about 14.4
+iminutes). Days were just integer counters without respect to year
+ior month or season or anything. I thought that those should be
+idescriptors you could add on, like weather. Later I'd think of it
+iin terms of metadata. Datetime as one float. 
+i
+iRegardless, Swatch Internet time was close to a cool idea. I do
+irespect that they got rid of timezones. They never really
+iaddressed dates, just time, so that's short sighted too. I guess
+iI don't have a lot of faith in the crazy mechanisms of a watch
+icompany.
+i
 

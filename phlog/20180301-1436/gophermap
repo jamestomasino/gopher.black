@@ -1,34 +1,34 @@
- ----------------------------------------
- 1436
- March 01st, 2018
- ----------------------------------------
- 
- I've been geeking out hard all day about RFCs. Someone on Mastodon
- posted about how CSV as a format was never needed and only came
- into existence because people at IBM and Bell Labs never read
- RFC20 [0], the definition of ASCII. ASCII has in its character set
- fields for separating ... fields, and groups and rows. 4 levels of
- heirarchy, to be exact. With those we never needed to worry about
- properly quoting stuff in CSV!
- 
- Mind. Blown.
- 
- So I tore through it (it's a short RFC) and it was a fascinating
- window into the past. I felt exactly as I had as a kid when I saw
- the Declaration of Independence. This was a marker in history,
- a relic of communication. The old RFCs feel like that to me.
- 
- I know I felt that way when I read RFC1436: The Internet Gopher
- Protocol [1]. I guess RFCs are cool things to go read for fun.
- Huh, who knew?
- 
- Anyway, to kind-of "celebrate" my nerdy excitement, I'm going to
- adopt using 1436 as a synonym for Gopher. Now you know what I'm
- referring to if you ever see that in the future. Maybe I'll link
- back here the first couple times... yeah.
- 
- Join me in 1436ing!
- 
+i----------------------------------------
+i1436
+iMarch 01st, 2018
+i----------------------------------------
+i
+iI've been geeking out hard all day about RFCs. Someone on Mastodon
+iposted about how CSV as a format was never needed and only came
+iinto existence because people at IBM and Bell Labs never read
+iRFC20 [0], the definition of ASCII. ASCII has in its character set
+ifields for separating ... fields, and groups and rows. 4 levels of
+iheirarchy, to be exact. With those we never needed to worry about
+iproperly quoting stuff in CSV!
+i
+iMind. Blown.
+i
+iSo I tore through it (it's a short RFC) and it was a fascinating
+iwindow into the past. I felt exactly as I had as a kid when I saw
+ithe Declaration of Independence. This was a marker in history,
+ia relic of communication. The old RFCs feel like that to me.
+i
+iI know I felt that way when I read RFC1436: The Internet Gopher
+iProtocol [1]. I guess RFCs are cool things to go read for fun.
+iHuh, who knew?
+i
+iAnyway, to kind-of "celebrate" my nerdy excitement, I'm going to
+iadopt using 1436 as a synonym for Gopher. Now you know what I'm
+ireferring to if you ever see that in the future. Maybe I'll link
+iback here the first couple times... yeah.
+i
+iJoin me in 1436ing!
+i
 
-0[0] RFC 20 - ASCII format for Network Interchange	/users/tomasino/archive/rfc/20.txt	sdf.org	70 
-0[1] RFC 1436 - The Internet Gopher Protocol	/users/tomasino/archive/rfc/1436.txt	sdf.org	70 
+0[0] RFC 20 - ASCII format for Network Interchange	/archive/rfc/20.txt	sdf.org	70 
+0[1] RFC 1436 - The Internet Gopher Protocol	/archive/rfc/1436.txt	sdf.org	70 

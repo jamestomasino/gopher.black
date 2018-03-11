@@ -1,16 +1,16 @@
- ----------------------------------------
- vim rulez
- February 27th, 2018
- ----------------------------------------
- 
- When it comes to writing gopher entries on a mobile device, is
- there really anything better than vim? Of course not! It's
- optimized for slow, wonky connections where every keypress
- matters. It gives me a smile everytime I get to use it this way.
- 
- I had jynx phlog in moku-pona at the wrong address (added a /phlog
- that wasn't necessary) so I moshed in to fix it. 8 characters
- typed and it was fixed and saved. Happy times.
- 
- 
+i----------------------------------------
+ivim rulez
+iFebruary 27th, 2018
+i----------------------------------------
+i
+iWhen it comes to writing gopher entries on a mobile device, is
+ithere really anything better than vim? Of course not! It's
+ioptimized for slow, wonky connections where every keypress
+imatters. It gives me a smile everytime I get to use it this way.
+i
+iI had jynx phlog in moku-pona at the wrong address (added a /phlog
+ithat wasn't necessary) so I moshed in to fix it. 8 characters
+ityped and it was fixed and saved. Happy times.
+i
+i
 

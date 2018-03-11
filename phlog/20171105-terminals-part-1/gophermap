@@ -1,34 +1,34 @@
- ----------------------------------------
- Terminals, Part 1
- November 05th, 2017
- ----------------------------------------
- 
- I've been using konsole for my terminal for a while, mainly
- because I was a KDE user and it came with it. I really like that
- it supports the ligatures that are in my font of choice, Firacode.
- I also like that it supports all the colors I want, and
- I customized that scheme really well. Beyond that, I don't like
- that it's part of a window manager i don't use anymore. I don't
- like the amount of resources it pulls in. I don't like that
- I can't change the settings anymore because I hid the menu and
- can't remember how to un-hide it (it should be a dotfile!).
- 
- So, I've been trying to go to xterm instead. Woo. As of tonight
- I got my xresources file working well enough that my fonts are at
- the right size and my color scheme is solid. I have been having
- a hell of a time getting unicode characters to display properly,
- though. After lots of reading, I think I know the problem: I can't
- figure out how to format my firacode fontName line to include the
- character encoding. I changed it to -misc-fixed-... and it's
- coming out right. I thought I could use xfontsel to figure it out,
- but I guess that only works with bitmap fonts, or maybe I don't
- know what I'm doing. xlsfonts gives me a nice list, but only for
- system fonts (I think) not those in a ~/.fonts folder.
- 
- Next steps: get firacode working with unicode in xterm or uxterm.
- Then, double check that tmux copypasta still works like it should.
- Finally, get copy & paste working over SSH/mosh.
- 
- Any advice from the peanut gallery?
- 
+i----------------------------------------
+iTerminals, Part 1
+iNovember 05th, 2017
+i----------------------------------------
+i
+iI've been using konsole for my terminal for a while, mainly
+ibecause I was a KDE user and it came with it. I really like that
+iit supports the ligatures that are in my font of choice, Firacode.
+iI also like that it supports all the colors I want, and
+iI customized that scheme really well. Beyond that, I don't like
+ithat it's part of a window manager i don't use anymore. I don't
+ilike the amount of resources it pulls in. I don't like that
+iI can't change the settings anymore because I hid the menu and
+ican't remember how to un-hide it (it should be a dotfile!).
+i
+iSo, I've been trying to go to xterm instead. Woo. As of tonight
+iI got my xresources file working well enough that my fonts are at
+ithe right size and my color scheme is solid. I have been having
+ia hell of a time getting unicode characters to display properly,
+ithough. After lots of reading, I think I know the problem: I can't
+ifigure out how to format my firacode fontName line to include the
+icharacter encoding. I changed it to -misc-fixed-... and it's
+icoming out right. I thought I could use xfontsel to figure it out,
+ibut I guess that only works with bitmap fonts, or maybe I don't
+iknow what I'm doing. xlsfonts gives me a nice list, but only for
+isystem fonts (I think) not those in a ~/.fonts folder.
+i
+iNext steps: get firacode working with unicode in xterm or uxterm.
+iThen, double check that tmux copypasta still works like it should.
+iFinally, get copy & paste working over SSH/mosh.
+i
+iAny advice from the peanut gallery?
+i
 

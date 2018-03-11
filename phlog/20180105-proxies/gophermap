@@ -1,30 +1,30 @@
- ----------------------------------------
- Proxies
- January 05th, 2018
- ----------------------------------------
- 
- I forked Muffinista's gopher proxy [0] and made my own copy [1]
- that doesn't track anything, has no stats database locally, and
- doesn't load cross-domain scripts. It also defaults to the dark
- theme and also defaults to my gopher hole.
- 
- http://tomasino.sdf.org [2] is the URL.
- 
- You can navigate to lots of other gopher holes from it if you
- want, but it isn't perfect. When you send it to the SDF phlogs
- list, it downloads it as if it were a binary file. It does that
- occasionally on text files as well. Still, it looks pretty nice
- and it was the only source I found that seemed likely to run on
- SDF.
- 
- Oh, and the source... it's really messy. This thing was originally
- going to run in a /gopher/ subdirectory, but everything in the
- source is hardcoded to domain root, including the whole rewrite
- engine for links and parsing. Blech! There's redundencies all over
- the place in the front-end code, including 3 seperate locations
- where javascript files can live. I might do a big refactor... but
- probably not. It solves a problem and that's good enough.
- 
+i----------------------------------------
+iProxies
+iJanuary 05th, 2018
+i----------------------------------------
+i
+iI forked Muffinista's gopher proxy [0] and made my own copy [1]
+ithat doesn't track anything, has no stats database locally, and
+idoesn't load cross-domain scripts. It also defaults to the dark
+itheme and also defaults to my gopher hole.
+i
+ihttp://tomasino.sdf.org [2] is the URL.
+i
+iYou can navigate to lots of other gopher holes from it if you
+iwant, but it isn't perfect. When you send it to the SDF phlogs
+ilist, it downloads it as if it were a binary file. It does that
+ioccasionally on text files as well. Still, it looks pretty nice
+iand it was the only source I found that seemed likely to run on
+iSDF.
+i
+iOh, and the source... it's really messy. This thing was originally
+igoing to run in a /gopher/ subdirectory, but everything in the
+isource is hardcoded to domain root, including the whole rewrite
+iengine for links and parsing. Blech! There's redundencies all over
+ithe place in the front-end code, including 3 seperate locations
+iwhere javascript files can live. I might do a big refactor... but
+iprobably not. It solves a problem and that's good enough.
+i
 h[0] Muffinista Gopher Proxy	URL:http://github.com/muffinista/gophper-proxy
 h[1] Tomasino's Gopher Proxy	URL:http://github.com/jamestomasino/gophper-proxy
 h[2] Tomasino SDF Website	URL:http://tomasino.sdf.org/

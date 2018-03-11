@@ -1,20 +1,20 @@
- ----------------------------------------
- Archives
- March 08th, 2018
- ----------------------------------------
- 
- Jynx reminded [0] me I never acknowledged a pretty big change in
- my phlog listing when I archived 2017 posts. I know there was some
- talk about breaking links by moving posts around and wanted to let
- everyone know there's nothing to worry about here. Like jynx my
- posts haven't moved. I just changed the gophermap in the phlog
- directory to limit things to this year and I copied the links from
- 2017 into a second gophermap.
- 
- It was a really easy change and I just did it by hand. I don't
- think I'll bother making a script for it or a crazy cron. Who
- knows, by the time july comes around I may decide the archive
- should be by month instead of year. Whatever changes will just be
- the view, not the posts.
- 
+i----------------------------------------
+iArchives
+iMarch 08th, 2018
+i----------------------------------------
+i
+iJynx reminded [0] me I never acknowledged a pretty big change in
+imy phlog listing when I archived 2017 posts. I know there was some
+italk about breaking links by moving posts around and wanted to let
+ieveryone know there's nothing to worry about here. Like jynx my
+iposts haven't moved. I just changed the gophermap in the phlog
+idirectory to limit things to this year and I copied the links from
+i2017 into a second gophermap.
+i
+iIt was a really easy change and I just did it by hand. I don't
+ithink I'll bother making a script for it or a crazy cron. Who
+iknows, by the time july comes around I may decide the archive
+ishould be by month instead of year. Whatever changes will just be
+ithe view, not the posts.
+i
 0[0] jynx - On the RPoD Phlog Rewrite	/users/jynx/dat/20180308b.post	sdf.org	70

@@ -1,15 +1,15 @@
- ----------------------------------------
- Tweaks to Burrow
- February 23rd, 2018
- ----------------------------------------
- 
- I made some updates on my burrow script. It should work for me
- back on cluster again, if I did it right. I decided to stop
- worrying about OSX and that greatly simplified things. Sed on OSX
- is stupid and it makes me sad.
- 
- Anywho, lets see if this works!
- 
+i----------------------------------------
+iTweaks to Burrow
+iFebruary 23rd, 2018
+i----------------------------------------
+i
+iI made some updates on my burrow script. It should work for me
+iback on cluster again, if I did it right. I decided to stop
+iworrying about OSX and that greatly simplified things. Sed on OSX
+iis stupid and it makes me sad.
+i
+iAnywho, lets see if this works!
+i
 
 hBurrow	URL:http://github.com/jamestomasino/burrow
 

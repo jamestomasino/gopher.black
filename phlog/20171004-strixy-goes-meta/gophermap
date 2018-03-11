@@ -1,24 +1,24 @@
- ----------------------------------------
- Strixy goes Meta
- October 04th, 2017
- ----------------------------------------
- 
- Official welcomes to strixy [0] who recently joined MetaARPA. He
- got set up on the meta array today and made his way into IRC in
- the #gopher channel on irc.sdf.org. If you're reading this and
- haven't popped in to say hi, what are you doing with your life?!
- 
- Strixy also gave me a nifty new shell function that I've added to
- my prompt. It outputs the current time in Swatch Internet Time [1],
- like so:
- 
- @344
- 
- Pretty neat, eh? I thought so! If I were him, I'd add a cgi script
- to his gopher hole so other people can check the swatch internet
- time over gopher. (HINT HINT)
- 
- Welcome to meta, strixy!
- 
+i----------------------------------------
+iStrixy goes Meta
+iOctober 04th, 2017
+i----------------------------------------
+i
+iOfficial welcomes to strixy [0] who recently joined MetaARPA. He
+igot set up on the meta array today and made his way into IRC in
+ithe #gopher channel on irc.sdf.org. If you're reading this and
+ihaven't popped in to say hi, what are you doing with your life?!
+i
+iStrixy also gave me a nifty new shell function that I've added to
+imy prompt. It outputs the current time in Swatch Internet Time [1],
+ilike so:
+i
+i@344
+i
+iPretty neat, eh? I thought so! If I were him, I'd add a cgi script
+ito his gopher hole so other people can check the swatch internet
+itime over gopher. (HINT HINT)
+i
+iWelcome to meta, strixy!
+i
 1[0] strixy's gopher	/users/strixy	sdf.org	70
 0[1] Swatch Internet Time	/Swatch Internet Time	gopherpedia.com	70
