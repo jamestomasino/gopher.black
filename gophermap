@@ -1,39 +1,38 @@
- ::::::::::  ...    .      :   :::.    .::::. :::::   ::.   ..
- ;;;;;;;'''.;;;;;;  ;,.    ;;  ;;`;;  ;;`   ` ;;`;;;, `;; ;;;;;;
-     [[   ,[     \[,[[[, ,[[[,,[[ '[[,'[=/[[[,[[  [[[. '[,[    \[,
-     $$   $$,     $$$$$$$$$$$$$$$cc$$$  ''   $$$  $$ Y$c$$$,    $$
-     88,  "88,_ _,8P88 Y88"888888   88,8b   dP88  88   Y8"88, _,8P
-     MMM    YMMMMM" MM  M' "MMYMM   ""  YMmY" MM  MM    M "YMMMM"
-
- Welcome, you curious fox, to my little Gopher hole
-
-      ==== Last Updated: March 10th, 2018 ====
-
-1About	/users/tomasino/about	sdf.org	70
-
- ==== Content ====
-1Phlog	/users/tomasino/phlog	sdf.org	70
-1Explorations	/users/tomasino/explorations	sdf.org	70
-1Writing	/users/tomasino/writing	sdf.org	70
-
-1Recipes	/users/tomasino/food/recipes	sdf.org	70
-1Games	/users/tomasino/games	sdf.org	70
-1Archives	/users/tomasino/archive	sdf.org	70
-
-0Reading	/users/tomasino/reading/currentbooks.txt	sdf.org	70
-0Read	/users/tomasino/reading/recentbooks.txt	sdf.org	70
-
- ==== Websites ====
+i::::::::::  ...    .      :   :::.    .::::. :::::   ::.   ..
+i;;;;;;;'''.;;;;;;  ;,.    ;;  ;;`;;  ;;`   ` ;;`;;;, `;; ;;;;;;
+i    [[   ,[     \[,[[[, ,[[[,,[[ '[[,'[=/[[[,[[  [[[. '[,[    \[,
+i    $$   $$,     $$$$$$$$$$$$$$$cc$$$  ''   $$$  $$ Y$c$$$,    $$
+i    88,  "88,_ _,8P88 Y88"888888   88,8b   dP88  88   Y8"88, _,8P
+i    MMM    YMMMMM" MM  M' "MMYMM   ""  YMmY" MM  MM    M "YMMMM"
+i
+iWelcome, you curious fox, to my little Gopher hole
+i
+i     ==== Last Updated: March 10th, 2018 ====
+i
+1About	/users/tomasino/about	gopher.black	70
+i
+i==== Content ====
+1Phlog	/users/tomasino/phlog	gopher.black	70
+1Explorations	/users/tomasino/explorations	gopher.black	70
+1Writing	/users/tomasino/writing	gopher.black	70
+i
+1Recipes	/users/tomasino/food/recipes	gopher.black	70
+1Games	/users/tomasino/games	gopher.black	70
+1Archives	/users/tomasino/archive	gopher.black	70
+i
+0Reading	/users/tomasino/reading/currentbooks.txt	gopher.black	70
+0Read	/users/tomasino/reading/recentbooks.txt	gopher.black	70
+i
+i==== Websites ====
 hAll Sites	URL:http://www.tomasino.org/
 hBlog	URL:http://blog.tomasino.org/
 hLabs Blog	URL:http://labs.tomasino.org/
 hResume	URL:http://jamestomasino.com/
-hSDF	URL:http://tomasino.sdf.org/
-htwtxt	URL:http://tomasino.sdf.org/twtxt.txt
-
- ==== External Resources ====
-1Phlogs	/users/tomasino/phlogs	sdf.org	70
-1Gopher People	/users/tomasino/people	sdf.org	70
-1Gopher Places	/users/tomasino/places	sdf.org	70
-1Web Places	/users/tomasino/http	sdf.org	70
-.
+hSDF	URL:http://tomasino.gopher.black/
+htwtxt	URL:http://tomasino.gopher.black/twtxt.txt
+i
+i==== External Resources ====
+1Phlogs	/users/tomasino/phlogs	gopher.black	70
+1Gopher People	/users/tomasino/people	gopher.black	70
+1Gopher Places	/users/tomasino/places	gopher.black	70
+1Web Places	/users/tomasino/http	gopher.black	70
