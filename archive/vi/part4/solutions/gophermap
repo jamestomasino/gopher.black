@@ -1,76 +1,76 @@
- Answers to Part 4 Exercises
- 
- Solution to k37 Problem
- 
-     % substitute /\(.*\)k37\(.*k37\)/\1q53\2
-   
-   will do it.  When there are two or more wild cards in a search
-   pattern, the editor finds the longest match for the first one that
-   allows any match for the subsequent ones, and so on.  
- 
- 
- Solution to Capitalization Problem 
- 
-     237 , 289 substitute :[^ ]*:\L\u&:g
-   
-   Since the "\u" and "\l" metacharacters have limited reach, they
-   don't end the effect of a "\L" or "\U" metacharacter--they only
-   make a one-character exception.  
-   
-   Author's Note: Since I wrote this solution, I have learned that
-   it will not work under many implementations of the editor.  So,
-   I've added below an alternate solution, more complex but more
-   powerful, that should work everywhere.  
-   
-     237 , 289 substitute :\([A-Za-z]\)\([A-Za-z-]*\):\u\1\L\2:g
-   
-   Even in editing environments where my first solution would work,
-   the second one has certain advantages: 
-   
-   The second solution is not fooled by situations where
-   a punctuation mark leads off a word.  
-   
-   It's up to you whether the second solution does or does not
-   capitalize any but the first word in hyphenated compounds such
-   as Frankfurt-am-Main. If you want to capitalize those subsequent
-   words, just remove the last of the three hyphens within the
-   second character class in my alternate solution.  
-   
- 
- Answer to No-Op Problem
- 
- 
-   The editor thinks a substitution has been successfully made
-   whenever the outgoing search pattern is matched and no error
-   condition is encountered, even if it is only replacing nothing
-   with nothing.  So when the editor finishes up by reporting the
-   number of substitutions it has made, it is giving me a count of
-   the empty lines in my file, which tells me how many paragraphs
-   plus headlines plus list items I have. Then I divide this number
-   into the count of lines in the file, to see whether my
-   paragraphs have gotten too long.  
-   
- 
- Solution to HTML tags problem 
- 
-   Where the substitution command to add a tag at the start of
-   a paragraph presently removes and then replaces any first
-   character on the line, now it should remove and replace anything
-   except a "<" character in that position.  If that first
-   character is a "<" it is necessary that the substitution command
-   fail so it will change nothing. To arrange this, replace that
-   period in the search pattern with a negative character class --
-   "[^<]" -- which matches any character except the one that begins
-   every HTML tag.  
- 
-   Similarly, replace the period in the other substitution pattern
-   with the negative character class that matches any character
-   except the one that always ends an HTML tag.  Now the two
-   commands will look like this: 
- 
-     global /^$/ + substitute /^[^<]/<P>&/
-     global /^$/ - substitute :[^>]$:&</P>:
- 
- 
-1Back to Part 4	/users/tomasino/archive/vi/part4/
-1Back to the index	/users/tomasino/archive/vi/
+iAnswers to Part 4 Exercises
+i
+iSolution to k37 Problem
+i
+i    % substitute /\(.*\)k37\(.*k37\)/\1q53\2
+i  
+i  will do it.  When there are two or more wild cards in a search
+i  pattern, the editor finds the longest match for the first one that
+i  allows any match for the subsequent ones, and so on.  
+i
+i
+iSolution to Capitalization Problem 
+i
+i    237 , 289 substitute :[^ ]*:\L\u&:g
+i  
+i  Since the "\u" and "\l" metacharacters have limited reach, they
+i  don't end the effect of a "\L" or "\U" metacharacter--they only
+i  make a one-character exception.  
+i  
+i  Author's Note: Since I wrote this solution, I have learned that
+i  it will not work under many implementations of the editor.  So,
+i  I've added below an alternate solution, more complex but more
+i  powerful, that should work everywhere.  
+i  
+i    237 , 289 substitute :\([A-Za-z]\)\([A-Za-z-]*\):\u\1\L\2:g
+i  
+i  Even in editing environments where my first solution would work,
+i  the second one has certain advantages: 
+i  
+i  The second solution is not fooled by situations where
+i  a punctuation mark leads off a word.  
+i  
+i  It's up to you whether the second solution does or does not
+i  capitalize any but the first word in hyphenated compounds such
+i  as Frankfurt-am-Main. If you want to capitalize those subsequent
+i  words, just remove the last of the three hyphens within the
+i  second character class in my alternate solution.  
+i  
+i
+iAnswer to No-Op Problem
+i
+i
+i  The editor thinks a substitution has been successfully made
+i  whenever the outgoing search pattern is matched and no error
+i  condition is encountered, even if it is only replacing nothing
+i  with nothing.  So when the editor finishes up by reporting the
+i  number of substitutions it has made, it is giving me a count of
+i  the empty lines in my file, which tells me how many paragraphs
+i  plus headlines plus list items I have. Then I divide this number
+i  into the count of lines in the file, to see whether my
+i  paragraphs have gotten too long.  
+i  
+i
+iSolution to HTML tags problem 
+i
+i  Where the substitution command to add a tag at the start of
+i  a paragraph presently removes and then replaces any first
+i  character on the line, now it should remove and replace anything
+i  except a "<" character in that position.  If that first
+i  character is a "<" it is necessary that the substitution command
+i  fail so it will change nothing. To arrange this, replace that
+i  period in the search pattern with a negative character class --
+i  "[^<]" -- which matches any character except the one that begins
+i  every HTML tag.  
+i
+i  Similarly, replace the period in the other substitution pattern
+i  with the negative character class that matches any character
+i  except the one that always ends an HTML tag.  Now the two
+i  commands will look like this: 
+i
+i    global /^$/ + substitute /^[^<]/<P>&/
+i    global /^$/ - substitute :[^>]$:&</P>:
+i
+i
+1Back to Part 4	/archive/vi/part4/
+1Back to the index	/archive/vi/
