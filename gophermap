@@ -1,27 +1,23 @@
-i::::::::::  ...    .      :   :::.    .::::. :::::   ::.   ..
-i;;;;;;;'''.;;;;;;  ;,.    ;;  ;;`;;  ;;`   ` ;;`;;;, `;; ;;;;;;
-i    [[   ,[     \[,[[[, ,[[[,,[[ '[[,'[=/[[[,[[  [[[. '[,[    \[,
-i    $$   $$,     $$$$$$$$$$$$$$$cc$$$  ''   $$$  $$ Y$c$$$,    $$
-i    88,  "88,_ _,8P88 Y88"888888   88,8b   dP88  88   Y8"88, _,8P
-i    MMM    YMMMMM" MM  M' "MMYMM   ""  YMmY" MM  MM    M "YMMMM"
-i
-iWelcome, you curious fox, to my little Gopher hole
+i                     |             |    |           |
+i       _` |  _ \ _ \   \   -_)  _|  _ \ |  _` |  _| | /
+i     \__, |\___/.__/_| _|\___|_|_)_.__/_|\__,_|\__|_\_\
+i     ____/     _|
 i
 i     ==== Last Updated: March 10th, 2018 ====
 i
-1About	/users/tomasino/about	gopher.black	70
+1About	/about	gopher.black	70
 i
 i==== Content ====
-1Phlog	/users/tomasino/phlog	gopher.black	70
-1Explorations	/users/tomasino/explorations	gopher.black	70
-1Writing	/users/tomasino/writing	gopher.black	70
+1Phlog	/phlog	gopher.black	70
+1Explorations	/explorations	gopher.black	70
+1Writing	/writing	gopher.black	70
 i
-1Recipes	/users/tomasino/food/recipes	gopher.black	70
-1Games	/users/tomasino/games	gopher.black	70
-1Archives	/users/tomasino/archive	gopher.black	70
+1Recipes	/food/recipes	gopher.black	70
+1Games	/games	gopher.black	70
+1Archives	/archive	gopher.black	70
 i
-0Reading	/users/tomasino/reading/currentbooks.txt	gopher.black	70
-0Read	/users/tomasino/reading/recentbooks.txt	gopher.black	70
+0Reading	/reading/currentbooks.txt	gopher.black	70
+0Read	/reading/recentbooks.txt	gopher.black	70
 i
 i==== Websites ====
 hAll Sites	URL:http://www.tomasino.org/
@@ -32,7 +28,7 @@ hSDF	URL:http://tomasino.gopher.black/
 htwtxt	URL:http://tomasino.gopher.black/twtxt.txt
 i
 i==== External Resources ====
-1Phlogs	/users/tomasino/phlogs	gopher.black	70
-1Gopher People	/users/tomasino/people	gopher.black	70
-1Gopher Places	/users/tomasino/places	gopher.black	70
-1Web Places	/users/tomasino/http	gopher.black	70
+1Phlogs	/phlogs	gopher.black	70
+1Gopher People	/people	gopher.black	70
+1Gopher Places	/places	gopher.black	70
+1Web Places	/http	gopher.black	70
