@@ -1,0 +1,52 @@
+i----------------------------------------
+iBlack
+iMarch 10th, 2018
+i----------------------------------------
+i
+iIf you're reading this that means that my sdf gopher hole is dead.
+i
+iThat's dramatic!
+i
+iRecently there was a second round of shake-ups in the SDF gopher
+ispace. Unlike sdf.org, which has been running gophernicus for
+iquite a while, gopher.club suddenly forked away and started
+irunning a different server. This was a surprise for most of us
+isince gopher.club was just an alias for SDF, or so we thought. The
+ichange blew up a few of the prettier gopher holes like jynx and
+icat's. Mine was relatively unscathed, but it raised an issue in my
+imind. SDF is not a safe space for things to live.
+i
+iSDF is a test-bed for lots of things. It does some fantastic work
+iin aiding the stability of NetBSD. I know better than to host
+ia critical web site there, but for some reason I thought of it as
+ia place where gopher holes could persist relatively unscathed over
+itime. It's been running for so long already, what could change
+ithat, right?
+i
+iThen in the matter of months we witness some pretty big shifts in
+ithe system. The worst part of it is the lack of communication.
+iThere was no warning of changes coming, no announcement of why or
+ito what end, nothing. The SDF users are pretty relaxed about it,
+ibut it still put that nagging thought in the back of my mind. Is
+ithis really safe?
+i
+iSo on a whim I bought a handful of gopher domains while at a diner
+ifor lunch. One of these is gopher.black, my new home. It's running
+ion a raspberry pi in my spare room, clinging to my wifi and
+idangling on the edge of the desk without so much as a plastic
+icase. Is this safe? Well, no. I'll get a case for it tomorrow and
+ihard-wire it to the network. I've set up dynamic dns through
+inamesilo.com using their API and a little python. I've still got
+ito configure the pi to restart the gopher server upon reboot.
+iThere's plenty of work to be done.
+i
+iIs it reliable, is it safe? Well, no and yet yes. I'm running
+ithings myself and in the end that's where reliability is. Do it
+iyourself, own it, and you can trust it. Anything else is false
+ihope.
+i
+iBlack thoughts for gopher.black? I think it's hopeful.
+i
+iI wish the SDF gopher community the best. I'll still be active all
+iover SDF, in IRC, com, even anonradio. I love it there, but I've
+ilearned my lesson not to trust it with my stuff.
