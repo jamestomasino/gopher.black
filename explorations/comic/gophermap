@@ -1,56 +1,56 @@
- I was playing around with the idea of a having a web comic, or
- rather a gopher comic. I'm not sure if it is doable, so I put a
- sample together. I'll put tests here.
+iI was playing around with the idea of a having a web comic, or
+irather a gopher comic. I'm not sure if it is doable, so I put a
+isample together. I'll put tests here.
 
 
- TEST #1: Ascii art generated from art, with manual text
+iTEST #1: Ascii art generated from art, with manual text
 
- ────────────────────────────────────────
+i────────────────────────────────────────
 
-  I DIDN'T EVEN KNOW HE
-  EXISTED A FEW DAYSO AGO AND
-  NOW HE'S GONE FOREVER.
-  IT'S LIKE I FOUND HIM FOR
-  NO REASON. I HAD TO SAY
-  GOOD-BYE AS SOON AS I
-        SAID HELLO.
-            │
-             │
-             │      ⌐
- 
-                ¿"▐  ,,
-             ` `  ╩  g,~⌐⌐
-         ,,            ──¬-
-         "╙  "         ──æ~.
-          F        "
-          `¬~     ( ╒ ƒ,┘
-                     , ▐
-     ,«,,,,▄▓▓u ,,;, ,-
-     /  ▓▓▓▓▓▓▓``▀▓▓▓██ `
-     ~ µ▐▀` ▓▓▓,. ▓▓╙▓,
-            ▀▀▀````▀
+i I DIDN'T EVEN KNOW HE
+i EXISTED A FEW DAYSO AGO AND
+i NOW HE'S GONE FOREVER.
+i IT'S LIKE I FOUND HIM FOR
+i NO REASON. I HAD TO SAY
+i GOOD-BYE AS SOON AS I
+i       SAID HELLO.
+i           │
+i            │
+i            │      ⌐
+i
+i               ¿"▐  ,,
+i            ` `  ╩  g,~⌐⌐
+i        ,,            ──¬-
+i        "╙  "         ──æ~.
+i         F        "
+i         `¬~     ( ╒ ƒ,┘
+i                    , ▐
+i    ,«,,,,▄▓▓u ,,;, ,-
+i    /  ▓▓▓▓▓▓▓``▀▓▓▓██ `
+i    ~ µ▐▀` ▓▓▓,. ▓▓╙▓,
+i           ▀▀▀````▀
 
 
- ────────────────────────────────────────
+i────────────────────────────────────────
 
-  STILL... IN A SAD, AWFUL,
-  TERRIBLE WAY, I'M HAPPY
-  I MET HIM.                ,    ,
-      │                  ,ƒ▓▀█"`▀▓╕
-       │               *æ═w `  æ▀▓
-     *SNIFF*           [     .,ƒ` ▀─
-       │               ╘* ⌐        ─
-       │               ╜▄▄█       z`
-        │              ╚▓▓.─     ⌐╨
-         │                  `,  g▀▀▀
-                             ¬  ▄▄#▄▌
-        ,'[,~┬              `'  Γ,▄█▐
-      ²   `  ─`-"           ╨~ ▐▓,,▄▀
-    ≤      ,,,, ,           ┌  ▐ ,▄▓,
-    ,▌   ,"   ,             ⌠  ▐`,,█,r
-    ╩,   k ²  [┌            Γ  ▓ ,,▌,Γ
-       ╖   "─` ▌               ▌ ,¿▓åΓ
-      ▐▓▓█ >≡█▌            Æ   ▌    ,
-       ▓▓▓▌. ▐▓            V   ▐  ,  ▌,r
-       ▐▓▓▓g▄▄▓─               ]▓▄▓▄▓ ▌µ
- ────-─²▀▀▀▀▀▀▀▀─-─-──-─────▀──╝╨══──-▀─
+i STILL... IN A SAD, AWFUL,
+i TERRIBLE WAY, I'M HAPPY
+i I MET HIM.                ,    ,
+i     │                  ,ƒ▓▀█"`▀▓╕
+i      │               *æ═w `  æ▀▓
+i    *SNIFF*           [     .,ƒ` ▀─
+i      │               ╘* ⌐        ─
+i      │               ╜▄▄█       z`
+i       │              ╚▓▓.─     ⌐╨
+i        │                  `,  g▀▀▀
+i                            ¬  ▄▄#▄▌
+i       ,'[,~┬              `'  Γ,▄█▐
+i     ²   `  ─`-"           ╨~ ▐▓,,▄▀
+i   ≤      ,,,, ,           ┌  ▐ ,▄▓,
+i   ,▌   ,"   ,             ⌠  ▐`,,█,r
+i   ╩,   k ²  [┌            Γ  ▓ ,,▌,Γ
+i      ╖   "─` ▌               ▌ ,¿▓åΓ
+i     ▐▓▓█ >≡█▌            Æ   ▌    ,
+i      ▓▓▓▌. ▐▓            V   ▐  ,  ▌,r
+i      ▐▓▓▓g▄▄▓─               ]▓▄▓▄▓ ▌µ
+i────-─²▀▀▀▀▀▀▀▀─-─-──-─────▀──╝╨══──-▀─

@@ -1,97 +1,97 @@
-Notes about the SDF MUD
-
-Score for:  Ino the Fledgling Thief.
-----------------------------------------------------------------------------
-LEVEL: 1           Race : Pixie             Played: 0 hours
-YEARS: 70          Class: Thief             Log In: Mon Jan  1 20:56:09 2018
-STR  : 09(09)                               Saved:  no
-INT  : 16(15)                               Time:   Mon Jan  1 21:18:06 2018
-WIS  : 15(14)      Armor: shabby and threadbare
-DEX  : 19(19)      Align: evil                    Items: 00000   (max 00008)
-CON  : 12(11)      Pos'n: standing               Weight: 00001 (max 0000100)
-CHA  : 16(16)      Wimpy: 0
-LCK  : 14(14)
-Glory: 0000(0000)                           Pager:  [ ][ 24 lines]
-PRACT: 000           Hit: 20    of 20       AutoExit[*]
-XP   : 0            Mana: 110   of 100      AutoLoot[ ]
-Move: 100   of   100   Mdeaths: 00000    AutoSac ( )
-On Hand: Gold: 0             Silver: 0            Copper: 0
-Balance: Gold: 0            Silver: 0            Copper: 0
-You feel great.
-Languages: common pixie
-----------------------------------------------------------------------------
-
-Help Commands:
-  HELP START -  List help files and documentation
-
-  CHANNELS -    Will teach you about communication with other players.
-  COMBAT -      Will teach you how to choose, start and stop a fight.
-  CONFIG -      Will teach you about our configuration menu.
-  CONTAINER -   Will teach you about using containers to hold belongings.
-  DEATH -       Will tell you about the death experience in the game.
-  FPROMPT -     Similar to Prompt, displays only when fighting Mobiles.  How to edit.
-  GROUP -       Will help you with grouping with other adventurers.
-  GUIDE -       Will help you learn to use your Adventurers Guide Book.
-  INFORMATION - Will cover ways to find certain types of information.
-  MAP -         Covers info regarding map(s) of the realm as well as Online maps.
-  MOVEMENT -    Will teach you various commands for moving about the game.
-  OBJECTS -     Will teach you various commands to use your equipment.
-  PRACTICE -    Will teach you about training spells, skills, and weapons.
-  PROMPT -      Displays how to change the 'Prompt' the spot where it displays Hp/Mana
-  RULES -       Will lead you through the laws of the land.
-  SCORE -       Will tell you about your character's personal score sheet.
-  SPAM -        Will explain what spam is, and why you should not do it.
-
-  A-I -         Guide Help Pages
-
-Other Commands:
-  SLIST   -     a command that lists all your spells and skills and the level at
-                which you may practice them.
-  AREAS   -     Typing AREAS will get you a list of all areas.  You may get more
-                information on each area by typing HELP <full area name>.
-  WIZLIST -     This is a list of all Immortals of the game.
-  COMMANDS-     This is a list of all commands available to you.
-  SOCIALS -     This is a list of all socials available.
-  TIME    -     This will tell you the current times inside the Realms, the time
-                the Realms was last rebooted, and the current time in Toronto.
-  WHERE   -     Where will give you a list of other players in the same area.
-  SAVE    -     After level two, typing SAVE will save your process.
-  QUIT    -     If you want to leave the game, type QUIT.
-  WHO     -     A list of other players visible to you in the Realms.
-  TITLE   -     Once you reach level five, you may make your own title.
-  PASSWORD-     Your password can be changed with PASSWORD <new> <new>
-  DESC    -     You may set up a personal description, type DESC to edit.
-
-Even More Commands:
-  '           ,           ]           affected    afk         ansi
-  appraise    apply       alias       away        attributes  afw
-  buy         brandish    bs          bury        broach      blood
-  cast        close       consider    channels    clans       clear
-  commands    config      councils    credits     cook        color
-  ctalk       connect     down        drink       drop        description
-  drag        dismount    date        east        eat         emote
-  exits       examine     equipment   empty       enter       fill
-  follow      flee        fprompt     feed        get         give
-  group       glance      gold        gt          gtell       gboards
-  gnote       gtalk       help        hold        hl          i
-  inventory   ide         ignore      insert      immlist     junk
-  kill        l           look        lock        level       list
-  languages   last        leave       light       laws        logout
-  listen      mail        murder      mez         mplog       motd
-  memorize    mistwalk    mana        north       name        ne
-  nw          note        northeast   northwest   order       open
-  oldscore    orders      outputprefixoutputsuffixotalk       put
-  password    practice    pagelength  pull        push        prompt
-  pager       panic       quaff       qui         quit        rest
-  report      reply       remove      recite      rent        revert
-  rip         reroll      records     request     south       se
-  sw          say         sacrifice   sleep       stand       sell
-  shove       sit         slist       smoke       socials     southeast
-  southwest   speak       split       statreport  shoot       stafflist
-  sayto       score       score2      sc2         s2          tell
-  take        tamp        time        toggle      up          unlock
-  value       visible     west        wake        who         wear
-  whisper     wimpy       withdraw    weather     wield       zap
-
-Places:
-  ArchBishop - sw, 2w, 4n, u, and 2s from the Darkhaven Square
+iNotes about the SDF MUD
+i
+iScore for:  Ino the Fledgling Thief.
+i----------------------------------------------------------------------------
+iLEVEL: 1           Race : Pixie             Played: 0 hours
+iYEARS: 70          Class: Thief             Log In: Mon Jan  1 20:56:09 2018
+iSTR  : 09(09)                               Saved:  no
+iINT  : 16(15)                               Time:   Mon Jan  1 21:18:06 2018
+iWIS  : 15(14)      Armor: shabby and threadbare
+iDEX  : 19(19)      Align: evil                    Items: 00000   (max 00008)
+iCON  : 12(11)      Pos'n: standing               Weight: 00001 (max 0000100)
+iCHA  : 16(16)      Wimpy: 0
+iLCK  : 14(14)
+iGlory: 0000(0000)                           Pager:  [ ][ 24 lines]
+iPRACT: 000           Hit: 20    of 20       AutoExit[*]
+iXP   : 0            Mana: 110   of 100      AutoLoot[ ]
+iMove: 100   of   100   Mdeaths: 00000    AutoSac ( )
+iOn Hand: Gold: 0             Silver: 0            Copper: 0
+iBalance: Gold: 0            Silver: 0            Copper: 0
+iYou feel great.
+iLanguages: common pixie
+i----------------------------------------------------------------------------
+i
+iHelp Commands:
+i  HELP START -  List help files and documentation
+i
+i  CHANNELS -    Will teach you about communication with other players.
+i  COMBAT -      Will teach you how to choose, start and stop a fight.
+i  CONFIG -      Will teach you about our configuration menu.
+i  CONTAINER -   Will teach you about using containers to hold belongings.
+i  DEATH -       Will tell you about the death experience in the game.
+i  FPROMPT -     Similar to Prompt, displays only when fighting Mobiles.  How to edit.
+i  GROUP -       Will help you with grouping with other adventurers.
+i  GUIDE -       Will help you learn to use your Adventurers Guide Book.
+i  INFORMATION - Will cover ways to find certain types of information.
+i  MAP -         Covers info regarding map(s) of the realm as well as Online maps.
+i  MOVEMENT -    Will teach you various commands for moving about the game.
+i  OBJECTS -     Will teach you various commands to use your equipment.
+i  PRACTICE -    Will teach you about training spells, skills, and weapons.
+i  PROMPT -      Displays how to change the 'Prompt' the spot where it displays Hp/Mana
+i  RULES -       Will lead you through the laws of the land.
+i  SCORE -       Will tell you about your character's personal score sheet.
+i  SPAM -        Will explain what spam is, and why you should not do it.
+i
+i  A-I -         Guide Help Pages
+i
+iOther Commands:
+i  SLIST   -     a command that lists all your spells and skills and the level at
+i                which you may practice them.
+i  AREAS   -     Typing AREAS will get you a list of all areas.  You may get more
+i                information on each area by typing HELP <full area name>.
+i  WIZLIST -     This is a list of all Immortals of the game.
+i  COMMANDS-     This is a list of all commands available to you.
+i  SOCIALS -     This is a list of all socials available.
+i  TIME    -     This will tell you the current times inside the Realms, the time
+i                the Realms was last rebooted, and the current time in Toronto.
+i  WHERE   -     Where will give you a list of other players in the same area.
+i  SAVE    -     After level two, typing SAVE will save your process.
+i  QUIT    -     If you want to leave the game, type QUIT.
+i  WHO     -     A list of other players visible to you in the Realms.
+i  TITLE   -     Once you reach level five, you may make your own title.
+i  PASSWORD-     Your password can be changed with PASSWORD <new> <new>
+i  DESC    -     You may set up a personal description, type DESC to edit.
+i
+iEven More Commands:
+i  '           ,           ]           affected    afk         ansi
+i  appraise    apply       alias       away        attributes  afw
+i  buy         brandish    bs          bury        broach      blood
+i  cast        close       consider    channels    clans       clear
+i  commands    config      councils    credits     cook        color
+i  ctalk       connect     down        drink       drop        description
+i  drag        dismount    date        east        eat         emote
+i  exits       examine     equipment   empty       enter       fill
+i  follow      flee        fprompt     feed        get         give
+i  group       glance      gold        gt          gtell       gboards
+i  gnote       gtalk       help        hold        hl          i
+i  inventory   ide         ignore      insert      immlist     junk
+i  kill        l           look        lock        level       list
+i  languages   last        leave       light       laws        logout
+i  listen      mail        murder      mez         mplog       motd
+i  memorize    mistwalk    mana        north       name        ne
+i  nw          note        northeast   northwest   order       open
+i  oldscore    orders      outputprefixoutputsuffixotalk       put
+i  password    practice    pagelength  pull        push        prompt
+i  pager       panic       quaff       qui         quit        rest
+i  report      reply       remove      recite      rent        revert
+i  rip         reroll      records     request     south       se
+i  sw          say         sacrifice   sleep       stand       sell
+i  shove       sit         slist       smoke       socials     southeast
+i  southwest   speak       split       statreport  shoot       stafflist
+i  sayto       score       score2      sc2         s2          tell
+i  take        tamp        time        toggle      up          unlock
+i  value       visible     west        wake        who         wear
+i  whisper     wimpy       withdraw    weather     wield       zap
+i
+iPlaces:
+i  ArchBishop - sw, 2w, 4n, u, and 2s from the Darkhaven Square
