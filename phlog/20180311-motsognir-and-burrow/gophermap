@@ -1,0 +1,27 @@
+i----------------------------------------
+iMotsognir and Burrow
+iMarch 11th, 2018
+i----------------------------------------
+i
+iThis new gopher hole is running a brand new server called
+iMotsognir [0]. It's written by mateusz [1] in c and has pretty
+imuch no dependencies. It was an absolute breeze to install.
+i
+h[0] Motsognir	URL:http://motsognir.sourceforge.net/
+1[1] mateusz	/	gopher.viste.fr	70
+i
+iMotsognir is far more strict about gophermaps than Gophernicus
+iwas, and it required a bit of cleanup to get my things showing
+iproperly. I think this is a good thing, though. I want my gopher
+irepo to be portable in case I ever switch servers again, so
+iauthoring things to the standard has benefits. The biggest
+idifference is that Gophernicus allowed you to write gophermap
+iinformation lines without a prefix of "i". This is great for
+iquickly editing things and I knew I'd miss it. So, I've updated
+iburrow [2] to automatically add these when creating a new post and
+itemporarily remove them when editing posts. Handy, right? Side
+ibenefit: the rewrite of that code means I'm no longer limited to
+ilinks at the bottom of posts. I can drop them in wherever and
+iburrow will just handle it.
+i
+h[2] burrow	URL:http://github.com/jamestomasino/burrow

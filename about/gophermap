@@ -30,8 +30,8 @@ iinsecure email: tomasino@sdf.org
 
 isecure email 1: tomasino@lavabit.com
 ifingerprint:    29E28CF52D93FF5A2C2B649E40FCE6A73F47A582
-0public key	/users/tomasino/about/tomasino-lavabit.public.asc	gopher.black	70
+0public key	/about/tomasino-lavabit.public.asc	gopher.black	70
 
 isecure email 2: james@tomasino.org
 ifingerprint:    368CD75F5CD5F1E9A72F639F4E0FEB0E09DDD7DF
-0public key	/users/tomasino/about/james-tomasino.public.asc	gopher.black	70
+0public key	/about/james-tomasino.public.asc	gopher.black	70
