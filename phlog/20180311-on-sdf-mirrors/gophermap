@@ -1,0 +1,68 @@
+i----------------------------------------
+iOn SDF Mirrors
+iMarch 11th, 2018
+i----------------------------------------
+i
+ijynx got me thinking [0] about mirroring of content on SDF like he
+idoes. I had dismissed the idea after my gophermap structural
+ichanges. In my RFC completeness I am including the full tabular
+istructure of every link in my gophermaps, explicitly referencing
+igopher.black and port 70. In Gophernicus I could omit these and
+ithe server assumed it should reference itself. Motsognir actually
+idoes this as well, but I'm not coding to that server specifically.
+iIt's like thinking in terms of POSIX... stick to the spec, at
+ileast as much as you can.
+i
+0[0] jynx - On my console experiment	/users/jynx/dat/20180311.post	sdf.org	70
+i
+iBut that's still no excuse. I can happily mirror my gopher hole on
+iSDF. Anyone reaching it will just immediately redirect to
+igopher.black after they follow the first link. That's not bad at
+iall.
+i
+iI've been playing around with manual timestamp checking on files
+ias part of burrow's way of detecting if you abandoned writing
+ia new post so it can cancel. That same technique could be used on
+ia cron-job that pulls my gopher git repo. If my gophermap
+itimestamp changes, force-touch my gopher directory for the SDF
+ilistings. Hey! That's a neat idea!
+i
+iOkay, okay... I've moved my stuff for safety and stability, but
+ithere's absolutely no harm in having a mirror there. Hell, I think
+iI still have tilde.town mirroring it as well. I haven't checked in
+iweeks. Yikes, I need to pop back in there.
+i
+i- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+i
+i      I N    O T H E R    U N R E L A T E D    N E W S
+i
+iI changed my colorscheme on this laptop tonight. It's all related
+ito my eyes and the issues I've been having lately. I'll phlog
+iabout that soon
+i
+iBurow hit v1.3.0 tonight with the new strict-mode additions to its
+ioutput. It "unformats" posts that you edit with it, and
+i"reformats" them when you save. This way it's easy to write prose
+ieven on an edit without having to strip all the "i" types back out
+iagain temporarily.
+i
+iDynamic DNS is working via a little python script and the
+inamesilo.com api. It's on 4 hour cron. If something ever bumps my
+iIP, that should be the max I'm offline for. Power outtages are
+ianother matter.
+i
+iGood luck to jynx on his upcoming trip. Sounds like a great time
+ito focus and reset the brain. I don't have any text adventure
+iideas for you except maybe zork and its kin. They're available on
+iGOG if you can run dosbox. I play Quest for Glory on my linux box
+ia bunch. If you want to try a different style retro game, I've got
+ia great one. It's called The Last Door. There's two out so far,
+ibut just pick up #1. It's a low-poly point & click (probably work
+ifine on a touchscreen) mystery in the style of HP Lovecraft.
+iChilling and brilliant musical score. I highly recommend it.
+iDefinitely bring headphones... the sound is important to the
+igameplay at parts.
+i
+iyargo is talking troff too. There's troff everywhere! Where is my
+idamned book!? ARRRGHHhhhhhhhn
+i
