@@ -1,51 +1,51 @@
-i----------------------------------------
-iAnonradio IRC Streaming Show of Awesome
-iMarch 13th, 2018
-i----------------------------------------
-i
-iIRC chat comes to life as an anonradio show!
-i(Credit to cat for giving me the idea [0])
+i----------------------------------------		gopher.black	70
+iAnonradio IRC Streaming Show of Awesome		gopher.black	70
+iMarch 13th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iIRC chat comes to life as an anonradio show!		gopher.black	70
+i(Credit to cat for giving me the idea [0])		gopher.black	70
 h[0] cat's thread on Mastodon	URL:http://mastodon.sdf.org/@Cat/99678752422294369
-i
-iHow it could work:
-i
-i  1. An IRC bot sits in #anonradio on sdf. (Theoretically it could
-i     be done on com, where there is more talky traffic for
-i     anonradio, but I have no idea how to interface with it)
-i
-i  2. When the show goes live, anonbot takes the text each user
-i     says and pipes it into "say" using a different unique voice
-i     styling for each user. Here it would be nice to assign some
-i     voices to more regular speakers. I'm not sure how many voices
-i     say has available.
-i
-i  3. Vocal streams are sent up to anonradio's stream via
-i     liquidsoap or whatever other client can handle it.
-i
-i  4. We all laugh and type silly things at each other for an hour
-i     and let the robots speak for us.
-i
-iNow for the challenges:
-i
-i  1. I have no idea how to program an IRC bot. I think I just saw
-i     a post about it on Lobste.rs though, so I can go fishing for
-i     that.
-i
-i  2. I don't have an anonradio show. SNOWDUSK, PLAES HALP [1]
-i
-i  3. I barely have any understanding or capability with liquidsoap
-i     or any other streaming software. It seems like it should be
-i     trivial to have an empty stream going that just waits to pipe
-i     in "say" stuff, but I've got no idea where to start. Anyone
-i     out there know any better?
-i
-i  4. No one talks in #anonradio. Maybe that would change if there
-i     were a bot that made you sound silly on the internet?
-i
+i		gopher.black	70
+iHow it could work:		gopher.black	70
+i		gopher.black	70
+i  1. An IRC bot sits in #anonradio on sdf. (Theoretically it could		gopher.black	70
+i     be done on com, where there is more talky traffic for		gopher.black	70
+i     anonradio, but I have no idea how to interface with it)		gopher.black	70
+i		gopher.black	70
+i  2. When the show goes live, anonbot takes the text each user		gopher.black	70
+i     says and pipes it into "say" using a different unique voice		gopher.black	70
+i     styling for each user. Here it would be nice to assign some		gopher.black	70
+i     voices to more regular speakers. I'm not sure how many voices		gopher.black	70
+i     say has available.		gopher.black	70
+i		gopher.black	70
+i  3. Vocal streams are sent up to anonradio's stream via		gopher.black	70
+i     liquidsoap or whatever other client can handle it.		gopher.black	70
+i		gopher.black	70
+i  4. We all laugh and type silly things at each other for an hour		gopher.black	70
+i     and let the robots speak for us.		gopher.black	70
+i		gopher.black	70
+iNow for the challenges:		gopher.black	70
+i		gopher.black	70
+i  1. I have no idea how to program an IRC bot. I think I just saw		gopher.black	70
+i     a post about it on Lobste.rs though, so I can go fishing for		gopher.black	70
+i     that.		gopher.black	70
+i		gopher.black	70
+i  2. I don't have an anonradio show. SNOWDUSK, PLAES HALP [1]		gopher.black	70
+i		gopher.black	70
+i  3. I barely have any understanding or capability with liquidsoap		gopher.black	70
+i     or any other streaming software. It seems like it should be		gopher.black	70
+i     trivial to have an empty stream going that just waits to pipe		gopher.black	70
+i     in "say" stuff, but I've got no idea where to start. Anyone		gopher.black	70
+i     out there know any better?		gopher.black	70
+i		gopher.black	70
+i  4. No one talks in #anonradio. Maybe that would change if there		gopher.black	70
+i     were a bot that made you sound silly on the internet?		gopher.black	70
+i		gopher.black	70
 h[1] PLAES HALP	URL:http://www.youtube.com/watch?v=P5Dhkz7471E
-i
-iThe challenges aren't insurmountable but I'd welcome help. Hell,
-iI'd welcome someone else swooping in and building the whole thing.
-iI really just want to participate. ;)
-i
-iWhat say you, Gophers? Is this worth making a thing?
+i		gopher.black	70
+iThe challenges aren't insurmountable but I'd welcome help. Hell,		gopher.black	70
+iI'd welcome someone else swooping in and building the whole thing.		gopher.black	70
+iI really just want to participate. ;)		gopher.black	70
+i		gopher.black	70
+iWhat say you, Gophers? Is this worth making a thing?		gopher.black	70
