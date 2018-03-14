@@ -1,46 +1,46 @@
-i----------------------------------------
-iMirroring on SDF
-iMarch 13th, 2018
-i----------------------------------------
-i
-iThings from gopher.black should be mirroring properly on SDF now.
-iI've written a script to pull the phlog regularly and update
-ithings. It checks the timestamp of my main gophermap before and
-iafter pulling. If the timestamp changed, something is new... and
-iit touches the gopher folder to update my placement on the phlog
-ilists. Lets see how this goes!
-i
-iHere's my script, in case anyone wants to duplicate the effort.
-iNote that 'stat' on cluster is not GNU stat and has a wildly
-idifferent format. Yeesh.
-i
-i  #!/usr/bin/env bash
-i  
-i  # Config
-i  GOPHER_DIR="/ftp/pub/users/tomasino/"
-i  GOPHERMAP="${GOPHER_DIR}/gophermap"
-i  
-i  # Overrides
-i  pushd () {
-i    command pushd "$@" > /dev/null
-i  }
-i  
-i  popd () {
-i    command popd "$@" > /dev/null
-i  }
-i  
-i  # Grab timestamp of gophermap before pulling
-i  gophermap_start_time=$(stat -Lnqr "${GOPHERMAP}" | awk '{print $9}' )
-i  
-i  # Pull the latest content silently
-i  pushd "${GOPHER_DIR}"
-i  git pull -q origin master
-i  popd
-i  
-i  # Grab timestamp of gophermap after pulling
-i  gophermap_end_time=$(stat -Lnqr "${GOPHERMAP}" | awk '{print $9}' )
-i  
-i  # If the timestamps are different, touch the folder to trigger phlog listing
-i  if [[ "${gophermap_start_time}" != "${gophermap_end_time}" ]]; then
-i    touch "${GOPHER_DIR}"
-i  fi
+i----------------------------------------		gopher.black	70
+iMirroring on SDF		gopher.black	70
+iMarch 13th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThings from gopher.black should be mirroring properly on SDF now.		gopher.black	70
+iI've written a script to pull the phlog regularly and update		gopher.black	70
+ithings. It checks the timestamp of my main gophermap before and		gopher.black	70
+iafter pulling. If the timestamp changed, something is new... and		gopher.black	70
+iit touches the gopher folder to update my placement on the phlog		gopher.black	70
+ilists. Lets see how this goes!		gopher.black	70
+i		gopher.black	70
+iHere's my script, in case anyone wants to duplicate the effort.		gopher.black	70
+iNote that 'stat' on cluster is not GNU stat and has a wildly		gopher.black	70
+idifferent format. Yeesh.		gopher.black	70
+i		gopher.black	70
+i  #!/usr/bin/env bash		gopher.black	70
+i  		gopher.black	70
+i  # Config		gopher.black	70
+i  GOPHER_DIR="/ftp/pub/users/tomasino/"		gopher.black	70
+i  GOPHERMAP="${GOPHER_DIR}/gophermap"		gopher.black	70
+i  		gopher.black	70
+i  # Overrides		gopher.black	70
+i  pushd () {		gopher.black	70
+i    command pushd "$@" > /dev/null		gopher.black	70
+i  }		gopher.black	70
+i  		gopher.black	70
+i  popd () {		gopher.black	70
+i    command popd "$@" > /dev/null		gopher.black	70
+i  }		gopher.black	70
+i  		gopher.black	70
+i  # Grab timestamp of gophermap before pulling		gopher.black	70
+i  gophermap_start_time=$(stat -Lnqr "${GOPHERMAP}" | awk '{print $9}' )		gopher.black	70
+i  		gopher.black	70
+i  # Pull the latest content silently		gopher.black	70
+i  pushd "${GOPHER_DIR}"		gopher.black	70
+i  git pull -q origin master		gopher.black	70
+i  popd		gopher.black	70
+i  		gopher.black	70
+i  # Grab timestamp of gophermap after pulling		gopher.black	70
+i  gophermap_end_time=$(stat -Lnqr "${GOPHERMAP}" | awk '{print $9}' )		gopher.black	70
+i  		gopher.black	70
+i  # If the timestamps are different, touch the folder to trigger phlog listing		gopher.black	70
+i  if [[ "${gophermap_start_time}" != "${gophermap_end_time}" ]]; then		gopher.black	70
+i    touch "${GOPHER_DIR}"		gopher.black	70
+i  fi		gopher.black	70
