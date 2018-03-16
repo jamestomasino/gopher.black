@@ -1,0 +1,114 @@
+i----------------------------------------		gopher.black	70
+iUsing ptx to generate one-time pads		gopher.black	70
+iMarch 15th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI have been working my way through coreutils [0] recently when		gopher.black	70
+iI came across ptx. 		gopher.black	70
+i		gopher.black	70
+i  $ apropos ptx		gopher.black	70
+i		gopher.black	70
+i  ptx (1) - produce a permuted index of file contents		gopher.black	70
+i		gopher.black	70
+iWhat the hell does that mean? I know...		gopher.black	70
+i		gopher.black	70
+i  $ man ptx		gopher.black	70
+i		gopher.black	70
+i  PTX(1)                User Commands                  PTX(1)		gopher.black	70
+i		gopher.black	70
+i  NAME		gopher.black	70
+i   ptx - produce a permuted index of file contents		gopher.black	70
+i		gopher.black	70
+i  SYNOPSIS		gopher.black	70
+i   ptx [OPTION]... [INPUT]...   (without -G)		gopher.black	70
+i   ptx -G [OPTION]... [INPUT [OUTPUT]]		gopher.black	70
+i		gopher.black	70
+i  DESCRIPTION		gopher.black	70
+i   Output a permuted index, including context, of the words		gopher.black	70
+i   in the input files.		gopher.black	70
+i		gopher.black	70
+i   With no FILE, or when FILE is -, read standard input.		gopher.black	70
+i		gopher.black	70
+i   Mandatory arguments to long options are mandatory for		gopher.black	70
+i   short options too.		gopher.black	70
+i		gopher.black	70
+i   ...		gopher.black	70
+i		gopher.black	70
+iOh that totally clears it... nope. Still no clue.		gopher.black	70
+i		gopher.black	70
+iSo I asked on Mastodon and a few people had some suggestions in		gopher.black	70
+iparticular someone was able to shoot me over to a blog post [1]		gopher.black	70
+iwhich tries to clear up what a 'purmuted index' even is. And		gopher.black	70
+ithat's the key. So check this out: 		gopher.black	70
+i		gopher.black	70
+iA while back before we had badass search engines and hyperlinked		gopher.black	70
+idoom shenanigans manually finding the reference to a word in		gopher.black	70
+ia document SUUUUUUUUCKED. So they made this index in the back that		gopher.black	70
+ilisted all the key terms alphebetically in the middle column of		gopher.black	70
+ia page. To the left of that word it would list whatever sentence		gopher.black	70
+iled up to it. To the right they'd list the sentence fragment that		gopher.black	70
+ifollowed the term. Finally, the page number. With that you could		gopher.black	70
+ijump to the page and eye-ball search it yourself.		gopher.black	70
+i		gopher.black	70
+iIt's been around since systemV and it's pretty much useless,		gopher.black	70
+iright? Well, foxy, I think I came up with a fun hobby use-case.		gopher.black	70
+i		gopher.black	70
+iPick a book with a publically available canonical plain-text		gopher.black	70
+isource. Oh, I dunno, head over to Project Gutenburg [2] or		gopher.black	70
+isomething and wrestle yourself up some Joyce (or ILLEGAL GERMAN		gopher.black	70
+iNOVELS!!!!! [3]). We're gonna shove that badboy into ptx like		gopher.black	70
+ia champ. Here we go...		gopher.black	70
+i		gopher.black	70
+i  $ curl https://www.gutenberg.org/files/4300/4300-0.txt > ulysses.txt		gopher.black	70
+i  $ ptx ulysses.txt		gopher.black	70
+i		gopher.black	70
+i  SCREEN EXPLODES WITH TEXT FOR SEVERAL MINUTES!!!!!		gopher.black	70
+i		gopher.black	70
+iThat's not how that works. Back to manpage!		gopher.black	70
+i		gopher.black	70
+i          Hmmm...		gopher.black	70
+i              ...assumes latin-1 charset...		gopher.black	70
+i          ...ignore case, perhaps...		gopher.black	70
+i               ...[.?!][]\"')}]*\\($\\|\t\\|  \\)[ \t\n]*...		gopher.black	70
+i          ...Emacs next-error, grumble...		gopher.black	70
+i               ...-w, width, ahha...		gopher.black	70
+i                  		gopher.black	70
+i                ROFF! NO FUCKING WAY!		gopher.black	70
+i		gopher.black	70
+iOne of the output formats for ptx is freaking roff! Syncronicity,		gopher.black	70
+ibaby! [4] Lets try something a little smaller.		gopher.black	70
+i		gopher.black	70
+i  $ curl http://www.gutenberg.org/cache/epub/1065/pg1065.txt > theraven.txt		gopher.black	70
+i  $ ptx -O -f -w 66 theraven.txt > theraven-index.txt		gopher.black	70
+i		gopher.black	70
+iThat sorta works. Ugh, but I'm getitng tired. Here's the plan for		gopher.black	70
+iwhat's next:		gopher.black	70
+i		gopher.black	70
+i  - Figure out how to format this stuff so I can awk it		gopher.black	70
+i  - awk so that the text key and one more word to the right are		gopher.black	70
+i    the output. Two words with a space between, that's it.		gopher.black	70
+i  - sort unique that bad-boy by each column in turn so both pairs		gopher.black	70
+i    of words are unique.		gopher.black	70
+i  - Use whatever words are in your primary list to write a plain		gopher.black	70
+i    text message. If your source document is large enough that's		gopher.black	70
+i    virtually any word you'd like to use.		gopher.black	70
+i  - Use awk to replace your words with the one to the right via		gopher.black	70
+i    a lookup file		gopher.black	70
+i  - Send secret message to a friend. The knowledge of which book		gopher.black	70
+i    is your cypher is all that's necessary to repeat the process		gopher.black	70
+i    in reverse.		gopher.black	70
+i		gopher.black	70
+iHuzzah for secret codes.		gopher.black	70
+i		gopher.black	70
+iIf I get some time this weekend I'll look at writing a script to		gopher.black	70
+iautomate this for you. Provide a book and a message and indicate		gopher.black	70
+iwhether to encode or decode. Oh what fun that would be for some		gopher.black	70
+iprivate crypto. Thinking you could do this in perl? Wanna show me		gopher.black	70
+iup? Put your illogical collection of special characters where your		gopher.black	70
+imouth is, buddy!		gopher.black	70
+i		gopher.black	70
+0[0] GNU Core Utilities	/GNU\ Core\ Utilities	gopherpedia.com	70
+h[1] Reading a Permuted Index	URL:http://blog.corvus.net/2012/01/reading-permuted-index-permuted-index.html
+1[2] Project Gutenberg on Gopher	/	dante.pglaf.org	70
+h[3] Project Gutenberg Blocks Access to Germany	URL:http://www.techdirt.com/articles/20180306/03423339363/project-gutenberg-blocks-access-germany-to-all-public-domain-books-because-local-copyright-claim-18-them.shtml
+0[4] dbucklin - Formatting for Gopher with GNU troff	/users/dbucklin/posts/gopher_groff.txt	sdf.org	70
