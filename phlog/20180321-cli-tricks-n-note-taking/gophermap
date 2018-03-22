@@ -59,6 +59,12 @@ iThis requires FZF [1], a fantastic utility for fuzzy-finding. I'm		gopher.black
 isure you could port it to another tool if you really wanted,		gopher.black	70
 ithough.		gopher.black	70
 i		gopher.black	70
+iThis also requires that you have an environment variable set		gopher.black	70
+icalled NOTE_DIR. For me that points to Dropbox where I have a		gopher.black	70
+inotes folder. This means all my notes are generated and stored		gopher.black	70
+ithere and are shared across systems. I can even get at them 		gopher.black	70
+iwith my phone.		gopher.black	70
+i		gopher.black	70
 i		gopher.black	70
 i### The Source ###		gopher.black	70
 i		gopher.black	70
@@ -101,10 +107,6 @@ i    fi		gopher.black	70
 i  }		gopher.black	70
 i  complete -F _n n		gopher.black	70
 i		gopher.black	70
-iThis requires thath you have an environment variable set called		gopher.black	70
-iNOTE_DIR. For me that points to Dropbox where I have a "notes"		gopher.black	70
-ifolder. This means all my notes are generated and stored there and		gopher.black	70
-iare shared across systems. I can even get at them with my phone.		gopher.black	70
 i		gopher.black	70
 i		gopher.black	70
 h[0] tomasino's dotfiles	URL:http://github.com/jamestomasino/dotfiles
