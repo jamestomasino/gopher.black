@@ -1,0 +1,113 @@
+i----------------------------------------		gopher.black	70
+iCLI Tricks: n - note taking		gopher.black	70
+iMarch 21st, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThis is the first in a series of phlog entries where I will share		gopher.black	70
+isome of my command line tricks, tips and scripts.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i## n ##		gopher.black	70
+i		gopher.black	70
+iNote-taking in the terminal is a big deal for me. Whether I'm in		gopher.black	70
+ia meeting or someone stops by for a quick interruption, I need to		gopher.black	70
+ibe able to jot down notes quickly and get at them again easily. To		gopher.black	70
+ihandle this I have built a helper function called "n". 		gopher.black	70
+i		gopher.black	70
+iNote: If you are familiar with my dotfiles [0] then you know		gopher.black	70
+iI keep all these scripts in a folder called ~/.functions and		gopher.black	70
+isource them as part of my .bash_profile.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i### The Idea ###		gopher.black	70
+i		gopher.black	70
+iWhen I'm on the command line I enter the command "n" and it pops		gopher.black	70
+iup a list of all my notes using the FZF [1] fuzzy finder. These		gopher.black	70
+ihave a nice preview window to the side so I can quickly scan what		gopher.black	70
+iI'm looking for as I type in parts of the name. If I see what		gopher.black	70
+iI need in the preview I can either hit ESC to quit back to my		gopher.black	70
+ishell or ENTER to open up the note in my EDITOR.		gopher.black	70
+i		gopher.black	70
+iCreating a new note is easy:		gopher.black	70
+i		gopher.black	70
+i  $ n monkeys		gopher.black	70
+i		gopher.black	70
+i  > creates a new note in my NOTE_DIR called monkeys.md (I default		gopher.black	70
+i  > all my notes to markdown) and opens it in EDITOR		gopher.black	70
+i		gopher.black	70
+iWant to categorize them? Add a folder path:		gopher.black	70
+i		gopher.black	70
+i  $ n animals/monkeys		gopher.black	70
+i		gopher.black	70
+i  > creates a new note at $NOTE_DIR/animals/monkeys.md and opens		gopher.black	70
+i  > it in EDITOR		gopher.black	70
+i		gopher.black	70
+iYou can search foldernames as part of the fuzzy-finding.		gopher.black	70
+i		gopher.black	70
+iThe script also has bash-completion built-in. If you don't want to		gopher.black	70
+iuse FZF to browse for the file, just type part of the word and hit		gopher.black	70
+itab, like so:		gopher.black	70
+i		gopher.black	70
+i  $ n mo<TAB>		gopher.black	70
+i		gopher.black	70
+i  > n monkeys<ENTER>		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i### Requirements ###		gopher.black	70
+i		gopher.black	70
+iThis requires FZF [1], a fantastic utility for fuzzy-finding. I'm		gopher.black	70
+isure you could port it to another tool if you really wanted,		gopher.black	70
+ithough.		gopher.black	70
+i		gopher.black	70
+iThis also requires that you have an environment variable set		gopher.black	70
+icalled NOTE_DIR. For me that points to Dropbox where I have a		gopher.black	70
+inotes folder. This means all my notes are generated and stored		gopher.black	70
+ithere and are shared across systems. I can even get at them 		gopher.black	70
+iwith my phone.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i### The Source ###		gopher.black	70
+i		gopher.black	70
+i  #!/usr/bin/env bash		gopher.black	70
+i		gopher.black	70
+i  # Note taking function and command completion		gopher.black	70
+i  _n() {		gopher.black	70
+i    local lis cur		gopher.black	70
+i    lis=$(find "${NOTE_DIR}" -name "*.md" | \		gopher.black	70
+i      sed -e "s|${NOTE_DIR}/||" | \		gopher.black	70
+i      sed -e 's/\.md$//')		gopher.black	70
+i    cur=${COMP_WORDS[COMP_CWORD]}		gopher.black	70
+i    COMPREPLY=( $(compgen -W "$lis" -- "$cur") )		gopher.black	70
+i  }		gopher.black	70
+i  n() {		gopher.black	70
+i    : "${NOTE_DIR:?'NOTE_DIR ENV Var not set'}"		gopher.black	70
+i    if [ $# -eq 0 ]; then		gopher.black	70
+i      local file		gopher.black	70
+i      file=$(find "${NOTE_DIR}" -name "*.md" | \		gopher.black	70
+i        sed -e "s|${NOTE_DIR}/||" | \		gopher.black	70
+i        sed -e 's/\.md$//' | \		gopher.black	70
+i        fzf \		gopher.black	70
+i          --multi \		gopher.black	70
+i          --select-1 \		gopher.black	70
+i          --exit-0 \		gopher.black	70
+i          --preview="cat ${NOTE_DIR}/{}.md" \		gopher.black	70
+i          --preview-window=right:70%:wrap)		gopher.black	70
+i      [[ -n $file ]] && \		gopher.black	70
+i        ${EDITOR:-vim} "${NOTE_DIR}/${file}.md"		gopher.black	70
+i    else		gopher.black	70
+i      case "$1" in		gopher.black	70
+i        "-d")		gopher.black	70
+i          rm "${NOTE_DIR}"/"$2".md		gopher.black	70
+i          ;;		gopher.black	70
+i        *)		gopher.black	70
+i          ${EDITOR:-vim} "${NOTE_DIR}"/"$*".md		gopher.black	70
+i          ;;		gopher.black	70
+i      esac		gopher.black	70
+i    fi		gopher.black	70
+i  }		gopher.black	70
+i  complete -F _n n		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+h[0] tomasino's dotfiles	URL:http://github.com/jamestomasino/dotfiles
+h[1] FZF	URL:http://github.com/junegunn/fzf
