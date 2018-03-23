@@ -1,0 +1,40 @@
+----------------------------------------
+Gopher Redundant Server Type
+----------------------------------------
+
+According to RFC 1436:
+  + Item is a redundant server
+
+  The information applies to a duplicated server.  The information
+  contained within is a duplicate of the primary server.  The primary
+  server is defined as the last DirEntity that is has a non-plus
+  "Type" field.  The client should use the transaction as defined by
+  the primary server Type field.
+
+My interpretation is that the + entries are fallbacks for the
+previous DirEntity type above it.  
+
+DirEntity in RFC 1436 is defined as:
+  DirEntity ::= Type User_Name Tab Selector Tab Host Tab Port CR-LF
+
+As a fallback, it's unclear if the "User_Name" section of the
+redundant (+) DirEntity should display in addition to the primary
+DirEntitiy, or if only the primary should be shown and the
+redundant entries used by the client as fallback in case of
+a server error response.
+
+What follows is a test implementation of the + type that can be
+referenced by gopher client developers in their testing:
+
+Type 1 Test with 4 redundancies
+
+1gopher.black	/	gopher.black	70
++tomasino's gopherhole on sdf.org	/users/tomasino/	sdf.org	70
++sdf mirror on gopher.club	/users/tomasino/	gopher.club	70
++gopher.black's tilde.town backup	/~tomasino/	tilde.town	70
+
+Type 0 Test with 2 redundancies
+
+0gopher application development	/explorations/gopher-application-development.txt	gopher.black	70
++gopher application development	/users/tomasino/explorations/gopher-application-development.txt	sdf.org	70
+
