@@ -19,9 +19,11 @@ i  DirEntity ::= Type User_Name Tab Selector Tab Host Tab Port CR-LF		gopher.bla
 i		gopher.black	70
 iAs a fallback, it's unclear if the "User_Name" section of the		gopher.black	70
 iredundant (+) DirEntity should display in addition to the primary		gopher.black	70
-iDirEntitiy, or if only the primary should be shown and the		gopher.black	70
+iDirEntity, or if only the primary should be shown and the		gopher.black	70
 iredundant entries used by the client as fallback in case of		gopher.black	70
-ia server error response.		gopher.black	70
+ia server error response. The UMN Gopher client seems to prefer		gopher.black	70
+ithis later style, where only the primary DirEntity is visible to		gopher.black	70
+ithe end user.		gopher.black	70
 i		gopher.black	70
 iWhat follows is a test implementation of the + type that can be		gopher.black	70
 ireferenced by gopher client developers in their testing:		gopher.black	70
