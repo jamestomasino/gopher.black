@@ -1,0 +1,50 @@
+i----------------------------------------		gopher.black	70
+iacme.sh shenanigans		gopher.black	70
+iMarch 29th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThese are notes to myself on how I finally got acme.sh and nginx		gopher.black	70
+ito play nice.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iStep 1: Generate a cert		gopher.black	70
+i		gopher.black	70
+iI'm using the namesilo api method here, so this part is simple.		gopher.black	70
+i		gopher.black	70
+iacme.sh --issue --dns dns_namesilo --dnssleep 900 -d tomasino.org		gopher.black	70
+i-d www.tomasino.org -w /var/www		gopher.black	70
+i		gopher.black	70
+iStep 2: Create a place to put those certs		gopher.black	70
+i		gopher.black	70
+iThis part was a struggle. Since acme.sh doesn't need root to run,		gopher.black	70
+iso I wasn't sure where to go. Eventually I settled on creating		gopher.black	70
+ia directory at /etc/nginx/acme.sh/domain/ and changed ownership to		gopher.black	70
+iwww-data:www-data. I'm a member of that group and nginx works with		gopher.black	70
+ithat too, so it should be good.		gopher.black	70
+i		gopher.black	70
+iStep 3: Install the certs		gopher.black	70
+i		gopher.black	70
+iThis is poorly documented pretty much everywhere. It will pull the		gopher.black	70
+ifiles from the .acme.sh directory in your home folder and put them		gopher.black	70
+iwherever you define here. The reload command will run as root, so		gopher.black	70
+iyou don't need to specify sudo. 		gopher.black	70
+i		gopher.black	70
+iacme.sh --install-cert -d tomasino.org --key-file		gopher.black	70
+i/etc/nginx/acme.sh/tomasino.org/key.pem --cert-file		gopher.black	70
+i/etc/nginx/acme.sh/tomasino.org/cert.pem --fullchain-file		gopher.black	70
+i/etc/nginx/acme.sh/tomasino.org/fullchain.pem --reloadcmd		gopher.black	70
+i"service nginx force-reload"		gopher.black	70
+i		gopher.black	70
+iStep 4: Set up the nginx configuration		gopher.black	70
+i		gopher.black	70
+iFirst, a server directive on port 80 that just redirects to the		gopher.black	70
+issl version.		gopher.black	70
+i		gopher.black	70
+iSecond, listen on 443, add a bunch of headers, set up ssl		gopher.black	70
+iprotocols, ciphers, link to the cert, key, and trusted cert		gopher.black	70
+i(fullchain). Etc, etc...		gopher.black	70
+i		gopher.black	70
+iStep 5: Restart/Start nginx		gopher.black	70
+i		gopher.black	70
+iHopefully it doesn't crap out on you like it did for me 5,000		gopher.black	70
+itimes.		gopher.black	70
