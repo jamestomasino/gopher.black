@@ -19,6 +19,8 @@ i		gopher.black	70
 0Reading	/reading/currentbooks.txt	gopher.black	70
 0Read	/reading/recentbooks.txt	gopher.black	70
 i		gopher.black	70
+hBurrow - Gopher Helper	URL:http://github.com/jamestomasino/burrow/releases/latest
+i		gopher.black	70
 i==== Websites ====		gopher.black	70
 hAll Sites	URL:http://www.tomasino.org/
 hBlog	URL:http://blog.tomasino.org/
