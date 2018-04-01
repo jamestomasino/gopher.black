@@ -53,7 +53,8 @@ intentions.
 
 [0] Method of loci
     gopher://gopherpedia.com/0/Method of loci
-h[1] Lenape "Big House" Ceremony	URL:http://bit.ly/2GmQwgt
+[1] Lenape "Big House" Ceremony
+    http://bit.ly/2GmQwgt
 
 I don't remember the first time I went there, but I do remember
 that it started with that window. I can still count the panes of
@@ -513,7 +514,8 @@ It probably requires GNU sed as well, but I haven't checked.
 ### The Source ###
 
 You can find the latest source here: [0].
-h[0] tomasino's dotfiles - todo function	URL:http://github.com/jamestomasino/dotfiles/blob/master/bash/.functions/todo
+[0] tomasino's dotfiles - todo function
+    http://github.com/jamestomasino/dotfiles/blob/master/bash/.functions/todo
 
   #!/usr/bin/env bash
 
