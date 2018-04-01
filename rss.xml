@@ -127,6 +127,14 @@ For those of you using newsbeuter, you can add this to your feed
 list by dropping this line into the 'urls' file:
 
   "exec:curl -s gopher://gopher.black/0/rss.xml"
+
+To accomplish this, rather than add a cgi script to my site,
+I decided to add the RSS generation feature to burrow.
+
+  $ burrow rss # generates the rss feed
+
+There's also a config parameter to auto-generate RSS when writing
+new phlogs. Check out the man page or README.md to see more.
   </pre>]]></description>
 </item>
 <item>

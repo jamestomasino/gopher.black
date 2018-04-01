@@ -16,3 +16,11 @@ iFor those of you using newsbeuter, you can add this to your feed		gopher.black	
 ilist by dropping this line into the 'urls' file:		gopher.black	70
 i		gopher.black	70
 i  "exec:curl -s gopher://gopher.black/0/rss.xml"		gopher.black	70
+i		gopher.black	70
+iTo accomplish this, rather than add a cgi script to my site,		gopher.black	70
+iI decided to add the RSS generation feature to burrow.		gopher.black	70
+i		gopher.black	70
+i  $ burrow rss # generates the rss feed		gopher.black	70
+i		gopher.black	70
+iThere's also a config parameter to auto-generate RSS when writing		gopher.black	70
+inew phlogs. Check out the man page or README.md to see more.		gopher.black	70
