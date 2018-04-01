@@ -24,3 +24,8 @@ i  $ burrow rss # generates the rss feed		gopher.black	70
 i		gopher.black	70
 iThere's also a config parameter to auto-generate RSS when writing		gopher.black	70
 inew phlogs. Check out the man page or README.md to see more.		gopher.black	70
+i		gopher.black	70
+iNOTE: There's one little weakness of my RSS generator. It will		gopher.black	70
+iorganize the most recent entries by date, but if you post multiple		gopher.black	70
+ientries in a single day, it just alphabetizes them. I'm sure you		gopher.black	70
+iguys can all deal with it.		gopher.black	70

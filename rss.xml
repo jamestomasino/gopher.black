@@ -135,6 +135,11 @@ I decided to add the RSS generation feature to burrow.
 
 There's also a config parameter to auto-generate RSS when writing
 new phlogs. Check out the man page or README.md to see more.
+
+NOTE: There's one little weakness of my RSS generator. It will
+organize the most recent entries by date, but if you post multiple
+entries in a single day, it just alphabetizes them. I'm sure you
+guys can all deal with it.
   </pre>]]></description>
 </item>
 <item>
