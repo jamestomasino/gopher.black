@@ -1,0 +1,590 @@
+<?xml version="1.0"?><rss version="2.0"><channel>
+<title>gopher.black</title>
+<link>gopher://gopher.black/</link>
+<description>Tomasino's Gopher Hole</description>
+<item>
+  <title>To Gophermap Or No</title>
+  <link>gopher://gopher.black/0/phlog/20180331-to-gophermap-or-no/gophermap</link>
+  <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+To gophermap or no
+March 31st, 2018
+----------------------------------------
+
+Quick poll:
+
+Do you think I should keep using gophermaps for my phlog, or
+should I move back to type 0 and include non-followable links as
+text, like so [0].
+
+[0]: https://tomasino.org
+
+Let me know on gopher, mastodon, or email, or whatever. My contact
+info is in the About [1] page.
+
+[1] About
+    gopher://gopher.black/1/about
+  </pre>]]></description>
+</item>
+<item>
+  <title>This Old House</title>
+  <link>gopher://gopher.black/0/phlog/20180331-this-old-house/gophermap</link>
+  <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+This old house
+March 31st, 2018
+----------------------------------------
+
+I'm standing in an empty room facing a large bow window stretching
+from the rough wooden floor to a rounded arching top. There is
+some dust and dirt in the corners and fallen between the floor
+boards gapping slightly with age. To my right is a door to the
+hallway and eventually roof access. Behind me a closet holds shoe
+boxes of memories.
+
+I know the layout of this place intimitely, though I've never
+really been there. It doesn't really exist. In a sense it is my
+memory palace [0]. In another sense, it is like the Hi'ngwikan of
+the Lenape people and I am its a-la-pa-cte [1]. It is a private
+place of prayer and solitude where I can organize my thoughts and
+intentions.
+
+[0] Method of loci
+    gopher://gopherpedia.com/0/Method of loci
+h[1] Lenape "Big House" Ceremony	URL:http://bit.ly/2GmQwgt
+
+I don't remember the first time I went there, but I do remember
+that it started with that window. I can still count the panes of
+glass, see the smudges of fingerprints I've left, note the
+imperfections in the glass as it distorts my view. These details
+give it permanence that I find vital. Knowing the texture of the
+wood gives me a comfort that I need to let myself be free. It is
+through that freedom that I find peace.
+
+                           - - - - -
+
+Earlier today vilmibm posted [2] about what home means to him, and
+how he is able to find it digitally by just finding a quite space
+and connecting to his familiar tools, music, and communities.
+I love that sentiment. I have anxiety over the question of "where
+is home" or "where are you from". I could probably blame the Roma
+heritage but that feels like cheating. In reality, I just don't
+associate a physical place with home at all. Though I might wish
+an online community or my digital environment to become home like
+vilmibm has found, I don't think that fits me either.
+
+[2] vilmibm's feels (2018-03-30)
+    gopher://tilde.town/0/~vilmibm/feels/20180330.txt
+
+No, my home is a dusty old house with a big bow window that always
+has a different view when I look through it. I know where I keep
+the memories of relationships past (in that closet on the bottom
+shelf in a white shoebox), and I know that when I get really sad
+I need to go out onto the rooftop garden and greenhouse and let
+the light pour into me. 
+
+                           - - - - -
+
+Tonight I felt some of that sadness coming on. At first I thought
+it might mean I was going to have a good evening writing (it's
+much easier for me to write when depressed) but I felt it take
+a sour turn in my mind. So, instead of wallowing I spent a little
+time in meditation and prayer in my little old house.  No sooner
+had I sat on that dusty floor and placed my hands lightly on the
+wooden slats when a cloud broke and a fresh beam of sunlight
+warmed my cheek. Like everything in that place, the symbols speak
+a language I understand intuitively. 
+
+That sunlight is what I needed tonight. That's how my prayer
+works.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Quick Updates</title>
+  <link>gopher://gopher.black/0/phlog/20180329-quick-updates/gophermap</link>
+  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Quick Updates
+March 29th, 2018
+----------------------------------------
+
+Lynx has added support for the + item type. You can find it
+working in 2.8.9dev.17. It displays with a prefix of (+++) to
+distinguish it from other menu items. I beleive sacc plans similar
+style of support.
+
+kichimi's server made moku-pona sad and hang while it was down.
+Luckily both he and Alex Schroeder are badass and a timeout was
+quickly added to the program. While Alex was tinkering, he also
+changed the display style of the generated gophermap to be more
+condensed. I dig it. You can see the results over here [0].
+
+[0] Phlogs I follow
+    gopher://gopher.black/1/phlogs
+
+zcrayfish has finally joined the phlog parade [1]. He also made me
+realize that .soy is a TLD! Make sure to add him to your lists.
+
+[1] zcrayfish's phlog
+    gopher://gopher.zcrayfish.soy/1/phlog
+  </pre>]]></description>
+</item>
+<item>
+  <title>More Migrations</title>
+  <link>gopher://gopher.black/0/phlog/20180329-more-migrations/gophermap</link>
+  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+More migrations
+March 29th, 2018
+----------------------------------------
+
+I stayed up a little bit late last night and transferred all my
+domains off of AWS, then I nuked it. Every trace of me is gone
+from that platform, and once this horrible bill is paid I'm
+closing the account completely.
+
+In the wake of the move I started thinking about where to put all
+my stuff and I decided that this little Raspberry Pi is more than
+sufficient for my needs. I have already gone through the headache
+of converting all my web properties to static sites in order to
+host on S3, so putting content into nginx seems like the easy and
+obvious next step.
+
+I've installed nginx and I'm reading up on how to manage multiple
+sites with it (seems almost identical to Apache). I'll clone down
+the websites when I get home tonight, port forward 80 and reset my
+DNS A records. I've already put together a script for gopher.black
+that handles my dynamic dns changes and updates Namesilo, so I can
+easily package in the rest of my domains there. Finally, I'll want
+HTTPS, so I guess it's finally time for me to read the man page on
+certbot and start using LetsEncrypt. Whee!
+
+None of this sounds particularly difficult. Hopefully I won't run
+into any unexpected walls.
+
+- - - - -
+
+Moving away from the technical stuff, dropping AWS also represents
+a shedding of a gross skin I've been wearing. I don't like the
+monolithic, data-consuming giants. It hurts my heart when
+I continue to use them, as I've mentioned before. I acknowledge
+that I'll make choices that compromise my principles due to
+convenience, and that's something I would like to lessen.
+
+Do you think simply pulling websites off AWS can help facilitate
+that sort of change? Am I ready to shut down my Google account? Is
+that even viable as an Android user with Project Fi? I doubt it.
+What are my realistic alternatives for phone service, anyway? Next
+year I'll have a super-basic eInk phone I can set up on t-mobile,
+but are they any better? Is any phone service any better?
+
+I suspect I have a tiny bit of inertia I can use here but I just
+don't see a clear action I can take. A lot of you have done
+similar transitions in the past. Do you have any advice?
+  </pre>]]></description>
+</item>
+<item>
+  <title>Leaving Aws</title>
+  <link>gopher://gopher.black/0/phlog/20180329-leaving-aws/gophermap</link>
+  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Leaving AWS
+March 29th, 2018
+----------------------------------------
+
+Earlier this week I got a notification from the AWS console that
+my billing alarm level had been reached. I'm glad I set it because
+there's no other way I would have know that I was running up an
+incredibly expensive bill.
+
+Over the weekend I was experimenting with Nextcloud and linked an
+AWS S3 volume as an extra share. Something went wrong and the
+syncs were failing, but constantly retrying to download data. At
+least, this is what I now believe is the root cause. At the time
+I figured it was one of my public sites getting abused.
+
+I went digging around in AWS to see if I could figure out who the
+culprit was, but that was in vain. AWS is a labyrinth of excessive
+overengineering, techno-babble, and the worlds worst
+documentation. I can find no information about where the charges
+are coming from beyond "bandwidth".
+
+It's 2 days later and my bill is over $300. I logged a support
+ticket asking Amazon what the hell is happening, but screw it. I'm
+done. I don't need AWS shit, it was just the idea of fast
+performance that brought me there. My sites are all static.
+
+I unlocked my domains and I'm transferring them to Namesilo. I'll
+save down some of the crap sitting in cold storage, re-clone my
+static sites on the gopher.black pi, add in nginx and tell my
+router to forward port 80.
+
+The cloud can suck it.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Acme Sh Shenanigans</title>
+  <link>gopher://gopher.black/0/phlog/20180329-acme-sh-shenanigans/gophermap</link>
+  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+acme.sh shenanigans
+March 29th, 2018
+----------------------------------------
+
+These are notes to myself on how I finally got acme.sh and nginx
+to play nice.
+
+
+Step 1: Generate a cert
+
+I'm using the namesilo api method here, so this part is simple.
+
+acme.sh --issue --dns dns_namesilo --dnssleep 900 -d tomasino.org
+-d www.tomasino.org -w /var/www
+
+Step 2: Create a place to put those certs
+
+This part was a struggle. Since acme.sh doesn't need root to run,
+so I wasn't sure where to go. Eventually I settled on creating
+a directory at /etc/nginx/acme.sh/domain/ and changed ownership to
+www-data:www-data. I'm a member of that group and nginx works with
+that too, so it should be good.
+
+Step 3: Install the certs
+
+This is poorly documented pretty much everywhere. It will pull the
+files from the .acme.sh directory in your home folder and put them
+wherever you define here. The reload command will run as root, so
+you don't need to specify sudo. 
+
+acme.sh --install-cert -d tomasino.org --key-file
+/etc/nginx/acme.sh/tomasino.org/key.pem --cert-file
+/etc/nginx/acme.sh/tomasino.org/cert.pem --fullchain-file
+/etc/nginx/acme.sh/tomasino.org/fullchain.pem --reloadcmd
+"service nginx force-reload"
+
+Step 4: Set up the nginx configuration
+
+First, a server directive on port 80 that just redirects to the
+ssl version.
+
+Second, listen on 443, add a bunch of headers, set up ssl
+protocols, ciphers, link to the cert, key, and trusted cert
+(fullchain). Etc, etc...
+
+Step 5: Restart/Start nginx
+
+Hopefully it doesn't crap out on you like it did for me 5,000
+times.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Gopher On Gopher</title>
+  <link>gopher://gopher.black/0/phlog/20180328-gopher-on-gopher/gophermap</link>
+  <pubdate>Wed, 28 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Gopher on Gopher
+March 28th, 2018
+----------------------------------------
+
+I've become self-conscious of my own phlogging on gopher on the
+subject of gopher, or gopher related things. I do a lot of writing
+about the protocol, the community, my scripts for my phlog, other
+people's phlogging, gopher project, you get the idea. I started to
+worry that I was neglecting original content for its own right
+that wasn't all oriented to the weird little place we hang out. As
+a result, I'm going to try to post more non-gophery things. There
+will be no hard and fast rules about numbers or anything, but I'll
+try.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Distributism</title>
+  <link>gopher://gopher.black/0/phlog/20180327-distributism/gophermap</link>
+  <pubdate>Tue, 27 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Distributism
+March 27th, 2018
+----------------------------------------
+
+I've been thinking about politics too much lately, so I thought
+I'd liven things up by jumping into economics! I'll keep this one
+short, I promise.
+
+I'm no fan of capitalism, especially "free" market economics. It
+is tantamount to slavery both in its literal abuse of the third
+world or the consolidation of wealth into the corporate leading to
+wage-slavery in the first world. The appeal of endless growth is
+clear, but it's so obviously unsustainable that I can't keep up
+the lie to myself. Eventually you will run out of peoples to
+exploit and the workers will have no money to spend. It will
+consume itself or transform from economic oligarchy into political
+oligarchy.
+
+No, the modern fascination with democracy is mirrored by the lust
+for wealth that capitalism promises. In reality, the regulation
+that free-market champions condemn are the very things that have
+kept us from the brink thus far. The world economy teeters on the
+edge of absolute ruin and it will be the greedy, get-rich-quick,
+that take us all there.
+
+There are alternatives, and they don't all involve us devolving
+into an agrestic commune. Distributism [0] is my economic
+structure of choice. Here's the extremely brief key points:
+
+  - personal property is a right of the individual
+  - don't assign to higher association what lesser and subordinate
+    organizations can do
+  - small production and local culture is favored over central
+    systems and mass production
+
+  AKA, keep it small and owned by the workers.
+
+The best examples I can give in today's culture are credit unions
+and farming co-ops.
+
+Of course there's a lot more to it, and no system in place today
+functions in its pure form. We have some elements of distributism
+in the United States in the form of anti-trust laws. Still, I'd
+prefer more.
+
+Capitalism has no soul, no morality. Distributism shares the
+morality of the community its attached to. I like that.
+
+[0] Distributism on Gopherpedia
+    gopher://gopherpedia.com/0/Distributism
+  </pre>]]></description>
+</item>
+<item>
+  <title>Audiobooks</title>
+  <link>gopher://gopher.black/0/phlog/20180323-audiobooks/gophermap</link>
+  <pubdate>Fri, 23 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Audio Books
+March 23rd, 2018
+----------------------------------------
+
+I am a very active Audible user. I listen to a lot of audio books
+and Amazon's service has the best selection at the cheapest prices
+and offers the best players. I can listen on my phone or in the
+browser and stay in sync. I can open up a kindle and have the book
+pick up where the audio left off and vice-versa. This is some
+slick stuff and it's my justification for sticking with a company
+that represents a lot of things I despise.
+
+There are some kinder looking alternative sources for the books
+popping up around the net, but no one comes close to offering all
+the things Audible does. That sucks because it reveals things
+about me I don't like. I have chosen convenience over principals.
+I do it for my phone as well, which is a Pixel on Google Fi. Yuck.
+
+I may not have it in me to be the ultimate champion of
+stickin-it-to-the-man but I'd like to think I'm not a total
+pushover either. I'll get back at the giants with really
+uncomfortable sand in their shoes. Here's a few of the
+all-but-meaningless things I do to justify my lifestyle to myself.
+
+1. I have an Amazon credit card. It gives me 5% back on purchases
+   on Amazon.com and that's pretty much the only place I use it.
+   Here's the thing, once you get those points Amazon suggests you
+   redeem them on purchases. If you use your points on a purchase,
+   you don't EARN points on that purchase. If you did, that 5%
+   would really be 5.55555...%. Little bits matter, right? Well,
+   that credit card is offered through Chase. If you go to the
+   Chase website and redeem the points directly with them, you can
+   apply those points in the form of a statement credit. Aka, you
+   get that much money back, but it didn't in any way affect your
+   future purchases with Amazon. So, just to ensure I get that
+   extra 0.55555...% percent, when I'm about to make an Amazon
+   purchase and I have points available, I'll go to Chase and
+   redeem that many points off my bill as I make a normal purchase
+   on Amazon. Take THAT giant corporation! I'm squeezing whole
+   dollars off you!
+
+2. Audible books have stupid DRM on them. I don't care for that so
+   any books I get from them I immediately strip to mp3s and
+   back-up, just in case. Now and then I want to listen to
+   something without Amazon's help. Now I can just play an mp3
+   from the command-line. In fact, today I finally figured out
+   a viable method for resuming playback without having to
+   remember the timestamp.
+
+   $ mpv --save-position-on-quit
+
+   It will resume where you left off when you quit. If you do it
+   on a directory it will remember where in the whole playlist you
+   left off. Really solid solve! It supports time-scale changes
+   too, so it's got everything you could want for playback. The
+   only lack is syncing between devices. Not quite viable to
+   replace Audible, but it's a piece of the puzzle.
+
+I forget where I was going with this phlog. I like audio books and
+maybe one day I'll be able to cut out Amazon and Google
+completely. Until then...
+
+  </pre>]]></description>
+</item>
+<item>
+  <title>Cli Tricks Todo</title>
+  <link>gopher://gopher.black/0/phlog/20180322-cli-tricks-todo/gophermap</link>
+  <pubdate>Thu, 22 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+CLI Tricks: todo
+March 22nd, 2018
+----------------------------------------
+
+This is part of a series of phlog entries where I will share some
+of my command line tricks, tips, and scripts.
+
+
+## todo ##
+
+Everyone has a to-do app they love. Many of us have rolled our
+own. This is mine.
+
+It's another bash function that's auto sourced by my
+.bash_profile, offers bash-completion, and has a built in
+archiver.
+
+
+### The Idea ###
+
+I organize my daily life in tmux by using sessions. I'm currently
+in a session named "personal". I also have "work" and "writing"
+and "music" and others. My goals for my to-do list manager are:
+
+  - Super simple cli interface
+  - Sync data between machines (again, cheating with dropbox here)
+  - Contextual to-do list based on tmux session with fallback
+  - Add items
+  - Remove items by number or regex (good for groups of tasks)
+  - Archive things I remove and add a timestamp (good for
+    timesheets)
+  - A little help is nice
+  - Bash-completion all the things
+
+
+### How to use it ###
+
+  $ todo -a "Some task"
+
+  > 1 - Some task
+
+  $ todo -a Another task
+
+  > 1 - Some task
+  > 2 - Another task
+
+  $ todo -d 1
+
+  > 2 - Another task
+
+Simple, right? You don't need to quote the todo item unless you're
+using special characters. You can pass the -d flag a number to
+remove that item, or a string and it'll do a regex match.
+
+Need more help on how to use it? Type:
+
+  $ todo --help
+
+
+### Requirements ###
+
+An environment variable called "$TODOFILE" is required that points
+to a specific text document where you want your to-do list saved.
+If you are in a tmux session, todo will use the directory of your
+$TODOFILE but rename the txt file to match your session name.
+Archives are saved in a file called XXXX.archive.txt where XXXX is
+your TODOFILE or session name.
+
+It probably requires GNU sed as well, but I haven't checked.
+
+
+### The Source ###
+
+You can find the latest source here: [0].
+h[0] tomasino's dotfiles - todo function	URL:http://github.com/jamestomasino/dotfiles/blob/master/bash/.functions/todo
+
+  #!/usr/bin/env bash
+
+  # Todo List & Completion
+  _todo() {
+    local iter use cur
+    cur=${COMP_WORDS[COMP_CWORD]}
+    use=$( awk '{gsub(/ /,"\\ ")}8' "$TODOFILE" )
+    use="${use//\\ /___}"
+    for iter in $use; do
+      if [[ $iter =~ ^$cur ]]; then
+        COMPREPLY+=( "${iter//___/ }" )
+      fi
+    done
+  }
+  todo() {
+    : "${TODO:?'TODO ENV Var not set. Please set to path of default todo file.'}"
+    # If we are in a tmux session, name the file with the session name
+    # If not in tmux, use the full $TODO env var for path/file
+    if echo "$TERM" | grep -Fq screen && test "$TMUX" ; then
+      sessname=$(tmux display -p '#S')
+      todopath=$(dirname "$TODO")
+      TODOFILE=$todopath/$sessname".txt"
+      TODOARCHIVEFILE=$todopath/$sessname".archive.txt"
+    else
+      TODOFILE=$TODO
+      TODOARCHIVEFILE=${TODO%.*}.archive.txt
+    fi
+    if [ $# -eq 0 ]; then
+      if [ -f "$TODOFILE" ] ; then
+        awk '{ print NR, "-", $0 }' "$TODOFILE" 
+      fi
+    else
+      case "$1" in
+        -h|--help)
+          echo "todo - Command Line Todo List Manager"
+          echo " "
+          echo "Creates a text-based todo list and provides basic operations to add and remove elements from the list. If using TMUX, the todo list is session based, using the name of your active session."
+          echo " "
+          echo "usage: todo                                 # display todo list"
+          echo "usage: todo (--help or -h)                  # show this help"
+          echo "usage: todo (--add or -a) [activity name]   # add a new activity to list"
+          echo "usage: todo (--archive)                     # show completed tasks in archive list"
+          echo "usage: todo (--done or -d) [name or #]      # complete and archive activity"
+          ;;
+        -a|--add)
+          echo "${*:2}" >> "$TODOFILE"
+          ;;
+        --archive)
+          if [ -f "$TODOARCHIVEFILE" ] ; then
+            cat "$TODOARCHIVEFILE"
+          fi
+          ;;
+        -d|--done)
+          re='^[0-9]+$'
+          if ! [[ "$2" =~ $re ]] ; then
+            match=$(sed -n "/$2/p" "$TODOFILE" 2> /dev/null)
+            sed -i "" -e "/$2/d" "$TODOFILE" 2> /dev/null
+          else
+            match=$(sed -n "$2p" "$TODOFILE" 2> /dev/null)
+            sed -i "" -e "$2d" "$TODOFILE" 2> /dev/null
+          fi
+          if [ ! -z "$match" ]; then
+            echo "$(date +"%Y-%m-%d %H:%M:%S") - $match" >> "$TODOARCHIVEFILE"
+          fi
+          ;;
+      esac
+    fi
+  }
+  complete -F _todo todo
+  </pre>]]></description>
+</item>
+</channel>
+</rss>
