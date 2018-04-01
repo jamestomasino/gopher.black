@@ -103,6 +103,33 @@ works.
   </pre>]]></description>
 </item>
 <item>
+  <title>Rss Feed</title>
+  <link>gopher://gopher.black/0/phlog/20180331-rss-feed/gophermap</link>
+  <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+RSS Feed
+March 31st, 2018
+----------------------------------------
+
+After the mini-poll on the last post I have decided to keep my
+gophermap formatting on my phlog. As a sign of faith to the text
+purists, I am now generating a happy little RSS feed for the most
+recent 10 posts. You can find the feed here [0] and also see
+a link to it on my main gophermap [1].
+
+[0] gopher.black RSS feed
+    gopher://gopher.black/0/rss.xml
+[1] gopher.black
+    gopher://gopher.black/1/
+
+For those of you using newsbeuter, you can add this to your feed
+list by dropping this line into the 'urls' file:
+
+  "exec:curl -s gopher://gopher.black/0/rss.xml"
+  </pre>]]></description>
+</item>
+<item>
   <title>Quick Updates</title>
   <link>gopher://gopher.black/0/phlog/20180329-quick-updates/gophermap</link>
   <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
@@ -432,160 +459,6 @@ I forget where I was going with this phlog. I like audio books and
 maybe one day I'll be able to cut out Amazon and Google
 completely. Until then...
 
-  </pre>]]></description>
-</item>
-<item>
-  <title>Cli Tricks Todo</title>
-  <link>gopher://gopher.black/0/phlog/20180322-cli-tricks-todo/gophermap</link>
-  <pubdate>Thu, 22 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-CLI Tricks: todo
-March 22nd, 2018
-----------------------------------------
-
-This is part of a series of phlog entries where I will share some
-of my command line tricks, tips, and scripts.
-
-
-## todo ##
-
-Everyone has a to-do app they love. Many of us have rolled our
-own. This is mine.
-
-It's another bash function that's auto sourced by my
-.bash_profile, offers bash-completion, and has a built in
-archiver.
-
-
-### The Idea ###
-
-I organize my daily life in tmux by using sessions. I'm currently
-in a session named "personal". I also have "work" and "writing"
-and "music" and others. My goals for my to-do list manager are:
-
-  - Super simple cli interface
-  - Sync data between machines (again, cheating with dropbox here)
-  - Contextual to-do list based on tmux session with fallback
-  - Add items
-  - Remove items by number or regex (good for groups of tasks)
-  - Archive things I remove and add a timestamp (good for
-    timesheets)
-  - A little help is nice
-  - Bash-completion all the things
-
-
-### How to use it ###
-
-  $ todo -a "Some task"
-
-  > 1 - Some task
-
-  $ todo -a Another task
-
-  > 1 - Some task
-  > 2 - Another task
-
-  $ todo -d 1
-
-  > 2 - Another task
-
-Simple, right? You don't need to quote the todo item unless you're
-using special characters. You can pass the -d flag a number to
-remove that item, or a string and it'll do a regex match.
-
-Need more help on how to use it? Type:
-
-  $ todo --help
-
-
-### Requirements ###
-
-An environment variable called "$TODOFILE" is required that points
-to a specific text document where you want your to-do list saved.
-If you are in a tmux session, todo will use the directory of your
-$TODOFILE but rename the txt file to match your session name.
-Archives are saved in a file called XXXX.archive.txt where XXXX is
-your TODOFILE or session name.
-
-It probably requires GNU sed as well, but I haven't checked.
-
-
-### The Source ###
-
-You can find the latest source here: [0].
-[0] tomasino's dotfiles - todo function
-    http://github.com/jamestomasino/dotfiles/blob/master/bash/.functions/todo
-
-  #!/usr/bin/env bash
-
-  # Todo List & Completion
-  _todo() {
-    local iter use cur
-    cur=${COMP_WORDS[COMP_CWORD]}
-    use=$( awk '{gsub(/ /,"\\ ")}8' "$TODOFILE" )
-    use="${use//\\ /___}"
-    for iter in $use; do
-      if [[ $iter =~ ^$cur ]]; then
-        COMPREPLY+=( "${iter//___/ }" )
-      fi
-    done
-  }
-  todo() {
-    : "${TODO:?'TODO ENV Var not set. Please set to path of default todo file.'}"
-    # If we are in a tmux session, name the file with the session name
-    # If not in tmux, use the full $TODO env var for path/file
-    if echo "$TERM" | grep -Fq screen && test "$TMUX" ; then
-      sessname=$(tmux display -p '#S')
-      todopath=$(dirname "$TODO")
-      TODOFILE=$todopath/$sessname".txt"
-      TODOARCHIVEFILE=$todopath/$sessname".archive.txt"
-    else
-      TODOFILE=$TODO
-      TODOARCHIVEFILE=${TODO%.*}.archive.txt
-    fi
-    if [ $# -eq 0 ]; then
-      if [ -f "$TODOFILE" ] ; then
-        awk '{ print NR, "-", $0 }' "$TODOFILE" 
-      fi
-    else
-      case "$1" in
-        -h|--help)
-          echo "todo - Command Line Todo List Manager"
-          echo " "
-          echo "Creates a text-based todo list and provides basic operations to add and remove elements from the list. If using TMUX, the todo list is session based, using the name of your active session."
-          echo " "
-          echo "usage: todo                                 # display todo list"
-          echo "usage: todo (--help or -h)                  # show this help"
-          echo "usage: todo (--add or -a) [activity name]   # add a new activity to list"
-          echo "usage: todo (--archive)                     # show completed tasks in archive list"
-          echo "usage: todo (--done or -d) [name or #]      # complete and archive activity"
-          ;;
-        -a|--add)
-          echo "${*:2}" >> "$TODOFILE"
-          ;;
-        --archive)
-          if [ -f "$TODOARCHIVEFILE" ] ; then
-            cat "$TODOARCHIVEFILE"
-          fi
-          ;;
-        -d|--done)
-          re='^[0-9]+$'
-          if ! [[ "$2" =~ $re ]] ; then
-            match=$(sed -n "/$2/p" "$TODOFILE" 2> /dev/null)
-            sed -i "" -e "/$2/d" "$TODOFILE" 2> /dev/null
-          else
-            match=$(sed -n "$2p" "$TODOFILE" 2> /dev/null)
-            sed -i "" -e "$2d" "$TODOFILE" 2> /dev/null
-          fi
-          if [ ! -z "$match" ]; then
-            echo "$(date +"%Y-%m-%d %H:%M:%S") - $match" >> "$TODOARCHIVEFILE"
-          fi
-          ;;
-      esac
-    fi
-  }
-  complete -F _todo todo
   </pre>]]></description>
 </item>
 </channel>
