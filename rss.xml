@@ -3,6 +3,37 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>A Warning To New Friends</title>
+  <link>gopher://gopher.black/0/phlog/20180401-a-warning-to-new-friends/gophermap</link>
+  <pubdate>Sun, 01 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+A warning to new friends
+April 01st, 2018
+----------------------------------------
+
+Take a moment to compose yourself and disconnect from the moment
+happening around you.
+
+Think about your place in the world and let your mind slowly zoom
+out. Watch that place become a spec and then nothing at all as
+your inward eye moves toward the infinite.
+
+Now, with that distance and sense of impartiality consider for
+a moment your own actions to the people around you. Think about
+what you consider good and what leaves a bitter taste in your
+mouth. Don't linger too long on any one thing, but try not to skip
+over the shameful parts completely.
+
+Everyone you meet today will face that person you just examined.
+That person: keep the idea separate from yourself for now.
+
+If a friend were to encounter that person today, what would you
+warn them about before the encounter? How would you guide them to
+a better relationship?
+  </pre>]]></description>
+</item>
+<item>
   <title>To Gophermap Or No</title>
   <link>gopher://gopher.black/0/phlog/20180331-to-gophermap-or-no/gophermap</link>
   <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
@@ -402,76 +433,6 @@ morality of the community its attached to. I like that.
 
 [0] Distributism on Gopherpedia
     gopher://gopherpedia.com/0/Distributism
-  </pre>]]></description>
-</item>
-<item>
-  <title>Audiobooks</title>
-  <link>gopher://gopher.black/0/phlog/20180323-audiobooks/gophermap</link>
-  <pubdate>Fri, 23 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Audio Books
-March 23rd, 2018
-----------------------------------------
-
-I am a very active Audible user. I listen to a lot of audio books
-and Amazon's service has the best selection at the cheapest prices
-and offers the best players. I can listen on my phone or in the
-browser and stay in sync. I can open up a kindle and have the book
-pick up where the audio left off and vice-versa. This is some
-slick stuff and it's my justification for sticking with a company
-that represents a lot of things I despise.
-
-There are some kinder looking alternative sources for the books
-popping up around the net, but no one comes close to offering all
-the things Audible does. That sucks because it reveals things
-about me I don't like. I have chosen convenience over principals.
-I do it for my phone as well, which is a Pixel on Google Fi. Yuck.
-
-I may not have it in me to be the ultimate champion of
-stickin-it-to-the-man but I'd like to think I'm not a total
-pushover either. I'll get back at the giants with really
-uncomfortable sand in their shoes. Here's a few of the
-all-but-meaningless things I do to justify my lifestyle to myself.
-
-1. I have an Amazon credit card. It gives me 5% back on purchases
-   on Amazon.com and that's pretty much the only place I use it.
-   Here's the thing, once you get those points Amazon suggests you
-   redeem them on purchases. If you use your points on a purchase,
-   you don't EARN points on that purchase. If you did, that 5%
-   would really be 5.55555...%. Little bits matter, right? Well,
-   that credit card is offered through Chase. If you go to the
-   Chase website and redeem the points directly with them, you can
-   apply those points in the form of a statement credit. Aka, you
-   get that much money back, but it didn't in any way affect your
-   future purchases with Amazon. So, just to ensure I get that
-   extra 0.55555...% percent, when I'm about to make an Amazon
-   purchase and I have points available, I'll go to Chase and
-   redeem that many points off my bill as I make a normal purchase
-   on Amazon. Take THAT giant corporation! I'm squeezing whole
-   dollars off you!
-
-2. Audible books have stupid DRM on them. I don't care for that so
-   any books I get from them I immediately strip to mp3s and
-   back-up, just in case. Now and then I want to listen to
-   something without Amazon's help. Now I can just play an mp3
-   from the command-line. In fact, today I finally figured out
-   a viable method for resuming playback without having to
-   remember the timestamp.
-
-   $ mpv --save-position-on-quit
-
-   It will resume where you left off when you quit. If you do it
-   on a directory it will remember where in the whole playlist you
-   left off. Really solid solve! It supports time-scale changes
-   too, so it's got everything you could want for playback. The
-   only lack is syncing between devices. Not quite viable to
-   replace Audible, but it's a piece of the puzzle.
-
-I forget where I was going with this phlog. I like audio books and
-maybe one day I'll be able to cut out Amazon and Google
-completely. Until then...
-
   </pre>]]></description>
 </item>
 </channel>
