@@ -1,0 +1,444 @@
+<?xml version="1.0"?><rss version="2.0"><channel>
+<title>gopher.black</title>
+<link>gopher://gopher.black/</link>
+<description>Tomasino's Gopher Hole</description>
+<item>
+  <title>A Warning To New Friends</title>
+  <link>gopher://gopher.black/0/phlog/20180401-a-warning-to-new-friends/gophermap</link>
+  <pubdate>Sun, 01 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+A warning to new friends
+April 01st, 2018
+----------------------------------------
+
+Take a moment to compose yourself and disconnect from  the  moment
+happening around you.
+
+Think about your place in the world and let your mind slowly  zoom
+out. Watch that place  become a spec and then  nothing  at  all as
+your inward eye moves toward the infinite.
+
+Now, with that distance and sense  of  impartiality  consider  for
+a moment your own actions  to the people around you.  Think  about
+what you consider good and  what leaves a  bitter  taste  in  your
+mouth. Don't linger too long on any one thing, but try not to skip
+over the shameful parts completely.
+
+Everyone you meet today will face that person you  just  examined.
+That person:  keep  the  idea  separate  from  yourself  for  now.
+
+If a friend were to  encounter that person today,  what would  you
+warn them about before the encounter? How would you guide them  to
+a better relationship?
+
+                              * * *
+
+This was the meditation I did tonight. I thought some of you might
+like to try it as well.
+  </pre>]]></description>
+</item>
+<item>
+  <title>To Gophermap Or No</title>
+  <link>gopher://gopher.black/0/phlog/20180331-to-gophermap-or-no/gophermap</link>
+  <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+To gophermap or no
+March 31st, 2018
+----------------------------------------
+
+Quick poll:
+
+Do you think I should keep using gophermaps for my phlog, or
+should I move back to type 0 and include non-followable links as
+text, like so [0].
+
+[0]: https://tomasino.org
+
+Let me know on gopher, mastodon, or email, or whatever. My contact
+info is in the About [1] page.
+
+[1] About
+    gopher://gopher.black/1/about
+  </pre>]]></description>
+</item>
+<item>
+  <title>This Old House</title>
+  <link>gopher://gopher.black/0/phlog/20180331-this-old-house/gophermap</link>
+  <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+This old house
+March 31st, 2018
+----------------------------------------
+
+I'm standing in an empty room facing a large bow window stretching
+from the rough wooden floor to a rounded arching top. There is
+some dust and dirt in the corners and fallen between the floor
+boards gapping slightly with age. To my right is a door to the
+hallway and eventually roof access. Behind me a closet holds shoe
+boxes of memories.
+
+I know the layout of this place intimitely, though I've never
+really been there. It doesn't really exist. In a sense it is my
+memory palace [0]. In another sense, it is like the Hi'ngwikan of
+the Lenape people and I am its a-la-pa-cte [1]. It is a private
+place of prayer and solitude where I can organize my thoughts and
+intentions.
+
+[0] Method of loci
+    gopher://gopherpedia.com/0/Method of loci
+[1] Lenape "Big House" Ceremony
+    http://bit.ly/2GmQwgt
+
+I don't remember the first time I went there, but I do remember
+that it started with that window. I can still count the panes of
+glass, see the smudges of fingerprints I've left, note the
+imperfections in the glass as it distorts my view. These details
+give it permanence that I find vital. Knowing the texture of the
+wood gives me a comfort that I need to let myself be free. It is
+through that freedom that I find peace.
+
+                           - - - - -
+
+Earlier today vilmibm posted [2] about what home means to him, and
+how he is able to find it digitally by just finding a quite space
+and connecting to his familiar tools, music, and communities.
+I love that sentiment. I have anxiety over the question of "where
+is home" or "where are you from". I could probably blame the Roma
+heritage but that feels like cheating. In reality, I just don't
+associate a physical place with home at all. Though I might wish
+an online community or my digital environment to become home like
+vilmibm has found, I don't think that fits me either.
+
+[2] vilmibm's feels (2018-03-30)
+    gopher://tilde.town/0/~vilmibm/feels/20180330.txt
+
+No, my home is a dusty old house with a big bow window that always
+has a different view when I look through it. I know where I keep
+the memories of relationships past (in that closet on the bottom
+shelf in a white shoebox), and I know that when I get really sad
+I need to go out onto the rooftop garden and greenhouse and let
+the light pour into me. 
+
+                           - - - - -
+
+Tonight I felt some of that sadness coming on. At first I thought
+it might mean I was going to have a good evening writing (it's
+much easier for me to write when depressed) but I felt it take
+a sour turn in my mind. So, instead of wallowing I spent a little
+time in meditation and prayer in my little old house.  No sooner
+had I sat on that dusty floor and placed my hands lightly on the
+wooden slats when a cloud broke and a fresh beam of sunlight
+warmed my cheek. Like everything in that place, the symbols speak
+a language I understand intuitively. 
+
+That sunlight is what I needed tonight. That's how my prayer
+works.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Rss Feed</title>
+  <link>gopher://gopher.black/0/phlog/20180331-rss-feed/gophermap</link>
+  <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+RSS Feed
+March 31st, 2018
+----------------------------------------
+
+After the mini-poll on the last post I have decided to keep my
+gophermap formatting on my phlog. As a sign of faith to the text
+purists, I am now generating a happy little RSS feed for the most
+recent 10 posts. You can find the feed here [0] and also see
+a link to it on my main gophermap [1].
+
+[0] gopher.black RSS feed
+    gopher://gopher.black/0/rss.xml
+[1] gopher.black
+    gopher://gopher.black/1/
+
+For those of you using newsbeuter, you can add this to your feed
+list by dropping this line into the 'urls' file:
+
+  "exec:curl -s gopher://gopher.black/0/rss.xml"
+
+To accomplish this, rather than add a cgi script to my site,
+I decided to add the RSS generation feature to burrow.
+
+  $ burrow rss # generates the rss feed
+
+There's also a config parameter to auto-generate RSS when writing
+new phlogs. Check out the man page or README.md to see more.
+
+NOTE: There's one little weakness of my RSS generator. It will
+organize the most recent entries by date, but if you post multiple
+entries in a single day, it just alphabetizes them. I'm sure you
+guys can all deal with it.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Quick Updates</title>
+  <link>gopher://gopher.black/0/phlog/20180329-quick-updates/gophermap</link>
+  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Quick Updates
+March 29th, 2018
+----------------------------------------
+
+Lynx has added support for the + item type. You can find it
+working in 2.8.9dev.17. It displays with a prefix of (+++) to
+distinguish it from other menu items. I beleive sacc plans similar
+style of support.
+
+kichimi's server made moku-pona sad and hang while it was down.
+Luckily both he and Alex Schroeder are badass and a timeout was
+quickly added to the program. While Alex was tinkering, he also
+changed the display style of the generated gophermap to be more
+condensed. I dig it. You can see the results over here [0].
+
+[0] Phlogs I follow
+    gopher://gopher.black/1/phlogs
+
+zcrayfish has finally joined the phlog parade [1]. He also made me
+realize that .soy is a TLD! Make sure to add him to your lists.
+
+[1] zcrayfish's phlog
+    gopher://gopher.zcrayfish.soy/1/phlog
+  </pre>]]></description>
+</item>
+<item>
+  <title>More Migrations</title>
+  <link>gopher://gopher.black/0/phlog/20180329-more-migrations/gophermap</link>
+  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+More migrations
+March 29th, 2018
+----------------------------------------
+
+I stayed up a little bit late last night and transferred all my
+domains off of AWS, then I nuked it. Every trace of me is gone
+from that platform, and once this horrible bill is paid I'm
+closing the account completely.
+
+In the wake of the move I started thinking about where to put all
+my stuff and I decided that this little Raspberry Pi is more than
+sufficient for my needs. I have already gone through the headache
+of converting all my web properties to static sites in order to
+host on S3, so putting content into nginx seems like the easy and
+obvious next step.
+
+I've installed nginx and I'm reading up on how to manage multiple
+sites with it (seems almost identical to Apache). I'll clone down
+the websites when I get home tonight, port forward 80 and reset my
+DNS A records. I've already put together a script for gopher.black
+that handles my dynamic dns changes and updates Namesilo, so I can
+easily package in the rest of my domains there. Finally, I'll want
+HTTPS, so I guess it's finally time for me to read the man page on
+certbot and start using LetsEncrypt. Whee!
+
+None of this sounds particularly difficult. Hopefully I won't run
+into any unexpected walls.
+
+- - - - -
+
+Moving away from the technical stuff, dropping AWS also represents
+a shedding of a gross skin I've been wearing. I don't like the
+monolithic, data-consuming giants. It hurts my heart when
+I continue to use them, as I've mentioned before. I acknowledge
+that I'll make choices that compromise my principles due to
+convenience, and that's something I would like to lessen.
+
+Do you think simply pulling websites off AWS can help facilitate
+that sort of change? Am I ready to shut down my Google account? Is
+that even viable as an Android user with Project Fi? I doubt it.
+What are my realistic alternatives for phone service, anyway? Next
+year I'll have a super-basic eInk phone I can set up on t-mobile,
+but are they any better? Is any phone service any better?
+
+I suspect I have a tiny bit of inertia I can use here but I just
+don't see a clear action I can take. A lot of you have done
+similar transitions in the past. Do you have any advice?
+  </pre>]]></description>
+</item>
+<item>
+  <title>Leaving Aws</title>
+  <link>gopher://gopher.black/0/phlog/20180329-leaving-aws/gophermap</link>
+  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Leaving AWS
+March 29th, 2018
+----------------------------------------
+
+Earlier this week I got a notification from the AWS console that
+my billing alarm level had been reached. I'm glad I set it because
+there's no other way I would have know that I was running up an
+incredibly expensive bill.
+
+Over the weekend I was experimenting with Nextcloud and linked an
+AWS S3 volume as an extra share. Something went wrong and the
+syncs were failing, but constantly retrying to download data. At
+least, this is what I now believe is the root cause. At the time
+I figured it was one of my public sites getting abused.
+
+I went digging around in AWS to see if I could figure out who the
+culprit was, but that was in vain. AWS is a labyrinth of excessive
+overengineering, techno-babble, and the worlds worst
+documentation. I can find no information about where the charges
+are coming from beyond "bandwidth".
+
+It's 2 days later and my bill is over $300. I logged a support
+ticket asking Amazon what the hell is happening, but screw it. I'm
+done. I don't need AWS shit, it was just the idea of fast
+performance that brought me there. My sites are all static.
+
+I unlocked my domains and I'm transferring them to Namesilo. I'll
+save down some of the crap sitting in cold storage, re-clone my
+static sites on the gopher.black pi, add in nginx and tell my
+router to forward port 80.
+
+The cloud can suck it.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Acme Sh Shenanigans</title>
+  <link>gopher://gopher.black/0/phlog/20180329-acme-sh-shenanigans/gophermap</link>
+  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+acme.sh shenanigans
+March 29th, 2018
+----------------------------------------
+
+These are notes to myself on how I finally got acme.sh and nginx
+to play nice.
+
+
+Step 1: Generate a cert
+
+I'm using the namesilo api method here, so this part is simple.
+
+acme.sh --issue --dns dns_namesilo --dnssleep 900 -d tomasino.org
+-d www.tomasino.org -w /var/www
+
+Step 2: Create a place to put those certs
+
+This part was a struggle. Since acme.sh doesn't need root to run,
+so I wasn't sure where to go. Eventually I settled on creating
+a directory at /etc/nginx/acme.sh/domain/ and changed ownership to
+www-data:www-data. I'm a member of that group and nginx works with
+that too, so it should be good.
+
+Step 3: Install the certs
+
+This is poorly documented pretty much everywhere. It will pull the
+files from the .acme.sh directory in your home folder and put them
+wherever you define here. The reload command will run as root, so
+you don't need to specify sudo. 
+
+acme.sh --install-cert -d tomasino.org --key-file
+/etc/nginx/acme.sh/tomasino.org/key.pem --cert-file
+/etc/nginx/acme.sh/tomasino.org/cert.pem --fullchain-file
+/etc/nginx/acme.sh/tomasino.org/fullchain.pem --reloadcmd
+"service nginx force-reload"
+
+Step 4: Set up the nginx configuration
+
+First, a server directive on port 80 that just redirects to the
+ssl version.
+
+Second, listen on 443, add a bunch of headers, set up ssl
+protocols, ciphers, link to the cert, key, and trusted cert
+(fullchain). Etc, etc...
+
+Step 5: Restart/Start nginx
+
+Hopefully it doesn't crap out on you like it did for me 5,000
+times.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Gopher On Gopher</title>
+  <link>gopher://gopher.black/0/phlog/20180328-gopher-on-gopher/gophermap</link>
+  <pubdate>Wed, 28 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Gopher on Gopher
+March 28th, 2018
+----------------------------------------
+
+I've become self-conscious of my own phlogging on gopher on the
+subject of gopher, or gopher related things. I do a lot of writing
+about the protocol, the community, my scripts for my phlog, other
+people's phlogging, gopher project, you get the idea. I started to
+worry that I was neglecting original content for its own right
+that wasn't all oriented to the weird little place we hang out. As
+a result, I'm going to try to post more non-gophery things. There
+will be no hard and fast rules about numbers or anything, but I'll
+try.
+  </pre>]]></description>
+</item>
+<item>
+  <title>Distributism</title>
+  <link>gopher://gopher.black/0/phlog/20180327-distributism/gophermap</link>
+  <pubdate>Tue, 27 Mar 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Distributism
+March 27th, 2018
+----------------------------------------
+
+I've been thinking about politics too much lately, so I thought
+I'd liven things up by jumping into economics! I'll keep this one
+short, I promise.
+
+I'm no fan of capitalism, especially "free" market economics. It
+is tantamount to slavery both in its literal abuse of the third
+world or the consolidation of wealth into the corporate leading to
+wage-slavery in the first world. The appeal of endless growth is
+clear, but it's so obviously unsustainable that I can't keep up
+the lie to myself. Eventually you will run out of peoples to
+exploit and the workers will have no money to spend. It will
+consume itself or transform from economic oligarchy into political
+oligarchy.
+
+No, the modern fascination with democracy is mirrored by the lust
+for wealth that capitalism promises. In reality, the regulation
+that free-market champions condemn are the very things that have
+kept us from the brink thus far. The world economy teeters on the
+edge of absolute ruin and it will be the greedy, get-rich-quick,
+that take us all there.
+
+There are alternatives, and they don't all involve us devolving
+into an agrestic commune. Distributism [0] is my economic
+structure of choice. Here's the extremely brief key points:
+
+  - personal property is a right of the individual
+  - don't assign to higher association what lesser and subordinate
+    organizations can do
+  - small production and local culture is favored over central
+    systems and mass production
+
+  AKA, keep it small and owned by the workers.
+
+The best examples I can give in today's culture are credit unions
+and farming co-ops.
+
+Of course there's a lot more to it, and no system in place today
+functions in its pure form. We have some elements of distributism
+in the United States in the form of anti-trust laws. Still, I'd
+prefer more.
+
+Capitalism has no soul, no morality. Distributism shares the
+morality of the community its attached to. I like that.
+
+[0] Distributism on Gopherpedia
+    gopher://gopherpedia.com/0/Distributism
+  </pre>]]></description>
+</item>
+</channel>
+</rss>
