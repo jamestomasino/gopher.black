@@ -3,6 +3,25 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>New Faces</title>
+  <link>gopher://gopher.black/0/phlog/20180402-new-faces/gophermap</link>
+  <pubdate>Mon, 02 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+New faces
+April 02nd, 2018
+----------------------------------------
+
+I've added a bunch of new people to my personal moku-pona list
+lately. Thanks to tfurrows for mentioning c25l recently. I had no
+idea (s)he was around and there's so much to read! Also, tfurrows,
+since you have different phlogs on different gopher holes I've
+added each of yours separately to my lists. Yargo too gets two
+mentions. Anyone else running multiple phlogs that I should be
+tracking?
+  </pre>]]></description>
+</item>
+<item>
   <title>A Warning To New Friends</title>
   <link>gopher://gopher.black/0/phlog/20180401-a-warning-to-new-friends/gophermap</link>
   <pubdate>Sun, 01 Apr 2018 00:00:00 -0400</pubdate>
@@ -380,64 +399,6 @@ that wasn't all oriented to the weird little place we hang out. As
 a result, I'm going to try to post more non-gophery things. There
 will be no hard and fast rules about numbers or anything, but I'll
 try.
-  </pre>]]></description>
-</item>
-<item>
-  <title>Distributism</title>
-  <link>gopher://gopher.black/0/phlog/20180327-distributism/gophermap</link>
-  <pubdate>Tue, 27 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Distributism
-March 27th, 2018
-----------------------------------------
-
-I've been thinking about politics too much lately, so I thought
-I'd liven things up by jumping into economics! I'll keep this one
-short, I promise.
-
-I'm no fan of capitalism, especially "free" market economics. It
-is tantamount to slavery both in its literal abuse of the third
-world or the consolidation of wealth into the corporate leading to
-wage-slavery in the first world. The appeal of endless growth is
-clear, but it's so obviously unsustainable that I can't keep up
-the lie to myself. Eventually you will run out of peoples to
-exploit and the workers will have no money to spend. It will
-consume itself or transform from economic oligarchy into political
-oligarchy.
-
-No, the modern fascination with democracy is mirrored by the lust
-for wealth that capitalism promises. In reality, the regulation
-that free-market champions condemn are the very things that have
-kept us from the brink thus far. The world economy teeters on the
-edge of absolute ruin and it will be the greedy, get-rich-quick,
-that take us all there.
-
-There are alternatives, and they don't all involve us devolving
-into an agrestic commune. Distributism [0] is my economic
-structure of choice. Here's the extremely brief key points:
-
-  - personal property is a right of the individual
-  - don't assign to higher association what lesser and subordinate
-    organizations can do
-  - small production and local culture is favored over central
-    systems and mass production
-
-  AKA, keep it small and owned by the workers.
-
-The best examples I can give in today's culture are credit unions
-and farming co-ops.
-
-Of course there's a lot more to it, and no system in place today
-functions in its pure form. We have some elements of distributism
-in the United States in the form of anti-trust laws. Still, I'd
-prefer more.
-
-Capitalism has no soul, no morality. Distributism shares the
-morality of the community its attached to. I like that.
-
-[0] Distributism on Gopherpedia
-    gopher://gopherpedia.com/0/Distributism
   </pre>]]></description>
 </item>
 </channel>
