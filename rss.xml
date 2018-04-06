@@ -35,6 +35,39 @@ reabable.
   </pre>]]></description>
 </item>
 <item>
+  <title>Cli Tricks Dictionaries</title>
+  <link>gopher://gopher.black/0/phlog/20180405-cli-tricks-dictionaries/gophermap</link>
+  <pubdate>Thu, 05 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+CLI Tricks: Dictionaries
+April 05th, 2018
+----------------------------------------
+
+=== Telnet to dict.org ===
+
+  telnet dict.org dict
+
+Type "help" once you land. Try a few searches:
+
+  define english cadenza
+  define jargon hacker
+
+(I'm working on adding a link to this on my gopher hole.)
+
+
+
+=== Locally install dict & a local dict server ===
+
+  apt install dict dictd dict-gcide
+
+Then to use:
+
+  dict cadenza
+
+  </pre>]]></description>
+</item>
+<item>
   <title>New Faces</title>
   <link>gopher://gopher.black/0/phlog/20180402-new-faces/gophermap</link>
   <pubdate>Mon, 02 Apr 2018 00:00:00 -0400</pubdate>
@@ -353,63 +386,6 @@ static sites on the gopher.black pi, add in nginx and tell my
 router to forward port 80.
 
 The cloud can suck it.
-  </pre>]]></description>
-</item>
-<item>
-  <title>Acme Sh Shenanigans</title>
-  <link>gopher://gopher.black/0/phlog/20180329-acme-sh-shenanigans/gophermap</link>
-  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-acme.sh shenanigans
-March 29th, 2018
-----------------------------------------
-
-These are notes to myself on how I finally got acme.sh and nginx
-to play nice.
-
-
-Step 1: Generate a cert
-
-I'm using the namesilo api method here, so this part is simple.
-
-acme.sh --issue --dns dns_namesilo --dnssleep 900 -d tomasino.org
--d www.tomasino.org -w /var/www
-
-Step 2: Create a place to put those certs
-
-This part was a struggle. Since acme.sh doesn't need root to run,
-so I wasn't sure where to go. Eventually I settled on creating
-a directory at /etc/nginx/acme.sh/domain/ and changed ownership to
-www-data:www-data. I'm a member of that group and nginx works with
-that too, so it should be good.
-
-Step 3: Install the certs
-
-This is poorly documented pretty much everywhere. It will pull the
-files from the .acme.sh directory in your home folder and put them
-wherever you define here. The reload command will run as root, so
-you don't need to specify sudo. 
-
-acme.sh --install-cert -d tomasino.org --key-file
-/etc/nginx/acme.sh/tomasino.org/key.pem --cert-file
-/etc/nginx/acme.sh/tomasino.org/cert.pem --fullchain-file
-/etc/nginx/acme.sh/tomasino.org/fullchain.pem --reloadcmd
-"service nginx force-reload"
-
-Step 4: Set up the nginx configuration
-
-First, a server directive on port 80 that just redirects to the
-ssl version.
-
-Second, listen on 443, add a bunch of headers, set up ssl
-protocols, ciphers, link to the cert, key, and trusted cert
-(fullchain). Etc, etc...
-
-Step 5: Restart/Start nginx
-
-Hopefully it doesn't crap out on you like it did for me 5,000
-times.
   </pre>]]></description>
 </item>
 </channel>

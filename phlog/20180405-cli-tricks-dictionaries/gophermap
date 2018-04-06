@@ -1,0 +1,26 @@
+i----------------------------------------		gopher.black	70
+iCLI Tricks: Dictionaries		gopher.black	70
+iApril 05th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+i=== Telnet to dict.org ===		gopher.black	70
+i		gopher.black	70
+i  telnet dict.org dict		gopher.black	70
+i		gopher.black	70
+iType "help" once you land. Try a few searches:		gopher.black	70
+i		gopher.black	70
+i  define english cadenza		gopher.black	70
+i  define jargon hacker		gopher.black	70
+i		gopher.black	70
+i(I'm working on adding a link to this on my gopher hole.)		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i=== Locally install dict & a local dict server ===		gopher.black	70
+i		gopher.black	70
+i  apt install dict dictd dict-gcide		gopher.black	70
+i		gopher.black	70
+iThen to use:		gopher.black	70
+i		gopher.black	70
+i  dict cadenza		gopher.black	70
+i		gopher.black	70
