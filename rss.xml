@@ -3,6 +3,38 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>The Bible</title>
+  <link>gopher://gopher.black/0/phlog/20180405-the-bible/gophermap</link>
+  <pubdate>Thu, 05 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+The Bible
+April 05th, 2018
+----------------------------------------
+
+Yesterday I added a new section to my gopher hole [0]. It's the
+English Standard Version of the Bible, used with permission. I've
+written a script to fetch books/chapters/verses on demand and used
+it to prepopulate a full view of the Bible, chapter by chapter.
+I'm pretty sure everything came in properly, but I'll be double
+checking over the coming weeks.
+
+My next step is to add some safeguards to the script and make it
+work on demand as a cgi. There are limitations on how much can be
+queried at once and such attached to the API, so I'll need to plan
+accordingly. Stay tuned!
+
+In the meantime, pop on over and give it a read. It's my favorite
+translation: a literal one with modern grammar. I've opted to
+suppress chapter & verse markings as well as footnotes and just
+let the text live on its own. I think it makes things much more
+reabable.
+
+[0] The Bible (ESV)
+    gopher://gopher.black/1/bible
+  </pre>]]></description>
+</item>
+<item>
   <title>New Faces</title>
   <link>gopher://gopher.black/0/phlog/20180402-new-faces/gophermap</link>
   <pubdate>Mon, 02 Apr 2018 00:00:00 -0400</pubdate>
@@ -378,27 +410,6 @@ Step 5: Restart/Start nginx
 
 Hopefully it doesn't crap out on you like it did for me 5,000
 times.
-  </pre>]]></description>
-</item>
-<item>
-  <title>Gopher On Gopher</title>
-  <link>gopher://gopher.black/0/phlog/20180328-gopher-on-gopher/gophermap</link>
-  <pubdate>Wed, 28 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Gopher on Gopher
-March 28th, 2018
-----------------------------------------
-
-I've become self-conscious of my own phlogging on gopher on the
-subject of gopher, or gopher related things. I do a lot of writing
-about the protocol, the community, my scripts for my phlog, other
-people's phlogging, gopher project, you get the idea. I started to
-worry that I was neglecting original content for its own right
-that wasn't all oriented to the weird little place we hang out. As
-a result, I'm going to try to post more non-gophery things. There
-will be no hard and fast rules about numbers or anything, but I'll
-try.
   </pre>]]></description>
 </item>
 </channel>
