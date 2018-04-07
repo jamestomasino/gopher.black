@@ -1,7 +1,31 @@
 <?xml version="1.0"?><rss version="2.0"><channel>
-<title>gopher.black</title>
+<title>My Gopher Hole</title>
 <link>gopher://gopher.black/</link>
-<description>Tomasino's Gopher Hole</description>
+<description>Description</description>
+<item>
+  <title>Gopher Alert Bob Alberti Is Here</title>
+  <link>gopher://gopher.black/0/phlog/20180406-gopher-alert-bob-alberti-is-here/gophermap</link>
+  <pubdate>Fri, 06 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Gopher Alert: Bob Alberti is here
+April 06th, 2018
+----------------------------------------
+
+Bob Alberti [0] is now on SDF and has started a Phlog [1]. You
+might remember him from a little thing called The Internet Gopher
+Protocol RFC [2]. This is absolutely thrilling! Bob, if you see
+this, welcome back to the land YOU built. I hope you enjoy the new
+life that's being breathed back into it in our little corner.
+
+[0] About Bob
+    gopher://sdf.org/1/users/alberti/aboutme
+[1] Bob Alberti's Phlog
+    gopher://sdf.org/1/users/alberti/phlog
+[2] The Internet Gopher Protocol (RFC 1436)
+    gopher://gopher.black/0/archive/rfc/1436.txt
+  </pre>]]></description>
+</item>
 <item>
   <title>The Bible</title>
   <link>gopher://gopher.black/0/phlog/20180405-the-bible/gophermap</link>
@@ -47,13 +71,13 @@ April 05th, 2018
 === Telnet to dict.org ===
 
   telnet dict.org dict
+8  (try it here)	dict	dict.org	2628
 
 Type "help" once you land. Try a few searches:
 
   define english cadenza
   define jargon hacker
 
-(I'm working on adding a link to this on my gopher hole.)
 
 
 
@@ -346,46 +370,6 @@ but are they any better? Is any phone service any better?
 I suspect I have a tiny bit of inertia I can use here but I just
 don't see a clear action I can take. A lot of you have done
 similar transitions in the past. Do you have any advice?
-  </pre>]]></description>
-</item>
-<item>
-  <title>Leaving Aws</title>
-  <link>gopher://gopher.black/0/phlog/20180329-leaving-aws/gophermap</link>
-  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Leaving AWS
-March 29th, 2018
-----------------------------------------
-
-Earlier this week I got a notification from the AWS console that
-my billing alarm level had been reached. I'm glad I set it because
-there's no other way I would have know that I was running up an
-incredibly expensive bill.
-
-Over the weekend I was experimenting with Nextcloud and linked an
-AWS S3 volume as an extra share. Something went wrong and the
-syncs were failing, but constantly retrying to download data. At
-least, this is what I now believe is the root cause. At the time
-I figured it was one of my public sites getting abused.
-
-I went digging around in AWS to see if I could figure out who the
-culprit was, but that was in vain. AWS is a labyrinth of excessive
-overengineering, techno-babble, and the worlds worst
-documentation. I can find no information about where the charges
-are coming from beyond "bandwidth".
-
-It's 2 days later and my bill is over $300. I logged a support
-ticket asking Amazon what the hell is happening, but screw it. I'm
-done. I don't need AWS shit, it was just the idea of fast
-performance that brought me there. My sites are all static.
-
-I unlocked my domains and I'm transferring them to Namesilo. I'll
-save down some of the crap sitting in cold storage, re-clone my
-static sites on the gopher.black pi, add in nginx and tell my
-router to forward port 80.
-
-The cloud can suck it.
   </pre>]]></description>
 </item>
 </channel>
