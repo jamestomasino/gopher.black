@@ -1,7 +1,82 @@
 <?xml version="1.0"?><rss version="2.0"><channel>
-<title>My Gopher Hole</title>
+<title>gopher.black</title>
 <link>gopher://gopher.black/</link>
-<description>Description</description>
+<description>Tomasino's Gopher Hole</description>
+<item>
+  <title>Fat</title>
+  <link>gopher://gopher.black/0/phlog/20180407-fat/gophermap</link>
+  <pubdate>Sat, 07 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Fat
+April 07th, 2018
+----------------------------------------
+
+I keep track of my weight and a bunch of other measurements with
+a little shell function that logs to a csv file on dropbox. A year
+ago I made some fantastic progress but then it all fell apart.
+With the new year I started getting back into my good habits and
+once again was making progress. Last month I got really sick: flu,
+pneumonia, blah blah. I fell off the wagon (a food wagon) and have
+been eating like crap once again.
+
+Tomorrow it's back on diet again (keto) and I know I'll feel so
+much better soon. To help prep me mentally I decided to plot my
+weight progress.
+
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⢢⠀⠀⠀⠀⠀⢠⢆⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⠉⠀⠀⢣⠀⠀⠀⡠⠃⠘⡄⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⠀⠀⠱⡀⡰⠁⠀⠀⢱⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠑⠁⠀⠀⠀⠀⡇⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠉⠒⠤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠈⠉⠑⠒⠤⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠒⠤⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠑⠒⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠢⡀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠢⡀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠢⢄⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+│⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+└────────────────────────────────────────────────────────────
+
+I've stripped off the axis info here cause you don't need to see
+all that, but you can see from the shape of the data that it's
+been a wild ride. I hope things go more smoothly this time. I'm
+sick of being fat.
+
+  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+Side note: I generated that chart with an awesome command-line
+plotter called jp [0]. My tracker (which needs a lot of coded
+cleanup) can be found here [1].
+
+[0] jp
+    http://github.com/sgreben/jp
+[1] track
+    http://github.com/jamestomasino/dotfiles/blob/master/bash/.functions/track
+
+The final command to generate that chart:
+
+  # my csv is formatted (year,month,day,weight)
+  awk -F "," '{print $1 "-" $2 "-" $3 "," $4}' weight.csv | \
+    jp \
+      -input csv \
+      -xy '[*][0,1]' \
+      -canvas braille \
+      -height 25 \
+      -width 67
+  </pre>]]></description>
+</item>
 <item>
   <title>Gopher Alert Bob Alberti Is Here</title>
   <link>gopher://gopher.black/0/phlog/20180406-gopher-alert-bob-alberti-is-here/gophermap</link>
@@ -315,61 +390,6 @@ realize that .soy is a TLD! Make sure to add him to your lists.
 
 [1] zcrayfish's phlog
     gopher://gopher.zcrayfish.soy/1/phlog
-  </pre>]]></description>
-</item>
-<item>
-  <title>More Migrations</title>
-  <link>gopher://gopher.black/0/phlog/20180329-more-migrations/gophermap</link>
-  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-More migrations
-March 29th, 2018
-----------------------------------------
-
-I stayed up a little bit late last night and transferred all my
-domains off of AWS, then I nuked it. Every trace of me is gone
-from that platform, and once this horrible bill is paid I'm
-closing the account completely.
-
-In the wake of the move I started thinking about where to put all
-my stuff and I decided that this little Raspberry Pi is more than
-sufficient for my needs. I have already gone through the headache
-of converting all my web properties to static sites in order to
-host on S3, so putting content into nginx seems like the easy and
-obvious next step.
-
-I've installed nginx and I'm reading up on how to manage multiple
-sites with it (seems almost identical to Apache). I'll clone down
-the websites when I get home tonight, port forward 80 and reset my
-DNS A records. I've already put together a script for gopher.black
-that handles my dynamic dns changes and updates Namesilo, so I can
-easily package in the rest of my domains there. Finally, I'll want
-HTTPS, so I guess it's finally time for me to read the man page on
-certbot and start using LetsEncrypt. Whee!
-
-None of this sounds particularly difficult. Hopefully I won't run
-into any unexpected walls.
-
-- - - - -
-
-Moving away from the technical stuff, dropping AWS also represents
-a shedding of a gross skin I've been wearing. I don't like the
-monolithic, data-consuming giants. It hurts my heart when
-I continue to use them, as I've mentioned before. I acknowledge
-that I'll make choices that compromise my principles due to
-convenience, and that's something I would like to lessen.
-
-Do you think simply pulling websites off AWS can help facilitate
-that sort of change? Am I ready to shut down my Google account? Is
-that even viable as an Android user with Project Fi? I doubt it.
-What are my realistic alternatives for phone service, anyway? Next
-year I'll have a super-basic eInk phone I can set up on t-mobile,
-but are they any better? Is any phone service any better?
-
-I suspect I have a tiny bit of inertia I can use here but I just
-don't see a clear action I can take. A lot of you have done
-similar transitions in the past. Do you have any advice?
   </pre>]]></description>
 </item>
 </channel>
