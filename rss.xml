@@ -3,6 +3,30 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Re Sysdharma Gophercon</title>
+  <link>gopher://gopher.black/0/phlog/20180408-re-sysdharma-gophercon/gophermap</link>
+  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Re: sysdharma - Gophercon
+April 08th, 2018
+----------------------------------------
+
+I was so excited about the possibility of a gophercon when I saw
+the first mention of Brazil. I was just as heartbroken when it
+turned out (once again) to be about Go-lang. It drives me crazy
+that they keep using "gopher" for everything. Fakes me out every
+time. Boo.
+
+Bitreich has something they do in Germany for gopher, but I'm not
+sure what sort of attendance it gets or if it's more for their
+private community. I'd love a real gopher (1436) conference, but
+we regular users are far too spread out around the globe. I can't
+imagine many people traveling across continents to attend. Maybe
+a virtual thing? Do those work?
+  </pre>]]></description>
+</item>
+<item>
   <title>Fat</title>
   <link>gopher://gopher.black/0/phlog/20180407-fat/gophermap</link>
   <pubdate>Sat, 07 Apr 2018 00:00:00 -0400</pubdate>
@@ -359,37 +383,6 @@ NOTE: There's one little weakness of my RSS generator. It will
 organize the most recent entries by date, but if you post multiple
 entries in a single day, it just alphabetizes them. I'm sure you
 guys can all deal with it.
-  </pre>]]></description>
-</item>
-<item>
-  <title>Quick Updates</title>
-  <link>gopher://gopher.black/0/phlog/20180329-quick-updates/gophermap</link>
-  <pubdate>Thu, 29 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Quick Updates
-March 29th, 2018
-----------------------------------------
-
-Lynx has added support for the + item type. You can find it
-working in 2.8.9dev.17. It displays with a prefix of (+++) to
-distinguish it from other menu items. I beleive sacc plans similar
-style of support.
-
-kichimi's server made moku-pona sad and hang while it was down.
-Luckily both he and Alex Schroeder are badass and a timeout was
-quickly added to the program. While Alex was tinkering, he also
-changed the display style of the generated gophermap to be more
-condensed. I dig it. You can see the results over here [0].
-
-[0] Phlogs I follow
-    gopher://gopher.black/1/phlogs
-
-zcrayfish has finally joined the phlog parade [1]. He also made me
-realize that .soy is a TLD! Make sure to add him to your lists.
-
-[1] zcrayfish's phlog
-    gopher://gopher.zcrayfish.soy/1/phlog
   </pre>]]></description>
 </item>
 </channel>
