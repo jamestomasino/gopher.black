@@ -3,6 +3,56 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Size</title>
+  <link>gopher://gopher.black/0/phlog/20180409-size/gophermap</link>
+  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Size
+April 09th, 2018
+----------------------------------------
+
+tfurrows recently wrote [0] about about the American need for more
+space, more square footage, and generally bigger and better
+things. You might harken it back to the "go West" mentality and an
+assumption born from multi-generational standard-of-living growth,
+but I have no real clue where it comes from. And tfurrows is
+absolutely right when he says you get looked at funny for defying
+that pattern.
+
+[0] tfurrows - square feet
+    gopher://circumlunar.space/0/~tfurrows/phlog/akr_squareFeet.txt
+
+My dad certainly doesn't understand my desire to simplify,
+downsize (right-size?), and work less. It's really frustrating
+with him in particular because he worked so hard to achieve more
+and earn more his whole life so that he could enjoy it later, but
+he was diagnosed with a death sentence nearly the day after he
+retired. How can that not wake you up to the here and now and say,
+"use it while you've got it"?
+
+I want a smaller house. Much smaller. This is my first home and
+I got it for a ridiculous price because the housing market had
+tanked two years before and the owner had been dropping his
+selling price ever since. It's now worth double what I paid and
+I can't wait to sell it. It's fantastic to have a bunch of space,
+but we just fill it with things we don't have time to use. More BS
+filling it up is no help to anyone. It's also a huge burden on us
+maintaining it and paying utilities. I don't need to work harder
+and longer to pay for things I'm not using.
+
+Once we go to Iceland I plan on renting again (if their rental
+situation gets cleared up, that is) and eventually working up to
+a small home. I don't want any more space than I need. If that
+means I have to go outside more, even better! Lowering my
+cost-of-living means I can enjoy the same options or more and
+still lower my workload. I'm not going to be able to match my
+current salary in Iceland anyway, so it all aligns. Work less,
+live smaller, enjoy things today instead of putting them off for
+later.
+  </pre>]]></description>
+</item>
+<item>
   <title>Re Sysdharma Gophercon</title>
   <link>gopher://gopher.black/0/phlog/20180408-re-sysdharma-gophercon/gophermap</link>
   <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
@@ -315,31 +365,6 @@ a better relationship?
 
 This was the meditation I did tonight. I thought some of you might
 like to try it as well.
-  </pre>]]></description>
-</item>
-<item>
-  <title>To Gophermap Or No</title>
-  <link>gopher://gopher.black/0/phlog/20180331-to-gophermap-or-no/gophermap</link>
-  <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-To gophermap or no
-March 31st, 2018
-----------------------------------------
-
-Quick poll:
-
-Do you think I should keep using gophermaps for my phlog, or
-should I move back to type 0 and include non-followable links as
-text, like so [0].
-
-[0]: https://tomasino.org
-
-Let me know on gopher, mastodon, or email, or whatever. My contact
-info is in the About [1] page.
-
-[1] About
-    gopher://gopher.black/1/about
   </pre>]]></description>
 </item>
 </channel>
