@@ -40,6 +40,28 @@ What else?
   </pre>]]></description>
 </item>
 <item>
+  <title>Interactive Fiction</title>
+  <link>gopher://gopher.black/0/phlog/20180408-interactive-fiction/gophermap</link>
+  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Interactive Fiction
+April 08th, 2018
+----------------------------------------
+
+I've been thinking about writing some interactive fiction, or at
+least a choose-your-own-adventure story. I want to do it on gopher
+using gophermaps, keeping it as simple as links at the end of each
+section. Any suggestions for a subject, theme, genre? I don't want
+to tackle anything too long since I'll have to write all the
+different variations.
+
+Have any of you done one of these before? I was going to plot it
+out on notecards first and write the scenes from there. Is there
+a better way?
+  </pre>]]></description>
+</item>
+<item>
   <title>Fat</title>
   <link>gopher://gopher.black/0/phlog/20180407-fat/gophermap</link>
   <pubdate>Sat, 07 Apr 2018 00:00:00 -0400</pubdate>
@@ -356,46 +378,6 @@ a language I understand intuitively.
 
 That sunlight is what I needed tonight. That's how my prayer
 works.
-  </pre>]]></description>
-</item>
-<item>
-  <title>Rss Feed</title>
-  <link>gopher://gopher.black/0/phlog/20180331-rss-feed/gophermap</link>
-  <pubdate>Sat, 31 Mar 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-RSS Feed
-March 31st, 2018
-----------------------------------------
-
-After the mini-poll on the last post I have decided to keep my
-gophermap formatting on my phlog. As a sign of faith to the text
-purists, I am now generating a happy little RSS feed for the most
-recent 10 posts. You can find the feed here [0] and also see
-a link to it on my main gophermap [1].
-
-[0] gopher.black RSS feed
-    gopher://gopher.black/0/rss.xml
-[1] gopher.black
-    gopher://gopher.black/1/
-
-For those of you using newsbeuter, you can add this to your feed
-list by dropping this line into the 'urls' file:
-
-  "exec:curl -s gopher://gopher.black/0/rss.xml"
-
-To accomplish this, rather than add a cgi script to my site,
-I decided to add the RSS generation feature to burrow.
-
-  $ burrow rss # generates the rss feed
-
-There's also a config parameter to auto-generate RSS when writing
-new phlogs. Check out the man page or README.md to see more.
-
-NOTE: There's one little weakness of my RSS generator. It will
-organize the most recent entries by date, but if you post multiple
-entries in a single day, it just alphabetizes them. I'm sure you
-guys can all deal with it.
   </pre>]]></description>
 </item>
 </channel>
