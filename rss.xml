@@ -50,7 +50,33 @@ still lower my workload. I'm not going to be able to match my
 current salary in Iceland anyway, so it all aligns. Work less,
 live smaller, enjoy things today instead of putting them off for
 later.
-  </pre>]]></description>
+</pre>]]></description>
+</item>
+<item>
+  <title>Burrow Release V1 4 1</title>
+  <link>gopher://gopher.black/0/phlog/20180409-burrow-release-v1-4-1/gophermap</link>
+  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+burrow release v1.4.1
+April 09th, 2018
+----------------------------------------
+
+A new minor release of burrow is ready (v1.4.1) with mostly
+compatability updates.
+
+  - Removed longopts completely
+  - Removed gnu getopt requirement
+  - All echos -> printf
+  - Shellcheck debugging settings for stylistic newlines
+  - Better error handling
+  - Fixed gnu specific switches on coreutils find
+
+Want to help me test it out? Grab the latest release [0]
+
+[0] burrow v1.4.1
+    http://github.com/jamestomasino/burrow/releases/tag/v1.4.://github.com/jamestomasino/burrow/releases/tag/v1.4.1
+</pre>]]></description>
 </item>
 <item>
   <title>Re Sysdharma Gophercon</title>
@@ -87,7 +113,7 @@ things would happen at a conference for gopher? Ideas:
   - "Content is King"
 
 What else?
-  </pre>]]></description>
+</pre>]]></description>
 </item>
 <item>
   <title>Interactive Fiction</title>
@@ -109,7 +135,7 @@ different variations.
 Have any of you done one of these before? I was going to plot it
 out on notecards first and write the scenes from there. Is there
 a better way?
-  </pre>]]></description>
+</pre>]]></description>
 </item>
 <item>
   <title>Cyberspace</title>
@@ -146,7 +172,7 @@ the discussion boards, in all of it.
 
 BBSes are the start of virtual existance for me. That feels pretty
 cool.
-  </pre>]]></description>
+</pre>]]></description>
 </item>
 <item>
   <title>Fat</title>
@@ -221,7 +247,7 @@ The final command to generate that chart:
       -canvas braille \
       -height 25 \
       -width 67
-  </pre>]]></description>
+</pre>]]></description>
 </item>
 <item>
   <title>Gopher Alert Bob Alberti Is Here</title>
@@ -245,7 +271,7 @@ life that's being breathed back into it in our little corner.
     gopher://sdf.org/1/users/alberti/phlog
 [2] The Internet Gopher Protocol (RFC 1436)
     gopher://gopher.black/0/archive/rfc/1436.txt
-  </pre>]]></description>
+</pre>]]></description>
 </item>
 <item>
   <title>The Bible</title>
@@ -277,7 +303,7 @@ reabable.
 
 [0] The Bible (ESV)
     gopher://gopher.black/1/bible
-  </pre>]]></description>
+</pre>]]></description>
 </item>
 <item>
   <title>Cli Tricks Dictionaries</title>
@@ -310,7 +336,7 @@ Then to use:
 
   dict cadenza
 
-  </pre>]]></description>
+</pre>]]></description>
 </item>
 <item>
   <title>New Faces</title>
@@ -329,43 +355,7 @@ since you have different phlogs on different gopher holes I've
 added each of yours separately to my lists. Yargo too gets two
 mentions. Anyone else running multiple phlogs that I should be
 tracking?
-  </pre>]]></description>
-</item>
-<item>
-  <title>A Warning To New Friends</title>
-  <link>gopher://gopher.black/0/phlog/20180401-a-warning-to-new-friends/gophermap</link>
-  <pubdate>Sun, 01 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-A warning to new friends
-April 01st, 2018
-----------------------------------------
-
-Take a moment to compose yourself and disconnect from  the  moment
-happening around you.
-
-Think about your place in the world and let your mind slowly  zoom
-out. Watch that place  become a spec and then  nothing  at  all as
-your inward eye moves toward the infinite.
-
-Now, with that distance and sense  of  impartiality  consider  for
-a moment your own actions  to the people around you.  Think  about
-what you consider good and  what leaves a  bitter  taste  in  your
-mouth. Don't linger too long on any one thing, but try not to skip
-over the shameful parts completely.
-
-Everyone you meet today will face that person you  just  examined.
-That person:  keep  the  idea  separate  from  yourself  for  now.
-
-If a friend were to  encounter that person today,  what would  you
-warn them about before the encounter? How would you guide them  to
-a better relationship?
-
-                              * * *
-
-This was the meditation I did tonight. I thought some of you might
-like to try it as well.
-  </pre>]]></description>
+</pre>]]></description>
 </item>
 </channel>
 </rss>
