@@ -3,9 +3,34 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Burrow V1 5 0 Portable</title>
+  <link>gopher://gopher.black/0/phlog/./20180411-burrow-v1-5-0-portable/gophermap</link>
+  <pubdate>Wednesday, 11 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+burrow v1.5.0 - portable
+April 11th, 2018
+----------------------------------------
+
+burrow v1.5.0 is released [0]. I've removed the bash 4+
+requirement and moved the script to /bin/sh. There are a number of
+other small improvements and bug fixes as well.
+
+[0] burrow v1.5.0
+    http://github.com/jamestomasino/burrow/releases/tag/v1.5.0
+
+You can always find a link to the latest release in the root of
+this gopher hole. Grab your copy and test it out. Find a bug? Log
+it on Github, please [1].
+
+[1] burrow issues
+    http://github.com/jamestomasino/burrow/issues
+</pre>]]></description>
+</item>
+<item>
   <title>Size</title>
-  <link>gopher://gopher.black/0/phlog/20180409-size/gophermap</link>
-  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180409-size/gophermap</link>
+  <pubdate>Monday, 09 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Size
@@ -54,8 +79,8 @@ later.
 </item>
 <item>
   <title>Burrow Release V1 4 1</title>
-  <link>gopher://gopher.black/0/phlog/20180409-burrow-release-v1-4-1/gophermap</link>
-  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180409-burrow-release-v1-4-1/gophermap</link>
+  <pubdate>Monday, 09 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 burrow release v1.4.1
@@ -80,8 +105,8 @@ Want to help me test it out? Grab the latest release [0]
 </item>
 <item>
   <title>Re Sysdharma Gophercon</title>
-  <link>gopher://gopher.black/0/phlog/20180408-re-sysdharma-gophercon/gophermap</link>
-  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180408-re-sysdharma-gophercon/gophermap</link>
+  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Re: sysdharma - Gophercon
@@ -117,8 +142,8 @@ What else?
 </item>
 <item>
   <title>Interactive Fiction</title>
-  <link>gopher://gopher.black/0/phlog/20180408-interactive-fiction/gophermap</link>
-  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180408-interactive-fiction/gophermap</link>
+  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Interactive Fiction
@@ -139,8 +164,8 @@ a better way?
 </item>
 <item>
   <title>Cyberspace</title>
-  <link>gopher://gopher.black/0/phlog/20180408-cyberspace/gophermap</link>
-  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180408-cyberspace/gophermap</link>
+  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Cyberspace
@@ -176,8 +201,8 @@ cool.
 </item>
 <item>
   <title>Fat</title>
-  <link>gopher://gopher.black/0/phlog/20180407-fat/gophermap</link>
-  <pubdate>Sat, 07 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180407-fat/gophermap</link>
+  <pubdate>Saturday, 07 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Fat
@@ -251,8 +276,8 @@ The final command to generate that chart:
 </item>
 <item>
   <title>Gopher Alert Bob Alberti Is Here</title>
-  <link>gopher://gopher.black/0/phlog/20180406-gopher-alert-bob-alberti-is-here/gophermap</link>
-  <pubdate>Fri, 06 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180406-gopher-alert-bob-alberti-is-here/gophermap</link>
+  <pubdate>Friday, 06 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Gopher Alert: Bob Alberti is here
@@ -275,8 +300,8 @@ life that's being breathed back into it in our little corner.
 </item>
 <item>
   <title>The Bible</title>
-  <link>gopher://gopher.black/0/phlog/20180405-the-bible/gophermap</link>
-  <pubdate>Thu, 05 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180405-the-bible/gophermap</link>
+  <pubdate>Thursday, 05 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 The Bible
@@ -307,8 +332,8 @@ reabable.
 </item>
 <item>
   <title>Cli Tricks Dictionaries</title>
-  <link>gopher://gopher.black/0/phlog/20180405-cli-tricks-dictionaries/gophermap</link>
-  <pubdate>Thu, 05 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180405-cli-tricks-dictionaries/gophermap</link>
+  <pubdate>Thursday, 05 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 CLI Tricks: Dictionaries
@@ -336,25 +361,6 @@ Then to use:
 
   dict cadenza
 
-</pre>]]></description>
-</item>
-<item>
-  <title>New Faces</title>
-  <link>gopher://gopher.black/0/phlog/20180402-new-faces/gophermap</link>
-  <pubdate>Mon, 02 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-New faces
-April 02nd, 2018
-----------------------------------------
-
-I've added a bunch of new people to my personal moku-pona list
-lately. Thanks to tfurrows for mentioning c25l recently. I had no
-idea (s)he was around and there's so much to read! Also, tfurrows,
-since you have different phlogs on different gopher holes I've
-added each of yours separately to my lists. Yargo too gets two
-mentions. Anyone else running multiple phlogs that I should be
-tracking?
 </pre>]]></description>
 </item>
 </channel>
