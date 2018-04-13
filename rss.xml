@@ -3,9 +3,86 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Port 70 Or 1436Con</title>
+  <link>gopher://gopher.black/0/phlog/./20180412-port-70-or-1436con/gophermap</link>
+  <pubdate>Thu, 12 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Port 70 -or- 1436CON
+April 12th, 2018
+----------------------------------------
+
+sysdharma posted [0], I replied [1], and sysdharma posted [2]
+again about a real gopher convention. Go catch up if you haven't
+read those yet. I'll wait...
+
+[0] sysdharma - Gophercon vs Gophercon
+    gopher://sdf.org/1/users/sysdharma/phlog/./2018.04.08
+[1] tomasino - re sysdharma: Gophercon
+    gopher://gopher.black/1/phlog/20180408-re-sysdharma-gophercon
+[2] sysdharma - On a Gopher conference
+    gopher://sdf.org/1/users/sysdharma/phlog/./2018.04.12
+
+Here's the thing. I want to do it.
+
+Obviously it's not going to be in-person, but a virtual conference
+is totally doable. Here's what I'm thinking:
+
+  - A 24 hour conference
+  - Everyone can submit a proposal for a session they want to run
+    with the following info:
+
+    - Who you are (handle)
+    - Title / Subject of talk
+    - Duration
+    - Preferred time-slot in UTC
+    - Medium of talk (video stream, audio stream, etc)
+    - Where will you be watching for feedback/discussion (IRC,
+      Social Media, raw TCP packets?)
+
+    We will need a place where these can be submitted and stored.
+    It would be great if the submissions could be done in Gopher
+    itself (anyone want to volunteer to write a cgi for
+    submissions?).
+  
+  - After X number of days/weeks, we close submissions and print
+    up a schedule for everyone to review
+  - On the day of the event, it's up to the speakers to get
+    themselves online in their medium. (Maybe we can get a 24hr
+    anonradio takeover?)
+  - Folks can tune in and join the relevant chats
+  - Archive the shit out of all of it and host it EVERYWHERE
+
+I also think we should do one or two "special" sessions and close
+off the time blocks so they're not up against anyone else.
+Round-table or panel discussions would be cool for this. I welcome
+ideas.
+
+Finally, I think a hackathon would be cool to toss in the mix. It
+could be done the day of, or the day before and results shared out
+on the day. I'm not sure what we could gather in prizes, but for
+our retro-con I bet we could get a couple minor sponsors willing
+to toss in some swag. I'd be amazed if smj didn't jump at the
+opportunity to offload some old SDF stickers. ;)
+
+Like the panel discussion, the focus of the hackathon would be
+something great to debate. My first suggestion: "Gopher meets
+Docker". What sorts of amazingly cool configurations could we bust
+out for the community in easy-to-deploy ways? TLS? TOR? Whatever
+you can dream up. We could vote on the winners on GopherPoll or
+something.
+
+Speaking of GopherPoll (thanks tfurrows for pointing it out),
+I'd like to offer one up right away and get your feedback:
+
+[3] What should we name this gopher convention?
+    gopher://khzae.net/1/poll/1523589765
+</pre>]]></description>
+</item>
+<item>
   <title>Burrow V1 5 0 Portable</title>
   <link>gopher://gopher.black/0/phlog/./20180411-burrow-v1-5-0-portable/gophermap</link>
-  <pubdate>Wednesday, 11 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Wed, 11 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 burrow v1.5.0 - portable
@@ -30,7 +107,7 @@ it on Github, please [1].
 <item>
   <title>Size</title>
   <link>gopher://gopher.black/0/phlog/./20180409-size/gophermap</link>
-  <pubdate>Monday, 09 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Size
@@ -80,7 +157,7 @@ later.
 <item>
   <title>Burrow Release V1 4 1</title>
   <link>gopher://gopher.black/0/phlog/./20180409-burrow-release-v1-4-1/gophermap</link>
-  <pubdate>Monday, 09 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 burrow release v1.4.1
@@ -106,7 +183,7 @@ Want to help me test it out? Grab the latest release [0]
 <item>
   <title>Re Sysdharma Gophercon</title>
   <link>gopher://gopher.black/0/phlog/./20180408-re-sysdharma-gophercon/gophermap</link>
-  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Re: sysdharma - Gophercon
@@ -143,7 +220,7 @@ What else?
 <item>
   <title>Interactive Fiction</title>
   <link>gopher://gopher.black/0/phlog/./20180408-interactive-fiction/gophermap</link>
-  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Interactive Fiction
@@ -165,7 +242,7 @@ a better way?
 <item>
   <title>Cyberspace</title>
   <link>gopher://gopher.black/0/phlog/./20180408-cyberspace/gophermap</link>
-  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Cyberspace
@@ -202,7 +279,7 @@ cool.
 <item>
   <title>Fat</title>
   <link>gopher://gopher.black/0/phlog/./20180407-fat/gophermap</link>
-  <pubdate>Saturday, 07 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Sat, 07 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Fat
@@ -277,7 +354,7 @@ The final command to generate that chart:
 <item>
   <title>Gopher Alert Bob Alberti Is Here</title>
   <link>gopher://gopher.black/0/phlog/./20180406-gopher-alert-bob-alberti-is-here/gophermap</link>
-  <pubdate>Friday, 06 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Fri, 06 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Gopher Alert: Bob Alberti is here
@@ -301,7 +378,7 @@ life that's being breathed back into it in our little corner.
 <item>
   <title>The Bible</title>
   <link>gopher://gopher.black/0/phlog/./20180405-the-bible/gophermap</link>
-  <pubdate>Thursday, 05 Apr 2018 00:00:00 -0400</pubdate>
+  <pubdate>Thu, 05 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 The Bible
@@ -328,39 +405,6 @@ reabable.
 
 [0] The Bible (ESV)
     gopher://gopher.black/1/bible
-</pre>]]></description>
-</item>
-<item>
-  <title>Cli Tricks Dictionaries</title>
-  <link>gopher://gopher.black/0/phlog/./20180405-cli-tricks-dictionaries/gophermap</link>
-  <pubdate>Thursday, 05 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-CLI Tricks: Dictionaries
-April 05th, 2018
-----------------------------------------
-
-=== Telnet to dict.org ===
-
-  telnet dict.org dict
-8  (try it here)	dict	dict.org	2628
-
-Type "help" once you land. Try a few searches:
-
-  define english cadenza
-  define jargon hacker
-
-
-
-
-=== Locally install dict & a local dict server ===
-
-  apt install dict dictd dict-gcide
-
-Then to use:
-
-  dict cadenza
-
 </pre>]]></description>
 </item>
 </channel>
