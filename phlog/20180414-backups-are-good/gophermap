@@ -1,0 +1,39 @@
+i----------------------------------------		gopher.black	70
+iBackups are good		gopher.black	70
+iApril 14th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iAlex Schroeder wrote recently [0] about backup formats. It was an		gopher.black	70
+iimportant reminder that since I'd moved everything (web, gopher,		gopher.black	70
+i... is that everything?) to a raspberry pi and configured it all		gopher.black	70
+ito a working state, I hadn't backed up the system. Granted, all		gopher.black	70
+ithe content I have is in git, but the system configuration itself		gopher.black	70
+iis worth quite a bit of work.		gopher.black	70
+i		gopher.black	70
+iEvidence of this can be found easily. Tonight after I did a backup		gopher.black	70
+i(more on that in a second) I rebooted the machine and discovered		gopher.black	70
+ithat bitlbee didn't start up correctly. I'm using kensanata's		gopher.black	70
+ifabulous bitlbee-mastodon plugin [1] to do all my social media		gopher.black	70
+ijunk via IRC. It's awesome, but it was a headache to get working.		gopher.black	70
+iFor some reason I couldn't get it to play nice with the apt		gopher.black	70
+iversion of Bitlbee, so I had to compile everything from source.		gopher.black	70
+iTonight when bitlbee stopped responding I ended up trying the		gopher.black	70
+iwhole process over again, eventually giving up on apt again, and		gopher.black	70
+ireinstalling from source. (This time I properly set up systemd.)		gopher.black	70
+i		gopher.black	70
+iMastodon in Weechat is a minor thing, but it's evidence enough		gopher.black	70
+ithat I don't want to have to rebuild the box. So, I unplugged the		gopher.black	70
+ipi for a few minutes, removed the SD card, plugged it into another		gopher.black	70
+imachine and 'dd' copied everything to an ISO. I don't think I need		gopher.black	70
+ito worry about doing that too often, thankfully, as it means		gopher.black	70
+idowntime for the box. If I ever needed to restore, I can flash		gopher.black	70
+ia new SD card, plug it in, then run update on all the git repos.		gopher.black	70
+iIt will pick up pretty much everything that way, unless I do some		gopher.black	70
+iserious system additions.		gopher.black	70
+i		gopher.black	70
+iI think I'll do the full SD backup semi-annually, maybe when		gopher.black	70
+iI change the batteries in my smoke detectors. It has a similar		gopher.black	70
+isort of safety-maintenance feel.		gopher.black	70
+i		gopher.black	70
+0[0] Alex Schroeder - Backup Format	2018-04-13_Backup_Format	alexschroeder.ch	70
+h[1] Kensanata - Bitlbee-Mastodon	URL:http://github.com/kensanata/bitlbee-mastodon

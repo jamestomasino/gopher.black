@@ -1,11 +1,59 @@
 <?xml version="1.0"?><rss version="2.0"><channel>
 <title>gopher.black</title>
-<link>gopher://gopher.black/</link>
+<link>gopher://gopher.black/users/username/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
-  <title>Burrow V1 5 0 Portable</title>
-  <link>gopher://gopher.black/0/phlog/./20180411-burrow-v1-5-0-portable/gophermap</link>
-  <pubdate>Wednesday, 11 Apr 2018 00:00:00 -0400</pubdate>
+  <title>backups are good</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180414-backups-are-good/gophermap</link>
+  <pubdate>14 Apr 2018 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Backups are good
+April 14th, 2018
+----------------------------------------
+
+Alex Schroeder wrote recently [0] about backup formats. It was an
+important reminder that since I'd moved everything (web, gopher,
+... is that everything?) to a raspberry pi and configured it all
+to a working state, I hadn't backed up the system. Granted, all
+the content I have is in git, but the system configuration itself
+is worth quite a bit of work.
+
+Evidence of this can be found easily. Tonight after I did a backup
+(more on that in a second) I rebooted the machine and discovered
+that bitlbee didn't start up correctly. I'm using kensanata's
+fabulous bitlbee-mastodon plugin [1] to do all my social media
+junk via IRC. It's awesome, but it was a headache to get working.
+For some reason I couldn't get it to play nice with the apt
+version of Bitlbee, so I had to compile everything from source.
+Tonight when bitlbee stopped responding I ended up trying the
+whole process over again, eventually giving up on apt again, and
+reinstalling from source. (This time I properly set up systemd.)
+
+Mastodon in Weechat is a minor thing, but it's evidence enough
+that I don't want to have to rebuild the box. So, I unplugged the
+pi for a few minutes, removed the SD card, plugged it into another
+machine and 'dd' copied everything to an ISO. I don't think I need
+to worry about doing that too often, thankfully, as it means
+downtime for the box. If I ever needed to restore, I can flash
+a new SD card, plug it in, then run update on all the git repos.
+It will pick up pretty much everything that way, unless I do some
+serious system additions.
+
+I think I'll do the full SD backup semi-annually, maybe when
+I change the batteries in my smoke detectors. It has a similar
+sort of safety-maintenance feel.
+
+[0] Alex Schroeder - Backup Format
+    gopher://alexschroeder.ch/02018-04-13_Backup_Format
+[1] Kensanata - Bitlbee-Mastodon
+    http://github.com/kensanata/bitlbee-mastodon
+</pre>]]></description>
+</item>
+<item>
+  <title>burrow v1 5 0 portable</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180411-burrow-v1-5-0-portable/gophermap</link>
+  <pubdate>11 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 burrow v1.5.0 - portable
@@ -28,9 +76,9 @@ it on Github, please [1].
 </pre>]]></description>
 </item>
 <item>
-  <title>Size</title>
-  <link>gopher://gopher.black/0/phlog/./20180409-size/gophermap</link>
-  <pubdate>Monday, 09 Apr 2018 00:00:00 -0400</pubdate>
+  <title>size</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180409-size/gophermap</link>
+  <pubdate>09 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Size
@@ -78,9 +126,9 @@ later.
 </pre>]]></description>
 </item>
 <item>
-  <title>Burrow Release V1 4 1</title>
-  <link>gopher://gopher.black/0/phlog/./20180409-burrow-release-v1-4-1/gophermap</link>
-  <pubdate>Monday, 09 Apr 2018 00:00:00 -0400</pubdate>
+  <title>burrow release v1 4 1</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180409-burrow-release-v1-4-1/gophermap</link>
+  <pubdate>09 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 burrow release v1.4.1
@@ -104,9 +152,9 @@ Want to help me test it out? Grab the latest release [0]
 </pre>]]></description>
 </item>
 <item>
-  <title>Re Sysdharma Gophercon</title>
-  <link>gopher://gopher.black/0/phlog/./20180408-re-sysdharma-gophercon/gophermap</link>
-  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <title>re sysdharma gophercon</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180408-re-sysdharma-gophercon/gophermap</link>
+  <pubdate>08 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Re: sysdharma - Gophercon
@@ -141,9 +189,9 @@ What else?
 </pre>]]></description>
 </item>
 <item>
-  <title>Interactive Fiction</title>
-  <link>gopher://gopher.black/0/phlog/./20180408-interactive-fiction/gophermap</link>
-  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <title>interactive fiction</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180408-interactive-fiction/gophermap</link>
+  <pubdate>08 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Interactive Fiction
@@ -163,9 +211,9 @@ a better way?
 </pre>]]></description>
 </item>
 <item>
-  <title>Cyberspace</title>
-  <link>gopher://gopher.black/0/phlog/./20180408-cyberspace/gophermap</link>
-  <pubdate>Sunday, 08 Apr 2018 00:00:00 -0400</pubdate>
+  <title>cyberspace</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180408-cyberspace/gophermap</link>
+  <pubdate>08 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Cyberspace
@@ -200,9 +248,9 @@ cool.
 </pre>]]></description>
 </item>
 <item>
-  <title>Fat</title>
-  <link>gopher://gopher.black/0/phlog/./20180407-fat/gophermap</link>
-  <pubdate>Saturday, 07 Apr 2018 00:00:00 -0400</pubdate>
+  <title>fat</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180407-fat/gophermap</link>
+  <pubdate>07 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Fat
@@ -275,9 +323,9 @@ The final command to generate that chart:
 </pre>]]></description>
 </item>
 <item>
-  <title>Gopher Alert Bob Alberti Is Here</title>
-  <link>gopher://gopher.black/0/phlog/./20180406-gopher-alert-bob-alberti-is-here/gophermap</link>
-  <pubdate>Friday, 06 Apr 2018 00:00:00 -0400</pubdate>
+  <title>gopher alert bob alberti is here</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180406-gopher-alert-bob-alberti-is-here/gophermap</link>
+  <pubdate>06 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Gopher Alert: Bob Alberti is here
@@ -299,9 +347,9 @@ life that's being breathed back into it in our little corner.
 </pre>]]></description>
 </item>
 <item>
-  <title>The Bible</title>
-  <link>gopher://gopher.black/0/phlog/./20180405-the-bible/gophermap</link>
-  <pubdate>Thursday, 05 Apr 2018 00:00:00 -0400</pubdate>
+  <title>the bible</title>
+  <link>gopher://gopher.black/0/users/username/phlog/./20180405-the-bible/gophermap</link>
+  <pubdate>05 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 The Bible
@@ -328,39 +376,6 @@ reabable.
 
 [0] The Bible (ESV)
     gopher://gopher.black/1/bible
-</pre>]]></description>
-</item>
-<item>
-  <title>Cli Tricks Dictionaries</title>
-  <link>gopher://gopher.black/0/phlog/./20180405-cli-tricks-dictionaries/gophermap</link>
-  <pubdate>Thursday, 05 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-CLI Tricks: Dictionaries
-April 05th, 2018
-----------------------------------------
-
-=== Telnet to dict.org ===
-
-  telnet dict.org dict
-8  (try it here)	dict	dict.org	2628
-
-Type "help" once you land. Try a few searches:
-
-  define english cadenza
-  define jargon hacker
-
-
-
-
-=== Locally install dict & a local dict server ===
-
-  apt install dict dictd dict-gcide
-
-Then to use:
-
-  dict cadenza
-
 </pre>]]></description>
 </item>
 </channel>
