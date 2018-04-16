@@ -1,11 +1,33 @@
 <?xml version="1.0"?><rss version="2.0"><channel>
 <title>gopher.black</title>
-<link>gopher://gopher.black/users/username/</link>
+<link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>arduinos</title>
+  <link>gopher://gopher.black/0/phlog/./20180415-arduinos/gophermap</link>
+  <pubdate>Sun, 15 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Arduinos
+April 15th, 2018
+----------------------------------------
+
+Just wanted to say that I really appreciate the arduino and other
+awesome, friendly microcontrollers. I'm getting a subscription box
+from Creation Crate and it's stretching me to think of new ways to
+use the device while also increasing my inventory. I just made
+a memory game (like Simon). It was easy, but I never would have
+thought to do it on my own. Next up is a distance detector which
+I'm going to mod into a garage parking indicator.
+
+Electronics was fun back in the day, but now it's also easy.
+That's cool.
+</pre>]]></description>
+</item>
+<item>
   <title>backups are good</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180414-backups-are-good/gophermap</link>
-  <pubdate>14 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180414-backups-are-good/gophermap</link>
+  <pubdate>Sat, 14 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Backups are good
@@ -52,8 +74,8 @@ sort of safety-maintenance feel.
 </item>
 <item>
   <title>port 70 or 1436con</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180412-port-70-or-1436con/gophermap</link>
-  <pubdate>12 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180412-port-70-or-1436con/gophermap</link>
+  <pubdate>Thu, 12 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Port 70 -or- 1436CON
@@ -129,8 +151,8 @@ I'd like to offer one up right away and get your feedback:
 </item>
 <item>
   <title>burrow v1 5 0 portable</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180411-burrow-v1-5-0-portable/gophermap</link>
-  <pubdate>11 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180411-burrow-v1-5-0-portable/gophermap</link>
+  <pubdate>Wed, 11 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 burrow v1.5.0 - portable
@@ -154,8 +176,8 @@ it on Github, please [1].
 </item>
 <item>
   <title>size</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180409-size/gophermap</link>
-  <pubdate>09 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180409-size/gophermap</link>
+  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Size
@@ -204,8 +226,8 @@ later.
 </item>
 <item>
   <title>burrow release v1 4 1</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180409-burrow-release-v1-4-1/gophermap</link>
-  <pubdate>09 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180409-burrow-release-v1-4-1/gophermap</link>
+  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 burrow release v1.4.1
@@ -230,8 +252,8 @@ Want to help me test it out? Grab the latest release [0]
 </item>
 <item>
   <title>re sysdharma gophercon</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180408-re-sysdharma-gophercon/gophermap</link>
-  <pubdate>08 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180408-re-sysdharma-gophercon/gophermap</link>
+  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Re: sysdharma - Gophercon
@@ -267,8 +289,8 @@ What else?
 </item>
 <item>
   <title>interactive fiction</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180408-interactive-fiction/gophermap</link>
-  <pubdate>08 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180408-interactive-fiction/gophermap</link>
+  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Interactive Fiction
@@ -289,8 +311,8 @@ a better way?
 </item>
 <item>
   <title>cyberspace</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180408-cyberspace/gophermap</link>
-  <pubdate>08 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180408-cyberspace/gophermap</link>
+  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Cyberspace
@@ -326,8 +348,8 @@ cool.
 </item>
 <item>
   <title>fat</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180407-fat/gophermap</link>
-  <pubdate>07 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180407-fat/gophermap</link>
+  <pubdate>Sat, 07 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Fat
@@ -397,30 +419,6 @@ The final command to generate that chart:
       -canvas braille \
       -height 25 \
       -width 67
-</pre>]]></description>
-</item>
-<item>
-  <title>gopher alert bob alberti is here</title>
-  <link>gopher://gopher.black/0/users/username/phlog/./20180406-gopher-alert-bob-alberti-is-here/gophermap</link>
-  <pubdate>06 Apr 2018 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Gopher Alert: Bob Alberti is here
-April 06th, 2018
-----------------------------------------
-
-Bob Alberti [0] is now on SDF and has started a Phlog [1]. You
-might remember him from a little thing called The Internet Gopher
-Protocol RFC [2]. This is absolutely thrilling! Bob, if you see
-this, welcome back to the land YOU built. I hope you enjoy the new
-life that's being breathed back into it in our little corner.
-
-[0] About Bob
-    gopher://sdf.org/1/users/alberti/aboutme
-[1] Bob Alberti's Phlog
-    gopher://sdf.org/1/users/alberti/phlog
-[2] The Internet Gopher Protocol (RFC 1436)
-    gopher://gopher.black/0/archive/rfc/1436.txt
 </pre>]]></description>
 </item>
 </channel>
