@@ -3,6 +3,35 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>the hobbit</title>
+  <link>gopher://gopher.black/0/phlog/./20180418-the-hobbit/gophermap</link>
+  <pubdate>Wed, 18 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+The Hobbit
+April 18th, 2018
+----------------------------------------
+
+I just hit one of the coolest dad milestones. I'm reading The
+Hobbit to my son. He's five, nearly six, and I've been talking it
+up for the last couple days to get him excited. Tonight, he agreed
+to listen to one page.
+
+"If you like it," I said, "I can read a little more. If not, we
+can read this other book tonight and try again later."
+
+He agreed. He lifted a stuffed dragon to his chest and nestled
+into a spot at my hip against his pillow. I looked down and he
+looked back up.
+
+A deep breath.
+
+"In a hole in the ground there lived a hobbit."
+
+He didn't want to stop at one.
+</pre>]]></description>
+</item>
+<item>
   <title>sheet music</title>
   <link>gopher://gopher.black/0/phlog/./20180417-sheet-music/gophermap</link>
   <pubdate>Tue, 17 Apr 2018 00:00:00 -0400</pubdate>
@@ -331,43 +360,6 @@ different variations.
 Have any of you done one of these before? I was going to plot it
 out on notecards first and write the scenes from there. Is there
 a better way?
-</pre>]]></description>
-</item>
-<item>
-  <title>cyberspace</title>
-  <link>gopher://gopher.black/0/phlog/./20180408-cyberspace/gophermap</link>
-  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Cyberspace
-April 08th, 2018
-----------------------------------------
-
-A few minutes ago in the #gopher irc room on sdf.org, zcrayfish
-just mentioned remembering connecting to sdf over old modem
-programs (xyzmodem). It brought back a flood of memories. I last
-remember using zmodem to connect to my friend Kris's new machine.
-We connected via blank term sometimes and just typed messages back
-and forth in the same buffer. When we switched to zmodem I can
-remember the thrill the first time we successfully resumed a file
-transfer, not having to start it all over. Brilliant.
-
-Mostly what stood out to me in memory is that the setting of these
-memories was virtual. I did not remember sitting at my computer
-using zmodem, but as if my place in the world was within zmodem.
-I embodied it to the fullest extent of existential awareness.
-I had no body, only idea form.
-
-That makes me think more broadly on that concept. I did not have
-it before that time when connecting to Prodigy and spending time
-on the Xanth Chatroom I would eventually moderate. Those memories
-involve seeing my hands typing, and the texture of the monitor.
-I wasn't "in" the computer then. Ahh, but later, connecting to
-Snakes Lair BBS in South Jersey, I am there in the door games, in
-the discussion boards, in all of it.
-
-BBSes are the start of virtual existance for me. That feels pretty
-cool.
 </pre>]]></description>
 </item>
 </channel>
