@@ -3,6 +3,30 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>grex hiccups</title>
+  <link>gopher://gopher.black/0/phlog/./20180420-grex-hiccups/gophermap</link>
+  <pubdate>Fri, 20 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+grex hiccups
+April 20th, 2018
+----------------------------------------
+
+I'm not sure what went down over on grex [0] recently, but it
+looks to have been sorted out. I'm glad to see everyone phlogging
+again. Interestingly, it looks like the hiccup resulted in
+moku-pona [1] kicking all the grex folk back up on top of the
+lists.
+
+Any of you grex'rs have more to the story?
+
+[0] grex.org
+    gopher://grex.org/1/
+[1] moku-pona
+    http://github.com/kensanata/moku-pona
+</pre>]]></description>
+</item>
+<item>
   <title>the hobbit</title>
   <link>gopher://gopher.black/0/phlog/./20180418-the-hobbit/gophermap</link>
   <pubdate>Wed, 18 Apr 2018 00:00:00 -0400</pubdate>
@@ -338,28 +362,6 @@ things would happen at a conference for gopher? Ideas:
   - "Content is King"
 
 What else?
-</pre>]]></description>
-</item>
-<item>
-  <title>interactive fiction</title>
-  <link>gopher://gopher.black/0/phlog/./20180408-interactive-fiction/gophermap</link>
-  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Interactive Fiction
-April 08th, 2018
-----------------------------------------
-
-I've been thinking about writing some interactive fiction, or at
-least a choose-your-own-adventure story. I want to do it on gopher
-using gophermaps, keeping it as simple as links at the end of each
-section. Any suggestions for a subject, theme, genre? I don't want
-to tackle anything too long since I'll have to write all the
-different variations.
-
-Have any of you done one of these before? I was going to plot it
-out on notecards first and write the scenes from there. Is there
-a better way?
 </pre>]]></description>
 </item>
 </channel>
