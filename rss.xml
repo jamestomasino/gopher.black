@@ -3,7 +3,52 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
-  <title>Grex Hiccups</title>
+  <title>poison sumac</title>
+  <link>gopher://gopher.black/0/phlog/./20180427-poison-sumac/gophermap</link>
+  <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Poison Sumac
+April 27th, 2018
+----------------------------------------
+
+We had a storm here a few weeks back that did a bunch of damage to
+the trees in my yard. One of these trees in the backyard split
+into three pieces straight down the middle!
+
+On Saturday I took my hatchet and a chain saw (literally saw-teeth
+on a chain that you drag back and forth by hand) and I set to work
+clearing things. In the process of chopping and sawing I failed to
+notice that the sad tri-split tree was also surrounded by an
+overgrown bush of poison sumac. (If you're not familiar with this
+particular breed of awfulness, it's just like poison ivy or poison
+oak, but harder to identify.)
+
+I was mostly prepared for the work, wearing long pants and sturdy
+gloves. I didn't have on a long sleeve shirt, though (it was
+hot!). So, now I'm super itchy and covered in a blistery rash.
+Calamine lotion helps a bit, but I'm ready for this ordeal to be
+over.
+
+I've gotten hit by sumac twice before, and thankfully this time is
+much less severe. My first exposure was on a canoeing trip where
+I failed to notice that the creek I was in was surrounded on both
+sides by sumac. I was covered in a rash from the waist up after
+that trip.
+
+The second time was the worst. I was in Boy Scouts on a camping
+trip and one of the new scouts tossed in a bunch of green branches
+into the fire. It started smoking and flew into my face before
+I noticed what was going on. I was just about to explain why we
+don't burn green wood when I saw what it was. Too late. I was
+hospitalized that time, as I got the sumac in my eyes and lungs.
+No good at all.
+
+I hope this clears up soon. I'm so damned itchy!
+</pre>]]></description>
+</item>
+<item>
+  <title>grex hiccups</title>
   <link>gopher://gopher.black/0/phlog/./20180420-grex-hiccups/gophermap</link>
   <pubdate>Fri, 20 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -27,7 +72,7 @@ Any of you grex'rs have more to the story?
 </pre>]]></description>
 </item>
 <item>
-  <title>The Hobbit</title>
+  <title>the hobbit</title>
   <link>gopher://gopher.black/0/phlog/./20180418-the-hobbit/gophermap</link>
   <pubdate>Wed, 18 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -56,7 +101,7 @@ He didn't want to stop at one.
 </pre>]]></description>
 </item>
 <item>
-  <title>Sheet Music</title>
+  <title>sheet music</title>
   <link>gopher://gopher.black/0/phlog/./20180417-sheet-music/gophermap</link>
   <pubdate>Tue, 17 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -80,7 +125,7 @@ converter to Shakuhachi utf-8 notation [2].
 </pre>]]></description>
 </item>
 <item>
-  <title>Arduinos</title>
+  <title>arduinos</title>
   <link>gopher://gopher.black/0/phlog/./20180415-arduinos/gophermap</link>
   <pubdate>Sun, 15 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -102,7 +147,7 @@ That's cool.
 </pre>]]></description>
 </item>
 <item>
-  <title>Backups Are Good</title>
+  <title>backups are good</title>
   <link>gopher://gopher.black/0/phlog/./20180414-backups-are-good/gophermap</link>
   <pubdate>Sat, 14 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -150,7 +195,7 @@ sort of safety-maintenance feel.
 </pre>]]></description>
 </item>
 <item>
-  <title>Port 70 Or 1436con</title>
+  <title>port 70 or 1436con</title>
   <link>gopher://gopher.black/0/phlog/./20180412-port-70-or-1436con/gophermap</link>
   <pubdate>Thu, 12 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -227,7 +272,7 @@ I'd like to offer one up right away and get your feedback:
 </pre>]]></description>
 </item>
 <item>
-  <title>Burrow V1 5 0 Portable</title>
+  <title>burrow v1 5 0 portable</title>
   <link>gopher://gopher.black/0/phlog/./20180411-burrow-v1-5-0-portable/gophermap</link>
   <pubdate>Wed, 11 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -252,7 +297,7 @@ it on Github, please [1].
 </pre>]]></description>
 </item>
 <item>
-  <title>Size</title>
+  <title>size</title>
   <link>gopher://gopher.black/0/phlog/./20180409-size/gophermap</link>
   <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -302,7 +347,7 @@ later.
 </pre>]]></description>
 </item>
 <item>
-  <title>Burrow Release V1 4 1</title>
+  <title>burrow release v1 4 1</title>
   <link>gopher://gopher.black/0/phlog/./20180409-burrow-release-v1-4-1/gophermap</link>
   <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -325,43 +370,6 @@ Want to help me test it out? Grab the latest release [0]
 
 [0] burrow v1.4.1
     http://github.com/jamestomasino/burrow/releases/tag/v1.4.://github.com/jamestomasino/burrow/releases/tag/v1.4.1
-</pre>]]></description>
-</item>
-<item>
-  <title>Re Sysdharma Gophercon</title>
-  <link>gopher://gopher.black/0/phlog/./20180408-re-sysdharma-gophercon/gophermap</link>
-  <pubdate>Sun, 08 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Re: sysdharma - Gophercon
-April 08th, 2018
-----------------------------------------
-
-I was so excited about the possibility of a gophercon when I saw
-the first mention of Brazil. I was just as heartbroken when it
-turned out (once again) to be about Go-lang. It drives me crazy
-that they keep using "gopher" for everything. Fakes me out every
-time. Boo.
-
-Bitreich has something they do in Germany for gopher, but I'm not
-sure what sort of attendance it gets or if it's more for their
-private community. I'd love a real gopher (1436) conference, but
-we regular users are far too spread out around the globe. I can't
-imagine many people traveling across continents to attend. Maybe
-a virtual thing? Do those work?
-
-If we were to have a conference I think it should either be called
-simply "1436con" or "Port 70". No confusion there. What sort of
-things would happen at a conference for gopher? Ideas:
-
-  - A talk or two on TLS and Gopher over Tor 
-  - Panel discussion on the pros & cons of adding new ItemTypes
-  - "To gophermap or not to gophermap, that is the question"
-  - Social networking on legacy, minimal systems
-  - Other sociological stuff about community
-  - "Content is King"
-
-What else?
 </pre>]]></description>
 </item>
 </channel>
