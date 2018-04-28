@@ -1,0 +1,148 @@
+i----------------------------------------		gopher.black	70
+igopher.black on tor, part 1		gopher.black	70
+iApril 27th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI'm working on adding a tor hidden service to gopher.black so you		gopher.black	70
+ican enjoy all my steamy content anonymously, you sneaky vixen.		gopher.black	70
+iHonestly, the idea seemed a bit daunting but it's turned out to be		gopher.black	70
+ipretty straight forward. While I'm not at 100% yet, I thought		gopher.black	70
+iI learned enough to share while it's fresh in my mind.		gopher.black	70
+i		gopher.black	70
+iHere's the main steps going from a normal gopher server to		gopher.black	70
+ia torified one:		gopher.black	70
+i		gopher.black	70
+i  - Install tor		gopher.black	70
+i  - Configure tor to point to your server		gopher.black	70
+i  - Start tor		gopher.black	70
+i  - Find your hostname		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iStep 1: Install tor		gopher.black	70
+i		gopher.black	70
+iCheck out the install instructions on the tor website. In most		gopher.black	70
+icases it's as simple as:		gopher.black	70
+i		gopher.black	70
+i  sudo apt install tor		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iStep 2: Configure tor to point to your server		gopher.black	70
+i		gopher.black	70
+iEverything you need to configure in tor is located at		gopher.black	70
+i/etc/tor/torrc. Open that bad-boy up and jump down a bit until you		gopher.black	70
+ifind the section on Hidden Services. Mine is around line 72.		gopher.black	70
+iUncomment them and make it look like so:		gopher.black	70
+i		gopher.black	70
+i  HiddenServiceDir /var/lib/tor/hidden_service/		gopher.black	70
+i  HiddenServicePort 71 127.0.0.1:70		gopher.black	70
+i		gopher.black	70
+iThe first line is where your hidden service will store all its		gopher.black	70
+isecret shenanigans, like the private key it's going to		gopher.black	70
+iauto-generate for you. We'll look there in a minute to find the		gopher.black	70
+ihostname.		gopher.black	70
+i		gopher.black	70
+iThe second line describes Tor's mapping of fake port to real port.		gopher.black	70
+iSince we have our gopher hole running on port 70 that's what we		gopher.black	70
+ireference on the right. For now, we're going to tell Tor to		gopher.black	70
+ipretend port 71 is what we want to use publicly.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iStep 3: Start tor		gopher.black	70
+i		gopher.black	70
+i  sudo service tor start # or whatever your machine uses		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iStep 4: Find your hostname		gopher.black	70
+i		gopher.black	70
+iIf you have your hidden service directory like mine above, then		gopher.black	70
+iyou just need to cat out the hostname hidden in that folder. It'll		gopher.black	70
+ibe set up to use root permissions, so sudo like so:		gopher.black	70
+i		gopher.black	70
+i  sudo cat /var/lib/tor/hidden_service/hostname		gopher.black	70
+i		gopher.black	70
+iIt'll spit out your ugly hostname. Mine is: fhsujakrrdvwq2gk.onion		gopher.black	70
+iI'll be changing it soon (see below).		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iOkay, now you're all set and ready to fire it up. To test you'll		gopher.black	70
+ineed a gopher client running on tor. I installed Overbite on my		gopher.black	70
+iTor Browser on my PC for easy testing, but you can also use torify		gopher.black	70
+ion lynx and a bunch of other things. Once you found a way to run		gopher.black	70
+ia tor browser that can see gopher, navigate to your gopher hole		gopher.black	70
+iusing the onion address and port 71.		gopher.black	70
+i		gopher.black	70
+i  For instance:		gopher.black	70
+i  gopher://fhsujakrrdvwq2gk.onion:71		gopher.black	70
+i		gopher.black	70
+iIt should work and you'll be moderately pleased. But now we have		gopher.black	70
+iproblems. 99 of them (not quite).		gopher.black	70
+i		gopher.black	70
+i1) Your onion address sux		gopher.black	70
+i2) All the links in your gopher hole on tor probably kick you back		gopher.black	70
+i   to your unencrypted, plaintext gopher hole		gopher.black	70
+i3) Port 71? What is this, NETRJS?		gopher.black	70
+i		gopher.black	70
+iHow can we deal with all these horrors? Let's take a look.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iProblem 1: Onion addresses		gopher.black	70
+i		gopher.black	70
+iIt's possible to generate sexy onion addresses. You might be		gopher.black	70
+ifamiliar with protonmail's relatively readable one:		gopher.black	70
+i		gopher.black	70
+i  protonirockerxow.onion		gopher.black	70
+i		gopher.black	70
+iThat's almost words!		gopher.black	70
+i		gopher.black	70
+iSo how can you get that level of not-quite-suck? Why, brute force,		gopher.black	70
+iof course! Check out Eschalot [0].		gopher.black	70
+i		gopher.black	70
+h[0] Eschalot	URL:http://github.com/ReclaimYourPrivacy/eschalot
+i		gopher.black	70
+iYou can use this and wait... and wait... and wait... and		gopher.black	70
+ieventually you'll have a cool onion address. There's some issues		gopher.black	70
+iwith it, as you can read on the README, but it's probably good		gopher.black	70
+ienough for gopher work.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iProblem 2: Links		gopher.black	70
+i		gopher.black	70
+iI don't know what gopher server you're running. I'm on motsognir,		gopher.black	70
+iwhich I love and cherish with a little too much gusto. Chances are		gopher.black	70
+ithat your server is smart enough that if you have no gophermaps or		gopher.black	70
+iif you leave off the server & port info in your gophermaps they		gopher.black	70
+iare autogenerated based on your host name. That's awesome.		gopher.black	70
+iMotsognir does that too. Why aren't you using it again?		gopher.black	70
+i		gopher.black	70
+iRegardless, that will break your shit on tor cause we have		gopher.black	70
+ia totally different host name we want to use there.		gopher.black	70
+i		gopher.black	70
+iWhat's the solution? Well, unless someone has a better idea,		gopher.black	70
+iI think the best thing to do is install a second gopher server,		gopher.black	70
+iuse a different configuration with your tor address as the host		gopher.black	70
+iname, and change the port to something other than 70 (more on this		gopher.black	70
+inext). If you are on geomyidae, it's already set up so you can run		gopher.black	70
+imultiple instances of the server at the same time and override the		gopher.black	70
+ihost name and port via command line switches. I haven't figured		gopher.black	70
+iout how to do that with motsognir yet. I'll probably just install		gopher.black	70
+igophernicus next to motsognir and serve tor over that instead.		gopher.black	70
+iThey're fairly compatible in gophermap structures.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iProblem 3: Port 71!@#$!@#$!$		gopher.black	70
+i		gopher.black	70
+iIf you install a second server and run it on another port, oh		gopher.black	70
+ilet's say... 1138, then you can update your torrc file and point		gopher.black	70
+itor at that new port. In fact, you can point tor at the new point		gopher.black	70
+iand let tor pretend it is serving it from 70. Like so:		gopher.black	70
+i		gopher.black	70
+i  HiddenServicePort 70 127.0.0.1:1138		gopher.black	70
+i		gopher.black	70
+iSexy.		gopher.black	70
+i		gopher.black	70
+iRestart tor and you should be good to go!		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iI'm still working through these 3 problems with my own solution,		gopher.black	70
+ibut once it's all done I'll be sure to share part 2 of my journey		gopher.black	70
+iand give you all the new tor address.		gopher.black	70
