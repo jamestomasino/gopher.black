@@ -3,6 +3,96 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>gopher black on tor part 2</title>
+  <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
+  <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+gopher.black on tor, part 2
+April 28th, 2018
+----------------------------------------
+
+This gopher site is finally available as a tor hidden service with
+the production onion address: blackgviz2y4nhrd.onion [0]
+
+[0] gopher.black (tor)
+    gopher://blackgviz2y4nhrd.onion/1/
+
+In my last post [1] I mentioned three problems I had left:
+
+1) Ugly onion addresses
+2) Internal links kick you out of tor
+3) Port 71
+
+Here's how that got resolved.
+
+I used Eschalot to generate my onion address. I let the app run
+a full day trying to get something that started with gopherblack,
+but the pattern was too long to find a match. I figure "black" is
+good enough for folks to remember. I had about
+15 different ones starting with black, but this had the best
+looking pattern.
+
+I ended up installing Gophernicus as a second gopher server next
+to motsognir and configured it to serve up my same content. This
+install was a tiny bit tricky since I already have a service
+listenining on port 70. I also wanted Gophernicus to use my tor
+address, not my actual hostname. Finally, I wanted it to run on
+port 71, but act like links were still port 70. Doing all this
+involved changing 3 files in the repo before I ran make install:
+
+  gophernicus.env
+
+  Uncomment options and give it the onion host and whatever else
+  is necessary to your liking: 
+  
+    OPTIONS="-h blackgviz2y4nhrd.onion -nf -nt"
+
+
+  gophernicus.socket
+
+  Change port to listen on to 71 or 1138 or whatever you'll be
+  using with the tor proxy.
+
+
+  gophernicus@.service
+
+  There's a line in there that looks like this:
+
+    ExecStart=/usr/sbin/in.gophernicus -h %H $OPTIONS
+
+  Remove the -h %H bit. We set that in options.
+
+Now you can 'sudo make install' and it should "Just Work".
+Remember to update your torrc to use port 70 and proxy to 71. This
+will give you your content back on port 70 over tor and all will
+be good in the world.
+
+The last hurdle to fix were the internal links. My sexy burrow
+helper wants to be a good partner, so it generates gophermaps with
+full \tHOST\tPORT\r\n line endings. That's overkill for motsognir
+and gophernicus, and doesn't allow them the flexibility to add
+those bits itself. 
+
+On Motsognir I can exclude the full line ending as long as
+I prefix the line with type "i" and it will work.
+
+On Gophernicus I can get rid of any type at the start of the line
+and it will work.
+
+To make both happy I need to include the type "i" at the start of
+the line and add a single tab character at the end. Not two tabs
+or three, just exactly one with nothing after it. This makes both
+servers happy and lets them fill in the gaps.
+
+I'll need to add a switch to burrow to generate this style in the
+future, but in the meantime I can manually clean it up as I add
+posts.
+
+find . -name "gophermap" -exec sed -i 's/\tgopher.black.*//g' {} \;
+</pre>]]></description>
+</item>
+<item>
   <title>poison sumac</title>
   <link>gopher://gopher.black/0/phlog/./20180427-poison-sumac/gophermap</link>
   <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
@@ -277,7 +367,7 @@ converter to Shakuhachi utf-8 notation [2].
 [1] ABC notation
     http://abcnotation.com
 [2] Shakuhachi
-    gopher://gopher.black/1/explorations/shakuhachi
+    gopher:///1/explorations/shakuhachi
 </pre>]]></description>
 </item>
 <item>
@@ -367,7 +457,7 @@ read those yet. I'll wait...
 [0] sysdharma - Gophercon vs Gophercon
     gopher://sdf.org/1/users/sysdharma/phlog/./2018.04.08
 [1] tomasino - re sysdharma: Gophercon
-    gopher://gopher.black/1/phlog/20180408-re-sysdharma-gophercon
+    gopher:///1/phlog/20180408-re-sysdharma-gophercon
 [2] sysdharma - On a Gopher conference
     gopher://sdf.org/1/users/sysdharma/phlog/./2018.04.12
 
@@ -450,56 +540,6 @@ it on Github, please [1].
 
 [1] burrow issues
     http://github.com/jamestomasino/burrow/issues
-</pre>]]></description>
-</item>
-<item>
-  <title>size</title>
-  <link>gopher://gopher.black/0/phlog/./20180409-size/gophermap</link>
-  <pubdate>Mon, 09 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Size
-April 09th, 2018
-----------------------------------------
-
-tfurrows recently wrote [0] about about the American need for more
-space, more square footage, and generally bigger and better
-things. You might harken it back to the "go West" mentality and an
-assumption born from multi-generational standard-of-living growth,
-but I have no real clue where it comes from. And tfurrows is
-absolutely right when he says you get looked at funny for defying
-that pattern.
-
-[0] tfurrows - square feet
-    gopher://circumlunar.space/0/~tfurrows/phlog/akr_squareFeet.txt
-
-My dad certainly doesn't understand my desire to simplify,
-downsize (right-size?), and work less. It's really frustrating
-with him in particular because he worked so hard to achieve more
-and earn more his whole life so that he could enjoy it later, but
-he was diagnosed with a death sentence nearly the day after he
-retired. How can that not wake you up to the here and now and say,
-"use it while you've got it"?
-
-I want a smaller house. Much smaller. This is my first home and
-I got it for a ridiculous price because the housing market had
-tanked two years before and the owner had been dropping his
-selling price ever since. It's now worth double what I paid and
-I can't wait to sell it. It's fantastic to have a bunch of space,
-but we just fill it with things we don't have time to use. More BS
-filling it up is no help to anyone. It's also a huge burden on us
-maintaining it and paying utilities. I don't need to work harder
-and longer to pay for things I'm not using.
-
-Once we go to Iceland I plan on renting again (if their rental
-situation gets cleared up, that is) and eventually working up to
-a small home. I don't want any more space than I need. If that
-means I have to go outside more, even better! Lowering my
-cost-of-living means I can enjoy the same options or more and
-still lower my workload. I'm not going to be able to match my
-current salary in Iceland anyway, so it all aligns. Work less,
-live smaller, enjoy things today instead of putting them off for
-later.
 </pre>]]></description>
 </item>
 </channel>

@@ -1,0 +1,82 @@
+i----------------------------------------		gopher.black	70
+igopher.black on tor, part 2		gopher.black	70
+iApril 28th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThis gopher site is finally available as a tor hidden service with		gopher.black	70
+ithe production onion address: blackgviz2y4nhrd.onion [0]		gopher.black	70
+i		gopher.black	70
+1[0] gopher.black (tor)	/	blackgviz2y4nhrd.onion	70
+i		gopher.black	70
+iIn my last post [1] I mentioned three problems I had left:		gopher.black	70
+i		gopher.black	70
+i1) Ugly onion addresses		gopher.black	70
+i2) Internal links kick you out of tor		gopher.black	70
+i3) Port 71		gopher.black	70
+i		gopher.black	70
+iHere's how that got resolved.		gopher.black	70
+i		gopher.black	70
+iI used Eschalot to generate my onion address. I let the app run		gopher.black	70
+ia full day trying to get something that started with gopherblack,		gopher.black	70
+ibut the pattern was too long to find a match. I figure "black" is		gopher.black	70
+igood enough for folks to remember. I had about		gopher.black	70
+i15 different ones starting with black, but this had the best		gopher.black	70
+ilooking pattern.		gopher.black	70
+i		gopher.black	70
+iI ended up installing Gophernicus as a second gopher server next		gopher.black	70
+ito motsognir and configured it to serve up my same content. This		gopher.black	70
+iinstall was a tiny bit tricky since I already have a service		gopher.black	70
+ilistenining on port 70. I also wanted Gophernicus to use my tor		gopher.black	70
+iaddress, not my actual hostname. Finally, I wanted it to run on		gopher.black	70
+iport 71, but act like links were still port 70. Doing all this		gopher.black	70
+iinvolved changing 3 files in the repo before I ran make install:		gopher.black	70
+i		gopher.black	70
+i  gophernicus.env		gopher.black	70
+i		gopher.black	70
+i  Uncomment options and give it the onion host and whatever else		gopher.black	70
+i  is necessary to your liking: 		gopher.black	70
+i  		gopher.black	70
+i    OPTIONS="-h blackgviz2y4nhrd.onion -nf -nt"		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i  gophernicus.socket		gopher.black	70
+i		gopher.black	70
+i  Change port to listen on to 71 or 1138 or whatever you'll be		gopher.black	70
+i  using with the tor proxy.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i  gophernicus@.service		gopher.black	70
+i		gopher.black	70
+i  There's a line in there that looks like this:		gopher.black	70
+i		gopher.black	70
+i    ExecStart=/usr/sbin/in.gophernicus -h %H $OPTIONS		gopher.black	70
+i		gopher.black	70
+i  Remove the -h %H bit. We set that in options.		gopher.black	70
+i		gopher.black	70
+iNow you can 'sudo make install' and it should "Just Work".		gopher.black	70
+iRemember to update your torrc to use port 70 and proxy to 71. This		gopher.black	70
+iwill give you your content back on port 70 over tor and all will		gopher.black	70
+ibe good in the world.		gopher.black	70
+i		gopher.black	70
+iThe last hurdle to fix were the internal links. My sexy burrow		gopher.black	70
+ihelper wants to be a good partner, so it generates gophermaps with		gopher.black	70
+ifull \tHOST\tPORT\r\n line endings. That's overkill for motsognir		gopher.black	70
+iand gophernicus, and doesn't allow them the flexibility to add		gopher.black	70
+ithose bits itself. 		gopher.black	70
+i		gopher.black	70
+iOn Motsognir I can exclude the full line ending as long as		gopher.black	70
+iI prefix the line with type "i" and it will work.		gopher.black	70
+i		gopher.black	70
+iOn Gophernicus I can get rid of any type at the start of the line		gopher.black	70
+iand it will work.		gopher.black	70
+i		gopher.black	70
+iTo make both happy I need to include the type "i" at the start of		gopher.black	70
+ithe line and add a single tab character at the end. Not two tabs		gopher.black	70
+ior three, just exactly one with nothing after it. This makes both		gopher.black	70
+iservers happy and lets them fill in the gaps.		gopher.black	70
+i		gopher.black	70
+iI'll need to add a switch to burrow to generate this style in the		gopher.black	70
+ifuture, but in the meantime I can manually clean it up as I add		gopher.black	70
+iposts.		gopher.black	70
+i		gopher.black	70
+ifind . -name "gophermap" -exec sed -i 's/\tgopher.black.*//g' {} \;		gopher.black	70
