@@ -1,24 +1,24 @@
-i----------------------------------------		gopher.black	70
-iThe Bible		gopher.black	70
-iApril 05th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iYesterday I added a new section to my gopher hole [0]. It's the		gopher.black	70
-iEnglish Standard Version of the Bible, used with permission. I've		gopher.black	70
-iwritten a script to fetch books/chapters/verses on demand and used		gopher.black	70
-iit to prepopulate a full view of the Bible, chapter by chapter.		gopher.black	70
-iI'm pretty sure everything came in properly, but I'll be double		gopher.black	70
-ichecking over the coming weeks.		gopher.black	70
-i		gopher.black	70
-iMy next step is to add some safeguards to the script and make it		gopher.black	70
-iwork on demand as a cgi. There are limitations on how much can be		gopher.black	70
-iqueried at once and such attached to the API, so I'll need to plan		gopher.black	70
-iaccordingly. Stay tuned!		gopher.black	70
-i		gopher.black	70
-iIn the meantime, pop on over and give it a read. It's my favorite		gopher.black	70
-itranslation: a literal one with modern grammar. I've opted to		gopher.black	70
-isuppress chapter & verse markings as well as footnotes and just		gopher.black	70
-ilet the text live on its own. I think it makes things much more		gopher.black	70
-ireabable.		gopher.black	70
-i		gopher.black	70
-1[0] The Bible (ESV)	/bible	gopher.black	70
+i----------------------------------------	
+iThe Bible	
+iApril 05th, 2018	
+i----------------------------------------	
+i	
+iYesterday I added a new section to my gopher hole [0]. It's the	
+iEnglish Standard Version of the Bible, used with permission. I've	
+iwritten a script to fetch books/chapters/verses on demand and used	
+iit to prepopulate a full view of the Bible, chapter by chapter.	
+iI'm pretty sure everything came in properly, but I'll be double	
+ichecking over the coming weeks.	
+i	
+iMy next step is to add some safeguards to the script and make it	
+iwork on demand as a cgi. There are limitations on how much can be	
+iqueried at once and such attached to the API, so I'll need to plan	
+iaccordingly. Stay tuned!	
+i	
+iIn the meantime, pop on over and give it a read. It's my favorite	
+itranslation: a literal one with modern grammar. I've opted to	
+isuppress chapter & verse markings as well as footnotes and just	
+ilet the text live on its own. I think it makes things much more	
+ireabable.	
+i	
+1[0] The Bible (ESV)	/bible

@@ -1,18 +1,18 @@
-i----------------------------------------		gopher.black	70
-iburrow release v1.4.1		gopher.black	70
-iApril 09th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iA new minor release of burrow is ready (v1.4.1) with mostly		gopher.black	70
-icompatability updates.		gopher.black	70
-i		gopher.black	70
-i  - Removed longopts completely		gopher.black	70
-i  - Removed gnu getopt requirement		gopher.black	70
-i  - All echos -> printf		gopher.black	70
-i  - Shellcheck debugging settings for stylistic newlines		gopher.black	70
-i  - Better error handling		gopher.black	70
-i  - Fixed gnu specific switches on coreutils find		gopher.black	70
-i		gopher.black	70
-iWant to help me test it out? Grab the latest release [0]		gopher.black	70
-i		gopher.black	70
+i----------------------------------------	
+iburrow release v1.4.1	
+iApril 09th, 2018	
+i----------------------------------------	
+i	
+iA new minor release of burrow is ready (v1.4.1) with mostly	
+icompatability updates.	
+i	
+i  - Removed longopts completely	
+i  - Removed gnu getopt requirement	
+i  - All echos -> printf	
+i  - Shellcheck debugging settings for stylistic newlines	
+i  - Better error handling	
+i  - Fixed gnu specific switches on coreutils find	
+i	
+iWant to help me test it out? Grab the latest release [0]	
+i	
 h[0] burrow v1.4.1	URL:http://github.com/jamestomasino/burrow/releases/tag/v1.4.://github.com/jamestomasino/burrow/releases/tag/v1.4.1

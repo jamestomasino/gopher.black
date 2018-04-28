@@ -1,66 +1,66 @@
-i----------------------------------------		gopher.black	70
-iPort 70 -or- 1436CON		gopher.black	70
-iApril 12th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-isysdharma posted [0], I replied [1], and sysdharma posted [2]		gopher.black	70
-iagain about a real gopher convention. Go catch up if you haven't		gopher.black	70
-iread those yet. I'll wait...		gopher.black	70
-i		gopher.black	70
+i----------------------------------------	
+iPort 70 -or- 1436CON	
+iApril 12th, 2018	
+i----------------------------------------	
+i	
+isysdharma posted [0], I replied [1], and sysdharma posted [2]	
+iagain about a real gopher convention. Go catch up if you haven't	
+iread those yet. I'll wait...	
+i	
 1[0] sysdharma - Gophercon vs Gophercon	/users/sysdharma/phlog/./2018.04.08	sdf.org	70
-1[1] tomasino - re sysdharma: Gophercon	/phlog/20180408-re-sysdharma-gophercon	gopher.black	70
+1[1] tomasino - re sysdharma: Gophercon	/phlog/20180408-re-sysdharma-gophercon
 1[2] sysdharma - On a Gopher conference	/users/sysdharma/phlog/./2018.04.12	sdf.org	70
-i		gopher.black	70
-iHere's the thing. I want to do it.		gopher.black	70
-i		gopher.black	70
-iObviously it's not going to be in-person, but a virtual conference		gopher.black	70
-iis totally doable. Here's what I'm thinking:		gopher.black	70
-i		gopher.black	70
-i  - A 24 hour conference		gopher.black	70
-i  - Everyone can submit a proposal for a session they want to run		gopher.black	70
-i    with the following info:		gopher.black	70
-i		gopher.black	70
-i    - Who you are (handle)		gopher.black	70
-i    - Title / Subject of talk		gopher.black	70
-i    - Duration		gopher.black	70
-i    - Preferred time-slot in UTC		gopher.black	70
-i    - Medium of talk (video stream, audio stream, etc)		gopher.black	70
-i    - Where will you be watching for feedback/discussion (IRC,		gopher.black	70
-i      Social Media, raw TCP packets?)		gopher.black	70
-i		gopher.black	70
-i    We will need a place where these can be submitted and stored.		gopher.black	70
-i    It would be great if the submissions could be done in Gopher		gopher.black	70
-i    itself (anyone want to volunteer to write a cgi for		gopher.black	70
-i    submissions?).		gopher.black	70
-i  		gopher.black	70
-i  - After X number of days/weeks, we close submissions and print		gopher.black	70
-i    up a schedule for everyone to review		gopher.black	70
-i  - On the day of the event, it's up to the speakers to get		gopher.black	70
-i    themselves online in their medium. (Maybe we can get a 24hr		gopher.black	70
-i    anonradio takeover?)		gopher.black	70
-i  - Folks can tune in and join the relevant chats		gopher.black	70
-i  - Archive the shit out of all of it and host it EVERYWHERE		gopher.black	70
-i		gopher.black	70
-iI also think we should do one or two "special" sessions and close		gopher.black	70
-ioff the time blocks so they're not up against anyone else.		gopher.black	70
-iRound-table or panel discussions would be cool for this. I welcome		gopher.black	70
-iideas.		gopher.black	70
-i		gopher.black	70
-iFinally, I think a hackathon would be cool to toss in the mix. It		gopher.black	70
-icould be done the day of, or the day before and results shared out		gopher.black	70
-ion the day. I'm not sure what we could gather in prizes, but for		gopher.black	70
-iour retro-con I bet we could get a couple minor sponsors willing		gopher.black	70
-ito toss in some swag. I'd be amazed if smj didn't jump at the		gopher.black	70
-iopportunity to offload some old SDF stickers. ;)		gopher.black	70
-i		gopher.black	70
-iLike the panel discussion, the focus of the hackathon would be		gopher.black	70
-isomething great to debate. My first suggestion: "Gopher meets		gopher.black	70
-iDocker". What sorts of amazingly cool configurations could we bust		gopher.black	70
-iout for the community in easy-to-deploy ways? TLS? TOR? Whatever		gopher.black	70
-iyou can dream up. We could vote on the winners on GopherPoll or		gopher.black	70
-isomething.		gopher.black	70
-i		gopher.black	70
-iSpeaking of GopherPoll (thanks tfurrows for pointing it out),		gopher.black	70
-iI'd like to offer one up right away and get your feedback:		gopher.black	70
-i		gopher.black	70
+i	
+iHere's the thing. I want to do it.	
+i	
+iObviously it's not going to be in-person, but a virtual conference	
+iis totally doable. Here's what I'm thinking:	
+i	
+i  - A 24 hour conference	
+i  - Everyone can submit a proposal for a session they want to run	
+i    with the following info:	
+i	
+i    - Who you are (handle)	
+i    - Title / Subject of talk	
+i    - Duration	
+i    - Preferred time-slot in UTC	
+i    - Medium of talk (video stream, audio stream, etc)	
+i    - Where will you be watching for feedback/discussion (IRC,	
+i      Social Media, raw TCP packets?)	
+i	
+i    We will need a place where these can be submitted and stored.	
+i    It would be great if the submissions could be done in Gopher	
+i    itself (anyone want to volunteer to write a cgi for	
+i    submissions?).	
+i  	
+i  - After X number of days/weeks, we close submissions and print	
+i    up a schedule for everyone to review	
+i  - On the day of the event, it's up to the speakers to get	
+i    themselves online in their medium. (Maybe we can get a 24hr	
+i    anonradio takeover?)	
+i  - Folks can tune in and join the relevant chats	
+i  - Archive the shit out of all of it and host it EVERYWHERE	
+i	
+iI also think we should do one or two "special" sessions and close	
+ioff the time blocks so they're not up against anyone else.	
+iRound-table or panel discussions would be cool for this. I welcome	
+iideas.	
+i	
+iFinally, I think a hackathon would be cool to toss in the mix. It	
+icould be done the day of, or the day before and results shared out	
+ion the day. I'm not sure what we could gather in prizes, but for	
+iour retro-con I bet we could get a couple minor sponsors willing	
+ito toss in some swag. I'd be amazed if smj didn't jump at the	
+iopportunity to offload some old SDF stickers. ;)	
+i	
+iLike the panel discussion, the focus of the hackathon would be	
+isomething great to debate. My first suggestion: "Gopher meets	
+iDocker". What sorts of amazingly cool configurations could we bust	
+iout for the community in easy-to-deploy ways? TLS? TOR? Whatever	
+iyou can dream up. We could vote on the winners on GopherPoll or	
+isomething.	
+i	
+iSpeaking of GopherPoll (thanks tfurrows for pointing it out),	
+iI'd like to offer one up right away and get your feedback:	
+i	
 1[3] What should we name this gopher convention?	/poll/1523589765	khzae.net	70

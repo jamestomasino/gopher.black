@@ -1,22 +1,22 @@
-i----------------------------------------		gopher.black	70
-iQuick Updates		gopher.black	70
-iMarch 29th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iLynx has added support for the + item type. You can find it		gopher.black	70
-iworking in 2.8.9dev.17. It displays with a prefix of (+++) to		gopher.black	70
-idistinguish it from other menu items. I beleive sacc plans similar		gopher.black	70
-istyle of support.		gopher.black	70
-i		gopher.black	70
-ikichimi's server made moku-pona sad and hang while it was down.		gopher.black	70
-iLuckily both he and Alex Schroeder are badass and a timeout was		gopher.black	70
-iquickly added to the program. While Alex was tinkering, he also		gopher.black	70
-ichanged the display style of the generated gophermap to be more		gopher.black	70
-icondensed. I dig it. You can see the results over here [0].		gopher.black	70
-i		gopher.black	70
-1[0] Phlogs I follow	/phlogs	gopher.black	70
-i		gopher.black	70
-izcrayfish has finally joined the phlog parade [1]. He also made me		gopher.black	70
-irealize that .soy is a TLD! Make sure to add him to your lists.		gopher.black	70
-i		gopher.black	70
+i----------------------------------------	
+iQuick Updates	
+iMarch 29th, 2018	
+i----------------------------------------	
+i	
+iLynx has added support for the + item type. You can find it	
+iworking in 2.8.9dev.17. It displays with a prefix of (+++) to	
+idistinguish it from other menu items. I beleive sacc plans similar	
+istyle of support.	
+i	
+ikichimi's server made moku-pona sad and hang while it was down.	
+iLuckily both he and Alex Schroeder are badass and a timeout was	
+iquickly added to the program. While Alex was tinkering, he also	
+ichanged the display style of the generated gophermap to be more	
+icondensed. I dig it. You can see the results over here [0].	
+i	
+1[0] Phlogs I follow	/phlogs
+i	
+izcrayfish has finally joined the phlog parade [1]. He also made me	
+irealize that .soy is a TLD! Make sure to add him to your lists.	
+i	
 1[1] zcrayfish's phlog	/phlog	gopher.zcrayfish.soy	70

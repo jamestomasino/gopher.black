@@ -1,21 +1,21 @@
-i----------------------------------------		gopher.black	70
-iWeird day		gopher.black	70
-iMarch 17th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iI'm having a really weird day. I've been exhausted since waking,		gopher.black	70
-itook an extra nap in the middle of the day, and I can't stand to		gopher.black	70
-ibe around people, even my family. I'm hiding out by the laptop,		gopher.black	70
-ibut I don't have energy to do anything significant here either.		gopher.black	70
-iWhat a funk! Maybe I'm getting sick.		gopher.black	70
-i		gopher.black	70
-iUm, I fixed a burrow thing that was messing up my gophermap "Last		gopher.black	70
-iUpdated" string. I was putting the directory into the string		gopher.black	70
-ireplacement instead of the server address, and the directory had		gopher.black	70
-ia slash that was conflicting with the sed line itself. I fixed		gopher.black	70
-iboth and it's working again. v1.3.3.		gopher.black	70
-i		gopher.black	70
-iI've got a Creation Crate build I could do. It's a light-up memory		gopher.black	70
-igame, like Simon. I'm having a lot of problems getting the		gopher.black	70
-imotivation to start. Maybe I should just go back to bed and try		gopher.black	70
-ithis day over tomorrow.		gopher.black	70
+i----------------------------------------	
+iWeird day	
+iMarch 17th, 2018	
+i----------------------------------------	
+i	
+iI'm having a really weird day. I've been exhausted since waking,	
+itook an extra nap in the middle of the day, and I can't stand to	
+ibe around people, even my family. I'm hiding out by the laptop,	
+ibut I don't have energy to do anything significant here either.	
+iWhat a funk! Maybe I'm getting sick.	
+i	
+iUm, I fixed a burrow thing that was messing up my gophermap "Last	
+iUpdated" string. I was putting the directory into the string	
+ireplacement instead of the server address, and the directory had	
+ia slash that was conflicting with the sed line itself. I fixed	
+iboth and it's working again. v1.3.3.	
+i	
+iI've got a Creation Crate build I could do. It's a light-up memory	
+igame, like Simon. I'm having a lot of problems getting the	
+imotivation to start. Maybe I should just go back to bed and try	
+ithis day over tomorrow.	

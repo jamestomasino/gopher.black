@@ -1,31 +1,31 @@
-i----------------------------------------		gopher.black	70
-iRSS Feed		gopher.black	70
-iMarch 31st, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iAfter the mini-poll on the last post I have decided to keep my		gopher.black	70
-igophermap formatting on my phlog. As a sign of faith to the text		gopher.black	70
-ipurists, I am now generating a happy little RSS feed for the most		gopher.black	70
-irecent 10 posts. You can find the feed here [0] and also see		gopher.black	70
-ia link to it on my main gophermap [1].		gopher.black	70
-i		gopher.black	70
-0[0] gopher.black RSS feed	/rss.xml	gopher.black	70
-1[1] gopher.black	/	gopher.black	70
-i		gopher.black	70
-iFor those of you using newsbeuter, you can add this to your feed		gopher.black	70
-ilist by dropping this line into the 'urls' file:		gopher.black	70
-i		gopher.black	70
-i  "exec:curl -s gopher://gopher.black/0/rss.xml"		gopher.black	70
-i		gopher.black	70
-iTo accomplish this, rather than add a cgi script to my site,		gopher.black	70
-iI decided to add the RSS generation feature to burrow.		gopher.black	70
-i		gopher.black	70
-i  $ burrow rss # generates the rss feed		gopher.black	70
-i		gopher.black	70
-iThere's also a config parameter to auto-generate RSS when writing		gopher.black	70
-inew phlogs. Check out the man page or README.md to see more.		gopher.black	70
-i		gopher.black	70
-iNOTE: There's one little weakness of my RSS generator. It will		gopher.black	70
-iorganize the most recent entries by date, but if you post multiple		gopher.black	70
-ientries in a single day, it just alphabetizes them. I'm sure you		gopher.black	70
-iguys can all deal with it.		gopher.black	70
+i----------------------------------------	
+iRSS Feed	
+iMarch 31st, 2018	
+i----------------------------------------	
+i	
+iAfter the mini-poll on the last post I have decided to keep my	
+igophermap formatting on my phlog. As a sign of faith to the text	
+ipurists, I am now generating a happy little RSS feed for the most	
+irecent 10 posts. You can find the feed here [0] and also see	
+ia link to it on my main gophermap [1].	
+i	
+0[0] gopher.black RSS feed	/rss.xml
+1[1] gopher.black	/
+i	
+iFor those of you using newsbeuter, you can add this to your feed	
+ilist by dropping this line into the 'urls' file:	
+i	
+i  "exec:curl -s gopher://gopher.black/0/rss.xml"	
+i	
+iTo accomplish this, rather than add a cgi script to my site,	
+iI decided to add the RSS generation feature to burrow.	
+i	
+i  $ burrow rss # generates the rss feed	
+i	
+iThere's also a config parameter to auto-generate RSS when writing	
+inew phlogs. Check out the man page or README.md to see more.	
+i	
+iNOTE: There's one little weakness of my RSS generator. It will	
+iorganize the most recent entries by date, but if you post multiple	
+ientries in a single day, it just alphabetizes them. I'm sure you	
+iguys can all deal with it.	

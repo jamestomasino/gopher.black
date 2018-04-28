@@ -1,16 +1,16 @@
-i----------------------------------------		gopher.black	70
-iburrow v1.5.0 - portable		gopher.black	70
-iApril 11th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iburrow v1.5.0 is released [0]. I've removed the bash 4+		gopher.black	70
-irequirement and moved the script to /bin/sh. There are a number of		gopher.black	70
-iother small improvements and bug fixes as well.		gopher.black	70
-i		gopher.black	70
+i----------------------------------------	
+iburrow v1.5.0 - portable	
+iApril 11th, 2018	
+i----------------------------------------	
+i	
+iburrow v1.5.0 is released [0]. I've removed the bash 4+	
+irequirement and moved the script to /bin/sh. There are a number of	
+iother small improvements and bug fixes as well.	
+i	
 h[0] burrow v1.5.0	URL:http://github.com/jamestomasino/burrow/releases/tag/v1.5.0
-i		gopher.black	70
-iYou can always find a link to the latest release in the root of		gopher.black	70
-ithis gopher hole. Grab your copy and test it out. Find a bug? Log		gopher.black	70
-iit on Github, please [1].		gopher.black	70
-i		gopher.black	70
+i	
+iYou can always find a link to the latest release in the root of	
+ithis gopher hole. Grab your copy and test it out. Find a bug? Log	
+iit on Github, please [1].	
+i	
 h[1] burrow issues	URL:http://github.com/jamestomasino/burrow/issues

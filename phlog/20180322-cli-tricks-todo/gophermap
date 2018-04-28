@@ -1,146 +1,146 @@
-i----------------------------------------		gopher.black	70
-iCLI Tricks: todo		gopher.black	70
-iMarch 22nd, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iThis is part of a series of phlog entries where I will share some		gopher.black	70
-iof my command line tricks, tips, and scripts.		gopher.black	70
-i		gopher.black	70
-i		gopher.black	70
-i## todo ##		gopher.black	70
-i		gopher.black	70
-iEveryone has a to-do app they love. Many of us have rolled our		gopher.black	70
-iown. This is mine.		gopher.black	70
-i		gopher.black	70
-iIt's another bash function that's auto sourced by my		gopher.black	70
-i.bash_profile, offers bash-completion, and has a built in		gopher.black	70
-iarchiver.		gopher.black	70
-i		gopher.black	70
-i		gopher.black	70
-i### The Idea ###		gopher.black	70
-i		gopher.black	70
-iI organize my daily life in tmux by using sessions. I'm currently		gopher.black	70
-iin a session named "personal". I also have "work" and "writing"		gopher.black	70
-iand "music" and others. My goals for my to-do list manager are:		gopher.black	70
-i		gopher.black	70
-i  - Super simple cli interface		gopher.black	70
-i  - Sync data between machines (again, cheating with dropbox here)		gopher.black	70
-i  - Contextual to-do list based on tmux session with fallback		gopher.black	70
-i  - Add items		gopher.black	70
-i  - Remove items by number or regex (good for groups of tasks)		gopher.black	70
-i  - Archive things I remove and add a timestamp (good for		gopher.black	70
-i    timesheets)		gopher.black	70
-i  - A little help is nice		gopher.black	70
-i  - Bash-completion all the things		gopher.black	70
-i		gopher.black	70
-i		gopher.black	70
-i### How to use it ###		gopher.black	70
-i		gopher.black	70
-i  $ todo -a "Some task"		gopher.black	70
-i		gopher.black	70
-i  > 1 - Some task		gopher.black	70
-i		gopher.black	70
-i  $ todo -a Another task		gopher.black	70
-i		gopher.black	70
-i  > 1 - Some task		gopher.black	70
-i  > 2 - Another task		gopher.black	70
-i		gopher.black	70
-i  $ todo -d 1		gopher.black	70
-i		gopher.black	70
-i  > 2 - Another task		gopher.black	70
-i		gopher.black	70
-iSimple, right? You don't need to quote the todo item unless you're		gopher.black	70
-iusing special characters. You can pass the -d flag a number to		gopher.black	70
-iremove that item, or a string and it'll do a regex match.		gopher.black	70
-i		gopher.black	70
-iNeed more help on how to use it? Type:		gopher.black	70
-i		gopher.black	70
-i  $ todo --help		gopher.black	70
-i		gopher.black	70
-i		gopher.black	70
-i### Requirements ###		gopher.black	70
-i		gopher.black	70
-iAn environment variable called "$TODOFILE" is required that points		gopher.black	70
-ito a specific text document where you want your to-do list saved.		gopher.black	70
-iIf you are in a tmux session, todo will use the directory of your		gopher.black	70
-i$TODOFILE but rename the txt file to match your session name.		gopher.black	70
-iArchives are saved in a file called XXXX.archive.txt where XXXX is		gopher.black	70
-iyour TODOFILE or session name.		gopher.black	70
-i		gopher.black	70
-iIt probably requires GNU sed as well, but I haven't checked.		gopher.black	70
-i		gopher.black	70
-i		gopher.black	70
-i### The Source ###		gopher.black	70
-i		gopher.black	70
-iYou can find the latest source here: [0].		gopher.black	70
+i----------------------------------------	
+iCLI Tricks: todo	
+iMarch 22nd, 2018	
+i----------------------------------------	
+i	
+iThis is part of a series of phlog entries where I will share some	
+iof my command line tricks, tips, and scripts.	
+i	
+i	
+i## todo ##	
+i	
+iEveryone has a to-do app they love. Many of us have rolled our	
+iown. This is mine.	
+i	
+iIt's another bash function that's auto sourced by my	
+i.bash_profile, offers bash-completion, and has a built in	
+iarchiver.	
+i	
+i	
+i### The Idea ###	
+i	
+iI organize my daily life in tmux by using sessions. I'm currently	
+iin a session named "personal". I also have "work" and "writing"	
+iand "music" and others. My goals for my to-do list manager are:	
+i	
+i  - Super simple cli interface	
+i  - Sync data between machines (again, cheating with dropbox here)	
+i  - Contextual to-do list based on tmux session with fallback	
+i  - Add items	
+i  - Remove items by number or regex (good for groups of tasks)	
+i  - Archive things I remove and add a timestamp (good for	
+i    timesheets)	
+i  - A little help is nice	
+i  - Bash-completion all the things	
+i	
+i	
+i### How to use it ###	
+i	
+i  $ todo -a "Some task"	
+i	
+i  > 1 - Some task	
+i	
+i  $ todo -a Another task	
+i	
+i  > 1 - Some task	
+i  > 2 - Another task	
+i	
+i  $ todo -d 1	
+i	
+i  > 2 - Another task	
+i	
+iSimple, right? You don't need to quote the todo item unless you're	
+iusing special characters. You can pass the -d flag a number to	
+iremove that item, or a string and it'll do a regex match.	
+i	
+iNeed more help on how to use it? Type:	
+i	
+i  $ todo --help	
+i	
+i	
+i### Requirements ###	
+i	
+iAn environment variable called "$TODOFILE" is required that points	
+ito a specific text document where you want your to-do list saved.	
+iIf you are in a tmux session, todo will use the directory of your	
+i$TODOFILE but rename the txt file to match your session name.	
+iArchives are saved in a file called XXXX.archive.txt where XXXX is	
+iyour TODOFILE or session name.	
+i	
+iIt probably requires GNU sed as well, but I haven't checked.	
+i	
+i	
+i### The Source ###	
+i	
+iYou can find the latest source here: [0].	
 h[0] tomasino's dotfiles - todo function	URL:http://github.com/jamestomasino/dotfiles/blob/master/bash/.functions/todo
-i		gopher.black	70
-i  #!/usr/bin/env bash		gopher.black	70
-i		gopher.black	70
-i  # Todo List & Completion		gopher.black	70
-i  _todo() {		gopher.black	70
-i    local iter use cur		gopher.black	70
-i    cur=${COMP_WORDS[COMP_CWORD]}		gopher.black	70
-i    use=$( awk '{gsub(/ /,"\\ ")}8' "$TODOFILE" )		gopher.black	70
-i    use="${use//\\ /___}"		gopher.black	70
-i    for iter in $use; do		gopher.black	70
-i      if [[ $iter =~ ^$cur ]]; then		gopher.black	70
-i        COMPREPLY+=( "${iter//___/ }" )		gopher.black	70
-i      fi		gopher.black	70
-i    done		gopher.black	70
-i  }		gopher.black	70
-i  todo() {		gopher.black	70
-i    : "${TODO:?'TODO ENV Var not set. Please set to path of default todo file.'}"		gopher.black	70
-i    # If we are in a tmux session, name the file with the session name		gopher.black	70
-i    # If not in tmux, use the full $TODO env var for path/file		gopher.black	70
-i    if echo "$TERM" | grep -Fq screen && test "$TMUX" ; then		gopher.black	70
-i      sessname=$(tmux display -p '#S')		gopher.black	70
-i      todopath=$(dirname "$TODO")		gopher.black	70
-i      TODOFILE=$todopath/$sessname".txt"		gopher.black	70
-i      TODOARCHIVEFILE=$todopath/$sessname".archive.txt"		gopher.black	70
-i    else		gopher.black	70
-i      TODOFILE=$TODO		gopher.black	70
-i      TODOARCHIVEFILE=${TODO%.*}.archive.txt		gopher.black	70
-i    fi		gopher.black	70
-i    if [ $# -eq 0 ]; then		gopher.black	70
-i      if [ -f "$TODOFILE" ] ; then		gopher.black	70
-i        awk '{ print NR, "-", $0 }' "$TODOFILE" 		gopher.black	70
-i      fi		gopher.black	70
-i    else		gopher.black	70
-i      case "$1" in		gopher.black	70
-i        -h|--help)		gopher.black	70
-i          echo "todo - Command Line Todo List Manager"		gopher.black	70
-i          echo " "		gopher.black	70
-i          echo "Creates a text-based todo list and provides basic operations to add and remove elements from the list. If using TMUX, the todo list is session based, using the name of your active session."		gopher.black	70
-i          echo " "		gopher.black	70
-i          echo "usage: todo                                 # display todo list"		gopher.black	70
-i          echo "usage: todo (--help or -h)                  # show this help"		gopher.black	70
-i          echo "usage: todo (--add or -a) [activity name]   # add a new activity to list"		gopher.black	70
-i          echo "usage: todo (--archive)                     # show completed tasks in archive list"		gopher.black	70
-i          echo "usage: todo (--done or -d) [name or #]      # complete and archive activity"		gopher.black	70
-i          ;;		gopher.black	70
-i        -a|--add)		gopher.black	70
-i          echo "${*:2}" >> "$TODOFILE"		gopher.black	70
-i          ;;		gopher.black	70
-i        --archive)		gopher.black	70
-i          if [ -f "$TODOARCHIVEFILE" ] ; then		gopher.black	70
-i            cat "$TODOARCHIVEFILE"		gopher.black	70
-i          fi		gopher.black	70
-i          ;;		gopher.black	70
-i        -d|--done)		gopher.black	70
-i          re='^[0-9]+$'		gopher.black	70
-i          if ! [[ "$2" =~ $re ]] ; then		gopher.black	70
-i            match=$(sed -n "/$2/p" "$TODOFILE" 2> /dev/null)		gopher.black	70
-i            sed -i "" -e "/$2/d" "$TODOFILE" 2> /dev/null		gopher.black	70
-i          else		gopher.black	70
-i            match=$(sed -n "$2p" "$TODOFILE" 2> /dev/null)		gopher.black	70
-i            sed -i "" -e "$2d" "$TODOFILE" 2> /dev/null		gopher.black	70
-i          fi		gopher.black	70
-i          if [ ! -z "$match" ]; then		gopher.black	70
-i            echo "$(date +"%Y-%m-%d %H:%M:%S") - $match" >> "$TODOARCHIVEFILE"		gopher.black	70
-i          fi		gopher.black	70
-i          ;;		gopher.black	70
-i      esac		gopher.black	70
-i    fi		gopher.black	70
-i  }		gopher.black	70
-i  complete -F _todo todo		gopher.black	70
+i	
+i  #!/usr/bin/env bash	
+i	
+i  # Todo List & Completion	
+i  _todo() {	
+i    local iter use cur	
+i    cur=${COMP_WORDS[COMP_CWORD]}	
+i    use=$( awk '{gsub(/ /,"\\ ")}8' "$TODOFILE" )	
+i    use="${use//\\ /___}"	
+i    for iter in $use; do	
+i      if [[ $iter =~ ^$cur ]]; then	
+i        COMPREPLY+=( "${iter//___/ }" )	
+i      fi	
+i    done	
+i  }	
+i  todo() {	
+i    : "${TODO:?'TODO ENV Var not set. Please set to path of default todo file.'}"	
+i    # If we are in a tmux session, name the file with the session name	
+i    # If not in tmux, use the full $TODO env var for path/file	
+i    if echo "$TERM" | grep -Fq screen && test "$TMUX" ; then	
+i      sessname=$(tmux display -p '#S')	
+i      todopath=$(dirname "$TODO")	
+i      TODOFILE=$todopath/$sessname".txt"	
+i      TODOARCHIVEFILE=$todopath/$sessname".archive.txt"	
+i    else	
+i      TODOFILE=$TODO	
+i      TODOARCHIVEFILE=${TODO%.*}.archive.txt	
+i    fi	
+i    if [ $# -eq 0 ]; then	
+i      if [ -f "$TODOFILE" ] ; then	
+i        awk '{ print NR, "-", $0 }' "$TODOFILE" 	
+i      fi	
+i    else	
+i      case "$1" in	
+i        -h|--help)	
+i          echo "todo - Command Line Todo List Manager"	
+i          echo " "	
+i          echo "Creates a text-based todo list and provides basic operations to add and remove elements from the list. If using TMUX, the todo list is session based, using the name of your active session."	
+i          echo " "	
+i          echo "usage: todo                                 # display todo list"	
+i          echo "usage: todo (--help or -h)                  # show this help"	
+i          echo "usage: todo (--add or -a) [activity name]   # add a new activity to list"	
+i          echo "usage: todo (--archive)                     # show completed tasks in archive list"	
+i          echo "usage: todo (--done or -d) [name or #]      # complete and archive activity"	
+i          ;;	
+i        -a|--add)	
+i          echo "${*:2}" >> "$TODOFILE"	
+i          ;;	
+i        --archive)	
+i          if [ -f "$TODOARCHIVEFILE" ] ; then	
+i            cat "$TODOARCHIVEFILE"	
+i          fi	
+i          ;;	
+i        -d|--done)	
+i          re='^[0-9]+$'	
+i          if ! [[ "$2" =~ $re ]] ; then	
+i            match=$(sed -n "/$2/p" "$TODOFILE" 2> /dev/null)	
+i            sed -i "" -e "/$2/d" "$TODOFILE" 2> /dev/null	
+i          else	
+i            match=$(sed -n "$2p" "$TODOFILE" 2> /dev/null)	
+i            sed -i "" -e "$2d" "$TODOFILE" 2> /dev/null	
+i          fi	
+i          if [ ! -z "$match" ]; then	
+i            echo "$(date +"%Y-%m-%d %H:%M:%S") - $match" >> "$TODOARCHIVEFILE"	
+i          fi	
+i          ;;	
+i      esac	
+i    fi	
+i  }	
+i  complete -F _todo todo	

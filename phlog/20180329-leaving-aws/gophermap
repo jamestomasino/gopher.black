@@ -1,33 +1,33 @@
-i----------------------------------------		gopher.black	70
-iLeaving AWS		gopher.black	70
-iMarch 29th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iEarlier this week I got a notification from the AWS console that		gopher.black	70
-imy billing alarm level had been reached. I'm glad I set it because		gopher.black	70
-ithere's no other way I would have know that I was running up an		gopher.black	70
-iincredibly expensive bill.		gopher.black	70
-i		gopher.black	70
-iOver the weekend I was experimenting with Nextcloud and linked an		gopher.black	70
-iAWS S3 volume as an extra share. Something went wrong and the		gopher.black	70
-isyncs were failing, but constantly retrying to download data. At		gopher.black	70
-ileast, this is what I now believe is the root cause. At the time		gopher.black	70
-iI figured it was one of my public sites getting abused.		gopher.black	70
-i		gopher.black	70
-iI went digging around in AWS to see if I could figure out who the		gopher.black	70
-iculprit was, but that was in vain. AWS is a labyrinth of excessive		gopher.black	70
-ioverengineering, techno-babble, and the worlds worst		gopher.black	70
-idocumentation. I can find no information about where the charges		gopher.black	70
-iare coming from beyond "bandwidth".		gopher.black	70
-i		gopher.black	70
-iIt's 2 days later and my bill is over $300. I logged a support		gopher.black	70
-iticket asking Amazon what the hell is happening, but screw it. I'm		gopher.black	70
-idone. I don't need AWS shit, it was just the idea of fast		gopher.black	70
-iperformance that brought me there. My sites are all static.		gopher.black	70
-i		gopher.black	70
-iI unlocked my domains and I'm transferring them to Namesilo. I'll		gopher.black	70
-isave down some of the crap sitting in cold storage, re-clone my		gopher.black	70
-istatic sites on the gopher.black pi, add in nginx and tell my		gopher.black	70
-irouter to forward port 80.		gopher.black	70
-i		gopher.black	70
-iThe cloud can suck it.		gopher.black	70
+i----------------------------------------	
+iLeaving AWS	
+iMarch 29th, 2018	
+i----------------------------------------	
+i	
+iEarlier this week I got a notification from the AWS console that	
+imy billing alarm level had been reached. I'm glad I set it because	
+ithere's no other way I would have know that I was running up an	
+iincredibly expensive bill.	
+i	
+iOver the weekend I was experimenting with Nextcloud and linked an	
+iAWS S3 volume as an extra share. Something went wrong and the	
+isyncs were failing, but constantly retrying to download data. At	
+ileast, this is what I now believe is the root cause. At the time	
+iI figured it was one of my public sites getting abused.	
+i	
+iI went digging around in AWS to see if I could figure out who the	
+iculprit was, but that was in vain. AWS is a labyrinth of excessive	
+ioverengineering, techno-babble, and the worlds worst	
+idocumentation. I can find no information about where the charges	
+iare coming from beyond "bandwidth".	
+i	
+iIt's 2 days later and my bill is over $300. I logged a support	
+iticket asking Amazon what the hell is happening, but screw it. I'm	
+idone. I don't need AWS shit, it was just the idea of fast	
+iperformance that brought me there. My sites are all static.	
+i	
+iI unlocked my domains and I'm transferring them to Namesilo. I'll	
+isave down some of the crap sitting in cold storage, re-clone my	
+istatic sites on the gopher.black pi, add in nginx and tell my	
+irouter to forward port 80.	
+i	
+iThe cloud can suck it.	

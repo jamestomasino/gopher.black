@@ -1,48 +1,48 @@
-i----------------------------------------		gopher.black	70
-iMore migrations		gopher.black	70
-iMarch 29th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iI stayed up a little bit late last night and transferred all my		gopher.black	70
-idomains off of AWS, then I nuked it. Every trace of me is gone		gopher.black	70
-ifrom that platform, and once this horrible bill is paid I'm		gopher.black	70
-iclosing the account completely.		gopher.black	70
-i		gopher.black	70
-iIn the wake of the move I started thinking about where to put all		gopher.black	70
-imy stuff and I decided that this little Raspberry Pi is more than		gopher.black	70
-isufficient for my needs. I have already gone through the headache		gopher.black	70
-iof converting all my web properties to static sites in order to		gopher.black	70
-ihost on S3, so putting content into nginx seems like the easy and		gopher.black	70
-iobvious next step.		gopher.black	70
-i		gopher.black	70
-iI've installed nginx and I'm reading up on how to manage multiple		gopher.black	70
-isites with it (seems almost identical to Apache). I'll clone down		gopher.black	70
-ithe websites when I get home tonight, port forward 80 and reset my		gopher.black	70
-iDNS A records. I've already put together a script for gopher.black		gopher.black	70
-ithat handles my dynamic dns changes and updates Namesilo, so I can		gopher.black	70
-ieasily package in the rest of my domains there. Finally, I'll want		gopher.black	70
-iHTTPS, so I guess it's finally time for me to read the man page on		gopher.black	70
-icertbot and start using LetsEncrypt. Whee!		gopher.black	70
-i		gopher.black	70
-iNone of this sounds particularly difficult. Hopefully I won't run		gopher.black	70
-iinto any unexpected walls.		gopher.black	70
-i		gopher.black	70
-i- - - - -		gopher.black	70
-i		gopher.black	70
-iMoving away from the technical stuff, dropping AWS also represents		gopher.black	70
-ia shedding of a gross skin I've been wearing. I don't like the		gopher.black	70
-imonolithic, data-consuming giants. It hurts my heart when		gopher.black	70
-iI continue to use them, as I've mentioned before. I acknowledge		gopher.black	70
-ithat I'll make choices that compromise my principles due to		gopher.black	70
-iconvenience, and that's something I would like to lessen.		gopher.black	70
-i		gopher.black	70
-iDo you think simply pulling websites off AWS can help facilitate		gopher.black	70
-ithat sort of change? Am I ready to shut down my Google account? Is		gopher.black	70
-ithat even viable as an Android user with Project Fi? I doubt it.		gopher.black	70
-iWhat are my realistic alternatives for phone service, anyway? Next		gopher.black	70
-iyear I'll have a super-basic eInk phone I can set up on t-mobile,		gopher.black	70
-ibut are they any better? Is any phone service any better?		gopher.black	70
-i		gopher.black	70
-iI suspect I have a tiny bit of inertia I can use here but I just		gopher.black	70
-idon't see a clear action I can take. A lot of you have done		gopher.black	70
-isimilar transitions in the past. Do you have any advice?		gopher.black	70
+i----------------------------------------	
+iMore migrations	
+iMarch 29th, 2018	
+i----------------------------------------	
+i	
+iI stayed up a little bit late last night and transferred all my	
+idomains off of AWS, then I nuked it. Every trace of me is gone	
+ifrom that platform, and once this horrible bill is paid I'm	
+iclosing the account completely.	
+i	
+iIn the wake of the move I started thinking about where to put all	
+imy stuff and I decided that this little Raspberry Pi is more than	
+isufficient for my needs. I have already gone through the headache	
+iof converting all my web properties to static sites in order to	
+ihost on S3, so putting content into nginx seems like the easy and	
+iobvious next step.	
+i	
+iI've installed nginx and I'm reading up on how to manage multiple	
+isites with it (seems almost identical to Apache). I'll clone down	
+ithe websites when I get home tonight, port forward 80 and reset my	
+iDNS A records. I've already put together a script for gopher.black	
+ithat handles my dynamic dns changes and updates Namesilo, so I can	
+ieasily package in the rest of my domains there. Finally, I'll want	
+iHTTPS, so I guess it's finally time for me to read the man page on	
+icertbot and start using LetsEncrypt. Whee!	
+i	
+iNone of this sounds particularly difficult. Hopefully I won't run	
+iinto any unexpected walls.	
+i	
+i- - - - -	
+i	
+iMoving away from the technical stuff, dropping AWS also represents	
+ia shedding of a gross skin I've been wearing. I don't like the	
+imonolithic, data-consuming giants. It hurts my heart when	
+iI continue to use them, as I've mentioned before. I acknowledge	
+ithat I'll make choices that compromise my principles due to	
+iconvenience, and that's something I would like to lessen.	
+i	
+iDo you think simply pulling websites off AWS can help facilitate	
+ithat sort of change? Am I ready to shut down my Google account? Is	
+ithat even viable as an Android user with Project Fi? I doubt it.	
+iWhat are my realistic alternatives for phone service, anyway? Next	
+iyear I'll have a super-basic eInk phone I can set up on t-mobile,	
+ibut are they any better? Is any phone service any better?	
+i	
+iI suspect I have a tiny bit of inertia I can use here but I just	
+idon't see a clear action I can take. A lot of you have done	
+isimilar transitions in the past. Do you have any advice?	
