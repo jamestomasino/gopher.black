@@ -3,6 +3,76 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>proper mirroring</title>
+  <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
+  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Proper mirroring
+April 29th, 2018
+----------------------------------------
+
+A few folks were kind enough to let me know that my recent
+experiments with tor [0][1] broke my gopher hole mirrored on SDF
+and tilde.town. In reality, those mirrors weren't all that useful
+in the first place. All the links in my gophermaps to internal
+resources were using full, complete hostnames & ports. Thus, if
+you went to SDF, after link #1 you were really over on
+gopher.black anyway.
+
+[0] gopher.black on tor, part 1
+    gopher:///1/phlog/20180427-gopher-black-on-tor-part-1
+[1] gopher.black on tor, part 2
+    gopher:///1/phlog/20180428-gopher-black-on-tor-part-2
+
+This wasn't ideal, but it was low priority. It worked well enough,
+right? When I removed the explicit hostname & port info from
+gophermaps to allow my dual server goodness for tor, suddenly SDF
+and tilde.town thought that my links were legitimately local.
+There was just one problem... my content paths are different on
+all three systems.
+
+On gopher.black, / is mine. Everything starts there.
+On SDF, /users/tomasino is mine.
+On tilde.town, /~tomasino is mine
+
+The fix didn't take a ton of work since I already had a pretty
+solid foundation for mirroring the content. I have a local copy of
+my gopher git repo on those boxes and a cron-job that pulls it
+four times a day. Simple! Well, now I have a little extra goodness
+in there.
+
+The update process looks like so:
+
+  - Fetch the remote
+  - Check the SHA of the latest commit in HEAD vs origin/master
+  - If different:
+    - force reset the local head
+    - pull origin/master
+    - find all gophermaps and use sed to replace root paths
+    - touch the local folder (for SDF's phlog list)
+
+Here's the code [2]:
+[2] sdf-update-gopher
+    http://gist.github.com/jamestomasino/8241f9e3daf2a0fa49e5a9d35679a427
+
+It's not the cleanest. I could remove the pushd/popd stuff. It's
+legacy from a much more complex process time. The sed command is
+cumbersome as well. I could have matched \t/[^\t]*$ instead, but
+it works. So, like most of my stuff... good enough.
+
+A final note:
+
+Moku Pona & my reading lists are local cron tasks on gopher.black
+that update quite often. To avoid a bajillion commits to my gopher
+repo I don't include them at all. That means my moku-pona list and
+reading lists are not available on SDF or tilde.town. All the rest
+of the goods are there, though.
+
+Enjoy & stuff!
+</pre>]]></description>
+</item>
+<item>
   <title>gopher black on tor part 2</title>
   <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
   <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
@@ -19,6 +89,8 @@ the production onion address: blackgviz2y4nhrd.onion [0]
     gopher://blackgviz2y4nhrd.onion/1/
 
 In my last post [1] I mentioned three problems I had left:
+[1] gopher.black on tor, part 1
+    gopher:///1/phlog/20180427-gopher-black-on-tor-part-1
 
 1) Ugly onion addresses
 2) Internal links kick you out of tor
@@ -515,31 +587,6 @@ I'd like to offer one up right away and get your feedback:
 
 [3] What should we name this gopher convention?
     gopher://khzae.net/1/poll/1523589765
-</pre>]]></description>
-</item>
-<item>
-  <title>burrow v1 5 0 portable</title>
-  <link>gopher://gopher.black/0/phlog/./20180411-burrow-v1-5-0-portable/gophermap</link>
-  <pubdate>Wed, 11 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-burrow v1.5.0 - portable
-April 11th, 2018
-----------------------------------------
-
-burrow v1.5.0 is released [0]. I've removed the bash 4+
-requirement and moved the script to /bin/sh. There are a number of
-other small improvements and bug fixes as well.
-
-[0] burrow v1.5.0
-    http://github.com/jamestomasino/burrow/releases/tag/v1.5.0
-
-You can always find a link to the latest release in the root of
-this gopher hole. Grab your copy and test it out. Find a bug? Log
-it on Github, please [1].
-
-[1] burrow issues
-    http://github.com/jamestomasino/burrow/issues
 </pre>]]></description>
 </item>
 </channel>
