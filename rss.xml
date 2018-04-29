@@ -73,6 +73,32 @@ Enjoy & stuff!
 </pre>]]></description>
 </item>
 <item>
+  <title>gdpr</title>
+  <link>gopher://gopher.black/0/phlog/./20180429-gdpr/gophermap</link>
+  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+GDPR
+April 29th, 2018
+----------------------------------------
+
+******************************************************************
+******************************************************************
+******************************************************************
+***                                                            ***
+***                       N O T I C E                          ***
+***                           O F                              ***
+***                         G D P R                            ***
+***                 C O M P L I A N C E (1)                    ***
+***                                                            ***
+******************************************************************
+******************************************************************
+******************************************************************
+
+1. Because Gopher
+</pre>]]></description>
+</item>
+<item>
   <title>gopher black on tor part 2</title>
   <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
   <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
@@ -510,83 +536,6 @@ sort of safety-maintenance feel.
     gopher://alexschroeder.ch/02018-04-13_Backup_Format
 [1] Kensanata - Bitlbee-Mastodon
     http://github.com/kensanata/bitlbee-mastodon
-</pre>]]></description>
-</item>
-<item>
-  <title>port 70 or 1436con</title>
-  <link>gopher://gopher.black/0/phlog/./20180412-port-70-or-1436con/gophermap</link>
-  <pubdate>Thu, 12 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Port 70 -or- 1436CON
-April 12th, 2018
-----------------------------------------
-
-sysdharma posted [0], I replied [1], and sysdharma posted [2]
-again about a real gopher convention. Go catch up if you haven't
-read those yet. I'll wait...
-
-[0] sysdharma - Gophercon vs Gophercon
-    gopher://sdf.org/1/users/sysdharma/phlog/./2018.04.08
-[1] tomasino - re sysdharma: Gophercon
-    gopher:///1/phlog/20180408-re-sysdharma-gophercon
-[2] sysdharma - On a Gopher conference
-    gopher://sdf.org/1/users/sysdharma/phlog/./2018.04.12
-
-Here's the thing. I want to do it.
-
-Obviously it's not going to be in-person, but a virtual conference
-is totally doable. Here's what I'm thinking:
-
-  - A 24 hour conference
-  - Everyone can submit a proposal for a session they want to run
-    with the following info:
-
-    - Who you are (handle)
-    - Title / Subject of talk
-    - Duration
-    - Preferred time-slot in UTC
-    - Medium of talk (video stream, audio stream, etc)
-    - Where will you be watching for feedback/discussion (IRC,
-      Social Media, raw TCP packets?)
-
-    We will need a place where these can be submitted and stored.
-    It would be great if the submissions could be done in Gopher
-    itself (anyone want to volunteer to write a cgi for
-    submissions?).
-  
-  - After X number of days/weeks, we close submissions and print
-    up a schedule for everyone to review
-  - On the day of the event, it's up to the speakers to get
-    themselves online in their medium. (Maybe we can get a 24hr
-    anonradio takeover?)
-  - Folks can tune in and join the relevant chats
-  - Archive the shit out of all of it and host it EVERYWHERE
-
-I also think we should do one or two "special" sessions and close
-off the time blocks so they're not up against anyone else.
-Round-table or panel discussions would be cool for this. I welcome
-ideas.
-
-Finally, I think a hackathon would be cool to toss in the mix. It
-could be done the day of, or the day before and results shared out
-on the day. I'm not sure what we could gather in prizes, but for
-our retro-con I bet we could get a couple minor sponsors willing
-to toss in some swag. I'd be amazed if smj didn't jump at the
-opportunity to offload some old SDF stickers. ;)
-
-Like the panel discussion, the focus of the hackathon would be
-something great to debate. My first suggestion: "Gopher meets
-Docker". What sorts of amazingly cool configurations could we bust
-out for the community in easy-to-deploy ways? TLS? TOR? Whatever
-you can dream up. We could vote on the winners on GopherPoll or
-something.
-
-Speaking of GopherPoll (thanks tfurrows for pointing it out),
-I'd like to offer one up right away and get your feedback:
-
-[3] What should we name this gopher convention?
-    gopher://khzae.net/1/poll/1523589765
 </pre>]]></description>
 </item>
 </channel>
