@@ -3,6 +3,111 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>the games we play</title>
+  <link>gopher://gopher.black/0/phlog/./20180501-the-games-we-play/gophermap</link>
+  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+The games we play
+May 01st, 2018
+----------------------------------------
+
+There's been a lot of people talking recently about games they're
+playing, whether on the computer, board game, or pencil-based
+RPGs. It's been really inspiring.
+
+I love RPGs so much, and I'm happy that I've got a monthly game
+going with a local crew. We're playing online with Discord and
+Roll20.net and it's... fair. I prefer no electronics involved in
+my table-top, and everyone around the same table. Still, I'll take
+what I can get.
+
+At work I spent a little bit of my team-building budget to buy
+a couple board games. Charterstone, a fancy new legacy game, and
+a casual game called Lattice are the first purchases. I'll report
+back on how they work soon.
+
+I've also been thinking about other games I play or have played
+with my friends over the years. Some are easily categorized, like
+the D&D campaigns I've run or played in. Others are hard to pin
+down, like the De Profundis writing-game I've got here on
+gopher.black [0].
+
+[0] De Profundis
+    gopher:///1/writing/deprofundis
+
+This is a game of sorts, but it's also collaborative writing. It
+started with the first letter when I wrote it in an email to my
+friend Dan. I didn't give much explanation other than, "you get to
+write from the other side and move the story along." We don't
+communicate about our plans for each letter and we can introduce
+characters as we see fit. We meticulously research historical
+locations and events to prepare each one, and try to keep to the
+style of the time as best as we're able. Dan's got the next letter
+coming my way soon and I'm thrilled.
+
+My game experience isn't all table-top or computer based, of
+course. When I was a teen in Boy Scouts we did a lot of
+night-gaming. Usually it was something akin to capture the flag,
+or a moderately violent hide-and-seek variant we called Man Hunt.
+My favorite thing was what I called "Flee-running". If you're
+familiar with Free Running or Parkour, it's more in line with the
+latter. It wasn't about flourishes, but rather about getting from
+point A to point B as efficiently as possible. The only difference
+was, you were being chased. It's a combination of tag & parkour
+usually played deep in the woods, often in the dark. It's skill
+based only so much as it takes a lot of skill not to stop running
+when you take a branch to the face in the middle of the night. It
+was so thrilling, though. I've lept from cabin roofs, tarzan'd
+across creeks, and jumped through windows. So dangerous, and so
+fun.
+
+We also had really stupid high school games. There's one that
+I picked up on in college that started from a friend's high school
+time. It's really simple, if someone says the word "bogwan" you
+have to freeze exactly where you are in the position you're in for
+thirty seconds. If it's dangerous or whatever, then you don't...
+but once you're clear of danger you have to freeze. It was mostly
+used to emphasize some stupid expression you were making at the
+time. Make some embarrasing face and you're bound to be bogwan'd.
+It's still active and on rare occasion I'll get a bogwan text from
+that crew.
+
+There's so many other stupid games from that time. A lot of them
+involve getting punched in the balls, for some reason. High school
+again, I guess.
+
+Board games are coming back into my life again which is great.
+I've got one RPG going and will likely run a Numenera game
+sometime in the next year. I'm doing a retro-gaming playthrough of
+the complete Zelda franchise and occasionally twitch stream it.
+I'm 8bitino on Twitch, but I rarely go on. I'm about halfway
+through Zelda II: The Adventure of Link. It's hard! Next up will
+be the Game Boy games, and I'm really excited.
+
+I also am in a slow retro-playthrough of the Quest for Glory
+series. I rocked QFG1 in style on Twitch not too long ago. I have
+my saved character for QFG2, but I'm going to restart it now that
+I found a VGA version. The most exciting thing about this
+playthrough is that I've never played QFG5. I stopped at #4 and
+loved it so much, but 5 came out after I'd moved on to other
+things. EEEk, so much fun!
+
+In a future post I'd like to cover off on some of the RPG
+campaigns I've run in the past. The Assassini is probably my best
+one, so I think I'll start there. 
+
+Assassini
+
+Setting: 1716 Paris 
+
+Mission: Two agents of the Catholic Church, armed with Papal
+dispensation, have been dispatched to undermine the political
+power in the region, uncover a religious mystery, and combat
+agents of the British Crown who seek to disrupt their plans.
+</pre>]]></description>
+</item>
+<item>
   <title>proper mirroring</title>
   <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
   <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
@@ -488,54 +593,6 @@ I'm going to mod into a garage parking indicator.
 
 Electronics was fun back in the day, but now it's also easy.
 That's cool.
-</pre>]]></description>
-</item>
-<item>
-  <title>backups are good</title>
-  <link>gopher://gopher.black/0/phlog/./20180414-backups-are-good/gophermap</link>
-  <pubdate>Sat, 14 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Backups are good
-April 14th, 2018
-----------------------------------------
-
-Alex Schroeder wrote recently [0] about backup formats. It was an
-important reminder that since I'd moved everything (web, gopher,
-... is that everything?) to a raspberry pi and configured it all
-to a working state, I hadn't backed up the system. Granted, all
-the content I have is in git, but the system configuration itself
-is worth quite a bit of work.
-
-Evidence of this can be found easily. Tonight after I did a backup
-(more on that in a second) I rebooted the machine and discovered
-that bitlbee didn't start up correctly. I'm using kensanata's
-fabulous bitlbee-mastodon plugin [1] to do all my social media
-junk via IRC. It's awesome, but it was a headache to get working.
-For some reason I couldn't get it to play nice with the apt
-version of Bitlbee, so I had to compile everything from source.
-Tonight when bitlbee stopped responding I ended up trying the
-whole process over again, eventually giving up on apt again, and
-reinstalling from source. (This time I properly set up systemd.)
-
-Mastodon in Weechat is a minor thing, but it's evidence enough
-that I don't want to have to rebuild the box. So, I unplugged the
-pi for a few minutes, removed the SD card, plugged it into another
-machine and 'dd' copied everything to an ISO. I don't think I need
-to worry about doing that too often, thankfully, as it means
-downtime for the box. If I ever needed to restore, I can flash
-a new SD card, plug it in, then run update on all the git repos.
-It will pick up pretty much everything that way, unless I do some
-serious system additions.
-
-I think I'll do the full SD backup semi-annually, maybe when
-I change the batteries in my smoke detectors. It has a similar
-sort of safety-maintenance feel.
-
-[0] Alex Schroeder - Backup Format
-    gopher://alexschroeder.ch/02018-04-13_Backup_Format
-[1] Kensanata - Bitlbee-Mastodon
-    http://github.com/kensanata/bitlbee-mastodon
 </pre>]]></description>
 </item>
 </channel>
