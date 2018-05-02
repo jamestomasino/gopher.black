@@ -4,7 +4,7 @@
 <description>Tomasino's Gopher Hole</description>
 <item>
   <title>The Games We Play</title>
-  <link>gopher://gopher.black/0/phlog/./20180501-the-games-we-play/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180501-the-games-we-play/gophermap</link>
   <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -109,7 +109,7 @@ agents of the British Crown who seek to disrupt their plans.
 </item>
 <item>
   <title>Stuck</title>
-  <link>gopher://gopher.black/0/phlog/./20180501-stuck/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180501-stuck/gophermap</link>
   <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -128,7 +128,7 @@ to remember this one specific thing has me stuck. Stupid brain.
 </item>
 <item>
   <title>Proper Mirroring</title>
-  <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180429-proper-mirroring/gophermap</link>
   <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -198,7 +198,7 @@ Enjoy & stuff!
 </item>
 <item>
   <title>Gdpr</title>
-  <link>gopher://gopher.black/0/phlog/./20180429-gdpr/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180429-gdpr/gophermap</link>
   <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -224,7 +224,7 @@ April 29th, 2018
 </item>
 <item>
   <title>Gopher Black On Tor Part 2</title>
-  <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180428-gopher-black-on-tor-part-2/gophermap</link>
   <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -316,7 +316,7 @@ find . -name "gophermap" -exec sed -i 's/\tgopher.black.*//g' {} \;
 </item>
 <item>
   <title>Poison Sumac</title>
-  <link>gopher://gopher.black/0/phlog/./20180427-poison-sumac/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180427-poison-sumac/gophermap</link>
   <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -361,7 +361,7 @@ I hope this clears up soon. I'm so damned itchy!
 </item>
 <item>
   <title>Gopher Black On Tor Part 1</title>
-  <link>gopher://gopher.black/0/phlog/./20180427-gopher-black-on-tor-part-1/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180427-gopher-black-on-tor-part-1/gophermap</link>
   <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -517,7 +517,7 @@ and give you all the new tor address.
 </item>
 <item>
   <title>Grex Hiccups</title>
-  <link>gopher://gopher.black/0/phlog/./20180420-grex-hiccups/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180420-grex-hiccups/gophermap</link>
   <pubdate>Fri, 20 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -541,7 +541,7 @@ Any of you grex'rs have more to the story?
 </item>
 <item>
   <title>The Hobbit</title>
-  <link>gopher://gopher.black/0/phlog/./20180418-the-hobbit/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180418-the-hobbit/gophermap</link>
   <pubdate>Wed, 18 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -570,7 +570,7 @@ He didn't want to stop at one.
 </item>
 <item>
   <title>Sheet Music</title>
-  <link>gopher://gopher.black/0/phlog/./20180417-sheet-music/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/20180417-sheet-music/gophermap</link>
   <pubdate>Tue, 17 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
