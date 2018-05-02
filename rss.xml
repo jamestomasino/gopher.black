@@ -108,6 +108,25 @@ agents of the British Crown who seek to disrupt their plans.
 </pre>]]></description>
 </item>
 <item>
+  <title>Stuck</title>
+  <link>gopher://gopher.black/0/phlog/./20180501-stuck/gophermap</link>
+  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Stuck
+May 01st, 2018
+----------------------------------------
+
+I've been sitting at my desk for 20 minutes tabbing back and forth
+between virtual desktops, tmux sessions/windows/panes, weechat
+channels, etc. I feel like I had something I wanted to do, or
+maybe say, but I can't remember what it is. It's paralyzing me.
+
+I have 30,000 things I could be doing right now but my inability
+to remember this one specific thing has me stuck. Stupid brain.
+</pre>]]></description>
+</item>
+<item>
   <title>Proper Mirroring</title>
   <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
   <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
@@ -571,28 +590,6 @@ converter to Shakuhachi utf-8 notation [2].
     http://abcnotation.com
 [2] Shakuhachi
     gopher://gopher.black/1/explorations/shakuhachi
-</pre>]]></description>
-</item>
-<item>
-  <title>Arduinos</title>
-  <link>gopher://gopher.black/0/phlog/./20180415-arduinos/gophermap</link>
-  <pubdate>Sun, 15 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Arduinos
-April 15th, 2018
-----------------------------------------
-
-Just wanted to say that I really appreciate the arduino and other
-awesome, friendly microcontrollers. I'm getting a subscription box
-from Creation Crate and it's stretching me to think of new ways to
-use the device while also increasing my inventory. I just made
-a memory game (like Simon). It was easy, but I never would have
-thought to do it on my own. Next up is a distance detector which
-I'm going to mod into a garage parking indicator.
-
-Electronics was fun back in the day, but now it's also easy.
-That's cool.
 </pre>]]></description>
 </item>
 </channel>
