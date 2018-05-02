@@ -3,7 +3,7 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
-  <title>the games we play</title>
+  <title>The Games We Play</title>
   <link>gopher://gopher.black/0/phlog/./20180501-the-games-we-play/gophermap</link>
   <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -34,7 +34,7 @@ down, like the De Profundis writing-game I've got here on
 gopher.black [0].
 
 [0] De Profundis
-    gopher:///1/writing/deprofundis
+    gopher://gopher.black/1/writing/deprofundis
 
 This is a game of sorts, but it's also collaborative writing. It
 started with the first letter when I wrote it in an email to my
@@ -108,7 +108,7 @@ agents of the British Crown who seek to disrupt their plans.
 </pre>]]></description>
 </item>
 <item>
-  <title>proper mirroring</title>
+  <title>Proper Mirroring</title>
   <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
   <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -126,9 +126,9 @@ you went to SDF, after link #1 you were really over on
 gopher.black anyway.
 
 [0] gopher.black on tor, part 1
-    gopher:///1/phlog/20180427-gopher-black-on-tor-part-1
+    gopher://gopher.black/1/phlog/20180427-gopher-black-on-tor-part-1
 [1] gopher.black on tor, part 2
-    gopher:///1/phlog/20180428-gopher-black-on-tor-part-2
+    gopher://gopher.black/1/phlog/20180428-gopher-black-on-tor-part-2
 
 This wasn't ideal, but it was low priority. It worked well enough,
 right? When I removed the explicit hostname & port info from
@@ -178,7 +178,7 @@ Enjoy & stuff!
 </pre>]]></description>
 </item>
 <item>
-  <title>gdpr</title>
+  <title>Gdpr</title>
   <link>gopher://gopher.black/0/phlog/./20180429-gdpr/gophermap</link>
   <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -204,7 +204,7 @@ April 29th, 2018
 </pre>]]></description>
 </item>
 <item>
-  <title>gopher black on tor part 2</title>
+  <title>Gopher Black On Tor Part 2</title>
   <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
   <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -221,7 +221,7 @@ the production onion address: blackgviz2y4nhrd.onion [0]
 
 In my last post [1] I mentioned three problems I had left:
 [1] gopher.black on tor, part 1
-    gopher:///1/phlog/20180427-gopher-black-on-tor-part-1
+    gopher://gopher.black/1/phlog/20180427-gopher-black-on-tor-part-1
 
 1) Ugly onion addresses
 2) Internal links kick you out of tor
@@ -296,7 +296,7 @@ find . -name "gophermap" -exec sed -i 's/\tgopher.black.*//g' {} \;
 </pre>]]></description>
 </item>
 <item>
-  <title>poison sumac</title>
+  <title>Poison Sumac</title>
   <link>gopher://gopher.black/0/phlog/./20180427-poison-sumac/gophermap</link>
   <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -341,7 +341,7 @@ I hope this clears up soon. I'm so damned itchy!
 </pre>]]></description>
 </item>
 <item>
-  <title>gopher black on tor part 1</title>
+  <title>Gopher Black On Tor Part 1</title>
   <link>gopher://gopher.black/0/phlog/./20180427-gopher-black-on-tor-part-1/gophermap</link>
   <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -497,7 +497,7 @@ and give you all the new tor address.
 </pre>]]></description>
 </item>
 <item>
-  <title>grex hiccups</title>
+  <title>Grex Hiccups</title>
   <link>gopher://gopher.black/0/phlog/./20180420-grex-hiccups/gophermap</link>
   <pubdate>Fri, 20 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -521,7 +521,7 @@ Any of you grex'rs have more to the story?
 </pre>]]></description>
 </item>
 <item>
-  <title>the hobbit</title>
+  <title>The Hobbit</title>
   <link>gopher://gopher.black/0/phlog/./20180418-the-hobbit/gophermap</link>
   <pubdate>Wed, 18 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -550,7 +550,7 @@ He didn't want to stop at one.
 </pre>]]></description>
 </item>
 <item>
-  <title>sheet music</title>
+  <title>Sheet Music</title>
   <link>gopher://gopher.black/0/phlog/./20180417-sheet-music/gophermap</link>
   <pubdate>Tue, 17 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -570,11 +570,11 @@ converter to Shakuhachi utf-8 notation [2].
 [1] ABC notation
     http://abcnotation.com
 [2] Shakuhachi
-    gopher:///1/explorations/shakuhachi
+    gopher://gopher.black/1/explorations/shakuhachi
 </pre>]]></description>
 </item>
 <item>
-  <title>arduinos</title>
+  <title>Arduinos</title>
   <link>gopher://gopher.black/0/phlog/./20180415-arduinos/gophermap</link>
   <pubdate>Sun, 15 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
