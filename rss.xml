@@ -3,8 +3,44 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Minor Writing Update</title>
+  <link>gopher://gopher.black/0/phlog/./20180504-minor-writing-update/gophermap</link>
+  <pubdate>Fri, 04 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Minor writing update
+May 04th, 2018
+----------------------------------------
+
+I managed to add a bit more to my "storymatic" [0] writing
+exercise. For those that missed that one, it's a thing where
+I draw some cards out of a box that give me an idea for
+a character and a story hook and I write a short story from there.
+It's your typical writing prompt deal, but it's all fancy and
+randomized. 
+
+Swing over and check it out if you're in the mood. [1] I think
+I like how this one is turning out. I need to decide how I want to
+wrap it up.
+
+I've also been re-reading where I left off with Emergence [2].
+I may insert some other content before the current chapter three.
+I think the revelations in that chapter came too soon and I have
+more to add before it happens.
+
+I'm glad to feel the writing itch come back.
+
+[0] phlog - storymatic
+    gopher://gopher.black/1/phlog/20180304-storymatic
+[1] story - storymatic 0001
+    gopher://gopher.black/0/writing/exercises/storymatic0001.txt
+[2] story - emergence
+    gopher://gopher.black/1/writing/emergence
+</pre>]]></description>
+</item>
+<item>
   <title>The Games We Play</title>
-  <link>gopher://gopher.black/0/phlog/20180501-the-games-we-play/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180501-the-games-we-play/gophermap</link>
   <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -109,7 +145,7 @@ agents of the British Crown who seek to disrupt their plans.
 </item>
 <item>
   <title>Stuck</title>
-  <link>gopher://gopher.black/0/phlog/20180501-stuck/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180501-stuck/gophermap</link>
   <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -128,7 +164,7 @@ to remember this one specific thing has me stuck. Stupid brain.
 </item>
 <item>
   <title>Proper Mirroring</title>
-  <link>gopher://gopher.black/0/phlog/20180429-proper-mirroring/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
   <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -198,7 +234,7 @@ Enjoy & stuff!
 </item>
 <item>
   <title>Gdpr</title>
-  <link>gopher://gopher.black/0/phlog/20180429-gdpr/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180429-gdpr/gophermap</link>
   <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -224,7 +260,7 @@ April 29th, 2018
 </item>
 <item>
   <title>Gopher Black On Tor Part 2</title>
-  <link>gopher://gopher.black/0/phlog/20180428-gopher-black-on-tor-part-2/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
   <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -316,7 +352,7 @@ find . -name "gophermap" -exec sed -i 's/\tgopher.black.*//g' {} \;
 </item>
 <item>
   <title>Poison Sumac</title>
-  <link>gopher://gopher.black/0/phlog/20180427-poison-sumac/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180427-poison-sumac/gophermap</link>
   <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -361,7 +397,7 @@ I hope this clears up soon. I'm so damned itchy!
 </item>
 <item>
   <title>Gopher Black On Tor Part 1</title>
-  <link>gopher://gopher.black/0/phlog/20180427-gopher-black-on-tor-part-1/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180427-gopher-black-on-tor-part-1/gophermap</link>
   <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -517,7 +553,7 @@ and give you all the new tor address.
 </item>
 <item>
   <title>Grex Hiccups</title>
-  <link>gopher://gopher.black/0/phlog/20180420-grex-hiccups/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180420-grex-hiccups/gophermap</link>
   <pubdate>Fri, 20 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -541,7 +577,7 @@ Any of you grex'rs have more to the story?
 </item>
 <item>
   <title>The Hobbit</title>
-  <link>gopher://gopher.black/0/phlog/20180418-the-hobbit/gophermap</link>
+  <link>gopher://gopher.black/0/phlog/./20180418-the-hobbit/gophermap</link>
   <pubdate>Wed, 18 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
@@ -566,30 +602,6 @@ A deep breath.
 "In a hole in the ground there lived a hobbit."
 
 He didn't want to stop at one.
-</pre>]]></description>
-</item>
-<item>
-  <title>Sheet Music</title>
-  <link>gopher://gopher.black/0/phlog/20180417-sheet-music/gophermap</link>
-  <pubdate>Tue, 17 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Sheet music
-April 17th, 2018
-----------------------------------------
-
-ckeen writes [0] about ABC notation [1] on his phlog, a way to
-write music in ascii that's convertable to other formats including
-sheet music. I love the idea and have added a collection of
-bookmarks to read. Maybe I'll get around to writing my own
-converter to Shakuhachi utf-8 notation [2].
-
-[0] ckeen - Setting music sheets
-    gopher://vernunftzentrum.de/0/ckeen/phlog/2018-04-17-Setting-music-sheets.md
-[1] ABC notation
-    http://abcnotation.com
-[2] Shakuhachi
-    gopher://gopher.black/1/explorations/shakuhachi
 </pre>]]></description>
 </item>
 </channel>
