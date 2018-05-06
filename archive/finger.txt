@@ -1,0 +1,64 @@
+[In reply to message sent Mon, 19 Feb 90 16:02:17 EST.]
+
+I'm glad that you are enjoying the C3 articles.  I need to write another
+one soon.
+
+Here is a response to your conjectures, mostly regurgitated from an
+article that I posted on Human-nets in 1985.  Feel free to forward it to
+alt.forklore.computers, or I can post it there if you prefer.  I haven't
+been reading that newsgroup, but a quick look indicates that maybe I
+should.
+
+Finger was named for the act of pointing.  I recall that sometime after it
+became popular I received a message from a system administrator who
+thought that it should be renamed so that users would not have to use a
+"dirty" word.  I gave his request all the consideration that it deserved.
+
+I created Finger around 1971 to meet a local need at the Stanford
+Artifical Intelligence Lab.  People generally worked long hours there,
+often with unpredictable schedules.  When you wanted to meet with some
+group, it was important to know who was there and when the others would
+likely reappear.  It also was important to be able to locate potential
+volleyball players when you wanted to play, Chinese food freaks when you
+wanted to eat, and antisocial computer users when it appeared that
+something strange was happening on the system.
+
+The only tool then available for seeing who was running on our DEC-10
+computer was a WHO program that showed IDs and terminal line numbers for
+people who were logged in.  There was no information available on people
+who were not logged in.  I frequently saw people running their fingers
+down the WHO display saying things like "There's Don and that's Pattie but
+I don't know when Tom was last seen." or "Who in hell is VVK and where
+does line 63 go?"
+
+I wrote Finger and developed the supporting database to provide this
+information in traditional human terms -- real names and places.  Because
+I preferred to talk face to face rather than through the computer or
+telephone, I put in the feature that tells how long the terminal had been
+idle, so that I could assess the likelihood that I would find them there
+if I walked down the hall.
+
+The program was an instant hit.  Some people asked for the Plan file
+feature so that they could explain their absence or how they could be
+reached at odd times, so I added it.  I found it interesting that this
+feature evolved into a forum for social commentary and amusing
+observations.
+
+Finger was picked up by a number of other groups with DEC-10 computers
+that were connected to Arpanet -- software flowed in all directions around
+the net in those days.  It later migrated to Un*x, probably via U.C.
+Berkeley.  Somewhere along the line the idea arose to provide a network
+Finger service.  I don't remember who suggested that but it seemed like a
+good idea at the time so I stuck it in.  Some other anxious people wanted
+to be able to verify that their mail was delivered to specific addressees,
+so the Mail feature was also added.
+
+While I was somewhat surprised by the popularity of Finger, it has not
+been as successful as an earlier program that I invented -- the spelling
+checker.  It too was created to fill a personal need that many others
+apparently share.  We didn't think about commercial development and
+software protection in those days, but if we had we probably could have
+made something out of it.  On the other hand, I enjoyed the comradery
+of those gentler times and have no regrets.
+
+        -Les Earnest (L...@Sail.Stanford.edu)
