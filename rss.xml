@@ -3,6 +3,35 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Fbi Files</title>
+  <link>gopher://gopher.black/0/phlog/./20180505-fbi-files/gophermap</link>
+  <pubdate>Sat, 05 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+FBI Files
+May 05th, 2018
+----------------------------------------
+
+I was sorting through some of my bookmarks tonight and I ran
+across something that I pinned for myself and completely forgot
+about. It's a site called "Get My FBI File". [0]
+
+[0] Get My FBI File
+    http://getmyfbifile.com/
+
+It's a simple form that generates you a bunch of letters that you
+can print off and mail in under the Freedom of Information Act to
+request government agency files on you. (The FAQ states you can
+send the requests even if you aren't a US citizen, with a few
+modifications).
+
+I filled out all of them and will drop them in the mail Monday
+morning. I doubt there's much in those files on me, if anything,
+but I just don't know for sure. That's enough reason in itself to
+send the requests.
+</pre>]]></description>
+</item>
+<item>
   <title>Minor Writing Update</title>
   <link>gopher://gopher.black/0/phlog/./20180504-minor-writing-update/gophermap</link>
   <pubdate>Fri, 04 May 2018 00:00:00 -0400</pubdate>
@@ -573,35 +602,6 @@ Any of you grex'rs have more to the story?
     gopher://grex.org/1/
 [1] moku-pona
     http://github.com/kensanata/moku-pona
-</pre>]]></description>
-</item>
-<item>
-  <title>The Hobbit</title>
-  <link>gopher://gopher.black/0/phlog/./20180418-the-hobbit/gophermap</link>
-  <pubdate>Wed, 18 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-The Hobbit
-April 18th, 2018
-----------------------------------------
-
-I just hit one of the coolest dad milestones. I'm reading The
-Hobbit to my son. He's five, nearly six, and I've been talking it
-up for the last couple days to get him excited. Tonight, he agreed
-to listen to one page.
-
-"If you like it," I said, "I can read a little more. If not, we
-can read this other book tonight and try again later."
-
-He agreed. He lifted a stuffed dragon to his chest and nestled
-into a spot at my hip against his pillow. I looked down and he
-looked back up.
-
-A deep breath.
-
-"In a hole in the ground there lived a hobbit."
-
-He didn't want to stop at one.
 </pre>]]></description>
 </item>
 </channel>
