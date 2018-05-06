@@ -20,6 +20,7 @@ Vibudh Sahu
 
 Pierre-Jean Trauffaut
     - Named Frank
+    - Creates bridge to let Frank understand the real world through mathematics
 
 Viktor Nilsson
     - Heavyset, extra weight around middle
