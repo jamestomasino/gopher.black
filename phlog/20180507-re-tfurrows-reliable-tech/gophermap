@@ -1,0 +1,18 @@
+i----------------------------------------		gopher.black	70
+iRe: tfurrows - Reliable tech		gopher.black	70
+iMay 07th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iFirst let me offer my condolences to tfurrows for the loss of		gopher.black	70
+ia long phlog post. [0] Your loss is also ours.		gopher.black	70
+i		gopher.black	70
+iSecond, let me suggest a slight modification to your workflow:		gopher.black	70
+i- Generate a tmp-file for authoring		gopher.black	70
+i- Process tmp-file in a secondary stage for formatting		gopher.black	70
+i		gopher.black	70
+iIf the formatting fails, you still have your temp file.		gopher.black	70
+i		gopher.black	70
+iAlternatively, vim will save everything you type to a swap-file as		gopher.black	70
+iyou type it, and preserve undo states. Come to the dark side.		gopher.black	70
+i		gopher.black	70
+0[0] tfurrows - Reliablility of Tools	/users/tfurrows/phlog/2018/ajt_reliabilityOfTools.txt	sdf.org	70
