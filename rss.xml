@@ -3,9 +3,104 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Deliberate Practice</title>
+  <link>gopher://gopher.black/0/phlog/20180507-deliberate-practice/gophermap</link>
+  <pubdate>07 May 2018 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Deliberate Practice
+May 07th, 2018
+----------------------------------------
+
+There's a fantastic article circulating on the typical nerd
+portals today regarding "deep work" and "deliberate practice" [0].
+Give it a read if you haven't already.
+
+[0] The Importance of Deep Work
+    http://azeria-labs.com/the-importance-of-deep-work-the-30-hour-method-for-learning-a-new-skill/
+
+One of the things I enjoyed most about the post was the summary of
+methods of deep work taken from a great book on the subject [1].
+
+[1] Deep Work: Rules for Focused Success in a Distracted World
+    http://www.goodreads.com/book/show/25744928-deep-work
+
+  Monastic: 
+  "This philosophy attempts to maximize deep efforts by
+  eliminating or radically minimizing shallow obligations."
+  — isolate yourself for long periods of time without
+  distractions; no shallow work allowed. 
+
+  Bimodal: 
+  "This philosophy asks that you divide your time, dedicating some
+  clearly defined stretches to deep pursuits and leaving the rest
+  open to everything else." – dedicate a few consecutive days
+  (like weekends, or a Sunday, for example) for deep work only, at
+  least one day a week.
+
+  Rhythmic: 
+  "This philosophy argues that the easiest way to consistently
+  start deep work sessions is to transform them into a simple
+  regular habit." – create a daily habit of three to four hours
+  every day to perform deep work on your project.
+
+  Journalistic: 
+  "in which you fit deep work wherever you can into your
+  schedule." — Not recommended to try out first, since you first
+  need to accustom yourself to deep work.
+
+This put into words a struggle I've had with my own strategies.
+I've tried dedicating a set amount of time, sort of like "Rythmic"
+but that time hasn't been long enough to establish a deep work
+flow. I've set aside days of the week for it like Bimodal, but
+rarely with the isolation necessary to really dig in. Occasionally
+I'm successful, but I think it's more to do with luck, or
+a motivation I happened to find that day, than any deliberatet
+planning.
+
+In the past I've spoken about freezing up when an opportunity for
+exploration appears [2]. I'm combatting that with organization of
+lists so I can refer back to these projects I have moving and
+I don't waste time spinning my wheels. All of it is a part of the
+effort to get back the time that should belong to me that I give
+away out of a combination of laziness and poor planning [3].
+
+[2] Stuck
+    gopher://gopher.black/1/phlog/20180501-stuck
+[3] Resolution
+    gopher://gopher.black/1/phlog/20180101-resolution
+
+Ultimately, there are skills I want to improve. The top of that
+list are my writing craft and the Shakuhachi [4]. In reality the
+list is quite a bit longer. Even so, I have the ability, I have
+the time, and I have the necessary components to make a go of it.
+
+[4] Shakuhachi (UTF-8)
+    gopher://gopher.black/1/explorations/shakuhachi
+
+Deliberate practice, not just sitting around fiddling with crap,
+is the difference I'm missing. I've told it to my son a lot, and
+I'll continue to do so in the future. You can't just go along with
+things and expect to learn and grow. You need to do the hard
+things [5]. When I practice with the Shakuhachi, I can't just go
+sit on the porch and play improvisations for twenty minutes.
+I have specific things I need to improve: timing, embouchure,
+breathing dynamics. My writing is the same. I'm working on
+a writing exercise and I've given myself a specific goal to focus
+on brevity. This is good.
+
+[1] Do the Hard Thing
+    gopher://gopher.black/1/phlog/20171108-do-the-hard-thing
+
+It's not just about doing things with my hobby time. It's work in
+itself and I need to commit to it, at least a significant portion
+of the time, if I want to improve.
+</pre>]]></description>
+</item>
+<item>
   <title>Fbi Files</title>
-  <link>gopher://gopher.black/0/phlog/./20180505-fbi-files/gophermap</link>
-  <pubdate>Sat, 05 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180505-fbi-files/gophermap</link>
+  <pubdate>05 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 FBI Files
@@ -33,8 +128,8 @@ send the requests.
 </item>
 <item>
   <title>Minor Writing Update</title>
-  <link>gopher://gopher.black/0/phlog/./20180504-minor-writing-update/gophermap</link>
-  <pubdate>Fri, 04 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180504-minor-writing-update/gophermap</link>
+  <pubdate>04 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Minor writing update
@@ -69,8 +164,8 @@ I'm glad to feel the writing itch come back.
 </item>
 <item>
   <title>The Games We Play</title>
-  <link>gopher://gopher.black/0/phlog/./20180501-the-games-we-play/gophermap</link>
-  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180501-the-games-we-play/gophermap</link>
+  <pubdate>01 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 The games we play
@@ -174,8 +269,8 @@ agents of the British Crown who seek to disrupt their plans.
 </item>
 <item>
   <title>Stuck</title>
-  <link>gopher://gopher.black/0/phlog/./20180501-stuck/gophermap</link>
-  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180501-stuck/gophermap</link>
+  <pubdate>01 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Stuck
@@ -193,8 +288,8 @@ to remember this one specific thing has me stuck. Stupid brain.
 </item>
 <item>
   <title>Proper Mirroring</title>
-  <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
-  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180429-proper-mirroring/gophermap</link>
+  <pubdate>29 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Proper mirroring
@@ -263,8 +358,8 @@ Enjoy & stuff!
 </item>
 <item>
   <title>Gdpr</title>
-  <link>gopher://gopher.black/0/phlog/./20180429-gdpr/gophermap</link>
-  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180429-gdpr/gophermap</link>
+  <pubdate>29 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 GDPR
@@ -289,8 +384,8 @@ April 29th, 2018
 </item>
 <item>
   <title>Gopher Black On Tor Part 2</title>
-  <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
-  <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180428-gopher-black-on-tor-part-2/gophermap</link>
+  <pubdate>28 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 gopher.black on tor, part 2
@@ -381,8 +476,8 @@ find . -name "gophermap" -exec sed -i 's/\tgopher.black.*//g' {} \;
 </item>
 <item>
   <title>Poison Sumac</title>
-  <link>gopher://gopher.black/0/phlog/./20180427-poison-sumac/gophermap</link>
-  <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180427-poison-sumac/gophermap</link>
+  <pubdate>27 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Poison Sumac
@@ -426,8 +521,8 @@ I hope this clears up soon. I'm so damned itchy!
 </item>
 <item>
   <title>Gopher Black On Tor Part 1</title>
-  <link>gopher://gopher.black/0/phlog/./20180427-gopher-black-on-tor-part-1/gophermap</link>
-  <pubdate>Fri, 27 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180427-gopher-black-on-tor-part-1/gophermap</link>
+  <pubdate>27 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 gopher.black on tor, part 1
@@ -578,30 +673,6 @@ Restart tor and you should be good to go!
 I'm still working through these 3 problems with my own solution,
 but once it's all done I'll be sure to share part 2 of my journey
 and give you all the new tor address.
-</pre>]]></description>
-</item>
-<item>
-  <title>Grex Hiccups</title>
-  <link>gopher://gopher.black/0/phlog/./20180420-grex-hiccups/gophermap</link>
-  <pubdate>Fri, 20 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-grex hiccups
-April 20th, 2018
-----------------------------------------
-
-I'm not sure what went down over on grex [0] recently, but it
-looks to have been sorted out. I'm glad to see everyone phlogging
-again. Interestingly, it looks like the hiccup resulted in
-moku-pona [1] kicking all the grex folk back up on top of the
-lists.
-
-Any of you grex'rs have more to the story?
-
-[0] grex.org
-    gopher://grex.org/1/
-[1] moku-pona
-    http://github.com/kensanata/moku-pona
 </pre>]]></description>
 </item>
 </channel>
