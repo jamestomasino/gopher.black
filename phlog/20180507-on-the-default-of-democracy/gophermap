@@ -1,0 +1,106 @@
+i----------------------------------------		gopher.black	70
+iOn the default of democracy		gopher.black	70
+iMay 07th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iRichard Stallman found himself in nerd-headlines today when an		gopher.black	70
+iarticle circulated on Hacker News and Lobste.rs titled "Who		gopher.black	70
+iControls glibc?" [0]		gopher.black	70
+i		gopher.black	70
+h[0] Who Controls glibc?	URL:http://lwn.net/SubscriberLink/753646/a6ebb50040c5862c/
+i		gopher.black	70
+iIn short, some of the maintainers of glibc attempted to remove		gopher.black	70
+ia comment that Stallman had added to the source in the 90s. This		gopher.black	70
+icomment was a reference to censorship in the form of hyperbole		gopher.black	70
+iabout the function being named "abort". Sensationalized headlines		gopher.black	70
+irefer to it as a bad abortion joke, but that is clearly		gopher.black	70
+ia mischaracterization. Regardless of the content of the comment		gopher.black	70
+iitself, it was Stallman's response that created a minor		gopher.black	70
+icontroversy.		gopher.black	70
+i		gopher.black	70
+iThe maintainers claim they had consensus in the community that the		gopher.black	70
+icomment (they refer to it as a joke) was unnecessary in the code		gopher.black	70
+iand should be removed. Stallman stated firmly that it will not be		gopher.black	70
+iremoved. This created an abrupt conflict in the eyes of the		gopher.black	70
+imaintainers who believed that the project is community controlled.		gopher.black	70
+iStallman stated unequivocally that he is the de facto decision		gopher.black	70
+imaker of the GNU Project, which trumps community.		gopher.black	70
+i		gopher.black	70
+iNow I've previously mentioned that I'm a monarchist [1], and not		gopher.black	70
+iin favor of democracy as a general rule. You will therefore		gopher.black	70
+iunderstand why I inherently support Stallman's position. But lets		gopher.black	70
+idive a bit deeper anyway.		gopher.black	70
+i		gopher.black	70
+1[1] Confessions of a Monarchist	/phlog/20180315-confessions-of-a-monarchist
+i		gopher.black	70
+iThe glibc maintainers are upset that Stallman, who in their eyes		gopher.black	70
+iis not contributing code to the project, has authority over it.		gopher.black	70
+iThey feel that a majority rule (or at the very minimum,		gopher.black	70
+ia consensus of the vocal maintainers) should decide how the		gopher.black	70
+iproject proceeds. We see this in a lot of open source projects		gopher.black	70
+ithese days, and it's promoted in the form of community guidelines		gopher.black	70
+imore and more often. The struggles that happen within communities		gopher.black	70
+ias a result of actions against the community guidelines is often		gopher.black	70
+ipublic and brutal. In most cases it involves the ostracising of		gopher.black	70
+iindividuals and occasionally forks in code bases. In some more		gopher.black	70
+iextreme cases it involves doxxing and personal attacks.		gopher.black	70
+i		gopher.black	70
+iIn all these cases the problem is pointed at the individual who		gopher.black	70
+ibroke outside the line of acceptable behavior according to the		gopher.black	70
+igroup. This is bread-and-butter stuff for democracy, especially in		gopher.black	70
+ithe age of maximized sensitivity. Let me give you a real example:		gopher.black	70
+i		gopher.black	70
+iJust a few weeks ago there was honest conversation and debate, in		gopher.black	70
+isome places heated, about whether or not a variable name within		gopher.black	70
+ithe Mastodon source code should refer to the "dark web" by that		gopher.black	70
+iname. Never mind that the dark web is not something named by		gopher.black	70
+iMastodon, the community at large converged on the idea that it was		gopher.black	70
+iinherently racist because it suggested some sort of evil, and by		gopher.black	70
+iincluding the name "dark" it was somehow also inferring that black		gopher.black	70
+ipeople are bad. I'm not exaggerating here. This was the actual		gopher.black	70
+iconversation and the community as a whole moved in the direction		gopher.black	70
+iof "yes, that's racist and we should rename the variable name."		gopher.black	70
+i		gopher.black	70
+iThere's so many things wrong with the specific argument, but I'm		gopher.black	70
+inot going to address them at all. Instead I'm going to focus on		gopher.black	70
+ithe structure of community projects themselves. They are almost		gopher.black	70
+ialways created by someone. Not some group, some one. Even when		gopher.black	70
+ia group is involved, there is almost always a leader, whether		gopher.black	70
+idefined or naturally as a part of that group. If the leader is the		gopher.black	70
+iultimate decision maker, then these conflicts have an authority		gopher.black	70
+iwhich can address issues that arise. If there is no authority, the		gopher.black	70
+iissue must be raised to everyone. In many cases, the very act of		gopher.black	70
+iraising an issue to everyone is going to escalate that issue, and		gopher.black	70
+ionce it is escalated, there's no bringing it back to Earth.		gopher.black	70
+i		gopher.black	70
+iIn a group which has an authority, the whims of the masses are		gopher.black	70
+inormalized. The fad of the day is quietly passed by and the		gopher.black	70
+iproject avoids moving with tides of opinion. If given over to the		gopher.black	70
+imob, the loudest will prevail or destroy.		gopher.black	70
+i		gopher.black	70
+iDemocracy's lie is that everyone gets an equal voice. This isn't		gopher.black	70
+itrue because not everyone is equally aware and equally		gopher.black	70
+iunderstands, and has the equal background to make their equal		gopher.black	70
+idecision. Instead, the group relies on those who stand tall and		gopher.black	70
+ishout to the masses. "Rally around me!" they cry. "I understand		gopher.black	70
+iwhat needs to change." And so the democratic individual is		gopher.black	70
+ipresented with a choice. It is not a choice born of her natural		gopher.black	70
+iinclination and understanding of the world, but a response to		gopher.black	70
+ia loud individual. This spark invites other loud individuals to		gopher.black	70
+ichime in and steer the conversation. Their voices are not equal		gopher.black	70
+istill. The ability to speak may be equal, but that is all.		gopher.black	70
+i		gopher.black	70
+i(Small aside: I live next to a canal with a lot of wildlife. A fox		gopher.black	70
+ijust managed to sneak up on a goose and it is being loudly		gopher.black	70
+imurdered outside my window. It's rather distracting.)		gopher.black	70
+i		gopher.black	70
+iWhere was I? Oh right.		gopher.black	70
+i		gopher.black	70
+iStallman is in charge of GNU. This is good. Without someone in		gopher.black	70
+icharge, GNU would float on the eddies of popular opinion. Instead,		gopher.black	70
+iit is a bulwark standing for freedom. Freedom as in liberty.		gopher.black	70
+iLiberty, which I've previously discussed, is diametrically opposed		gopher.black	70
+ito equality. Of course that's how he runs things. Any other way		gopher.black	70
+iwould be as ridiculous as the idea of censoring a joke about the		gopher.black	70
+ioverreach of censorship in a project dedicated to fighting fucking		gopher.black	70
+icensorship.		gopher.black	70

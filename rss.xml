@@ -4,8 +4,8 @@
 <description>Tomasino's Gopher Hole</description>
 <item>
   <title>Re Tfurrows Reliable Tech</title>
-  <link>gopher://gopher.black/0/phlog/20180507-re-tfurrows-reliable-tech/gophermap</link>
-  <pubdate>07 May 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180507-re-tfurrows-reliable-tech/gophermap</link>
+  <pubdate>Mon, 07 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Re: tfurrows - Reliable tech
@@ -29,9 +29,124 @@ you type it, and preserve undo states. Come to the dark side.
 </pre>]]></description>
 </item>
 <item>
+  <title>On The Default Of Democracy</title>
+  <link>gopher://gopher.black/0/phlog/./20180507-on-the-default-of-democracy/gophermap</link>
+  <pubdate>Mon, 07 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+On the default of democracy
+May 07th, 2018
+----------------------------------------
+
+Richard Stallman found himself in nerd-headlines today when an
+article circulated on Hacker News and Lobste.rs titled "Who
+Controls glibc?" [0]
+
+[0] Who Controls glibc?
+    http://lwn.net/SubscriberLink/753646/a6ebb50040c5862c/
+
+In short, some of the maintainers of glibc attempted to remove
+a comment that Stallman had added to the source in the 90s. This
+comment was a reference to censorship in the form of hyperbole
+about the function being named "abort". Sensationalized headlines
+refer to it as a bad abortion joke, but that is clearly
+a mischaracterization. Regardless of the content of the comment
+itself, it was Stallman's response that created a minor
+controversy.
+
+The maintainers claim they had consensus in the community that the
+comment (they refer to it as a joke) was unnecessary in the code
+and should be removed. Stallman stated firmly that it will not be
+removed. This created an abrupt conflict in the eyes of the
+maintainers who believed that the project is community controlled.
+Stallman stated unequivocally that he is the de facto decision
+maker of the GNU Project, which trumps community.
+
+Now I've previously mentioned that I'm a monarchist [1], and not
+in favor of democracy as a general rule. You will therefore
+understand why I inherently support Stallman's position. But lets
+dive a bit deeper anyway.
+
+[1] Confessions of a Monarchist
+    gopher://gopher.black/1/phlog/20180315-confessions-of-a-monarchist
+
+The glibc maintainers are upset that Stallman, who in their eyes
+is not contributing code to the project, has authority over it.
+They feel that a majority rule (or at the very minimum,
+a consensus of the vocal maintainers) should decide how the
+project proceeds. We see this in a lot of open source projects
+these days, and it's promoted in the form of community guidelines
+more and more often. The struggles that happen within communities
+as a result of actions against the community guidelines is often
+public and brutal. In most cases it involves the ostracising of
+individuals and occasionally forks in code bases. In some more
+extreme cases it involves doxxing and personal attacks.
+
+In all these cases the problem is pointed at the individual who
+broke outside the line of acceptable behavior according to the
+group. This is bread-and-butter stuff for democracy, especially in
+the age of maximized sensitivity. Let me give you a real example:
+
+Just a few weeks ago there was honest conversation and debate, in
+some places heated, about whether or not a variable name within
+the Mastodon source code should refer to the "dark web" by that
+name. Never mind that the dark web is not something named by
+Mastodon, the community at large converged on the idea that it was
+inherently racist because it suggested some sort of evil, and by
+including the name "dark" it was somehow also inferring that black
+people are bad. I'm not exaggerating here. This was the actual
+conversation and the community as a whole moved in the direction
+of "yes, that's racist and we should rename the variable name."
+
+There's so many things wrong with the specific argument, but I'm
+not going to address them at all. Instead I'm going to focus on
+the structure of community projects themselves. They are almost
+always created by someone. Not some group, some one. Even when
+a group is involved, there is almost always a leader, whether
+defined or naturally as a part of that group. If the leader is the
+ultimate decision maker, then these conflicts have an authority
+which can address issues that arise. If there is no authority, the
+issue must be raised to everyone. In many cases, the very act of
+raising an issue to everyone is going to escalate that issue, and
+once it is escalated, there's no bringing it back to Earth.
+
+In a group which has an authority, the whims of the masses are
+normalized. The fad of the day is quietly passed by and the
+project avoids moving with tides of opinion. If given over to the
+mob, the loudest will prevail or destroy.
+
+Democracy's lie is that everyone gets an equal voice. This isn't
+true because not everyone is equally aware and equally
+understands, and has the equal background to make their equal
+decision. Instead, the group relies on those who stand tall and
+shout to the masses. "Rally around me!" they cry. "I understand
+what needs to change." And so the democratic individual is
+presented with a choice. It is not a choice born of her natural
+inclination and understanding of the world, but a response to
+a loud individual. This spark invites other loud individuals to
+chime in and steer the conversation. Their voices are not equal
+still. The ability to speak may be equal, but that is all.
+
+(Small aside: I live next to a canal with a lot of wildlife. A fox
+just managed to sneak up on a goose and it is being loudly
+murdered outside my window. It's rather distracting.)
+
+Where was I? Oh right.
+
+Stallman is in charge of GNU. This is good. Without someone in
+charge, GNU would float on the eddies of popular opinion. Instead,
+it is a bulwark standing for freedom. Freedom as in liberty.
+Liberty, which I've previously discussed, is diametrically opposed
+to equality. Of course that's how he runs things. Any other way
+would be as ridiculous as the idea of censoring a joke about the
+overreach of censorship in a project dedicated to fighting fucking
+censorship.
+</pre>]]></description>
+</item>
+<item>
   <title>Deliberate Practice</title>
-  <link>gopher://gopher.black/0/phlog/20180507-deliberate-practice/gophermap</link>
-  <pubdate>07 May 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180507-deliberate-practice/gophermap</link>
+  <pubdate>Mon, 07 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Deliberate Practice
@@ -125,8 +240,8 @@ of the time, if I want to improve.
 </item>
 <item>
   <title>Fbi Files</title>
-  <link>gopher://gopher.black/0/phlog/20180505-fbi-files/gophermap</link>
-  <pubdate>05 May 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180505-fbi-files/gophermap</link>
+  <pubdate>Sat, 05 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 FBI Files
@@ -154,8 +269,8 @@ send the requests.
 </item>
 <item>
   <title>Minor Writing Update</title>
-  <link>gopher://gopher.black/0/phlog/20180504-minor-writing-update/gophermap</link>
-  <pubdate>04 May 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180504-minor-writing-update/gophermap</link>
+  <pubdate>Fri, 04 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Minor writing update
@@ -190,8 +305,8 @@ I'm glad to feel the writing itch come back.
 </item>
 <item>
   <title>The Games We Play</title>
-  <link>gopher://gopher.black/0/phlog/20180501-the-games-we-play/gophermap</link>
-  <pubdate>01 May 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180501-the-games-we-play/gophermap</link>
+  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 The games we play
@@ -295,8 +410,8 @@ agents of the British Crown who seek to disrupt their plans.
 </item>
 <item>
   <title>Stuck</title>
-  <link>gopher://gopher.black/0/phlog/20180501-stuck/gophermap</link>
-  <pubdate>01 May 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180501-stuck/gophermap</link>
+  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Stuck
@@ -314,8 +429,8 @@ to remember this one specific thing has me stuck. Stupid brain.
 </item>
 <item>
   <title>Proper Mirroring</title>
-  <link>gopher://gopher.black/0/phlog/20180429-proper-mirroring/gophermap</link>
-  <pubdate>29 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
+  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Proper mirroring
@@ -384,8 +499,8 @@ Enjoy & stuff!
 </item>
 <item>
   <title>Gdpr</title>
-  <link>gopher://gopher.black/0/phlog/20180429-gdpr/gophermap</link>
-  <pubdate>29 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180429-gdpr/gophermap</link>
+  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 GDPR
@@ -410,8 +525,8 @@ April 29th, 2018
 </item>
 <item>
   <title>Gopher Black On Tor Part 2</title>
-  <link>gopher://gopher.black/0/phlog/20180428-gopher-black-on-tor-part-2/gophermap</link>
-  <pubdate>28 Apr 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
+  <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 gopher.black on tor, part 2
@@ -498,51 +613,6 @@ future, but in the meantime I can manually clean it up as I add
 posts.
 
 find . -name "gophermap" -exec sed -i 's/\tgopher.black.*//g' {} \;
-</pre>]]></description>
-</item>
-<item>
-  <title>Poison Sumac</title>
-  <link>gopher://gopher.black/0/phlog/20180427-poison-sumac/gophermap</link>
-  <pubdate>27 Apr 2018 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Poison Sumac
-April 27th, 2018
-----------------------------------------
-
-We had a storm here a few weeks back that did a bunch of damage to
-the trees in my yard. One of these trees in the backyard split
-into three pieces straight down the middle!
-
-On Saturday I took my hatchet and a chain saw (literally saw-teeth
-on a chain that you drag back and forth by hand) and I set to work
-clearing things. In the process of chopping and sawing I failed to
-notice that the sad tri-split tree was also surrounded by an
-overgrown bush of poison sumac. (If you're not familiar with this
-particular breed of awfulness, it's just like poison ivy or poison
-oak, but harder to identify.)
-
-I was mostly prepared for the work, wearing long pants and sturdy
-gloves. I didn't have on a long sleeve shirt, though (it was
-hot!). So, now I'm super itchy and covered in a blistery rash.
-Calamine lotion helps a bit, but I'm ready for this ordeal to be
-over.
-
-I've gotten hit by sumac twice before, and thankfully this time is
-much less severe. My first exposure was on a canoeing trip where
-I failed to notice that the creek I was in was surrounded on both
-sides by sumac. I was covered in a rash from the waist up after
-that trip.
-
-The second time was the worst. I was in Boy Scouts on a camping
-trip and one of the new scouts tossed in a bunch of green branches
-into the fire. It started smoking and flew into my face before
-I noticed what was going on. I was just about to explain why we
-don't burn green wood when I saw what it was. Too late. I was
-hospitalized that time, as I got the sumac in my eyes and lungs.
-No good at all.
-
-I hope this clears up soon. I'm so damned itchy!
 </pre>]]></description>
 </item>
 </channel>
