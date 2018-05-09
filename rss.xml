@@ -3,9 +3,24 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Fixing Rss</title>
+  <link>gopher://gopher.black/0/phlog/20180509-fixing-rss/gophermap</link>
+  <pubdate>09 May 2018 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Fixing RSS
+May 09th, 2018
+----------------------------------------
+
+This is a quick test where I'm trying to fix the RSS lists on SDF
+and tilde.town. My auto-pathing fixer regex needed some love.
+Cross your fingers!
+</pre>]]></description>
+</item>
+<item>
   <title>Re Tfurrows Reliable Tech</title>
-  <link>gopher://gopher.black/0/phlog/./20180507-re-tfurrows-reliable-tech/gophermap</link>
-  <pubdate>Mon, 07 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180507-re-tfurrows-reliable-tech/gophermap</link>
+  <pubdate>07 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Re: tfurrows - Reliable tech
@@ -30,8 +45,8 @@ you type it, and preserve undo states. Come to the dark side.
 </item>
 <item>
   <title>On The Default Of Democracy</title>
-  <link>gopher://gopher.black/0/phlog/./20180507-on-the-default-of-democracy/gophermap</link>
-  <pubdate>Mon, 07 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180507-on-the-default-of-democracy/gophermap</link>
+  <pubdate>07 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 On the default of democracy
@@ -145,8 +160,8 @@ censorship.
 </item>
 <item>
   <title>Deliberate Practice</title>
-  <link>gopher://gopher.black/0/phlog/./20180507-deliberate-practice/gophermap</link>
-  <pubdate>Mon, 07 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180507-deliberate-practice/gophermap</link>
+  <pubdate>07 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Deliberate Practice
@@ -240,8 +255,8 @@ of the time, if I want to improve.
 </item>
 <item>
   <title>Fbi Files</title>
-  <link>gopher://gopher.black/0/phlog/./20180505-fbi-files/gophermap</link>
-  <pubdate>Sat, 05 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180505-fbi-files/gophermap</link>
+  <pubdate>05 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 FBI Files
@@ -269,8 +284,8 @@ send the requests.
 </item>
 <item>
   <title>Minor Writing Update</title>
-  <link>gopher://gopher.black/0/phlog/./20180504-minor-writing-update/gophermap</link>
-  <pubdate>Fri, 04 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180504-minor-writing-update/gophermap</link>
+  <pubdate>04 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Minor writing update
@@ -305,8 +320,8 @@ I'm glad to feel the writing itch come back.
 </item>
 <item>
   <title>The Games We Play</title>
-  <link>gopher://gopher.black/0/phlog/./20180501-the-games-we-play/gophermap</link>
-  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180501-the-games-we-play/gophermap</link>
+  <pubdate>01 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 The games we play
@@ -410,8 +425,8 @@ agents of the British Crown who seek to disrupt their plans.
 </item>
 <item>
   <title>Stuck</title>
-  <link>gopher://gopher.black/0/phlog/./20180501-stuck/gophermap</link>
-  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180501-stuck/gophermap</link>
+  <pubdate>01 May 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Stuck
@@ -429,8 +444,8 @@ to remember this one specific thing has me stuck. Stupid brain.
 </item>
 <item>
   <title>Proper Mirroring</title>
-  <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
-  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180429-proper-mirroring/gophermap</link>
+  <pubdate>29 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Proper mirroring
@@ -499,8 +514,8 @@ Enjoy & stuff!
 </item>
 <item>
   <title>Gdpr</title>
-  <link>gopher://gopher.black/0/phlog/./20180429-gdpr/gophermap</link>
-  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
+  <link>gopher://gopher.black/0/phlog/20180429-gdpr/gophermap</link>
+  <pubdate>29 Apr 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 GDPR
@@ -521,98 +536,6 @@ April 29th, 2018
 ******************************************************************
 
 1. Because Gopher
-</pre>]]></description>
-</item>
-<item>
-  <title>Gopher Black On Tor Part 2</title>
-  <link>gopher://gopher.black/0/phlog/./20180428-gopher-black-on-tor-part-2/gophermap</link>
-  <pubdate>Sat, 28 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-gopher.black on tor, part 2
-April 28th, 2018
-----------------------------------------
-
-This gopher site is finally available as a tor hidden service with
-the production onion address: blackgviz2y4nhrd.onion [0]
-
-[0] gopher.black (tor)
-    gopher://blackgviz2y4nhrd.onion/1/
-
-In my last post [1] I mentioned three problems I had left:
-[1] gopher.black on tor, part 1
-    gopher://gopher.black/1/phlog/20180427-gopher-black-on-tor-part-1
-
-1) Ugly onion addresses
-2) Internal links kick you out of tor
-3) Port 71
-
-Here's how that got resolved.
-
-I used Eschalot to generate my onion address. I let the app run
-a full day trying to get something that started with gopherblack,
-but the pattern was too long to find a match. I figure "black" is
-good enough for folks to remember. I had about
-15 different ones starting with black, but this had the best
-looking pattern.
-
-I ended up installing Gophernicus as a second gopher server next
-to motsognir and configured it to serve up my same content. This
-install was a tiny bit tricky since I already have a service
-listenining on port 70. I also wanted Gophernicus to use my tor
-address, not my actual hostname. Finally, I wanted it to run on
-port 71, but act like links were still port 70. Doing all this
-involved changing 3 files in the repo before I ran make install:
-
-  gophernicus.env
-
-  Uncomment options and give it the onion host and whatever else
-  is necessary to your liking: 
-  
-    OPTIONS="-h blackgviz2y4nhrd.onion -nf -nt"
-
-
-  gophernicus.socket
-
-  Change port to listen on to 71 or 1138 or whatever you'll be
-  using with the tor proxy.
-
-
-  gophernicus@.service
-
-  There's a line in there that looks like this:
-
-    ExecStart=/usr/sbin/in.gophernicus -h %H $OPTIONS
-
-  Remove the -h %H bit. We set that in options.
-
-Now you can 'sudo make install' and it should "Just Work".
-Remember to update your torrc to use port 70 and proxy to 71. This
-will give you your content back on port 70 over tor and all will
-be good in the world.
-
-The last hurdle to fix were the internal links. My sexy burrow
-helper wants to be a good partner, so it generates gophermaps with
-full \tHOST\tPORT\r\n line endings. That's overkill for motsognir
-and gophernicus, and doesn't allow them the flexibility to add
-those bits itself. 
-
-On Motsognir I can exclude the full line ending as long as
-I prefix the line with type "i" and it will work.
-
-On Gophernicus I can get rid of any type at the start of the line
-and it will work.
-
-To make both happy I need to include the type "i" at the start of
-the line and add a single tab character at the end. Not two tabs
-or three, just exactly one with nothing after it. This makes both
-servers happy and lets them fill in the gaps.
-
-I'll need to add a switch to burrow to generate this style in the
-future, but in the meantime I can manually clean it up as I add
-posts.
-
-find . -name "gophermap" -exec sed -i 's/\tgopher.black.*//g' {} \;
 </pre>]]></description>
 </item>
 </channel>
