@@ -3,6 +3,88 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Move Your Feet</title>
+  <link>gopher://gopher.black/0/phlog/./20180522-move-your-feet/gophermap</link>
+  <pubdate>Tue, 22 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Move your feet
+May 22nd, 2018
+----------------------------------------
+
+It's been a while since my last phlog*. I've been wanting to get
+back on gopher and do some serious plain text awesomeness, or at
+least comment on the really cool happenings around the space. Cat,
+love your diet, tell me more! How are you and your partner going
+to handle it when you go back down under? Sparkipx, how's Felix
+holding up now that you've been able to ride for a couple weeks?
+Is it harder to do long distances on a folding bike than
+a non-folding one? I've never tried one before. jynx, I'm totally
+fascinated by single player RPGs and I need to go back through and
+read up on your stuff. Tabletop role-playing is my #1 activity of
+awesome, and that sounds stellar. horsemans has a cool gopher
+wishlist that you guys should check out. I bet you can offer a lot
+of responses there. [0]
+
+[0] horesmans - gopher wishlist
+    gopher://horsemans.online/0/2017-12-29-gopher-wishlist.md
+
+Several of you are on vacation or soon returning. Welcome back and
+all that. I hope you'll share insights and adventures. I love
+travel stories so much. Hell, I love STORIES so much. tfurrows,
+I'll be checking out Variations soon! Oh, and I have a Fiskers
+push-mower and it's badass. I have to use it twice a week or the
+grass grows too long for it to be effective. That part sucks. But
+if you have a really small lawn, it's so nice to be able to handle
+it quietly and "naturally".
+
+Recently I've been absorbed in a string of poor projects at work
+that have been eating up my mental energies. The work isn't hard,
+but the clients have been difficult. I've been avoiding
+unnecessary computer time as a way of disconnecting. Marry that up
+with some unexpected (but welcome) consulting work, and my time
+became even more short. Mostly, though, the thing that's kept me
+away is a rededication to that principle I mentioned in recent
+posts, deliberate practice.
+
+I've been working on my shakuhachi quite a bit, and even met with
+my kali instructor in the park at the side of a lake for
+a fantastic jam in the rain. He built me a new shakuhachi, which
+is just fantastic. It's a 1.9 (slightly deeper sound than the
+standard 1.8) jin nashi flute and it's absolutely perfect. I'll be
+sewing a new case for it soon, and an extra for him as well in
+thanks.
+
+I've also been walking a shit-ton. Every morning I wake at 6:35
+and head outside to walk 2 to 2.5 miles on the canal towpath that
+is the road I live on. Each evening, after putting my son to bed,
+I head back outside and do another 2 miles. Sometimes I zip around
+the neighborhood for a change of scenery. Sometimes I head into
+town and walk the sidewalks. Most often I stay next to the canal
+where I know the landscape features that mark my distance by
+heart. I pop headphones in and binge audiobooks while I'm out
+there. It's heaven.
+
+Walking is a "keystone habit" for me, a term I learned from that
+book on Habits with the yellow cover that I can't remember the
+name of. When I walk, I do other good things as well. I eat well,
+I sleep well, I think clearly. If I don't walk, holding on to the
+other things is more difficult. So, walking rocks!
+
+Hopefully I'll have more to share soon. In the meantime, I need to
+go for a walk.
+
+------
+
+* I have a pet peeve about when people waste time in blogs and
+phlogs talking about how they haven't posted in a long time.
+That's the nature of the medium and the repetitive act of
+explaining or apologizing for it serves no purpose except to make
+you self-conscious. Now here I am doing it myself. Stupid.
+
+</pre>]]></description>
+</item>
+<item>
   <title>Practice Updates</title>
   <link>gopher://gopher.black/0/phlog/./20180511-practice-updates/gophermap</link>
   <pubdate>Fri, 11 May 2018 00:00:00 -0400</pubdate>
@@ -464,76 +546,6 @@ maybe say, but I can't remember what it is. It's paralyzing me.
 
 I have 30,000 things I could be doing right now but my inability
 to remember this one specific thing has me stuck. Stupid brain.
-</pre>]]></description>
-</item>
-<item>
-  <title>Proper Mirroring</title>
-  <link>gopher://gopher.black/0/phlog/./20180429-proper-mirroring/gophermap</link>
-  <pubdate>Sun, 29 Apr 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Proper mirroring
-April 29th, 2018
-----------------------------------------
-
-A few folks were kind enough to let me know that my recent
-experiments with tor [0][1] broke my gopher hole mirrored on SDF
-and tilde.town. In reality, those mirrors weren't all that useful
-in the first place. All the links in my gophermaps to internal
-resources were using full, complete hostnames & ports. Thus, if
-you went to SDF, after link #1 you were really over on
-gopher.black anyway.
-
-[0] gopher.black on tor, part 1
-    gopher://gopher.black/1/phlog/20180427-gopher-black-on-tor-part-1
-[1] gopher.black on tor, part 2
-    gopher://gopher.black/1/phlog/20180428-gopher-black-on-tor-part-2
-
-This wasn't ideal, but it was low priority. It worked well enough,
-right? When I removed the explicit hostname & port info from
-gophermaps to allow my dual server goodness for tor, suddenly SDF
-and tilde.town thought that my links were legitimately local.
-There was just one problem... my content paths are different on
-all three systems.
-
-On gopher.black, / is mine. Everything starts there.
-On SDF, /users/tomasino is mine.
-On tilde.town, /~tomasino is mine
-
-The fix didn't take a ton of work since I already had a pretty
-solid foundation for mirroring the content. I have a local copy of
-my gopher git repo on those boxes and a cron-job that pulls it
-four times a day. Simple! Well, now I have a little extra goodness
-in there.
-
-The update process looks like so:
-
-  - Fetch the remote
-  - Check the SHA of the latest commit in HEAD vs origin/master
-  - If different:
-    - force reset the local head
-    - pull origin/master
-    - find all gophermaps and use sed to replace root paths
-    - touch the local folder (for SDF's phlog list)
-
-Here's the code [2]:
-[2] sdf-update-gopher
-    http://gist.github.com/jamestomasino/8241f9e3daf2a0fa49e5a9d35679a427
-
-It's not the cleanest. I could remove the pushd/popd stuff. It's
-legacy from a much more complex process time. The sed command is
-cumbersome as well. I could have matched \t/[^\t]*$ instead, but
-it works. So, like most of my stuff... good enough.
-
-A final note:
-
-Moku Pona & my reading lists are local cron tasks on gopher.black
-that update quite often. To avoid a bajillion commits to my gopher
-repo I don't include them at all. That means my moku-pona list and
-reading lists are not available on SDF or tilde.town. All the rest
-of the goods are there, though.
-
-Enjoy & stuff!
 </pre>]]></description>
 </item>
 </channel>
