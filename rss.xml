@@ -3,6 +3,100 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Tracking As Stalking</title>
+  <link>gopher://gopher.black/0/phlog/./20180527-tracking-as-stalking/gophermap</link>
+  <pubdate>Sun, 27 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Tracking as Stalking
+May 27th, 2018
+----------------------------------------
+
+Stalking - 
+
+"criminal activity consisting of the repeated following and
+harassing of another person."
+
+"a course of conduct directed at a specific person that involves
+repeated (two or more occasions) visual or physical proximity,
+nonconsensual communication, or verbal, written, or implied
+threats, or a combination thereof, that would cause a reasonable
+person fear."
+
+There is an argument made by those practicing large-scale data
+capture and aggregation of individuals that the data they collect
+is public information, and therefore it is legal and justified.
+Even if the information collected was indeed all public--and I do
+not agree to that line of argument at all--then the question is
+still not settled. The very act of repeated visual proximity
+(which is transferrable to digital media via cyber-stalking
+definitions) which could cause a "reasonable person fear" falls
+clearly within the bounds of stalking. If it is a corporation
+commiting these acts, then it is no less culpable than if it were
+an individual. After all, corporations are people too, right? [0]
+
+[0] Corporate personhood (Gopherpedia)
+    gopher://gopherpedia.com/0/Corporate personhood
+
+The act of data aggregation of an individual carries with it the
+inherent threat of what is being done with that data. As more
+revelations are brought to light informing the public of the
+deeply unsettling targeting of individuals for political
+manipulation, commercial activation, or social harassment, the
+fear increases. What else could be done with that information?
+Even if nothing is actually put into motion, the act of
+collection, of monitoring, is in itself a form of digital stalking
+that explicitly undermines the argument of "public information".
+
+Anonymous collection of data into aggregate data sets that cannot
+be retargeted or focused to communicate outbound with a specific
+population or person is still problematic. If that data allows you
+to segment or infer the actions of a type of person or group,
+especially one that routinely faces subjugation or discrimination,
+then the act of collection contributes to a justifiable fear of
+persecution. It is stalking.
+
+The counter argument to all of these points is that the underlying
+economic power of the internet is governed and supplied by data
+collection. It is a capitalist requirement that some sort of
+economic incentive be present to promote the growth and stability
+of the systems. Money talks, or so the argument goes. How can we
+cut out advertising and still have nice things? Will everything
+need to become a paid subscription?
+
+Here's the thing: there is no inherent, inaliable rights to
+Netflix. Facebook is not a universal, precious entity that
+deserves the protection and preservation of all people. The only
+thing that fits that category is the people themselves. If
+protecting individuals and groups of people damages these systems,
+then that is the path that should be followed. If those systems
+can find an alternative, legal way to continue their operations
+then kudos to them. There is no argument that should value the
+continued operation of a social network over the safety of even
+a single individual. 
+
+Money talks in capitalism, but capitalism cannot be allowed to run
+unchecked. The morality of all people must pull on those reins and
+keep careful watch. Systems of governance cannot become
+subservient to the interests of economic forces over those of
+moral obligation. Any systems of governance that allow this will
+ultimately fail. First they will fail their people, and eventually
+they will fail completely, often with dire consequences to both
+those in power and those oppressed by it.
+
+Data collection is a simple thing. It's easy to watch tracking
+events fire and show up in pretty graphs. It's easy to use this to
+optimize your experiences, improve them, make the user's day
+a little easier. It's easy to look at the rosy garden that casual
+analytics presents and see only the flowers. Just like
+capitalism's promise of innovation through financial competition,
+the premise is beautiful on the surface. Left unchecked it will
+corrupt. That corruption will consolodate power and influence.
+That power and influence will allocate more benefit to the few in
+charge at the cost of the masses. The flowers are not worth it.
+</pre>]]></description>
+</item>
+<item>
   <title>Move Your Feet</title>
   <link>gopher://gopher.black/0/phlog/./20180522-move-your-feet/gophermap</link>
   <pubdate>Tue, 22 May 2018 00:00:00 -0400</pubdate>
@@ -472,111 +566,6 @@ I'm glad to feel the writing itch come back.
     gopher://gopher.black/0/writing/exercises/storymatic0001.txt
 [2] story - emergence
     gopher://gopher.black/1/writing/emergence
-</pre>]]></description>
-</item>
-<item>
-  <title>The Games We Play</title>
-  <link>gopher://gopher.black/0/phlog/./20180501-the-games-we-play/gophermap</link>
-  <pubdate>Tue, 01 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-The games we play
-May 01st, 2018
-----------------------------------------
-
-There's been a lot of people talking recently about games they're
-playing, whether on the computer, board game, or pencil-based
-RPGs. It's been really inspiring.
-
-I love RPGs so much, and I'm happy that I've got a monthly game
-going with a local crew. We're playing online with Discord and
-Roll20.net and it's... fair. I prefer no electronics involved in
-my table-top, and everyone around the same table. Still, I'll take
-what I can get.
-
-At work I spent a little bit of my team-building budget to buy
-a couple board games. Charterstone, a fancy new legacy game, and
-a casual game called Lattice are the first purchases. I'll report
-back on how they work soon.
-
-I've also been thinking about other games I play or have played
-with my friends over the years. Some are easily categorized, like
-the D&D campaigns I've run or played in. Others are hard to pin
-down, like the De Profundis writing-game I've got here on
-gopher.black [0].
-
-[0] De Profundis
-    gopher://gopher.black/1/writing/deprofundis
-
-This is a game of sorts, but it's also collaborative writing. It
-started with the first letter when I wrote it in an email to my
-friend Dan. I didn't give much explanation other than, "you get to
-write from the other side and move the story along." We don't
-communicate about our plans for each letter and we can introduce
-characters as we see fit. We meticulously research historical
-locations and events to prepare each one, and try to keep to the
-style of the time as best as we're able. Dan's got the next letter
-coming my way soon and I'm thrilled.
-
-My game experience isn't all table-top or computer based, of
-course. When I was a teen in Boy Scouts we did a lot of
-night-gaming. Usually it was something akin to capture the flag,
-or a moderately violent hide-and-seek variant we called Man Hunt.
-My favorite thing was what I called "Flee-running". If you're
-familiar with Free Running or Parkour, it's more in line with the
-latter. It wasn't about flourishes, but rather about getting from
-point A to point B as efficiently as possible. The only difference
-was, you were being chased. It's a combination of tag & parkour
-usually played deep in the woods, often in the dark. It's skill
-based only so much as it takes a lot of skill not to stop running
-when you take a branch to the face in the middle of the night. It
-was so thrilling, though. I've lept from cabin roofs, tarzan'd
-across creeks, and jumped through windows. So dangerous, and so
-fun.
-
-We also had really stupid high school games. There's one that
-I picked up on in college that started from a friend's high school
-time. It's really simple, if someone says the word "bogwan" you
-have to freeze exactly where you are in the position you're in for
-thirty seconds. If it's dangerous or whatever, then you don't...
-but once you're clear of danger you have to freeze. It was mostly
-used to emphasize some stupid expression you were making at the
-time. Make some embarrasing face and you're bound to be bogwan'd.
-It's still active and on rare occasion I'll get a bogwan text from
-that crew.
-
-There's so many other stupid games from that time. A lot of them
-involve getting punched in the balls, for some reason. High school
-again, I guess.
-
-Board games are coming back into my life again which is great.
-I've got one RPG going and will likely run a Numenera game
-sometime in the next year. I'm doing a retro-gaming playthrough of
-the complete Zelda franchise and occasionally twitch stream it.
-I'm 8bitino on Twitch, but I rarely go on. I'm about halfway
-through Zelda II: The Adventure of Link. It's hard! Next up will
-be the Game Boy games, and I'm really excited.
-
-I also am in a slow retro-playthrough of the Quest for Glory
-series. I rocked QFG1 in style on Twitch not too long ago. I have
-my saved character for QFG2, but I'm going to restart it now that
-I found a VGA version. The most exciting thing about this
-playthrough is that I've never played QFG5. I stopped at #4 and
-loved it so much, but 5 came out after I'd moved on to other
-things. EEEk, so much fun!
-
-In a future post I'd like to cover off on some of the RPG
-campaigns I've run in the past. The Assassini is probably my best
-one, so I think I'll start there. 
-
-Assassini
-
-Setting: 1716 Paris 
-
-Mission: Two agents of the Catholic Church, armed with Papal
-dispensation, have been dispatched to undermine the political
-power in the region, uncover a religious mystery, and combat
-agents of the British Crown who seek to disrupt their plans.
 </pre>]]></description>
 </item>
 </channel>
