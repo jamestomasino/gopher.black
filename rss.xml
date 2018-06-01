@@ -3,6 +3,77 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Cli Tricks Track</title>
+  <link>gopher://gopher.black/0/phlog/./20180531-cli-tricks-track/gophermap</link>
+  <pubdate>Thu, 31 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+CLI Tricks: track
+May 31st, 2018
+----------------------------------------
+
+This is a part of a series of phlog entries where I will share
+some of my command line tricks, tips, and scripts.
+
+
+## track ##
+
+Fitness trackers are all the rage. Chances are that you've got one
+on you right now, weirdo. Collecting data about your own behavior
+is pretty neat. It's extra cool if you can do it in a way that
+doesn't also give that data away to nefarious strangers who want
+to take over the world, but I digress.
+
+I like tracking my shiz too. I've used my phone to count steps in
+the past, and I have a scale in my bathroom, and a tape-measure
+for my big belly. But where do I save those numbers so I can look
+back on my amazing progress of awesomeness later? I don't really
+want to hand that over to Google or MyFitnessPal. They don't need
+to know that stuff. I could just store it in text files for myself
+and parse them later.
+
+And that's exactly what I decided to do. I keep some csv files in
+dropbox, or in nextcloud, or in syncthing. But logging stuff in
+CSV files isn't really fun, so I wrote a little tracker app to
+help me out.
+
+Now you can enjoy the glory of my crappy little program too!
+First, grab a copy over on github [0] and install it.
+
+[0] track
+    http://github.com/jamestomasino/track
+
+It's really easy to use. Start by checking the man page or
+spitting out some help:
+
+  $ man track
+
+  $ track -h
+
+See how to use it? Great! You're done!
+
+But seriously, it is really basic. You can just add a new metric
+to track by tracking something to it for the first time. It allows
+only one data point per day. It doesn't care what format that data
+is in.
+
+There's probably easy ways to break it, so, um, don't do those.
+
+Do you have something you want to add to it to make it better?
+Cool! Make a pull request and gimme-gimme. I probably want that
+feature too.
+
+Oh, as a side-note, the data I used in my post "Fat" [1] all was
+logged with this script. I have an example in that post of how to
+generate a graph on the command line using the jp utility. Check
+it out.
+
+[1] Fat
+    gopher://gopher.black/1/phlog/20180407-fat
+
+</pre>]]></description>
+</item>
+<item>
   <title>Tracking As Stalking</title>
   <link>gopher://gopher.black/0/phlog/./20180527-tracking-as-stalking/gophermap</link>
   <pubdate>Sun, 27 May 2018 00:00:00 -0400</pubdate>
@@ -530,42 +601,6 @@ I filled out all of them and will drop them in the mail Monday
 morning. I doubt there's much in those files on me, if anything,
 but I just don't know for sure. That's enough reason in itself to
 send the requests.
-</pre>]]></description>
-</item>
-<item>
-  <title>Minor Writing Update</title>
-  <link>gopher://gopher.black/0/phlog/./20180504-minor-writing-update/gophermap</link>
-  <pubdate>Fri, 04 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Minor writing update
-May 04th, 2018
-----------------------------------------
-
-I managed to add a bit more to my "storymatic" [0] writing
-exercise. For those that missed that one, it's a thing where
-I draw some cards out of a box that give me an idea for
-a character and a story hook and I write a short story from there.
-It's your typical writing prompt deal, but it's all fancy and
-randomized. 
-
-Swing over and check it out if you're in the mood. [1] I think
-I like how this one is turning out. I need to decide how I want to
-wrap it up.
-
-I've also been re-reading where I left off with Emergence [2].
-I may insert some other content before the current chapter three.
-I think the revelations in that chapter came too soon and I have
-more to add before it happens.
-
-I'm glad to feel the writing itch come back.
-
-[0] phlog - storymatic
-    gopher://gopher.black/1/phlog/20180304-storymatic
-[1] story - storymatic 0001
-    gopher://gopher.black/0/writing/exercises/storymatic0001.txt
-[2] story - emergence
-    gopher://gopher.black/1/writing/emergence
 </pre>]]></description>
 </item>
 </channel>

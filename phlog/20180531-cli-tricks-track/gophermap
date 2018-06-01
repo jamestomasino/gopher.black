@@ -1,0 +1,62 @@
+i----------------------------------------		gopher.black	70
+iCLI Tricks: track		gopher.black	70
+iMay 31st, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThis is a part of a series of phlog entries where I will share		gopher.black	70
+isome of my command line tricks, tips, and scripts.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i## track ##		gopher.black	70
+i		gopher.black	70
+iFitness trackers are all the rage. Chances are that you've got one		gopher.black	70
+ion you right now, weirdo. Collecting data about your own behavior		gopher.black	70
+iis pretty neat. It's extra cool if you can do it in a way that		gopher.black	70
+idoesn't also give that data away to nefarious strangers who want		gopher.black	70
+ito take over the world, but I digress.		gopher.black	70
+i		gopher.black	70
+iI like tracking my shiz too. I've used my phone to count steps in		gopher.black	70
+ithe past, and I have a scale in my bathroom, and a tape-measure		gopher.black	70
+ifor my big belly. But where do I save those numbers so I can look		gopher.black	70
+iback on my amazing progress of awesomeness later? I don't really		gopher.black	70
+iwant to hand that over to Google or MyFitnessPal. They don't need		gopher.black	70
+ito know that stuff. I could just store it in text files for myself		gopher.black	70
+iand parse them later.		gopher.black	70
+i		gopher.black	70
+iAnd that's exactly what I decided to do. I keep some csv files in		gopher.black	70
+idropbox, or in nextcloud, or in syncthing. But logging stuff in		gopher.black	70
+iCSV files isn't really fun, so I wrote a little tracker app to		gopher.black	70
+ihelp me out.		gopher.black	70
+i		gopher.black	70
+iNow you can enjoy the glory of my crappy little program too!		gopher.black	70
+iFirst, grab a copy over on github [0] and install it.		gopher.black	70
+i		gopher.black	70
+h[0] track	URL:http://github.com/jamestomasino/track
+i		gopher.black	70
+iIt's really easy to use. Start by checking the man page or		gopher.black	70
+ispitting out some help:		gopher.black	70
+i		gopher.black	70
+i  $ man track		gopher.black	70
+i		gopher.black	70
+i  $ track -h		gopher.black	70
+i		gopher.black	70
+iSee how to use it? Great! You're done!		gopher.black	70
+i		gopher.black	70
+iBut seriously, it is really basic. You can just add a new metric		gopher.black	70
+ito track by tracking something to it for the first time. It allows		gopher.black	70
+ionly one data point per day. It doesn't care what format that data		gopher.black	70
+iis in.		gopher.black	70
+i		gopher.black	70
+iThere's probably easy ways to break it, so, um, don't do those.		gopher.black	70
+i		gopher.black	70
+iDo you have something you want to add to it to make it better?		gopher.black	70
+iCool! Make a pull request and gimme-gimme. I probably want that		gopher.black	70
+ifeature too.		gopher.black	70
+i		gopher.black	70
+iOh, as a side-note, the data I used in my post "Fat" [1] all was		gopher.black	70
+ilogged with this script. I have an example in that post of how to		gopher.black	70
+igenerate a graph on the command line using the jp utility. Check		gopher.black	70
+iit out.		gopher.black	70
+i		gopher.black	70
+1[1] Fat	/phlog/20180407-fat
+i		gopher.black	70
