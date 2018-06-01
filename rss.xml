@@ -3,6 +3,27 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Summer Vacation</title>
+  <link>gopher://gopher.black/0/phlog/./20180531-summer-vacation/gophermap</link>
+  <pubdate>Thu, 31 May 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Summer Vacation
+May 31st, 2018
+----------------------------------------
+
+This is a quick note to wish all our summer vacationers a happy
+break. If you're going to be taking some time away from a screen
+while the weather is nice, please enjoy your time and don't worry
+about the bits and bytes. We'll all be here when you return.
+
+Oh, and a bonus big WELCOME BACK to zelibertinegamer. You were
+missed. I'm glad you've decided to return and hope you can avoid
+some of that toxic stuff that led you away in the first place.
+Come join us on #gopher at irc.sdf.org. It's a friendly joint.
+</pre>]]></description>
+</item>
+<item>
   <title>Cli Tricks Track</title>
   <link>gopher://gopher.black/0/phlog/./20180531-cli-tricks-track/gophermap</link>
   <pubdate>Thu, 31 May 2018 00:00:00 -0400</pubdate>
@@ -572,35 +593,6 @@ on brevity. This is good.
 It's not just about doing things with my hobby time. It's work in
 itself and I need to commit to it, at least a significant portion
 of the time, if I want to improve.
-</pre>]]></description>
-</item>
-<item>
-  <title>Fbi Files</title>
-  <link>gopher://gopher.black/0/phlog/./20180505-fbi-files/gophermap</link>
-  <pubdate>Sat, 05 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-FBI Files
-May 05th, 2018
-----------------------------------------
-
-I was sorting through some of my bookmarks tonight and I ran
-across something that I pinned for myself and completely forgot
-about. It's a site called "Get My FBI File". [0]
-
-[0] Get My FBI File
-    http://getmyfbifile.com/
-
-It's a simple form that generates you a bunch of letters that you
-can print off and mail in under the Freedom of Information Act to
-request government agency files on you. (The FAQ states you can
-send the requests even if you aren't a US citizen, with a few
-modifications).
-
-I filled out all of them and will drop them in the mail Monday
-morning. I doubt there's much in those files on me, if anything,
-but I just don't know for sure. That's enough reason in itself to
-send the requests.
 </pre>]]></description>
 </item>
 </channel>
