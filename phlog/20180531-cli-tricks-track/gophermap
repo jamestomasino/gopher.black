@@ -60,3 +60,9 @@ iit out.		gopher.black	70
 i		gopher.black	70
 1[1] Fat	/phlog/20180407-fat
 i		gopher.black	70
+iNow that track is a bit more sophisticated, I can track my weight		gopher.black	70
+iby typing:		gopher.black	70
+i		gopher.black	70
+i  $ track -ac weight | jp -input csv -width 67 -height 25		gopher.black	70
+i		gopher.black	70
+iA bit of an improvement!		gopher.black	70

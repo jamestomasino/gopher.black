@@ -92,6 +92,12 @@ it out.
 [1] Fat
     gopher://gopher.black/1/phlog/20180407-fat
 
+Now that track is a bit more sophisticated, I can track my weight
+by typing:
+
+  $ track -ac weight | jp -input csv -width 67 -height 25
+
+A bit of an improvement!
 </pre>]]></description>
 </item>
 <item>
