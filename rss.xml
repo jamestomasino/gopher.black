@@ -3,6 +3,89 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Mastoconflict</title>
+  <link>gopher://gopher.black/0/phlog/./20180602-mastoconflict/gophermap</link>
+  <pubdate>Sat, 02 Jun 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Mastoconflict
+June 02nd, 2018
+----------------------------------------
+
+Mastodon is having a little tiff right now over the introduction
+of a new feature: trending hashtags. As the project maintainer
+puts it, it has been the most requested feature addition for over
+a year. When it rolled out, though, it was met with widespread
+criticism and, in many cases, open hostility. The rebuttals back
+and forth quickly escalated and became personal. Pretty much
+everyone involved is greatly unhappy, regardless of their position
+on the issue.
+
+Meanwhile, I'm sitting back here thinking to myself, "democracy in
+action." A collective developed and idea with their voices (the
+addition of trending hashtags). When that idea was implemented,
+other collectives disagreed. They weren't aware of its
+development, they argue. It is unsafe and can be used for evil. It
+will target groups who are often targets and make Mastodon unsafe
+or unwelcoming.
+
+There's one person in charge of the project. He must be the
+problem. If it weren't for him, surely the issue would be put to
+rest. It's as simple as that, because a "pure" democracy will
+always work things out. This is an example of corruption of the
+perfect, federated state.
+
+Sound familiar? Yeah, I thought so. The issue isn't having
+a single leader. The issue is that groups of people have different
+wants and needs. This is inherent to any sized group of people
+greater than one. You cannot make them all equally happy. You
+cannot serve every single use case simultaneously. The utopia of
+democracy does not exist, just as it does not exist for communism,
+or socialism, or even monarchy.
+
+So what do we do? We use our brains. We make decisions that help
+as many as we can. We use our morals and make decisions that hurt
+as few as possible. We don't cross lines that shouldn't be
+crossed. We listen to the words of the suffering and try to ease
+that suffering. We say to those with excess, "you have excess.
+Your priorities are lower than those who need help."
+
+This is all but impossible in systems that favor group-think. The
+power in those systems comes from those who can manipulate the
+system. Who can speak loudest is often the one with the most
+money. The wider the spread of power, the more this systematic
+influence becomes absolute. It can devolve to cult of personality
+eventually. The key to the recipe is broad reach of voice.
+
+What is the countermeasure? Strong-willed leaders who can champion
+the "right" decisions. What makes those decisions right? The
+things I listed above. What ensures a leader will execute those
+decisions and not others? That depends on your system. In
+government, there's not much, though a constitutional system can
+help balance it. It's easy to slide into despotism. In social
+systems like open source projects, the answer is the freedom to
+move on. The system is open source and the protocol can work with
+other projects. Mastodon can be forked and formed into something
+else by others with a different set of principles. If the current
+leader of the project does not implement policy (in the form of
+software features) that reflects the needs of the people, that's
+the easiest path to take. No bloodshed, just moving on and
+building something new.
+
+But back to the question of trending hashtags themselves. Are they
+a good idea? Probably not, at least in the way they've been
+implemented so far. There's been a lot of valid points about how
+bad actors already abuse similar systems in other networks.
+There's nothing currently in place to prevent that, and the
+distributed nature of the network makes stopping those attacks
+even harder than on Twitter. There have been very good ideas to
+tweak the feature to avoid the abuse. Ultimately it should come
+down to a cost/benefit analysis. Unfortunately it's more likely to
+come down to the loudest screamers. But that's democracy.
+
+</pre>]]></description>
+</item>
+<item>
   <title>Summer Vacation</title>
   <link>gopher://gopher.black/0/phlog/./20180531-summer-vacation/gophermap</link>
   <pubdate>Thu, 31 May 2018 00:00:00 -0400</pubdate>
@@ -504,101 +587,6 @@ to equality. Of course that's how he runs things. Any other way
 would be as ridiculous as the idea of censoring a joke about the
 overreach of censorship in a project dedicated to fighting fucking
 censorship.
-</pre>]]></description>
-</item>
-<item>
-  <title>Deliberate Practice</title>
-  <link>gopher://gopher.black/0/phlog/./20180507-deliberate-practice/gophermap</link>
-  <pubdate>Mon, 07 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Deliberate Practice
-May 07th, 2018
-----------------------------------------
-
-There's a fantastic article circulating on the typical nerd
-portals today regarding "deep work" and "deliberate practice" [0].
-Give it a read if you haven't already.
-
-[0] The Importance of Deep Work
-    http://azeria-labs.com/the-importance-of-deep-work-the-30-hour-method-for-learning-a-new-skill/
-
-One of the things I enjoyed most about the post was the summary of
-methods of deep work taken from a great book on the subject [1].
-
-[1] Deep Work: Rules for Focused Success in a Distracted World
-    http://www.goodreads.com/book/show/25744928-deep-work
-
-  Monastic: 
-  "This philosophy attempts to maximize deep efforts by
-  eliminating or radically minimizing shallow obligations."
-  — isolate yourself for long periods of time without
-  distractions; no shallow work allowed. 
-
-  Bimodal: 
-  "This philosophy asks that you divide your time, dedicating some
-  clearly defined stretches to deep pursuits and leaving the rest
-  open to everything else." – dedicate a few consecutive days
-  (like weekends, or a Sunday, for example) for deep work only, at
-  least one day a week.
-
-  Rhythmic: 
-  "This philosophy argues that the easiest way to consistently
-  start deep work sessions is to transform them into a simple
-  regular habit." – create a daily habit of three to four hours
-  every day to perform deep work on your project.
-
-  Journalistic: 
-  "in which you fit deep work wherever you can into your
-  schedule." — Not recommended to try out first, since you first
-  need to accustom yourself to deep work.
-
-This put into words a struggle I've had with my own strategies.
-I've tried dedicating a set amount of time, sort of like "Rythmic"
-but that time hasn't been long enough to establish a deep work
-flow. I've set aside days of the week for it like Bimodal, but
-rarely with the isolation necessary to really dig in. Occasionally
-I'm successful, but I think it's more to do with luck, or
-a motivation I happened to find that day, than any deliberatet
-planning.
-
-In the past I've spoken about freezing up when an opportunity for
-exploration appears [2]. I'm combatting that with organization of
-lists so I can refer back to these projects I have moving and
-I don't waste time spinning my wheels. All of it is a part of the
-effort to get back the time that should belong to me that I give
-away out of a combination of laziness and poor planning [3].
-
-[2] Stuck
-    gopher://gopher.black/1/phlog/20180501-stuck
-[3] Resolution
-    gopher://gopher.black/1/phlog/20180101-resolution
-
-Ultimately, there are skills I want to improve. The top of that
-list are my writing craft and the Shakuhachi [4]. In reality the
-list is quite a bit longer. Even so, I have the ability, I have
-the time, and I have the necessary components to make a go of it.
-
-[4] Shakuhachi (UTF-8)
-    gopher://gopher.black/1/explorations/shakuhachi
-
-Deliberate practice, not just sitting around fiddling with crap,
-is the difference I'm missing. I've told it to my son a lot, and
-I'll continue to do so in the future. You can't just go along with
-things and expect to learn and grow. You need to do the hard
-things [5]. When I practice with the Shakuhachi, I can't just go
-sit on the porch and play improvisations for twenty minutes.
-I have specific things I need to improve: timing, embouchure,
-breathing dynamics. My writing is the same. I'm working on
-a writing exercise and I've given myself a specific goal to focus
-on brevity. This is good.
-
-[5] Do the Hard Thing
-    gopher://gopher.black/1/phlog/20171108-do-the-hard-thing
-
-It's not just about doing things with my hobby time. It's work in
-itself and I need to commit to it, at least a significant portion
-of the time, if I want to improve.
 </pre>]]></description>
 </item>
 </channel>
