@@ -1,0 +1,30 @@
+i----------------------------------------		gopher.black	70
+iGit		gopher.black	70
+iJune 03rd, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThere's some panic in the air over Microsoft courting Github.		gopher.black	70
+iAlarmists are pulling their projects down, moving to self-hosted		gopher.black	70
+iGitlab instances and so on. I'm confused by the whole thing,		gopher.black	70
+ithough. Git isn't github. My repos aren't property of github, even		gopher.black	70
+iif it's one of the remotes. I have everything up there mirrored in		gopher.black	70
+iseveral remote locations. That's the beauty of git! It's		gopher.black	70
+idistributed. Every repo is the complete repo.		gopher.black	70
+i		gopher.black	70
+iorbifx summarized it best over here [0].		gopher.black	70
+0[0] Decentralised Git	/note/15ec76d8-a67c-4c19-abc4-103184760186	notes.orbitalfox.eu	70
+i		gopher.black	70
+iThis gopher hole is a great example. It's currently located:		gopher.black	70
+i- on this laptop I'm writing on		gopher.black	70
+i- on gopher.black (raspberry pi)		gopher.black	70
+i- on SDF		gopher.black	70
+i- on Tilde.town		gopher.black	70
+i- on bitbucket.org		gopher.black	70
+i- on my macbook air at work		gopher.black	70
+i- on a backup tower at work		gopher.black	70
+i- on my PC in a VM in VirtualBox		gopher.black	70
+i- and probably some other places I forgot about		gopher.black	70
+i		gopher.black	70
+iI think the lesson here for people shouldn't be to fear Microsoft		gopher.black	70
+inabbing Github. The lesson should be, distribute your shit,		gopher.black	70
+ipeople! Use git for awesome.		gopher.black	70

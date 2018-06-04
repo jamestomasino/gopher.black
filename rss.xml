@@ -3,6 +3,44 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Git</title>
+  <link>gopher://gopher.black/0/phlog/./20180603-git/gophermap</link>
+  <pubdate>Sun, 03 Jun 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Git
+June 03rd, 2018
+----------------------------------------
+
+There's some panic in the air over Microsoft courting Github.
+Alarmists are pulling their projects down, moving to self-hosted
+Gitlab instances and so on. I'm confused by the whole thing,
+though. Git isn't github. My repos aren't property of github, even
+if it's one of the remotes. I have everything up there mirrored in
+several remote locations. That's the beauty of git! It's
+distributed. Every repo is the complete repo.
+
+orbifx summarized it best over here [0].
+[0] Decentralised Git
+    gopher://notes.orbitalfox.eu/0/note/15ec76d8-a67c-4c19-abc4-103184760186
+
+This gopher hole is a great example. It's currently located:
+- on this laptop I'm writing on
+- on gopher.black (raspberry pi)
+- on SDF
+- on Tilde.town
+- on bitbucket.org
+- on my macbook air at work
+- on a backup tower at work
+- on my PC in a VM in VirtualBox
+- and probably some other places I forgot about
+
+I think the lesson here for people shouldn't be to fear Microsoft
+nabbing Github. The lesson should be, distribute your shit,
+people! Use git for awesome.
+</pre>]]></description>
+</item>
+<item>
   <title>Mastoconflict</title>
   <link>gopher://gopher.black/0/phlog/./20180602-mastoconflict/gophermap</link>
   <pubdate>Sat, 02 Jun 2018 00:00:00 -0400</pubdate>
@@ -479,32 +517,6 @@ May 09th, 2018
 This is a quick test where I'm trying to fix the RSS lists on SDF
 and tilde.town. My auto-pathing fixer regex needed some love.
 Cross your fingers!
-</pre>]]></description>
-</item>
-<item>
-  <title>Re Tfurrows Reliable Tech</title>
-  <link>gopher://gopher.black/0/phlog/./20180507-re-tfurrows-reliable-tech/gophermap</link>
-  <pubdate>Mon, 07 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Re: tfurrows - Reliable tech
-May 07th, 2018
-----------------------------------------
-
-First let me offer my condolences to tfurrows for the loss of
-a long phlog post. [0] Your loss is also ours.
-
-Second, let me suggest a slight modification to your workflow:
-- Generate a tmp-file for authoring
-- Process tmp-file in a secondary stage for formatting
-
-If the formatting fails, you still have your temp file.
-
-Alternatively, vim will save everything you type to a swap-file as
-you type it, and preserve undo states. Come to the dark side.
-
-[0] tfurrows - Reliablility of Tools
-    gopher://sdf.org/0/users/tfurrows/phlog/2018/ajt_reliabilityOfTools.txt
 </pre>]]></description>
 </item>
 </channel>
