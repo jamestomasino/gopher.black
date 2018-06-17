@@ -16,6 +16,8 @@ iInterfaces
 1Metafilter	/	gopher.metafilter.com	70
 1Gopher Bay	/	bay.parazy.de	666
 1BSD man pages	/	perso.pw	70
+7searx search	/searx.dcgi	me0w.net	70
+
 
 iNews	
 1FloodFeeds (News)	/feeds/today	gopher.floodgap.com	70
@@ -25,6 +27,7 @@ iProjects
 1Gopher Cookbook	/cookbook	tellus.strangled.net	70
 1GopherProject	/	gopherproject.org	70
 1Gopher Polls	/poll	khzae.net	70
+1Gopher Pastebin	/pastebin	0x1A4.1337.cx	70
 
 iOther Content	
 1Cyber Vanguard	/	cyber.dabamos.de	70
