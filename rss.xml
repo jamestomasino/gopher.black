@@ -3,6 +3,76 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Pen Pals</title>
+  <link>gopher://gopher.black/0/phlog/./20180617-pen-pals/gophermap</link>
+  <pubdate>Sun, 17 Jun 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Pen Pals
+June 17th, 2018
+----------------------------------------
+
+I was looking into some leadership and management training stuff
+recently [0] and it's been really helping me make progress as
+a team leader. There's plenty you can learn on-the-job, but it's
+helpful to get good advice from a trusted source.
+
+[0] LEADx
+    http://leadx.org
+
+While looking at content on engagement I ran across a really
+enlightening piece of information. People tend to value praise
+based on the effort put in to giving it.
+
+At my current company we've gone through a lot of different
+systems for calling out exceptional work. We've had some official
+things, some local office things, manager made-up things, and
+they've had wildly different reactions. Our current system is
+a corporate level point system with a rewards site where you can
+log-in and pick out items you want with your accrued points. It
+is, almost universally, ignored. It means nothing to individuals
+getting points. There's no real public system for acknowledging
+peers. It's pretty much useless.
+
+Contrast that with our most successful system: an oversized
+post-card that had some award blurb stuff up top and a big open
+text area underneath where a manager would hand-write what you did
+to make a difference. They were peer nominated and manager
+approved. We announced them at "town hall" meetings so everyone
+would hear about your awesomeness as it was read out. There was
+a small financial award with it, but it was secondary. People kept
+those things and put them up on their desks.
+
+This all brought me back to an on-again-off-again conversation
+thread that floats around gopherspace: comments. I love when you
+guys and gals send me an email about something I wrote, or post
+a reply or acknowledgement in your own phlog. It means so much to
+me because you put in the effort. It wasn't a drive by "like"
+button. In managerial terms you didn't just give me a nod and say,
+"nice work," you took time out of your day to write me a note.
+That's awesome.
+
+It also makes my mind wander the path to hand-written letters. I'm
+an infrequent letter writer, but when I write or receive one it's
+always special. I have a bag in my office of every hand-written
+letter I've ever gotten.
+
+My handwriting isn't great. I don't always have brilliant things
+to say in a letter. Honestly, the content isn't all that much
+different from an email, except I know it will take some time to
+reach the person and responding is more difficult. I try to say
+things more completely. I invest more time and energy into it.
+I have to buy a stamp, after all.
+
+I'd like to write some letters again. Any of you up for it? My
+contact info is in my About page [1] including encryption options
+if you feel like sending me an address or PO box.
+
+[1] About
+    gopher://gopher.black/1/about
+</pre>]]></description>
+</item>
+<item>
   <title>On Magick And The Forces Of Will</title>
   <link>gopher://gopher.black/0/phlog/./20180605-on-magick-and-the-forces-of-will/gophermap</link>
   <pubdate>Tue, 05 Jun 2018 00:00:00 -0400</pubdate>
@@ -92,7 +162,7 @@ From the East:
 [2] Qigong
     gopher://gopherpedia.com/0/Qigong
 [3] Tai Chi
-    gopher://gopherpedia.com/0/Tai Chi
+    gopher://gopherpedia.com/0/Tai chi
 
 The entire system of Chinese medicine falls into this category,
 manipulating unseen energies through will and the use of natural
@@ -732,30 +802,6 @@ record it and keep it ready for 1436CON/Port 70 [3].
 
 [3] Port 70 -or- 1436CON
     gopher://gopher.black/1/phlog/20180412-port-70-or-1436con
-</pre>]]></description>
-</item>
-<item>
-  <title>Practice Updates</title>
-  <link>gopher://gopher.black/0/phlog/./20180511-practice-updates/gophermap</link>
-  <pubdate>Fri, 11 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Practice updates
-May 11th, 2018
-----------------------------------------
-
-It's good to celebrate small victories. This week has been full of
-them. I've kept up with my goal of deliberate practice regarding
-writing, playing music, and even exercise. It feels great to be on
-track. The next challenge will be to keep it going through the ups
-and downs and boring times.
-
-Regarding exercise, I'm well back into ketosis again (thank God)
-and I've ramped up my walking. I'm walking two miles in the
-morning and again in the evening. That's long been my foundation
-or keystone habit to hold everything together and it seems to be
-working again. I have been eating well and not snacking. The focus
-has helped with my practice. All is well!
 </pre>]]></description>
 </item>
 </channel>
