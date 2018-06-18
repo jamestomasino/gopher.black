@@ -3,6 +3,32 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Turnover</title>
+  <link>gopher://gopher.black/0/phlog/./20180618-turnover/gophermap</link>
+  <pubdate>Mon, 18 Jun 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Turnover
+June 18th, 2018
+----------------------------------------
+
+I'm losing one of the developers on my team. He's decided to move
+on to another job. He's a really solid programmer and a nice guy
+and it's a shame to lose him.
+
+I knew he was in a position to be looking and I tried to warn the
+management team about it. Unfortunately, the types of things he
+needed to stay weren't thing I could offer. It happens sometimes.
+I hope to get a chance to spend a bit of exit-interview time with
+him and get some feedback on my own management style. Maybe
+there's something to be learned.
+
+I'm not sure if he ever reads my gopher content (though I am sure
+he knows about it). If so, I'm sad to see you go, but wish you the
+best of luck at the new gig.
+</pre>]]></description>
+</item>
+<item>
   <title>Pen Pals</title>
   <link>gopher://gopher.black/0/phlog/./20180617-pen-pals/gophermap</link>
   <pubdate>Sun, 17 Jun 2018 00:00:00 -0400</pubdate>
@@ -752,56 +778,6 @@ That's the nature of the medium and the repetitive act of
 explaining or apologizing for it serves no purpose except to make
 you self-conscious. Now here I am doing it myself. Stupid.
 
-</pre>]]></description>
-</item>
-<item>
-  <title>More Updates</title>
-  <link>gopher://gopher.black/0/phlog/./20180522-more-updates/gophermap</link>
-  <pubdate>Tue, 22 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-More updates
-May 22nd, 2018
-----------------------------------------
-
-That's a little depressing. After 11 days away I just wrote a long
-update that is substantively the same thing I wrote 11 days ago.
-I feel the need to amend this with some additional updates:
-
-FBI File [0] - I received my FBI results. There are no records of
-me in their files. I could follow up and request further research
-looking for me in cross-references, but I think I'm good enough
-with what I got. I'm still waiting for replies from the other
-intel orgs.
-
-[0] FBI Files
-    gopher://gopher.black/1/phlog/20180505-fbi-files
-
-Poison Sumac [1] - It's finally gone. Holy shit that took a long
-time.
-
-[1] Poison Sumac
-    gopher://gopher.black/1/phlog/20180427-poison-sumac
-
-The Hobbit [2] - The boy is loving it. We haven't gotten to read
-it every night, but he's so excited about what's coming (I gave
-hints). He talks about Smaug all the time despite having not met
-him yet. He's excited for the giant spiders because I have
-horrible arachnophobia and he thinks that's funny. We're just
-leaving Rivendell and the Last Homely House. I can't wait for
-Gollum!
-
-[2] The Hobbit
-    gopher://gopher.black/1/phlog/20180418-the-hobbit
-
-Finally, I've been brainstorming some ideas and getting some good
-feedback from mastodon folks about a talk I want to present at
-Barcamp Philly this year. I'll get it all ready to go and
-hopefully it'll be something people want to attend. If not, I'll
-record it and keep it ready for 1436CON/Port 70 [3].
-
-[3] Port 70 -or- 1436CON
-    gopher://gopher.black/1/phlog/20180412-port-70-or-1436con
 </pre>]]></description>
 </item>
 </channel>
