@@ -3,6 +3,29 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Weight Update</title>
+  <link>gopher://gopher.black/0/phlog/./20180622-weight-update/gophermap</link>
+  <pubdate>Fri, 22 Jun 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Weight update
+June 22nd, 2018
+----------------------------------------
+
+Quick note today to mark my 40lbs loss milestone. I'm feeling
+great and need to stick with it forever and ever. Addicition has
+never been a part of my personality, but I'm coming to accept that
+I need to treat carbs the way an alcoholic treats the drink. There
+is no such thing as just one taste for me. Abstinance brings me to
+a better version of myself.
+
+Disclaimer: Ketogenic diets are not a magic pill for everyone. It
+works very well for me and I'm happy to talk to anyone about it,
+but if you're into something else that's working for you, keep on
+kicking butt. Now, back to more bacon & butter...
+</pre>]]></description>
+</item>
+<item>
   <title>Moleskine</title>
   <link>gopher://gopher.black/0/phlog/./20180621-moleskine/gophermap</link>
   <pubdate>Thu, 21 Jun 2018 00:00:00 -0400</pubdate>
@@ -673,100 +696,6 @@ by typing:
   $ track -ac weight | jp -input csv -width 67 -height 25
 
 A bit of an improvement!
-</pre>]]></description>
-</item>
-<item>
-  <title>Tracking As Stalking</title>
-  <link>gopher://gopher.black/0/phlog/./20180527-tracking-as-stalking/gophermap</link>
-  <pubdate>Sun, 27 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Tracking as Stalking
-May 27th, 2018
-----------------------------------------
-
-Stalking - 
-
-"criminal activity consisting of the repeated following and
-harassing of another person."
-
-"a course of conduct directed at a specific person that involves
-repeated (two or more occasions) visual or physical proximity,
-nonconsensual communication, or verbal, written, or implied
-threats, or a combination thereof, that would cause a reasonable
-person fear."
-
-There is an argument made by those practicing large-scale data
-capture and aggregation of individuals that the data they collect
-is public information, and therefore it is legal and justified.
-Even if the information collected was indeed all public--and I do
-not agree to that line of argument at all--then the question is
-still not settled. The very act of repeated visual proximity
-(which is transferrable to digital media via cyber-stalking
-definitions) which could cause a "reasonable person fear" falls
-clearly within the bounds of stalking. If it is a corporation
-commiting these acts, then it is no less culpable than if it were
-an individual. After all, corporations are people too, right? [0]
-
-[0] Corporate personhood (Gopherpedia)
-    gopher://gopherpedia.com/0/Corporate personhood
-
-The act of data aggregation of an individual carries with it the
-inherent threat of what is being done with that data. As more
-revelations are brought to light informing the public of the
-deeply unsettling targeting of individuals for political
-manipulation, commercial activation, or social harassment, the
-fear increases. What else could be done with that information?
-Even if nothing is actually put into motion, the act of
-collection, of monitoring, is in itself a form of digital stalking
-that explicitly undermines the argument of "public information".
-
-Anonymous collection of data into aggregate data sets that cannot
-be retargeted or focused to communicate outbound with a specific
-population or person is still problematic. If that data allows you
-to segment or infer the actions of a type of person or group,
-especially one that routinely faces subjugation or discrimination,
-then the act of collection contributes to a justifiable fear of
-persecution. It is stalking.
-
-The counter argument to all of these points is that the underlying
-economic power of the internet is governed and supplied by data
-collection. It is a capitalist requirement that some sort of
-economic incentive be present to promote the growth and stability
-of the systems. Money talks, or so the argument goes. How can we
-cut out advertising and still have nice things? Will everything
-need to become a paid subscription?
-
-Here's the thing: there is no inherent, inaliable rights to
-Netflix. Facebook is not a universal, precious entity that
-deserves the protection and preservation of all people. The only
-thing that fits that category is the people themselves. If
-protecting individuals and groups of people damages these systems,
-then that is the path that should be followed. If those systems
-can find an alternative, legal way to continue their operations
-then kudos to them. There is no argument that should value the
-continued operation of a social network over the safety of even
-a single individual. 
-
-Money talks in capitalism, but capitalism cannot be allowed to run
-unchecked. The morality of all people must pull on those reins and
-keep careful watch. Systems of governance cannot become
-subservient to the interests of economic forces over those of
-moral obligation. Any systems of governance that allow this will
-ultimately fail. First they will fail their people, and eventually
-they will fail completely, often with dire consequences to both
-those in power and those oppressed by it.
-
-Data collection is a simple thing. It's easy to watch tracking
-events fire and show up in pretty graphs. It's easy to use this to
-optimize your experiences, improve them, make the user's day
-a little easier. It's easy to look at the rosy garden that casual
-analytics presents and see only the flowers. Just like
-capitalism's promise of innovation through financial competition,
-the premise is beautiful on the surface. Left unchecked it will
-corrupt. That corruption will consolodate power and influence.
-That power and influence will allocate more benefit to the few in
-charge at the cost of the masses. The flowers are not worth it.
 </pre>]]></description>
 </item>
 </channel>
