@@ -3,6 +3,65 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Solar Hydroponics</title>
+  <link>gopher://gopher.black/0/phlog/./20180624-solar-hydroponics/gophermap</link>
+  <pubdate>Sun, 24 Jun 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Solar Hydroponics
+June 24th, 2018
+----------------------------------------
+
+I'm doing some mental planning toward a very small hydroponics
+experiment. I will likely start with just one plant, an herb, in
+a solo environment. I know I can do a self-contained system
+without aeration at that scale, but I want to build it as if it
+were a larger system, but in miniature. I want the system to be
+off-grid as well. I'd like it to be as mechanical as possible, in
+fact.
+
+I found one little video oh a solar radiation powered aerator.
+Basically, it was an empty air chamber that was darkly colored and
+had no-return valves that forced air in one hole only and out
+through the "pump". The out-bound port was covered in a bubbler
+rock. When the sun hit the bottle it heated the air inside, which
+forced the air forward out into the reservoir. When the bottle
+cooled it would draw more air back in through the outer valve. If
+the sun cycled exposure at a fairly regular interval, it seems
+like it might help circulate some into the reservoir over time.
+
+There were lots of problems with it, of course. The pressure of
+the temperature change didn't create that much air flow. If the
+light were fairly constant it would only expel once and then be at
+rest. It needs some work to draw and billow more air. I was
+thinking about having a radiometer inside the chamber, as air flow
+inside would force it to work as a more continuous air pump, but
+I think those barely create enough force to spin in a vacuum. I'm
+close to a solve here that does not involve electronics at all,
+but I'm just not quite there.
+
+Once that's fixed, my next line of inquiry will be nutrients. What
+exactly goes into those fertilizer bits and how can I generate my
+own source without a store. Is that even a reasonable thing to do?
+
+If I can solve for solar powered aeration (not using solar panels
+& electronics) and nutrient creation, then I should be able to
+construct a fully off-grid, automated hydroponics rig. I am just
+awful at remembering to do things on a regular basis, so if this
+is to succeed I absolutely must automate.
+
+Other things to consider:
+
+- Auto-balancing water distribution to the correct levels
+- Rotation / cycling position for sun exposure
+- Portability of net systems for transferring between small
+  & larger rigs
+- Auto-timing of nutrient injection & mixing
+
+Do any of you have experience in hydroponics? Anything to add?
+</pre>]]></description>
+</item>
+<item>
   <title>Weight Update</title>
   <link>gopher://gopher.black/0/phlog/./20180622-weight-update/gophermap</link>
   <pubdate>Fri, 22 Jun 2018 00:00:00 -0400</pubdate>
@@ -619,83 +678,6 @@ Oh, and a bonus big WELCOME BACK to zelibertinegamer. You were
 missed. I'm glad you've decided to return and hope you can avoid
 some of that toxic stuff that led you away in the first place.
 Come join us on #gopher at irc.sdf.org. It's a friendly joint.
-</pre>]]></description>
-</item>
-<item>
-  <title>Cli Tricks Track</title>
-  <link>gopher://gopher.black/0/phlog/./20180531-cli-tricks-track/gophermap</link>
-  <pubdate>Thu, 31 May 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-CLI Tricks: track
-May 31st, 2018
-----------------------------------------
-
-This is a part of a series of phlog entries where I will share
-some of my command line tricks, tips, and scripts.
-
-
-## track ##
-
-Fitness trackers are all the rage. Chances are that you've got one
-on you right now, weirdo. Collecting data about your own behavior
-is pretty neat. It's extra cool if you can do it in a way that
-doesn't also give that data away to nefarious strangers who want
-to take over the world, but I digress.
-
-I like tracking my shiz too. I've used my phone to count steps in
-the past, and I have a scale in my bathroom, and a tape-measure
-for my big belly. But where do I save those numbers so I can look
-back on my amazing progress of awesomeness later? I don't really
-want to hand that over to Google or MyFitnessPal. They don't need
-to know that stuff. I could just store it in text files for myself
-and parse them later.
-
-And that's exactly what I decided to do. I keep some csv files in
-dropbox, or in nextcloud, or in syncthing. But logging stuff in
-CSV files isn't really fun, so I wrote a little tracker app to
-help me out.
-
-Now you can enjoy the glory of my crappy little program too!
-First, grab a copy over on github [0] and install it.
-
-[0] track
-    http://github.com/jamestomasino/track
-
-It's really easy to use. Start by checking the man page or
-spitting out some help:
-
-  $ man track
-
-  $ track -h
-
-See how to use it? Great! You're done!
-
-But seriously, it is really basic. You can just add a new metric
-to track by tracking something to it for the first time. It allows
-only one data point per day. It doesn't care what format that data
-is in.
-
-There's probably easy ways to break it, so, um, don't do those.
-
-Do you have something you want to add to it to make it better?
-Cool! Make a pull request and gimme-gimme. I probably want that
-feature too.
-
-Oh, as a side-note, the data I used in my post "Fat" [1] all was
-logged with this script. I have an example in that post of how to
-generate a graph on the command line using the jp utility. Check
-it out.
-
-[1] Fat
-    gopher://gopher.black/1/phlog/20180407-fat
-
-Now that track is a bit more sophisticated, I can track my weight
-by typing:
-
-  $ track -ac weight | jp -input csv -width 67 -height 25
-
-A bit of an improvement!
 </pre>]]></description>
 </item>
 </channel>
