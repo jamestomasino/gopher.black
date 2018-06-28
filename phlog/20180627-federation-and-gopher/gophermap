@@ -1,0 +1,74 @@
+i----------------------------------------		gopher.black	70
+iFederation and gopher		gopher.black	70
+iJune 27th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iSome of you guys were talking about a "federated gopher" on		gopher.black	70
+iMastodon the other day. At first I was all into the idea and		gopher.black	70
+igetting ready to chime in with support. But then I started		gopher.black	70
+ithinking about what that would mean and I hit a wall. I think my		gopher.black	70
+iunderstanding of federation in recent context has skewed away from		gopher.black	70
+ithe community idea. With all the work on ActivityPub and the new		gopher.black	70
+iclients popping up in the Fediverse I feel like I should probably		gopher.black	70
+ispend the time to figure out what it is everyone is talking about		gopher.black	70
+iwhen they use the word Federated.		gopher.black	70
+i		gopher.black	70
+iSince we're talking definitions here, I figured I should start by		gopher.black	70
+itelneting to my happy dictionary [0] that I described in an old		gopher.black	70
+iphlog post [1]. Then I ran my query: "define english federation".		gopher.black	70
+iHere's what popped out:		gopher.black	70
+i		gopher.black	70
+i  <security> The establishment of some or all of business		gopher.black	70
+i  agreements, {cryptographic} trust and user identifiers or		gopher.black	70
+i  attributes across security and policy domains to enable more		gopher.black	70
+i  seamless business interaction.		gopher.black	70
+i		gopher.black	70
+i  As {web services} promise to enable integration between		gopher.black	70
+i  business partners through {loose coupling} at the application		gopher.black	70
+i  and messaging layer, federation does so at the identity		gopher.black	70
+i  management layer, insulating each domain from the details of		gopher.black	70
+i  the others' authentication and authorization.  Key to this		gopher.black	70
+i  loose coupling at the identity management layer are		gopher.black	70
+i  standardized mechanisms and formats for the communication of		gopher.black	70
+i  identity information between the domains.  {SAML} is one such		gopher.black	70
+i  standard.		gopher.black	70
+i		gopher.black	70
+iFrom the sound of that definition, gopher is already federated in		gopher.black	70
+ithat identity information between domains is inherent to the		gopher.black	70
+iprotocol because it's irrelevant. There's no authorized use		gopher.black	70
+imechanism here and the act of hosting content on a server is		gopher.black	70
+ienough to identify the source. Since I host on gopher.black, if		gopher.black	70
+iyour use of gopher queries my server you have used standard		gopher.black	70
+imechanisms and formats for the communication of that information		gopher.black	70
+ibetween the domains, right?		gopher.black	70
+i		gopher.black	70
+iMaybe the reason I'm having such difficulty is because my only		gopher.black	70
+iexposure to federation as an idea has been via things like		gopher.black	70
+iMastodon which have far more interoperable parts. Content from one		gopher.black	70
+iindependent system is consumed and becomes content within another		gopher.black	70
+ione, and the source of that content, the author, server, etc, all		gopher.black	70
+ineed to be accounted for in the communication. That requires more		gopher.black	70
+ithan gopher for sure.		gopher.black	70
+i		gopher.black	70
+iEven so, I'm not satisfied. I think there's more to federation		gopher.black	70
+ithan that definition. The context in how people discuss it seems		gopher.black	70
+ito imply something else, but I can't put my finger on exactly what		gopher.black	70
+ithat might be. Distributed systems like IPFS come up a lot in		gopher.black	70
+ithose discussions, but I don't see a black & white relationship.		gopher.black	70
+i		gopher.black	70
+iI guess my slow brainmeats can't get past the idea that federation		gopher.black	70
+imeans I control my shiz but it can interact with everyone elses		gopher.black	70
+ishiz in the same way. Am I so far off? Let me know with a reply or		gopher.black	70
+iemail or mastodon or a hand written letter.		gopher.black	70
+i		gopher.black	70
+iYes! Hand written letters are my absolute favorite. They		gopher.black	70
+idemonstrate all that extra effort, they're physical treasures, and		gopher.black	70
+iI get to silently judge your personality through bullshit		gopher.black	70
+ihandwriting interpretation that I make up on the spot. Everyone		gopher.black	70
+iwins! Send me an note with a reference to a pgp key and I'll send		gopher.black	70
+iyou back my mailing address on the down-low.		gopher.black	70
+i		gopher.black	70
+iCheers, fedi-gophers		gopher.black	70
+i		gopher.black	70
+8[0] Telnet to dict.org	dict	dict.org	2628
+1[1] CLI Tricks: Dictionaries	/phlog/20180405-cli-tricks-dictionaries

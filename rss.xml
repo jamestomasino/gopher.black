@@ -3,6 +3,88 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Federation And Gopher</title>
+  <link>gopher://gopher.black/0/phlog/./20180627-federation-and-gopher/gophermap</link>
+  <pubdate>Wed, 27 Jun 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Federation and gopher
+June 27th, 2018
+----------------------------------------
+
+Some of you guys were talking about a "federated gopher" on
+Mastodon the other day. At first I was all into the idea and
+getting ready to chime in with support. But then I started
+thinking about what that would mean and I hit a wall. I think my
+understanding of federation in recent context has skewed away from
+the community idea. With all the work on ActivityPub and the new
+clients popping up in the Fediverse I feel like I should probably
+spend the time to figure out what it is everyone is talking about
+when they use the word Federated.
+
+Since we're talking definitions here, I figured I should start by
+telneting to my happy dictionary [0] that I described in an old
+phlog post [1]. Then I ran my query: "define english federation".
+Here's what popped out:
+
+  <security> The establishment of some or all of business
+  agreements, {cryptographic} trust and user identifiers or
+  attributes across security and policy domains to enable more
+  seamless business interaction.
+
+  As {web services} promise to enable integration between
+  business partners through {loose coupling} at the application
+  and messaging layer, federation does so at the identity
+  management layer, insulating each domain from the details of
+  the others' authentication and authorization.  Key to this
+  loose coupling at the identity management layer are
+  standardized mechanisms and formats for the communication of
+  identity information between the domains.  {SAML} is one such
+  standard.
+
+From the sound of that definition, gopher is already federated in
+that identity information between domains is inherent to the
+protocol because it's irrelevant. There's no authorized use
+mechanism here and the act of hosting content on a server is
+enough to identify the source. Since I host on gopher.black, if
+your use of gopher queries my server you have used standard
+mechanisms and formats for the communication of that information
+between the domains, right?
+
+Maybe the reason I'm having such difficulty is because my only
+exposure to federation as an idea has been via things like
+Mastodon which have far more interoperable parts. Content from one
+independent system is consumed and becomes content within another
+one, and the source of that content, the author, server, etc, all
+need to be accounted for in the communication. That requires more
+than gopher for sure.
+
+Even so, I'm not satisfied. I think there's more to federation
+than that definition. The context in how people discuss it seems
+to imply something else, but I can't put my finger on exactly what
+that might be. Distributed systems like IPFS come up a lot in
+those discussions, but I don't see a black & white relationship.
+
+I guess my slow brainmeats can't get past the idea that federation
+means I control my shiz but it can interact with everyone elses
+shiz in the same way. Am I so far off? Let me know with a reply or
+email or mastodon or a hand written letter.
+
+Yes! Hand written letters are my absolute favorite. They
+demonstrate all that extra effort, they're physical treasures, and
+I get to silently judge your personality through bullshit
+handwriting interpretation that I make up on the spot. Everyone
+wins! Send me an note with a reference to a pgp key and I'll send
+you back my mailing address on the down-low.
+
+Cheers, fedi-gophers
+
+8[0] Telnet to dict.org	dict	dict.org	2628
+[1] CLI Tricks: Dictionaries
+    gopher://gopher.black/1/phlog/20180405-cli-tricks-dictionaries
+</pre>]]></description>
+</item>
+<item>
   <title>Modafinil And Ketosis</title>
   <link>gopher://gopher.black/0/phlog/./20180626-modafinil-and-ketosis/gophermap</link>
   <pubdate>Tue, 26 Jun 2018 00:00:00 -0400</pubdate>
@@ -738,39 +820,6 @@ tweak the feature to avoid the abuse. Ultimately it should come
 down to a cost/benefit analysis. Unfortunately it's more likely to
 come down to the loudest screamers. But that's democracy.
 
-</pre>]]></description>
-</item>
-<item>
-  <title>Bicycles</title>
-  <link>gopher://gopher.black/0/phlog/./20180602-bicycles/gophermap</link>
-  <pubdate>Sat, 02 Jun 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Bicycles
-June 02nd, 2018
-----------------------------------------
-
-I posted a picture of my bicycle over on Mastodon. As I mentioned
-there, I have no real background with bikes beyond riding one as
-a kid. I bought an old racer off a guy in college and that's been
-my bike for most of my adult life. It was seriously uncomfortable.
-The seat was like a spear into my butt and I sat completely folded
-in half. The bike was really light weight, but that doesn't matter
-if you are sitting on top of it.
-
-A few years back I decided that I deserved a more comfortable
-bike. I went to the shop in town and told them I wanted to sit
-upright and have a squishy seat. They found me a great bike that
-I tested out. It was so much better than my old one. The frame
-says "Specialized", or something like it. It might be the brand or
-the model. I have no idea. It's a 7 speed thing and easy to shift
-with a twist of the right handle. It mostly doesn't hurt me to
-ride it, and that's a plus.
-
-So, all you bike nerds, what can you tell me about my bike? Is it
-a decent thing? Is there a reason my hands still go numb when
-I ride more than a few miles? Any advice for making biking suck
-less (I still prefer walking).
 </pre>]]></description>
 </item>
 </channel>
