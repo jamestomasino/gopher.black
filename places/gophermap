@@ -18,7 +18,6 @@ iInterfaces
 1BSD man pages	/	perso.pw	70
 7searx search	/searx.dcgi	me0w.net	70
 
-
 iNews	
 1FloodFeeds (News)	/feeds/today	gopher.floodgap.com	70
 1NotFox Realtime Keyword Counts	/users/tfurrows/cgi-bin/nf_realtime.php	sdf.org	70
@@ -29,16 +28,10 @@ iProjects
 1Gopher Polls	/poll	khzae.net	70
 1Gopher Pastebin	/pastebin	0x1A4.1337.cx	70
 
-iOther Content	
-1Cyber Vanguard	/	cyber.dabamos.de	70
-1Endangered Software Society (Games FAQ)	/	endangeredsoft.org	70
-1enkiv2's Medium Posts on Gopher	enkiv2/medium-backup	fuckup.solutions	70
-1Firien (Great SGI info)	/	firien.helluin.org	70
-1Fritterware	/	fritterware.org	70
-1ratthing.com	/	ratthing.com	70
-1The Whole Christ	/users/jcrao	sdf.org	70
-0Tao Te Ching	/books/LaoTzu.TaoTeChing	pain.ka10.de	70
-1Far Out Science	/	faroutscience.com	70
+
+i                       |    |	
+i                  _ \   _|    \    -_)   _| (_-<	
+i                \___/ \__| _| _| \___| _|   ___/	
 
 iOld computers, software, quirky games, writing, random stuff
 1Dusted.dk	/	dusted.dk	70
@@ -70,3 +63,14 @@ iStarwars DB, gopher related content
 
 iGaming & Software articles, projects, video game FAQs	
 1ze libertine gamer	/	zelibertinegamer.me	70
+
+1Cyber Vanguard	/	cyber.dabamos.de	70
+1Endangered Software Society (Games FAQ)	/	endangeredsoft.org	70
+1enkiv2's Medium Posts on Gopher	enkiv2/medium-backup	fuckup.solutions	70
+1Firien (Great SGI info)	/	firien.helluin.org	70
+1Fritterware	/	fritterware.org	70
+1ratthing.com	/	ratthing.com	70
+1The Whole Christ	/users/jcrao	sdf.org	70
+0Tao Te Ching	/books/LaoTzu.TaoTeChing	pain.ka10.de	70
+1Far Out Science	/	faroutscience.com	70
+
