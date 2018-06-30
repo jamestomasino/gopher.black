@@ -1,0 +1,49 @@
+i----------------------------------------		gopher.black	70
+iCLI Tricks: sc-im		gopher.black	70
+iJune 29th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iSC-IM - Spreadsheet Calculator Improvised		gopher.black	70
+i		gopher.black	70
+iA vim-like modal editor for spreadsheets in the terminal (ncurses)		gopher.black	70
+i		gopher.black	70
+iIt supports the following formats:		gopher.black	70
+i 		gopher.black	70
+i  .sc     SC-IM's native text format		gopher.black	70
+i  .xls    Microsoft Excel Spreadsheet		gopher.black	70
+i  .xlsx   Microsoft Office Open XML Workbook		gopher.black	70
+i  .csv    Comma-separated values		gopher.black	70
+i  .tsv    Tab-separated values		gopher.black	70
+i  .tab    Tab-separated values		gopher.black	70
+i  .txt    Simple text files		gopher.black	70
+i		gopher.black	70
+iIt has an impressive set of features (from the README)!		gopher.black	70
+i		gopher.black	70
+i  UNDO / REDO.		gopher.black	70
+i  65.536 rows and 702 columns supported. (The number of rows can		gopher.black	70
+i     be expanded to 1.048.576 if wished).		gopher.black	70
+i  CSV / TAB delimited / XLSX file import and export.		gopher.black	70
+i  Scripting support with LUA. Also with triggers and c dynamic		gopher.black	70
+i  linked modules.		gopher.black	70
+i  Clipboard support.		gopher.black	70
+i  GNUPlot interaction.		gopher.black	70
+i  Key-mappings.		gopher.black	70
+i  Sort of rows.		gopher.black	70
+i  Filter of rows.		gopher.black	70
+i  Subtotals.		gopher.black	70
+i  Cell shifting.		gopher.black	70
+i  256 color support - screen colors can be customized by user,		gopher.black	70
+i      even at runtime.		gopher.black	70
+i  Colorize cells or give them format such as bold or underline.		gopher.black	70
+i  Wide character support. The following alphabets are supported:		gopher.black	70
+i      English, Spanish, French, Italian, German, Portuguese, 		gopher.black	70
+i      Russian, Ukrainian, Greek, Turkish, Czech, Japanese, Chinese.		gopher.black	70
+i  Autobackup.		gopher.black	70
+i  Implement external functions in the language you prefer and use		gopher.black	70
+i      them in SC-IM.		gopher.black	70
+i  Use SC-IM as a non-interactive calculator, reading its input 		gopher.black	70
+i      from a external script.		gopher.black	70
+i  More movements commands implemented !		gopher.black	70
+i  Input and Output was completely rewritten.		gopher.black	70
+i		gopher.black	70
+iIt's a breeze to install on MacOS or Linux. Give it a shot.		gopher.black	70

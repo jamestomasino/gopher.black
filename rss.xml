@@ -3,6 +3,62 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Cli Tricks Sc Im</title>
+  <link>gopher://gopher.black/0/phlog/./20180629-cli-tricks-sc-im/gophermap</link>
+  <pubdate>Fri, 29 Jun 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+CLI Tricks: sc-im
+June 29th, 2018
+----------------------------------------
+
+SC-IM - Spreadsheet Calculator Improvised
+
+A vim-like modal editor for spreadsheets in the terminal (ncurses)
+
+It supports the following formats:
+ 
+  .sc     SC-IM's native text format
+  .xls    Microsoft Excel Spreadsheet
+  .xlsx   Microsoft Office Open XML Workbook
+  .csv    Comma-separated values
+  .tsv    Tab-separated values
+  .tab    Tab-separated values
+  .txt    Simple text files
+
+It has an impressive set of features (from the README)!
+
+  UNDO / REDO.
+  65.536 rows and 702 columns supported. (The number of rows can
+     be expanded to 1.048.576 if wished).
+  CSV / TAB delimited / XLSX file import and export.
+  Scripting support with LUA. Also with triggers and c dynamic
+  linked modules.
+  Clipboard support.
+  GNUPlot interaction.
+  Key-mappings.
+  Sort of rows.
+  Filter of rows.
+  Subtotals.
+  Cell shifting.
+  256 color support - screen colors can be customized by user,
+      even at runtime.
+  Colorize cells or give them format such as bold or underline.
+  Wide character support. The following alphabets are supported:
+      English, Spanish, French, Italian, German, Portuguese, 
+      Russian, Ukrainian, Greek, Turkish, Czech, Japanese, Chinese.
+  Autobackup.
+  Implement external functions in the language you prefer and use
+      them in SC-IM.
+  Use SC-IM as a non-interactive calculator, reading its input 
+      from a external script.
+  More movements commands implemented !
+  Input and Output was completely rewritten.
+
+It's a breeze to install on MacOS or Linux. Give it a shot.
+</pre>]]></description>
+</item>
+<item>
   <title>Federation And Gopher</title>
   <link>gopher://gopher.black/0/phlog/./20180627-federation-and-gopher/gophermap</link>
   <pubdate>Wed, 27 Jun 2018 00:00:00 -0400</pubdate>
@@ -737,89 +793,6 @@ This gopher hole is a great example. It's currently located:
 I think the lesson here for people shouldn't be to fear Microsoft
 nabbing Github. The lesson should be, distribute your shit,
 people! Use git for awesome.
-</pre>]]></description>
-</item>
-<item>
-  <title>Mastoconflict</title>
-  <link>gopher://gopher.black/0/phlog/./20180602-mastoconflict/gophermap</link>
-  <pubdate>Sat, 02 Jun 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Mastoconflict
-June 02nd, 2018
-----------------------------------------
-
-Mastodon is having a little tiff right now over the introduction
-of a new feature: trending hashtags. As the project maintainer
-puts it, it has been the most requested feature addition for over
-a year. When it rolled out, though, it was met with widespread
-criticism and, in many cases, open hostility. The rebuttals back
-and forth quickly escalated and became personal. Pretty much
-everyone involved is greatly unhappy, regardless of their position
-on the issue.
-
-Meanwhile, I'm sitting back here thinking to myself, "democracy in
-action." A collective developed and idea with their voices (the
-addition of trending hashtags). When that idea was implemented,
-other collectives disagreed. They weren't aware of its
-development, they argue. It is unsafe and can be used for evil. It
-will target groups who are often targets and make Mastodon unsafe
-or unwelcoming.
-
-There's one person in charge of the project. He must be the
-problem. If it weren't for him, surely the issue would be put to
-rest. It's as simple as that, because a "pure" democracy will
-always work things out. This is an example of corruption of the
-perfect, federated state.
-
-Sound familiar? Yeah, I thought so. The issue isn't having
-a single leader. The issue is that groups of people have different
-wants and needs. This is inherent to any sized group of people
-greater than one. You cannot make them all equally happy. You
-cannot serve every single use case simultaneously. The utopia of
-democracy does not exist, just as it does not exist for communism,
-or socialism, or even monarchy.
-
-So what do we do? We use our brains. We make decisions that help
-as many as we can. We use our morals and make decisions that hurt
-as few as possible. We don't cross lines that shouldn't be
-crossed. We listen to the words of the suffering and try to ease
-that suffering. We say to those with excess, "you have excess.
-Your priorities are lower than those who need help."
-
-This is all but impossible in systems that favor group-think. The
-power in those systems comes from those who can manipulate the
-system. Who can speak loudest is often the one with the most
-money. The wider the spread of power, the more this systematic
-influence becomes absolute. It can devolve to cult of personality
-eventually. The key to the recipe is broad reach of voice.
-
-What is the countermeasure? Strong-willed leaders who can champion
-the "right" decisions. What makes those decisions right? The
-things I listed above. What ensures a leader will execute those
-decisions and not others? That depends on your system. In
-government, there's not much, though a constitutional system can
-help balance it. It's easy to slide into despotism. In social
-systems like open source projects, the answer is the freedom to
-move on. The system is open source and the protocol can work with
-other projects. Mastodon can be forked and formed into something
-else by others with a different set of principles. If the current
-leader of the project does not implement policy (in the form of
-software features) that reflects the needs of the people, that's
-the easiest path to take. No bloodshed, just moving on and
-building something new.
-
-But back to the question of trending hashtags themselves. Are they
-a good idea? Probably not, at least in the way they've been
-implemented so far. There's been a lot of valid points about how
-bad actors already abuse similar systems in other networks.
-There's nothing currently in place to prevent that, and the
-distributed nature of the network makes stopping those attacks
-even harder than on Twitter. There have been very good ideas to
-tweak the feature to avoid the abuse. Ultimately it should come
-down to a cost/benefit analysis. Unfortunately it's more likely to
-come down to the loudest screamers. But that's democracy.
-
 </pre>]]></description>
 </item>
 </channel>
