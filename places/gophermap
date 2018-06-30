@@ -21,6 +21,7 @@ iInterfaces
 iNews	
 1FloodFeeds (News)	/feeds/today	gopher.floodgap.com	70
 1NotFox Realtime Keyword Counts	/users/tfurrows/cgi-bin/nf_realtime.php	sdf.org	70
+1Fritterware News RSS Feeds	/	fritterware.org	70
 
 iProjects	
 1Gopher Cookbook	/cookbook	tellus.strangled.net	70
@@ -64,13 +65,22 @@ iStarwars DB, gopher related content
 iGaming & Software articles, projects, video game FAQs	
 1ze libertine gamer	/	zelibertinegamer.me	70
 
+iAbandon ware, fortran, gifs, Sega, text files	
 1Cyber Vanguard	/	cyber.dabamos.de	70
-1Endangered Software Society (Games FAQ)	/	endangeredsoft.org	70
-1enkiv2's Medium Posts on Gopher	enkiv2/medium-backup	fuckup.solutions	70
-1Firien (Great SGI info)	/	firien.helluin.org	70
-1Fritterware	/	fritterware.org	70
+
+iExcellent Games FAQ	
+1Endangered Software Society	/	endangeredsoft.org	70
+
+iSGI resources	
+1Firien	/	firien.helluin.org	70
+
+iTextfiles.org mirror, San Antonio weather, other files	
 1ratthing.com	/	ratthing.com	70
+
+iImpressive collection of Catholic long-form writing	
 1The Whole Christ	/users/jcrao	sdf.org	70
-0Tao Te Ching	/books/LaoTzu.TaoTeChing	pain.ka10.de	70
+
+iRetro computing sandbox, hacking, games	
 1Far Out Science	/	faroutscience.com	70
 
+1enkiv2's Medium Posts on Gopher	enkiv2/medium-backup	fuckup.solutions	70
