@@ -1,0 +1,76 @@
+i----------------------------------------		gopher.black	70
+iWhy I use Gophermaps		gopher.black	70
+iJuly 01st, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+ixmanmonk just asked why I use gophermaps for my phlog instead of		gopher.black	70
+iplain text. I know others at bitreich [0] have commented on the		gopher.black	70
+ipractice with various opinions on why "misusing" gophermaps is		gopher.black	70
+ibad. Plenty of people on gopher use plain text for their content		gopher.black	70
+iand I am not going to complain. My choice is a product of style		gopher.black	70
+iand philosophy.		gopher.black	70
+i		gopher.black	70
+iStyle:		gopher.black	70
+i		gopher.black	70
+iOne of the best things about hypertext is the ability to link		gopher.black	70
+icontextually to relevant content. Gopher is missing this to		gopher.black	70
+ia degree, but not entirely. We can't link a block of text inline		gopher.black	70
+ilike in HTML but we can link a line. That functionality is		gopher.black	70
+ientirely limited to gophermaps, though. Without the gophermap the		gopher.black	70
+ibest we can do is include a text link and rely on the client to go		gopher.black	70
+iabove and beyond the protocol to enable interaction (like VF-1 so		gopher.black	70
+ivaliantly does).		gopher.black	70
+i		gopher.black	70
+iMy choice, stylistically, was to take it upon myself to do		gopher.black	70
+ia little extra work and build in the links directly into the		gopher.black	70
+icontent by making my phlogs a gophermap. I first announced this		gopher.black	70
+ichange [1] back in October of 2017 when I was still relatively new		gopher.black	70
+iat this whole thing. In fact, I was piggybacking on the very		gopher.black	70
+ibare-bones shell scripts that would later become burrow [2]. My		gopher.black	70
+ifirst iteration was just a bunch of echo commands to a blank file		gopher.black	70
+iand then launching vim [3]. These days I have the ability to edit		gopher.black	70
+iexisting phlog entries, generate in plain text or gophermaps,		gopher.black	70
+iauto-generate RSS, and a bunch of other crap.		gopher.black	70
+i		gopher.black	70
+iPhilosophy:		gopher.black	70
+i		gopher.black	70
+iFrom what I've seen over my time on gopher the biggest complaint		gopher.black	70
+iabout gophermaps for content isn't about the effort involved in		gopher.black	70
+icreating them. Instead it's an argument for purity in the		gopher.black	70
+iprotocol. "Don't use the 'i' item type for this sort of thing,"		gopher.black	70
+ithey say. "The 'i' type isn't even in RFC 1436!" And it's true.		gopher.black	70
+iThe type isn't defined in 1436, and it definitely isn't pure		gopher.black	70
+igopher as envisioned in the two-week sprint that a bunch of guys		gopher.black	70
+iat the University of Minnesota did as much to stick it to the man		gopher.black	70
+i(their school beauracracy) as they did to just get something out		gopher.black	70
+ithere for the community to react to.		gopher.black	70
+i		gopher.black	70
+iSee, I don't see that as something to protect through purity. The		gopher.black	70
+imindset of those guys was to iterate, to share, to build, and to		gopher.black	70
+imake the internet better. They didn't sit for years in planning		gopher.black	70
+ibefore deploying the end-all-be-all of protocols. They cobbled		gopher.black	70
+itogether some crap on top of existing tools and made improvements.		gopher.black	70
+iAnd that's what type "i" did later. It enabled us to write more		gopher.black	70
+idescription than would fit on one line so there was context to		gopher.black	70
+ia link.		gopher.black	70
+i		gopher.black	70
+iThat's what I see myself doing when I phlog. The links below (and		gopher.black	70
+inow sometimes in-line) are given context by my post. If you're		gopher.black	70
+ireading and say, "hey, I should check that out!" now you can. You		gopher.black	70
+ijust follow the link and boom, there you are.		gopher.black	70
+i		gopher.black	70
+iFor those folks who don't bother with it and post in plain text,		gopher.black	70
+iif I really want to chase down a link I can select it and manually		gopher.black	70
+ienter it. It's more difficult, but it's doable. I hold no grudge		gopher.black	70
+iagainst them for their choice.		gopher.black	70
+i		gopher.black	70
+iIf you are new to gopher and just want to toss up markdown files		gopher.black	70
+ithat you're also using to generate a web version, go for it. I'll		gopher.black	70
+ibe more happy that you've decided to add content here than		gopher.black	70
+ianything else. I'm certainly not going to berate your efforts by		gopher.black	70
+init-picking on whether you use type 1 or type 0. 		gopher.black	70
+i		gopher.black	70
+1[0] bitreich.org	/	bitreich.org	70
+1[1] New Format Test	/phlog/20171003-new-format-test
+h[2] burrow	URL:http://gitlab.com/jamestomasino/burrow
+3[0] This is amazeballs	/phlog/20170817-this-is-amazeballs.txt

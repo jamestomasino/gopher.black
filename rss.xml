@@ -3,6 +3,92 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Why I Use Gophermaps</title>
+  <link>gopher://gopher.black/0/phlog/./20180701-why-i-use-gophermaps/gophermap</link>
+  <pubdate>Sun, 01 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Why I use Gophermaps
+July 01st, 2018
+----------------------------------------
+
+xmanmonk just asked why I use gophermaps for my phlog instead of
+plain text. I know others at bitreich [0] have commented on the
+practice with various opinions on why "misusing" gophermaps is
+bad. Plenty of people on gopher use plain text for their content
+and I am not going to complain. My choice is a product of style
+and philosophy.
+
+Style:
+
+One of the best things about hypertext is the ability to link
+contextually to relevant content. Gopher is missing this to
+a degree, but not entirely. We can't link a block of text inline
+like in HTML but we can link a line. That functionality is
+entirely limited to gophermaps, though. Without the gophermap the
+best we can do is include a text link and rely on the client to go
+above and beyond the protocol to enable interaction (like VF-1 so
+valiantly does).
+
+My choice, stylistically, was to take it upon myself to do
+a little extra work and build in the links directly into the
+content by making my phlogs a gophermap. I first announced this
+change [1] back in October of 2017 when I was still relatively new
+at this whole thing. In fact, I was piggybacking on the very
+bare-bones shell scripts that would later become burrow [2]. My
+first iteration was just a bunch of echo commands to a blank file
+and then launching vim [3]. These days I have the ability to edit
+existing phlog entries, generate in plain text or gophermaps,
+auto-generate RSS, and a bunch of other crap.
+
+Philosophy:
+
+From what I've seen over my time on gopher the biggest complaint
+about gophermaps for content isn't about the effort involved in
+creating them. Instead it's an argument for purity in the
+protocol. "Don't use the 'i' item type for this sort of thing,"
+they say. "The 'i' type isn't even in RFC 1436!" And it's true.
+The type isn't defined in 1436, and it definitely isn't pure
+gopher as envisioned in the two-week sprint that a bunch of guys
+at the University of Minnesota did as much to stick it to the man
+(their school beauracracy) as they did to just get something out
+there for the community to react to.
+
+See, I don't see that as something to protect through purity. The
+mindset of those guys was to iterate, to share, to build, and to
+make the internet better. They didn't sit for years in planning
+before deploying the end-all-be-all of protocols. They cobbled
+together some crap on top of existing tools and made improvements.
+And that's what type "i" did later. It enabled us to write more
+description than would fit on one line so there was context to
+a link.
+
+That's what I see myself doing when I phlog. The links below (and
+now sometimes in-line) are given context by my post. If you're
+reading and say, "hey, I should check that out!" now you can. You
+just follow the link and boom, there you are.
+
+For those folks who don't bother with it and post in plain text,
+if I really want to chase down a link I can select it and manually
+enter it. It's more difficult, but it's doable. I hold no grudge
+against them for their choice.
+
+If you are new to gopher and just want to toss up markdown files
+that you're also using to generate a web version, go for it. I'll
+be more happy that you've decided to add content here than
+anything else. I'm certainly not going to berate your efforts by
+nit-picking on whether you use type 1 or type 0. 
+
+[0] bitreich.org
+    gopher://bitreich.org/1/
+[1] New Format Test
+    gopher://gopher.black/1/phlog/20171003-new-format-test
+[2] burrow
+    http://gitlab.com/jamestomasino/burrow
+3[0] This is amazeballs	/phlog/20170817-this-is-amazeballs.txt
+</pre>]]></description>
+</item>
+<item>
   <title>Cli Tricks Sc Im</title>
   <link>gopher://gopher.black/0/phlog/./20180629-cli-tricks-sc-im/gophermap</link>
   <pubdate>Fri, 29 Jun 2018 00:00:00 -0400</pubdate>
@@ -755,44 +841,6 @@ There is a feeling in it that can be communicated and shared.
 
 Ask a priest how they heard the call and watch for that smile.
 That's how you know.
-</pre>]]></description>
-</item>
-<item>
-  <title>Git</title>
-  <link>gopher://gopher.black/0/phlog/./20180603-git/gophermap</link>
-  <pubdate>Sun, 03 Jun 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Git
-June 03rd, 2018
-----------------------------------------
-
-There's some panic in the air over Microsoft courting Github.
-Alarmists are pulling their projects down, moving to self-hosted
-Gitlab instances and so on. I'm confused by the whole thing,
-though. Git isn't github. My repos aren't property of github, even
-if it's one of the remotes. I have everything up there mirrored in
-several remote locations. That's the beauty of git! It's
-distributed. Every repo is the complete repo.
-
-orbifx summarized it best over here [0].
-[0] Decentralised Git
-    gopher://notes.orbitalfox.eu/0/note/15ec76d8-a67c-4c19-abc4-103184760186
-
-This gopher hole is a great example. It's currently located:
-- on this laptop I'm writing on
-- on gopher.black (raspberry pi)
-- on SDF
-- on Tilde.town
-- on bitbucket.org
-- on my macbook air at work
-- on a backup tower at work
-- on my PC in a VM in VirtualBox
-- and probably some other places I forgot about
-
-I think the lesson here for people shouldn't be to fear Microsoft
-nabbing Github. The lesson should be, distribute your shit,
-people! Use git for awesome.
 </pre>]]></description>
 </item>
 </channel>
