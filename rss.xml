@@ -85,7 +85,8 @@ nit-picking on whether you use type 1 or type 0.
     gopher://gopher.black/1/phlog/20171003-new-format-test
 [2] burrow
     http://gitlab.com/jamestomasino/burrow
-3[0] This is amazeballs	/phlog/20170817-this-is-amazeballs.txt
+[0] This is amazeballs
+    gopher://gopher.black/0/phlog/20170817-this-is-amazeballs.txt
 </pre>]]></description>
 </item>
 <item>
