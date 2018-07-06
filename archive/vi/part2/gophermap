@@ -1,601 +1,601 @@
-iThe vi/ex Editor, Part 2: Line-Mode Addresses
-i
-iWhenever you want to give an editor command that will operate on
-itext that's already in the file you're editing--to delete some
-itext, change lower-case letters to capitals, write to a file,
-ietcetera--the editor needs to know what part of the file to go to
-iwork on. A few commands have their addresses built in, and most
-iline-mode commands have default addresses that the editor will use
-iif you don't give an address, but that still leaves a lot of
-ioccasions where you need to know how to give the editor an address
-iand what address to give.
-i
-iMany line-mode commands are almost identical to corresponding
-icommands in visual mode; many more do similar things in different
-iways.  Most of the benefit of these duplicative command sets comes
-ifrom the totally-different addressing styles of line and visual
-imodes.  The differing address concepts mean that an edit that
-iwould be difficult or impossible to do with one mode's available
-iaddresses can be a piece of cake with an address form found in the
-iother mode.
-i
-iSince I mention "line mode" so often, you may wonder whether there
-ireally is a separate mode for line editing.  There surely
-iis--instead of filling your screen with text from the file you're
-iediting, this mode gives you a colon (:) prompt for your line mode
-icommands, and prints only an occasional line from the file on your
-iscreen.  The feel of this mode is very much like giving UNIX
-icommands from your shell prompt.  Few people work in line mode
-ithese days, largely because you can give most line-mode commands
-ifrom visual mode, but you can't give any visual-mode commands
-iwhile you are in line mode.  Or perhaps they just prefer the
-icomfortable WYSIWYG feeling of seeing the text on screen, with
-ichanges appearing as they are made.
-i
-iBut there are times when you will need to work temporarily in line
-imode.  To get to line mode when you first launch the editor,
-iinvoke it by typing "ex" instead of "vi". To go to line mode when
-iyou are already in the editor's visual mode, enter "Q". To get
-iback to visual mode, type "vi" followed by a carriage return.
-i
-iWondering why I didn't put a colon in front of that command to
-ireturn to visual mode, which is obviously a line-mode command?
-iBecause you don't need to type that colon when you're giving a
-icommand from within line mode.  It may even be harmful; the rule
-iis that if you type a colon at the start of a command from within
-iline mode, there must be nothing between the colon and the command
-iname or abbreviation.  Not an address, not even a space, nothing
-iat all.
-i
-iSo from this point on, I will display line-mode commands without
-ian initial colon, because you now know enough to type that colon
-ionly if you're working in visual mode.  And I'll leave off the tag
-iat the end of a line-mode command that reminds you to finish with
-ia carriage return because you now realize that any line-mode
-icommand, given from either line or visual mode, has to end with a
-icarriage return.
-i
-iSome of you may ask why I show line-mode command lines in
-ilong-winded form, with spelled-out command names and lots of
-iwhitespace instead of using abbreviations.  For instance, the two
-icommand lines:
-i
-i  global /^/ move 0
-i  g/^/m0
-i
-iare identical in their effect, and the second is surely faster to
-itype, so why do I show the first form?  Because the long version
-iis much easier to follow when I'm demonstrating a new concept, and
-ialmost everything here will be new to at least some of you.  And
-iit's a good idea to get to know the long forms, because you'll
-isoon be learning to write editor scripts, and those scripts would
-ibe as cryptic as APL to future maintenance programmers if you
-iwrote them in terse style.  When I go over the roster of line-mode
-icommands, I'll tell you both the long name and one or two short
-inames for each.
-i
-iLine-Mode Addressing
-i
-iA SINGLE ADDRESS is often all you need with a line-mode command.
-iOne address refers to just one line, which tells a command like
-idelete or substitute to operate on that one line only.  A command
-ilike insert or read, which puts something immediately before or
-iafter a particular line, has no use for more than one address.
-i
-iA search pattern, as discussed in the first installment of this
-itutorial, is always an acceptable line-mode address.  You put the
-iaddress at the start of the command line, before the command name
-i(but after the initial colon if you are giving the command from
-ivisual mode), so:
-i
-i  ?the [cC]at? delete
-i
-iwill erase the last previous line that contains the string "the
-icat" or "the Cat", while:
-i
-i  /^GLOSSARY$/ read gloss.book
-i
-iputs the contents of the file "gloss.book" right after the next
-iline in the file you're editing that contains only the word
-i"GLOSSARY".
-i
-iThere are two shorthand forms for reusing search patterns as
-iaddresses.  Typing "??" or "//" tells the editor to use the last
-isearch pattern you used previously, and your choice of "??" or
-i"//" will set the direction of the search, overriding the
-idirection you chose the previous time you used that search
-ipattern.  That is, if you type:
-i
-i  ?the cat? yank
-i  // delete
-i  ?? print
-i
-ithe second command will search forward, to remove the last
-iprevious line containing the string "the cat", even though your
-ioriginal use of that pattern was in a backward search. The third
-icommand will search backward to find the line to print, which (by
-icoincidence) is the direction of the original search.
-i
-iBut the search pattern that those preceding abbreviations reuse
-imay not be a pattern you used to search for a line. If you ran a
-isubstitute command after any pattern searches for lines, then the
-ipattern you gave the substitute command to tell it what text to
-itake out of the line is the pattern that will be reused.  This is
-iso even if your substitute command began with a search pattern to
-ispecify the line on which the substitution was to be
-iperformed--the search to find the pattern to be replaced within
-ithe line was run after the first search pattern had found the line
-ito operate on, so the search within the line was the last pattern
-isearch run.  So if you were to type:
-i
-i  /the cat/ substitute /in the hat/on the mat
-i  ?? delete
-i
-ithe second command would, in this case, delete the last previous
-iline containing "in the hat". To be sure that the pattern that
-igets reused is the last one used to find a line, use the
-iabbreviations "\?" and "\/" to search backward and forward,
-irespectively.  In all other respects these work just as typing
-i"??" and "//" do.
-i
-iA LINE NUMBER is also a valid line-mode address.  The editor
-iautomatically numbers each line in the file consecutively, and
-ithis numbering is dynamic--that is, whenever you add or delete
-ilines somewhere, the editor renumbers all the lines following the
-iinsertion or deletion point.  So if you change some text on line
-i46 in your file, and then delete lines 11 and 12, the line with
-ithe text you changed is now line 44. And if you then add ten new
-ilines after line 17, the line with your changed text on it now
-iautomatically becomes line 54.
-i
-iThere is never a gap or an overlap in the line number sequence, so
-ithe nth line in the file is always line number n; that is, the 7th
-iline is always line number 7, and so on.  (There are several ways
-ito display these line numbers, which I will expound in a later
-itutorial installment.)  To delete the 153rd line in your file,
-ijust type:
-i
-i  153 delete
-i
-iYou don't use any delimiters around a line number, or around any
-iother address except a search pattern.
-i
-iThere are two symbolic line numbers and one fictional one that can
-ibe used in line-mode addresses.  As long as there are any lines in
-ithe buffer (that is, you haven't specified a not-yet-existent file
-ito edit and failed to enter any text so far), the editor regards
-iyou as being `on' one of them, usually the last line affected by
-iyour latest command.  A period or dot (.) is the symbolic address
-ifor this line.  The last line in the file also has a symbolic
-iaddress: the dollar sign ($). So if you should type:
-i
-i  . write >> goodlines
-i  $ delete
-i
-ithe first command would append a copy of just the line you are on
-inow to a file named "goodlines", while the second would delete the
-ilast line in the file you are editing.
-i
-iA few commands put text immediately after the line address you
-igive: the append command is one of them.  In order to let them put
-itheir text at the very start of a file (if that is where you want
-iit), these commands can take the fictitious line number zero (0)
-ias their address.  So, if you want to type some text that will
-iappear ahead of anything already in the file, you can do it with
-ieither of these command lines:
-i
-i  1 insert
-i  0 append
-i
-i(Note, though, that insert and append are among the few line-mode
-icommands that cannot be run from visual mode by starting with a
-icolon, because they occupy more than one line including the text
-ito be put in.)
-i
-iWRITING YOUR OWN LINE ADDRESSES is possible, too. You can attach
-ilower-case letters to lines as line addresses, and change the
-iattachments whenever you like.  You can even use a special address
-ithat is automatically attached to the last line you jumped off
-ifrom.
-i
-iThere are ways to mark a particular line with a lower-case letter
-iof the alphabet, and those ways differ between line and visual
-imodes.  I'll be explaining all these ways in later installments of
-ithis tutorial.  But once a line is marked, the line-mode address
-ithat refers to that line is just the single-quote character
-ifollowed immediately by the lower-case letter with which the line
-iwas marked.  So typing:
-i
-i  'b print
-i
-iwill display on the screen whatever line you have previously
-imarked with the letter b, no matter where the line is in relation
-ito where you are when you give the command.  No need to tell the
-ieditor whether to search forward or backward; there can be only
-ione line at a time marked with any one letter, and the editor will
-ifind that line regardless.
-i
-iThe editor does some line marking on its own, too.  Whenever you
-imove from one line to another by a non-relative address, the
-ieditor marks the line you just left.  (A non-relative address is
-ione that isn't a known number of lines from where you were.) So:
-i
-i  $
-i  /the cat/
-i  358
-i  ?glossary? +7
-i  'b
-i
-iare all non-relative addresses, and if you give any one of them,
-ithe editor will mark the line you are leaving for future
-ireference.  Then you can return to that line just by typing two
-isuccessive single quotes:
-i
-i  "
-i
-ias a line-mode address.  In theory, you can use this address with
-iany line-mode command.  But it is so difficult to know for sure
-iwhen you left a line via a non-relative address that this address
-iform is best saved for going back to where you were when a mistake
-imoves you far away, at least until you're a wizard with this
-ieditor.
-i
-iMODIFYING ANY OF THESE ADDRESSES is possible, and there are two
-iways to do this.  The simpler way is to offset the address a
-icertain number of lines forward or backward with plus (+) or minus
-i(-) signs.  The rule is that each plus sign following an address
-itells the editor to go one line farther forward in the file than
-ithe basic address, while each minus sign means a line backward.
-iSo these three addresses all refer to the same line:
-i
-i  35
-i  37 --
-i  30 +++++
-i
-iNot that you're likely to want to modify line-number addresses
-iwith counts, unless you're weak in arithmetic and want the editor
-ito do the adding and subtracting for you.  But the count offsets
-iwill work with any line-mode addresses, and are most often used
-iwith search patterns.  In any event, there is a shorthand for
-ithese counts, too.  A plus or minus sign immediately followed by a
-inumber (single or multiple digits) is equivalent to a string of
-iplus or minus signs equal to that number, so that these two
-iaddresses are the same:
-i
-i  /^register long/ ++++
-i  /^register long/ +4
-i
-iTake note that the "4" in the second example does not mean "line
-inumber 4", as it would if it appeared by itself as an address.
-iAfter a plus or minus sign, a number is a count forward or
-ibackward from where the primary address lands (or if there is no
-iprimary address before the count, from the line you are on when
-iyou run the command).
-i
-iNote also that this is one of the few places in line-mode commands
-iwhere you may not insert a blank space.  The number must start in
-ithe very next character position after the plus or minus sign.  If
-iyou violate this rule, the editor will uncomplainingly operate on
-isome line that definitely is not the line you expected.
-i
-iThe second style of address modifier is used where you want to do
-ia search that's complex.  Let's say you want to go forward in the
-ifile to delete a line that starts with "WARNING!", but not the
-ifirst such line the editor would encounter; you want the second
-iinstance.  Either of these command lines will do it:
-i
-i  /^WARNING!/ ; /^WARNING!/ delete
-i  /^WARNING!/ ; // delete
-i
-iA semicolon (;) between two search patterns tells the editor to
-ifind the location of the first pattern in the usual way, then
-istart searching from that location for the second pattern.  In
-ithis case, the first search pattern turned up the first instance
-iof a line starting with "WARNING!", and the second search pattern
-iled the editor on to the second instance.
-i
-iA very significant point here is that this combination of two
-isearch patterns, either of which could be a line address in
-iitself, does not tell the editor to delete two lines.  The
-isemicolon means that the first pattern is merely a way station,
-iand that the single line found by the second search pattern is the
-ionly line to be deleted.  In brief, what looks like addresses for
-itwo lines is actually only an address for one.  (This is not what
-ithe official documentation for this editor says, but the
-idocumentation is just plain wrong on this point.)
-i
-iBut that's just the start of what you can do.  You are not
-irestricted to just two addresses.  I've used up to ten of them,
-iall separated by semicolons, to reach one specific line.  As an
-iexample:
-i
-i  ?^Chapter 3$? ; /^Bibliography$/ ; /^Spinoza/ ; /Monads/
-i
-iwill bring me to the title line of Spinoza's first work with
-i"Monads" in the title, in the bibliography for Chapter 3.
-i
-iNor are you limited to search pattern addresses when putting
-itogether a semicolon-separated address string.  If you want to
-ireach the first line following line 462 that contains the word
-i"union", typing:
-i
-i  462 ; /\<union\&gt;/
-i
-iwill bring you there.  And any of the addresses can take numerical
-ioffsets, so:
-i
-i  462 +137 ; /register int/ ---
-i
-iis also a legitimate address string.
-i
-iBut there are two unfortunate limitations on using
-isemicolon-separated address strings.  The lesser problem is that
-isuch a string can use "line zero" as an address only if the
-icommand following the address string could take line zero by
-iitself as its address.  That is, you can't even start at line zero
-iand then proceed elsewhere with additional addresses, unless the
-icommand can operate from line zero.  So:
-i
-i  0 ; /Spinoza/ +++ ; /Kant/ delete
-i
-i
-i  which looks like a reasonable way to be sure your search will
-i  find the very first "Spinoza" in your file, will actually fail
-i  with an error message about an illegal address.
-i
-iThe larger misfortune is that each address in a semicolon-
-iseparated string must be farther down in the file than the one
-ithat precedes it. (This means the actual location found, after
-iapplying any plus-sign or minus-sign offset.)  You cannot
-imove backward within the series of way points.
-i
-iBut that does not mean that you cannot use a backward search
-ipattern within the string.  The first address can be a backward
-isearch, of course.  And a subsequent address can search backward
-iif you are certain that the line it finds will actually be more
-iforward in the file.  For example, you may know that a certain
-ibackward search will wrap around to the bottom end of the file
-ibefore it finds a match.  A common example would be:
-i
-i
-i  1 ; ?Spinoza? ; /Hegel/ yank
-i
-iBeginning a backward search from the first line in the file means
-ithat the search must start with the last line in the file due to
-iwraparound, which guarantees that the search will yank the "Hegel"
-iline that follows the vary last "Spinoza" line in your file.
-i
-iAlso, you can use a plus-sign offset after a backward search when
-iyou are certain that the line finally found after the offset is
-iapplied will be farther down in the file than the preceding way
-ipoint had been.  Thus, if I want to find the first mention of
-iHegel in Chapter 8 that is at least 120 lines after the last
-imention of him in Chapter 7, I can type:
-i
-i  /^Chapter 8$/ ; ?Hegel? +119 ; //
-i
-iIf a command with this address fails and gives an error message
-iabout a bad address, I'll know that the last mention of Hegel in
-iChapter 7 is more than 120 lines before the end of the chapter, so
-ithe very first mention of his name in Chapter 8 is what I'm
-ilooking for.  In that case, the address:
-i
-i  /^Chapter 8$/ ; /Hegel/
-i
-iis all that my command needs.
-i
-iThe situation with forward searches inside a semicolon-separated
-iaddress string is a mirror image of what I've just said. A forward
-isearch can take a minus-sign offset if you know that the offset is
-ismall enough that the line found will be further down than the
-ilast way point.  But a forward search will fail, even with no
-ioffset or a plus-sign offset, if wraparound makes it find a line
-iearlier in the file than the way point from which it began.
-i
-iAddressing a Section of Text
-i
-iTWO ADDRESSES CAN ALSO STAND FOR A RANGE OF LINES. When two
-iaddresses are separated by a comma rather than a semicolon, the
-imeaning changes radically.  (What a difference a dot makes!)
-i
-iOften you will want a line-mode command to act on a series of
-isuccessive lines.  For example, you may want to move a stretch of
-itext from one place to another.  To do this, you give the address
-iof the first line you want the command to act on, followed by the
-ilast line it should act on, and separate the two addresses with a
-icomma.  So, the command:
-i
-i  14 , 17 delete
-i
-iwill delete line 14 and line 15 and line 16 and line 17.  You can
-isee that putting more than two addresses in a comma-separated
-iaddress string would be pointless.  The line mode of this editor
-iis discreet if you ignore this and string together three or more
-iaddresses with comma separation: it uses the first two addresses
-iand discards the rest.
-i
-iAny line-mode addresses may be used with a comma.  All of the
-ifollowing combinations make sense:
-i
-i  'd , /^struct/
-i  257 , .
-i  ?^Chapter 9$? , $
-i
-iThe first address combination would cause the command that follows
-iit to operate on the section starting with the line you have
-ipreviously marked "d" and ending with the next forward line that
-ibegins with "struct", inclusive.  The second combination covers
-iline 257 through the line you are on now.  The third goes backward
-ito include the previous line containing only "Chapter 9", and
-iforward to include the very last line in your file; plus all the
-ilines in between, of course.
-i
-iThere are limitations on this technique, too.  The primary one is
-ithat the address after the comma (after any offsets, of course)
-icannot be earlier in the file than the address before the comma.
-iThat is, the range of lines must run forward from the first
-iaddress to the second address.  So the command:
-i
-i  57 , 188 delete
-i
-iis just fine, while the similar-looking command:
-i
-i  188 , 57 delete
-i
-iwill only produce an error message.  (But if the two addresses
-ihappen to evaluate to the same line, there is no problem.  The
-icommand will silently operate on the one line you've specified.)
-i
-iAs you work up to more sophisticated line-mode addresses, you may
-iget unexpected error messages about the second address being prior
-ito first address, when you don't see how you could have
-ianticipated that the addresses would evaluate that way.  That's no
-idisgrace, and the solution is simple.  After you've looked over
-ithe addresses you used, and you're certain that they are the ones
-iyou want, just type the command in again with the two addresses in
-ireverse order.  That is, if:
-i
-i  642 , /in Table 23/ delete
-i
-ihas failed, giving an error message that the lines are in the
-iwrong order, then:
-i
-i  /in Table 23/ , 642 delete
-i
-iwill solve that problem.
-i
-iThe last limitation is that when you use search patterns on both
-isides of a comma, the second search starts from the current line
-ijust as the first search did; it does not start from the line that
-ithe first search found.  There's a way around that, though, that
-iinvolves using one or more semicolons along with a comma.
-i
-iA semicolon-separated address string can be used anywhere in line
-imode that you would use a single address.  One very useful
-itechnique is to use these address strings on one or both sides of
-ia comma, to indicate a range of lines to be affected. Remember
-ithat an address string separated by semicolons is the address of
-ijust one line, so this one line can be the start or the end of a
-irange of lines.  For example, in:
-i
-i  /^INDEX$/ ; /^Xerxes/ , $ write tailfile
-i  ?^PREFACE$? ; /^My 7th point/ , ?^PREFACE$? ; /^In summary/ -- delete
-i
-ithe first command would write the latter part of the index to a
-inew file, while the second could be used to remove a section of a
-ibook's preface.
-i
-iAnd that brings up the solution to our previous obstacle; the
-isecond search's starting point.  If you want the search after the
-icomma to begin from the point the first search found, use the
-ifirst search pattern followed by a semicolon as the start of your
-iafter-the-comma search string, as in either of:
-i
-i  ?Stradivarius? , ?Stradivarius? ; /Guarnerius/
-i  ?Stradivarius? , ?? ; /Guarnerius/
-i
-iIn view of the rules about not going backward in line-mode address
-istrings, I'd better clarify the way these limitations work when
-iyou combine semicolon and comma separation, as in these two
-iexamples.  All but the first of the way points in each
-isemicolon-separated string must be in the forward direction, of
-icourse, but the start of the second semicolon-separated string may
-ibe prior to any of the addresses in the first such string, that
-iis, the one-way meter resets itself at the comma point.  And using
-isemicolon-separated strings on both sides of a comma only requires
-ithat the final landing point of the second semicolon-separated
-istring not be earlier in the file than the final landing point of
-ithe first; the relative locations of the way points don't matter
-ito the comma.  To clarify this, consider a couple of odd-looking,
-iand useless, but very lucid examples.  The combination:
-i
-i  125 ; 176 ; 221 , 32 ; 67 ; 240
-i
-ilooks invalid due to the backward jump from line 221 to line 32,
-ibut is actually a perfectly good address.  The back jump comes
-iright after the comma, where it is all right.  But:
-i
-i  125 ; 176 ; 221 , 32 ; 67 ; 218
-i
-iwill produce an error message, because the final landing point of
-ithe first semicolon-separated string, line 221, falls later in the
-ifile than the final landing point of the second semicolon-
-iseparated string, line 218.
-i
-iNow, a note about default addresses.  I've already mentioned that
-imost line-mode commands that can take an address have a "default"
-iaddress built in, which tells the editor where to run the command
-iif you don't give an address with it.  Each command has its own
-idefault address, which may be the current line, the current line
-iplus the one following, the last line of the file, or the entire
-ifile.
-i
-iThe comma separator has default addresses of its own.  They are
-ithe same regardless of what command is being used, and they
-ioverride any command's own default address.  If you put a comma
-ibefore a command and don't put an address before the comma, by
-idefault the address there is the current line.  In the same way,
-iif you leave out the address after the comma, the default there is
-ialso the current line.  You can even leave out the address in both
-iplaces and use the current-line default in both: that means the
-iimplied address is "from the current line to the current line",
-iwhich makes the current line the only line the command will
-ioperate on.  So every one of the following command lines:
-i
-i  .     write >> goodlines
-i  . , . write >> goodlines
-i    , . write >> goodlines
-i  . ,   write >> goodlines
-i    ,   write >> goodlines
-i
-i
-iwill do exactly the same thing: append a copy of just the current
-iline in the file you're editing to another file named "goodlines".
-i
-iFinally, there is one special symbol that represents a
-icomma-separated address combination.  The percent sign (%) has the
-isame meaning as 1,$ as a line-mode address combination.  Both
-irefer to the entire file.
-i
-iNow You Try It
-i
-iBefore you try the complex aspects of line-mode addresses in
-iactual editing situations, here are some problems you can build
-iyourself up on.  For each problem I've included a solution that
-iwill work fairly efficiently.
-i
-i  1. How can you tell the editor to delete the line that holds
-i  the very last instance of "EXPORT" in your file?  The solution
-i  is straightforward once you know where to start searching.
-i
-i  2. Suppose you want to delete the very first line in the file
-i  with "EXPORT" on it, and that just might be line 1.  You can't
-i  start the search from line zero because the delete command
-i  cannot take line 0 as an address.  When you type the address
-i  string "$ ; /EXPORT/" to use wraparound, you get an error
-i  message asserting that the search pattern found a line prior to
-i  the line found by the "$" address that appeared first, which is
-i  what you'd expect. How can you tell the editor to find and
-i  delete this line?  The solution requires just a bit of
-i  creativity.
-i
-i  3. If you use the address "?abc? , /xyz/", it includes the two
-i  lines the searches (for "abc" and "xyx") find, as well as all
-i  the lines between them.  How would you specify that you want
-i  the affected lines to go up to, but not include, the lines the
-i  two searches find?  In this case the solution is simpler than
-i  you might think.
-i
-1Solutions	solutions
-i
-iComing Up Next
-i
-iThe next installment of this tutorial will deal with the global
-icommands--they're just too much to absorb right after the
-imind-numbing collection of address forms we've just gone through.
-iAnd to give you more scope for using all these address forms, I'll
-ialso cover line-mode commands themselves, particularly the ones
-ithat have more capabilities than you suspect.
-
-1Part 3: The Global Command	/archive/vi/part3/
-1Back to the index	/archive/vi/
+iThe vi/ex Editor, Part 2: Line-Mode Addresses	
+i	
+iWhenever you want to give an editor command that will operate on	
+itext that's already in the file you're editing--to delete some	
+itext, change lower-case letters to capitals, write to a file,	
+ietcetera--the editor needs to know what part of the file to go to	
+iwork on. A few commands have their addresses built in, and most	
+iline-mode commands have default addresses that the editor will use	
+iif you don't give an address, but that still leaves a lot of	
+ioccasions where you need to know how to give the editor an address	
+iand what address to give.	
+i	
+iMany line-mode commands are almost identical to corresponding	
+icommands in visual mode; many more do similar things in different	
+iways.  Most of the benefit of these duplicative command sets comes	
+ifrom the totally-different addressing styles of line and visual	
+imodes.  The differing address concepts mean that an edit that	
+iwould be difficult or impossible to do with one mode's available	
+iaddresses can be a piece of cake with an address form found in the	
+iother mode.	
+i	
+iSince I mention "line mode" so often, you may wonder whether there	
+ireally is a separate mode for line editing.  There surely	
+iis--instead of filling your screen with text from the file you're	
+iediting, this mode gives you a colon (:) prompt for your line mode	
+icommands, and prints only an occasional line from the file on your	
+iscreen.  The feel of this mode is very much like giving UNIX	
+icommands from your shell prompt.  Few people work in line mode	
+ithese days, largely because you can give most line-mode commands	
+ifrom visual mode, but you can't give any visual-mode commands	
+iwhile you are in line mode.  Or perhaps they just prefer the	
+icomfortable WYSIWYG feeling of seeing the text on screen, with	
+ichanges appearing as they are made.	
+i	
+iBut there are times when you will need to work temporarily in line	
+imode.  To get to line mode when you first launch the editor,	
+iinvoke it by typing "ex" instead of "vi". To go to line mode when	
+iyou are already in the editor's visual mode, enter "Q". To get	
+iback to visual mode, type "vi" followed by a carriage return.	
+i	
+iWondering why I didn't put a colon in front of that command to	
+ireturn to visual mode, which is obviously a line-mode command?	
+iBecause you don't need to type that colon when you're giving a	
+icommand from within line mode.  It may even be harmful; the rule	
+iis that if you type a colon at the start of a command from within	
+iline mode, there must be nothing between the colon and the command	
+iname or abbreviation.  Not an address, not even a space, nothing	
+iat all.	
+i	
+iSo from this point on, I will display line-mode commands without	
+ian initial colon, because you now know enough to type that colon	
+ionly if you're working in visual mode.  And I'll leave off the tag	
+iat the end of a line-mode command that reminds you to finish with	
+ia carriage return because you now realize that any line-mode	
+icommand, given from either line or visual mode, has to end with a	
+icarriage return.	
+i	
+iSome of you may ask why I show line-mode command lines in	
+ilong-winded form, with spelled-out command names and lots of	
+iwhitespace instead of using abbreviations.  For instance, the two	
+icommand lines:	
+i	
+i  global /^/ move 0	
+i  g/^/m0	
+i	
+iare identical in their effect, and the second is surely faster to	
+itype, so why do I show the first form?  Because the long version	
+iis much easier to follow when I'm demonstrating a new concept, and	
+ialmost everything here will be new to at least some of you.  And	
+iit's a good idea to get to know the long forms, because you'll	
+isoon be learning to write editor scripts, and those scripts would	
+ibe as cryptic as APL to future maintenance programmers if you	
+iwrote them in terse style.  When I go over the roster of line-mode	
+icommands, I'll tell you both the long name and one or two short	
+inames for each.	
+i	
+iLine-Mode Addressing	
+i	
+iA SINGLE ADDRESS is often all you need with a line-mode command.	
+iOne address refers to just one line, which tells a command like	
+idelete or substitute to operate on that one line only.  A command	
+ilike insert or read, which puts something immediately before or	
+iafter a particular line, has no use for more than one address.	
+i	
+iA search pattern, as discussed in the first installment of this	
+itutorial, is always an acceptable line-mode address.  You put the	
+iaddress at the start of the command line, before the command name	
+i(but after the initial colon if you are giving the command from	
+ivisual mode), so:	
+i	
+i  ?the [cC]at? delete	
+i	
+iwill erase the last previous line that contains the string "the	
+icat" or "the Cat", while:	
+i	
+i  /^GLOSSARY$/ read gloss.book	
+i	
+iputs the contents of the file "gloss.book" right after the next	
+iline in the file you're editing that contains only the word	
+i"GLOSSARY".	
+i	
+iThere are two shorthand forms for reusing search patterns as	
+iaddresses.  Typing "??" or "//" tells the editor to use the last	
+isearch pattern you used previously, and your choice of "??" or	
+i"//" will set the direction of the search, overriding the	
+idirection you chose the previous time you used that search	
+ipattern.  That is, if you type:	
+i	
+i  ?the cat? yank	
+i  // delete	
+i  ?? print	
+i	
+ithe second command will search forward, to remove the last	
+iprevious line containing the string "the cat", even though your	
+ioriginal use of that pattern was in a backward search. The third	
+icommand will search backward to find the line to print, which (by	
+icoincidence) is the direction of the original search.	
+i	
+iBut the search pattern that those preceding abbreviations reuse	
+imay not be a pattern you used to search for a line. If you ran a	
+isubstitute command after any pattern searches for lines, then the	
+ipattern you gave the substitute command to tell it what text to	
+itake out of the line is the pattern that will be reused.  This is	
+iso even if your substitute command began with a search pattern to	
+ispecify the line on which the substitution was to be	
+iperformed--the search to find the pattern to be replaced within	
+ithe line was run after the first search pattern had found the line	
+ito operate on, so the search within the line was the last pattern	
+isearch run.  So if you were to type:	
+i	
+i  /the cat/ substitute /in the hat/on the mat	
+i  ?? delete	
+i	
+ithe second command would, in this case, delete the last previous	
+iline containing "in the hat". To be sure that the pattern that	
+igets reused is the last one used to find a line, use the	
+iabbreviations "\?" and "\/" to search backward and forward,	
+irespectively.  In all other respects these work just as typing	
+i"??" and "//" do.	
+i	
+iA LINE NUMBER is also a valid line-mode address.  The editor	
+iautomatically numbers each line in the file consecutively, and	
+ithis numbering is dynamic--that is, whenever you add or delete	
+ilines somewhere, the editor renumbers all the lines following the	
+iinsertion or deletion point.  So if you change some text on line	
+i46 in your file, and then delete lines 11 and 12, the line with	
+ithe text you changed is now line 44. And if you then add ten new	
+ilines after line 17, the line with your changed text on it now	
+iautomatically becomes line 54.	
+i	
+iThere is never a gap or an overlap in the line number sequence, so	
+ithe nth line in the file is always line number n; that is, the 7th	
+iline is always line number 7, and so on.  (There are several ways	
+ito display these line numbers, which I will expound in a later	
+itutorial installment.)  To delete the 153rd line in your file,	
+ijust type:	
+i	
+i  153 delete	
+i	
+iYou don't use any delimiters around a line number, or around any	
+iother address except a search pattern.	
+i	
+iThere are two symbolic line numbers and one fictional one that can	
+ibe used in line-mode addresses.  As long as there are any lines in	
+ithe buffer (that is, you haven't specified a not-yet-existent file	
+ito edit and failed to enter any text so far), the editor regards	
+iyou as being `on' one of them, usually the last line affected by	
+iyour latest command.  A period or dot (.) is the symbolic address	
+ifor this line.  The last line in the file also has a symbolic	
+iaddress: the dollar sign ($). So if you should type:	
+i	
+i  . write >> goodlines	
+i  $ delete	
+i	
+ithe first command would append a copy of just the line you are on	
+inow to a file named "goodlines", while the second would delete the	
+ilast line in the file you are editing.	
+i	
+iA few commands put text immediately after the line address you	
+igive: the append command is one of them.  In order to let them put	
+itheir text at the very start of a file (if that is where you want	
+iit), these commands can take the fictitious line number zero (0)	
+ias their address.  So, if you want to type some text that will	
+iappear ahead of anything already in the file, you can do it with	
+ieither of these command lines:	
+i	
+i  1 insert	
+i  0 append	
+i	
+i(Note, though, that insert and append are among the few line-mode	
+icommands that cannot be run from visual mode by starting with a	
+icolon, because they occupy more than one line including the text	
+ito be put in.)	
+i	
+iWRITING YOUR OWN LINE ADDRESSES is possible, too. You can attach	
+ilower-case letters to lines as line addresses, and change the	
+iattachments whenever you like.  You can even use a special address	
+ithat is automatically attached to the last line you jumped off	
+ifrom.	
+i	
+iThere are ways to mark a particular line with a lower-case letter	
+iof the alphabet, and those ways differ between line and visual	
+imodes.  I'll be explaining all these ways in later installments of	
+ithis tutorial.  But once a line is marked, the line-mode address	
+ithat refers to that line is just the single-quote character	
+ifollowed immediately by the lower-case letter with which the line	
+iwas marked.  So typing:	
+i	
+i  'b print	
+i	
+iwill display on the screen whatever line you have previously	
+imarked with the letter b, no matter where the line is in relation	
+ito where you are when you give the command.  No need to tell the	
+ieditor whether to search forward or backward; there can be only	
+ione line at a time marked with any one letter, and the editor will	
+ifind that line regardless.	
+i	
+iThe editor does some line marking on its own, too.  Whenever you	
+imove from one line to another by a non-relative address, the	
+ieditor marks the line you just left.  (A non-relative address is	
+ione that isn't a known number of lines from where you were.) So:	
+i	
+i  $	
+i  /the cat/	
+i  358	
+i  ?glossary? +7	
+i  'b	
+i	
+iare all non-relative addresses, and if you give any one of them,	
+ithe editor will mark the line you are leaving for future	
+ireference.  Then you can return to that line just by typing two	
+isuccessive single quotes:	
+i	
+i  "	
+i	
+ias a line-mode address.  In theory, you can use this address with	
+iany line-mode command.  But it is so difficult to know for sure	
+iwhen you left a line via a non-relative address that this address	
+iform is best saved for going back to where you were when a mistake	
+imoves you far away, at least until you're a wizard with this	
+ieditor.	
+i	
+iMODIFYING ANY OF THESE ADDRESSES is possible, and there are two	
+iways to do this.  The simpler way is to offset the address a	
+icertain number of lines forward or backward with plus (+) or minus	
+i(-) signs.  The rule is that each plus sign following an address	
+itells the editor to go one line farther forward in the file than	
+ithe basic address, while each minus sign means a line backward.	
+iSo these three addresses all refer to the same line:	
+i	
+i  35	
+i  37 --	
+i  30 +++++	
+i	
+iNot that you're likely to want to modify line-number addresses	
+iwith counts, unless you're weak in arithmetic and want the editor	
+ito do the adding and subtracting for you.  But the count offsets	
+iwill work with any line-mode addresses, and are most often used	
+iwith search patterns.  In any event, there is a shorthand for	
+ithese counts, too.  A plus or minus sign immediately followed by a	
+inumber (single or multiple digits) is equivalent to a string of	
+iplus or minus signs equal to that number, so that these two	
+iaddresses are the same:	
+i	
+i  /^register long/ ++++	
+i  /^register long/ +4	
+i	
+iTake note that the "4" in the second example does not mean "line	
+inumber 4", as it would if it appeared by itself as an address.	
+iAfter a plus or minus sign, a number is a count forward or	
+ibackward from where the primary address lands (or if there is no	
+iprimary address before the count, from the line you are on when	
+iyou run the command).	
+i	
+iNote also that this is one of the few places in line-mode commands	
+iwhere you may not insert a blank space.  The number must start in	
+ithe very next character position after the plus or minus sign.  If	
+iyou violate this rule, the editor will uncomplainingly operate on	
+isome line that definitely is not the line you expected.	
+i	
+iThe second style of address modifier is used where you want to do	
+ia search that's complex.  Let's say you want to go forward in the	
+ifile to delete a line that starts with "WARNING!", but not the	
+ifirst such line the editor would encounter; you want the second	
+iinstance.  Either of these command lines will do it:	
+i	
+i  /^WARNING!/ ; /^WARNING!/ delete	
+i  /^WARNING!/ ; // delete	
+i	
+iA semicolon (;) between two search patterns tells the editor to	
+ifind the location of the first pattern in the usual way, then	
+istart searching from that location for the second pattern.  In	
+ithis case, the first search pattern turned up the first instance	
+iof a line starting with "WARNING!", and the second search pattern	
+iled the editor on to the second instance.	
+i	
+iA very significant point here is that this combination of two	
+isearch patterns, either of which could be a line address in	
+iitself, does not tell the editor to delete two lines.  The	
+isemicolon means that the first pattern is merely a way station,	
+iand that the single line found by the second search pattern is the	
+ionly line to be deleted.  In brief, what looks like addresses for	
+itwo lines is actually only an address for one.  (This is not what	
+ithe official documentation for this editor says, but the	
+idocumentation is just plain wrong on this point.)	
+i	
+iBut that's just the start of what you can do.  You are not	
+irestricted to just two addresses.  I've used up to ten of them,	
+iall separated by semicolons, to reach one specific line.  As an	
+iexample:	
+i	
+i  ?^Chapter 3$? ; /^Bibliography$/ ; /^Spinoza/ ; /Monads/	
+i	
+iwill bring me to the title line of Spinoza's first work with	
+i"Monads" in the title, in the bibliography for Chapter 3.	
+i	
+iNor are you limited to search pattern addresses when putting	
+itogether a semicolon-separated address string.  If you want to	
+ireach the first line following line 462 that contains the word	
+i"union", typing:	
+i	
+i  462 ; /\<union\&gt;/	
+i	
+iwill bring you there.  And any of the addresses can take numerical	
+ioffsets, so:	
+i	
+i  462 +137 ; /register int/ ---	
+i	
+iis also a legitimate address string.	
+i	
+iBut there are two unfortunate limitations on using	
+isemicolon-separated address strings.  The lesser problem is that	
+isuch a string can use "line zero" as an address only if the	
+icommand following the address string could take line zero by	
+iitself as its address.  That is, you can't even start at line zero	
+iand then proceed elsewhere with additional addresses, unless the	
+icommand can operate from line zero.  So:	
+i	
+i  0 ; /Spinoza/ +++ ; /Kant/ delete	
+i	
+i	
+i  which looks like a reasonable way to be sure your search will	
+i  find the very first "Spinoza" in your file, will actually fail	
+i  with an error message about an illegal address.	
+i	
+iThe larger misfortune is that each address in a semicolon-	
+iseparated string must be farther down in the file than the one	
+ithat precedes it. (This means the actual location found, after	
+iapplying any plus-sign or minus-sign offset.)  You cannot	
+imove backward within the series of way points.	
+i	
+iBut that does not mean that you cannot use a backward search	
+ipattern within the string.  The first address can be a backward	
+isearch, of course.  And a subsequent address can search backward	
+iif you are certain that the line it finds will actually be more	
+iforward in the file.  For example, you may know that a certain	
+ibackward search will wrap around to the bottom end of the file	
+ibefore it finds a match.  A common example would be:	
+i	
+i	
+i  1 ; ?Spinoza? ; /Hegel/ yank	
+i	
+iBeginning a backward search from the first line in the file means	
+ithat the search must start with the last line in the file due to	
+iwraparound, which guarantees that the search will yank the "Hegel"	
+iline that follows the vary last "Spinoza" line in your file.	
+i	
+iAlso, you can use a plus-sign offset after a backward search when	
+iyou are certain that the line finally found after the offset is	
+iapplied will be farther down in the file than the preceding way	
+ipoint had been.  Thus, if I want to find the first mention of	
+iHegel in Chapter 8 that is at least 120 lines after the last	
+imention of him in Chapter 7, I can type:	
+i	
+i  /^Chapter 8$/ ; ?Hegel? +119 ; //	
+i	
+iIf a command with this address fails and gives an error message	
+iabout a bad address, I'll know that the last mention of Hegel in	
+iChapter 7 is more than 120 lines before the end of the chapter, so	
+ithe very first mention of his name in Chapter 8 is what I'm	
+ilooking for.  In that case, the address:	
+i	
+i  /^Chapter 8$/ ; /Hegel/	
+i	
+iis all that my command needs.	
+i	
+iThe situation with forward searches inside a semicolon-separated	
+iaddress string is a mirror image of what I've just said. A forward	
+isearch can take a minus-sign offset if you know that the offset is	
+ismall enough that the line found will be further down than the	
+ilast way point.  But a forward search will fail, even with no	
+ioffset or a plus-sign offset, if wraparound makes it find a line	
+iearlier in the file than the way point from which it began.	
+i	
+iAddressing a Section of Text	
+i	
+iTWO ADDRESSES CAN ALSO STAND FOR A RANGE OF LINES. When two	
+iaddresses are separated by a comma rather than a semicolon, the	
+imeaning changes radically.  (What a difference a dot makes!)	
+i	
+iOften you will want a line-mode command to act on a series of	
+isuccessive lines.  For example, you may want to move a stretch of	
+itext from one place to another.  To do this, you give the address	
+iof the first line you want the command to act on, followed by the	
+ilast line it should act on, and separate the two addresses with a	
+icomma.  So, the command:	
+i	
+i  14 , 17 delete	
+i	
+iwill delete line 14 and line 15 and line 16 and line 17.  You can	
+isee that putting more than two addresses in a comma-separated	
+iaddress string would be pointless.  The line mode of this editor	
+iis discreet if you ignore this and string together three or more	
+iaddresses with comma separation: it uses the first two addresses	
+iand discards the rest.	
+i	
+iAny line-mode addresses may be used with a comma.  All of the	
+ifollowing combinations make sense:	
+i	
+i  'd , /^struct/	
+i  257 , .	
+i  ?^Chapter 9$? , $	
+i	
+iThe first address combination would cause the command that follows	
+iit to operate on the section starting with the line you have	
+ipreviously marked "d" and ending with the next forward line that	
+ibegins with "struct", inclusive.  The second combination covers	
+iline 257 through the line you are on now.  The third goes backward	
+ito include the previous line containing only "Chapter 9", and	
+iforward to include the very last line in your file; plus all the	
+ilines in between, of course.	
+i	
+iThere are limitations on this technique, too.  The primary one is	
+ithat the address after the comma (after any offsets, of course)	
+icannot be earlier in the file than the address before the comma.	
+iThat is, the range of lines must run forward from the first	
+iaddress to the second address.  So the command:	
+i	
+i  57 , 188 delete	
+i	
+iis just fine, while the similar-looking command:	
+i	
+i  188 , 57 delete	
+i	
+iwill only produce an error message.  (But if the two addresses	
+ihappen to evaluate to the same line, there is no problem.  The	
+icommand will silently operate on the one line you've specified.)	
+i	
+iAs you work up to more sophisticated line-mode addresses, you may	
+iget unexpected error messages about the second address being prior	
+ito first address, when you don't see how you could have	
+ianticipated that the addresses would evaluate that way.  That's no	
+idisgrace, and the solution is simple.  After you've looked over	
+ithe addresses you used, and you're certain that they are the ones	
+iyou want, just type the command in again with the two addresses in	
+ireverse order.  That is, if:	
+i	
+i  642 , /in Table 23/ delete	
+i	
+ihas failed, giving an error message that the lines are in the	
+iwrong order, then:	
+i	
+i  /in Table 23/ , 642 delete	
+i	
+iwill solve that problem.	
+i	
+iThe last limitation is that when you use search patterns on both	
+isides of a comma, the second search starts from the current line	
+ijust as the first search did; it does not start from the line that	
+ithe first search found.  There's a way around that, though, that	
+iinvolves using one or more semicolons along with a comma.	
+i	
+iA semicolon-separated address string can be used anywhere in line	
+imode that you would use a single address.  One very useful	
+itechnique is to use these address strings on one or both sides of	
+ia comma, to indicate a range of lines to be affected. Remember	
+ithat an address string separated by semicolons is the address of	
+ijust one line, so this one line can be the start or the end of a	
+irange of lines.  For example, in:	
+i	
+i  /^INDEX$/ ; /^Xerxes/ , $ write tailfile	
+i  ?^PREFACE$? ; /^My 7th point/ , ?^PREFACE$? ; /^In summary/ -- delete	
+i	
+ithe first command would write the latter part of the index to a	
+inew file, while the second could be used to remove a section of a	
+ibook's preface.	
+i	
+iAnd that brings up the solution to our previous obstacle; the	
+isecond search's starting point.  If you want the search after the	
+icomma to begin from the point the first search found, use the	
+ifirst search pattern followed by a semicolon as the start of your	
+iafter-the-comma search string, as in either of:	
+i	
+i  ?Stradivarius? , ?Stradivarius? ; /Guarnerius/	
+i  ?Stradivarius? , ?? ; /Guarnerius/	
+i	
+iIn view of the rules about not going backward in line-mode address	
+istrings, I'd better clarify the way these limitations work when	
+iyou combine semicolon and comma separation, as in these two	
+iexamples.  All but the first of the way points in each	
+isemicolon-separated string must be in the forward direction, of	
+icourse, but the start of the second semicolon-separated string may	
+ibe prior to any of the addresses in the first such string, that	
+iis, the one-way meter resets itself at the comma point.  And using	
+isemicolon-separated strings on both sides of a comma only requires	
+ithat the final landing point of the second semicolon-separated	
+istring not be earlier in the file than the final landing point of	
+ithe first; the relative locations of the way points don't matter	
+ito the comma.  To clarify this, consider a couple of odd-looking,	
+iand useless, but very lucid examples.  The combination:	
+i	
+i  125 ; 176 ; 221 , 32 ; 67 ; 240	
+i	
+ilooks invalid due to the backward jump from line 221 to line 32,	
+ibut is actually a perfectly good address.  The back jump comes	
+iright after the comma, where it is all right.  But:	
+i	
+i  125 ; 176 ; 221 , 32 ; 67 ; 218	
+i	
+iwill produce an error message, because the final landing point of	
+ithe first semicolon-separated string, line 221, falls later in the	
+ifile than the final landing point of the second semicolon-	
+iseparated string, line 218.	
+i	
+iNow, a note about default addresses.  I've already mentioned that	
+imost line-mode commands that can take an address have a "default"	
+iaddress built in, which tells the editor where to run the command	
+iif you don't give an address with it.  Each command has its own	
+idefault address, which may be the current line, the current line	
+iplus the one following, the last line of the file, or the entire	
+ifile.	
+i	
+iThe comma separator has default addresses of its own.  They are	
+ithe same regardless of what command is being used, and they	
+ioverride any command's own default address.  If you put a comma	
+ibefore a command and don't put an address before the comma, by	
+idefault the address there is the current line.  In the same way,	
+iif you leave out the address after the comma, the default there is	
+ialso the current line.  You can even leave out the address in both	
+iplaces and use the current-line default in both: that means the	
+iimplied address is "from the current line to the current line",	
+iwhich makes the current line the only line the command will	
+ioperate on.  So every one of the following command lines:	
+i	
+i  .     write >> goodlines	
+i  . , . write >> goodlines	
+i    , . write >> goodlines	
+i  . ,   write >> goodlines	
+i    ,   write >> goodlines	
+i	
+i	
+iwill do exactly the same thing: append a copy of just the current	
+iline in the file you're editing to another file named "goodlines".	
+i	
+iFinally, there is one special symbol that represents a	
+icomma-separated address combination.  The percent sign (%) has the	
+isame meaning as 1,$ as a line-mode address combination.  Both	
+irefer to the entire file.	
+i	
+iNow You Try It	
+i	
+iBefore you try the complex aspects of line-mode addresses in	
+iactual editing situations, here are some problems you can build	
+iyourself up on.  For each problem I've included a solution that	
+iwill work fairly efficiently.	
+i	
+i  1. How can you tell the editor to delete the line that holds	
+i  the very last instance of "EXPORT" in your file?  The solution	
+i  is straightforward once you know where to start searching.	
+i	
+i  2. Suppose you want to delete the very first line in the file	
+i  with "EXPORT" on it, and that just might be line 1.  You can't	
+i  start the search from line zero because the delete command	
+i  cannot take line 0 as an address.  When you type the address	
+i  string "$ ; /EXPORT/" to use wraparound, you get an error	
+i  message asserting that the search pattern found a line prior to	
+i  the line found by the "$" address that appeared first, which is	
+i  what you'd expect. How can you tell the editor to find and	
+i  delete this line?  The solution requires just a bit of	
+i  creativity.	
+i	
+i  3. If you use the address "?abc? , /xyz/", it includes the two	
+i  lines the searches (for "abc" and "xyx") find, as well as all	
+i  the lines between them.  How would you specify that you want	
+i  the affected lines to go up to, but not include, the lines the	
+i  two searches find?  In this case the solution is simpler than	
+i  you might think.	
+i	
+1Solutions	solutions	
+i	
+iComing Up Next	
+i	
+iThe next installment of this tutorial will deal with the global	
+icommands--they're just too much to absorb right after the	
+imind-numbing collection of address forms we've just gone through.	
+iAnd to give you more scope for using all these address forms, I'll	
+ialso cover line-mode commands themselves, particularly the ones	
+ithat have more capabilities than you suspect.	
+	
+1Part 3: The Global Command	/archive/vi/part3/	
+1Back to the index	/archive/vi/	

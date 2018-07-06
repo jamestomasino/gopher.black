@@ -1,578 +1,578 @@
-iThe vi/ex Editor, Part 1: Vi Editor Fundamentals
+iThe vi/ex Editor, Part 1: Vi Editor Fundamentals	
 
-i  Why Vi?
-i    A Heartwarming Edit
-i    The Plan Of This Ongoing Tutorial
-i  The Editor's Basic Concepts
-i  Search Patterns
-i    Searching From Where You Are Now
-i    The Find-Them-All Search
-i    Simple Search Patterns
-i    Metacharacters
-i    Table Of Search Pattern Metacharacters
-i    Character Classes.
-i  What's Coming For The Next Installment.
+i  Why Vi?	
+i    A Heartwarming Edit	
+i    The Plan Of This Ongoing Tutorial	
+i  The Editor's Basic Concepts	
+i  Search Patterns	
+i    Searching From Where You Are Now	
+i    The Find-Them-All Search	
+i    Simple Search Patterns	
+i    Metacharacters	
+i    Table Of Search Pattern Metacharacters	
+i    Character Classes.	
+i  What's Coming For The Next Installment.	
 
 
-iWhy Vi?
-i
-iA HEARTWARMING EDIT. Pity poor Hal, a corporate maintenance
-iprogrammer.  A large module of badly-broken, poorly-patched legacy
-icode -- the spaghetti variety -- finally broke down completely
-iyesterday, leaving one corporate division running at half speed.
-iBy dint of some inspired fixes during an all-nighter, Hal has the
-imodule up and running again this morning... but just as he's ready
-ito go out for food that isn't from a vending machine, in walks the
-icorporation's VP of IS, with a big surprise.
-i
-i  "Nice work on that crash fix, Hal; but right now I need some
-i  formatted technical data about it, in a hurry.  The Board of
-i  Directors' Information Systems Committee has called a rush
-i  meeting this morning to convince themselves they're on top of
-i  the problem.  I'll be in the hotseat, and I need technical data
-i  I can put up on the video projector to keep them occupied.
-i
-i  "They'll want me to discuss the logfile of errors that led up to
-i  the crash . . . yes, I know that's in /oltp/err/m7, but
-i  appending puts the latest report lines at the bottom of the
-i  file. Those suits aren't interested in what they think is
-i  ancient history, and they wouldn't be caught reading anything
-i  but a commuter train timetable from the bottom up, so you'll
-i  have to make a copy with the order of the lines reversed: what
-i  was the last line becomes the first line, what was the second to
-i  the last line is now line number two, and so on.
-i
-i  "And let's take a look at that logfile.
-i
-i
-i  374a12  44872  130295/074457  nonabort
-i  5982d34  971  130295/221938  nonabort
-i  853f7  2184  140295/102309  abort
-i   ...
-i
-i
-i  Hmmm.  Explaining the second column to them would be advertising
-i  the fact that we knew this failure was just waiting for a chance
-i  to happen.  So while you're at it, go through and erase all but
-i  the first and last digits of each number in column two.
-i
-i  "Oh, and when they get tired of that they'll want to scrutinize
-i  the Lint report.  Last month I told them that our Lint
-i  substitute was the greatest thing since Marilyn Monroe, so now
-i  they'll want me to tell them why the messages it still generates
-i  on this module aren't real hazards.  Just run Lint over the
-i  revamped module; then combine the Lint output with a copy of the
-i  source file by taking each message line like:
-i
-i
-i  Line 257: obsolete operator +=
-i
-i
-i  and putting the significant part at the end of the source line
-i  it refers to.  And put a separator, like XXX, between the source
-i  line and the message so I can page through quickly. Nothing like
-i  a hefty dose of source code they can't begin to fathom to make
-i  the meeting break up early.
-i
-i  "And get right on this.  The meeting starts in 35 minutes."
-i
-iOur VP walks away inwardly smiling, thinking he's getting out of
-idetailed explanations and putting all the blame on an underling,
-ijust by demanding more editing than anyone could do in the time
-iavailable.  "I'll tell the Information Systems Committee that I
-imade it perfectly clear to the programmer that we needed this at
-i9:30, but when I asked him for it a minute ago he said it wasn't
-ifinished and he wasn't sure when it would be. Then I'll remark
-ithat those programmers just can't understand that keeping
-imanagement informed is every bit as important as writing code!"
-i
-iBut Hal has a secret weapon against this squeeze play: an expert
-iknowledge of the Vi editor.
-i
-iReversing the order of the lines in a file is a piece of cake with
-ithis editor.  The eight keystrokes in:
-i
-i  :g/^/m0(ret)
-i
-iwill do it.  Taking the digits out of the middle of the second
-icolumn throughout the file also requires just one command line:
-i
-i  :%s/^\([^ ]*  [0-9]\)[0-9]*\([0-9]  \)/\1\2(ret)
-i
-iAnd integrating the Lint messages into a copy of the source code?
-iEven that can be automated with the Vi editor.  The editor
-icommand:
-i
-i  :%s/Line \([0-9][0-9]*\): \(.*\)/\1s;$; XXX \2(ret)
-i
-iwill turn that file of Lint messages into an editor script, and
-irunning that script on a copy of the source file will mark it up
-ias requested.
-i
-iRather than being portrayed as a bungler, Hal can have it all
-iready in a couple of minutes, just by typing a few lines.  He'll
-ieven have time to guard against vice-presidential prevarication,
-iby disappearing into the coffee shop across the street and
-ireappearing just as the meeting is getting started, to tell the VP
-i(and everyone else in earshot), "Those files you wanted are in
-islash-temp-slash-hal".
-i
-iTHE PLAN OF THIS ONGOING TUTORIAL. I'm writing here for editor
-iusers who have some fluency in Vi/Ex at the surface level.  That
-iis, you know how to do the ordinary things that are belabored in
-iall the "Introducing Vi" books on the market, but rarely venture
-ibeyond that level.
-i
-iThis tutorial series will explore a lot of other capabilities that
-ihardly anyone knows are in Vi/Ex.  That includes quite a few
-itricks that may be built on editor functions we all use every day,
-ibut which nonetheless are not obvious--for instance, telling the
-iglobal command to mark every line it encounters.  I'll also be
-iclarifying the real nature of the many misunderstood aspects of
-ithis editor.
-i
-iTo do all this, I'll be explaining things in more depth than you
-imight think warranted at first.  I'll also throw in examples
-iwherever they seem helpful.  And to save you readers from gross
-iinformation overload, I'll write this tutorial in a large number
-iof fairly small modules, to be put up on our website at a calm,
-ireasonable pace.
-i
-iThe Editor's Basic Concepts
-i
-iTo get a real grasp on this editor's power, you need to know the
-ibasic ideas embodied in it, and a few fundamental building blocks
-ithat are used throughout its many functions.
-i
-iOne cause of editor misuse is that most users, even experienced
-iones, don't really know what the editor is good at and what it's
-inot capable of.  Here's a quick rundown on its capabilities.
-i
-iFirst, it's strictly a general-purpose editor.  It doesn't format
-ithe text; it doesn't have the handholding of a word processor; it
-idoesn't have built-in special facilities for editing binaries,
-igraphics, tables, outlines, or any programming language except
-iLisp.
-i
-iIt's two editors in one.  Visual mode is a better full-screen
-ieditor than most, and it runs faster than those rivals that have a
-ilarger bag of screen-editing commands.  Line editing mode dwarfs
-ithe "global search and replace" facilities found in word
-iprocessors and simple screen editors; its only rivals are
-inon-visual editors like Sed where you must know in advance exactly
-iwhat you want to do.  But in the Vi/Ex editor, the two sides are
-ivery closely linked, giving the editor a combination punch that no
-iother editor I've tried can rival.
-i
-iFinally, this editor is at its best when used by people who have
-itaken the trouble to learn it thoroughly.  It's too capable to be
-ilearned well in an hour or two, and too idiosyncratic to be
-imastered in a week, and yet the power really is in it, for the few
-iwho care to delve into it.  A large part of that power requires
-icustom-programming the editor: that's not easy or straightforward,
-ibut what can be done by the skillful user goes beyond the direct
-iprogrammability of any editor except (possibly) Emacs.
-i
-iSearch Patterns
-i
-iIn quite a few functions of this editor, you can use
-istring-pattern searching to say where something is to be done or
-ihow far some effect is to extend.  These search patterns are a
-igood example of an editor function that is very much in the Unix
-istyle, but not exactly the same in detail as search patterns in
-iany other Unix utility.
-i
-iSearch patterns function in both line editing and visual editing
-imodes, and the work the same way in both, with just a few
-iexceptions.  But how you tell the editor you're typing in a search
-ipattern will vary with the circumstances.
-i
-iSEARCHING FROM WHERE YOU ARE NOW. The more common use for search
-ipatterns is to go to some new place in the file, or make some
-iediting change that will extend from your present position to the
-iplace the pattern search finds.  (In line editing mode it's also
-ipossible to have an action take place from one pattern's location
-ito where another pattern is found, but both searches still start
-ifrom your present location.)
-i
-iIf you want to search forward in the file from your present
-ilocation (toward the end of the file), precede the search pattern
-iwith a slash (/) character, and type another to end the pattern.
-iSo if you want to move forward to the next instance of the string
-i"j++" in your file, typing:
-i
-i  /j++/(ret)
-i
-iwill do it.  And so will:
-i
-i  /j++(ret)
-i
-iWhen there is nothing between the pattern and the RETURN key, the
-iRETURN itself will indicate the end of the search pattern, so the
-isecond slash is not necessary.  And if you are in visual mode, the
-iESCAPE key works as well as RETURN does for ending search input,
-iso
-i
-i  /j++(esc)
-i
-iis yet another way to make the same request from visual mode.
-i
-iTo search backward (toward the start of the file), begin and end
-iwith a question mark instead of a slash. The same rules of
-iabbreviation apply to backward searches, so
-i
-i  ?j++?(ret)
-i  ?j++(ret)
-i  ?j++(esc)
-i
-iare all ways to head backward in the file to the same pattern.
-i
-iEither way, you've expressed both your request for a pattern
-isearch and the direction the search is to take in just one
-ikeystroke.  But don't assume that if you search backward, any
-imatching pattern the editor finds will be above your present
-iposition in the file, and vice versa if you search forward.  The
-ieditor looks there first, certainly, but if it gets to the top or
-ibottom line of the file and hasn't found a match yet, it wraps
-iaround to the other end of the file and continues the search in
-ithe same direction.  That is, if you used a question mark to order
-ia backward search and the editor searches all the way through the
-itop line of the file without finding a match, it will go on to
-isearch the bottom line next, then the second-to-the-bottom line,
-iand so on until (if necessary) it gets back to the point where the
-isearch started.  Or if you were searching forward and the editor
-ifound no match up through the very last line of the file, it would
-inext search the first line, then the second line, etcetera.
-i
-iIf you don't want searches to go past either end of the file,
-iyou'll need to type in a line mode command:
-i
-i  :set nowrapscan(ret)
-i
-iThis will disable the wraparound searching during the present
-isession in the editor.  If you want to restore the wraparound
-isearching mechanism before you leave the editor, typing
-i
-i  :set wrapscan(ret)
-i
-i  will do it, and you can turn this on and off as often as you like.
-i
-iTHE FIND-THEM-ALL SEARCH. Up to now, I've been considering
-isearches that find just one instance of the pattern; the one
-iclosest to your current location in the file, in the direction you
-ichose for the search.  But there is another style of search, used
-iprimarily by certain line editing mode commands, such as global
-iand substitute. This search finds every line in the file (or in a
-iselected part of the file) that contains the pattern and operates
-ion them all.
-i
-iDon't get confused when using the global and substitute commands.
-iYou'll often use both styles of search pattern in one command
-iline.  But the find-one-instance pattern or patterns will go
-ibefore the command name or abbreviation, while the find-them-all
-ipattern will come just behind it. For example, in the command:
-i
-i  :?Chapter 10?,/The End/substitute/cat/dog/g(ret)
-i
-ithe first two patterns refer to the preceding line closest to the
-icurrent line that contains the string "Chapter 10" and the closest
-ifollowing line containing the string "The End". Note that each
-iaddress finds only one line.  Combined with the intervening comma,
-ithey indicate that the substitute command is to operate on those
-itwo lines and all the lines in between them.  But the patterns
-iimmediately after the substitute command itself tell the command
-ito find every instance of the string "cat" withing that range of
-ilines and replace it with the string "dog".
-i
-iAside from the difference in meaning, the two styles also have
-idifferent standards for the delimiters that mark pattern
-ibeginnings and (sometimes) endings.  With a find-them-all pattern,
-ithere's no need to indicate whether to search forward or backward.
-iThus, you aren't limited to slash and question mark as your
-ipattern delimiters. Almost any punctuation mark will do, because
-ithe editor takes note of the first punctuation mark to appear
-iafter the command name, and regards it as the delimiter in that
-iinstance. So
-i
-i  :?Chapter 10?,/The End/substitute;cat;dog;g(ret)
-i  :?Chapter 10?,/The End/substitute+cat+dog+g(ret)
-i  :?Chapter 10?,/The End/substitute{cat{dog{g(ret)
-i
-iare all equivalent to the substitution command above.  (It is a
-igood idea to avoid using punctuation characters that might have a
-imeaning in the command, such as an exclamation point, which often
-iappears as a switch at the end of a command name.)
-i
-iThe benefit of this liberty comes when the slash mark will appear
-ias itself in the search pattern.  For example, suppose our
-isubstitution command above was to find each pair of consecutive
-islash marks in the text, and separate them with a hyphen--that is,
-ichange // to /-/. Obviously,
-i
-i  :?Chapter 10?,/The End/substitute/////-//g(ret)
-i
-iwon't work; the command will only regard the first three slashes
-ias delimiters, and everything after that as extraneous characters
-iat the end of the command.  This can be solved by backslashing:
-i
-i  :?Chapter 10?,/The End/substitute/\/\//\/-\//g(ret)
-i
-ibut this is even harder to type correctly than the first attempt
-iwas. But with another punctuation mark as the separator
-i
-i  :?Chapter 10?,/The End/substitute;//;/-/;g(ret)
-i
-ithe typing is easy and the final command is readable.
-i
-iSIMPLE SEARCH PATTERNS. The simplest search pattern is just a
-istring of characters you want the editor to find, exactly as
-iyou've typed them in.  For instance: "the cat". But, already there
-iare several caveats:
-i
-i  1. This search finds a string of characters, which may or may
-i  not be words by themselves.  That is, it may find its target in
-i  the middle of the phrase "we fed the cat boiled chicken", or in
-i  the middle of "we sailed a lithe catamaran down the coast". It's
-i  all a matter of which it encounters first.
-i
-i  2. Whether the search calls "The Cat" a match or not depends on how
-i  you've set an editor variable named ignorecase. If you've left
-i  that variable in its default setting, the capitalized version will
-i  not match. If you want a capital letter to match its lower-case
-i  equivalent, and vice versa, type in the line mode command
-i
-i    :set ignorecase(ret)
-i
-i  To resume letting caps match only caps and vice versa, type
-i
-i    :set noignorecase(ret)
-i
-i  3. The search absolutely will not find a match where "the"
-i  occurs at the end of one line and "cat" is at the start of the
-i  next line:
-i
-i    and with Michael's careful help, we prodded the cat back into
-i    its cage.  Next afternoon several
-i
-i  It makes no difference whether there is or isn't a space
-i  character between one of the words and the linebreak.  Finding a
-i  pattern that may break across a line ending is a practically
-i  impossible task with this line-oriented editor.
-i
-i  4. Where the search starts depends on which editor mode you're
-i  using. A search in visual mode starts with the character next to
-i  the cursor. In line mode, the search starts with the line
-i  adjacent to the current line.
-i
-iMETACHARACTERS. Then there are search metacharacters or "wild
-icards": characters that represent something other than themselves
-iin the search.  As an example, the metacharacters . and * in
-i
-i  /Then .ed paid me $50*!/(ret)
-i
-icould cause the pattern to match any of:
-i
-i  Then Ted paid me $5!
-i  Then Red paid me $5000!
-i  Then Ned paid me $50!
-i
-ior a myriad of other strings.  Metacharacters are what give search
-ipatterns their real power, but they need to be well understood.
-i
-iTo understand these, you must know the varied uses of the
-ibackslash (\) metacharacter in turning the "wild card" value of
-imetacharacters on and off.
-i
-iIn many cases, the meta value of the metacharacter is on whenever
-ithe character appears in a search pattern unless it is preceded by
-ia backslash; when the backslash is ahead of it the meta value is
-iturned off and the character simply represents itself.  As an
-iexample, the backslash is a metacharacter by itself, even if it
-iprecedes a character that never has a meta value.  The only way to
-iput an actual backslash in your search pattern is to precede it
-iwith another backslash to remove its meta value.  That is, to
-isearch for the pattern "a\b", type
-i
-i  /a\\b/(ret)
-i
-ias your search pattern.  If you type
-i
-i  /a\b/(ret)
-i
-ithe backslash will be interpreted as a metacharacter without any
-ieffect (since the letter b is never a metacharacter) and your
-isearch pattern will find the string "ab".
-i
-iLess-often-used metacharacters are used in exactly the opposite
-iway.  This sort of character represents only itself when it
-iappears by itself.  You must use a preceding backslash to turn the
-imeta value on.  For example, in
-i
-i  /\<cat/
-i
-ithe left angle bracket (<) is a metacharacter; in
-i
-i  /<cat/
-i
-iit only represents itself.  These special metacharacters are
-ipointed out in the list below.
-i
-iFinally there is a third class, the most difficult to keep track
-iof.  Usually these metacharacters have their meta values on in
-isearch patterns, and must be backslashed to make them represent
-ijust themselves: like our first example, the backslash character
-iitself.  But if you've changed the default value of an editor
-ivariable named magic to turn it off, they work oppositely--you
-ithen must backslash them to turn their meta value on: like our
-isecond example, the left angle bracket.  (Not that you are are
-ilikely to have any reason to turn magic off.)  These oddities are
-ialso noted in the list below.
-i
-iAnd don't forget the punctuation character that starts and ends
-iyour search pattern, whether it is slash or question mark or
-isomething else.  Whatever it is, if it is also to appear as a
-icharacter in the pattern you are searching for, you'll have to
-ibackslash it there to prevent the editor thinking it is the end of
-ithe pattern.
-i
-iTABLE OF SEARCH PATTERN METACHARACTERS
-i
-i  .
-i
-iA period in a search pattern matches any single character, whether
-ia letter of the alphabet (upper or lower case), a digit, a
-ipunctuation mark, in fact, any ASCII character except the newline.
-iSo to find "default value" when it might be spelled
-i"default-value" or "default/value" or "default_value", etcetera,
-iuse /default.value/ as your search pattern.  When the editor
-ivariable magic is turned off, you must backslash the period to
-igive it its meta value.
-i
-i  *
-i
-iAn asterisk, plus the character that precedes it, match any length
-istring (even zero length) of the character that precedes the
-iasterisk.  So the search string /ab*c/ would match "ac" or "abc"
-ior "abbc" or "abbbc", and so on.  (To find a string with at least
-ione "b" in it, use /abb*c/ as your search string.) When the
-iasterisk follows another metacharacter, the two match any length
-istring of characters that the metacharacter matches. That means
-ithat /a.*b/ will find "a" followed by "b" with anything (or
-inothing) between them. When the editor variable magic is turned
-ioff, you must backslash the asterisk to give it its meta value.
-i
-i  ^
-i
-iA circumflex as the first character in a search pattern means that
-ia match will be found only if the matching string occurs at the
-istart of a line of text.  It doesn't represent any character at
-ithe start of the line, of course, and a circumflex anywhere in a
-isearch pattern except as the first character will have no meta
-ivalue.  So /^cat/ will find "cat", but only at the start of a
-iline, while /cat^/ will find "cat^" anywhere in a line.
-i
-i  $
-i
-iA dollar sign as the last character in a search pattern means the
-imatch must occur at the end of a line of text.  Otherwise it's the
-isame as circumflex, above.
-i
-i  \<
-i
-iAt the start of a search pattern, a backslashed left angle bracket
-imeans the match can only occur at the start of a simple word; at
-iany other position in a search pattern it is not a metacharacter.
-i(In this editor, a "simple" word is either a string of one or more
-ialphanumeric character(s) or a string of one or more
-inon-alphanumeric, non-whitespace character(s), so "shouldn't"
-icontains three simple words.)  Thus /\<cat/ will find the last
-ithree characters in "the cat" or in "tom-cat", but not in
-i"tomcat". To remove the meta value from the left angle bracket,
-iremove the preceding backslash: /<cat/ will find "<cat" regardless
-iof what precedes it.
-i
-i  \>
-i
-iAt the end of a search pattern, a backslashed right angle bracket
-imeans the match can occur only at the end of a simple word.
-iOtherwise the same as the left angle bracket, above.
-i
-i  ~
-i
-iThe tilde represents the last string you put into a line by means
-iof a line mode substitute command, regardless of whether you were
-iin line mode then or ran it from visual mode by preceding it with
-ia colon (":"). For instance, if your last line mode substitution
-icommand was s/dog/cat/ then a /the ~/ search pattern will find
-i"the cat". But the input string of a substitute command can use
-imetacharacters of its own, and if your last use involved any of
-ithose metacharacters then a tilde in your search pattern will give
-iyou either an error message or a match that is not what you
-iexpected.  When the editor variable magic is turned off, you must
-ibackslash the tilde to give it its meta value.
-i
-i
-iCHARACTER CLASSES. There is one metastring form (a "multicharacter
-imetacharacter") used in search patterns.  When several characters
-iare enclosed within a set of brackets ([]), the group matches any
-ione of the characters inside the brackets.  That is, /part [123]/
-iwill match "part 1", "part 2" or "part 3", whichever the search
-icomes to first. One frequent use for this feature is in finding a
-istring that may or may not be capitalized, when the editor
-ivariable ignorecase is turned off (as it is by default). Typing
-i/[Cc]at/ will find either "Cat" or "cat", and /[Cc][Aa][Tt]/ will
-ifind those or "CAT". (In case there was a slip of the shift key
-iwhen "CAT" was typed in, the last pattern will even find "CaT",
-i"CAt", etcetera.)
-i
-iThere's more power (and some complication) in another feature of
-ithis metastring: there can be metacharacters inside it. Inside the
-ibrackets, a circumflex as the first character reverses the
-imeaning.  Now the metastring matches any one character that is NOT
-iwithin the brackets.  A /^[^ ]/ search pattern finds a line that
-idoes not begin with a space character. (You're so right if you
-ithink that the different meta values of the circumflex inside and
-ioutside the character class brackets is not one of the editor's
-ibest points.)  A circumflex that is not the first character inside
-ithe brackets represents just an actual circumflex.
-i
-iA hyphen can be a metacharacter within the brackets, too. When
-iit's between two characters, and the first of the two other
-icharacters has a lower ASCII value than the second, it's as if
-iyou'd typed in all of the characters in the ASCII collating
-isequence from the first to the second one, inclusive.  So /[0-9]%/
-iwill find any numeral followed by the percent sign (%), just as
-i/[0123456789]%/ would.  A /[a-z]/ search pattern will match any
-ilower-case letter, and /[a-zA-Z]/ matches any letter, capital or
-ilower case.  These two internal metacharacters can be combined:
-i/[^A-Z]/ will find any character except a capital letter.  A
-ihyphen that is either the first or the last character inside the
-ibrackets has no meta value.  When a character-hyphen-character
-istring has a first character with a higher ASCII value than the
-ilast character, the hyphen and the two characters that surround it
-iare all ignored by the pattern search, so /[ABz-a]/ is the same as
-i/[AB]/.
-i
-iBackslashing character classes is complex.  Within the brackets
-iyou must backslash a right bracket that's part of the class;
-iotherwise the editor will mistake it for the bracket that closes
-ithe class.  Of course you must backslash a backslash that you want
-ito be part of the class, and you can backslash a circumflex at the
-istart or a hyphen between two characters if you want them in the
-iclass literally and don't want to move them elsewhere in the
-iconstruct.  Elsewhere in a search pattern you will have to
-ibackslash a left bracket that you want to appear as itself, or
-ielse the editor will take it as your attempt to begin a character
-iclass.  Finally, if magic is turned off, you'll have to backslash
-ia left bracket when you do want it to begin a character class.
-i
-iComing Up Next
-i
-iIn the second part of this tutorial, I'll be following up on all
-ithis information about search patterns, by showing the right ways
-ito combine them with other elements to generate command addresses.
-iAs a second part finale, I'll show how to tap the enormous power
-iof the command that looks like an address: the global command.
+iWhy Vi?	
+i	
+iA HEARTWARMING EDIT. Pity poor Hal, a corporate maintenance	
+iprogrammer.  A large module of badly-broken, poorly-patched legacy	
+icode -- the spaghetti variety -- finally broke down completely	
+iyesterday, leaving one corporate division running at half speed.	
+iBy dint of some inspired fixes during an all-nighter, Hal has the	
+imodule up and running again this morning... but just as he's ready	
+ito go out for food that isn't from a vending machine, in walks the	
+icorporation's VP of IS, with a big surprise.	
+i	
+i  "Nice work on that crash fix, Hal; but right now I need some	
+i  formatted technical data about it, in a hurry.  The Board of	
+i  Directors' Information Systems Committee has called a rush	
+i  meeting this morning to convince themselves they're on top of	
+i  the problem.  I'll be in the hotseat, and I need technical data	
+i  I can put up on the video projector to keep them occupied.	
+i	
+i  "They'll want me to discuss the logfile of errors that led up to	
+i  the crash . . . yes, I know that's in /oltp/err/m7, but	
+i  appending puts the latest report lines at the bottom of the	
+i  file. Those suits aren't interested in what they think is	
+i  ancient history, and they wouldn't be caught reading anything	
+i  but a commuter train timetable from the bottom up, so you'll	
+i  have to make a copy with the order of the lines reversed: what	
+i  was the last line becomes the first line, what was the second to	
+i  the last line is now line number two, and so on.	
+i	
+i  "And let's take a look at that logfile.	
+i	
+i	
+i  374a12  44872  130295/074457  nonabort	
+i  5982d34  971  130295/221938  nonabort	
+i  853f7  2184  140295/102309  abort	
+i   ...	
+i	
+i	
+i  Hmmm.  Explaining the second column to them would be advertising	
+i  the fact that we knew this failure was just waiting for a chance	
+i  to happen.  So while you're at it, go through and erase all but	
+i  the first and last digits of each number in column two.	
+i	
+i  "Oh, and when they get tired of that they'll want to scrutinize	
+i  the Lint report.  Last month I told them that our Lint	
+i  substitute was the greatest thing since Marilyn Monroe, so now	
+i  they'll want me to tell them why the messages it still generates	
+i  on this module aren't real hazards.  Just run Lint over the	
+i  revamped module; then combine the Lint output with a copy of the	
+i  source file by taking each message line like:	
+i	
+i	
+i  Line 257: obsolete operator +=	
+i	
+i	
+i  and putting the significant part at the end of the source line	
+i  it refers to.  And put a separator, like XXX, between the source	
+i  line and the message so I can page through quickly. Nothing like	
+i  a hefty dose of source code they can't begin to fathom to make	
+i  the meeting break up early.	
+i	
+i  "And get right on this.  The meeting starts in 35 minutes."	
+i	
+iOur VP walks away inwardly smiling, thinking he's getting out of	
+idetailed explanations and putting all the blame on an underling,	
+ijust by demanding more editing than anyone could do in the time	
+iavailable.  "I'll tell the Information Systems Committee that I	
+imade it perfectly clear to the programmer that we needed this at	
+i9:30, but when I asked him for it a minute ago he said it wasn't	
+ifinished and he wasn't sure when it would be. Then I'll remark	
+ithat those programmers just can't understand that keeping	
+imanagement informed is every bit as important as writing code!"	
+i	
+iBut Hal has a secret weapon against this squeeze play: an expert	
+iknowledge of the Vi editor.	
+i	
+iReversing the order of the lines in a file is a piece of cake with	
+ithis editor.  The eight keystrokes in:	
+i	
+i  :g/^/m0(ret)	
+i	
+iwill do it.  Taking the digits out of the middle of the second	
+icolumn throughout the file also requires just one command line:	
+i	
+i  :%s/^\([^ ]*  [0-9]\)[0-9]*\([0-9]  \)/\1\2(ret)	
+i	
+iAnd integrating the Lint messages into a copy of the source code?	
+iEven that can be automated with the Vi editor.  The editor	
+icommand:	
+i	
+i  :%s/Line \([0-9][0-9]*\): \(.*\)/\1s;$; XXX \2(ret)	
+i	
+iwill turn that file of Lint messages into an editor script, and	
+irunning that script on a copy of the source file will mark it up	
+ias requested.	
+i	
+iRather than being portrayed as a bungler, Hal can have it all	
+iready in a couple of minutes, just by typing a few lines.  He'll	
+ieven have time to guard against vice-presidential prevarication,	
+iby disappearing into the coffee shop across the street and	
+ireappearing just as the meeting is getting started, to tell the VP	
+i(and everyone else in earshot), "Those files you wanted are in	
+islash-temp-slash-hal".	
+i	
+iTHE PLAN OF THIS ONGOING TUTORIAL. I'm writing here for editor	
+iusers who have some fluency in Vi/Ex at the surface level.  That	
+iis, you know how to do the ordinary things that are belabored in	
+iall the "Introducing Vi" books on the market, but rarely venture	
+ibeyond that level.	
+i	
+iThis tutorial series will explore a lot of other capabilities that	
+ihardly anyone knows are in Vi/Ex.  That includes quite a few	
+itricks that may be built on editor functions we all use every day,	
+ibut which nonetheless are not obvious--for instance, telling the	
+iglobal command to mark every line it encounters.  I'll also be	
+iclarifying the real nature of the many misunderstood aspects of	
+ithis editor.	
+i	
+iTo do all this, I'll be explaining things in more depth than you	
+imight think warranted at first.  I'll also throw in examples	
+iwherever they seem helpful.  And to save you readers from gross	
+iinformation overload, I'll write this tutorial in a large number	
+iof fairly small modules, to be put up on our website at a calm,	
+ireasonable pace.	
+i	
+iThe Editor's Basic Concepts	
+i	
+iTo get a real grasp on this editor's power, you need to know the	
+ibasic ideas embodied in it, and a few fundamental building blocks	
+ithat are used throughout its many functions.	
+i	
+iOne cause of editor misuse is that most users, even experienced	
+iones, don't really know what the editor is good at and what it's	
+inot capable of.  Here's a quick rundown on its capabilities.	
+i	
+iFirst, it's strictly a general-purpose editor.  It doesn't format	
+ithe text; it doesn't have the handholding of a word processor; it	
+idoesn't have built-in special facilities for editing binaries,	
+igraphics, tables, outlines, or any programming language except	
+iLisp.	
+i	
+iIt's two editors in one.  Visual mode is a better full-screen	
+ieditor than most, and it runs faster than those rivals that have a	
+ilarger bag of screen-editing commands.  Line editing mode dwarfs	
+ithe "global search and replace" facilities found in word	
+iprocessors and simple screen editors; its only rivals are	
+inon-visual editors like Sed where you must know in advance exactly	
+iwhat you want to do.  But in the Vi/Ex editor, the two sides are	
+ivery closely linked, giving the editor a combination punch that no	
+iother editor I've tried can rival.	
+i	
+iFinally, this editor is at its best when used by people who have	
+itaken the trouble to learn it thoroughly.  It's too capable to be	
+ilearned well in an hour or two, and too idiosyncratic to be	
+imastered in a week, and yet the power really is in it, for the few	
+iwho care to delve into it.  A large part of that power requires	
+icustom-programming the editor: that's not easy or straightforward,	
+ibut what can be done by the skillful user goes beyond the direct	
+iprogrammability of any editor except (possibly) Emacs.	
+i	
+iSearch Patterns	
+i	
+iIn quite a few functions of this editor, you can use	
+istring-pattern searching to say where something is to be done or	
+ihow far some effect is to extend.  These search patterns are a	
+igood example of an editor function that is very much in the Unix	
+istyle, but not exactly the same in detail as search patterns in	
+iany other Unix utility.	
+i	
+iSearch patterns function in both line editing and visual editing	
+imodes, and the work the same way in both, with just a few	
+iexceptions.  But how you tell the editor you're typing in a search	
+ipattern will vary with the circumstances.	
+i	
+iSEARCHING FROM WHERE YOU ARE NOW. The more common use for search	
+ipatterns is to go to some new place in the file, or make some	
+iediting change that will extend from your present position to the	
+iplace the pattern search finds.  (In line editing mode it's also	
+ipossible to have an action take place from one pattern's location	
+ito where another pattern is found, but both searches still start	
+ifrom your present location.)	
+i	
+iIf you want to search forward in the file from your present	
+ilocation (toward the end of the file), precede the search pattern	
+iwith a slash (/) character, and type another to end the pattern.	
+iSo if you want to move forward to the next instance of the string	
+i"j++" in your file, typing:	
+i	
+i  /j++/(ret)	
+i	
+iwill do it.  And so will:	
+i	
+i  /j++(ret)	
+i	
+iWhen there is nothing between the pattern and the RETURN key, the	
+iRETURN itself will indicate the end of the search pattern, so the	
+isecond slash is not necessary.  And if you are in visual mode, the	
+iESCAPE key works as well as RETURN does for ending search input,	
+iso	
+i	
+i  /j++(esc)	
+i	
+iis yet another way to make the same request from visual mode.	
+i	
+iTo search backward (toward the start of the file), begin and end	
+iwith a question mark instead of a slash. The same rules of	
+iabbreviation apply to backward searches, so	
+i	
+i  ?j++?(ret)	
+i  ?j++(ret)	
+i  ?j++(esc)	
+i	
+iare all ways to head backward in the file to the same pattern.	
+i	
+iEither way, you've expressed both your request for a pattern	
+isearch and the direction the search is to take in just one	
+ikeystroke.  But don't assume that if you search backward, any	
+imatching pattern the editor finds will be above your present	
+iposition in the file, and vice versa if you search forward.  The	
+ieditor looks there first, certainly, but if it gets to the top or	
+ibottom line of the file and hasn't found a match yet, it wraps	
+iaround to the other end of the file and continues the search in	
+ithe same direction.  That is, if you used a question mark to order	
+ia backward search and the editor searches all the way through the	
+itop line of the file without finding a match, it will go on to	
+isearch the bottom line next, then the second-to-the-bottom line,	
+iand so on until (if necessary) it gets back to the point where the	
+isearch started.  Or if you were searching forward and the editor	
+ifound no match up through the very last line of the file, it would	
+inext search the first line, then the second line, etcetera.	
+i	
+iIf you don't want searches to go past either end of the file,	
+iyou'll need to type in a line mode command:	
+i	
+i  :set nowrapscan(ret)	
+i	
+iThis will disable the wraparound searching during the present	
+isession in the editor.  If you want to restore the wraparound	
+isearching mechanism before you leave the editor, typing	
+i	
+i  :set wrapscan(ret)	
+i	
+i  will do it, and you can turn this on and off as often as you like.	
+i	
+iTHE FIND-THEM-ALL SEARCH. Up to now, I've been considering	
+isearches that find just one instance of the pattern; the one	
+iclosest to your current location in the file, in the direction you	
+ichose for the search.  But there is another style of search, used	
+iprimarily by certain line editing mode commands, such as global	
+iand substitute. This search finds every line in the file (or in a	
+iselected part of the file) that contains the pattern and operates	
+ion them all.	
+i	
+iDon't get confused when using the global and substitute commands.	
+iYou'll often use both styles of search pattern in one command	
+iline.  But the find-one-instance pattern or patterns will go	
+ibefore the command name or abbreviation, while the find-them-all	
+ipattern will come just behind it. For example, in the command:	
+i	
+i  :?Chapter 10?,/The End/substitute/cat/dog/g(ret)	
+i	
+ithe first two patterns refer to the preceding line closest to the	
+icurrent line that contains the string "Chapter 10" and the closest	
+ifollowing line containing the string "The End". Note that each	
+iaddress finds only one line.  Combined with the intervening comma,	
+ithey indicate that the substitute command is to operate on those	
+itwo lines and all the lines in between them.  But the patterns	
+iimmediately after the substitute command itself tell the command	
+ito find every instance of the string "cat" withing that range of	
+ilines and replace it with the string "dog".	
+i	
+iAside from the difference in meaning, the two styles also have	
+idifferent standards for the delimiters that mark pattern	
+ibeginnings and (sometimes) endings.  With a find-them-all pattern,	
+ithere's no need to indicate whether to search forward or backward.	
+iThus, you aren't limited to slash and question mark as your	
+ipattern delimiters. Almost any punctuation mark will do, because	
+ithe editor takes note of the first punctuation mark to appear	
+iafter the command name, and regards it as the delimiter in that	
+iinstance. So	
+i	
+i  :?Chapter 10?,/The End/substitute;cat;dog;g(ret)	
+i  :?Chapter 10?,/The End/substitute+cat+dog+g(ret)	
+i  :?Chapter 10?,/The End/substitute{cat{dog{g(ret)	
+i	
+iare all equivalent to the substitution command above.  (It is a	
+igood idea to avoid using punctuation characters that might have a	
+imeaning in the command, such as an exclamation point, which often	
+iappears as a switch at the end of a command name.)	
+i	
+iThe benefit of this liberty comes when the slash mark will appear	
+ias itself in the search pattern.  For example, suppose our	
+isubstitution command above was to find each pair of consecutive	
+islash marks in the text, and separate them with a hyphen--that is,	
+ichange // to /-/. Obviously,	
+i	
+i  :?Chapter 10?,/The End/substitute/////-//g(ret)	
+i	
+iwon't work; the command will only regard the first three slashes	
+ias delimiters, and everything after that as extraneous characters	
+iat the end of the command.  This can be solved by backslashing:	
+i	
+i  :?Chapter 10?,/The End/substitute/\/\//\/-\//g(ret)	
+i	
+ibut this is even harder to type correctly than the first attempt	
+iwas. But with another punctuation mark as the separator	
+i	
+i  :?Chapter 10?,/The End/substitute;//;/-/;g(ret)	
+i	
+ithe typing is easy and the final command is readable.	
+i	
+iSIMPLE SEARCH PATTERNS. The simplest search pattern is just a	
+istring of characters you want the editor to find, exactly as	
+iyou've typed them in.  For instance: "the cat". But, already there	
+iare several caveats:	
+i	
+i  1. This search finds a string of characters, which may or may	
+i  not be words by themselves.  That is, it may find its target in	
+i  the middle of the phrase "we fed the cat boiled chicken", or in	
+i  the middle of "we sailed a lithe catamaran down the coast". It's	
+i  all a matter of which it encounters first.	
+i	
+i  2. Whether the search calls "The Cat" a match or not depends on how	
+i  you've set an editor variable named ignorecase. If you've left	
+i  that variable in its default setting, the capitalized version will	
+i  not match. If you want a capital letter to match its lower-case	
+i  equivalent, and vice versa, type in the line mode command	
+i	
+i    :set ignorecase(ret)	
+i	
+i  To resume letting caps match only caps and vice versa, type	
+i	
+i    :set noignorecase(ret)	
+i	
+i  3. The search absolutely will not find a match where "the"	
+i  occurs at the end of one line and "cat" is at the start of the	
+i  next line:	
+i	
+i    and with Michael's careful help, we prodded the cat back into	
+i    its cage.  Next afternoon several	
+i	
+i  It makes no difference whether there is or isn't a space	
+i  character between one of the words and the linebreak.  Finding a	
+i  pattern that may break across a line ending is a practically	
+i  impossible task with this line-oriented editor.	
+i	
+i  4. Where the search starts depends on which editor mode you're	
+i  using. A search in visual mode starts with the character next to	
+i  the cursor. In line mode, the search starts with the line	
+i  adjacent to the current line.	
+i	
+iMETACHARACTERS. Then there are search metacharacters or "wild	
+icards": characters that represent something other than themselves	
+iin the search.  As an example, the metacharacters . and * in	
+i	
+i  /Then .ed paid me $50*!/(ret)	
+i	
+icould cause the pattern to match any of:	
+i	
+i  Then Ted paid me $5!	
+i  Then Red paid me $5000!	
+i  Then Ned paid me $50!	
+i	
+ior a myriad of other strings.  Metacharacters are what give search	
+ipatterns their real power, but they need to be well understood.	
+i	
+iTo understand these, you must know the varied uses of the	
+ibackslash (\) metacharacter in turning the "wild card" value of	
+imetacharacters on and off.	
+i	
+iIn many cases, the meta value of the metacharacter is on whenever	
+ithe character appears in a search pattern unless it is preceded by	
+ia backslash; when the backslash is ahead of it the meta value is	
+iturned off and the character simply represents itself.  As an	
+iexample, the backslash is a metacharacter by itself, even if it	
+iprecedes a character that never has a meta value.  The only way to	
+iput an actual backslash in your search pattern is to precede it	
+iwith another backslash to remove its meta value.  That is, to	
+isearch for the pattern "a\b", type	
+i	
+i  /a\\b/(ret)	
+i	
+ias your search pattern.  If you type	
+i	
+i  /a\b/(ret)	
+i	
+ithe backslash will be interpreted as a metacharacter without any	
+ieffect (since the letter b is never a metacharacter) and your	
+isearch pattern will find the string "ab".	
+i	
+iLess-often-used metacharacters are used in exactly the opposite	
+iway.  This sort of character represents only itself when it	
+iappears by itself.  You must use a preceding backslash to turn the	
+imeta value on.  For example, in	
+i	
+i  /\<cat/	
+i	
+ithe left angle bracket (<) is a metacharacter; in	
+i	
+i  /<cat/	
+i	
+iit only represents itself.  These special metacharacters are	
+ipointed out in the list below.	
+i	
+iFinally there is a third class, the most difficult to keep track	
+iof.  Usually these metacharacters have their meta values on in	
+isearch patterns, and must be backslashed to make them represent	
+ijust themselves: like our first example, the backslash character	
+iitself.  But if you've changed the default value of an editor	
+ivariable named magic to turn it off, they work oppositely--you	
+ithen must backslash them to turn their meta value on: like our	
+isecond example, the left angle bracket.  (Not that you are are	
+ilikely to have any reason to turn magic off.)  These oddities are	
+ialso noted in the list below.	
+i	
+iAnd don't forget the punctuation character that starts and ends	
+iyour search pattern, whether it is slash or question mark or	
+isomething else.  Whatever it is, if it is also to appear as a	
+icharacter in the pattern you are searching for, you'll have to	
+ibackslash it there to prevent the editor thinking it is the end of	
+ithe pattern.	
+i	
+iTABLE OF SEARCH PATTERN METACHARACTERS	
+i	
+i  .	
+i	
+iA period in a search pattern matches any single character, whether	
+ia letter of the alphabet (upper or lower case), a digit, a	
+ipunctuation mark, in fact, any ASCII character except the newline.	
+iSo to find "default value" when it might be spelled	
+i"default-value" or "default/value" or "default_value", etcetera,	
+iuse /default.value/ as your search pattern.  When the editor	
+ivariable magic is turned off, you must backslash the period to	
+igive it its meta value.	
+i	
+i  *	
+i	
+iAn asterisk, plus the character that precedes it, match any length	
+istring (even zero length) of the character that precedes the	
+iasterisk.  So the search string /ab*c/ would match "ac" or "abc"	
+ior "abbc" or "abbbc", and so on.  (To find a string with at least	
+ione "b" in it, use /abb*c/ as your search string.) When the	
+iasterisk follows another metacharacter, the two match any length	
+istring of characters that the metacharacter matches. That means	
+ithat /a.*b/ will find "a" followed by "b" with anything (or	
+inothing) between them. When the editor variable magic is turned	
+ioff, you must backslash the asterisk to give it its meta value.	
+i	
+i  ^	
+i	
+iA circumflex as the first character in a search pattern means that	
+ia match will be found only if the matching string occurs at the	
+istart of a line of text.  It doesn't represent any character at	
+ithe start of the line, of course, and a circumflex anywhere in a	
+isearch pattern except as the first character will have no meta	
+ivalue.  So /^cat/ will find "cat", but only at the start of a	
+iline, while /cat^/ will find "cat^" anywhere in a line.	
+i	
+i  $	
+i	
+iA dollar sign as the last character in a search pattern means the	
+imatch must occur at the end of a line of text.  Otherwise it's the	
+isame as circumflex, above.	
+i	
+i  \<	
+i	
+iAt the start of a search pattern, a backslashed left angle bracket	
+imeans the match can only occur at the start of a simple word; at	
+iany other position in a search pattern it is not a metacharacter.	
+i(In this editor, a "simple" word is either a string of one or more	
+ialphanumeric character(s) or a string of one or more	
+inon-alphanumeric, non-whitespace character(s), so "shouldn't"	
+icontains three simple words.)  Thus /\<cat/ will find the last	
+ithree characters in "the cat" or in "tom-cat", but not in	
+i"tomcat". To remove the meta value from the left angle bracket,	
+iremove the preceding backslash: /<cat/ will find "<cat" regardless	
+iof what precedes it.	
+i	
+i  \>	
+i	
+iAt the end of a search pattern, a backslashed right angle bracket	
+imeans the match can occur only at the end of a simple word.	
+iOtherwise the same as the left angle bracket, above.	
+i	
+i  ~	
+i	
+iThe tilde represents the last string you put into a line by means	
+iof a line mode substitute command, regardless of whether you were	
+iin line mode then or ran it from visual mode by preceding it with	
+ia colon (":"). For instance, if your last line mode substitution	
+icommand was s/dog/cat/ then a /the ~/ search pattern will find	
+i"the cat". But the input string of a substitute command can use	
+imetacharacters of its own, and if your last use involved any of	
+ithose metacharacters then a tilde in your search pattern will give	
+iyou either an error message or a match that is not what you	
+iexpected.  When the editor variable magic is turned off, you must	
+ibackslash the tilde to give it its meta value.	
+i	
+i	
+iCHARACTER CLASSES. There is one metastring form (a "multicharacter	
+imetacharacter") used in search patterns.  When several characters	
+iare enclosed within a set of brackets ([]), the group matches any	
+ione of the characters inside the brackets.  That is, /part [123]/	
+iwill match "part 1", "part 2" or "part 3", whichever the search	
+icomes to first. One frequent use for this feature is in finding a	
+istring that may or may not be capitalized, when the editor	
+ivariable ignorecase is turned off (as it is by default). Typing	
+i/[Cc]at/ will find either "Cat" or "cat", and /[Cc][Aa][Tt]/ will	
+ifind those or "CAT". (In case there was a slip of the shift key	
+iwhen "CAT" was typed in, the last pattern will even find "CaT",	
+i"CAt", etcetera.)	
+i	
+iThere's more power (and some complication) in another feature of	
+ithis metastring: there can be metacharacters inside it. Inside the	
+ibrackets, a circumflex as the first character reverses the	
+imeaning.  Now the metastring matches any one character that is NOT	
+iwithin the brackets.  A /^[^ ]/ search pattern finds a line that	
+idoes not begin with a space character. (You're so right if you	
+ithink that the different meta values of the circumflex inside and	
+ioutside the character class brackets is not one of the editor's	
+ibest points.)  A circumflex that is not the first character inside	
+ithe brackets represents just an actual circumflex.	
+i	
+iA hyphen can be a metacharacter within the brackets, too. When	
+iit's between two characters, and the first of the two other	
+icharacters has a lower ASCII value than the second, it's as if	
+iyou'd typed in all of the characters in the ASCII collating	
+isequence from the first to the second one, inclusive.  So /[0-9]%/	
+iwill find any numeral followed by the percent sign (%), just as	
+i/[0123456789]%/ would.  A /[a-z]/ search pattern will match any	
+ilower-case letter, and /[a-zA-Z]/ matches any letter, capital or	
+ilower case.  These two internal metacharacters can be combined:	
+i/[^A-Z]/ will find any character except a capital letter.  A	
+ihyphen that is either the first or the last character inside the	
+ibrackets has no meta value.  When a character-hyphen-character	
+istring has a first character with a higher ASCII value than the	
+ilast character, the hyphen and the two characters that surround it	
+iare all ignored by the pattern search, so /[ABz-a]/ is the same as	
+i/[AB]/.	
+i	
+iBackslashing character classes is complex.  Within the brackets	
+iyou must backslash a right bracket that's part of the class;	
+iotherwise the editor will mistake it for the bracket that closes	
+ithe class.  Of course you must backslash a backslash that you want	
+ito be part of the class, and you can backslash a circumflex at the	
+istart or a hyphen between two characters if you want them in the	
+iclass literally and don't want to move them elsewhere in the	
+iconstruct.  Elsewhere in a search pattern you will have to	
+ibackslash a left bracket that you want to appear as itself, or	
+ielse the editor will take it as your attempt to begin a character	
+iclass.  Finally, if magic is turned off, you'll have to backslash	
+ia left bracket when you do want it to begin a character class.	
+i	
+iComing Up Next	
+i	
+iIn the second part of this tutorial, I'll be following up on all	
+ithis information about search patterns, by showing the right ways	
+ito combine them with other elements to generate command addresses.	
+iAs a second part finale, I'll show how to tap the enormous power	
+iof the command that looks like an address: the global command.	
 
 1Part 2: Line-Mode Addresses	/archive/vi/part2/
 1Back to the index	/archive/vi/

@@ -1,424 +1,424 @@
-iThe vi/ex Editor, Part 3: The global Command
-i
-iThe Wondrous global Command
-i
-iIf you're surprised that I made no mention of global in the
-ipreceding installment of this tutorial--well, global is not an
-iaddress.  It's actually a line-mode command, and it's much more
-ipowerful than most users suspect.
-i
-iEven experienced users of line mode usually think of global along
-ithese lines: "If you type global and then a search pattern and
-ithen a line-mode command, all on one line, then the editor finds
-ievery line in the file that contains that pattern and runs the
-icommand on every one of those lines".  That is, typing:
-i
-i  global /^Chapter [1-9]/ delete
-i
-iis expected to find and delete every line in the file that starts
-iwith a chapter heading.  This example will do just that, and so
-iwill many other such uses of the command.  But spectacular
-ifailures will happen from time to time--typing:
-i
-i  global /^Chapter [1-9]/ write >> t.of.contents
-i
-idefinitely will not append each of the marked lines to a file
-inamed "t.of.contents", as moderately-experienced users might
-iexpect.  (It's likely to overflow your file system quota instead.)
-i
-iThe Details of global Operations
-i
-iMore important, misunderstanding the global command keeps users
-ifrom exploiting more than a small fraction of that command's
-ipower.  But you don't have to live with the limitations of
-iignorance on this--here's the full story in plain terms:
-i
-iSearching where you tell it to look:
-i
-i   As a line-mode command, global can be preceded by an address or
-i   pair of addresses.  Its default is to search the entire file,
-i   but if you start your command as 257 , 382 global then it will
-i   only search through lines 257 through 382 inclusive.  Any
-i   line-mode addresses can begin a global command, so starting
-i   with ?^Exercises? +++ , $ global will restrict the pattern
-i   search and line marking to a stretch beginning three lines past
-i   the last previous line that starts with the string
-i   "Exercises", and ending at the end of the file.
-i
-iMarking either hits or misses:
-i
-i   Typing the command name as global or g will definitely cause it
-i   to mark every line in the search area that contains the
-i   pattern.  But typing it as global! or g! or v reverses the
-i   procedure--now it will only mark lines that do not contain the
-i   search string.  So if you are editing a copy of a log file of
-i   error messages, and only the lines that begin with "Error
-i   3b:" are of interest, you can eliminate all the unwanted lines
-i   by typing:
-i
-i     global! /^Error 3b:/ delete
-i
-iChoose your own search pattern delimiter:
-i
-i   Since this command always searches the file (or the section of
-i   it that you select) from top to bottom, you can use almost any
-i   punctuation character to mark the start and end of your search
-i   pattern.  There's no need to use ? or / characters to indicate
-i   a direction for the search.  If you want to eliminate lines
-i   that contain three consecutive slash marks, any of:
-i
-i     global +///+ delete
-i     global ;///; delete
-i     global ]///] delete
-i
-i   will be a simpler choice than using slashes as delimiters and
-i   backslashing all three of the slashes you are searching for.
-i   (However, using ! as you delimiter is dangerous, because global
-i   is likely to mistake your delimiter for the switch that tells
-i   it to find only lines that do not contain the search pattern.)
-i
-i   Of course this applies only to the search pattern that goes
-i   right after the global command name, the one that says which
-i   lines to mark.  If you use any search patterns before the
-i   command name, to say which area of the file is to be searched,
-i   then use ? and / delimiters as usual.
-i
-iGlobal searches that seem senseless can be very useful:
-i
-i   At times it's wise to have global or global! run a search over
-i   just one line in a file. This is the basis for conditional
-i   execution of line-mode commands. As a simple example, you may
-i   find yourself editing files from outside your organization that
-i   are sometimes (but not always) sent to you with an extra, empty
-i   last line, as a spacer. You need to remove that last line, if
-i   and only if it is empty. You could go the end of each file and
-i   look, but it's easier to have the editor do the checking and
-i   (where necessary) the deletion, so you type:
-i
-i     $ global /^$/ delete
-i
-i   It can also be useful to have global mark every line in the
-i   area of the file you tell it to search!  Our put-upon
-i   programmer, Hal (in the first installment of this tutorial)
-i   used this when he had to reverse the order of the lines in one
-i   file. His command line, which would look like this if typed out
-i   in unabbreviated form:
-i
-i     global /^/ move 0
-i
-i   begins by marking each line that has a start-of-line point,
-i   which makes every line qualify.  Next it goes to the first line
-i   and moves it up right after the fictitious line zero--a no-op,
-i   of course.  But then it moves the second line to the same
-i   place, pushing the former first line down one position in the
-i   file.  As it does the same with the third line, the fourth
-i   line, etcetera, it's changing the order of the lines to the
-i   exact opposite of the order they were in at the start.
-i
-iOne global can run many commands:
-i
-i   You can put several commands on the line after a global command
-i   and its search pattern.  After marking the appropriate lines,
-i   global will then go to each marked line and run all of the
-i   commands you've given it, in the order you gave them.  Just
-i   separate these commands with a vertical bar ("|") character.
-i   If you type:
-i
-i     global /^CHAPTER/ substitute /APTER/apter/ | copy $
-i
-i   the editor will go to each line that starts with a chapter
-i   heading, change "CHAPTER" to "Chapter", and then copy the
-i   line (now beginning "Chapter" instead of "CHAPTER") to the
-i   end of the file.  The order in which you put those two commands
-i   is important -- the substitute command must come first so the
-i   subsequent copy command will copy the decapitalized version of
-i   the line, not the original all-caps version.
-i
-i   You're not limited to just two commands in a global command
-i   line; there is no maximum on the number of commands there.  The
-i   maximum string length for the command list varies with the
-i   editor version you're using, but I've never encountered a limit
-i   of less then 256 characters. There are a few restrictions on
-i   what the command list can contain, though:
-i
-i      The global keyword and the following list of commands all
-i      must be on one line.  (That is, on one physical line, with
-i      no carriage returns in it.  If that one line is too long for
-i      your terminal's screen width, the terminal may wrap it
-i      around to occupy two or more lines on your screen, but this
-i      will not cause a problem.)
-i
-i      The command list cannot include an undo or another global
-i      command.
-i
-i      If you include a command that escapes to the shell, it must
-i      be the last command on the line.  (Putting two or more
-i      shell-escape commands in one command list will not work.)
-i      This makes it possible to use pipes (symbolized by the |
-i      character) in your shell-escape command string, without
-i      having the editor mistake the pipe symbol for the separator
-i      between two editor commands in your global command line.
-i
-iCommands don't have to run on the lines global marks.
-i
-i   Using global is essentially the same as moving to each marked
-i   line manually, then typing in the command string while you are
-i   there.  Just as you no longer expect every command you type in
-i   to operate on the line you are on when you type it, you don't
-i   have to have the commands in a global string operate entirely
-i   on the marked lines.  Here are three points to note regarding
-i   this:
-i
-i      Any command in a global command line can take its own
-i      address or addresses, just as it could if it were typed in
-i      as a separate command.  So this command string:
-i
-i        global /^XX/ - copy $ | /ZZ$/ , +5 delete
-i
-i      is entirely legitimate.  It goes to each line that begins
-i      with two capital X's, then copies the line just before that
-i      one to the end of the file, and finally goes forward to the
-i      next line that ends with two capital Z's and deletes that
-i      line and the five lines that follow it.
-i
-i      Even if you give no addresses for the commands in a global
-i      string, default addresses for those commands may make them
-i      operate on other than the marked line. That's the fault in
-i      that global command string in the introduction to this
-i      installment of my tutorial that tries to write individual
-i      lines to another file.  Because the default address for the
-i      write command is the entire file, this command will write
-i      the entire file the user is editing to the end of the other
-i      file, once for every line that global has marked. The
-i      correct way to write individual lines is to type:
-i
-i        global /^Chapter [1-9]/ . write >> t.of.contents
-i
-i      where the dot address in front of the write command tells it
-i      to write only the line it is on.
-i
-i      But even if you take a command that has the current line as
-i      its default address, and put it in the string following
-i      global without giving it an address of its own, it can still
-i      operate on different lines from the ones global has marked
-i      if it is not the first command in the string.  The reason:
-i      each subsequent command in a global takes as the current
-i      line whatever line the command before it left as the current
-i      line.
-i
-i      In my earlier example about wanting to both change the
-i      capitalization of lines beginning with "CHAPTER" and copy
-i      those lines to the end of the file, the task was easy
-i      because the lines were to be copied in their changed state.
-i      But what if the user wanted only the lines in the midst of
-i      the file decapitalized, while the ones copied to the end of
-i      the file were to remain all-caps?  It might seem obvious to
-i      simply reverse the order of the two commands, so the copy
-i      command was executed first, before the substitute command
-i      was called to change the capitalization, like this:
-i
-i        global /^CHAPTER/ copy $ | substitute /APTER/apter/
-i
-i      Surprisingly, that would produce the opposite of the effect
-i      that was intended.  That is, it would decapitalize the
-i      copied lines at the end of the file, but leave the marked
-i      lines in the midst of the file all-caps. The reason?  The
-i      copy command leaves the last line of the copy text block,
-i      not the original text block, as the current line.  So after
-i      the copy command has run, the substitute command, using the
-i      command's default address (the current line) because it has
-i      not been given an explicit address, would operate on the
-i      copy line rather than the original.
-i
-i      But there is one thing that no amount of current-line
-i      shifting can change.  Wherever in the file the command
-i      string may leave the current line, when the commands have
-i      finished running, global will go to the next marked line
-i      without fail.  The only way any of the commands in the
-i      string can prevent this is by deleting the next marked line
-i      -- in that case, global will merely go on to the next marked
-i      line that has not been deleted.  And even this fact has uses
-i      that might not be obvious.
-i
-i      Let's say you want to thin out the lines in a file, by
-i      deleting every second line.  You can do it by typing:
-i
-i        global /^/ + delete
-i
-i      This global starts off by marking every line. When it goes
-i      to line 1, the command it executes will delete line 2.  The
-i      next undeleted marked line is line 3, where its command
-i      deletes line 4, and so on.  Or if you want to delete
-i      two-thirds of the lines in your file, type:
-i
-i        global /^/ + , ++ delete
-i
-iA Few More Uses for global Commands
-i
-iThe examples above are designed to show not only the working
-iprinciples of the global command, but also some of the
-iless-obvious tricks it can do.  But I couldn't fit every important
-itrick in above.  Here are some more that are well worth knowing.
-i
-iKeeping Count.  At times it's a good idea to follow global with a
-istring of commands that have absolutely nothing to do with the
-ilines that global has marked.  The most common occasion for this
-icomes when you need to repeat a line-mode command a certain number
-iof times.
-i
-iAt tradeshows I'm often invited to test a system right there on
-ithe show floor.  I can't carry a 10,000-line test file along with
-ime in every media and format any system might require, so I type
-iin a ten-line file on the spot and expand it by telling the editor
-iten times to make a copy of the entire file and put that copy at
-ithe end of the present file.  (Each such copy doubles the file's
-isize, so I wind up with 10,240 lines.)
-i
-iBut that requires accurate counting.  If I'm off by even one on
-ithe number of times I type that command in, I get a half-size or
-idouble-size file that ruins my test results.  Instead of trying to
-icount without an error, I let the editor do the counting for me.
-iAfter I've typed in the initial ten lines, I give one global
-icommand:
-i
-i  global /^/ % copy $
-i
-iThis tells the editor to search the ten lines of the file, mark
-ievery line that has a start-of-line (which means every line, of
-icourse), and then go to each of those ten lines and run the
-isubsequent command to make a whole-file copy.  This guarantees
-ithat the command will run exactly ten times.
-i
-iNot that this trick is limited to files that have exactly as many
-ilines as the number of times I want to command to be repeated.  If
-iI had typed in a twenty-line file, I could copy it ten times by
-igiving my global as:
-i
-i  1 , 10 global /^/ % copy $
-i
-iMoving Around Automatically. At times you may need to handle a
-iseries of editing problems in a file, where the edits must be
-idealt with one by one, not with a global editing script.  But
-imoving to each spot where work needs to be done can be a very
-itedious business.  If there is a text pattern that identifies each
-iplace that needs editing, or if you can write a script to insert
-isuch a pattern, as Hal did at the start of this tutorial's first
-iinstallment, then global can move you around automatically.
-i
-iYou may recall that Hal used a script to mark up the legacy source
-icode, putting each lint warning at the end of the source line to
-iwhich it referred, preceded by "XXX" to make the affected lines
-iidentifiable.  Suppose that the nefarious Vice President for
-iInformation Systems comes back to Hal to demand that each warning
-ibe investigated, to see whether the code can be rewritten to
-ieliminate the warning.
-i
-iShould Hal just leaf through the code, searching for XXX patterns
-ito guide him to the trouble spots?  Hal knows that with the
-ispaghetti code he's facing, the actual problem may be a long way
-ifrom the line lint has designated.  In traveling to the actual
-itrouble spot he may have passed several XXX patterns along the
-iway, so searching for the next XXX in the file may bring him to a
-isite he's already dealt with, or may miss a number of XXX sites
-ithat he passed when he moved forward to get to the actual problem
-ispot on the previous fix.  Besides, because he frequently does
-ipattern searching while fixing a problem, he can't depend on a
-ivisual-mode n command to use the XXX pattern he needs to find; he
-imust type the pattern in afresh each time.
-i
-iBut Hal knows a way around all this--dropping back to line mode
-i(by typing a capital letter Q from visual mode) and giving a
-isimple global command:
-i
-i  global /XXX/ visual | write
-i
-iThis command brings Hal to the first "XXX" line, where it puts him
-iinto visual mode to do his editing.  When the edit is finished,
-iHal simply types a capital letter Q and the editor takes him to
-ithe second "XXX" line and puts him into visual mode there, no
-imatter how much moving around Hal did during the first edit, and
-iso on through the list of "XXX" lines.  As frosting on the cake,
-ithe write command automatically writes the changed file to disk
-iafter each individual edit.
-i
-iNow You Give it a Try
-i
-iHere are a few exercises you can try to solve, before you start
-iusing advanced global tactics in your own editing.  To keep things
-irolling I've provided at least one solution to each exercise, and
-ialso a hint on the last (and toughest) problem.
-i
-iCopy and Decapitalize.
-i
-i  Let's think back to the user who wanted to find each line in the
-i  file that begins with "CHAPTER", then copy each such line to the
-i  end of the file just as it is, and finally change the start of
-i  each original line (in mid-file) from "CHAPTER" to "Chapter"
-i  while leaving the copied lines (at the end of the file)
-i  beginning "CHAPTER".
-i
-i  We've already learned that this cannot be done with either of:
-i
-i    global /^CHAPTER/ substitute /APTER/apter/ | copy $
-i    global /^CHAPTER/ copy $ | substitute /APTER/apter/
-i
-i  What global command (or commands) would it take to do what's
-i  desired here?  Finding a solution to this is not difficult when
-i  there are so many workable ones.
-i
-iA Precise String Length.
-i
-i  An old friend who does some pretty tricky work with troff often
-i  needs to insert a string of backslashes in a line--up to 64 of
-i  them in a row.  The count of backslashes must be exactly right
-i  or troff will choke.  How can he get these strings exactly right
-i  without tedious counting and checking?
-i
-i  Let's say he needs to put 16 backslashes in line 217, right
-i  before the string "n(PDu". What command(s) should he use to get
-i  them in there without hand counting.  My solution is pretty
-i  plain once you know which commands to use.
-i
-iNumbering Paragraphs.  
-i
-i  A documentation writer has divided each section of a document into
-i  paragraphs, and as a troff user, marks the start of each paragraph
-i  by a line that contains the macro ".pp" only.  That is, a break
-i  between paragraphs looks like this:
-i
-i    which is the only way that argon gas can be dissolved in this
-i    liquid.
-i
-i    .pp
-i    The problem of energizing the argon to fluorescence while
-i    it is dissolved was first approached by applying a strong
-i
-i
-i  How can this tech writer use the vi editor to number the
-i  paragraphs in each section?  (If this seems far-fetched to you,
-i  consider that I once got a phone call from a Unix guru asking
-i  how to do just this.)  To keep the problem simple, let's say
-i  that there are never more than 35 paragraphs in a section, and
-i  that they should be numbered with Roman numerals.
-i
-i  This problem is still difficult enough that I'm offering you two
-i  hints. The first is that global is essential here.  Look at the
-i  second hint only if you're about to give up and check my
-i  solution.
-i
-1Solutions	solutions
-i
-iComing Up Next
-i
-iIn the next part of this tutorial, I'll cover the less-known
-iaspects of the other line-mode commands for dealing with text and
-ifiles.  If you're a little overwhelmed with all that I've said
-iabout global, you'll be pleased to know that substitute is notably
-isimpler, and all the remaining commands are very much simpler,
-ithan global.
-i
-iAfter that, future parts of this tutorial will deal with visual
-imode; easier and more fun than line mode any day.
-
-1Part 4: The Substitute Command	/archive/vi/part4/
-1Back to the index	/archive/vi/
+iThe vi/ex Editor, Part 3: The global Command	
+i	
+iThe Wondrous global Command	
+i	
+iIf you're surprised that I made no mention of global in the	
+ipreceding installment of this tutorial--well, global is not an	
+iaddress.  It's actually a line-mode command, and it's much more	
+ipowerful than most users suspect.	
+i	
+iEven experienced users of line mode usually think of global along	
+ithese lines: "If you type global and then a search pattern and	
+ithen a line-mode command, all on one line, then the editor finds	
+ievery line in the file that contains that pattern and runs the	
+icommand on every one of those lines".  That is, typing:	
+i	
+i  global /^Chapter [1-9]/ delete	
+i	
+iis expected to find and delete every line in the file that starts	
+iwith a chapter heading.  This example will do just that, and so	
+iwill many other such uses of the command.  But spectacular	
+ifailures will happen from time to time--typing:	
+i	
+i  global /^Chapter [1-9]/ write >> t.of.contents	
+i	
+idefinitely will not append each of the marked lines to a file	
+inamed "t.of.contents", as moderately-experienced users might	
+iexpect.  (It's likely to overflow your file system quota instead.)	
+i	
+iThe Details of global Operations	
+i	
+iMore important, misunderstanding the global command keeps users	
+ifrom exploiting more than a small fraction of that command's	
+ipower.  But you don't have to live with the limitations of	
+iignorance on this--here's the full story in plain terms:	
+i	
+iSearching where you tell it to look:	
+i	
+i   As a line-mode command, global can be preceded by an address or	
+i   pair of addresses.  Its default is to search the entire file,	
+i   but if you start your command as 257 , 382 global then it will	
+i   only search through lines 257 through 382 inclusive.  Any	
+i   line-mode addresses can begin a global command, so starting	
+i   with ?^Exercises? +++ , $ global will restrict the pattern	
+i   search and line marking to a stretch beginning three lines past	
+i   the last previous line that starts with the string	
+i   "Exercises", and ending at the end of the file.	
+i	
+iMarking either hits or misses:	
+i	
+i   Typing the command name as global or g will definitely cause it	
+i   to mark every line in the search area that contains the	
+i   pattern.  But typing it as global! or g! or v reverses the	
+i   procedure--now it will only mark lines that do not contain the	
+i   search string.  So if you are editing a copy of a log file of	
+i   error messages, and only the lines that begin with "Error	
+i   3b:" are of interest, you can eliminate all the unwanted lines	
+i   by typing:	
+i	
+i     global! /^Error 3b:/ delete	
+i	
+iChoose your own search pattern delimiter:	
+i	
+i   Since this command always searches the file (or the section of	
+i   it that you select) from top to bottom, you can use almost any	
+i   punctuation character to mark the start and end of your search	
+i   pattern.  There's no need to use ? or / characters to indicate	
+i   a direction for the search.  If you want to eliminate lines	
+i   that contain three consecutive slash marks, any of:	
+i	
+i     global +///+ delete	
+i     global ;///; delete	
+i     global ]///] delete	
+i	
+i   will be a simpler choice than using slashes as delimiters and	
+i   backslashing all three of the slashes you are searching for.	
+i   (However, using ! as you delimiter is dangerous, because global	
+i   is likely to mistake your delimiter for the switch that tells	
+i   it to find only lines that do not contain the search pattern.)	
+i	
+i   Of course this applies only to the search pattern that goes	
+i   right after the global command name, the one that says which	
+i   lines to mark.  If you use any search patterns before the	
+i   command name, to say which area of the file is to be searched,	
+i   then use ? and / delimiters as usual.	
+i	
+iGlobal searches that seem senseless can be very useful:	
+i	
+i   At times it's wise to have global or global! run a search over	
+i   just one line in a file. This is the basis for conditional	
+i   execution of line-mode commands. As a simple example, you may	
+i   find yourself editing files from outside your organization that	
+i   are sometimes (but not always) sent to you with an extra, empty	
+i   last line, as a spacer. You need to remove that last line, if	
+i   and only if it is empty. You could go the end of each file and	
+i   look, but it's easier to have the editor do the checking and	
+i   (where necessary) the deletion, so you type:	
+i	
+i     $ global /^$/ delete	
+i	
+i   It can also be useful to have global mark every line in the	
+i   area of the file you tell it to search!  Our put-upon	
+i   programmer, Hal (in the first installment of this tutorial)	
+i   used this when he had to reverse the order of the lines in one	
+i   file. His command line, which would look like this if typed out	
+i   in unabbreviated form:	
+i	
+i     global /^/ move 0	
+i	
+i   begins by marking each line that has a start-of-line point,	
+i   which makes every line qualify.  Next it goes to the first line	
+i   and moves it up right after the fictitious line zero--a no-op,	
+i   of course.  But then it moves the second line to the same	
+i   place, pushing the former first line down one position in the	
+i   file.  As it does the same with the third line, the fourth	
+i   line, etcetera, it's changing the order of the lines to the	
+i   exact opposite of the order they were in at the start.	
+i	
+iOne global can run many commands:	
+i	
+i   You can put several commands on the line after a global command	
+i   and its search pattern.  After marking the appropriate lines,	
+i   global will then go to each marked line and run all of the	
+i   commands you've given it, in the order you gave them.  Just	
+i   separate these commands with a vertical bar ("|") character.	
+i   If you type:	
+i	
+i     global /^CHAPTER/ substitute /APTER/apter/ | copy $	
+i	
+i   the editor will go to each line that starts with a chapter	
+i   heading, change "CHAPTER" to "Chapter", and then copy the	
+i   line (now beginning "Chapter" instead of "CHAPTER") to the	
+i   end of the file.  The order in which you put those two commands	
+i   is important -- the substitute command must come first so the	
+i   subsequent copy command will copy the decapitalized version of	
+i   the line, not the original all-caps version.	
+i	
+i   You're not limited to just two commands in a global command	
+i   line; there is no maximum on the number of commands there.  The	
+i   maximum string length for the command list varies with the	
+i   editor version you're using, but I've never encountered a limit	
+i   of less then 256 characters. There are a few restrictions on	
+i   what the command list can contain, though:	
+i	
+i      The global keyword and the following list of commands all	
+i      must be on one line.  (That is, on one physical line, with	
+i      no carriage returns in it.  If that one line is too long for	
+i      your terminal's screen width, the terminal may wrap it	
+i      around to occupy two or more lines on your screen, but this	
+i      will not cause a problem.)	
+i	
+i      The command list cannot include an undo or another global	
+i      command.	
+i	
+i      If you include a command that escapes to the shell, it must	
+i      be the last command on the line.  (Putting two or more	
+i      shell-escape commands in one command list will not work.)	
+i      This makes it possible to use pipes (symbolized by the |	
+i      character) in your shell-escape command string, without	
+i      having the editor mistake the pipe symbol for the separator	
+i      between two editor commands in your global command line.	
+i	
+iCommands don't have to run on the lines global marks.	
+i	
+i   Using global is essentially the same as moving to each marked	
+i   line manually, then typing in the command string while you are	
+i   there.  Just as you no longer expect every command you type in	
+i   to operate on the line you are on when you type it, you don't	
+i   have to have the commands in a global string operate entirely	
+i   on the marked lines.  Here are three points to note regarding	
+i   this:	
+i	
+i      Any command in a global command line can take its own	
+i      address or addresses, just as it could if it were typed in	
+i      as a separate command.  So this command string:	
+i	
+i        global /^XX/ - copy $ | /ZZ$/ , +5 delete	
+i	
+i      is entirely legitimate.  It goes to each line that begins	
+i      with two capital X's, then copies the line just before that	
+i      one to the end of the file, and finally goes forward to the	
+i      next line that ends with two capital Z's and deletes that	
+i      line and the five lines that follow it.	
+i	
+i      Even if you give no addresses for the commands in a global	
+i      string, default addresses for those commands may make them	
+i      operate on other than the marked line. That's the fault in	
+i      that global command string in the introduction to this	
+i      installment of my tutorial that tries to write individual	
+i      lines to another file.  Because the default address for the	
+i      write command is the entire file, this command will write	
+i      the entire file the user is editing to the end of the other	
+i      file, once for every line that global has marked. The	
+i      correct way to write individual lines is to type:	
+i	
+i        global /^Chapter [1-9]/ . write >> t.of.contents	
+i	
+i      where the dot address in front of the write command tells it	
+i      to write only the line it is on.	
+i	
+i      But even if you take a command that has the current line as	
+i      its default address, and put it in the string following	
+i      global without giving it an address of its own, it can still	
+i      operate on different lines from the ones global has marked	
+i      if it is not the first command in the string.  The reason:	
+i      each subsequent command in a global takes as the current	
+i      line whatever line the command before it left as the current	
+i      line.	
+i	
+i      In my earlier example about wanting to both change the	
+i      capitalization of lines beginning with "CHAPTER" and copy	
+i      those lines to the end of the file, the task was easy	
+i      because the lines were to be copied in their changed state.	
+i      But what if the user wanted only the lines in the midst of	
+i      the file decapitalized, while the ones copied to the end of	
+i      the file were to remain all-caps?  It might seem obvious to	
+i      simply reverse the order of the two commands, so the copy	
+i      command was executed first, before the substitute command	
+i      was called to change the capitalization, like this:	
+i	
+i        global /^CHAPTER/ copy $ | substitute /APTER/apter/	
+i	
+i      Surprisingly, that would produce the opposite of the effect	
+i      that was intended.  That is, it would decapitalize the	
+i      copied lines at the end of the file, but leave the marked	
+i      lines in the midst of the file all-caps. The reason?  The	
+i      copy command leaves the last line of the copy text block,	
+i      not the original text block, as the current line.  So after	
+i      the copy command has run, the substitute command, using the	
+i      command's default address (the current line) because it has	
+i      not been given an explicit address, would operate on the	
+i      copy line rather than the original.	
+i	
+i      But there is one thing that no amount of current-line	
+i      shifting can change.  Wherever in the file the command	
+i      string may leave the current line, when the commands have	
+i      finished running, global will go to the next marked line	
+i      without fail.  The only way any of the commands in the	
+i      string can prevent this is by deleting the next marked line	
+i      -- in that case, global will merely go on to the next marked	
+i      line that has not been deleted.  And even this fact has uses	
+i      that might not be obvious.	
+i	
+i      Let's say you want to thin out the lines in a file, by	
+i      deleting every second line.  You can do it by typing:	
+i	
+i        global /^/ + delete	
+i	
+i      This global starts off by marking every line. When it goes	
+i      to line 1, the command it executes will delete line 2.  The	
+i      next undeleted marked line is line 3, where its command	
+i      deletes line 4, and so on.  Or if you want to delete	
+i      two-thirds of the lines in your file, type:	
+i	
+i        global /^/ + , ++ delete	
+i	
+iA Few More Uses for global Commands	
+i	
+iThe examples above are designed to show not only the working	
+iprinciples of the global command, but also some of the	
+iless-obvious tricks it can do.  But I couldn't fit every important	
+itrick in above.  Here are some more that are well worth knowing.	
+i	
+iKeeping Count.  At times it's a good idea to follow global with a	
+istring of commands that have absolutely nothing to do with the	
+ilines that global has marked.  The most common occasion for this	
+icomes when you need to repeat a line-mode command a certain number	
+iof times.	
+i	
+iAt tradeshows I'm often invited to test a system right there on	
+ithe show floor.  I can't carry a 10,000-line test file along with	
+ime in every media and format any system might require, so I type	
+iin a ten-line file on the spot and expand it by telling the editor	
+iten times to make a copy of the entire file and put that copy at	
+ithe end of the present file.  (Each such copy doubles the file's	
+isize, so I wind up with 10,240 lines.)	
+i	
+iBut that requires accurate counting.  If I'm off by even one on	
+ithe number of times I type that command in, I get a half-size or	
+idouble-size file that ruins my test results.  Instead of trying to	
+icount without an error, I let the editor do the counting for me.	
+iAfter I've typed in the initial ten lines, I give one global	
+icommand:	
+i	
+i  global /^/ % copy $	
+i	
+iThis tells the editor to search the ten lines of the file, mark	
+ievery line that has a start-of-line (which means every line, of	
+icourse), and then go to each of those ten lines and run the	
+isubsequent command to make a whole-file copy.  This guarantees	
+ithat the command will run exactly ten times.	
+i	
+iNot that this trick is limited to files that have exactly as many	
+ilines as the number of times I want to command to be repeated.  If	
+iI had typed in a twenty-line file, I could copy it ten times by	
+igiving my global as:	
+i	
+i  1 , 10 global /^/ % copy $	
+i	
+iMoving Around Automatically. At times you may need to handle a	
+iseries of editing problems in a file, where the edits must be	
+idealt with one by one, not with a global editing script.  But	
+imoving to each spot where work needs to be done can be a very	
+itedious business.  If there is a text pattern that identifies each	
+iplace that needs editing, or if you can write a script to insert	
+isuch a pattern, as Hal did at the start of this tutorial's first	
+iinstallment, then global can move you around automatically.	
+i	
+iYou may recall that Hal used a script to mark up the legacy source	
+icode, putting each lint warning at the end of the source line to	
+iwhich it referred, preceded by "XXX" to make the affected lines	
+iidentifiable.  Suppose that the nefarious Vice President for	
+iInformation Systems comes back to Hal to demand that each warning	
+ibe investigated, to see whether the code can be rewritten to	
+ieliminate the warning.	
+i	
+iShould Hal just leaf through the code, searching for XXX patterns	
+ito guide him to the trouble spots?  Hal knows that with the	
+ispaghetti code he's facing, the actual problem may be a long way	
+ifrom the line lint has designated.  In traveling to the actual	
+itrouble spot he may have passed several XXX patterns along the	
+iway, so searching for the next XXX in the file may bring him to a	
+isite he's already dealt with, or may miss a number of XXX sites	
+ithat he passed when he moved forward to get to the actual problem	
+ispot on the previous fix.  Besides, because he frequently does	
+ipattern searching while fixing a problem, he can't depend on a	
+ivisual-mode n command to use the XXX pattern he needs to find; he	
+imust type the pattern in afresh each time.	
+i	
+iBut Hal knows a way around all this--dropping back to line mode	
+i(by typing a capital letter Q from visual mode) and giving a	
+isimple global command:	
+i	
+i  global /XXX/ visual | write	
+i	
+iThis command brings Hal to the first "XXX" line, where it puts him	
+iinto visual mode to do his editing.  When the edit is finished,	
+iHal simply types a capital letter Q and the editor takes him to	
+ithe second "XXX" line and puts him into visual mode there, no	
+imatter how much moving around Hal did during the first edit, and	
+iso on through the list of "XXX" lines.  As frosting on the cake,	
+ithe write command automatically writes the changed file to disk	
+iafter each individual edit.	
+i	
+iNow You Give it a Try	
+i	
+iHere are a few exercises you can try to solve, before you start	
+iusing advanced global tactics in your own editing.  To keep things	
+irolling I've provided at least one solution to each exercise, and	
+ialso a hint on the last (and toughest) problem.	
+i	
+iCopy and Decapitalize.	
+i	
+i  Let's think back to the user who wanted to find each line in the	
+i  file that begins with "CHAPTER", then copy each such line to the	
+i  end of the file just as it is, and finally change the start of	
+i  each original line (in mid-file) from "CHAPTER" to "Chapter"	
+i  while leaving the copied lines (at the end of the file)	
+i  beginning "CHAPTER".	
+i	
+i  We've already learned that this cannot be done with either of:	
+i	
+i    global /^CHAPTER/ substitute /APTER/apter/ | copy $	
+i    global /^CHAPTER/ copy $ | substitute /APTER/apter/	
+i	
+i  What global command (or commands) would it take to do what's	
+i  desired here?  Finding a solution to this is not difficult when	
+i  there are so many workable ones.	
+i	
+iA Precise String Length.	
+i	
+i  An old friend who does some pretty tricky work with troff often	
+i  needs to insert a string of backslashes in a line--up to 64 of	
+i  them in a row.  The count of backslashes must be exactly right	
+i  or troff will choke.  How can he get these strings exactly right	
+i  without tedious counting and checking?	
+i	
+i  Let's say he needs to put 16 backslashes in line 217, right	
+i  before the string "n(PDu". What command(s) should he use to get	
+i  them in there without hand counting.  My solution is pretty	
+i  plain once you know which commands to use.	
+i	
+iNumbering Paragraphs.  	
+i	
+i  A documentation writer has divided each section of a document into	
+i  paragraphs, and as a troff user, marks the start of each paragraph	
+i  by a line that contains the macro ".pp" only.  That is, a break	
+i  between paragraphs looks like this:	
+i	
+i    which is the only way that argon gas can be dissolved in this	
+i    liquid.	
+i	
+i    .pp	
+i    The problem of energizing the argon to fluorescence while	
+i    it is dissolved was first approached by applying a strong	
+i	
+i	
+i  How can this tech writer use the vi editor to number the	
+i  paragraphs in each section?  (If this seems far-fetched to you,	
+i  consider that I once got a phone call from a Unix guru asking	
+i  how to do just this.)  To keep the problem simple, let's say	
+i  that there are never more than 35 paragraphs in a section, and	
+i  that they should be numbered with Roman numerals.	
+i	
+i  This problem is still difficult enough that I'm offering you two	
+i  hints. The first is that global is essential here.  Look at the	
+i  second hint only if you're about to give up and check my	
+i  solution.	
+i	
+1Solutions	solutions	
+i	
+iComing Up Next	
+i	
+iIn the next part of this tutorial, I'll cover the less-known	
+iaspects of the other line-mode commands for dealing with text and	
+ifiles.  If you're a little overwhelmed with all that I've said	
+iabout global, you'll be pleased to know that substitute is notably	
+isimpler, and all the remaining commands are very much simpler,	
+ithan global.	
+i	
+iAfter that, future parts of this tutorial will deal with visual	
+imode; easier and more fun than line mode any day.	
+	
+1Part 4: The Substitute Command	/archive/vi/part4/	
+1Back to the index	/archive/vi/	

@@ -1,96 +1,96 @@
-iAnswers to Part 3 Exercises
-i
-iSolution to Copy and Decapitalize Problem
-i
-i  One straightforward solution is: 
-i
-i    global /^CHAPTER/ mark a | copy $ | 'a substitute /APTER/apter/
-i
-i  which marks the original line, then copies it in its all-caps version
-i  to the end of the file, and finally returns to the original line to run
-i  the decapitalizing substitution.  
-i
-i  Another, not quite so obvious but just as good, is to decapitalize
-i  "CHAPTER" first, then copy the decapitalized version to the end of
-i  the file, and finally run a substitution command on the current line
-i  (which is now the copied line at the end of the file) which changes the
-i  capitalization back to "CHAPTER".  
-i
-i
-iSolution to troff Problem
-i
-i  The command line: 
-i
-i    1 , 16 global /^/ 217 substitute /n(PDu/\\n(PDu/
-i
-i  does it by running the substitution command 16 times.  Each time it
-i  inserts a single backslash.  (The double backslash in the replacement
-i  pattern is necessary because the backslash is a special character
-i  even there.)  
-i
-i
-iHint for Numbering Problem
-i
-i  My solution to this problem has an intermediate stage in which each
-i  macro is followed by a string of capital I letters on the same line.
-i  The count of the capital I letters on any macro line is equal to the
-i  paragraph number.  That is, the macro line for the fifth paragraph looks
-i  like this in the intermediate stage: 
-i
-i    .ppIIIII
-i
-i
-iSolution to Numbering Problem
-i
-i  The paragraphs can be numbered with just two global
-i  commands.  The first one:
-i
-i    global /^\.pp/ . , $ substitute //.ppI/
-i
-i  goes to each line beginning with a start-of-paragraph macro, then
-i  runs a substitute command from that line through the end
-i  of the file that puts a capital letter I after each such macro.  So the
-i  substitute command that runs from the first marked line
-i  puts an I after every one of the macros; from the second marked line it
-i  puts an I after every such macro except the first; from the third marked
-i  line it puts an I after every such macro except the first and the second;
-i  and so on.  Thus, after this global  finishes, you have a
-i  string of the letter I after every macro that is equal in number to the
-i  paragraph's number.  That is, after the macro for the third paragraph you
-i  have the string "III"; after paragraph 5 you have the string "IIIII";
-i  etcetera.  Already you have Roman numerals (of a very primitive sort)
-i  numbering the paragraphs.
-i
-i  A second global command puts those Roman numerals into canonical
-i  form:
-i
-i    global /^\.pp/ substitute /IIIII/V/ g \
-i    | substitute /VV/X/ g | substitute /IIII/IV/
-i
-i  (As you'll learn in the next installment of this tutorial, a lower-case
-i  letter g at the end of a substitute command tells the
-i  editor to perform the substitution as many times as it can on each line,
-i  and a backslash at the end of a partial command line means the next line
-i  continues the command string.)
-i
-i  To see how our second global command sets things right,
-i  consider the case of the 19th paragraph.  The next four lines show what
-i  the macro line looks like at the start of the command and how it has
-i  changed after each of the three substitute commands has
-i  done its work: 
-i
-i    .ppIIIIIIIIIIIIIIIIIII
-i    .ppVVVIIII
-i    .ppXVIIII
-i    .ppXVIV
-i
-i  (Astute readers will realize that the paragraphs could have been
-i  numbered with just one global command.  Each macro line
-i  has all the capital I letters it will get before global
-i  leaves it for the next line.  So we could have had the command string
-i  start by marking the line, next run the substitution that adds a capital
-i  I to all remaining macro lines, then return to the line and run the
-i  substitutions that produce a true Roman numeral.)  
+iAnswers to Part 3 Exercises	
+i	
+iSolution to Copy and Decapitalize Problem	
+i	
+i  One straightforward solution is: 	
+i	
+i    global /^CHAPTER/ mark a | copy $ | 'a substitute /APTER/apter/	
+i	
+i  which marks the original line, then copies it in its all-caps version	
+i  to the end of the file, and finally returns to the original line to run	
+i  the decapitalizing substitution.  	
+i	
+i  Another, not quite so obvious but just as good, is to decapitalize	
+i  "CHAPTER" first, then copy the decapitalized version to the end of	
+i  the file, and finally run a substitution command on the current line	
+i  (which is now the copied line at the end of the file) which changes the	
+i  capitalization back to "CHAPTER".  	
+i	
+i	
+iSolution to troff Problem	
+i	
+i  The command line: 	
+i	
+i    1 , 16 global /^/ 217 substitute /n(PDu/\\n(PDu/	
+i	
+i  does it by running the substitution command 16 times.  Each time it	
+i  inserts a single backslash.  (The double backslash in the replacement	
+i  pattern is necessary because the backslash is a special character	
+i  even there.)  	
+i	
+i	
+iHint for Numbering Problem	
+i	
+i  My solution to this problem has an intermediate stage in which each	
+i  macro is followed by a string of capital I letters on the same line.	
+i  The count of the capital I letters on any macro line is equal to the	
+i  paragraph number.  That is, the macro line for the fifth paragraph looks	
+i  like this in the intermediate stage: 	
+i	
+i    .ppIIIII	
+i	
+i	
+iSolution to Numbering Problem	
+i	
+i  The paragraphs can be numbered with just two global	
+i  commands.  The first one:	
+i	
+i    global /^\.pp/ . , $ substitute //.ppI/	
+i	
+i  goes to each line beginning with a start-of-paragraph macro, then	
+i  runs a substitute command from that line through the end	
+i  of the file that puts a capital letter I after each such macro.  So the	
+i  substitute command that runs from the first marked line	
+i  puts an I after every one of the macros; from the second marked line it	
+i  puts an I after every such macro except the first; from the third marked	
+i  line it puts an I after every such macro except the first and the second;	
+i  and so on.  Thus, after this global  finishes, you have a	
+i  string of the letter I after every macro that is equal in number to the	
+i  paragraph's number.  That is, after the macro for the third paragraph you	
+i  have the string "III"; after paragraph 5 you have the string "IIIII";	
+i  etcetera.  Already you have Roman numerals (of a very primitive sort)	
+i  numbering the paragraphs.	
+i	
+i  A second global command puts those Roman numerals into canonical	
+i  form:	
+i	
+i    global /^\.pp/ substitute /IIIII/V/ g \	
+i    | substitute /VV/X/ g | substitute /IIII/IV/	
+i	
+i  (As you'll learn in the next installment of this tutorial, a lower-case	
+i  letter g at the end of a substitute command tells the	
+i  editor to perform the substitution as many times as it can on each line,	
+i  and a backslash at the end of a partial command line means the next line	
+i  continues the command string.)	
+i	
+i  To see how our second global command sets things right,	
+i  consider the case of the 19th paragraph.  The next four lines show what	
+i  the macro line looks like at the start of the command and how it has	
+i  changed after each of the three substitute commands has	
+i  done its work: 	
+i	
+i    .ppIIIIIIIIIIIIIIIIIII	
+i    .ppVVVIIII	
+i    .ppXVIIII	
+i    .ppXVIV	
+i	
+i  (Astute readers will realize that the paragraphs could have been	
+i  numbered with just one global command.  Each macro line	
+i  has all the capital I letters it will get before global	
+i  leaves it for the next line.  So we could have had the command string	
+i  start by marking the line, next run the substitution that adds a capital	
+i  I to all remaining macro lines, then return to the line and run the	
+i  substitutions that produce a true Roman numeral.)  	
 
-1Back to Part 3	/archive/vi/part3/
-1Back to the index	/archive/vi/
+1Back to Part 3	/archive/vi/part3/	
+1Back to the index	/archive/vi/	

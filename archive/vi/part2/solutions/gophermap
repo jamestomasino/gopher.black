@@ -1,47 +1,47 @@
-iAnswers to Part 2 Exercises
-i
-iSolution to "EXPORT" Problem
-i
-i  Typing:
-i  
-i    1 ; ?EXPORT? delete
-i  
-i  will do it.  By starting from the first line in the file and
-i  searching backwards, you guarantee the the first line to be
-i  searched will be the last line of the file (due to wraparound),
-i  then the second-to-last line, etcetera.  As soon as the editor
-i  finds a match it stops, so there cannot be another "EXPORT" lower
-i  down in the file.
-i  
-i  
-i  Solution to First-Line Problem
-i  
-i  This requires two commands:
-i  
-i    $ print
-i    /EXPORT/ delete
-i  
-i  The first command prints the last line in the file, which is not
-i  helpful in itself, but also leaves that last line as the current
-i  line. Then, the address of the second command causes a forward
-i  search and, due to wraparound, the search must begin with the
-i  file's first line.
-i
-i
-iSolution to Noninclusive Problem
-i
-i  Just add a plus sign after the address before the comma, and a
-i  minus sign to the address after it, like this:
-i  
-i    ?abc? + , /xyz/ -
-i  
-i  Each of these offsets moves one line toward the center of the text
-i  section the combined address specifies, so each has the effect of
-i  leaving out the line where the match was found.  (That the first
-i  search was backward and the second forward is not relevant.  The
-i  point is that the address before the comma, whatever it is,
-i  receives the plus offset, while the address after the comma gets
-i  the minus offset.)
+iAnswers to Part 2 Exercises	
+i	
+iSolution to "EXPORT" Problem	
+i	
+i  Typing:	
+i  	
+i    1 ; ?EXPORT? delete	
+i  	
+i  will do it.  By starting from the first line in the file and	
+i  searching backwards, you guarantee the the first line to be	
+i  searched will be the last line of the file (due to wraparound),	
+i  then the second-to-last line, etcetera.  As soon as the editor	
+i  finds a match it stops, so there cannot be another "EXPORT" lower	
+i  down in the file.	
+i  	
+i  	
+i  Solution to First-Line Problem	
+i  	
+i  This requires two commands:	
+i  	
+i    $ print	
+i    /EXPORT/ delete	
+i  	
+i  The first command prints the last line in the file, which is not	
+i  helpful in itself, but also leaves that last line as the current	
+i  line. Then, the address of the second command causes a forward	
+i  search and, due to wraparound, the search must begin with the	
+i  file's first line.	
+i	
+i	
+iSolution to Noninclusive Problem	
+i	
+i  Just add a plus sign after the address before the comma, and a	
+i  minus sign to the address after it, like this:	
+i  	
+i    ?abc? + , /xyz/ -	
+i  	
+i  Each of these offsets moves one line toward the center of the text	
+i  section the combined address specifies, so each has the effect of	
+i  leaving out the line where the match was found.  (That the first	
+i  search was backward and the second forward is not relevant.  The	
+i  point is that the address before the comma, whatever it is,	
+i  receives the plus offset, while the address after the comma gets	
+i  the minus offset.)	
 
 1Back to Part 2	/archive/vi/part2/
 1Back to the index	/archive/vi/
