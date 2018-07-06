@@ -1,150 +1,150 @@
-iProject: Root/hack Kindle Voyage into a fabulous e-ink terminal.
+iProject: Root/hack Kindle Voyage into a fabulous e-ink terminal.	
 
-iHardware info:
+iHardware info:	
 
-i  Wi-Fi MAC Address: 78:E1:03:36:78:3C
-i  Serial Number: 9013 0907 7253 0162
-i  Model Number: NM460GZ
-i  Model Name: Kindle Voyage WiFi
-i  Model Nickname: KV
-i  Firmware Version: Kindle 5.9.2.0.1 (3262860017)
+i  Wi-Fi MAC Address: 78:E1:03:36:78:3C	
+i  Serial Number: 9013 0907 7253 0162	
+i  Model Number: NM460GZ	
+i  Model Name: Kindle Voyage WiFi	
+i  Model Nickname: KV	
+i  Firmware Version: Kindle 5.9.2.0.1 (3262860017)	
 
-iStep 1: Factory Reset
+iStep 1: Factory Reset	
 
-i  - Menu -> Settings -> Reset Device
-i  - Re-register device
-i  - Fully charge device
-i  - Turn on Airplane mode
+i  - Menu -> Settings -> Reset Device	
+i  - Re-register device	
+i  - Fully charge device	
+i  - Turn on Airplane mode	
 
-i  NOTE: Never use factory reset after jailbreaking. It will wipe
-i  out the ability to use the jailbreak survival code
+i  NOTE: Never use factory reset after jailbreaking. It will wipe	
+i  out the ability to use the jailbreak survival code	
 
-iStep 2: Downgrade Firmware
+iStep 2: Downgrade Firmware	
 
-i  - Get Serial #
-i  - Use Serial to get model number & nickname [0]
+i  - Get Serial #	
+i  - Use Serial to get model number & nickname [0]	
 h[0] Kindle Serial Numbers	URL:http://wiki.mobileread.com/wiki/Kindle_Serial_Numbers
-i  - Find the appropriate Model's old firmware.
+i  - Find the appropriate Model's old firmware.	
 
-i  NOTE: If you get the wrong model's firmware, it will brick the
-i  device. I'm using KV_5.5.0, found with a google search.
+i  NOTE: If you get the wrong model's firmware, it will brick the	
+i  device. I'm using KV_5.5.0, found with a google search.	
 
-i  - Plug in Kindle via USB to computer
-i  - Copy bin file to the root directory on Kindle drive, next to
-i    /documents
-i  - Unmount USB, remove USB cable, wait 10 minutes
-i  - Home -> Menu -> Settings -> Menu -> Update Your Kindle
+i  - Plug in Kindle via USB to computer	
+i  - Copy bin file to the root directory on Kindle drive, next to	
+i    /documents	
+i  - Unmount USB, remove USB cable, wait 10 minutes	
+i  - Home -> Menu -> Settings -> Menu -> Update Your Kindle	
 
-i  NOTE: If the Update Your Kindle option doesn't delay coming up,
-i  and remounting reveals the file is missing on the device, this
-i  method will not work with your current firmware.
+i  NOTE: If the Update Your Kindle option doesn't delay coming up,	
+i  and remounting reveals the file is missing on the device, this	
+i  method will not work with your current firmware.	
 
-i  That's where I ended up! Time to try it with an older spare
-i  kindle model, or wait for a new jailbreak option to come out for
-i  the Voyage.
+i  That's where I ended up! Time to try it with an older spare	
+i  kindle model, or wait for a new jailbreak option to come out for	
+i  the Voyage.	
 
-i- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+i- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	
 
-iI started all over again with my Kindle Touch. This time the
-iprocess was pretty simple!
+iI started all over again with my Kindle Touch. This time the	
+iprocess was pretty simple!	
 
-iHardware info:
+iHardware info:	
 
-i  Wi-Fi MAC Address: F0:A2:25:BD:94:6F
-i  Serial Number: B00F 2607 1453 0F5Q
-i  Model Number: D01200
-i  Model Name: Kindle Touch
-i  Model Nickname: K5 or KT
-i  Firmware Version: Kindle 5.3.7.3 (2715280002)
+i  Wi-Fi MAC Address: F0:A2:25:BD:94:6F	
+i  Serial Number: B00F 2607 1453 0F5Q	
+i  Model Number: D01200	
+i  Model Name: Kindle Touch	
+i  Model Nickname: K5 or KT	
+i  Firmware Version: Kindle 5.3.7.3 (2715280002)	
 
-iStep 1: Factory Reset
+iStep 1: Factory Reset	
 
-i  - Menu -> Settings -> Reset Device
-i  - Re-register device
-i  - Fully charge device
-i  - Turn on Airplane mode
-i  - Disable accidental OTA updates by dropping a folder in the
-i    root directory named "update.bin.tmp.partial". Leave it
-i    empty and all your worries are no more.
+i  - Menu -> Settings -> Reset Device	
+i  - Re-register device	
+i  - Fully charge device	
+i  - Turn on Airplane mode	
+i  - Disable accidental OTA updates by dropping a folder in the	
+i    root directory named "update.bin.tmp.partial". Leave it	
+i    empty and all your worries are no more.	
 
-iStep 2: Jailbreak!
+iStep 2: Jailbreak!	
 
-i  - There's a bunch of resources, but start here [1]:
+i  - There's a bunch of resources, but start here [1]:	
 h[1] Kindle Developer's Corner Master Index	URL:http://www.mobileread.com/forums/showthread.php?t=180113
-i  - Find your kindle model and its index page for reference [2]:
+i  - Find your kindle model and its index page for reference [2]:	
 h[2] K5 Index	URL:http://wiki.mobileread.com/wiki/K5_Index
-i  - Now, find your jailbreak [3]:
+i  - Now, find your jailbreak [3]:	
 h[3] K5 Jailbreak	URL:http://www.mobileread.com/forums/showthread.php?p=2169819#post2169819
-i  - It wasn't clear to me right away, but you basically grab the
-i    file, drop it into the root folder of the Kindle, then run
-i    the updater. Don't just reboot the Kindle, use the updater.
-i  - Once the update is done, THEN reboot it once more.
+i  - It wasn't clear to me right away, but you basically grab the	
+i    file, drop it into the root folder of the Kindle, then run	
+i    the updater. Don't just reboot the Kindle, use the updater.	
+i  - Once the update is done, THEN reboot it once more.	
 
-iStep 3: USBNetwork
+iStep 3: USBNetwork	
 
-iThis will install some thingies so you can connect to the device
-iover USB where the USB acts like a network card.
-i
-i  - Grab the USBNetwork installer and drop it in the device root.
-i    Install it just like the jailbreak. It's in the same link as
-i    before [3].
-i  - I did this part from my Windows 7 device, so I had to fix the
-i    drivers for the USB plug. Windows 7 has the proper driver,
-i    but I had to manually select it. I went into device manager,
-i    clicked that improperly installed thing, manually selected
-i    a driver for "Microsoft Corporation" and there it was. All
-i    better.
-i  - After that, you need to edit the network connection that
-i    comes up and modify the IPv4 settings to point to the device
-i    IP: 192.168.15.244
+iThis will install some thingies so you can connect to the device	
+iover USB where the USB acts like a network card.	
+i	
+i  - Grab the USBNetwork installer and drop it in the device root.	
+i    Install it just like the jailbreak. It's in the same link as	
+i    before [3].	
+i  - I did this part from my Windows 7 device, so I had to fix the	
+i    drivers for the USB plug. Windows 7 has the proper driver,	
+i    but I had to manually select it. I went into device manager,	
+i    clicked that improperly installed thing, manually selected	
+i    a driver for "Microsoft Corporation" and there it was. All	
+i    better.	
+i  - After that, you need to edit the network connection that	
+i    comes up and modify the IPv4 settings to point to the device	
+i    IP: 192.168.15.244	
 
-iStep 4: Getting Access
-i
-iFinally, SSH in... only it doesn't work. Remember, there's
-ia password on the root account that's random. We need to get an
-issh key into the authorized keys so we can access the device.
+iStep 4: Getting Access	
+i	
+iFinally, SSH in... only it doesn't work. Remember, there's	
+ia password on the root account that's random. We need to get an	
+issh key into the authorized keys so we can access the device.	
 
-i  - Disable networking by going to the search field on the kindle
-i    and entering ";un". It's a toggle, so if you did it right you
-i    should be able to plug in the kindle and mount it as USB. If
-i    not, enter the code again and try again.
-i  - Browse the SD card for the ssh folder. You'll have to create
-i    the authorized_keys file and paste in a public key for
-i    whatever system you're connecting from. (Device isn't in
-i    front of me, so I forget the path. I need to come back and
-i    add that here for posterity)
-i  - Unmount, ";un" once again, and try to SSH now while plugged
-i    in. It should work. It did for me.
+i  - Disable networking by going to the search field on the kindle	
+i    and entering ";un". It's a toggle, so if you did it right you	
+i    should be able to plug in the kindle and mount it as USB. If	
+i    not, enter the code again and try again.	
+i  - Browse the SD card for the ssh folder. You'll have to create	
+i    the authorized_keys file and paste in a public key for	
+i    whatever system you're connecting from. (Device isn't in	
+i    front of me, so I forget the path. I need to come back and	
+i    add that here for posterity)	
+i  - Unmount, ";un" once again, and try to SSH now while plugged	
+i    in. It should work. It did for me.	
 
-iStep 5: Wifi
+iStep 5: Wifi	
 
-iOnce you can get in via the USBNetwork, you should be able to get
-iin via wifi too.
+iOnce you can get in via the USBNetwork, you should be able to get	
+iin via wifi too.	
 
-i  - In the kindle search type ";711". This will give you the
-i    Kindle's info. There may be multiple pages to click through.
-i    On page 2 for me was the wifi address of the Kindle. If your
-i    Kindle isn't connected to a network, you won't see anything.
-i    You can tether to your phone in a pinch.
-i  - Grab that ip and SSH to root@<kindle.wifi.ip.address>. It
-i    should log you right in just like the USBNetwork did. If not,
-i    you might need to enable wifi logins. It's in the config file
-i    on the SD card which you can edit when mounted as a USB
-i    device, or when logged in as root from USBNetwork after
-i    changing the system to read-write (instructions in the shell
-i    when you log in)
+i  - In the kindle search type ";711". This will give you the	
+i    Kindle's info. There may be multiple pages to click through.	
+i    On page 2 for me was the wifi address of the Kindle. If your	
+i    Kindle isn't connected to a network, you won't see anything.	
+i    You can tether to your phone in a pinch.	
+i  - Grab that ip and SSH to root@<kindle.wifi.ip.address>. It	
+i    should log you right in just like the USBNetwork did. If not,	
+i    you might need to enable wifi logins. It's in the config file	
+i    on the SD card which you can edit when mounted as a USB	
+i    device, or when logged in as root from USBNetwork after	
+i    changing the system to read-write (instructions in the shell	
+i    when you log in)	
 
-iStep 6: Loading stuff
+iStep 6: Loading stuff	
 
-iThere's launchers and apps and stuff you can put on your kindle
-inow. You do this work over USB while mounted, not in Network
-imode.  
-i
-i  - Toggle networking with ";un" again if you need in order to
-i    mount oven USB.
-i  
-i  TODO: add info about installing package manager thingies and
-i  launcher, recommend some apps, and talk about using kterm to
-i  connect to a remote shell and sharing the screen via tmux or
-i  screen, thus using the Kindle as a display.
+iThere's launchers and apps and stuff you can put on your kindle	
+inow. You do this work over USB while mounted, not in Network	
+imode.  	
+i	
+i  - Toggle networking with ";un" again if you need in order to	
+i    mount oven USB.	
+i  	
+i  TODO: add info about installing package manager thingies and	
+i  launcher, recommend some apps, and talk about using kterm to	
+i  connect to a remote shell and sharing the screen via tmux or	
+i  screen, thus using the Kindle as a display.	
 

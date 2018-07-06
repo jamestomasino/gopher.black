@@ -1,13 +1,13 @@
-i# Learn You a Haskell for Great Good
+i# Learn You a Haskell for Great Good	
 
-i## Chapter 3 : Syntax in Functions
+i## Chapter 3 : Syntax in Functions	
 
-i- As-patterns - Appear easy to overlook/forget
-i- guards, where, let, and case - Need practice in all of them. They look
-i  like they'll be easy to confuse. "Let" in particular looks tricky.
+i- As-patterns - Appear easy to overlook/forget	
+i- guards, where, let, and case - Need practice in all of them. They look	
+i  like they'll be easy to confuse. "Let" in particular looks tricky.	
 
-i## Chapter 5 : Higher-Order Functions
+i## Chapter 5 : Higher-Order Functions	
 
-i- (.) vs ($) was confusing. This summarizes their fundemental differences
-i  thanks to the #haskell channel on freenode:
-i  (f $ g x) === f (g x)  --while--  (f . g x) === (\y -> f ((g x) y))
+i- (.) vs ($) was confusing. This summarizes their fundemental differences	
+i  thanks to the #haskell channel on freenode:	
+i  (f $ g x) === f (g x)  --while--  (f . g x) === (\y -> f ((g x) y))	
