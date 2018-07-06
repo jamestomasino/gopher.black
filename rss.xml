@@ -3,9 +3,53 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Space Gopher 2000</title>
+  <link>gopher://gopher.black/0/phlog/./20180705-space-gopher-2000/gophermap</link>
+  <pubdate>Thu, 05 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Space Gopher 2000
+July 05th, 2018
+----------------------------------------
+
+What if quantum entaglement and spooky action at a distance allow
+for us to create extremely long range connections, but with very
+low bandwidth. "Why would that be the case?" you might ask.
+Frankly, I have no idea. If you don't think about the details too
+much it seems like something you could gloss over in a story,
+though.
+
+I want to explore that idea in a short story as a vehicle to
+reintroduce gopher as the web of the space-future. No nonsense,
+text driven communication across vast spaces would make for an
+incredible aesthetic and a great reason to draw some attention
+back to port 70.
+
+I think of films like Alien and their use of text for
+communication and it makes sense to me. Local running AIs and
+super-powerful UI crap is neat, but for anything at a distance we
+fall back on the age-old safety of text. If you imagine a universe
+populated by ships launched and traveling at relativistic speeds,
+we quickly encounter vast distances in relative time, not only
+space. These time gaps are a bigger threat to communication than
+distance. We cannot innovate because it leaves behind all those
+that have gone out before. We cannot shift paradigms. We must
+speak to a common level.
+
+Isn't that a cool thought? I want to read stuff in that universe.
+I want gopher featured prominantly. I guess I should start working
+on it at some point.
+
+Do any of you have any ideas to pile on top? I don't have a story
+here at all, just setting, so I could use all the help I can get.
+Or, I guess if one of you is feeling the creative juices flowing,
+take it and run. I want to read it more than I want to write it.
+</pre>]]></description>
+</item>
+<item>
   <title>The Essence Of Gopher</title>
-  <link>gopher://gopher.black/0/phlog/20180703-the-essence-of-gopher/gophermap</link>
-  <pubdate>03 Jul 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180703-the-essence-of-gopher/gophermap</link>
+  <pubdate>Tue, 03 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 The essence of gopher
@@ -57,8 +101,8 @@ Gopher Places [6] section. Check it out and discover some awesome.
 </item>
 <item>
   <title>Why I Use Gophermaps</title>
-  <link>gopher://gopher.black/0/phlog/20180701-why-i-use-gophermaps/gophermap</link>
-  <pubdate>01 Jul 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180701-why-i-use-gophermaps/gophermap</link>
+  <pubdate>Sun, 01 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Why I use Gophermaps
@@ -144,8 +188,8 @@ nit-picking on whether you use type 1 or type 0.
 </item>
 <item>
   <title>Cli Tricks Sc Im</title>
-  <link>gopher://gopher.black/0/phlog/20180629-cli-tricks-sc-im/gophermap</link>
-  <pubdate>29 Jun 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180629-cli-tricks-sc-im/gophermap</link>
+  <pubdate>Fri, 29 Jun 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 CLI Tricks: sc-im
@@ -200,8 +244,8 @@ It's a breeze to install on MacOS or Linux. Give it a shot.
 </item>
 <item>
   <title>Federation And Gopher</title>
-  <link>gopher://gopher.black/0/phlog/20180627-federation-and-gopher/gophermap</link>
-  <pubdate>27 Jun 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180627-federation-and-gopher/gophermap</link>
+  <pubdate>Wed, 27 Jun 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Federation and gopher
@@ -282,8 +326,8 @@ Cheers, fedi-gophers
 </item>
 <item>
   <title>Modafinil And Ketosis</title>
-  <link>gopher://gopher.black/0/phlog/20180626-modafinil-and-ketosis/gophermap</link>
-  <pubdate>26 Jun 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180626-modafinil-and-ketosis/gophermap</link>
+  <pubdate>Tue, 26 Jun 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Modafinil and Ketosis
@@ -396,8 +440,8 @@ Now I'm off to drink another liter of water to keep it that way.
 </item>
 <item>
   <title>Solar Hydroponics</title>
-  <link>gopher://gopher.black/0/phlog/20180624-solar-hydroponics/gophermap</link>
-  <pubdate>24 Jun 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180624-solar-hydroponics/gophermap</link>
+  <pubdate>Sun, 24 Jun 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Solar Hydroponics
@@ -455,8 +499,8 @@ Do any of you have experience in hydroponics? Anything to add?
 </item>
 <item>
   <title>Weight Update</title>
-  <link>gopher://gopher.black/0/phlog/20180622-weight-update/gophermap</link>
-  <pubdate>22 Jun 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180622-weight-update/gophermap</link>
+  <pubdate>Fri, 22 Jun 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Weight update
@@ -478,8 +522,8 @@ kicking butt. Now, back to more bacon & butter...
 </item>
 <item>
   <title>Moleskine</title>
-  <link>gopher://gopher.black/0/phlog/20180621-moleskine/gophermap</link>
-  <pubdate>21 Jun 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180621-moleskine/gophermap</link>
+  <pubdate>Thu, 21 Jun 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Moleskine
@@ -549,8 +593,8 @@ that doesn't have a shelf of them at home.
 </item>
 <item>
   <title>Turnover</title>
-  <link>gopher://gopher.black/0/phlog/20180618-turnover/gophermap</link>
-  <pubdate>18 Jun 2018 00:00:00 +0000</pubdate>
+  <link>gopher://gopher.black/0/phlog/./20180618-turnover/gophermap</link>
+  <pubdate>Mon, 18 Jun 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Turnover
@@ -571,76 +615,6 @@ there's something to be learned.
 I'm not sure if he ever reads my gopher content (though I am sure
 he knows about it). If so, I'm sad to see you go, but wish you the
 best of luck at the new gig.
-</pre>]]></description>
-</item>
-<item>
-  <title>Pen Pals</title>
-  <link>gopher://gopher.black/0/phlog/20180617-pen-pals/gophermap</link>
-  <pubdate>17 Jun 2018 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Pen Pals
-June 17th, 2018
-----------------------------------------
-
-I was looking into some leadership and management training stuff
-recently [0] and it's been really helping me make progress as
-a team leader. There's plenty you can learn on-the-job, but it's
-helpful to get good advice from a trusted source.
-
-[0] LEADx
-    http://leadx.org
-
-While looking at content on engagement I ran across a really
-enlightening piece of information. People tend to value praise
-based on the effort put in to giving it.
-
-At my current company we've gone through a lot of different
-systems for calling out exceptional work. We've had some official
-things, some local office things, manager made-up things, and
-they've had wildly different reactions. Our current system is
-a corporate level point system with a rewards site where you can
-log-in and pick out items you want with your accrued points. It
-is, almost universally, ignored. It means nothing to individuals
-getting points. There's no real public system for acknowledging
-peers. It's pretty much useless.
-
-Contrast that with our most successful system: an oversized
-post-card that had some award blurb stuff up top and a big open
-text area underneath where a manager would hand-write what you did
-to make a difference. They were peer nominated and manager
-approved. We announced them at "town hall" meetings so everyone
-would hear about your awesomeness as it was read out. There was
-a small financial award with it, but it was secondary. People kept
-those things and put them up on their desks.
-
-This all brought me back to an on-again-off-again conversation
-thread that floats around gopherspace: comments. I love when you
-guys and gals send me an email about something I wrote, or post
-a reply or acknowledgement in your own phlog. It means so much to
-me because you put in the effort. It wasn't a drive by "like"
-button. In managerial terms you didn't just give me a nod and say,
-"nice work," you took time out of your day to write me a note.
-That's awesome.
-
-It also makes my mind wander the path to hand-written letters. I'm
-an infrequent letter writer, but when I write or receive one it's
-always special. I have a bag in my office of every hand-written
-letter I've ever gotten.
-
-My handwriting isn't great. I don't always have brilliant things
-to say in a letter. Honestly, the content isn't all that much
-different from an email, except I know it will take some time to
-reach the person and responding is more difficult. I try to say
-things more completely. I invest more time and energy into it.
-I have to buy a stamp, after all.
-
-I'd like to write some letters again. Any of you up for it? My
-contact info is in my About page [1] including encryption options
-if you feel like sending me an address or PO box.
-
-[1] About
-    gopher://gopher.black/1/about
 </pre>]]></description>
 </item>
 </channel>
