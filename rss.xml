@@ -3,6 +3,50 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>New Keyboard</title>
+  <link>gopher://gopher.black/0/phlog/./20180706-new-keyboard/gophermap</link>
+  <pubdate>Fri, 06 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+New keyboard
+July 06th, 2018
+----------------------------------------
+
+Today marked the arrival of my newest mechanical keyboard,
+a Planck from Massdrop. Planck is an ortholinear, minimalist,
+mechanical keyboard. It's just 4 rows tall (no number row or
+Fkeys). It supports multiple layers, though, so you can switch
+between keymaps, or meta-layers, or whatever else floats your
+boat. Right now I'm running with two layers [0]:
+
+ - Dvorak
+ - Num-pad & arrows
+
+The Planck comes as a kit that you need to assemble. That means
+laying out the PCB and base plate and popping all the key switches
+in to place (careful to align the pins just right). Then there was
+a great deal of soldering. I'm happy to say it went smoothly and
+I had no issues with my joints whatsoever. The board is then
+screwed into the milled bottom, some rubber feet are attached, and
+you're good to go.
+
+In my case I also had to flash the firmware to get my sexy layout
+installed. There was a hiccup there as the software I was using to
+create the layout had placed the spacebar in the wrong location.
+Everything worked but the space! I actually took it all apart,
+remove the switch, resoldered in a replacement, only to find out
+that it wasn't a hardware issue at all. I changed one setting in
+my firmware and we're all good again.
+
+I'll need to practice using it, especially the layer changes.
+Here's hoping I pick it up quickly. I suspect this will become my
+favorite little keyboard buddy.
+
+[0] Tomasino's Keyboard Firmware
+    http://github.com/jamestomasino/tomasino-dvorak-keyboard
+</pre>]]></description>
+</item>
+<item>
   <title>Space Gopher 2000</title>
   <link>gopher://gopher.black/0/phlog/./20180705-space-gopher-2000/gophermap</link>
   <pubdate>Thu, 05 Jul 2018 00:00:00 -0400</pubdate>
@@ -684,77 +728,6 @@ Disclaimer: Ketogenic diets are not a magic pill for everyone. It
 works very well for me and I'm happy to talk to anyone about it,
 but if you're into something else that's working for you, keep on
 kicking butt. Now, back to more bacon & butter...
-</pre>]]></description>
-</item>
-<item>
-  <title>Moleskine</title>
-  <link>gopher://gopher.black/0/phlog/./20180621-moleskine/gophermap</link>
-  <pubdate>Thu, 21 Jun 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Moleskine
-June 21st, 2018
-----------------------------------------
-
-In 1997, Modo & Modo reintroduced the Moleskine notebooks to the
-world, taking the design from 19th & 20th century french designs
-as described in the writings of Bruce Chatwin. There's a lot of
-mystique surrounding the design and use, but what they really
-represent is a mass-market blank book with a solid design for
-pocket use.
-
-I started carrying Moleskine notebooks in 1998 and still carry
-them today. In fact, in 2001 I bulk ordered them and have
-a stockpile stored away just in case something weird happens in
-Italy. They're fantastic books, not because of some magical
-quality of manufacturing or design, but because they are cheap and
-moderately well constructed. If they were built to last I would
-have a harder time using them. That's the point I want to get at
-in this phlog.
-
-When I first started keeping a journal it was just that, a diary.
-I wrote thoughts in it and dated them. They were serious and
-heartfelt as only a teen can produce. They were horribly
-embarrassing and trite. I wrote six pages one night on the deep
-philosophy behind wanting to grow out my hair, a work of literary
-genius that boiled down to the essence: "I like Highlander."
-
-It took me a while to develop a system for using the notebooks
-that really worked for me. In the end, my system boiled down to,
-"turn the page and write". The key to using the notebooks
-effectively was to not have a category or a use or anything.
-I pick out one book at a time, turn the page, write whatever
-I need, then turn the next page. There is no system beyond that.
-
-I keep all of my Moleskines. They line a shelf in my office,
-multiple rows and stacks. If you were to pick one up and thumb
-through it you'd find ideas for stories, notes from D&D games,
-shopping lists, phone numbers, sketches, notes from phone calls,
-and any number of other random things. This is not a problem, this
-is the heart of the notebook. It is a book for using, a book for
-capturing the moment in the written word (or drawing) and moving
-on. That's what makes it special.
-
-Whenever I doubt myself in this, I'm reminded of Leonardo Da
-Vinci's notebooks. He was possibly the greatest polymath in human
-history and his greatest works are scribbled next to shopping
-lists. He sketched anatomy next to questions about the volume of
-water traveling in a river. The juxtaposition came from
-a practical desire to not waste paper, and that's a bit of what
-drives my choice as well. I don't want to spend a lot of money on
-a blank book. If I do, I'll be scared to write in it for fear that
-my words won't do it justice. I'll set it aside and give it
-a grand purpose. I'll say to myself, "You can write only your
-observations from meditation here." Or maybe, "This will be your
-travel journal on your next trip to Iceland." In the end, it will
-stay on my shelf, unused. Instead, the Moleskine in my pocket will
-capture those notes along with everything else.
-
-If the Moleskine design isn't for you, check out the US Army Green
-Logbook. They're a standard with any quatermaster and can be found
-in many places around the globe. They're cheap, plentiful, and get
-the job done. You'll be hard pressed to find a military officer
-that doesn't have a shelf of them at home.
 </pre>]]></description>
 </item>
 </channel>

@@ -1,0 +1,36 @@
+i----------------------------------------		gopher.black	70
+iNew keyboard		gopher.black	70
+iJuly 06th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iToday marked the arrival of my newest mechanical keyboard,		gopher.black	70
+ia Planck from Massdrop. Planck is an ortholinear, minimalist,		gopher.black	70
+imechanical keyboard. It's just 4 rows tall (no number row or		gopher.black	70
+iFkeys). It supports multiple layers, though, so you can switch		gopher.black	70
+ibetween keymaps, or meta-layers, or whatever else floats your		gopher.black	70
+iboat. Right now I'm running with two layers [0]:		gopher.black	70
+i		gopher.black	70
+i - Dvorak		gopher.black	70
+i - Num-pad & arrows		gopher.black	70
+i		gopher.black	70
+iThe Planck comes as a kit that you need to assemble. That means		gopher.black	70
+ilaying out the PCB and base plate and popping all the key switches		gopher.black	70
+iin to place (careful to align the pins just right). Then there was		gopher.black	70
+ia great deal of soldering. I'm happy to say it went smoothly and		gopher.black	70
+iI had no issues with my joints whatsoever. The board is then		gopher.black	70
+iscrewed into the milled bottom, some rubber feet are attached, and		gopher.black	70
+iyou're good to go.		gopher.black	70
+i		gopher.black	70
+iIn my case I also had to flash the firmware to get my sexy layout		gopher.black	70
+iinstalled. There was a hiccup there as the software I was using to		gopher.black	70
+icreate the layout had placed the spacebar in the wrong location.		gopher.black	70
+iEverything worked but the space! I actually took it all apart,		gopher.black	70
+iremove the switch, resoldered in a replacement, only to find out		gopher.black	70
+ithat it wasn't a hardware issue at all. I changed one setting in		gopher.black	70
+imy firmware and we're all good again.		gopher.black	70
+i		gopher.black	70
+iI'll need to practice using it, especially the layer changes.		gopher.black	70
+iHere's hoping I pick it up quickly. I suspect this will become my		gopher.black	70
+ifavorite little keyboard buddy.		gopher.black	70
+i		gopher.black	70
+h[0] Tomasino's Keyboard Firmware	URL:http://github.com/jamestomasino/tomasino-dvorak-keyboard
