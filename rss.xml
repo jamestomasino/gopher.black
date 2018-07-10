@@ -3,6 +3,21 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Freelance</title>
+  <link>gopher://gopher.black/0/phlog/./20180709-freelance/gophermap</link>
+  <pubdate>Mon, 09 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Freelance
+July 09th, 2018
+----------------------------------------
+
+I'm not sure why I bother with freelance. I mean, I like having
+some extra income, but I'm so burnt out from work already, do
+I really want more?
+</pre>]]></description>
+</item>
+<item>
   <title>Shut It Down</title>
   <link>gopher://gopher.black/0/phlog/./20180708-shut-it-down/gophermap</link>
   <pubdate>Sun, 08 Jul 2018 00:00:00 -0400</pubdate>
@@ -673,65 +688,6 @@ stack somewhat. All in all, they seem well suited to one another.
 Now I'm off to drink another liter of water to keep it that way.
 
 
-</pre>]]></description>
-</item>
-<item>
-  <title>Solar Hydroponics</title>
-  <link>gopher://gopher.black/0/phlog/./20180624-solar-hydroponics/gophermap</link>
-  <pubdate>Sun, 24 Jun 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Solar Hydroponics
-June 24th, 2018
-----------------------------------------
-
-I'm doing some mental planning toward a very small hydroponics
-experiment. I will likely start with just one plant, an herb, in
-a solo environment. I know I can do a self-contained system
-without aeration at that scale, but I want to build it as if it
-were a larger system, but in miniature. I want the system to be
-off-grid as well. I'd like it to be as mechanical as possible, in
-fact.
-
-I found one little video oh a solar radiation powered aerator.
-Basically, it was an empty air chamber that was darkly colored and
-had no-return valves that forced air in one hole only and out
-through the "pump". The out-bound port was covered in a bubbler
-rock. When the sun hit the bottle it heated the air inside, which
-forced the air forward out into the reservoir. When the bottle
-cooled it would draw more air back in through the outer valve. If
-the sun cycled exposure at a fairly regular interval, it seems
-like it might help circulate some into the reservoir over time.
-
-There were lots of problems with it, of course. The pressure of
-the temperature change didn't create that much air flow. If the
-light were fairly constant it would only expel once and then be at
-rest. It needs some work to draw and billow more air. I was
-thinking about having a radiometer inside the chamber, as air flow
-inside would force it to work as a more continuous air pump, but
-I think those barely create enough force to spin in a vacuum. I'm
-close to a solve here that does not involve electronics at all,
-but I'm just not quite there.
-
-Once that's fixed, my next line of inquiry will be nutrients. What
-exactly goes into those fertilizer bits and how can I generate my
-own source without a store. Is that even a reasonable thing to do?
-
-If I can solve for solar powered aeration (not using solar panels
-& electronics) and nutrient creation, then I should be able to
-construct a fully off-grid, automated hydroponics rig. I am just
-awful at remembering to do things on a regular basis, so if this
-is to succeed I absolutely must automate.
-
-Other things to consider:
-
-- Auto-balancing water distribution to the correct levels
-- Rotation / cycling position for sun exposure
-- Portability of net systems for transferring between small
-  & larger rigs
-- Auto-timing of nutrient injection & mixing
-
-Do any of you have experience in hydroponics? Anything to add?
 </pre>]]></description>
 </item>
 </channel>
