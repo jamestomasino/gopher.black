@@ -3,6 +3,99 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Flashcards/</title>
+  <link>gopher://gopher.black/1/phlog/20180714-flashcards/</link>
+  <pubdate>Sat, 14 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+i----------------------------------------		gopher.black	70
+iFlashcards		gopher.black	70
+iJuly 14th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iUser jakob phlogged recently [0] about getting back into flash		gopher.black	70
+icards & spaced repetition. He found a fantastic solution using		gopher.black	70
+iemacs as he seems to be slowly adopting the "all things are emacs"		gopher.black	70
+iprinciple. I'm not quite to that extreme with vim, but I do love		gopher.black	70
+ime some command line solutions.		gopher.black	70
+i		gopher.black	70
+0[0] jakob - replacing anki with org-drill	/phlog/replacing_anki_with_org_drill/text	jakob.space	70
+i		gopher.black	70
+iPlain text is just simpler. I don't need fancy guis for 99% of my		gopher.black	70
+istuff. Flash cards are definitely in that list. So, what's a man		gopher.black	70
+ito do? Obviously the only solution is to roll my own!		gopher.black	70
+i		gopher.black	70
+iI started by searching a bit on the different styles of spaced		gopher.black	70
+irepetition (there are many) and quickly settled on the Leitner		gopher.black	70
+iSystem. It's usable by hand, so I should clearly be able to		gopher.black	70
+ireplicate it with a program, right? It turns out that there's not		gopher.black	70
+ireally any agreement on the specifics of the system. I watched		gopher.black	70
+iseveral videos on youtube who would almost get there and then say		gopher.black	70
+isomething that didn't make any sense. The wikipedia page is such		gopher.black	70
+ia hot mess I'm not even going to link you there. If you want to		gopher.black	70
+iread some train wreck stuff, you'll need to go there on your own.		gopher.black	70
+i		gopher.black	70
+iIn the end I settled on the following as my interpretation of		gopher.black	70
+iLeitner:		gopher.black	70
+i		gopher.black	70
+i- Flash cards get a front and a back		gopher.black	70
+i- Flash cards are sorted into levels based on your proficiency		gopher.black	70
+i  with the card		gopher.black	70
+i- All cards start at level 1		gopher.black	70
+i- Cards move up one level when you successfully identify the back		gopher.black	70
+i- Cards return all the way to level 1 if you fail to successfully		gopher.black	70
+i  identify the back in time		gopher.black	70
+i- Time is important. Sitting there staring at a card and working		gopher.black	70
+i  it out is not the same as "getting it right". That is a failure.		gopher.black	70
+i- The number of proficiency levels you use isn't important		gopher.black	70
+i- The frequency of cards being shown is determined by the level:		gopher.black	70
+i  - Cards at level 1 are shown every day		gopher.black	70
+i  - Cards at level 2 are shown every other day		gopher.black	70
+i  - Cards at level 3 are shown every 3rd day		gopher.black	70
+i  - Cards at level 4 are shown every 4th day		gopher.black	70
+i  - and so on		gopher.black	70
+i- Cards are reviewed only once per session with the exception of		gopher.black	70
+i  cards at level 1. They can be reviewed multiple times until they		gopher.black	70
+i  move to level 2.		gopher.black	70
+i		gopher.black	70
+iI started putting together these notes yesterday into a README		gopher.black	70
+ifile intending to build a bourne shell app like I did with burrow.		gopher.black	70
+iI was reminded by a coworker that I said I'd build something in		gopher.black	70
+inode soon, so I caved and used javascript instead. Yes, I felt		gopher.black	70
+iincredibly dirty the whole time. Even worse, it was really, really		gopher.black	70
+ifun and easy. Puke.		gopher.black	70
+i		gopher.black	70
+iIf you have node installed you can try out my app by running:		gopher.black	70
+i		gopher.black	70
+i  yarn global add flashleit		gopher.black	70
+i  or		gopher.black	70
+i  npm i -g flashleit		gopher.black	70
+i		gopher.black	70
+iThat's right.... Flashleit! Get it? Leitner... Flash Cards...		gopher.black	70
+iHuzzah!		gopher.black	70
+i		gopher.black	70
+iWhen you run the app you can start by adding cards. There's a menu		gopher.black	70
+ioption for it. Cards creation will launch your $EDITOR. Card		gopher.black	70
+ifronts & backs can be multi-line. Ascii art welcome!		gopher.black	70
+i		gopher.black	70
+iYou can also mess with some of the settings in the app. Change		gopher.black	70
+isome colors, change the maximum proficiency level, or the delay		gopher.black	70
+ibefore the card flip happens. There's more color settings in the		gopher.black	70
+iconfiguration file if you want to go digging. It's usually at:		gopher.black	70
+i		gopher.black	70
+i  ~/.config/config/configstore/flashleit.json		gopher.black	70
+i		gopher.black	70
+ibut it may vary on your system. All the data is stored in that one		gopher.black	70
+ifile, including your cards. If you want to import a list or		gopher.black	70
+igenerate one, just look at the pattern in there and mess with the		gopher.black	70
+iJSON itself. You're big kids.		gopher.black	70
+i		gopher.black	70
+iSource is over on github [1]. If you try it out and have any		gopher.black	70
+irecommendations or spot any bugs, leave me an issue there. 		gopher.black	70
+i		gopher.black	70
+h[1] flashleit on github	URL:http://github.com/jamestomasino/flashleit
+</pre>]]></description>
+</item>
+<item>
   <title>Re Jynx On Life Segmentation And Happiness/</title>
   <link>gopher://gopher.black/1/phlog/20180711-re-jynx-on-life-segmentation-and-happiness/</link>
   <pubdate>Wed, 11 Jul 2018 00:00:00 -0400</pubdate>
@@ -494,87 +587,6 @@ i  More movements commands implemented !		gopher.black	70
 i  Input and Output was completely rewritten.		gopher.black	70
 i		gopher.black	70
 iIt's a breeze to install on MacOS or Linux. Give it a shot.		gopher.black	70
-</pre>]]></description>
-</item>
-<item>
-  <title>Federation And Gopher/</title>
-  <link>gopher://gopher.black/1/phlog/20180627-federation-and-gopher/</link>
-  <pubdate>Wed, 27 Jun 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-i----------------------------------------		gopher.black	70
-iFederation and gopher		gopher.black	70
-iJune 27th, 2018		gopher.black	70
-i----------------------------------------		gopher.black	70
-i		gopher.black	70
-iSome of you guys were talking about a "federated gopher" on		gopher.black	70
-iMastodon the other day. At first I was all into the idea and		gopher.black	70
-igetting ready to chime in with support. But then I started		gopher.black	70
-ithinking about what that would mean and I hit a wall. I think my		gopher.black	70
-iunderstanding of federation in recent context has skewed away from		gopher.black	70
-ithe community idea. With all the work on ActivityPub and the new		gopher.black	70
-iclients popping up in the Fediverse I feel like I should probably		gopher.black	70
-ispend the time to figure out what it is everyone is talking about		gopher.black	70
-iwhen they use the word Federated.		gopher.black	70
-i		gopher.black	70
-iSince we're talking definitions here, I figured I should start by		gopher.black	70
-itelneting to my happy dictionary [0] that I described in an old		gopher.black	70
-iphlog post [1]. Then I ran my query: "define english federation".		gopher.black	70
-iHere's what popped out:		gopher.black	70
-i		gopher.black	70
-i  <security> The establishment of some or all of business		gopher.black	70
-i  agreements, {cryptographic} trust and user identifiers or		gopher.black	70
-i  attributes across security and policy domains to enable more		gopher.black	70
-i  seamless business interaction.		gopher.black	70
-i		gopher.black	70
-i  As {web services} promise to enable integration between		gopher.black	70
-i  business partners through {loose coupling} at the application		gopher.black	70
-i  and messaging layer, federation does so at the identity		gopher.black	70
-i  management layer, insulating each domain from the details of		gopher.black	70
-i  the others' authentication and authorization.  Key to this		gopher.black	70
-i  loose coupling at the identity management layer are		gopher.black	70
-i  standardized mechanisms and formats for the communication of		gopher.black	70
-i  identity information between the domains.  {SAML} is one such		gopher.black	70
-i  standard.		gopher.black	70
-i		gopher.black	70
-iFrom the sound of that definition, gopher is already federated in		gopher.black	70
-ithat identity information between domains is inherent to the		gopher.black	70
-iprotocol because it's irrelevant. There's no authorized use		gopher.black	70
-imechanism here and the act of hosting content on a server is		gopher.black	70
-ienough to identify the source. Since I host on gopher.black, if		gopher.black	70
-iyour use of gopher queries my server you have used standard		gopher.black	70
-imechanisms and formats for the communication of that information		gopher.black	70
-ibetween the domains, right?		gopher.black	70
-i		gopher.black	70
-iMaybe the reason I'm having such difficulty is because my only		gopher.black	70
-iexposure to federation as an idea has been via things like		gopher.black	70
-iMastodon which have far more interoperable parts. Content from one		gopher.black	70
-iindependent system is consumed and becomes content within another		gopher.black	70
-ione, and the source of that content, the author, server, etc, all		gopher.black	70
-ineed to be accounted for in the communication. That requires more		gopher.black	70
-ithan gopher for sure.		gopher.black	70
-i		gopher.black	70
-iEven so, I'm not satisfied. I think there's more to federation		gopher.black	70
-ithan that definition. The context in how people discuss it seems		gopher.black	70
-ito imply something else, but I can't put my finger on exactly what		gopher.black	70
-ithat might be. Distributed systems like IPFS come up a lot in		gopher.black	70
-ithose discussions, but I don't see a black & white relationship.		gopher.black	70
-i		gopher.black	70
-iI guess my slow brainmeats can't get past the idea that federation		gopher.black	70
-imeans I control my shiz but it can interact with everyone elses		gopher.black	70
-ishiz in the same way. Am I so far off? Let me know with a reply or		gopher.black	70
-iemail or mastodon or a hand written letter.		gopher.black	70
-i		gopher.black	70
-iYes! Hand written letters are my absolute favorite. They		gopher.black	70
-idemonstrate all that extra effort, they're physical treasures, and		gopher.black	70
-iI get to silently judge your personality through bullshit		gopher.black	70
-ihandwriting interpretation that I make up on the spot. Everyone		gopher.black	70
-iwins! Send me an note with a reference to a pgp key and I'll send		gopher.black	70
-iyou back my mailing address on the down-low.		gopher.black	70
-i		gopher.black	70
-iCheers, fedi-gophers		gopher.black	70
-i		gopher.black	70
-8[0] Telnet to dict.org	dict	dict.org	2628
-1[1] CLI Tricks: Dictionaries	/phlog/20180405-cli-tricks-dictionaries
 </pre>]]></description>
 </item>
 </channel>

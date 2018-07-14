@@ -1,0 +1,86 @@
+i----------------------------------------		gopher.black	70
+iFlashcards		gopher.black	70
+iJuly 14th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iUser jakob phlogged recently [0] about getting back into flash		gopher.black	70
+icards & spaced repetition. He found a fantastic solution using		gopher.black	70
+iemacs as he seems to be slowly adopting the "all things are emacs"		gopher.black	70
+iprinciple. I'm not quite to that extreme with vim, but I do love		gopher.black	70
+ime some command line solutions.		gopher.black	70
+i		gopher.black	70
+0[0] jakob - replacing anki with org-drill	/phlog/replacing_anki_with_org_drill/text	jakob.space	70
+i		gopher.black	70
+iPlain text is just simpler. I don't need fancy guis for 99% of my		gopher.black	70
+istuff. Flash cards are definitely in that list. So, what's a man		gopher.black	70
+ito do? Obviously the only solution is to roll my own!		gopher.black	70
+i		gopher.black	70
+iI started by searching a bit on the different styles of spaced		gopher.black	70
+irepetition (there are many) and quickly settled on the Leitner		gopher.black	70
+iSystem. It's usable by hand, so I should clearly be able to		gopher.black	70
+ireplicate it with a program, right? It turns out that there's not		gopher.black	70
+ireally any agreement on the specifics of the system. I watched		gopher.black	70
+iseveral videos on youtube who would almost get there and then say		gopher.black	70
+isomething that didn't make any sense. The wikipedia page is such		gopher.black	70
+ia hot mess I'm not even going to link you there. If you want to		gopher.black	70
+iread some train wreck stuff, you'll need to go there on your own.		gopher.black	70
+i		gopher.black	70
+iIn the end I settled on the following as my interpretation of		gopher.black	70
+iLeitner:		gopher.black	70
+i		gopher.black	70
+i- Flash cards get a front and a back		gopher.black	70
+i- Flash cards are sorted into levels based on your proficiency		gopher.black	70
+i  with the card		gopher.black	70
+i- All cards start at level 1		gopher.black	70
+i- Cards move up one level when you successfully identify the back		gopher.black	70
+i- Cards return all the way to level 1 if you fail to successfully		gopher.black	70
+i  identify the back in time		gopher.black	70
+i- Time is important. Sitting there staring at a card and working		gopher.black	70
+i  it out is not the same as "getting it right". That is a failure.		gopher.black	70
+i- The number of proficiency levels you use isn't important		gopher.black	70
+i- The frequency of cards being shown is determined by the level:		gopher.black	70
+i  - Cards at level 1 are shown every day		gopher.black	70
+i  - Cards at level 2 are shown every other day		gopher.black	70
+i  - Cards at level 3 are shown every 3rd day		gopher.black	70
+i  - Cards at level 4 are shown every 4th day		gopher.black	70
+i  - and so on		gopher.black	70
+i- Cards are reviewed only once per session with the exception of		gopher.black	70
+i  cards at level 1. They can be reviewed multiple times until they		gopher.black	70
+i  move to level 2.		gopher.black	70
+i		gopher.black	70
+iI started putting together these notes yesterday into a README		gopher.black	70
+ifile intending to build a bourne shell app like I did with burrow.		gopher.black	70
+iI was reminded by a coworker that I said I'd build something in		gopher.black	70
+inode soon, so I caved and used javascript instead. Yes, I felt		gopher.black	70
+iincredibly dirty the whole time. Even worse, it was really, really		gopher.black	70
+ifun and easy. Puke.		gopher.black	70
+i		gopher.black	70
+iIf you have node installed you can try out my app by running:		gopher.black	70
+i		gopher.black	70
+i  yarn global add flashleit		gopher.black	70
+i  or		gopher.black	70
+i  npm i -g flashleit		gopher.black	70
+i		gopher.black	70
+iThat's right.... Flashleit! Get it? Leitner... Flash Cards...		gopher.black	70
+iHuzzah!		gopher.black	70
+i		gopher.black	70
+iWhen you run the app you can start by adding cards. There's a menu		gopher.black	70
+ioption for it. Cards creation will launch your $EDITOR. Card		gopher.black	70
+ifronts & backs can be multi-line. Ascii art welcome!		gopher.black	70
+i		gopher.black	70
+iYou can also mess with some of the settings in the app. Change		gopher.black	70
+isome colors, change the maximum proficiency level, or the delay		gopher.black	70
+ibefore the card flip happens. There's more color settings in the		gopher.black	70
+iconfiguration file if you want to go digging. It's usually at:		gopher.black	70
+i		gopher.black	70
+i  ~/.config/config/configstore/flashleit.json		gopher.black	70
+i		gopher.black	70
+ibut it may vary on your system. All the data is stored in that one		gopher.black	70
+ifile, including your cards. If you want to import a list or		gopher.black	70
+igenerate one, just look at the pattern in there and mess with the		gopher.black	70
+iJSON itself. You're big kids.		gopher.black	70
+i		gopher.black	70
+iSource is over on github [1]. If you try it out and have any		gopher.black	70
+irecommendations or spot any bugs, leave me an issue there. 		gopher.black	70
+i		gopher.black	70
+h[1] flashleit on github	URL:http://github.com/jamestomasino/flashleit
