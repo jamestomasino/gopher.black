@@ -3,6 +3,28 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Cwondr/</title>
+  <link>gopher://gopher.black/1/phlog/20180716-cwondr/</link>
+  <pubdate>Mon, 16 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+CWONDR
+July 16th, 2018
+----------------------------------------
+
+yargo writes [0] about a cool Morse/CW project he's working on.
+A low-power, pocket-sized CW transceiver for the 430 Mhz band: for
+Morse code. I love it! I don't have much interest in getting into
+HAM stuff (mainly because I know it would end up being a huge time
+sink for me) but I love Morse and I think I could dig something
+little and portable like this. If you make it, I'll use one!
+
+[0] yargo - CWONDR, another Morse/CW project
+    gopher://sdf.org/0/users/yargo/glog/t18414-cwondr.txt
+
+</pre>]]></description>
+</item>
+<item>
   <title>Flashcards/</title>
   <link>gopher://gopher.black/1/phlog/20180714-flashcards/</link>
   <pubdate>Sat, 14 Jul 2018 00:00:00 -0400</pubdate>
@@ -550,62 +572,6 @@ nit-picking on whether you use type 1 or type 0.
     http://gitlab.com/jamestomasino/burrow
 [0] This is amazeballs
     gopher://gopher.black/0/phlog/20170817-this-is-amazeballs.txt
-</pre>]]></description>
-</item>
-<item>
-  <title>Cli Tricks Sc Im/</title>
-  <link>gopher://gopher.black/1/phlog/20180629-cli-tricks-sc-im/</link>
-  <pubdate>Fri, 29 Jun 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-CLI Tricks: sc-im
-June 29th, 2018
-----------------------------------------
-
-SC-IM - Spreadsheet Calculator Improvised
-
-A vim-like modal editor for spreadsheets in the terminal (ncurses)
-
-It supports the following formats:
- 
-  .sc     SC-IM's native text format
-  .xls    Microsoft Excel Spreadsheet
-  .xlsx   Microsoft Office Open XML Workbook
-  .csv    Comma-separated values
-  .tsv    Tab-separated values
-  .tab    Tab-separated values
-  .txt    Simple text files
-
-It has an impressive set of features (from the README)!
-
-  UNDO / REDO.
-  65.536 rows and 702 columns supported. (The number of rows can
-     be expanded to 1.048.576 if wished).
-  CSV / TAB delimited / XLSX file import and export.
-  Scripting support with LUA. Also with triggers and c dynamic
-  linked modules.
-  Clipboard support.
-  GNUPlot interaction.
-  Key-mappings.
-  Sort of rows.
-  Filter of rows.
-  Subtotals.
-  Cell shifting.
-  256 color support - screen colors can be customized by user,
-      even at runtime.
-  Colorize cells or give them format such as bold or underline.
-  Wide character support. The following alphabets are supported:
-      English, Spanish, French, Italian, German, Portuguese, 
-      Russian, Ukrainian, Greek, Turkish, Czech, Japanese, Chinese.
-  Autobackup.
-  Implement external functions in the language you prefer and use
-      them in SC-IM.
-  Use SC-IM as a non-interactive calculator, reading its input 
-      from a external script.
-  More movements commands implemented !
-  Input and Output was completely rewritten.
-
-It's a breeze to install on MacOS or Linux. Give it a shot.
 </pre>]]></description>
 </item>
 </channel>
