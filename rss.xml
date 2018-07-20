@@ -3,9 +3,28 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Gopher Ftp Find/</title>
+  <link>gopher://gopher.black/1/phlog/20180720-gopher-ftp-find/</link>
+  <pubdate>Fri, 20 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Gopher ftp find
+July 20th, 2018
+----------------------------------------
+
+@sparcipx@mastodon.sdf.org found a really nice treasure trove of
+gopher goodies on an ftp server [0]. I'm out of the house, so I'm
+writing this to remind myself to do some archiving of the content
+when I get home.
+
+[0] ftp archive
+    ftp://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/gopher/Unix/
+</pre>]]></description>
+</item>
+<item>
   <title>The Left/</title>
   <link>gopher://gopher.black/1/phlog/20180717-the-left/</link>
-  <pubdate>17 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Tue, 17 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 The Left
@@ -86,7 +105,7 @@ disgust and say, "how did they not see it coming?"
 <item>
   <title>Cwondr/</title>
   <link>gopher://gopher.black/1/phlog/20180716-cwondr/</link>
-  <pubdate>16 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Mon, 16 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 CWONDR
@@ -108,7 +127,7 @@ little and portable like this. If you make it, I'll use one!
 <item>
   <title>Flashcards/</title>
   <link>gopher://gopher.black/1/phlog/20180714-flashcards/</link>
-  <pubdate>14 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Sat, 14 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Flashcards
@@ -203,7 +222,7 @@ recommendations or spot any bugs, leave me an issue there.
 <item>
   <title>Re Jynx On Life Segmentation And Happiness/</title>
   <link>gopher://gopher.black/1/phlog/20180711-re-jynx-on-life-segmentation-and-happiness/</link>
-  <pubdate>11 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Wed, 11 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 re: jynx on life segmentation and happiness
@@ -222,7 +241,7 @@ re-reading it.
 <item>
   <title>Freelance/</title>
   <link>gopher://gopher.black/1/phlog/20180709-freelance/</link>
-  <pubdate>09 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Mon, 09 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Freelance
@@ -237,7 +256,7 @@ I really want more?
 <item>
   <title>Shut It Down/</title>
   <link>gopher://gopher.black/1/phlog/20180708-shut-it-down/</link>
-  <pubdate>08 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Sun, 08 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 shut it down
@@ -264,7 +283,7 @@ walking into it already stressed. It's not a good recipe.
 <item>
   <title>New Keyboard/</title>
   <link>gopher://gopher.black/1/phlog/20180706-new-keyboard/</link>
-  <pubdate>06 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Fri, 06 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 New keyboard
@@ -308,7 +327,7 @@ favorite little keyboard buddy.
 <item>
   <title>Space Gopher 2000/</title>
   <link>gopher://gopher.black/1/phlog/20180705-space-gopher-2000/</link>
-  <pubdate>05 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Thu, 05 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Space Gopher 2000
@@ -352,7 +371,7 @@ take it and run. I want to read it more than I want to write it.
 <item>
   <title>Myths And Truth/</title>
   <link>gopher://gopher.black/1/phlog/20180705-myths-and-truth/</link>
-  <pubdate>05 Jul 2018 00:00:00 +0000</pubdate>
+  <pubdate>Thu, 05 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Myths and truth
@@ -513,59 +532,6 @@ Whether we're looking at stories of the Buddha or Brahman,
 Gicelemû’kaong or Birrahgnooloo, the myths create and communicate
 our understanding of their truth. The myths are not the truth, but
 they are true, all of them. 
-</pre>]]></description>
-</item>
-<item>
-  <title>The Essence Of Gopher/</title>
-  <link>gopher://gopher.black/1/phlog/20180703-the-essence-of-gopher/</link>
-  <pubdate>03 Jul 2018 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-The essence of gopher
-July 03rd, 2018
-----------------------------------------
-
-Our dear friend cat is at it again. He recently flew the coop
-from SDF and has planted his seed in a new project called
-baud.baby [0]. He's a resourceful guy and has quickly conquered
-some of the more tedious aspects of getting your own gopher hole
-up and running. Kudos, cat!
-
-[0] baud.baby
-    gopher://baud.baby/0/phlog/fs20180628.txt
-
-His most recent phlog touches on one of his passions, vintage
-phones [1]. In my humble opinion it is EVERYTHING that gopher
-should be summed up into a microcosm of aussie geekdom. It has
-passion for a vintage technology, collection, curation, more
-technical details than you could have imagined, and a neverending
-thirst for more. It's also beautiful. His manual text layouts
-really shine on things like his phone collection page [2].
-
-[1] A bunch of Touchfone stuff
-    gopher://baud.baby/0/phlog/fs20180703.txt
-[2] Weirdly Specific Collection of Phones
-    gopher://baud.baby/1/phones
-
-I've run across similarly brilliant curation in places like
-mateusz's DOS software repository [3], or Logout's new ASCII table
-[4], or dbucklin's intelligence analysis documents [5]. This stuff
-is gopher gold. 
-
-[3] mateusz's DOS software repository
-    gopher://gopher.viste.fr/1/abandonware
-[4] Logout's ASCII table
-    gopher://i-logout.cz/1/en/ascii
-[5] dbucklin's Intelligence Analysis Documents
-    gopher://sdf.org/1/users/dbucklin/files
-
-I've been really phlog focused in the past, but I think that
-overlooked some of the best stuff around. Now I'm finally starting
-to add more links to these collections and repositories over on my
-Gopher Places [6] section. Check it out and discover some awesome.
-
-[6] Gopher Places
-    gopher://gopher.black/1/places
 </pre>]]></description>
 </item>
 </channel>
