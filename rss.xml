@@ -3,6 +3,73 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Italian Citizenship/</title>
+  <link>gopher://gopher.black/1/phlog/20180721-italian-citizenship/</link>
+  <pubdate>Sat, 21 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Italian Citizenship
+July 21st, 2018
+----------------------------------------
+
+Today I am officially an Italian citizen. I went though an
+extremely long process to claim my citizenship via a process
+called jure sanguinis. I proved, in essence, that I have always
+been an Italian citizen by way of birth since my ancestor who
+immegrated had children before becoming naturalized. Thus, his
+kids were born as Italians on foreign soil.
+
+My son also has Italian citizenship as a result, and we're going
+to file for my wife to get hers via marriage. I'll be getting
+a second passport soon, and when the dust settles, we'll be
+leaving the United States.
+
+If you read this phlog, you probably already know that our
+destination is Iceland, which will allow me residency now since it
+is part of the Schengen Agreement, just like Italy. Moving to
+Iceland as an American is a giant pain in the butt, but as an
+Italian it should be quite simple.
+
+This made my whole day, obviously, but it also helps me out in
+some bigger stress areas. I've been stressing about what to do
+next in my career. I have an opportunity to potentially move into
+a CTO role with a startup, which fascinates me and would challenge
+me quite a bit. It would also be an increased investment on my
+time, and I already work a lot. The job I'm at now is wearing on
+me more and more, and I don't see it as sustainable for very much
+longer. The move to Iceland represents a refocusing of priorities
+off of work and onto life. I'm planning on taking a significant
+pay cut, living more simply, and focusing on the family and
+hobbies. Since that timeline is finally "for real", it means that
+my current work troubles have an end in sight. That is powerful.
+
+While I finish getting all the papers in order for the family,
+we'll also be selling our house and moving into a much smaller
+apartment. We'll get rid of most of our things, place most of the
+leftovers into storage, and live on what we intend to ship. Once
+all that's in place, I'll be quitting my job, heading to Iceland
+on my own ahead of the family, and we'll live off the house sale
+money until I can find a new job, get us a new apartment, and
+arrange to move them over and meet me.
+
+I'm utterly thrilled!
+
+Oh, if any of you reading this are Icelandic, live or know someone
+in Iceland, or in any way could help me find something
+code-related to do in Iceland to get us settled I'd be extremely
+grateful. I run a technology team of web developers, front & back
+end. I also act as the digital strategy lead (pharmaceutical
+marketing) and head of analytics & reporting. I can code in JS
+extremely well, and prefer using vue, but can learn whatever. My
+php & python skills are a little rusty, but I can jump back into
+that in a heartbeat. Ruby? I guess I could do that too. I'm not
+much of a windows development guy, though.
+
+Need a programmer? Need someone to run a dev team? Need an
+analyst? I'm also good at balancing stuff on my chin!
+</pre>]]></description>
+</item>
+<item>
   <title>Hard Things/</title>
   <link>gopher://gopher.black/1/phlog/20180720-hard-things/</link>
   <pubdate>Fri, 20 Jul 2018 00:00:00 -0400</pubdate>
@@ -337,50 +404,6 @@ favorite little keyboard buddy.
 
 [0] Tomasino's Keyboard Firmware
     http://github.com/jamestomasino/tomasino-dvorak-keyboard
-</pre>]]></description>
-</item>
-<item>
-  <title>Space Gopher 2000/</title>
-  <link>gopher://gopher.black/1/phlog/20180705-space-gopher-2000/</link>
-  <pubdate>Thu, 05 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Space Gopher 2000
-July 05th, 2018
-----------------------------------------
-
-What if quantum entaglement and spooky action at a distance allow
-for us to create extremely long range connections, but with very
-low bandwidth. "Why would that be the case?" you might ask.
-Frankly, I have no idea. If you don't think about the details too
-much it seems like something you could gloss over in a story,
-though.
-
-I want to explore that idea in a short story as a vehicle to
-reintroduce gopher as the web of the space-future. No nonsense,
-text driven communication across vast spaces would make for an
-incredible aesthetic and a great reason to draw some attention
-back to port 70.
-
-I think of films like Alien and their use of text for
-communication and it makes sense to me. Local running AIs and
-super-powerful UI crap is neat, but for anything at a distance we
-fall back on the age-old safety of text. If you imagine a universe
-populated by ships launched and traveling at relativistic speeds,
-we quickly encounter vast distances in relative time, not only
-space. These time gaps are a bigger threat to communication than
-distance. We cannot innovate because it leaves behind all those
-that have gone out before. We cannot shift paradigms. We must
-speak to a common level.
-
-Isn't that a cool thought? I want to read stuff in that universe.
-I want gopher featured prominantly. I guess I should start working
-on it at some point.
-
-Do any of you have any ideas to pile on top? I don't have a story
-here at all, just setting, so I could use all the help I can get.
-Or, I guess if one of you is feeling the creative juices flowing,
-take it and run. I want to read it more than I want to write it.
 </pre>]]></description>
 </item>
 </channel>
