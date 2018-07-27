@@ -3,6 +3,32 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Gopherpedia/</title>
+  <link>gopher://gopher.black/1/phlog/20180726-gopherpedia/</link>
+  <pubdate>Thu, 26 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Gopherpedia
+July 26th, 2018
+----------------------------------------
+
+I'm having a little squee party. Sometimes I like to pop over to
+gopherpedia [0] and see what people have recently been viewing.
+Unlike wikipedia which gets a lot of traffic, our gopher corner is
+relatively quiet. Of note today was someone who viewed both the
+book 1984 and the list of Newspeak words. That caught my eye since
+they're related and I amused myself with wondering which of my
+gopher friends it was and what they were up to.
+
+The culprit has revealed himself [1]!!!
+
+[0] Gopherpedia
+    gopher://gopherpedia.com/1/
+[1] On web as newspeak
+    gopher://1436.ninja/0/phlog/typezero/20180726.post
+</pre>]]></description>
+</item>
+<item>
   <title>Game Ideas/</title>
   <link>gopher://gopher.black/1/phlog/20180725-game-ideas/</link>
   <pubdate>Wed, 25 Jul 2018 00:00:00 -0400</pubdate>
@@ -407,33 +433,6 @@ July 09th, 2018
 I'm not sure why I bother with freelance. I mean, I like having
 some extra income, but I'm so burnt out from work already, do
 I really want more?
-</pre>]]></description>
-</item>
-<item>
-  <title>Shut It Down/</title>
-  <link>gopher://gopher.black/1/phlog/20180708-shut-it-down/</link>
-  <pubdate>Sun, 08 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-shut it down
-July 08th, 2018
-----------------------------------------
-
-Sometimes the little frustrations add up and spill over. I tend to
-get very quiet when I'm at my breaking point. I shut down. I walk
-away. When I was young I'd walk away in grandiose ways: from
-relationships, jobs, responsibility. I've learned how to siphon
-off the steam before reaching that point. I meditate, I walk,
-I pray. I can roll with it a lot more than when I was a kid.
-Still, sometimes it feels like it would be easier to shut it all
-down and walk away from my life. It's not a rational thought. My
-life is pretty damn good. The frustrations are minor things,
-meaningless really. You can't compare lives that way, though. It's
-not rational, as I said, and it's not logical.
-
-I'm going to drink a nice glass of gin, read a bit, and go for an
-evening walk. Tomorrow will start a busy work-week and I'll be
-walking into it already stressed. It's not a good recipe.
 </pre>]]></description>
 </item>
 </channel>
