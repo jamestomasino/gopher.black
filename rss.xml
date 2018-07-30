@@ -3,6 +3,80 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Tabs Vs Spaces/</title>
+  <link>gopher://gopher.black/1/phlog/20180729-tabs-vs-spaces/</link>
+  <pubdate>Sun, 29 Jul 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Tabs vs spaces
+July 29th, 2018
+----------------------------------------
+
+There's a post on lobste.rs right now [0] about tabs & spaces.
+Don't go read it, there's no point. You've already read everything
+there is to be said on the subject. Seriously. Don't follow this
+link to the lobste.rs comments either.
+[0] Elastic tabstops - a better way to indent and align code (comments)
+    gopher://sdf.org/0/users/julienxx/Lobste.rs/1ugcr4.txt
+
+I don't think I have an official Opinion(TM) already floating out
+there in the inter-ether, so I'll use this opportunity to give my
+two cents. I'm pro tabs, with caveats.
+
+I'll start with the caveats because they're the easy part. I will
+use spaces in any of the following situations:
+
+  - The language spec calls for spaces (i.e., python)
+  - The team styleguide calls for spaces
+  - The codebase I'm interacting with has already established the
+    use of spaces over tabs
+  - I'm working with someone who is a die-hard advocate for spaces
+    and won't shut up about it unless I just give in
+
+Here's why I prefer tabs:
+
+Indentation distance is a visual preference which should be
+enforced by the person working with the code, not the maintainer
+of the code. If I want to develop using eight spaces as the visual
+indentation of blocks, then I should do that. There is no valid
+reason(*) that my personal choice of tabstop should be followed by
+any other developer who is also working with this code. But how
+can we both get it the way we want and not have to constantly
+battle over the indentation style? What method could we possibly
+use? Oh right... a fucking tab.
+
+Tabs can be set to visually show up at whatever distance you want.
+If you like a tiny tiny little increment, set a tabstop to two
+characters, or even 1! If you like a giant leap along the line, go
+for eight, or ten, or whatever. That's it. Just set it up how you
+want to see it.
+
+There's another reason, though I consider it of less importance.
+A tab is a single character. Spaces are multiple characters. Why
+add multiple characters to something when you don't have to?
+Semantically, indent with the single character that accomplishes
+that. Then you're done. Tada!
+
+(*) I must address the usual counter-argument here: the alignment
+of parameters, equal signs, or other nonsense that cascades down
+from an arbitrary point on the line. Spaces can make everything
+pretty, like ascii art. That's a plus! If we use tabs we can't do
+that and we'd have to suffer endlessly with vertically listed
+parameters that don't line up with the spot where the first
+parameter fell naturally on the line. This is true. I think using
+a single flexible character for code indentation that lets people
+do things their own way far outweighs code knolling [1].
+
+[1] Knolling
+    http://mitphoto2016.wordpress.com/2016/09/19/knolling-messy-vs-neat/
+
+So, in summary: I don't care how you wanted your code to be
+viewed. I want to view it the way I prefer, which lets me work
+faster and easier. Use a tab. Let me set my own definition for
+what that means.
+</pre>]]></description>
+</item>
+<item>
   <title>Gopherpedia/</title>
   <link>gopher://gopher.black/1/phlog/20180726-gopherpedia/</link>
   <pubdate>Thu, 26 Jul 2018 00:00:00 -0400</pubdate>
@@ -418,21 +492,6 @@ re-reading it.
 
 [0] jynx - On life segmentation and happiness
     gopher://gopher.club/0/users/jynx/phlog/typezero/20180709.post
-</pre>]]></description>
-</item>
-<item>
-  <title>Freelance/</title>
-  <link>gopher://gopher.black/1/phlog/20180709-freelance/</link>
-  <pubdate>Mon, 09 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Freelance
-July 09th, 2018
-----------------------------------------
-
-I'm not sure why I bother with freelance. I mean, I like having
-some extra income, but I'm so burnt out from work already, do
-I really want more?
 </pre>]]></description>
 </item>
 </channel>

@@ -1,0 +1,65 @@
+i----------------------------------------		gopher.black	70
+iTabs vs spaces		gopher.black	70
+iJuly 29th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThere's a post on lobste.rs right now [0] about tabs & spaces.		gopher.black	70
+iDon't go read it, there's no point. You've already read everything		gopher.black	70
+ithere is to be said on the subject. Seriously. Don't follow this		gopher.black	70
+ilink to the lobste.rs comments either.		gopher.black	70
+0[0] Elastic tabstops - a better way to indent and align code (comments)	/users/julienxx/Lobste.rs/1ugcr4.txt	sdf.org	70
+i		gopher.black	70
+iI don't think I have an official Opinion(TM) already floating out		gopher.black	70
+ithere in the inter-ether, so I'll use this opportunity to give my		gopher.black	70
+itwo cents. I'm pro tabs, with caveats.		gopher.black	70
+i		gopher.black	70
+iI'll start with the caveats because they're the easy part. I will		gopher.black	70
+iuse spaces in any of the following situations:		gopher.black	70
+i		gopher.black	70
+i  - The language spec calls for spaces (i.e., python)		gopher.black	70
+i  - The team styleguide calls for spaces		gopher.black	70
+i  - The codebase I'm interacting with has already established the		gopher.black	70
+i    use of spaces over tabs		gopher.black	70
+i  - I'm working with someone who is a die-hard advocate for spaces		gopher.black	70
+i    and won't shut up about it unless I just give in		gopher.black	70
+i		gopher.black	70
+iHere's why I prefer tabs:		gopher.black	70
+i		gopher.black	70
+iIndentation distance is a visual preference which should be		gopher.black	70
+ienforced by the person working with the code, not the maintainer		gopher.black	70
+iof the code. If I want to develop using eight spaces as the visual		gopher.black	70
+iindentation of blocks, then I should do that. There is no valid		gopher.black	70
+ireason(*) that my personal choice of tabstop should be followed by		gopher.black	70
+iany other developer who is also working with this code. But how		gopher.black	70
+ican we both get it the way we want and not have to constantly		gopher.black	70
+ibattle over the indentation style? What method could we possibly		gopher.black	70
+iuse? Oh right... a fucking tab.		gopher.black	70
+i		gopher.black	70
+iTabs can be set to visually show up at whatever distance you want.		gopher.black	70
+iIf you like a tiny tiny little increment, set a tabstop to two		gopher.black	70
+icharacters, or even 1! If you like a giant leap along the line, go		gopher.black	70
+ifor eight, or ten, or whatever. That's it. Just set it up how you		gopher.black	70
+iwant to see it.		gopher.black	70
+i		gopher.black	70
+iThere's another reason, though I consider it of less importance.		gopher.black	70
+iA tab is a single character. Spaces are multiple characters. Why		gopher.black	70
+iadd multiple characters to something when you don't have to?		gopher.black	70
+iSemantically, indent with the single character that accomplishes		gopher.black	70
+ithat. Then you're done. Tada!		gopher.black	70
+i		gopher.black	70
+i(*) I must address the usual counter-argument here: the alignment		gopher.black	70
+iof parameters, equal signs, or other nonsense that cascades down		gopher.black	70
+ifrom an arbitrary point on the line. Spaces can make everything		gopher.black	70
+ipretty, like ascii art. That's a plus! If we use tabs we can't do		gopher.black	70
+ithat and we'd have to suffer endlessly with vertically listed		gopher.black	70
+iparameters that don't line up with the spot where the first		gopher.black	70
+iparameter fell naturally on the line. This is true. I think using		gopher.black	70
+ia single flexible character for code indentation that lets people		gopher.black	70
+ido things their own way far outweighs code knolling [1].		gopher.black	70
+i		gopher.black	70
+h[1] Knolling	URL:http://mitphoto2016.wordpress.com/2016/09/19/knolling-messy-vs-neat/
+i		gopher.black	70
+iSo, in summary: I don't care how you wanted your code to be		gopher.black	70
+iviewed. I want to view it the way I prefer, which lets me work		gopher.black	70
+ifaster and easier. Use a tab. Let me set my own definition for		gopher.black	70
+iwhat that means.		gopher.black	70
