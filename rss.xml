@@ -3,6 +3,77 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Data Security Ratings/</title>
+  <link>gopher://gopher.black/1/phlog/20180810-data-security-ratings/</link>
+  <pubdate>Fri, 10 Aug 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Data Security Ratings
+August 10th, 2018
+----------------------------------------
+
+Christina has been posting about data security [0][1] with some
+engagement from others [2].
+
+[0] Christina - Infosec And Data Privacy Part 1
+    gopher://circumlunar.space/0/~christina/InfosecAndDataPrivacy.txt
+[1] Christina - Infosec And Data Privacy Part 2
+    gopher://circumlunar.space/0/~christina/ISDP_2_SelfRating.txt
+[2] Solderpunk - Data Security Ratings
+    gopher://circumlunar.space/0/~solderpunk/phlog/data-security-ratings.txt
+
+It's very interesting stuff which started on Mastodon and
+continued in gopherspace. It's worth a read.
+
+I had one last thought I wanted to share based on an exchange on
+IRC. Some people have brought up threat levels and planning your
+security for the type of danger you really face, not ridiculous
+levels of paranoia. We're not all Snowden, after-all. That being
+said, I wanted to share my email system so you can see what
+happens when you go off the deep end with no real reason.
+
+First of all, I use neomailbox for my mail provider. They're
+pretty great, in a country with better data privacy laws than the
+US, and have solid privacy policies and encryption measures in
+place to protect their users. They offer a unique feature that
+I've not found in other providers: they will auto-sign incoming
+mail with your public key if you request it. While mail that
+wasn't encrypted at the source may still be vulnerable in
+transmission, after it hits their servers its safety just took
+a major step up.
+
+Next, I only connect to neomailbox over a VPN & Tor. Outgoing mail
+relayed through their servers wipes metadata anyway, but it's just
+another stupid thing to do in protecting the connection itself.
+How do I connect? Good old pop3, baby. I don't leave anything on
+the server.
+
+Mail is fetched locally and the system auto-disconnects from the
+internet. When browsing messages I remain offline. I reply and
+queue up my outgoing mail. When ready to send, browsing shuts down
+and the machine reconnects safely to send it on its way.
+
+The local maildir is backed up over spideroak, encrypting the
+mailboxes of already encrypted messages offsite to another machine
+in case of calamity.
+
+That's it! Fun right?
+
+I want to reiterate, this is completely unnecessary for my threat
+level and it was done more as a hobby project to see how far
+I could push it. Airgapping, redundant encryption, it's too much
+for people to bother with. It's a great illustration of why other
+people give up and just settle for whatever.
+
+If you're new to infosec, do yourself a favor and get a protonmail
+account. That's about as good as you're going to do without
+putting in a bunch of work. Is it as good as what Snowden does? Oh
+hells no. But you're not on the run from the US government, are
+you? It'll keep google off your back, and you're less likely to
+fall victim to simple scams.
+</pre>]]></description>
+</item>
+<item>
   <title>Reunion/</title>
   <link>gopher://gopher.black/1/phlog/20180806-reunion/</link>
   <pubdate>Mon, 06 Aug 2018 00:00:00 -0400</pubdate>
@@ -473,101 +544,6 @@ little and portable like this. If you make it, I'll use one!
 [0] yargo - CWONDR, another Morse/CW project
     gopher://sdf.org/0/users/yargo/glog/t18414-cwondr.txt
 
-</pre>]]></description>
-</item>
-<item>
-  <title>Flashcards/</title>
-  <link>gopher://gopher.black/1/phlog/20180714-flashcards/</link>
-  <pubdate>Sat, 14 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Flashcards
-July 14th, 2018
-----------------------------------------
-
-User jakob phlogged recently [0] about getting back into flash
-cards & spaced repetition. He found a fantastic solution using
-emacs as he seems to be slowly adopting the "all things are emacs"
-principle. I'm not quite to that extreme with vim, but I do love
-me some command line solutions.
-
-[0] jakob - replacing anki with org-drill
-    gopher://jakob.space/0/phlog/replacing_anki_with_org_drill/text
-
-Plain text is just simpler. I don't need fancy guis for 99% of my
-stuff. Flash cards are definitely in that list. So, what's a man
-to do? Obviously the only solution is to roll my own!
-
-I started by searching a bit on the different styles of spaced
-repetition (there are many) and quickly settled on the Leitner
-System. It's usable by hand, so I should clearly be able to
-replicate it with a program, right? It turns out that there's not
-really any agreement on the specifics of the system. I watched
-several videos on youtube who would almost get there and then say
-something that didn't make any sense. The wikipedia page is such
-a hot mess I'm not even going to link you there. If you want to
-read some train wreck stuff, you'll need to go there on your own.
-
-In the end I settled on the following as my interpretation of
-Leitner:
-
-- Flash cards get a front and a back
-- Flash cards are sorted into levels based on your proficiency
-  with the card
-- All cards start at level 1
-- Cards move up one level when you successfully identify the back
-- Cards return all the way to level 1 if you fail to successfully
-  identify the back in time
-- Time is important. Sitting there staring at a card and working
-  it out is not the same as "getting it right". That is a failure.
-- The number of proficiency levels you use isn't important
-- The frequency of cards being shown is determined by the level:
-  - Cards at level 1 are shown every day
-  - Cards at level 2 are shown every other day
-  - Cards at level 3 are shown every 3rd day
-  - Cards at level 4 are shown every 4th day
-  - and so on
-- Cards are reviewed only once per session with the exception of
-  cards at level 1. They can be reviewed multiple times until they
-  move to level 2.
-
-I started putting together these notes yesterday into a README
-file intending to build a bourne shell app like I did with burrow.
-I was reminded by a coworker that I said I'd build something in
-node soon, so I caved and used javascript instead. Yes, I felt
-incredibly dirty the whole time. Even worse, it was really, really
-fun and easy. Puke.
-
-If you have node installed you can try out my app by running:
-
-  yarn global add flashleit
-  or
-  npm i -g flashleit
-
-That's right.... Flashleit! Get it? Leitner... Flash Cards...
-Huzzah!
-
-When you run the app you can start by adding cards. There's a menu
-option for it. Cards creation will launch your $EDITOR. Card
-fronts & backs can be multi-line. Ascii art welcome!
-
-You can also mess with some of the settings in the app. Change
-some colors, change the maximum proficiency level, or the delay
-before the card flip happens. There's more color settings in the
-configuration file if you want to go digging. It's usually at:
-
-  ~/.config/config/configstore/flashleit.json
-
-but it may vary on your system. All the data is stored in that one
-file, including your cards. If you want to import a list or
-generate one, just look at the pattern in there and mess with the
-JSON itself. You're big kids.
-
-Source is over on github [1]. If you try it out and have any
-recommendations or spot any bugs, leave me an issue there. 
-
-[1] flashleit on github
-    http://github.com/jamestomasino/flashleit
 </pre>]]></description>
 </item>
 </channel>

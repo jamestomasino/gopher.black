@@ -1,0 +1,61 @@
+i----------------------------------------		gopher.black	70
+iData Security Ratings		gopher.black	70
+iAugust 10th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iChristina has been posting about data security [0][1] with some		gopher.black	70
+iengagement from others [2].		gopher.black	70
+i		gopher.black	70
+0[0] Christina - Infosec And Data Privacy Part 1	/~christina/InfosecAndDataPrivacy.txt	circumlunar.space	70
+0[1] Christina - Infosec And Data Privacy Part 2	/~christina/ISDP_2_SelfRating.txt	circumlunar.space	70
+0[2] Solderpunk - Data Security Ratings	/~solderpunk/phlog/data-security-ratings.txt	circumlunar.space	70
+i		gopher.black	70
+iIt's very interesting stuff which started on Mastodon and		gopher.black	70
+icontinued in gopherspace. It's worth a read.		gopher.black	70
+i		gopher.black	70
+iI had one last thought I wanted to share based on an exchange on		gopher.black	70
+iIRC. Some people have brought up threat levels and planning your		gopher.black	70
+isecurity for the type of danger you really face, not ridiculous		gopher.black	70
+ilevels of paranoia. We're not all Snowden, after-all. That being		gopher.black	70
+isaid, I wanted to share my email system so you can see what		gopher.black	70
+ihappens when you go off the deep end with no real reason.		gopher.black	70
+i		gopher.black	70
+iFirst of all, I use neomailbox for my mail provider. They're		gopher.black	70
+ipretty great, in a country with better data privacy laws than the		gopher.black	70
+iUS, and have solid privacy policies and encryption measures in		gopher.black	70
+iplace to protect their users. They offer a unique feature that		gopher.black	70
+iI've not found in other providers: they will auto-sign incoming		gopher.black	70
+imail with your public key if you request it. While mail that		gopher.black	70
+iwasn't encrypted at the source may still be vulnerable in		gopher.black	70
+itransmission, after it hits their servers its safety just took		gopher.black	70
+ia major step up.		gopher.black	70
+i		gopher.black	70
+iNext, I only connect to neomailbox over a VPN & Tor. Outgoing mail		gopher.black	70
+irelayed through their servers wipes metadata anyway, but it's just		gopher.black	70
+ianother stupid thing to do in protecting the connection itself.		gopher.black	70
+iHow do I connect? Good old pop3, baby. I don't leave anything on		gopher.black	70
+ithe server.		gopher.black	70
+i		gopher.black	70
+iMail is fetched locally and the system auto-disconnects from the		gopher.black	70
+iinternet. When browsing messages I remain offline. I reply and		gopher.black	70
+iqueue up my outgoing mail. When ready to send, browsing shuts down		gopher.black	70
+iand the machine reconnects safely to send it on its way.		gopher.black	70
+i		gopher.black	70
+iThe local maildir is backed up over spideroak, encrypting the		gopher.black	70
+imailboxes of already encrypted messages offsite to another machine		gopher.black	70
+iin case of calamity.		gopher.black	70
+i		gopher.black	70
+iThat's it! Fun right?		gopher.black	70
+i		gopher.black	70
+iI want to reiterate, this is completely unnecessary for my threat		gopher.black	70
+ilevel and it was done more as a hobby project to see how far		gopher.black	70
+iI could push it. Airgapping, redundant encryption, it's too much		gopher.black	70
+ifor people to bother with. It's a great illustration of why other		gopher.black	70
+ipeople give up and just settle for whatever.		gopher.black	70
+i		gopher.black	70
+iIf you're new to infosec, do yourself a favor and get a protonmail		gopher.black	70
+iaccount. That's about as good as you're going to do without		gopher.black	70
+iputting in a bunch of work. Is it as good as what Snowden does? Oh		gopher.black	70
+ihells no. But you're not on the run from the US government, are		gopher.black	70
+iyou? It'll keep google off your back, and you're less likely to		gopher.black	70
+ifall victim to simple scams.		gopher.black	70
