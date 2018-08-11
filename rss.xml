@@ -3,6 +3,97 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Gopher Rings/</title>
+  <link>gopher://gopher.black/1/phlog/20180811-gopher-rings/</link>
+  <pubdate>Sat, 11 Aug 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+gopher rings
+August 11th, 2018
+----------------------------------------
+
+From ze libertine gamer [0] on Mastodon:
+[0] ze libertine gamer
+    gopher://zlg.space/1/
+
+<zlg> Places like Bongusta and phlogroll remind me of web-rings
+from the 1990s. Let's name'em gopher-rings, or perhaps gopher dens
+if we want to be cute. They serve the same function: building
+a network with volunteer participants (the curation process) and
+technology that empowers the individual (self-hosting and
+moku-pona). What do you think, #gopher?
+
+tfurrows [1] also posted a semi-related phlog [2] today on
+favorites and the tools that engineer our interactions.
+[1] tfurrows - sdf
+    gopher://sdf.org/1/users/tfurrows
+[2] tfurrows - favorites
+    gopher://sdf.org/0/users/tfurrows/phlog/2018/agp_favorites.txt
+
+- - - - - - - -
+
+I started thinking about a response on Mastodon, but my head
+flooded with too many things to fit in 500 characters. A phlog is
+a better medium, I think.
+
+In the nascent web we had many ways of finding each other and
+other content that seems archaic or obtuse in retrospect. In the
+very earliest days I kept a paper notebook where I manually wrote
+down email addresses and websites. Later web-rings became popular
+ways to link like-content to one another, forming communities from
+the ether. By the time search engines came online we had all sorts
+of other ways to bridge the gaps.
+
+I think back to my time using AltaVista, or Lycos, or Yahoo!,
+finding them awkward and lacking, and returning to the advice of
+a webring or forum to find real relevant sites. I would cast
+a broader net using a meta-search engine like SavvySearch and
+click through pages and pages of results. That method of exploring
+the web didn't take over in prominance for me, personally, until
+Google began their takeover.
+
+Web-rings fell to the wayside quickly as "googling" entered the
+lexicon, and I don't think I consciously realized the
+"engineering" or "channeled usage", as tfurrows puts it, was so
+broadly affecting my behavior until very recently. In my head,
+search engines are tools and I use them. If I am careful to avoid
+tracking behaviors, they don't use me, right?
+
+Well, maybe not. Google's algorithms, or a browser's "favorites"
+screen guides our hand and our habits in a major way. We engage
+with what we see and what we find, and that is a power that
+shouldn't be forgotten.
+
+So, thinking on ze libertine gamer's idea, I think the gopher
+aggregators, the gopher-rings, are very much a throwback to the
+old days when communities were more manually linked to one
+another. There is still a power inherent in the tools we use, no
+different than Google wields, or Firefox, but because it's curated
+by participants in the community (like me!), I feel better about
+it. Our micro-aggregators aren't monolithic. Anyone can run one,
+thanks to the awesome utilities shared around the community.
+
+My phlog roll [3] began as a personal tool for me to track the
+phlogs I read. It's become a very popular starting point for
+others as well, and so I added some language to the top on how to
+get new sites added. Inclusion on my aggregator is open to all, as
+long as your phlog is in a format that moku-pona can handle.
+I don't want to be a barrier to finding gopher content; I want to
+be an easy entry-point. 
+
+[3] gopher.black phlog roll
+    gopher://gopher.black/1/moku-pona
+
+Have a site that you want added? Drop me an email at one of the
+addresses in my contact page on this gopher hole, or reach out on
+Mastodon. I try to watch SDF, grex, and the tilde communities for
+new holes that pop up so I can add them quickly. I generally wait
+until a phlog has at least two posts before I add it to avoid the
+"hello world" phenomenon that litters SDF. Just hit me up if you
+see something missing.
+</pre>]]></description>
+</item>
+<item>
   <title>Data Security Ratings/</title>
   <link>gopher://gopher.black/1/phlog/20180810-data-security-ratings/</link>
   <pubdate>Fri, 10 Aug 2018 00:00:00 -0400</pubdate>
@@ -522,28 +613,6 @@ cheer.
 
 This is the stuff that later generations will point to with
 disgust and say, "how did they not see it coming?"
-</pre>]]></description>
-</item>
-<item>
-  <title>Cwondr/</title>
-  <link>gopher://gopher.black/1/phlog/20180716-cwondr/</link>
-  <pubdate>Mon, 16 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-CWONDR
-July 16th, 2018
-----------------------------------------
-
-yargo writes [0] about a cool Morse/CW project he's working on.
-A low-power, pocket-sized CW transceiver for the 430 Mhz band: for
-Morse code. I love it! I don't have much interest in getting into
-HAM stuff (mainly because I know it would end up being a huge time
-sink for me) but I love Morse and I think I could dig something
-little and portable like this. If you make it, I'll use one!
-
-[0] yargo - CWONDR, another Morse/CW project
-    gopher://sdf.org/0/users/yargo/glog/t18414-cwondr.txt
-
 </pre>]]></description>
 </item>
 </channel>
