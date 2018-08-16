@@ -3,9 +3,46 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>X11forward/</title>
+  <link>gopher://gopher.black/1/phlog/20180816-x11forward/</link>
+  <pubdate>16 Aug 2018 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+X11Forward
+August 16th, 2018
+----------------------------------------
+
+Today I tried in vain to accomplish something that should be
+relatively simple: to share my clipboard with remote terminal
+sessions.
+
+Here's the scenario I'm in:
+ - I'm using a MacBook Air (work machine)
+ - I mosh to gopher.black (raspberry pi)
+ - I use tmux
+
+This shouldn't be so difficult, but it is. Here's a list of
+problems I've run into (and fixes):
+ - macOS needs X installed first (XQuartz installed)
+ - mosh doesn't seem to do x11 forwarding (used ssh -X or ssh -Y)
+ - remote ssh didn't allow x11 forwarding (edited sshd_config)
+ - local ssh config didn't allow x11 forwarding (edit .ssh/config)
+
+After all that, I now successfully can see a $DISPLAY on the
+remote when I connect! Hooray!
+
+But what's this? Copying something with xsel on the remote does
+a whole load of nothing? Awesome.
+
+Somedays I feel like I'm crushing this whole computer thing. Some
+days I just want to walk out into the woods and build a cabin.
+I think I'm gonna go read some Thoreau.
+</pre>]]></description>
+</item>
+<item>
   <title>Gopher Rings/</title>
   <link>gopher://gopher.black/1/phlog/20180811-gopher-rings/</link>
-  <pubdate>Sat, 11 Aug 2018 00:00:00 -0400</pubdate>
+  <pubdate>11 Aug 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 gopher rings
@@ -96,7 +133,7 @@ see something missing.
 <item>
   <title>Data Security Ratings/</title>
   <link>gopher://gopher.black/1/phlog/20180810-data-security-ratings/</link>
-  <pubdate>Fri, 10 Aug 2018 00:00:00 -0400</pubdate>
+  <pubdate>10 Aug 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Data Security Ratings
@@ -167,7 +204,7 @@ fall victim to simple scams.
 <item>
   <title>Reunion/</title>
   <link>gopher://gopher.black/1/phlog/20180806-reunion/</link>
-  <pubdate>Mon, 06 Aug 2018 00:00:00 -0400</pubdate>
+  <pubdate>06 Aug 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Reunion
@@ -262,7 +299,7 @@ At the reunion itself we had a few fun surprises:
 <item>
   <title>Tabs Vs Spaces/</title>
   <link>gopher://gopher.black/1/phlog/20180729-tabs-vs-spaces/</link>
-  <pubdate>Sun, 29 Jul 2018 00:00:00 -0400</pubdate>
+  <pubdate>29 Jul 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Tabs vs spaces
@@ -336,7 +373,7 @@ what that means.
 <item>
   <title>Gopherpedia/</title>
   <link>gopher://gopher.black/1/phlog/20180726-gopherpedia/</link>
-  <pubdate>Thu, 26 Jul 2018 00:00:00 -0400</pubdate>
+  <pubdate>26 Jul 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Gopherpedia
@@ -362,7 +399,7 @@ The culprit has revealed himself [1]!!!
 <item>
   <title>Game Ideas/</title>
   <link>gopher://gopher.black/1/phlog/20180725-game-ideas/</link>
-  <pubdate>Wed, 25 Jul 2018 00:00:00 -0400</pubdate>
+  <pubdate>25 Jul 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Game ideas
@@ -436,7 +473,7 @@ I really miss role playing.
 <item>
   <title>Italian Citizenship/</title>
   <link>gopher://gopher.black/1/phlog/20180721-italian-citizenship/</link>
-  <pubdate>Sat, 21 Jul 2018 00:00:00 -0400</pubdate>
+  <pubdate>21 Jul 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Italian Citizenship
@@ -503,7 +540,7 @@ analyst? I'm also good at balancing stuff on my chin!
 <item>
   <title>Hard Things/</title>
   <link>gopher://gopher.black/1/phlog/20180720-hard-things/</link>
-  <pubdate>Fri, 20 Jul 2018 00:00:00 -0400</pubdate>
+  <pubdate>20 Jul 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Hard things
@@ -518,7 +555,7 @@ Do the hard thing.
 <item>
   <title>Gopher Ftp Find/</title>
   <link>gopher://gopher.black/1/phlog/20180720-gopher-ftp-find/</link>
-  <pubdate>Fri, 20 Jul 2018 00:00:00 -0400</pubdate>
+  <pubdate>20 Jul 2018 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Gopher ftp find
@@ -532,87 +569,6 @@ when I get home.
 
 [0] ftp archive
     ftp://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/gopher/Unix/
-</pre>]]></description>
-</item>
-<item>
-  <title>The Left/</title>
-  <link>gopher://gopher.black/1/phlog/20180717-the-left/</link>
-  <pubdate>Tue, 17 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-The Left
-July 17th, 2018
-----------------------------------------
-
-I just received the following email on an account I have which
-monitors conservative political action. I have similar feelers
-into a few different areas so I can keep tabs on things. This one
-stood out, especially in light of Trump's recent meeting with
-Putin.
-
-
-----------------------------------------
-|   Authorized By Trump Headquarters   |
-----------------------------------------
-
-James,
-
-Have you seen the Democrats lately?
-
-They're completely unhinged.
-
-They’re all over this country vowing to go further and further to
-the Left. For weeks, they’ve been calling for harassment,
-intimidation, even the abolishment of ICE! Now, they’re promising
-to block President Trump’s Supreme Court nominee from ever
-reaching the bench.
-
-They want to ignore our laws, abuse our people, and obstruct our
-agenda by subjecting Judge Kavanaugh to a long, drawn out
-confirmation process.
-
-They think their new tactics will chase all “deplorables” into
-hiding… but the silent majority is not backing down. We’re getting
-together and we’re standing up. We’re knocking on doors and
-reaching voters for our National Week of Action to protect our
-President and make sure we win big in November.
-
-And we need YOU to join us by going door to door to spread our
-message
- 
-REGISTER TO VOLUNTEER
-
-James, the way I see it, if liberals want to come for our borders,
-for our jobs, and OUR Supreme Court, and they’re willing to stop
-at nothing to make that happen.
-
-We CAN win for the Silent Majority -- not by stooping down to the
-left’s level -- but by volunteering in your neighborhood to turn
-out voters and spread our positive message of putting America
-FIRST.
-
-Please, join us for the National Week of Action.
-
-Thank you,
-
-Chris Carr
-Donald J. Trump for President, Political Director
-
-------------------------------------------------------------------
-
-What struck me most was the blatant use of the Left as an entity
-of otherness. Notice that it's the Left coming for OUR borders,
-Supreme Court, laws, and jobs. The Left wants to abuse OUR people.
-This is an interesting and dangerous shift in rhetoric. It is
-essentially calling liberals anti-American and digging deeper the
-divide.
-
-In a similar email last month the language used was based on
-fighting, shooting, and violence in general. "Strike back!" they
-cheer.
-
-This is the stuff that later generations will point to with
-disgust and say, "how did they not see it coming?"
 </pre>]]></description>
 </item>
 </channel>
