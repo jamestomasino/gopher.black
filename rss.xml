@@ -34,7 +34,7 @@ rise of the agrarian renaissance. Hold on to your butts, we're
 going for a ride.
 
 
-== Time Travel == 
+== Time Travel ==
 
 In 1985 Back to the Future was released. Apart from it being
 a nearly flawless film giving us endless quotability and
@@ -101,7 +101,7 @@ otherwise. Simple, right?
 So, it with all of this in mind that I proclaim with all the
 seriousness of IHOP rebranding as IHOb that "The Future" must
 definitively refer to 1985 and nothing else or it will become
-meaningless once again. 
+meaningless once again.
 
 Being that the definition of definition is (yes, tautology again),
 "a statement of the meaning of a word or word group or a sign or
@@ -129,7 +129,7 @@ scientific, calculated, or reactive. They don't attempt to
 describe us while we are still in the act of being. They describe
 the past, or they describe the calendar of the present.
 Uncertainty clouds the present and the days ahead and puts us back
-into nonsense-words again, right? 
+into nonsense-words again, right?
 
 What if we chose a nonsense word for the times we're in and the
 times to come that wasn't bland or neutral, but instead one that
@@ -165,6 +165,43 @@ god-damned high fives in my book.
 Agrestic. Say it with me. It may not be a word (it really, really
 is a word), but that doesn't matter. It's in your head and it's in
 my head and it's more fucking real than a flux capacitor.
+</pre>]]></description>
+</item>
+<item>
+  <title>X11forward/</title>
+  <link>gopher://gopher.black/1/phlog/20180816-x11forward/</link>
+  <pubdate>Thu, 16 Aug 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+X11Forward
+August 16th, 2018
+----------------------------------------
+
+Today I tried in vain to accomplish something that should be
+relatively simple: to share my clipboard with remote terminal
+sessions.
+
+Here's the scenario I'm in:
+ - I'm using a MacBook Air (work machine)
+ - I mosh to gopher.black (raspberry pi)
+ - I use tmux
+
+This shouldn't be so difficult, but it is. Here's a list of
+problems I've run into (and fixes):
+ - macOS needs X installed first (XQuartz installed)
+ - mosh doesn't seem to do x11 forwarding (used ssh -X or ssh -Y)
+ - remote ssh didn't allow x11 forwarding (edited sshd_config)
+ - local ssh config didn't allow x11 forwarding (edit .ssh/config)
+
+After all that, I now successfully can see a $DISPLAY on the
+remote when I connect! Hooray!
+
+But what's this? Copying something with xsel on the remote does
+a whole load of nothing? Awesome.
+
+Somedays I feel like I'm crushing this whole computer thing. Some
+days I just want to walk out into the woods and build a cabin.
+I think I'm gonna go read some Thoreau.
 </pre>]]></description>
 </item>
 <item>
@@ -244,7 +281,7 @@ others as well, and so I added some language to the top on how to
 get new sites added. Inclusion on my aggregator is open to all, as
 long as your phlog is in a format that moku-pona can handle.
 I don't want to be a barrier to finding gopher content; I want to
-be an easy entry-point. 
+be an easy entry-point.
 
 [3] gopher.black phlog roll
     gopher://gopher.black/1/moku-pona
@@ -357,7 +394,7 @@ before heading to New Jersey where we both completed high school.
 
 That was enough for my Sister. She went to college back in
 Youngstown and never left again. All the years growing up she
-talked about going "back" and she didn't hesitate. 
+talked about going "back" and she didn't hesitate.
 
 I took the other approach. Growing up away from extended family,
 I learned to love the move. After high school I did a brief stint
@@ -582,7 +619,7 @@ change the outcomes, they will change the world, but not by
 galavanting off to the next town on a whim. I'm thinking the
 setting won't even have another town! I'm thinking of something
 otherworldly with a mist of unknown descending upon a remote
-hamlet. Adventure is survival in the face of mystery. 
+hamlet. Adventure is survival in the face of mystery.
 
 And what fun it will be to create a real mystery, or series of
 mysteries, for the characters to figure out and explore. If my
@@ -678,25 +715,6 @@ July 20th, 2018
 This is just a reminder:
 
 Do the hard thing.
-</pre>]]></description>
-</item>
-<item>
-  <title>Gopher Ftp Find/</title>
-  <link>gopher://gopher.black/1/phlog/20180720-gopher-ftp-find/</link>
-  <pubdate>Fri, 20 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Gopher ftp find
-July 20th, 2018
-----------------------------------------
-
-@sparcipx@mastodon.sdf.org found a really nice treasure trove of
-gopher goodies on an ftp server [0]. I'm out of the house, so I'm
-writing this to remind myself to do some archiving of the content
-when I get home.
-
-[0] ftp archive
-    ftp://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/gopher/Unix/
 </pre>]]></description>
 </item>
 </channel>

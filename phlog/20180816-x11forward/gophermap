@@ -1,0 +1,30 @@
+i----------------------------------------		gopher.black	70
+iX11Forward		gopher.black	70
+iAugust 16th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iToday I tried in vain to accomplish something that should be		gopher.black	70
+irelatively simple: to share my clipboard with remote terminal		gopher.black	70
+isessions.		gopher.black	70
+i		gopher.black	70
+iHere's the scenario I'm in:		gopher.black	70
+i - I'm using a MacBook Air (work machine)		gopher.black	70
+i - I mosh to gopher.black (raspberry pi)		gopher.black	70
+i - I use tmux		gopher.black	70
+i		gopher.black	70
+iThis shouldn't be so difficult, but it is. Here's a list of		gopher.black	70
+iproblems I've run into (and fixes):		gopher.black	70
+i - macOS needs X installed first (XQuartz installed)		gopher.black	70
+i - mosh doesn't seem to do x11 forwarding (used ssh -X or ssh -Y)		gopher.black	70
+i - remote ssh didn't allow x11 forwarding (edited sshd_config)		gopher.black	70
+i - local ssh config didn't allow x11 forwarding (edit .ssh/config)		gopher.black	70
+i		gopher.black	70
+iAfter all that, I now successfully can see a $DISPLAY on the		gopher.black	70
+iremote when I connect! Hooray!		gopher.black	70
+i		gopher.black	70
+iBut what's this? Copying something with xsel on the remote does		gopher.black	70
+ia whole load of nothing? Awesome.		gopher.black	70
+i		gopher.black	70
+iSomedays I feel like I'm crushing this whole computer thing. Some		gopher.black	70
+idays I just want to walk out into the woods and build a cabin.		gopher.black	70
+iI think I'm gonna go read some Thoreau.		gopher.black	70
