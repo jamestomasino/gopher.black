@@ -1,0 +1,29 @@
+i----------------------------------------		gopher.black	70
+iweechat-android		gopher.black	70
+iAugust 25th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI just installed weechat-android on my phone and boy are my arms		gopher.black	70
+itired. Wait, no... I mean, boy was that easy! 		gopher.black	70
+i		gopher.black	70
+iI set up a relay:		gopher.black	70
+i		gopher.black	70
+i/secure set relaypass yourmom		gopher.black	70
+i/set relay.network.password "${sec.data.yourmom}"		gopher.black	70
+i/relay add weechat 9001		gopher.black	70
+i		gopher.black	70
+iThen I opened up port 9001:		gopher.black	70
+i		gopher.black	70
+isudo ufw allow 9001		gopher.black	70
+i		gopher.black	70
+iThen I went into my router and port forwarded 9001 to gopher.black		gopher.black	70
+i(which runs my weechat).		gopher.black	70
+i		gopher.black	70
+iI downloaded the app from the play store like a heathen (it's on		gopher.black	70
+if-droid too, or direct from github). Opened up the configuration		gopher.black	70
+isettings, clicked connect, and nothing worked!!!		gopher.black	70
+i		gopher.black	70
+iThen I closed the app, reopened it, and boom! Everything was fine.		gopher.black	70
+i		gopher.black	70
+iThe interface is great. Very intuitive for swiping around. If		gopher.black	70
+iyou're an IRC junky and use weechat, check it out.		gopher.black	70
