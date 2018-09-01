@@ -3,6 +3,64 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Letterboxing/</title>
+  <link>gopher://gopher.black/1/phlog/20180831-letterboxing/</link>
+  <pubdate>Fri, 31 Aug 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Letterboxing
+August 31st, 2018
+----------------------------------------
+
+Let me preface this by saying my snark here is entirely fictional
+and I have the greatest of respect for other people's hobbies...
+
+                *    *    *    *    *    *    
+                
+Geocaching is bullshit. Seriously? Let me poke in some numbers and
+walk there and boom! a seeeeeecret thing. Tada! (play "Link gets
+the triforce noise" in your head). Oh sure, there's clues to solve
+but at the end of the day the whole physical aspect of going
+somewhere could be removed and replaced with a checkbox that says,
+"Yep, got it."
+
+Now letterboxing... that's the shit right there. None of this
+fancy schmancy technology. Instead, good old fashioned vague
+pioneer directions like, "Go west-north-west for 45 paces until
+you near the tree that looks like an old man taking a piss."
+That's some real adventure! Not the old man taking a piss, the
+dire--you know what I mean. I love letterboxing. I will stamp the
+shit out of some letterboxes. I will leave hitchhikers along the
+way and have grand adventures in state parks. Mmmm, saucy hobby.
+
+The reason I bring this up is not to bash geocaching (though that
+was fun) but because Christy (who loves her some GPS) reminded me
+of an idea I had a while back for letterboxing which, I suppose,
+could be channelled for the dark arts in her hobby as well. My
+idea was to make a series of box challenges which led from one to
+the other and eventually were all pieced together into an Uber
+challenge. Not the car service kind, but like--you know what
+I mean.
+
+The theme was cryptography, which I felt was fitting. The simplest
+box used a Da Vinci cipher. The box then gave a piece of the
+puzzle to the next clue which was an Arnold cipher. Then on to
+a straddling checkerboard. Then the big one was a VIC cipher. And
+when you took the pieces from all the boxes together and
+concatenated all the strings you found, it would be a PGP key you
+could use to decode the final message to the final box.
+
+I got as far as that and some basic clue planning, then I got hung
+up on where I wanted to hide the boxes and never got around to
+doing it. So, if you are out there and you letterbox, please go
+ahead and steal my idea. I'd like to try and find your box
+(snicker). If you're a dirty geocacher, I guess you can do with it
+what you want... ugh.
+
+;)
+</pre>]]></description>
+</item>
+<item>
   <title>Weechat Android/</title>
   <link>gopher://gopher.black/1/phlog/20180825-weechat-android/</link>
   <pubdate>Sat, 25 Aug 2018 00:00:00 -0400</pubdate>
@@ -669,73 +727,6 @@ Yes yes... lots of plans coming to me. I'll need to start writing
 it all out, mapping out all the ideas, and then find the right
 group to explore it with me. Hopefully I can run this one soon.
 I really miss role playing.
-</pre>]]></description>
-</item>
-<item>
-  <title>Italian Citizenship/</title>
-  <link>gopher://gopher.black/1/phlog/20180721-italian-citizenship/</link>
-  <pubdate>Sat, 21 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Italian Citizenship
-July 21st, 2018
-----------------------------------------
-
-Today I am officially an Italian citizen. I went though an
-extremely long process to claim my citizenship via a process
-called jure sanguinis. I proved, in essence, that I have always
-been an Italian citizen by way of birth since my ancestor who
-immegrated had children before becoming naturalized. Thus, his
-kids were born as Italians on foreign soil.
-
-My son also has Italian citizenship as a result, and we're going
-to file for my wife to get hers via marriage. I'll be getting
-a second passport soon, and when the dust settles, we'll be
-leaving the United States.
-
-If you read this phlog, you probably already know that our
-destination is Iceland, which will allow me residency now since it
-is part of the Schengen Agreement, just like Italy. Moving to
-Iceland as an American is a giant pain in the butt, but as an
-Italian it should be quite simple.
-
-This made my whole day, obviously, but it also helps me out in
-some bigger stress areas. I've been stressing about what to do
-next in my career. I have an opportunity to potentially move into
-a CTO role with a startup, which fascinates me and would challenge
-me quite a bit. It would also be an increased investment on my
-time, and I already work a lot. The job I'm at now is wearing on
-me more and more, and I don't see it as sustainable for very much
-longer. The move to Iceland represents a refocusing of priorities
-off of work and onto life. I'm planning on taking a significant
-pay cut, living more simply, and focusing on the family and
-hobbies. Since that timeline is finally "for real", it means that
-my current work troubles have an end in sight. That is powerful.
-
-While I finish getting all the papers in order for the family,
-we'll also be selling our house and moving into a much smaller
-apartment. We'll get rid of most of our things, place most of the
-leftovers into storage, and live on what we intend to ship. Once
-all that's in place, I'll be quitting my job, heading to Iceland
-on my own ahead of the family, and we'll live off the house sale
-money until I can find a new job, get us a new apartment, and
-arrange to move them over and meet me.
-
-I'm utterly thrilled!
-
-Oh, if any of you reading this are Icelandic, live or know someone
-in Iceland, or in any way could help me find something
-code-related to do in Iceland to get us settled I'd be extremely
-grateful. I run a technology team of web developers, front & back
-end. I also act as the digital strategy lead (pharmaceutical
-marketing) and head of analytics & reporting. I can code in JS
-extremely well, and prefer using vue, but can learn whatever. My
-php & python skills are a little rusty, but I can jump back into
-that in a heartbeat. Ruby? I guess I could do that too. I'm not
-much of a windows development guy, though.
-
-Need a programmer? Need someone to run a dev team? Need an
-analyst? I'm also good at balancing stuff on my chin!
 </pre>]]></description>
 </item>
 </channel>
