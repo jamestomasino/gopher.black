@@ -3,7 +3,36 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
-  <title>3d Printing</title>
+  <title>Blogging/</title>
+  <link>gopher://gopher.black/1/phlog/20180904-blogging/</link>
+  <pubdate>Tue, 04 Sep 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Blogging
+September 04th, 2018
+----------------------------------------
+
+So I just published a regular old boring blog post and now I feel
+dirty. I mean, not really, but I do feel something. I think it's
+frustration or annoyance. You see, I wanted to open the blog with
+a screenplay style intro, but it turned out to be painfully
+difficult. I'm using Hugo which in turn uses markdown for
+formatting and generally that's just fine. But in this case
+I wanted to do some very specific text formatting that would have
+been obvious and immediate in gopher but which took me five or six
+iterations to figure out over there.
+
+But it has a picture! :/ Meh, I guess so. More-over, the content
+fit the theme of another blog post I wrote about Clue (this one is
+about Guess Who, btw). It made sense to put it on the web.
+
+I guess it once again illustrates why I prefer gopher. I can just
+write stuff here and I'm done. In the world of HTTP I need to
+massage stuff, play with themes, etc. Moops to that.
+</pre>]]></description>
+</item>
+<item>
+  <title>3d Printing/</title>
   <link>gopher://gopher.black/1/phlog/20180901-3d-printing/</link>
   <pubdate>Sat, 01 Sep 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -46,7 +75,7 @@ it all in the same day. That's some agrestic shit right there [0].
 </pre>]]></description>
 </item>
 <item>
-  <title>Letterboxing</title>
+  <title>Letterboxing/</title>
   <link>gopher://gopher.black/1/phlog/20180831-letterboxing/</link>
   <pubdate>Fri, 31 Aug 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -104,7 +133,7 @@ what you want... ugh.
 </pre>]]></description>
 </item>
 <item>
-  <title>Weechat Android</title>
+  <title>Weechat Android/</title>
   <link>gopher://gopher.black/1/phlog/20180825-weechat-android/</link>
   <pubdate>Sat, 25 Aug 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -140,7 +169,7 @@ you're an IRC junky and use weechat, check it out.
 </pre>]]></description>
 </item>
 <item>
-  <title>The Agrestic</title>
+  <title>The Agrestic/</title>
   <link>gopher://gopher.black/1/phlog/20180824-the-agrestic/</link>
   <pubdate>Fri, 24 Aug 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -305,7 +334,7 @@ my head and it's more fucking real than a flux capacitor.
 </pre>]]></description>
 </item>
 <item>
-  <title>X11forward</title>
+  <title>X11forward/</title>
   <link>gopher://gopher.black/1/phlog/20180816-x11forward/</link>
   <pubdate>Thu, 16 Aug 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -342,7 +371,7 @@ I think I'm gonna go read some Thoreau.
 </pre>]]></description>
 </item>
 <item>
-  <title>Gopher Rings</title>
+  <title>Gopher Rings/</title>
   <link>gopher://gopher.black/1/phlog/20180811-gopher-rings/</link>
   <pubdate>Sat, 11 Aug 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -433,7 +462,7 @@ see something missing.
 </pre>]]></description>
 </item>
 <item>
-  <title>Data Security Ratings</title>
+  <title>Data Security Ratings/</title>
   <link>gopher://gopher.black/1/phlog/20180810-data-security-ratings/</link>
   <pubdate>Fri, 10 Aug 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -504,7 +533,7 @@ fall victim to simple scams.
 </pre>]]></description>
 </item>
 <item>
-  <title>Reunion</title>
+  <title>Reunion/</title>
   <link>gopher://gopher.black/1/phlog/20180806-reunion/</link>
   <pubdate>Mon, 06 Aug 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -599,7 +628,7 @@ At the reunion itself we had a few fun surprises:
 </pre>]]></description>
 </item>
 <item>
-  <title>Tabs Vs Spaces</title>
+  <title>Tabs Vs Spaces/</title>
   <link>gopher://gopher.black/1/phlog/20180729-tabs-vs-spaces/</link>
   <pubdate>Sun, 29 Jul 2018 00:00:00 -0400</pubdate>
   <description><![CDATA[<pre>
@@ -670,32 +699,6 @@ So, in summary: I don't care how you wanted your code to be
 viewed. I want to view it the way I prefer, which lets me work
 faster and easier. Use a tab. Let me set my own definition for
 what that means.
-</pre>]]></description>
-</item>
-<item>
-  <title>Gopherpedia</title>
-  <link>gopher://gopher.black/1/phlog/20180726-gopherpedia/</link>
-  <pubdate>Thu, 26 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Gopherpedia
-July 26th, 2018
-----------------------------------------
-
-I'm having a little squee party. Sometimes I like to pop over to
-gopherpedia [0] and see what people have recently been viewing.
-Unlike wikipedia which gets a lot of traffic, our gopher corner is
-relatively quiet. Of note today was someone who viewed both the
-book 1984 and the list of Newspeak words. That caught my eye since
-they're related and I amused myself with wondering which of my
-gopher friends it was and what they were up to.
-
-The culprit has revealed himself [1]!!!
-
-[0] Gopherpedia
-    gopher://gopherpedia.com/1/
-[1] On web as newspeak
-    gopher://1436.ninja/0/phlog/typezero/20180726.post
 </pre>]]></description>
 </item>
 </channel>
