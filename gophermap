@@ -1,40 +1,41 @@
-i                     |             |    |           |	
-i       _` |  _ \ _ \   \   -_)  _|  _ \ |  _` |  _| | /	
-i     \__, |\___/.__/_| _|\___|_|_)_.__/_|\__,_|\__|_\_\	
-i     ____/     _|	
-i	
-i     Onion Address: gopher://blackgviz2y4nhrd.onion	
-i	
-i     ==== Last Updated: September 04th, 2018 ====		gopher.black	70
-i	
+i                     |             |    |           |		gopher.black	70
+i       _` |  _ \ _ \   \   -_)  _|  _ \ |  _` |  _| | /		gopher.black	70
+i     \__, |\___/.__/_| _|\___|_|_)_.__/_|\__,_|\__|_\_\		gopher.black	70
+i     ____/     _|		gopher.black	70
+i		gopher.black	70
+i     Onion Address: gopher://blackgviz2y4nhrd.onion		gopher.black	70
+i		gopher.black	70
+i     ==== Last Updated: September 07th, 2018 ====		gopher.black	70
+i		gopher.black	70
 1About	/about
-i	
-i==== Content ====	
+i		gopher.black	70
+i==== Content ====		gopher.black	70
 1Phlog	/phlog
 1Writing	/writing
 1Explorations	/explorations
-i	
+1Choose Your Own Adventure (anonradio)	/cyoa
+i		gopher.black	70
 1Recipes	/recipebox
 1Games	/games
-i	
-i==== Resources ====	
+i		gopher.black	70
+i==== Resources ====		gopher.black	70
 1The Bible (ESV)	/bible
 1Archives	/archive
-i	
-i==== Books ====	
+i		gopher.black	70
+i==== Books ====		gopher.black	70
 0Reading	/reading/currentbooks.txt
 0Read	/reading/recentbooks.txt
-i	
-i==== Software and Tech Things ====	
+i		gopher.black	70
+i==== Software and Tech Things ====		gopher.black	70
 hBurrow - Gopher Helper	URL:http://gitlab.com/jamestomasino/burrow
 0Phlog RSS Feed	/rss.xml
-i	
-i==== External Resources ====	
+i		gopher.black	70
+i==== External Resources ====		gopher.black	70
 1Phlogs	/phlogs
 1Gopher Places	/places
 1Web Places	/http
-i	
-i==== Websites ====	
+i		gopher.black	70
+i==== Websites ====		gopher.black	70
 hAll Sites	URL:http://www.tomasino.org/
 hBlog	URL:http://blog.tomasino.org/
 hLabs Blog	URL:http://labs.tomasino.org/
