@@ -3,6 +3,68 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Anonradio Show</title>
+  <link>gopher://gopher.black/1/phlog/20180907-anonradio-show/</link>
+  <pubdate>Fri, 07 Sep 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+aNONradio show
+September 07th, 2018
+----------------------------------------
+
+Yesterday cat posted on Mastodon that someone should jump on
+openVOIP and monologue. That sounded like a great idea and
+I wasn't busy, so I decided I'd go for it. My first thought was
+that I'd read some Virgil or maybe Bronte. I walked into my dining
+room which has the main collection of our books and looked over my
+shelves for something good. Boy Scout Handbook... Nimzowitsch...
+Harry Potter in Latin... ahh, here we are:
+
+ZORK #4: Conquest at Quendor
+
+Is there a more perfect book for the SDF crew than a choose your
+own adventure ZORK? I snapped a quick picture of the cover and
+posted it to mastodon, then walked upstairs to my office. A note
+on IRC or two and I was dialing in to the openVOIP line. At first
+there was some sort of text adventure being played out with
+Daniel's robot voice narrating it. That wrapped up and I got
+started.
+
+It was awkward, silly, and entirely too much fun. Instead of
+picking the choices in the book myself I tossed them out to the
+crowd to chime in. The engagement from people in com, mastodon,
+and IRC made the experience for me. I was riding a high afterwards
+and talked myself into doing it again. This time, though, I'll do
+it right.
+
+The anonradio mailing list folks agreed that the show was worthy
+of a time slot, so now on Thursday nights/Friday mornings at 0100
+UTC, or 9PM EST, I'll be continuing our adventures. This first
+"real" show I'll finish up the ZORK story so I don't leave
+everyone hanging, and then we'll start a new adventure. I don't
+know that I'll make a point of finishing the adventures or not. If
+time runs out I may just start a new one the next week instead of
+trying to pick up again. On the one hand, it's nice to have some
+completion, but these are books designed to be tried again and
+again. Also, the authors aren't getting paid for this beyond me
+buying a book or two, so I like the idea of enticing people with
+the show so that they might go out and pick up a copy if they
+enjoy it. That makes the whole thing seem much more legit, right?
+
+To support the new show I've added a new section to my gopher
+hole. You can find it on the root gophermap and here: 
+Choose Your Own Adventure (anonradio)
+    gopher://gopher.black/1/cyoa
+
+For those who want to check it out, details about the first real
+episode can be found here:
+Episode 001 (2018-09-14)
+    gopher://gopher.black/0/cyoa/2018-09-14-episode-001.txt
+
+Please join me next week for the first show!
+</pre>]]></description>
+</item>
+<item>
   <title>Blogging</title>
   <link>gopher://gopher.black/1/phlog/20180904-blogging/</link>
   <pubdate>Tue, 04 Sep 2018 00:00:00 -0400</pubdate>
@@ -625,80 +687,6 @@ At the reunion itself we had a few fun surprises:
 
 [1] Baby Doll Dance
     http://www.youtube.com/watch?v=8xyZRLwZSkU#t=1m
-</pre>]]></description>
-</item>
-<item>
-  <title>Tabs Vs Spaces</title>
-  <link>gopher://gopher.black/1/phlog/20180729-tabs-vs-spaces/</link>
-  <pubdate>Sun, 29 Jul 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Tabs vs spaces
-July 29th, 2018
-----------------------------------------
-
-There's a post on lobste.rs right now [0] about tabs & spaces.
-Don't go read it, there's no point. You've already read everything
-there is to be said on the subject. Seriously. Don't follow this
-link to the lobste.rs comments either.
-[0] Elastic tabstops - a better way to indent and align code (comments)
-    gopher://sdf.org/0/users/julienxx/Lobste.rs/1ugcr4.txt
-
-I don't think I have an official Opinion(TM) already floating out
-there in the inter-ether, so I'll use this opportunity to give my
-two cents. I'm pro tabs, with caveats.
-
-I'll start with the caveats because they're the easy part. I will
-use spaces in any of the following situations:
-
-  - The language spec calls for spaces (i.e., python)
-  - The team styleguide calls for spaces
-  - The codebase I'm interacting with has already established the
-    use of spaces over tabs
-  - I'm working with someone who is a die-hard advocate for spaces
-    and won't shut up about it unless I just give in
-
-Here's why I prefer tabs:
-
-Indentation distance is a visual preference which should be
-enforced by the person working with the code, not the maintainer
-of the code. If I want to develop using eight spaces as the visual
-indentation of blocks, then I should do that. There is no valid
-reason(*) that my personal choice of tabstop should be followed by
-any other developer who is also working with this code. But how
-can we both get it the way we want and not have to constantly
-battle over the indentation style? What method could we possibly
-use? Oh right... a fucking tab.
-
-Tabs can be set to visually show up at whatever distance you want.
-If you like a tiny tiny little increment, set a tabstop to two
-characters, or even 1! If you like a giant leap along the line, go
-for eight, or ten, or whatever. That's it. Just set it up how you
-want to see it.
-
-There's another reason, though I consider it of less importance.
-A tab is a single character. Spaces are multiple characters. Why
-add multiple characters to something when you don't have to?
-Semantically, indent with the single character that accomplishes
-that. Then you're done. Tada!
-
-(*) I must address the usual counter-argument here: the alignment
-of parameters, equal signs, or other nonsense that cascades down
-from an arbitrary point on the line. Spaces can make everything
-pretty, like ascii art. That's a plus! If we use tabs we can't do
-that and we'd have to suffer endlessly with vertically listed
-parameters that don't line up with the spot where the first
-parameter fell naturally on the line. This is true. I think using
-a single flexible character for code indentation that lets people
-do things their own way far outweighs code knolling [1].
-
-[1] Knolling
-    http://mitphoto2016.wordpress.com/2016/09/19/knolling-messy-vs-neat/
-
-So, in summary: I don't care how you wanted your code to be
-viewed. I want to view it the way I prefer, which lets me work
-faster and easier. Use a tab. Let me set my own definition for
-what that means.
 </pre>]]></description>
 </item>
 </channel>
