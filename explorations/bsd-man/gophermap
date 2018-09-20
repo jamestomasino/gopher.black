@@ -10,7 +10,7 @@ i  cat          - read		gopher.black	70
 i  chgrp        - read		gopher.black	70
 1  chio         - read	chio.txt
 i  chmod        - read		gopher.black	70
-i  cksum		gopher.black	70
+1  cksum        - read	cksum.txt
 i  cp		gopher.black	70
 i  cpio		gopher.black	70
 i  csh		gopher.black	70
