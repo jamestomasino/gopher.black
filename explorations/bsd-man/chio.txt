@@ -1,0 +1,6 @@
+What on earth is a medium changer? Jukeboxes!? really? This is
+a core program in OpenBSD somehow? That's amazing.
+
+Now I'm curious. Are optical disk jukeboxes a thing anymore?
+
+Maybe I should email the author (thorpej@and.com) and find out?
