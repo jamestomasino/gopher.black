@@ -11,8 +11,8 @@ i  chgrp        - read		gopher.black	70
 0  chio         - read	chio.txt
 i  chmod        - read		gopher.black	70
 0  cksum        - read	cksum.txt
-i  cp		gopher.black	70
-i  cpio		gopher.black	70
+i  cp           - read		gopher.black	70
+0  cpio         - in progress	cpio.txt
 i  csh		gopher.black	70
 i  date		gopher.black	70
 i  dd		gopher.black	70
