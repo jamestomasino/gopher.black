@@ -1,0 +1,28 @@
+Checksums look like they could use some practice. I see how to
+manually run a sha1 checksum:
+
+cksum -a sha1 [file]
+
+I can visually inspect that, but I should be able to use the -c or
+-C checklist methods.
+
+It appears I can generate a hash file (the same as a checklist?)
+by doing:
+
+cksum -a sha1 -h [hashfile] [file]
+
+This creates the hashfile even if it's a new one and it has the
+same output format as stdout did. Now, how do I read that back in?
+
+cksum -a sha1 -c [hashfile] [file] spits out a ton of errors, so
+that's not it.
+
+OH!
+
+cksum -a sha1 -C [hashfile] [file]
+
+-or-
+
+cksum -a sha1 -c [hashfile]
+
+Sa-weet!
