@@ -8,8 +8,8 @@ i/bin:		gopher.black	70
 i  [            - read		gopher.black	70
 i  cat          - read		gopher.black	70
 i  chgrp        - read		gopher.black	70
-1  chio	chio.txt
-i  chmod		gopher.black	70
+1  chio         - read	chio.txt
+i  chmod        - read		gopher.black	70
 i  cksum		gopher.black	70
 i  cp		gopher.black	70
 i  cpio		gopher.black	70
