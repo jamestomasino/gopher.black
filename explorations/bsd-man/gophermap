@@ -1,380 +1,386 @@
+iOpenBSD programs installed by default in /bin and /usr/bin		gopher.black	70
+i		gopher.black	70
+iThis file tracks my progress in reading the full man pages of the		gopher.black	70
+ifollowing programs. Where necessary I'll make individual notes		gopher.black	70
+ipages on specific programs linked from this page.		gopher.black	70
+i		gopher.black	70
 i/bin:		gopher.black	70
-i[		gopher.black	70
-icat		gopher.black	70
-ichgrp		gopher.black	70
-ichio		gopher.black	70
-ichmod		gopher.black	70
-icksum		gopher.black	70
-icp		gopher.black	70
-icpio		gopher.black	70
-icsh		gopher.black	70
-idate		gopher.black	70
-idd		gopher.black	70
-idf		gopher.black	70
-idomainname		gopher.black	70
-iecho		gopher.black	70
-ied		gopher.black	70
-ieject		gopher.black	70
-iexpr		gopher.black	70
-ihostname		gopher.black	70
-ikill		gopher.black	70
-iksh		gopher.black	70
-iln		gopher.black	70
-ils		gopher.black	70
-imd5		gopher.black	70
-imkdir		gopher.black	70
-imt		gopher.black	70
-imv		gopher.black	70
-ipax		gopher.black	70
-ips		gopher.black	70
-ipwd		gopher.black	70
-irksh		gopher.black	70
-irm		gopher.black	70
-irmdir		gopher.black	70
-ish		gopher.black	70
-isha1		gopher.black	70
-isha256		gopher.black	70
-isha512		gopher.black	70
-isleep		gopher.black	70
-istty		gopher.black	70
-isync		gopher.black	70
-itar		gopher.black	70
-itest		gopher.black	70
+i  [            - read		gopher.black	70
+i  cat          - read		gopher.black	70
+i  chgrp        - read		gopher.black	70
+i  chio		gopher.black	70
+i  chmod		gopher.black	70
+i  cksum		gopher.black	70
+i  cp		gopher.black	70
+i  cpio		gopher.black	70
+i  csh		gopher.black	70
+i  date		gopher.black	70
+i  dd		gopher.black	70
+i  df		gopher.black	70
+i  domainname		gopher.black	70
+i  echo		gopher.black	70
+i  ed		gopher.black	70
+i  eject		gopher.black	70
+i  expr		gopher.black	70
+i  hostname		gopher.black	70
+i  kill		gopher.black	70
+i  ksh		gopher.black	70
+i  ln		gopher.black	70
+i  ls		gopher.black	70
+i  md5		gopher.black	70
+i  mkdir		gopher.black	70
+i  mt		gopher.black	70
+i  mv		gopher.black	70
+i  pax		gopher.black	70
+i  ps		gopher.black	70
+i  pwd		gopher.black	70
+i  rksh		gopher.black	70
+i  rm		gopher.black	70
+i  rmdir		gopher.black	70
+i  sh		gopher.black	70
+i  sha1		gopher.black	70
+i  sha256		gopher.black	70
+i  sha512		gopher.black	70
+i  sleep		gopher.black	70
+i  stty		gopher.black	70
+i  sync		gopher.black	70
+i  tar		gopher.black	70
+i  test		gopher.black	70
 i		gopher.black	70
 i/usr/bin:		gopher.black	70
-iMail		gopher.black	70
-iaddr2line		gopher.black	70
-iapply		gopher.black	70
-iapropos		gopher.black	70
-iar		gopher.black	70
-iarch		gopher.black	70
-ias		gopher.black	70
-iat		gopher.black	70
-iatq		gopher.black	70
-iatrm		gopher.black	70
-iaucat		gopher.black	70
-iaudioctl		gopher.black	70
-iawk		gopher.black	70
-ib64decode		gopher.black	70
-ib64encode		gopher.black	70
-ibanner		gopher.black	70
-ibasename		gopher.black	70
-ibatch		gopher.black	70
-ibc		gopher.black	70
-ibgplgsh		gopher.black	70
-ibiff		gopher.black	70
-ic++		gopher.black	70
-ic++filt		gopher.black	70
-ic2ph		gopher.black	70
-ical		gopher.black	70
-icalendar		gopher.black	70
-icap_mkdb		gopher.black	70
-icaptoinfo		gopher.black	70
-icc		gopher.black	70
-icdio		gopher.black	70
-ichflags		gopher.black	70
-ichfn		gopher.black	70
-ichpass		gopher.black	70
-ichsh		gopher.black	70
-ici		gopher.black	70
-iclang		gopher.black	70
-iclang++		gopher.black	70
-iclang-cpp		gopher.black	70
-iclear		gopher.black	70
-icmp		gopher.black	70
-ico		gopher.black	70
-icol		gopher.black	70
-icolrm		gopher.black	70
-icolumn		gopher.black	70
-icomm		gopher.black	70
-icompress		gopher.black	70
-icorelist		gopher.black	70
-icpan		gopher.black	70
-icpp		gopher.black	70
-icrontab		gopher.black	70
-icsplit		gopher.black	70
-ictags		gopher.black	70
-ictfconv		gopher.black	70
-ictfdump		gopher.black	70
-ictfstrip		gopher.black	70
-icu		gopher.black	70
-icut		gopher.black	70
-icvs		gopher.black	70
-icvsbug		gopher.black	70
-idc		gopher.black	70
-ideroff		gopher.black	70
-idiff		gopher.black	70
-idiff3		gopher.black	70
-idirname		gopher.black	70
-idoas		gopher.black	70
-idu		gopher.black	70
-iegrep		gopher.black	70
-ienc2xs		gopher.black	70
-iencguess		gopher.black	70
-iencrypt		gopher.black	70
-ienv		gopher.black	70
-iex		gopher.black	70
-iexpand		gopher.black	70
-ifalse		gopher.black	70
-ifgen		gopher.black	70
-ifgrep		gopher.black	70
-ifile		gopher.black	70
-ifind		gopher.black	70
-ifinger		gopher.black	70
-iflex		gopher.black	70
-iflex++		gopher.black	70
-ifmt		gopher.black	70
-ifold		gopher.black	70
-ifrom		gopher.black	70
-ifstat		gopher.black	70
-iftp		gopher.black	70
-ifuser		gopher.black	70
-ig++		gopher.black	70
-igcc		gopher.black	70
-igcov		gopher.black	70
-igdb		gopher.black	70
-igencat		gopher.black	70
-igetcap		gopher.black	70
-igetconf		gopher.black	70
-igetent		gopher.black	70
-igetopt		gopher.black	70
-igprof		gopher.black	70
-igrep		gopher.black	70
-igroups		gopher.black	70
-igunzip		gopher.black	70
-igzcat		gopher.black	70
-igzexe		gopher.black	70
-igzip		gopher.black	70
-ih2ph		gopher.black	70
-ih2xs		gopher.black	70
-ihead		gopher.black	70
-ihelp		gopher.black	70
-ihexdump		gopher.black	70
-ihoststat		gopher.black	70
-ihtpasswd		gopher.black	70
-id		gopher.black	70
-ident		gopher.black	70
-indent		gopher.black	70
-info		gopher.black	70
-infocmp		gopher.black	70
-infokey		gopher.black	70
-infotocap		gopher.black	70
-install		gopher.black	70
-install-info		gopher.black	70
-instmodsh		gopher.black	70
-ipcrm		gopher.black	70
-ipcs		gopher.black	70
-ijoin		gopher.black	70
-ijot		gopher.black	70
-ikdump		gopher.black	70
-ikeynote		gopher.black	70
-iktrace		gopher.black	70
-ilam		gopher.black	70
-ilast		gopher.black	70
-ilastcomm		gopher.black	70
-ild		gopher.black	70
-ild.lld		gopher.black	70
-ildd		gopher.black	70
-ileave		gopher.black	70
-iless		gopher.black	70
-ilesskey		gopher.black	70
-ilex		gopher.black	70
-ilibnetcfg		gopher.black	70
-ilibtool		gopher.black	70
-ilndir		gopher.black	70
-ilocale		gopher.black	70
-ilocate		gopher.black	70
-ilock		gopher.black	70
-ilogger		gopher.black	70
-ilogin		gopher.black	70
-ilogname		gopher.black	70
-ilook		gopher.black	70
-ilorder		gopher.black	70
-ilpq		gopher.black	70
-ilpr		gopher.black	70
-ilprm		gopher.black	70
-iltrace		gopher.black	70
-im4		gopher.black	70
-imachine		gopher.black	70
-imail		gopher.black	70
-imailq		gopher.black	70
-imailx		gopher.black	70
-imake		gopher.black	70
-imakeinfo		gopher.black	70
-iman		gopher.black	70
-imandoc		gopher.black	70
-imerge		gopher.black	70
-imesg		gopher.black	70
-img		gopher.black	70
-imidiplay		gopher.black	70
-imixerctl		gopher.black	70
-imkdep		gopher.black	70
-imklocale		gopher.black	70
-imktemp		gopher.black	70
-imore		gopher.black	70
-inc		gopher.black	70
-inetstat		gopher.black	70
-inewaliases		gopher.black	70
-inewsyslog		gopher.black	70
-infsstat		gopher.black	70
-inice		gopher.black	70
-inl		gopher.black	70
-inm		gopher.black	70
-inohup		gopher.black	70
-iobjcopy		gopher.black	70
-iobjdump		gopher.black	70
-iod		gopher.black	70
-iopencvs		gopher.black	70
-iopenssl		gopher.black	70
-iopenup		gopher.black	70
-iotp-md5		gopher.black	70
-iotp-rmd160		gopher.black	70
-iotp-sha1		gopher.black	70
-ipagesize		gopher.black	70
-ipasswd		gopher.black	70
-ipaste		gopher.black	70
-ipatch		gopher.black	70
-ipctr		gopher.black	70
-iperl		gopher.black	70
-iperlbug		gopher.black	70
-iperldoc		gopher.black	70
-iperlivp		gopher.black	70
-ipgrep		gopher.black	70
-ipiconv		gopher.black	70
-ipkg-config		gopher.black	70
-ipkill		gopher.black	70
-ipl2pm		gopher.black	70
-ipod2html		gopher.black	70
-ipod2man		gopher.black	70
-ipod2text		gopher.black	70
-ipod2usage		gopher.black	70
-ipodchecker		gopher.black	70
-ipodselect		gopher.black	70
-ipr		gopher.black	70
-iprintenv		gopher.black	70
-iprintf		gopher.black	70
-iprove		gopher.black	70
-ipstruct		gopher.black	70
-ipurgestat		gopher.black	70
-iquota		gopher.black	70
-iradioctl		gopher.black	70
-iranlib		gopher.black	70
-ircs		gopher.black	70
-ircs2log		gopher.black	70
-ircsclean		gopher.black	70
-ircsdiff		gopher.black	70
-ircsmerge		gopher.black	70
-irdist		gopher.black	70
-irdistd		gopher.black	70
-irdsetroot		gopher.black	70
-ireadelf		gopher.black	70
-ireadlink		gopher.black	70
-irenice		gopher.black	70
-ireset		gopher.black	70
-irev		gopher.black	70
-irlog		gopher.black	70
-irpcgen		gopher.black	70
-irpcinfo		gopher.black	70
-irs		gopher.black	70
-irup		gopher.black	70
-irusers		gopher.black	70
-irwall		gopher.black	70
-iscp		gopher.black	70
-iscript		gopher.black	70
-isdiff		gopher.black	70
-ised		gopher.black	70
-isendbug		gopher.black	70
-isftp		gopher.black	70
-ishar		gopher.black	70
-ishowmount		gopher.black	70
-isignify		gopher.black	70
-isize		gopher.black	70
-iskey		gopher.black	70
-iskeyaudit		gopher.black	70
-iskeyinfo		gopher.black	70
-iskeyinit		gopher.black	70
-iskeyprune		gopher.black	70
-isndiod		gopher.black	70
-isort		gopher.black	70
-ispell		gopher.black	70
-isplain		gopher.black	70
-isplit		gopher.black	70
-issh		gopher.black	70
-issh-add		gopher.black	70
-issh-agent		gopher.black	70
-issh-keygen		gopher.black	70
-issh-keyscan		gopher.black	70
-istat		gopher.black	70
-istrings		gopher.black	70
-istrip		gopher.black	70
-isu		gopher.black	70
-isystat		gopher.black	70
-itail		gopher.black	70
-italk		gopher.black	70
-itcpbench		gopher.black	70
-itee		gopher.black	70
-itelnet		gopher.black	70
-itexi2dvi		gopher.black	70
-itexi2pdf		gopher.black	70
-itexindex		gopher.black	70
-itftp		gopher.black	70
-itic		gopher.black	70
-itime		gopher.black	70
-itmux		gopher.black	70
-itop		gopher.black	70
-itouch		gopher.black	70
-itput		gopher.black	70
-itr		gopher.black	70
-itrue		gopher.black	70
-itset		gopher.black	70
-itsort		gopher.black	70
-itty		gopher.black	70
-iul		gopher.black	70
-iuname		gopher.black	70
-iuncompress		gopher.black	70
-iunexpand		gopher.black	70
-iunifdef		gopher.black	70
-iuniq		gopher.black	70
-iunits		gopher.black	70
-iunvis		gopher.black	70
-iuptime		gopher.black	70
-iusbhidaction		gopher.black	70
-iusbhidctl		gopher.black	70
-iusers		gopher.black	70
-iuudecode		gopher.black	70
-iuuencode		gopher.black	70
-ivacation		gopher.black	70
-ivi		gopher.black	70
-iview		gopher.black	70
-ivis		gopher.black	70
-ivmstat		gopher.black	70
-iw		gopher.black	70
-iwall		gopher.black	70
-iwc		gopher.black	70
-iwhat		gopher.black	70
-iwhatis		gopher.black	70
-iwhereis		gopher.black	70
-iwhich		gopher.black	70
-iwho		gopher.black	70
-iwhoami		gopher.black	70
-iwhois		gopher.black	70
-iwrite		gopher.black	70
-ix99token		gopher.black	70
-ixargs		gopher.black	70
-ixsubpp		gopher.black	70
-iyacc		gopher.black	70
-iyes		gopher.black	70
-iypcat		gopher.black	70
-iypmatch		gopher.black	70
-iypwhich		gopher.black	70
-iyyfix		gopher.black	70
-izcat		gopher.black	70
-izcmp		gopher.black	70
-izdiff		gopher.black	70
-izegrep		gopher.black	70
-izfgrep		gopher.black	70
-izforce		gopher.black	70
-izgrep		gopher.black	70
-izless		gopher.black	70
-izmore		gopher.black	70
-iznew		gopher.black	70
+i  Mail		gopher.black	70
+i  addr2line		gopher.black	70
+i  apply		gopher.black	70
+i  apropos		gopher.black	70
+i  ar		gopher.black	70
+i  arch		gopher.black	70
+i  as		gopher.black	70
+i  at		gopher.black	70
+i  atq		gopher.black	70
+i  atrm		gopher.black	70
+i  aucat		gopher.black	70
+i  audioctl		gopher.black	70
+i  awk		gopher.black	70
+i  b64decode		gopher.black	70
+i  b64encode		gopher.black	70
+i  banner		gopher.black	70
+i  basename		gopher.black	70
+i  batch		gopher.black	70
+i  bc		gopher.black	70
+i  bgplgsh		gopher.black	70
+i  biff		gopher.black	70
+i  c++		gopher.black	70
+i  c++filt		gopher.black	70
+i  c2ph		gopher.black	70
+i  cal		gopher.black	70
+i  calendar		gopher.black	70
+i  cap_mkdb		gopher.black	70
+i  captoinfo		gopher.black	70
+i  cc		gopher.black	70
+i  cdio		gopher.black	70
+i  chflags		gopher.black	70
+i  chfn		gopher.black	70
+i  chpass		gopher.black	70
+i  chsh		gopher.black	70
+i  ci		gopher.black	70
+i  clang		gopher.black	70
+i  clang++		gopher.black	70
+i  clang-cpp		gopher.black	70
+i  clear		gopher.black	70
+i  cmp		gopher.black	70
+i  co		gopher.black	70
+i  col		gopher.black	70
+i  colrm		gopher.black	70
+i  column		gopher.black	70
+i  comm		gopher.black	70
+i  compress		gopher.black	70
+i  corelist		gopher.black	70
+i  cpan		gopher.black	70
+i  cpp		gopher.black	70
+i  crontab		gopher.black	70
+i  csplit		gopher.black	70
+i  ctags		gopher.black	70
+i  ctfconv		gopher.black	70
+i  ctfdump		gopher.black	70
+i  ctfstrip		gopher.black	70
+i  cu		gopher.black	70
+i  cut		gopher.black	70
+i  cvs		gopher.black	70
+i  cvsbug		gopher.black	70
+i  dc		gopher.black	70
+i  deroff		gopher.black	70
+i  diff		gopher.black	70
+i  diff3		gopher.black	70
+i  dirname		gopher.black	70
+i  doas		gopher.black	70
+i  du		gopher.black	70
+i  egrep		gopher.black	70
+i  enc2xs		gopher.black	70
+i  encguess		gopher.black	70
+i  encrypt		gopher.black	70
+i  env		gopher.black	70
+i  ex		gopher.black	70
+i  expand		gopher.black	70
+i  false		gopher.black	70
+i  fgen		gopher.black	70
+i  fgrep		gopher.black	70
+i  file		gopher.black	70
+i  find		gopher.black	70
+i  finger		gopher.black	70
+i  flex		gopher.black	70
+i  flex++		gopher.black	70
+i  fmt		gopher.black	70
+i  fold		gopher.black	70
+i  from		gopher.black	70
+i  fstat		gopher.black	70
+i  ftp		gopher.black	70
+i  fuser		gopher.black	70
+i  g++		gopher.black	70
+i  gcc		gopher.black	70
+i  gcov		gopher.black	70
+i  gdb		gopher.black	70
+i  gencat		gopher.black	70
+i  getcap		gopher.black	70
+i  getconf		gopher.black	70
+i  getent		gopher.black	70
+i  getopt		gopher.black	70
+i  gprof		gopher.black	70
+i  grep		gopher.black	70
+i  groups		gopher.black	70
+i  gunzip		gopher.black	70
+i  gzcat		gopher.black	70
+i  gzexe		gopher.black	70
+i  gzip		gopher.black	70
+i  h2ph		gopher.black	70
+i  h2xs		gopher.black	70
+i  head		gopher.black	70
+i  help		gopher.black	70
+i  hexdump		gopher.black	70
+i  hoststat		gopher.black	70
+i  htpasswd		gopher.black	70
+i  d		gopher.black	70
+i  dent		gopher.black	70
+i  ndent		gopher.black	70
+i  nfo		gopher.black	70
+i  nfocmp		gopher.black	70
+i  nfokey		gopher.black	70
+i  nfotocap		gopher.black	70
+i  nstall		gopher.black	70
+i  nstall-info		gopher.black	70
+i  nstmodsh		gopher.black	70
+i  pcrm		gopher.black	70
+i  pcs		gopher.black	70
+i  join		gopher.black	70
+i  jot		gopher.black	70
+i  kdump		gopher.black	70
+i  keynote		gopher.black	70
+i  ktrace		gopher.black	70
+i  lam		gopher.black	70
+i  last		gopher.black	70
+i  lastcomm		gopher.black	70
+i  ld		gopher.black	70
+i  ld.lld		gopher.black	70
+i  ldd		gopher.black	70
+i  leave		gopher.black	70
+i  less		gopher.black	70
+i  lesskey		gopher.black	70
+i  lex		gopher.black	70
+i  libnetcfg		gopher.black	70
+i  libtool		gopher.black	70
+i  lndir		gopher.black	70
+i  locale		gopher.black	70
+i  locate		gopher.black	70
+i  lock		gopher.black	70
+i  logger		gopher.black	70
+i  login		gopher.black	70
+i  logname		gopher.black	70
+i  look		gopher.black	70
+i  lorder		gopher.black	70
+i  lpq		gopher.black	70
+i  lpr		gopher.black	70
+i  lprm		gopher.black	70
+i  ltrace		gopher.black	70
+i  m4		gopher.black	70
+i  machine		gopher.black	70
+i  mail		gopher.black	70
+i  mailq		gopher.black	70
+i  mailx		gopher.black	70
+i  make		gopher.black	70
+i  makeinfo		gopher.black	70
+i  man		gopher.black	70
+i  mandoc		gopher.black	70
+i  merge		gopher.black	70
+i  mesg		gopher.black	70
+i  mg		gopher.black	70
+i  midiplay		gopher.black	70
+i  mixerctl		gopher.black	70
+i  mkdep		gopher.black	70
+i  mklocale		gopher.black	70
+i  mktemp		gopher.black	70
+i  more		gopher.black	70
+i  nc		gopher.black	70
+i  netstat		gopher.black	70
+i  newaliases		gopher.black	70
+i  newsyslog		gopher.black	70
+i  nfsstat		gopher.black	70
+i  nice		gopher.black	70
+i  nl		gopher.black	70
+i  nm		gopher.black	70
+i  nohup		gopher.black	70
+i  objcopy		gopher.black	70
+i  objdump		gopher.black	70
+i  od		gopher.black	70
+i  opencvs		gopher.black	70
+i  openssl		gopher.black	70
+i  openup		gopher.black	70
+i  otp-md5		gopher.black	70
+i  otp-rmd160		gopher.black	70
+i  otp-sha1		gopher.black	70
+i  pagesize		gopher.black	70
+i  passwd		gopher.black	70
+i  paste		gopher.black	70
+i  patch		gopher.black	70
+i  pctr		gopher.black	70
+i  perl		gopher.black	70
+i  perlbug		gopher.black	70
+i  perldoc		gopher.black	70
+i  perlivp		gopher.black	70
+i  pgrep		gopher.black	70
+i  piconv		gopher.black	70
+i  pkg-config		gopher.black	70
+i  pkill		gopher.black	70
+i  pl2pm		gopher.black	70
+i  pod2html		gopher.black	70
+i  pod2man		gopher.black	70
+i  pod2text		gopher.black	70
+i  pod2usage		gopher.black	70
+i  podchecker		gopher.black	70
+i  podselect		gopher.black	70
+i  pr		gopher.black	70
+i  printenv		gopher.black	70
+i  printf		gopher.black	70
+i  prove		gopher.black	70
+i  pstruct		gopher.black	70
+i  purgestat		gopher.black	70
+i  quota		gopher.black	70
+i  radioctl		gopher.black	70
+i  ranlib		gopher.black	70
+i  rcs		gopher.black	70
+i  rcs2log		gopher.black	70
+i  rcsclean		gopher.black	70
+i  rcsdiff		gopher.black	70
+i  rcsmerge		gopher.black	70
+i  rdist		gopher.black	70
+i  rdistd		gopher.black	70
+i  rdsetroot		gopher.black	70
+i  readelf		gopher.black	70
+i  readlink		gopher.black	70
+i  renice		gopher.black	70
+i  reset		gopher.black	70
+i  rev		gopher.black	70
+i  rlog		gopher.black	70
+i  rpcgen		gopher.black	70
+i  rpcinfo		gopher.black	70
+i  rs		gopher.black	70
+i  rup		gopher.black	70
+i  rusers		gopher.black	70
+i  rwall		gopher.black	70
+i  scp		gopher.black	70
+i  script		gopher.black	70
+i  sdiff		gopher.black	70
+i  sed		gopher.black	70
+i  sendbug		gopher.black	70
+i  sftp		gopher.black	70
+i  shar		gopher.black	70
+i  showmount		gopher.black	70
+i  signify		gopher.black	70
+i  size		gopher.black	70
+i  skey		gopher.black	70
+i  skeyaudit		gopher.black	70
+i  skeyinfo		gopher.black	70
+i  skeyinit		gopher.black	70
+i  skeyprune		gopher.black	70
+i  sndiod		gopher.black	70
+i  sort		gopher.black	70
+i  spell		gopher.black	70
+i  splain		gopher.black	70
+i  split		gopher.black	70
+i  ssh		gopher.black	70
+i  ssh-add		gopher.black	70
+i  ssh-agent		gopher.black	70
+i  ssh-keygen		gopher.black	70
+i  ssh-keyscan		gopher.black	70
+i  stat		gopher.black	70
+i  strings		gopher.black	70
+i  strip		gopher.black	70
+i  su		gopher.black	70
+i  systat		gopher.black	70
+i  tail		gopher.black	70
+i  talk		gopher.black	70
+i  tcpbench		gopher.black	70
+i  tee		gopher.black	70
+i  telnet		gopher.black	70
+i  texi2dvi		gopher.black	70
+i  texi2pdf		gopher.black	70
+i  texindex		gopher.black	70
+i  tftp		gopher.black	70
+i  tic		gopher.black	70
+i  time		gopher.black	70
+i  tmux		gopher.black	70
+i  top		gopher.black	70
+i  touch		gopher.black	70
+i  tput		gopher.black	70
+i  tr		gopher.black	70
+i  true		gopher.black	70
+i  tset		gopher.black	70
+i  tsort		gopher.black	70
+i  tty		gopher.black	70
+i  ul		gopher.black	70
+i  uname		gopher.black	70
+i  uncompress		gopher.black	70
+i  unexpand		gopher.black	70
+i  unifdef		gopher.black	70
+i  uniq		gopher.black	70
+i  units		gopher.black	70
+i  unvis		gopher.black	70
+i  uptime		gopher.black	70
+i  usbhidaction		gopher.black	70
+i  usbhidctl		gopher.black	70
+i  users		gopher.black	70
+i  uudecode		gopher.black	70
+i  uuencode		gopher.black	70
+i  vacation		gopher.black	70
+i  vi		gopher.black	70
+i  view		gopher.black	70
+i  vis		gopher.black	70
+i  vmstat		gopher.black	70
+i  w		gopher.black	70
+i  wall		gopher.black	70
+i  wc		gopher.black	70
+i  what		gopher.black	70
+i  whatis		gopher.black	70
+i  whereis		gopher.black	70
+i  which		gopher.black	70
+i  who		gopher.black	70
+i  whoami		gopher.black	70
+i  whois		gopher.black	70
+i  write		gopher.black	70
+i  x99token		gopher.black	70
+i  xargs		gopher.black	70
+i  xsubpp		gopher.black	70
+i  yacc		gopher.black	70
+i  yes		gopher.black	70
+i  ypcat		gopher.black	70
+i  ypmatch		gopher.black	70
+i  ypwhich		gopher.black	70
+i  yyfix		gopher.black	70
+i  zcat		gopher.black	70
+i  zcmp		gopher.black	70
+i  zdiff		gopher.black	70
+i  zegrep		gopher.black	70
+i  zfgrep		gopher.black	70
+i  zforce		gopher.black	70
+i  zgrep		gopher.black	70
+i  zless		gopher.black	70
+i  zmore		gopher.black	70
+i  znew		gopher.black	70
