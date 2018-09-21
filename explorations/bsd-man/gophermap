@@ -14,7 +14,7 @@ i  chmod        - read		gopher.black	70
 i  cp           - read		gopher.black	70
 0  cpio         - read	cpio.txt
 i  csh          - delaying shells until the end		gopher.black	70
-0  date         - in progress	date.txt
+0  date         - read	date.txt
 i  dd		gopher.black	70
 i  df		gopher.black	70
 i  domainname		gopher.black	70

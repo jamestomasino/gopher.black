@@ -1,0 +1,4 @@
+BSD's date vs GNU date is one of the problem areas I hit when
+building burrow and trying to keep it portable. It's relatively
+straight forward if you look at its options, but the way it parses
+dates is wildly different.
