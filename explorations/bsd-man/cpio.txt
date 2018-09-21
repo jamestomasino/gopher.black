@@ -1,0 +1,7 @@
+The best I can tell this is an early form of file archiving which
+has been mostly replaced on modern systems with tar. RPM uses or
+used it fairly recently, hence it's still around in the core set
+of tools.
+
+I think I can just ignore it for the time being and look up the
+syntax in case I ever run into it in the wild.
