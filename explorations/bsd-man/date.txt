@@ -1,4 +1,9 @@
-BSD's date vs GNU date is one of the problem areas I hit when
-building burrow and trying to keep it portable. It's relatively
-straight forward if you look at its options, but the way it parses
-dates is wildly different.
+BSD's date(1) vs GNU date(1) is one of the problem areas I hit
+when building burrow and trying to keep it portable. It's
+relatively straight forward if you look at its options, but the
+way it parses dates is wildly different from GNU. There's more
+different than the same, honestl from GNU. There's more different
+than the same, honestly.
+
+How do people work around this normally? Do portable scripts just
+avoid using date(1)?
