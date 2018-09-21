@@ -13,8 +13,8 @@ i  chmod        - read		gopher.black	70
 0  cksum        - read	cksum.txt
 i  cp           - read		gopher.black	70
 0  cpio         - read	cpio.txt
-i  csh		gopher.black	70
-i  date		gopher.black	70
+i  csh          - delaying shells until the end		gopher.black	70
+0  date         - in progress	date.txt
 i  dd		gopher.black	70
 i  df		gopher.black	70
 i  domainname		gopher.black	70
