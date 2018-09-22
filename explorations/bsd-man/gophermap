@@ -10,7 +10,7 @@ i[X] cat		gopher.black	70
 i[X] chgrp		gopher.black	70
 0[X] chio	chio.txt
 i[X] chmod		gopher.black	70
-0[X] cksumd	cksum.txt
+0[X] cksum	cksum.txt
 i[X] cp		gopher.black	70
 0[X] cpio	cpio.txt
 i[X] csh		gopher.black	70
