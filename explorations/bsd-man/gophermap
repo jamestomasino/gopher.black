@@ -13,14 +13,14 @@ i[X] chmod		gopher.black	70
 0[X] cksum	cksum.txt
 i[X] cp		gopher.black	70
 0[X] cpio	cpio.txt
-i[X] csh		gopher.black	70
+i[ ] csh		gopher.black	70
 0[X] date	date.txt
 i[X] dd		gopher.black	70
-i[ ] df		gopher.black	70
-i[ ] domainname		gopher.black	70
-i[ ] echo		gopher.black	70
-i[ ] ed		gopher.black	70
-i[ ] eject		gopher.black	70
+i[X] df		gopher.black	70
+i[X] domainname		gopher.black	70
+i[X] echo		gopher.black	70
+i[X] ed		gopher.black	70
+i[X] eject		gopher.black	70
 i[ ] expr		gopher.black	70
 i[ ] hostname		gopher.black	70
 i[ ] kill		gopher.black	70
@@ -29,7 +29,7 @@ i[ ] ln		gopher.black	70
 i[ ] ls		gopher.black	70
 i[ ] md5		gopher.black	70
 i[ ] mkdir		gopher.black	70
-i[ ] mt		gopher.black	70
+i[X] mt		gopher.black	70
 i[ ] mv		gopher.black	70
 i[ ] pax		gopher.black	70
 i[ ] ps		gopher.black	70
