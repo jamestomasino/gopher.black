@@ -21,8 +21,8 @@ i[X] domainname		gopher.black	70
 i[X] echo		gopher.black	70
 i[X] ed		gopher.black	70
 i[X] eject		gopher.black	70
-i[ ] expr		gopher.black	70
-i[ ] hostname		gopher.black	70
+i[X] expr		gopher.black	70
+i[X] hostname		gopher.black	70
 i[ ] kill		gopher.black	70
 i[ ] ksh		gopher.black	70
 i[ ] ln		gopher.black	70
