@@ -5,17 +5,17 @@ ifollowing programs. Where necessary I'll make individual notes		gopher.black	70
 ipages on specific programs linked from this page.		gopher.black	70
 i		gopher.black	70
 i/bin:		gopher.black	70
-i[ ] [		gopher.black	70
-i[ ] cat		gopher.black	70
-i[ ] chgrp		gopher.black	70
+i[X] [		gopher.black	70
+i[X] cat		gopher.black	70
+i[X] chgrp		gopher.black	70
 0[X] chio	chio.txt
-i[ ] chmod		gopher.black	70
+i[X] chmod		gopher.black	70
 0[X] cksumd	cksum.txt
-i[ ] cp		gopher.black	70
+i[X] cp		gopher.black	70
 0[X] cpio	cpio.txt
-i[ ] csh		gopher.black	70
+i[X] csh		gopher.black	70
 0[X] date	date.txt
-i[ ] dd		gopher.black	70
+i[X] dd		gopher.black	70
 i[ ] df		gopher.black	70
 i[ ] domainname		gopher.black	70
 i[ ] echo		gopher.black	70
@@ -399,7 +399,7 @@ i[ ] intro(8)		gopher.black	70
 i		gopher.black	70
 i[ ] passwd(8)		gopher.black	70
 i		gopher.black	70
-i[ ] date(1)		gopher.black	70
+i[X] date(1)		gopher.black	70
 i[ ] ntpd(8)		gopher.black	70
 i		gopher.black	70
 i[ ] myname		gopher.black	70
@@ -527,7 +527,7 @@ i[ ] intro(8)		gopher.black	70
 i		gopher.black	70
 i[ ] passwd(8)		gopher.black	70
 i		gopher.black	70
-i[ ] date(1)		gopher.black	70
+i[X] date(1)		gopher.black	70
 i[ ] ntpd(8)		gopher.black	70
 i		gopher.black	70
 i[ ] myname		gopher.black	70
