@@ -23,7 +23,7 @@ i[X] ed		gopher.black	70
 i[X] eject		gopher.black	70
 i[X] expr		gopher.black	70
 i[X] hostname		gopher.black	70
-i[ ] kill		gopher.black	70
+0[X] kill	kill.txt
 i[ ] ksh		gopher.black	70
 i[ ] ln		gopher.black	70
 i[ ] ls		gopher.black	70
