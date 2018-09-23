@@ -1,0 +1,12 @@
+This is a great example of why going through man pages is helpful.
+I've been using kill(1) for years and years but never went through
+the details to learn things as simple as "what are all the
+signals?"
+
+kill -l # boom
+
+Or, broadcast a signal to ALL procesess by targeting -1! (Can
+someone tell me when you'd ever want to do this?)
+
+Oooh, and kill -0 can be used to test if a process exists! That
+sounds moderately useful in scripts.
