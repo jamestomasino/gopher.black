@@ -31,21 +31,21 @@ i[X] md5		gopher.black	70
 i[X] mkdir		gopher.black	70
 i[X] mt		gopher.black	70
 i[X] mv		gopher.black	70
-i[ ] pax		gopher.black	70
+i[X] pax		gopher.black	70
 i[ ] ps		gopher.black	70
 i[ ] pwd		gopher.black	70
 i[ ] rksh		gopher.black	70
 i[ ] rm		gopher.black	70
 i[ ] rmdir		gopher.black	70
 i[ ] sh		gopher.black	70
-i[ ] sha1		gopher.black	70
+i[X] sha1		gopher.black	70
 i[ ] sha256		gopher.black	70
 i[ ] sha512		gopher.black	70
 i[ ] sleep		gopher.black	70
 i[ ] stty		gopher.black	70
 i[ ] sync		gopher.black	70
 i[ ] tar		gopher.black	70
-i[ ] test		gopher.black	70
+i[X] test		gopher.black	70
 i		gopher.black	70
 i/usr/bin:		gopher.black	70
 i[ ]  Mail		gopher.black	70
