@@ -27,10 +27,10 @@ i[X] hostname		gopher.black	70
 i[ ] ksh		gopher.black	70
 i[X] ln		gopher.black	70
 i[X] ls		gopher.black	70
-i[ ] md5		gopher.black	70
-i[ ] mkdir		gopher.black	70
+i[X] md5		gopher.black	70
+i[X] mkdir		gopher.black	70
 i[X] mt		gopher.black	70
-i[ ] mv		gopher.black	70
+i[X] mv		gopher.black	70
 i[ ] pax		gopher.black	70
 i[ ] ps		gopher.black	70
 i[ ] pwd		gopher.black	70
