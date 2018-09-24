@@ -25,8 +25,8 @@ i[X] expr		gopher.black	70
 i[X] hostname		gopher.black	70
 0[X] kill	kill.txt
 i[ ] ksh		gopher.black	70
-i[ ] ln		gopher.black	70
-i[ ] ls		gopher.black	70
+i[X] ln		gopher.black	70
+i[X] ls		gopher.black	70
 i[ ] md5		gopher.black	70
 i[ ] mkdir		gopher.black	70
 i[X] mt		gopher.black	70
