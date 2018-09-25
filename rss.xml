@@ -3,6 +3,96 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Enforced Anonymity</title>
+  <link>gopher://gopher.black/1/phlog/20180924-enforced-anonymity/</link>
+  <pubdate>Mon, 24 Sep 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Enforced anonymity
+September 24th, 2018
+----------------------------------------
+
+Gopher has been filled with threads on the topic of anonymity [0],
+but I want to take a different tack. There's a storm brewing in
+the form of Codes of Conduct for online communities. I have
+OPINIONS on these things, and the only appropriate place for
+opinion on the internet is hidden in dead protocols.
+
+Codes of Conduct attempt to accomplish a GOOD. They attempt to
+ensure that individuals are not exposed to unfair prejudice. This
+is a movement toward equality, which it itself is also a GOOD. (I
+have argued in the past that I prefer liberty over equality, but
+that is not a comparison of good vs bad, but rather a personal
+stance on which is a greater good.) So far, we're all good here.
+
+Codes of Conduct are also weapons. They are wielded by the
+oppressed and marginalized with a powerful blow aimed at those
+they feel have transgressed. Is this a GOOD? Providing
+a reciprocal power dynamic is an expression of vengeance, not of
+justice. It does not guarantee liberty or equality. It guarantees
+a shifted power-base and a new set of mores to be navigated, or
+else. This is not good. This is bad.
+
+Hold off on the pitchforks. Go re-read the second paragraph again
+if you're getting steamy at me.
+
+If you're sitting there feeling like a Code of Conduct is a vital
+tool in your arsenal as an objectified person, a minority, or
+other disenfranchised group member, I can totally understand why.
+It's good to not be shit upon or taken advantage of. But at the
+same time, role reversal perpetuates a never-ending cycle of
+anger. "It's our turn," is the voice of a failed morality. It may
+feel good, but it gives no high ground and it leads to more
+suffering for more people.
+
+(I'm skirting around going into some deeper ethics talk on the one
+hand, or going off into sci-fi territory and making a bunch of
+Dune parallels, but I'm going to leave it alone and get to the
+point instead).
+
+"So what, tomasino? If Codes of Conduct aren't the answer, what do
+you think we should do?"
+
+Thanks for asking! First, I don't believe it is a necessity for
+a criticism to offer an alternative solution. It is okay to point
+out that something is wrong but not have a better alternative
+prepared. And guess what? I don't! I have a ridiculous alternative
+that we most definitely SHOULD NOT DO. I'm going to share it with
+you as a thought exercise.
+
+Here's my idea: 100% enforcement of anonymity. Boom! Meritocracy
+blind to identity politics can only be 100% guaranteed if there is
+no identity to politic. Go ahead and create your company, your
+online group. Share your code, grab commits and share and merge
+and whatever else technocrats do. But... no signatures. No names.
+No personal sharing. You want an online identity, grab a number,
+or we'll pull a string of dictionary words and assign them to you.
+
+Now everyone is safe, has an equal voice and can be judged by
+their own contributions. You want a code of conduct in the mix?
+I got you covered. It's got 2 rules:
+
+1) If you share your identity, or provide information that
+   establishes a personal identity with the community, you're out.
+2) If you share another person's identity or personal details
+   about them, you're out.
+
+This magical, mystical utopia actually sounds good to some people,
+I'm sure. But it's not. It overlooks the beauty of human
+interactions and the infinite possibilities for the advancement of
+our species. It's an act of fear. Don't do it. Seriously, please
+don't do it. Also, cool it with the Codes of Conduct. Protect
+people, don't burn them.
+
+And yes, Linus is an ass.
+
+
+[0] I was really going to go look these up, but then I got
+distracted. Take my word for it. There were a lot of posts on the
+subject earlier this year.
+</pre>]]></description>
+</item>
+<item>
   <title>Burrow 1 7 1</title>
   <link>gopher://gopher.black/1/phlog/20180924-burrow-1-7-1/</link>
   <pubdate>Mon, 24 Sep 2018 00:00:00 -0400</pubdate>
@@ -501,97 +591,6 @@ a whole load of nothing? Awesome.
 Somedays I feel like I'm crushing this whole computer thing. Some
 days I just want to walk out into the woods and build a cabin.
 I think I'm gonna go read some Thoreau.
-</pre>]]></description>
-</item>
-<item>
-  <title>Gopher Rings</title>
-  <link>gopher://gopher.black/1/phlog/20180811-gopher-rings/</link>
-  <pubdate>Sat, 11 Aug 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-gopher rings
-August 11th, 2018
-----------------------------------------
-
-From ze libertine gamer [0] on Mastodon:
-[0] ze libertine gamer
-    gopher://zlg.space/1/
-
-<zlg> Places like Bongusta and phlogroll remind me of web-rings
-from the 1990s. Let's name'em gopher-rings, or perhaps gopher dens
-if we want to be cute. They serve the same function: building
-a network with volunteer participants (the curation process) and
-technology that empowers the individual (self-hosting and
-moku-pona). What do you think, #gopher?
-
-tfurrows [1] also posted a semi-related phlog [2] today on
-favorites and the tools that engineer our interactions.
-[1] tfurrows - sdf
-    gopher://sdf.org/1/users/tfurrows
-[2] tfurrows - favorites
-    gopher://sdf.org/0/users/tfurrows/phlog/2018/agp_favorites.txt
-
-- - - - - - - -
-
-I started thinking about a response on Mastodon, but my head
-flooded with too many things to fit in 500 characters. A phlog is
-a better medium, I think.
-
-In the nascent web we had many ways of finding each other and
-other content that seems archaic or obtuse in retrospect. In the
-very earliest days I kept a paper notebook where I manually wrote
-down email addresses and websites. Later web-rings became popular
-ways to link like-content to one another, forming communities from
-the ether. By the time search engines came online we had all sorts
-of other ways to bridge the gaps.
-
-I think back to my time using AltaVista, or Lycos, or Yahoo!,
-finding them awkward and lacking, and returning to the advice of
-a webring or forum to find real relevant sites. I would cast
-a broader net using a meta-search engine like SavvySearch and
-click through pages and pages of results. That method of exploring
-the web didn't take over in prominance for me, personally, until
-Google began their takeover.
-
-Web-rings fell to the wayside quickly as "googling" entered the
-lexicon, and I don't think I consciously realized the
-"engineering" or "channeled usage", as tfurrows puts it, was so
-broadly affecting my behavior until very recently. In my head,
-search engines are tools and I use them. If I am careful to avoid
-tracking behaviors, they don't use me, right?
-
-Well, maybe not. Google's algorithms, or a browser's "favorites"
-screen guides our hand and our habits in a major way. We engage
-with what we see and what we find, and that is a power that
-shouldn't be forgotten.
-
-So, thinking on ze libertine gamer's idea, I think the gopher
-aggregators, the gopher-rings, are very much a throwback to the
-old days when communities were more manually linked to one
-another. There is still a power inherent in the tools we use, no
-different than Google wields, or Firefox, but because it's curated
-by participants in the community (like me!), I feel better about
-it. Our micro-aggregators aren't monolithic. Anyone can run one,
-thanks to the awesome utilities shared around the community.
-
-My phlog roll [3] began as a personal tool for me to track the
-phlogs I read. It's become a very popular starting point for
-others as well, and so I added some language to the top on how to
-get new sites added. Inclusion on my aggregator is open to all, as
-long as your phlog is in a format that moku-pona can handle.
-I don't want to be a barrier to finding gopher content; I want to
-be an easy entry-point. 
-
-[3] gopher.black phlog roll
-    gopher://gopher.black/1/moku-pona
-
-Have a site that you want added? Drop me an email at one of the
-addresses in my contact page on this gopher hole, or reach out on
-Mastodon. I try to watch SDF, grex, and the tilde communities for
-new holes that pop up so I can add them quickly. I generally wait
-until a phlog has at least two posts before I add it to avoid the
-"hello world" phenomenon that litters SDF. Just hit me up if you
-see something missing.
 </pre>]]></description>
 </item>
 </channel>
