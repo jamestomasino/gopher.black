@@ -32,7 +32,7 @@ i[X] mkdir		gopher.black	70
 i[X] mt		gopher.black	70
 i[X] mv		gopher.black	70
 i[X] pax		gopher.black	70
-i[ ] ps		gopher.black	70
+i[X] ps		gopher.black	70
 i[ ] pwd		gopher.black	70
 i[ ] rksh		gopher.black	70
 i[ ] rm		gopher.black	70
@@ -391,7 +391,7 @@ ihttps://gist.github.com/QWxleA/0a3e28f4a3387e5087e8f3608c32fd03		gopher.black	7
 i		gopher.black	70
 i## Post install		gopher.black	70
 i		gopher.black	70
-i[ ] afterboot(8)		gopher.black	70
+i[X] afterboot(8)		gopher.black	70
 i[ ] syspatch(8)		gopher.black	70
 i		gopher.black	70
 i[ ] security(8)		gopher.black	70
