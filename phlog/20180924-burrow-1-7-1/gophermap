@@ -1,0 +1,40 @@
+i----------------------------------------		gopher.black	70
+iburrow 1.7.1		gopher.black	70
+iSeptember 24th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iWow, so that was a big change. I was annoyed with some of my code		gopher.black	70
+iin burrow so I did a bit of surgery and blew up some features and		gopher.black	70
+imade some more generalized helpers instead.		gopher.black	70
+i		gopher.black	70
+iburrow recipe		gopher.black	70
+iburrow topic		gopher.black	70
+iburrow create-config		gopher.black	70
+iGONE!		gopher.black	70
+i		gopher.black	70
+iburrow edit-config will generate a new config for you if you don't		gopher.black	70
+ialready have one. I've also added a new super-powerful command		gopher.black	70
+icalled:		gopher.black	70
+i		gopher.black	70
+iburrow gophermap		gopher.black	70
+i		gopher.black	70
+iEnter that and hit enter and it'll open your root gophermap. But		gopher.black	70
+ithat's not all!!! Hit tab after that bad-boy...		gopher.black	70
+i		gopher.black	70
+iburrow gophermap <tab>		gopher.black	70
+i		gopher.black	70
+iIt'll list all your directories and any gophermaps you've got. You		gopher.black	70
+ican crawl your way through with more tab completion. You don't		gopher.black	70
+ineed to be in your gopher directory for it either. It'll figure it		gopher.black	70
+iall out! :D		gopher.black	70
+i		gopher.black	70
+iOnce you hit enter it'll strip out "i" types and tabs and server		gopher.black	70
+iinfo from your gophermap temporarily so you can edit it. Once you		gopher.black	70
+isave it again it'll add all the fancy codes back in place. Open up		gopher.black	70
+ia new filename that you make up on the spot to create a new		gopher.black	70
+igophermap. It'll default to no title, but you can fill in that		gopher.black	70
+ibit.		gopher.black	70
+i		gopher.black	70
+iburrow phlog # still exists		gopher.black	70
+i		gopher.black	70
+iNeat stuff. Pull, make, make install		gopher.black	70

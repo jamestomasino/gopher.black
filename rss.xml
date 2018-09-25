@@ -3,6 +3,53 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Burrow 1 7 1</title>
+  <link>gopher://gopher.black/1/phlog/20180924-burrow-1-7-1/</link>
+  <pubdate>Mon, 24 Sep 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+burrow 1.7.1
+September 24th, 2018
+----------------------------------------
+
+Wow, so that was a big change. I was annoyed with some of my code
+in burrow so I did a bit of surgery and blew up some features and
+made some more generalized helpers instead.
+
+burrow recipe
+burrow topic
+burrow create-config
+GONE!
+
+burrow edit-config will generate a new config for you if you don't
+already have one. I've also added a new super-powerful command
+called:
+
+burrow gophermap
+
+Enter that and hit enter and it'll open your root gophermap. But
+that's not all!!! Hit tab after that bad-boy...
+
+burrow gophermap <tab>
+
+It'll list all your directories and any gophermaps you've got. You
+can crawl your way through with more tab completion. You don't
+need to be in your gopher directory for it either. It'll figure it
+all out! :D
+
+Once you hit enter it'll strip out "i" types and tabs and server
+info from your gophermap temporarily so you can edit it. Once you
+save it again it'll add all the fancy codes back in place. Open up
+a new filename that you make up on the spot to create a new
+gophermap. It'll default to no title, but you can fill in that
+bit.
+
+burrow phlog # still exists
+
+Neat stuff. Pull, make, make install
+</pre>]]></description>
+</item>
+<item>
   <title>Choose Your Own Adventure Episode 2</title>
   <link>gopher://gopher.black/1/phlog/20180920-choose-your-own-adventure-episode-2/</link>
   <pubdate>Thu, 20 Sep 2018 00:00:00 -0400</pubdate>
@@ -545,77 +592,6 @@ new holes that pop up so I can add them quickly. I generally wait
 until a phlog has at least two posts before I add it to avoid the
 "hello world" phenomenon that litters SDF. Just hit me up if you
 see something missing.
-</pre>]]></description>
-</item>
-<item>
-  <title>Data Security Ratings</title>
-  <link>gopher://gopher.black/1/phlog/20180810-data-security-ratings/</link>
-  <pubdate>Fri, 10 Aug 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Data Security Ratings
-August 10th, 2018
-----------------------------------------
-
-Christina has been posting about data security [0][1] with some
-engagement from others [2].
-
-[0] Christina - Infosec And Data Privacy Part 1
-    gopher://circumlunar.space/0/~christina/InfosecAndDataPrivacy.txt
-[1] Christina - Infosec And Data Privacy Part 2
-    gopher://circumlunar.space/0/~christina/ISDP_2_SelfRating.txt
-[2] Solderpunk - Data Security Ratings
-    gopher://circumlunar.space/0/~solderpunk/phlog/data-security-ratings.txt
-
-It's very interesting stuff which started on Mastodon and
-continued in gopherspace. It's worth a read.
-
-I had one last thought I wanted to share based on an exchange on
-IRC. Some people have brought up threat levels and planning your
-security for the type of danger you really face, not ridiculous
-levels of paranoia. We're not all Snowden, after-all. That being
-said, I wanted to share my email system so you can see what
-happens when you go off the deep end with no real reason.
-
-First of all, I use neomailbox for my mail provider. They're
-pretty great, in a country with better data privacy laws than the
-US, and have solid privacy policies and encryption measures in
-place to protect their users. They offer a unique feature that
-I've not found in other providers: they will auto-sign incoming
-mail with your public key if you request it. While mail that
-wasn't encrypted at the source may still be vulnerable in
-transmission, after it hits their servers its safety just took
-a major step up.
-
-Next, I only connect to neomailbox over a VPN & Tor. Outgoing mail
-relayed through their servers wipes metadata anyway, but it's just
-another stupid thing to do in protecting the connection itself.
-How do I connect? Good old pop3, baby. I don't leave anything on
-the server.
-
-Mail is fetched locally and the system auto-disconnects from the
-internet. When browsing messages I remain offline. I reply and
-queue up my outgoing mail. When ready to send, browsing shuts down
-and the machine reconnects safely to send it on its way.
-
-The local maildir is backed up over spideroak, encrypting the
-mailboxes of already encrypted messages offsite to another machine
-in case of calamity.
-
-That's it! Fun right?
-
-I want to reiterate, this is completely unnecessary for my threat
-level and it was done more as a hobby project to see how far
-I could push it. Airgapping, redundant encryption, it's too much
-for people to bother with. It's a great illustration of why other
-people give up and just settle for whatever.
-
-If you're new to infosec, do yourself a favor and get a protonmail
-account. That's about as good as you're going to do without
-putting in a bunch of work. Is it as good as what Snowden does? Oh
-hells no. But you're not on the run from the US government, are
-you? It'll keep google off your back, and you're less likely to
-fall victim to simple scams.
 </pre>]]></description>
 </item>
 </channel>
