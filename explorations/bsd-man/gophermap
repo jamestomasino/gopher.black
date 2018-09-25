@@ -202,7 +202,7 @@ i[ ]  lprm		gopher.black	70
 i[ ]  ltrace		gopher.black	70
 i[ ]  m4		gopher.black	70
 i[ ]  machine		gopher.black	70
-i[ ]  mail		gopher.black	70
+i[X]  mail		gopher.black	70
 i[ ]  mailq		gopher.black	70
 i[ ]  mailx		gopher.black	70
 i[ ]  make		gopher.black	70
