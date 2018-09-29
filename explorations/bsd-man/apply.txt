@@ -1,0 +1,5 @@
+This is one of the coolest programs I've run across so far. The
+potential for awesomeness in shell scripting is incredible. It
+makes me think of higher-order functions like "map". I suspect
+I'll be able to compose some coolness out of it as a result. Stand
+back, bourne shell!

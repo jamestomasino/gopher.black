@@ -5,52 +5,52 @@ ifollowing programs. Where necessary I'll make individual notes		gopher.black	70
 ipages on specific programs linked from this page.		gopher.black	70
 i		gopher.black	70
 i/bin:		gopher.black	70
-i[X] [		gopher.black	70
-i[X] cat		gopher.black	70
-i[X] chgrp		gopher.black	70
-0[X] chio	chio.txt
-i[X] chmod		gopher.black	70
-0[X] cksum	cksum.txt
-i[X] cp		gopher.black	70
-0[X] cpio	cpio.txt
+i[x] [		gopher.black	70
+i[x] cat		gopher.black	70
+i[x] chgrp		gopher.black	70
+0[x] chio	chio.txt
+i[x] chmod		gopher.black	70
+0[x] cksum	cksum.txt
+i[x] cp		gopher.black	70
+0[x] cpio	cpio.txt
 i[ ] csh		gopher.black	70
-0[X] date	date.txt
-i[X] dd		gopher.black	70
-i[X] df		gopher.black	70
-i[X] domainname		gopher.black	70
-i[X] echo		gopher.black	70
-i[X] ed		gopher.black	70
-i[X] eject		gopher.black	70
-i[X] expr		gopher.black	70
-i[X] hostname		gopher.black	70
-0[X] kill	kill.txt
+0[x] date	date.txt
+i[x] dd		gopher.black	70
+i[x] df		gopher.black	70
+i[x] domainname		gopher.black	70
+i[x] echo		gopher.black	70
+i[x] ed		gopher.black	70
+i[x] eject		gopher.black	70
+i[x] expr		gopher.black	70
+i[x] hostname		gopher.black	70
+0[x] kill	kill.txt
 i[ ] ksh		gopher.black	70
-i[X] ln		gopher.black	70
-i[X] ls		gopher.black	70
-i[X] md5		gopher.black	70
-i[X] mkdir		gopher.black	70
-i[X] mt		gopher.black	70
-i[X] mv		gopher.black	70
-i[X] pax		gopher.black	70
-i[X] ps		gopher.black	70
-i[X] pwd		gopher.black	70
+i[x] ln		gopher.black	70
+i[x] ls		gopher.black	70
+i[x] md5		gopher.black	70
+i[x] mkdir		gopher.black	70
+i[x] mt		gopher.black	70
+i[x] mv		gopher.black	70
+i[x] pax		gopher.black	70
+i[x] ps		gopher.black	70
+i[x] pwd		gopher.black	70
 i[ ] rksh		gopher.black	70
-i[X] rm		gopher.black	70
-i[X] rmdir		gopher.black	70
+i[x] rm		gopher.black	70
+i[x] rmdir		gopher.black	70
 i[ ] sh		gopher.black	70
-i[X] sha1		gopher.black	70
-i[X] sha256		gopher.black	70
-i[X] sha512		gopher.black	70
-i[X] sleep		gopher.black	70
-0[X] stty	stty.txt
-i[X] sync		gopher.black	70
-i[X] tar		gopher.black	70
-i[X] test		gopher.black	70
+i[x] sha1		gopher.black	70
+i[x] sha256		gopher.black	70
+i[x] sha512		gopher.black	70
+i[x] sleep		gopher.black	70
+0[x] stty	stty.txt
+i[x] sync		gopher.black	70
+i[x] tar		gopher.black	70
+i[x] test		gopher.black	70
 i		gopher.black	70
 i/usr/bin:		gopher.black	70
 i[x]  Mail		gopher.black	70
-i[ ]  addr2line		gopher.black	70
-i[ ]  apply		gopher.black	70
+i[x]  addr2line		gopher.black	70
+0[x]  apply	apply.txt
 i[ ]  apropos		gopher.black	70
 i[ ]  ar		gopher.black	70
 i[ ]  arch		gopher.black	70
@@ -202,7 +202,7 @@ i[ ]  lprm		gopher.black	70
 i[ ]  ltrace		gopher.black	70
 i[ ]  m4		gopher.black	70
 i[ ]  machine		gopher.black	70
-i[X]  mail		gopher.black	70
+i[x]  mail		gopher.black	70
 i[ ]  mailq		gopher.black	70
 i[x]  mailx		gopher.black	70
 i[ ]  make		gopher.black	70
@@ -391,15 +391,15 @@ ihttps://gist.github.com/QWxleA/0a3e28f4a3387e5087e8f3608c32fd03		gopher.black	7
 i		gopher.black	70
 i## Post install		gopher.black	70
 i		gopher.black	70
-i[X] afterboot(8)		gopher.black	70
-i[X] syspatch(8)		gopher.black	70
+i[x] afterboot(8)		gopher.black	70
+i[x] syspatch(8)		gopher.black	70
 i		gopher.black	70
-i[X] security(8)		gopher.black	70
-i[X] intro(8)		gopher.black	70
+i[x] security(8)		gopher.black	70
+i[x] intro(8)		gopher.black	70
 i		gopher.black	70
 i[ ] passwd(8)		gopher.black	70
 i		gopher.black	70
-i[X] date(1)		gopher.black	70
+i[x] date(1)		gopher.black	70
 i[ ] ntpd(8)		gopher.black	70
 i		gopher.black	70
 i[ ] myname		gopher.black	70
@@ -527,7 +527,7 @@ i[ ] intro(8)		gopher.black	70
 i		gopher.black	70
 i[ ] passwd(8)		gopher.black	70
 i		gopher.black	70
-i[X] date(1)		gopher.black	70
+i[x] date(1)		gopher.black	70
 i[ ] ntpd(8)		gopher.black	70
 i		gopher.black	70
 i[ ] myname		gopher.black	70
