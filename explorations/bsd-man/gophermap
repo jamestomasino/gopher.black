@@ -386,37 +386,28 @@ i[ ]  zmore		gopher.black	70
 i[ ]  znew		gopher.black	70
 i		gopher.black	70
 i - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -		gopher.black	70
-iSecondary List		gopher.black	70
-ihttps://gist.github.com/QWxleA/0a3e28f4a3387e5087e8f3608c32fd03		gopher.black	70
-i		gopher.black	70
-i## Post install		gopher.black	70
 i		gopher.black	70
 i[x] afterboot(8)		gopher.black	70
 i[x] syspatch(8)		gopher.black	70
-i		gopher.black	70
 i[x] security(8)		gopher.black	70
-i[x] intro(8)		gopher.black	70
-i		gopher.black	70
-i[ ] passwd(8)		gopher.black	70
-i		gopher.black	70
-i[x] date(1)		gopher.black	70
-i[ ] ntpd(8)		gopher.black	70
+i[x] intro(1)		gopher.black	70
+i[ ] intro(2)		gopher.black	70
+i[ ] intro(3)		gopher.black	70
+i[ ] intro(4)		gopher.black	70
+i[ ] intro(5)		gopher.black	70
+i[ ] intro(6)		gopher.black	70
+i[ ] intro(7)		gopher.black	70
+i[ ] intro(8)		gopher.black	70
 i		gopher.black	70
 i[ ] myname		gopher.black	70
 i[ ] mygate		gopher.black	70
-i[ ] hostname(1)		gopher.black	70
 i[ ] netstart(1)		gopher.black	70
 i[ ] ifconfig(8)		gopher.black	70
 i[ ] resolv.conf		gopher.black	70
 i		gopher.black	70
-i[ ] newaliases		gopher.black	70
-i		gopher.black	70
 i[ ] kbd(8)		gopher.black	70
 i		gopher.black	70
-i## Booting openBSD		gopher.black	70
-i		gopher.black	70
 i[ ] init(8)		gopher.black	70
-i		gopher.black	70
 i[ ] rc.conf(8)		gopher.black	70
 i[ ] rc.conf.local(8)		gopher.black	70
 i[ ] rc(8)		gopher.black	70
@@ -426,8 +417,6 @@ i[ ] rc.subr(8)		gopher.black	70
 i		gopher.black	70
 i[ ] reboot(8)		gopher.black	70
 i[ ] halt(8)		gopher.black	70
-i		gopher.black	70
-i# User management		gopher.black	70
 i		gopher.black	70
 i[ ] user(8)		gopher.black	70
 i[ ] useradd(8)		gopher.black	70
@@ -453,12 +442,8 @@ i[ ] login.conf(5)		gopher.black	70
 i[ ] login(1)		gopher.black	70
 i[ ] id(1)		gopher.black	70
 i		gopher.black	70
-i## Root		gopher.black	70
-i		gopher.black	70
 i[ ] su(1)		gopher.black	70
 i[ ] doas(1)		gopher.black	70
-i		gopher.black	70
-i## Disks and filesystems		gopher.black	70
 i		gopher.black	70
 i[ ] fdisk		gopher.black	70
 i[ ] disklabel(8)		gopher.black	70
@@ -468,15 +453,10 @@ i[ ] fsck(8)		gopher.black	70
 i[ ] du(1)		gopher.black	70
 i[ ] df(1)		gopher.black	70
 i		gopher.black	70
-i## Securing OpenBSD		gopher.black	70
-i		gopher.black	70
 i[ ] chflags(1)		gopher.black	70
-i[ ] ls(1)		gopher.black	70
 i[ ] securelevel(7)		gopher.black	70
-i[ ] man sysctl(8)		gopher.black	70
+i[ ] sysctl(8)		gopher.black	70
 i[ ] chmod(1)		gopher.black	70
-i		gopher.black	70
-i## Software management		gopher.black	70
 i		gopher.black	70
 i[ ] pkg-config(1)		gopher.black	70
 i[ ] pkg_add(1)		gopher.black	70
@@ -486,18 +466,12 @@ i[ ] pkg_info(1)		gopher.black	70
 i[ ] pkg_mklocatedb(1)		gopher.black	70
 i[ ] pkg_sign(1)		gopher.black	70
 i		gopher.black	70
-i[ ] make(1)		gopher.black	70
-i		gopher.black	70
-i## System maintenance		gopher.black	70
-i		gopher.black	70
 i[ ] daily(8)		gopher.black	70
 i[ ] security(8)		gopher.black	70
 i[ ] syslogd(8)		gopher.black	70
 i[ ] syslogc(8)		gopher.black	70
 i[ ] logger(1)		gopher.black	70
 i[ ] cron(8)		gopher.black	70
-i		gopher.black	70
-i## Network Servers		gopher.black	70
 i		gopher.black	70
 i[ ] sshd(8)		gopher.black	70
 i[ ] sshd_config(5) 		gopher.black	70
@@ -581,31 +555,6 @@ i[ ] login.conf(5)		gopher.black	70
 i[ ] login(1)		gopher.black	70
 i[ ] id(1)		gopher.black	70
 i		gopher.black	70
-i## Root		gopher.black	70
-i		gopher.black	70
-i[ ] su(1)		gopher.black	70
-i[ ] doas(1)		gopher.black	70
-i		gopher.black	70
-i## Disks and filesystems		gopher.black	70
-i		gopher.black	70
-i[ ] fdisk		gopher.black	70
-i[ ] disklabel(8)		gopher.black	70
-i[ ] newfs(8)		gopher.black	70
-i[ ] mount(8)		gopher.black	70
-i[ ] fsck(8)		gopher.black	70
-i[ ] du(1)		gopher.black	70
-i[ ] df(1)		gopher.black	70
-i		gopher.black	70
-i## Securing OpenBSD		gopher.black	70
-i		gopher.black	70
-i[ ] chflags(1)		gopher.black	70
-i[ ] ls(1)		gopher.black	70
-i[ ] securelevel(7)		gopher.black	70
-i[ ] man sysctl(8)		gopher.black	70
-i[ ] chmod(1)		gopher.black	70
-i		gopher.black	70
-i## Software management		gopher.black	70
-i		gopher.black	70
 i[ ] pkg-config(1)		gopher.black	70
 i[ ] pkg_add(1)		gopher.black	70
 i[ ] pkg_create(1)		gopher.black	70
@@ -614,10 +563,6 @@ i[ ] pkg_info(1)		gopher.black	70
 i[ ] pkg_mklocatedb(1)		gopher.black	70
 i[ ] pkg_sign(1)		gopher.black	70
 i		gopher.black	70
-i[ ] make(1)		gopher.black	70
-i		gopher.black	70
-i## System maintenance		gopher.black	70
-i		gopher.black	70
 i[ ] daily(8)		gopher.black	70
 i[ ] security(8)		gopher.black	70
 i[ ] syslogd(8)		gopher.black	70
@@ -625,24 +570,6 @@ i[ ] syslogc(8)		gopher.black	70
 i[ ] logger(1)		gopher.black	70
 i[ ] cron(8)		gopher.black	70
 i		gopher.black	70
-i## Network Servers		gopher.black	70
-i		gopher.black	70
-i[ ] sshd(8)		gopher.black	70
-i[ ] sshd_config(5) 		gopher.black	70
-i[ ] smtpd(8) - Simple Mail Transfer Protocol daemon		gopher.black	70
-i[ ] smtpd.conf(5) - Simple Mail Transfer Protocol daemon configuration file		gopher.black	70
-i[ ] aliases(5) - aliases file for smtpd		gopher.black	70
-i[ ] table(5) - format description for smtpd tables		gopher.black	70
-i[ ] makemap(8) - create database maps for smtpd		gopher.black	70
-i[ ] sendmail(8) - a mail enqueuer for smtpd 8		gopher.black	70
-i[ ] inetd(8)		gopher.black	70
-i[ ] dhcpd(8) - Dynamic Host Configuration Protocol (DHCP) server		gopher.black	70
-i[ ] dhcpd.conf(5) - DHCP server configuration file		gopher.black	70
-i[ ] dhcpd.leases(5) - DHCP server lease database		gopher.black	70
-i		gopher.black	70
-i## Packet filtering		gopher.black	70
-i		gopher.black	70
 i[ ] pf.conf(5)		gopher.black	70
 i[ ] pfctl(8)		gopher.black	70
 i[ ] pflogd(8)		gopher.black	70
-i		gopher.black	70
