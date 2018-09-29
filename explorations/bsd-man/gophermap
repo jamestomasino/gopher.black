@@ -51,7 +51,7 @@ i/usr/bin:		gopher.black	70
 i[x]  Mail		gopher.black	70
 i[x]  addr2line		gopher.black	70
 0[x]  apply	apply.txt
-i[ ]  apropos		gopher.black	70
+i[x]  apropos		gopher.black	70
 i[ ]  ar		gopher.black	70
 i[ ]  arch		gopher.black	70
 i[ ]  as		gopher.black	70
