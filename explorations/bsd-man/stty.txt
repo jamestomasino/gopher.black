@@ -1,0 +1,9 @@
+Wow. I have absolutely no idea what any of these modes refer to.
+The words they use to explain things also make no sense to me.
+This is the most obtuese a command has been so far, and I actually
+know how to do some things with it already!
+
+stty erase ^H
+
+I use that a lot on weird systems when it wants to do ^?. The rest
+of this... no clue.
