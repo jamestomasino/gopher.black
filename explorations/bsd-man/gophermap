@@ -42,7 +42,7 @@ i[X] sha1		gopher.black	70
 i[X] sha256		gopher.black	70
 i[X] sha512		gopher.black	70
 i[X] sleep		gopher.black	70
-0[ ] stty	stty.txt
+0[X] stty	stty.txt
 i[ ] sync		gopher.black	70
 i[ ] tar		gopher.black	70
 i[X] test		gopher.black	70
