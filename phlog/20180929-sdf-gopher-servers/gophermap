@@ -1,0 +1,44 @@
+i----------------------------------------		gopher.black	70
+isdf gopher servers		gopher.black	70
+iSeptember 29th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iAs many of you are aware, sdf.org recently performed some		gopher.black	70
+iupgrading which somehow disrupted their gopher servers. As		gopher.black	70
+ia result, everything reverted to being run off bucktooth instead		gopher.black	70
+iof gophernicus. After a bunch of prodding on bboard, sdf.org was		gopher.black	70
+ireverted to gophernicus, but a very out-of-date version.		gopher.black	70
+iGopher.club, the preferred DNS mirror of SDF for gopher according		gopher.black	70
+ito its tutorials, is still left using bucktooth.		gopher.black	70
+i		gopher.black	70
+iThere's a few painful parts to this. A few of the more active		gopher.black	70
+igopher users hosting on SDF were actively using the cgi script		gopher.black	70
+ifeatures of gophernicus which were not a part of bucktooth's		gopher.black	70
+ioffering. As a result, some of their gopher holes failed to load		gopher.black	70
+iat all, or loaded incorrectly. Second, the constant changes in		gopher.black	70
+iserver info means that our aggregators keep triggering as if		gopher.black	70
+ieveryone on SDF posted new content. I know this has been		gopher.black	70
+ia challenge for logout [0] whose Bongusta! [1] aggregator has been		gopher.black	70
+iaffected. It's also affected my moku-pona listings [2]. 		gopher.black	70
+i		gopher.black	70
+iAs a result, for the time being I have reverted all SDF		gopher.black	70
+igopherholes to using the sdf.org domain instead of gopher.club in		gopher.black	70
+imy listings. This way they will display correctly at least. Sadly,		gopher.black	70
+igophernicus outputs server information in a footer of gophermaps,		gopher.black	70
+iso it will likely continue to trigger the mass-update phenomenon		gopher.black	70
+iwhenever NetBSD or gophernicus itself are updated. I think we've		gopher.black	70
+iall learned to work around this by now, though.		gopher.black	70
+i		gopher.black	70
+iFinally, I've posted about all this on the sdf.org bboard in		gopher.black	70
+ia single requests post. I'm hopeful that seeing it all clearly		gopher.black	70
+ioutlined will help the admins update gophernicus to the latest		gopher.black	70
+iversion and get gopher.club back in line. Time will tell! If you		gopher.black	70
+icontinue to see mass-updates on the aggregators I apologize, but		gopher.black	70
+ithere's limited control unless I go through manually to clean		gopher.black	70
+ieverything up each time (like logout does). It'll settle down		gopher.black	70
+ieventually.		gopher.black	70
+i		gopher.black	70
+1[0] logout	/	i-logout.cz	70
+1[1] Bongusta	/en/bongusta/	i-logout.cz	70
+1[2] Phlog Roll	/moku-pona
+i		gopher.black	70
