@@ -43,12 +43,12 @@ i[X] sha256		gopher.black	70
 i[X] sha512		gopher.black	70
 i[X] sleep		gopher.black	70
 0[X] stty	stty.txt
-i[ ] sync		gopher.black	70
-i[ ] tar		gopher.black	70
+i[X] sync		gopher.black	70
+i[X] tar		gopher.black	70
 i[X] test		gopher.black	70
 i		gopher.black	70
 i/usr/bin:		gopher.black	70
-i[ ]  Mail		gopher.black	70
+i[x]  Mail		gopher.black	70
 i[ ]  addr2line		gopher.black	70
 i[ ]  apply		gopher.black	70
 i[ ]  apropos		gopher.black	70
@@ -204,7 +204,7 @@ i[ ]  m4		gopher.black	70
 i[ ]  machine		gopher.black	70
 i[X]  mail		gopher.black	70
 i[ ]  mailq		gopher.black	70
-i[ ]  mailx		gopher.black	70
+i[x]  mailx		gopher.black	70
 i[ ]  make		gopher.black	70
 i[ ]  makeinfo		gopher.black	70
 i[ ]  man		gopher.black	70
