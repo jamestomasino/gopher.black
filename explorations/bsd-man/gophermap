@@ -1,648 +1,648 @@
-iOpenBSD programs installed by default in /bin and /usr/bin		sdf.org	70
-i		sdf.org	70
-iThis file tracks my progress in reading the full man pages of the		sdf.org	70
-ifollowing programs. Where necessary I'll make individual notes		sdf.org	70
-ipages on specific programs linked from this page.		sdf.org	70
-i		sdf.org	70
-i/bin:		sdf.org	70
-i[X] [		sdf.org	70
-i[X] cat		sdf.org	70
-i[X] chgrp		sdf.org	70
+iOpenBSD programs installed by default in /bin and /usr/bin		gopher.black	70
+i		gopher.black	70
+iThis file tracks my progress in reading the full man pages of the		gopher.black	70
+ifollowing programs. Where necessary I'll make individual notes		gopher.black	70
+ipages on specific programs linked from this page.		gopher.black	70
+i		gopher.black	70
+i/bin:		gopher.black	70
+i[X] [		gopher.black	70
+i[X] cat		gopher.black	70
+i[X] chgrp		gopher.black	70
 0[X] chio	chio.txt
-i[X] chmod		sdf.org	70
+i[X] chmod		gopher.black	70
 0[X] cksum	cksum.txt
-i[X] cp		sdf.org	70
+i[X] cp		gopher.black	70
 0[X] cpio	cpio.txt
-i[ ] csh		sdf.org	70
+i[ ] csh		gopher.black	70
 0[X] date	date.txt
-i[X] dd		sdf.org	70
-i[X] df		sdf.org	70
-i[X] domainname		sdf.org	70
-i[X] echo		sdf.org	70
-i[X] ed		sdf.org	70
-i[X] eject		sdf.org	70
-i[X] expr		sdf.org	70
-i[X] hostname		sdf.org	70
+i[X] dd		gopher.black	70
+i[X] df		gopher.black	70
+i[X] domainname		gopher.black	70
+i[X] echo		gopher.black	70
+i[X] ed		gopher.black	70
+i[X] eject		gopher.black	70
+i[X] expr		gopher.black	70
+i[X] hostname		gopher.black	70
 0[X] kill	kill.txt
-i[ ] ksh		sdf.org	70
-i[X] ln		sdf.org	70
-i[X] ls		sdf.org	70
-i[X] md5		sdf.org	70
-i[X] mkdir		sdf.org	70
-i[X] mt		sdf.org	70
-i[X] mv		sdf.org	70
-i[X] pax		sdf.org	70
-i[X] ps		sdf.org	70
-i[ ] pwd		sdf.org	70
-i[ ] rksh		sdf.org	70
-i[ ] rm		sdf.org	70
-i[ ] rmdir		sdf.org	70
-i[ ] sh		sdf.org	70
-i[X] sha1		sdf.org	70
-i[ ] sha256		sdf.org	70
-i[ ] sha512		sdf.org	70
-i[ ] sleep		sdf.org	70
-i[ ] stty		sdf.org	70
-i[ ] sync		sdf.org	70
-i[ ] tar		sdf.org	70
-i[X] test		sdf.org	70
-i		sdf.org	70
-i/usr/bin:		sdf.org	70
-i[ ]  Mail		sdf.org	70
-i[ ]  addr2line		sdf.org	70
-i[ ]  apply		sdf.org	70
-i[ ]  apropos		sdf.org	70
-i[ ]  ar		sdf.org	70
-i[ ]  arch		sdf.org	70
-i[ ]  as		sdf.org	70
-i[ ]  at		sdf.org	70
-i[ ]  atq		sdf.org	70
-i[ ]  atrm		sdf.org	70
-i[ ]  aucat		sdf.org	70
-i[ ]  audioctl		sdf.org	70
-i[ ]  awk		sdf.org	70
-i[ ]  b64decode		sdf.org	70
-i[ ]  b64encode		sdf.org	70
-i[ ]  banner		sdf.org	70
-i[ ]  basename		sdf.org	70
-i[ ]  batch		sdf.org	70
-i[ ]  bc		sdf.org	70
-i[ ]  bgplgsh		sdf.org	70
-i[ ]  biff		sdf.org	70
-i[ ]  c++		sdf.org	70
-i[ ]  c++filt		sdf.org	70
-i[ ]  c2ph		sdf.org	70
-i[ ]  cal		sdf.org	70
-i[ ]  calendar		sdf.org	70
-i[ ]  cap_mkdb		sdf.org	70
-i[ ]  captoinfo		sdf.org	70
-i[ ]  cc		sdf.org	70
-i[ ]  cdio		sdf.org	70
-i[ ]  chflags		sdf.org	70
-i[ ]  chfn		sdf.org	70
-i[ ]  chpass		sdf.org	70
-i[ ]  chsh		sdf.org	70
-i[ ]  ci		sdf.org	70
-i[ ]  clang		sdf.org	70
-i[ ]  clang++		sdf.org	70
-i[ ]  clang-cpp		sdf.org	70
-i[ ]  clear		sdf.org	70
-i[ ]  cmp		sdf.org	70
-i[ ]  co		sdf.org	70
-i[ ]  col		sdf.org	70
-i[ ]  colrm		sdf.org	70
-i[ ]  column		sdf.org	70
-i[ ]  comm		sdf.org	70
-i[ ]  compress		sdf.org	70
-i[ ]  corelist		sdf.org	70
-i[ ]  cpan		sdf.org	70
-i[ ]  cpp		sdf.org	70
-i[ ]  crontab		sdf.org	70
-i[ ]  csplit		sdf.org	70
-i[ ]  ctags		sdf.org	70
-i[ ]  ctfconv		sdf.org	70
-i[ ]  ctfdump		sdf.org	70
-i[ ]  ctfstrip		sdf.org	70
-i[ ]  cu		sdf.org	70
-i[ ]  cut		sdf.org	70
-i[ ]  cvs		sdf.org	70
-i[ ]  cvsbug		sdf.org	70
-i[ ]  dc		sdf.org	70
-i[ ]  deroff		sdf.org	70
-i[ ]  diff		sdf.org	70
-i[ ]  diff3		sdf.org	70
-i[ ]  dirname		sdf.org	70
-i[ ]  doas		sdf.org	70
-i[ ]  du		sdf.org	70
-i[ ]  egrep		sdf.org	70
-i[ ]  enc2xs		sdf.org	70
-i[ ]  encguess		sdf.org	70
-i[ ]  encrypt		sdf.org	70
-i[ ]  env		sdf.org	70
-i[ ]  ex		sdf.org	70
-i[ ]  expand		sdf.org	70
-i[ ]  false		sdf.org	70
-i[ ]  fgen		sdf.org	70
-i[ ]  fgrep		sdf.org	70
-i[ ]  file		sdf.org	70
-i[ ]  find		sdf.org	70
-i[ ]  finger		sdf.org	70
-i[ ]  flex		sdf.org	70
-i[ ]  flex++		sdf.org	70
-i[ ]  fmt		sdf.org	70
-i[ ]  fold		sdf.org	70
-i[ ]  from		sdf.org	70
-i[ ]  fstat		sdf.org	70
-i[ ]  ftp		sdf.org	70
-i[ ]  fuser		sdf.org	70
-i[ ]  g++		sdf.org	70
-i[ ]  gcc		sdf.org	70
-i[ ]  gcov		sdf.org	70
-i[ ]  gdb		sdf.org	70
-i[ ]  gencat		sdf.org	70
-i[ ]  getcap		sdf.org	70
-i[ ]  getconf		sdf.org	70
-i[ ]  getent		sdf.org	70
-i[ ]  getopt		sdf.org	70
-i[ ]  gprof		sdf.org	70
-i[ ]  grep		sdf.org	70
-i[ ]  groups		sdf.org	70
-i[ ]  gunzip		sdf.org	70
-i[ ]  gzcat		sdf.org	70
-i[ ]  gzexe		sdf.org	70
-i[ ]  gzip		sdf.org	70
-i[ ]  h2ph		sdf.org	70
-i[ ]  h2xs		sdf.org	70
-i[ ]  head		sdf.org	70
-i[ ]  help		sdf.org	70
-i[ ]  hexdump		sdf.org	70
-i[ ]  hoststat		sdf.org	70
-i[ ]  htpasswd		sdf.org	70
-i[ ]  d		sdf.org	70
-i[ ]  dent		sdf.org	70
-i[ ]  ndent		sdf.org	70
-i[ ]  nfo		sdf.org	70
-i[ ]  nfocmp		sdf.org	70
-i[ ]  nfokey		sdf.org	70
-i[ ]  nfotocap		sdf.org	70
-i[ ]  nstall		sdf.org	70
-i[ ]  nstall-info		sdf.org	70
-i[ ]  nstmodsh		sdf.org	70
-i[ ]  pcrm		sdf.org	70
-i[ ]  pcs		sdf.org	70
-i[ ]  join		sdf.org	70
-i[ ]  jot		sdf.org	70
-i[ ]  kdump		sdf.org	70
-i[ ]  keynote		sdf.org	70
-i[ ]  ktrace		sdf.org	70
-i[ ]  lam		sdf.org	70
-i[ ]  last		sdf.org	70
-i[ ]  lastcomm		sdf.org	70
-i[ ]  ld		sdf.org	70
-i[ ]  ld.lld		sdf.org	70
-i[ ]  ldd		sdf.org	70
-i[ ]  leave		sdf.org	70
-i[ ]  less		sdf.org	70
-i[ ]  lesskey		sdf.org	70
-i[ ]  lex		sdf.org	70
-i[ ]  libnetcfg		sdf.org	70
-i[ ]  libtool		sdf.org	70
-i[ ]  lndir		sdf.org	70
-i[ ]  locale		sdf.org	70
-i[ ]  locate		sdf.org	70
-i[ ]  lock		sdf.org	70
-i[ ]  logger		sdf.org	70
-i[ ]  login		sdf.org	70
-i[ ]  logname		sdf.org	70
-i[ ]  look		sdf.org	70
-i[ ]  lorder		sdf.org	70
-i[ ]  lpq		sdf.org	70
-i[ ]  lpr		sdf.org	70
-i[ ]  lprm		sdf.org	70
-i[ ]  ltrace		sdf.org	70
-i[ ]  m4		sdf.org	70
-i[ ]  machine		sdf.org	70
-i[X]  mail		sdf.org	70
-i[ ]  mailq		sdf.org	70
-i[ ]  mailx		sdf.org	70
-i[ ]  make		sdf.org	70
-i[ ]  makeinfo		sdf.org	70
-i[ ]  man		sdf.org	70
-i[ ]  mandoc		sdf.org	70
-i[ ]  merge		sdf.org	70
-i[ ]  mesg		sdf.org	70
-i[ ]  mg		sdf.org	70
-i[ ]  midiplay		sdf.org	70
-i[ ]  mixerctl		sdf.org	70
-i[ ]  mkdep		sdf.org	70
-i[ ]  mklocale		sdf.org	70
-i[ ]  mktemp		sdf.org	70
-i[ ]  more		sdf.org	70
-i[ ]  nc		sdf.org	70
-i[ ]  netstat		sdf.org	70
-i[ ]  newaliases		sdf.org	70
-i[ ]  newsyslog		sdf.org	70
-i[ ]  nfsstat		sdf.org	70
-i[ ]  nice		sdf.org	70
-i[ ]  nl		sdf.org	70
-i[ ]  nm		sdf.org	70
-i[ ]  nohup		sdf.org	70
-i[ ]  objcopy		sdf.org	70
-i[ ]  objdump		sdf.org	70
-i[ ]  od		sdf.org	70
-i[ ]  opencvs		sdf.org	70
-i[ ]  openssl		sdf.org	70
-i[ ]  openup		sdf.org	70
-i[ ]  otp-md5		sdf.org	70
-i[ ]  otp-rmd160		sdf.org	70
-i[ ]  otp-sha1		sdf.org	70
-i[ ]  pagesize		sdf.org	70
-i[ ]  passwd		sdf.org	70
-i[ ]  paste		sdf.org	70
-i[ ]  patch		sdf.org	70
-i[ ]  pctr		sdf.org	70
-i[ ]  perl		sdf.org	70
-i[ ]  perlbug		sdf.org	70
-i[ ]  perldoc		sdf.org	70
-i[ ]  perlivp		sdf.org	70
-i[ ]  pgrep		sdf.org	70
-i[ ]  piconv		sdf.org	70
-i[ ]  pkg-config		sdf.org	70
-i[ ]  pkill		sdf.org	70
-i[ ]  pl2pm		sdf.org	70
-i[ ]  pod2html		sdf.org	70
-i[ ]  pod2man		sdf.org	70
-i[ ]  pod2text		sdf.org	70
-i[ ]  pod2usage		sdf.org	70
-i[ ]  podchecker		sdf.org	70
-i[ ]  podselect		sdf.org	70
-i[ ]  pr		sdf.org	70
-i[ ]  printenv		sdf.org	70
-i[ ]  printf		sdf.org	70
-i[ ]  prove		sdf.org	70
-i[ ]  pstruct		sdf.org	70
-i[ ]  purgestat		sdf.org	70
-i[ ]  quota		sdf.org	70
-i[ ]  radioctl		sdf.org	70
-i[ ]  ranlib		sdf.org	70
-i[ ]  rcs		sdf.org	70
-i[ ]  rcs2log		sdf.org	70
-i[ ]  rcsclean		sdf.org	70
-i[ ]  rcsdiff		sdf.org	70
-i[ ]  rcsmerge		sdf.org	70
-i[ ]  rdist		sdf.org	70
-i[ ]  rdistd		sdf.org	70
-i[ ]  rdsetroot		sdf.org	70
-i[ ]  readelf		sdf.org	70
-i[ ]  readlink		sdf.org	70
-i[ ]  renice		sdf.org	70
-i[ ]  reset		sdf.org	70
-i[ ]  rev		sdf.org	70
-i[ ]  rlog		sdf.org	70
-i[ ]  rpcgen		sdf.org	70
-i[ ]  rpcinfo		sdf.org	70
-i[ ]  rs		sdf.org	70
-i[ ]  rup		sdf.org	70
-i[ ]  rusers		sdf.org	70
-i[ ]  rwall		sdf.org	70
-i[ ]  scp		sdf.org	70
-i[ ]  script		sdf.org	70
-i[ ]  sdiff		sdf.org	70
-i[ ]  sed		sdf.org	70
-i[ ]  sendbug		sdf.org	70
-i[ ]  sftp		sdf.org	70
-i[ ]  shar		sdf.org	70
-i[ ]  showmount		sdf.org	70
-i[ ]  signify		sdf.org	70
-i[ ]  size		sdf.org	70
-i[ ]  skey		sdf.org	70
-i[ ]  skeyaudit		sdf.org	70
-i[ ]  skeyinfo		sdf.org	70
-i[ ]  skeyinit		sdf.org	70
-i[ ]  skeyprune		sdf.org	70
-i[ ]  sndiod		sdf.org	70
-i[ ]  sort		sdf.org	70
-i[ ]  spell		sdf.org	70
-i[ ]  splain		sdf.org	70
-i[ ]  split		sdf.org	70
-i[ ]  ssh		sdf.org	70
-i[ ]  ssh-add		sdf.org	70
-i[ ]  ssh-agent		sdf.org	70
-i[ ]  ssh-keygen		sdf.org	70
-i[ ]  ssh-keyscan		sdf.org	70
-i[ ]  stat		sdf.org	70
-i[ ]  strings		sdf.org	70
-i[ ]  strip		sdf.org	70
-i[ ]  su		sdf.org	70
-i[ ]  systat		sdf.org	70
-i[ ]  tail		sdf.org	70
-i[ ]  talk		sdf.org	70
-i[ ]  tcpbench		sdf.org	70
-i[ ]  tee		sdf.org	70
-i[ ]  telnet		sdf.org	70
-i[ ]  texi2dvi		sdf.org	70
-i[ ]  texi2pdf		sdf.org	70
-i[ ]  texindex		sdf.org	70
-i[ ]  tftp		sdf.org	70
-i[ ]  tic		sdf.org	70
-i[ ]  time		sdf.org	70
-i[ ]  tmux		sdf.org	70
-i[ ]  top		sdf.org	70
-i[ ]  touch		sdf.org	70
-i[ ]  tput		sdf.org	70
-i[ ]  tr		sdf.org	70
-i[ ]  true		sdf.org	70
-i[ ]  tset		sdf.org	70
-i[ ]  tsort		sdf.org	70
-i[ ]  tty		sdf.org	70
-i[ ]  ul		sdf.org	70
-i[ ]  uname		sdf.org	70
-i[ ]  uncompress		sdf.org	70
-i[ ]  unexpand		sdf.org	70
-i[ ]  unifdef		sdf.org	70
-i[ ]  uniq		sdf.org	70
-i[ ]  units		sdf.org	70
-i[ ]  unvis		sdf.org	70
-i[ ]  uptime		sdf.org	70
-i[ ]  usbhidaction		sdf.org	70
-i[ ]  usbhidctl		sdf.org	70
-i[ ]  users		sdf.org	70
-i[ ]  uudecode		sdf.org	70
-i[ ]  uuencode		sdf.org	70
-i[ ]  vacation		sdf.org	70
-i[ ]  vi		sdf.org	70
-i[ ]  view		sdf.org	70
-i[ ]  vis		sdf.org	70
-i[ ]  vmstat		sdf.org	70
-i[ ]  w		sdf.org	70
-i[ ]  wall		sdf.org	70
-i[ ]  wc		sdf.org	70
-i[ ]  what		sdf.org	70
-i[ ]  whatis		sdf.org	70
-i[ ]  whereis		sdf.org	70
-i[ ]  which		sdf.org	70
-i[ ]  who		sdf.org	70
-i[ ]  whoami		sdf.org	70
-i[ ]  whois		sdf.org	70
-i[ ]  write		sdf.org	70
-i[ ]  x99token		sdf.org	70
-i[ ]  xargs		sdf.org	70
-i[ ]  xsubpp		sdf.org	70
-i[ ]  yacc		sdf.org	70
-i[ ]  yes		sdf.org	70
-i[ ]  ypcat		sdf.org	70
-i[ ]  ypmatch		sdf.org	70
-i[ ]  ypwhich		sdf.org	70
-i[ ]  yyfix		sdf.org	70
-i[ ]  zcat		sdf.org	70
-i[ ]  zcmp		sdf.org	70
-i[ ]  zdiff		sdf.org	70
-i[ ]  zegrep		sdf.org	70
-i[ ]  zfgrep		sdf.org	70
-i[ ]  zforce		sdf.org	70
-i[ ]  zgrep		sdf.org	70
-i[ ]  zless		sdf.org	70
-i[ ]  zmore		sdf.org	70
-i[ ]  znew		sdf.org	70
-i		sdf.org	70
-i - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -		sdf.org	70
-iSecondary List		sdf.org	70
-ihttps://gist.github.com/QWxleA/0a3e28f4a3387e5087e8f3608c32fd03		sdf.org	70
-i		sdf.org	70
-i## Post install		sdf.org	70
-i		sdf.org	70
-i[X] afterboot(8)		sdf.org	70
-i[X] syspatch(8)		sdf.org	70
-i		sdf.org	70
-i[X] security(8)		sdf.org	70
-i[X] intro(8)		sdf.org	70
-i		sdf.org	70
-i[ ] passwd(8)		sdf.org	70
-i		sdf.org	70
-i[X] date(1)		sdf.org	70
-i[ ] ntpd(8)		sdf.org	70
-i		sdf.org	70
-i[ ] myname		sdf.org	70
-i[ ] mygate		sdf.org	70
-i[ ] hostname(1)		sdf.org	70
-i[ ] netstart(1)		sdf.org	70
-i[ ] ifconfig(8)		sdf.org	70
-i[ ] resolv.conf		sdf.org	70
-i		sdf.org	70
-i[ ] newaliases		sdf.org	70
-i		sdf.org	70
-i[ ] kbd(8)		sdf.org	70
-i		sdf.org	70
-i## Booting openBSD		sdf.org	70
-i		sdf.org	70
-i[ ] init(8)		sdf.org	70
-i		sdf.org	70
-i[ ] rc.conf(8)		sdf.org	70
-i[ ] rc.conf.local(8)		sdf.org	70
-i[ ] rc(8)		sdf.org	70
-i[ ] rcctl(8)		sdf.org	70
-i[ ] rc.d(8)		sdf.org	70
-i[ ] rc.subr(8)		sdf.org	70
-i		sdf.org	70
-i[ ] reboot(8)		sdf.org	70
-i[ ] halt(8)		sdf.org	70
-i		sdf.org	70
-i# User management		sdf.org	70
-i		sdf.org	70
-i[ ] user(8)		sdf.org	70
-i[ ] useradd(8)		sdf.org	70
-i[ ] userdel(8)		sdf.org	70
-i[ ] userinfo(8)		sdf.org	70
-i[ ] usermod(8)		sdf.org	70
-i		sdf.org	70
-i[ ] group(8)		sdf.org	70
-i[ ] groupadd(8)		sdf.org	70
-i[ ] groupdel(8)		sdf.org	70
-i[ ] groupinfo(8)		sdf.org	70
-i[ ] groupmod(8)		sdf.org	70
-i[ ] groups(1)		sdf.org	70
-i		sdf.org	70
-i[ ] vipw(8)		sdf.org	70
-i[ ] encrypt(1)		sdf.org	70
-i		sdf.org	70
-i[ ] shells(5)		sdf.org	70
-i[ ] login(1)		sdf.org	70
-i[ ] nologin(8)		sdf.org	70
-i		sdf.org	70
-i[ ] login.conf(5)		sdf.org	70
-i[ ] login(1)		sdf.org	70
-i[ ] id(1)		sdf.org	70
-i		sdf.org	70
-i## Root		sdf.org	70
-i		sdf.org	70
-i[ ] su(1)		sdf.org	70
-i[ ] doas(1)		sdf.org	70
-i		sdf.org	70
-i## Disks and filesystems		sdf.org	70
-i		sdf.org	70
-i[ ] fdisk		sdf.org	70
-i[ ] disklabel(8)		sdf.org	70
-i[ ] newfs(8)		sdf.org	70
-i[ ] mount(8)		sdf.org	70
-i[ ] fsck(8)		sdf.org	70
-i[ ] du(1)		sdf.org	70
-i[ ] df(1)		sdf.org	70
-i		sdf.org	70
-i## Securing OpenBSD		sdf.org	70
-i		sdf.org	70
-i[ ] chflags(1)		sdf.org	70
-i[ ] ls(1)		sdf.org	70
-i[ ] securelevel(7)		sdf.org	70
-i[ ] man sysctl(8)		sdf.org	70
-i[ ] chmod(1)		sdf.org	70
-i		sdf.org	70
-i## Software management		sdf.org	70
-i		sdf.org	70
-i[ ] pkg-config(1)		sdf.org	70
-i[ ] pkg_add(1)		sdf.org	70
-i[ ] pkg_create(1)		sdf.org	70
-i[ ] pkg_delete(1)		sdf.org	70
-i[ ] pkg_info(1)		sdf.org	70
-i[ ] pkg_mklocatedb(1)		sdf.org	70
-i[ ] pkg_sign(1)		sdf.org	70
-i		sdf.org	70
-i[ ] make(1)		sdf.org	70
-i		sdf.org	70
-i## System maintenance		sdf.org	70
-i		sdf.org	70
-i[ ] daily(8)		sdf.org	70
-i[ ] security(8)		sdf.org	70
-i[ ] syslogd(8)		sdf.org	70
-i[ ] syslogc(8)		sdf.org	70
-i[ ] logger(1)		sdf.org	70
-i[ ] cron(8)		sdf.org	70
-i		sdf.org	70
-i## Network Servers		sdf.org	70
-i		sdf.org	70
-i[ ] sshd(8)		sdf.org	70
-i[ ] sshd_config(5) 		sdf.org	70
-i[ ] smtpd(8) - Simple Mail Transfer Protocol daemon		sdf.org	70
-i[ ] smtpd.conf(5) - Simple Mail Transfer Protocol daemon configuration file		sdf.org	70
-i[ ] aliases(5) - aliases file for smtpd		sdf.org	70
-i[ ] table(5) - format description for smtpd tables		sdf.org	70
-i[ ] makemap(8) - create database maps for smtpd		sdf.org	70
-i[ ] sendmail(8) - a mail enqueuer for smtpd 8		sdf.org	70
-i[ ] inetd(8)		sdf.org	70
-i[ ] dhcpd(8) - Dynamic Host Configuration Protocol (DHCP) server		sdf.org	70
-i[ ] dhcpd.conf(5) - DHCP server configuration file		sdf.org	70
-i[ ] dhcpd.leases(5) - DHCP server lease database		sdf.org	70
-i		sdf.org	70
-i## Packet filtering		sdf.org	70
-i		sdf.org	70
-i[ ] pf.conf(5)		sdf.org	70
-i[ ] pfctl(8)		sdf.org	70
-i[ ] pflogd(8)		sdf.org	70
-i		sdf.org	70
-i		sdf.org	70
-i[ ] afterboot(8)		sdf.org	70
-i[ ] syspatch(8)		sdf.org	70
-i		sdf.org	70
-i[ ] security(8)		sdf.org	70
-i[ ] intro(8)		sdf.org	70
-i		sdf.org	70
-i[ ] passwd(8)		sdf.org	70
-i		sdf.org	70
-i[X] date(1)		sdf.org	70
-i[ ] ntpd(8)		sdf.org	70
-i		sdf.org	70
-i[ ] myname		sdf.org	70
-i[ ] mygate		sdf.org	70
-i[ ] hostname(1)		sdf.org	70
-i[ ] netstart(1)		sdf.org	70
-i[ ] ifconfig(8)		sdf.org	70
-i[ ] resolv.conf		sdf.org	70
-i		sdf.org	70
-i[ ] newaliases		sdf.org	70
-i		sdf.org	70
-i[ ] kbd(8)		sdf.org	70
-i		sdf.org	70
-i## Booting openBSD		sdf.org	70
-i		sdf.org	70
-i[ ] init(8)		sdf.org	70
-i		sdf.org	70
-i[ ] rc.conf(8)		sdf.org	70
-i[ ] rc.conf.local(8)		sdf.org	70
-i[ ] rc(8)		sdf.org	70
-i[ ] rcctl(8)		sdf.org	70
-i[ ] rc.d(8)		sdf.org	70
-i[ ] rc.subr(8)		sdf.org	70
-i		sdf.org	70
-i[ ] reboot(8)		sdf.org	70
-i[ ] halt(8)		sdf.org	70
-i		sdf.org	70
-i# User management		sdf.org	70
-i		sdf.org	70
-i[ ] user(8)		sdf.org	70
-i[ ] useradd(8)		sdf.org	70
-i[ ] userdel(8)		sdf.org	70
-i[ ] userinfo(8)		sdf.org	70
-i[ ] usermod(8)		sdf.org	70
-i		sdf.org	70
-i[ ] group(8)		sdf.org	70
-i[ ] groupadd(8)		sdf.org	70
-i[ ] groupdel(8)		sdf.org	70
-i[ ] groupinfo(8)		sdf.org	70
-i[ ] groupmod(8)		sdf.org	70
-i[ ] groups(1)		sdf.org	70
-i		sdf.org	70
-i[ ] vipw(8)		sdf.org	70
-i[ ] encrypt(1)		sdf.org	70
-i		sdf.org	70
-i[ ] shells(5)		sdf.org	70
-i[ ] login(1)		sdf.org	70
-i[ ] nologin(8)		sdf.org	70
-i		sdf.org	70
-i[ ] login.conf(5)		sdf.org	70
-i[ ] login(1)		sdf.org	70
-i[ ] id(1)		sdf.org	70
-i		sdf.org	70
-i## Root		sdf.org	70
-i		sdf.org	70
-i[ ] su(1)		sdf.org	70
-i[ ] doas(1)		sdf.org	70
-i		sdf.org	70
-i## Disks and filesystems		sdf.org	70
-i		sdf.org	70
-i[ ] fdisk		sdf.org	70
-i[ ] disklabel(8)		sdf.org	70
-i[ ] newfs(8)		sdf.org	70
-i[ ] mount(8)		sdf.org	70
-i[ ] fsck(8)		sdf.org	70
-i[ ] du(1)		sdf.org	70
-i[ ] df(1)		sdf.org	70
-i		sdf.org	70
-i## Securing OpenBSD		sdf.org	70
-i		sdf.org	70
-i[ ] chflags(1)		sdf.org	70
-i[ ] ls(1)		sdf.org	70
-i[ ] securelevel(7)		sdf.org	70
-i[ ] man sysctl(8)		sdf.org	70
-i[ ] chmod(1)		sdf.org	70
-i		sdf.org	70
-i## Software management		sdf.org	70
-i		sdf.org	70
-i[ ] pkg-config(1)		sdf.org	70
-i[ ] pkg_add(1)		sdf.org	70
-i[ ] pkg_create(1)		sdf.org	70
-i[ ] pkg_delete(1)		sdf.org	70
-i[ ] pkg_info(1)		sdf.org	70
-i[ ] pkg_mklocatedb(1)		sdf.org	70
-i[ ] pkg_sign(1)		sdf.org	70
-i		sdf.org	70
-i[ ] make(1)		sdf.org	70
-i		sdf.org	70
-i## System maintenance		sdf.org	70
-i		sdf.org	70
-i[ ] daily(8)		sdf.org	70
-i[ ] security(8)		sdf.org	70
-i[ ] syslogd(8)		sdf.org	70
-i[ ] syslogc(8)		sdf.org	70
-i[ ] logger(1)		sdf.org	70
-i[ ] cron(8)		sdf.org	70
-i		sdf.org	70
-i## Network Servers		sdf.org	70
-i		sdf.org	70
-i[ ] sshd(8)		sdf.org	70
-i[ ] sshd_config(5) 		sdf.org	70
-i[ ] smtpd(8) - Simple Mail Transfer Protocol daemon		sdf.org	70
-i[ ] smtpd.conf(5) - Simple Mail Transfer Protocol daemon configuration file		sdf.org	70
-i[ ] aliases(5) - aliases file for smtpd		sdf.org	70
-i[ ] table(5) - format description for smtpd tables		sdf.org	70
-i[ ] makemap(8) - create database maps for smtpd		sdf.org	70
-i[ ] sendmail(8) - a mail enqueuer for smtpd 8		sdf.org	70
-i[ ] inetd(8)		sdf.org	70
-i[ ] dhcpd(8) - Dynamic Host Configuration Protocol (DHCP) server		sdf.org	70
-i[ ] dhcpd.conf(5) - DHCP server configuration file		sdf.org	70
-i[ ] dhcpd.leases(5) - DHCP server lease database		sdf.org	70
-i		sdf.org	70
-i## Packet filtering		sdf.org	70
-i		sdf.org	70
-i[ ] pf.conf(5)		sdf.org	70
-i[ ] pfctl(8)		sdf.org	70
-i[ ] pflogd(8)		sdf.org	70
-i		sdf.org	70
+i[ ] ksh		gopher.black	70
+i[X] ln		gopher.black	70
+i[X] ls		gopher.black	70
+i[X] md5		gopher.black	70
+i[X] mkdir		gopher.black	70
+i[X] mt		gopher.black	70
+i[X] mv		gopher.black	70
+i[X] pax		gopher.black	70
+i[X] ps		gopher.black	70
+i[X] pwd		gopher.black	70
+i[ ] rksh		gopher.black	70
+i[X] rm		gopher.black	70
+i[X] rmdir		gopher.black	70
+i[ ] sh		gopher.black	70
+i[X] sha1		gopher.black	70
+i[X] sha256		gopher.black	70
+i[X] sha512		gopher.black	70
+i[X] sleep		gopher.black	70
+0[ ] stty	stty.txt
+i[ ] sync		gopher.black	70
+i[ ] tar		gopher.black	70
+i[X] test		gopher.black	70
+i		gopher.black	70
+i/usr/bin:		gopher.black	70
+i[ ]  Mail		gopher.black	70
+i[ ]  addr2line		gopher.black	70
+i[ ]  apply		gopher.black	70
+i[ ]  apropos		gopher.black	70
+i[ ]  ar		gopher.black	70
+i[ ]  arch		gopher.black	70
+i[ ]  as		gopher.black	70
+i[ ]  at		gopher.black	70
+i[ ]  atq		gopher.black	70
+i[ ]  atrm		gopher.black	70
+i[ ]  aucat		gopher.black	70
+i[ ]  audioctl		gopher.black	70
+i[ ]  awk		gopher.black	70
+i[ ]  b64decode		gopher.black	70
+i[ ]  b64encode		gopher.black	70
+i[ ]  banner		gopher.black	70
+i[ ]  basename		gopher.black	70
+i[ ]  batch		gopher.black	70
+i[ ]  bc		gopher.black	70
+i[ ]  bgplgsh		gopher.black	70
+i[ ]  biff		gopher.black	70
+i[ ]  c++		gopher.black	70
+i[ ]  c++filt		gopher.black	70
+i[ ]  c2ph		gopher.black	70
+i[ ]  cal		gopher.black	70
+i[ ]  calendar		gopher.black	70
+i[ ]  cap_mkdb		gopher.black	70
+i[ ]  captoinfo		gopher.black	70
+i[ ]  cc		gopher.black	70
+i[ ]  cdio		gopher.black	70
+i[ ]  chflags		gopher.black	70
+i[ ]  chfn		gopher.black	70
+i[ ]  chpass		gopher.black	70
+i[ ]  chsh		gopher.black	70
+i[ ]  ci		gopher.black	70
+i[ ]  clang		gopher.black	70
+i[ ]  clang++		gopher.black	70
+i[ ]  clang-cpp		gopher.black	70
+i[ ]  clear		gopher.black	70
+i[ ]  cmp		gopher.black	70
+i[ ]  co		gopher.black	70
+i[ ]  col		gopher.black	70
+i[ ]  colrm		gopher.black	70
+i[ ]  column		gopher.black	70
+i[ ]  comm		gopher.black	70
+i[ ]  compress		gopher.black	70
+i[ ]  corelist		gopher.black	70
+i[ ]  cpan		gopher.black	70
+i[ ]  cpp		gopher.black	70
+i[ ]  crontab		gopher.black	70
+i[ ]  csplit		gopher.black	70
+i[ ]  ctags		gopher.black	70
+i[ ]  ctfconv		gopher.black	70
+i[ ]  ctfdump		gopher.black	70
+i[ ]  ctfstrip		gopher.black	70
+i[ ]  cu		gopher.black	70
+i[ ]  cut		gopher.black	70
+i[ ]  cvs		gopher.black	70
+i[ ]  cvsbug		gopher.black	70
+i[ ]  dc		gopher.black	70
+i[ ]  deroff		gopher.black	70
+i[ ]  diff		gopher.black	70
+i[ ]  diff3		gopher.black	70
+i[ ]  dirname		gopher.black	70
+i[ ]  doas		gopher.black	70
+i[ ]  du		gopher.black	70
+i[ ]  egrep		gopher.black	70
+i[ ]  enc2xs		gopher.black	70
+i[ ]  encguess		gopher.black	70
+i[ ]  encrypt		gopher.black	70
+i[ ]  env		gopher.black	70
+i[ ]  ex		gopher.black	70
+i[ ]  expand		gopher.black	70
+i[ ]  false		gopher.black	70
+i[ ]  fgen		gopher.black	70
+i[ ]  fgrep		gopher.black	70
+i[ ]  file		gopher.black	70
+i[ ]  find		gopher.black	70
+i[ ]  finger		gopher.black	70
+i[ ]  flex		gopher.black	70
+i[ ]  flex++		gopher.black	70
+i[ ]  fmt		gopher.black	70
+i[ ]  fold		gopher.black	70
+i[ ]  from		gopher.black	70
+i[ ]  fstat		gopher.black	70
+i[ ]  ftp		gopher.black	70
+i[ ]  fuser		gopher.black	70
+i[ ]  g++		gopher.black	70
+i[ ]  gcc		gopher.black	70
+i[ ]  gcov		gopher.black	70
+i[ ]  gdb		gopher.black	70
+i[ ]  gencat		gopher.black	70
+i[ ]  getcap		gopher.black	70
+i[ ]  getconf		gopher.black	70
+i[ ]  getent		gopher.black	70
+i[ ]  getopt		gopher.black	70
+i[ ]  gprof		gopher.black	70
+i[ ]  grep		gopher.black	70
+i[ ]  groups		gopher.black	70
+i[ ]  gunzip		gopher.black	70
+i[ ]  gzcat		gopher.black	70
+i[ ]  gzexe		gopher.black	70
+i[ ]  gzip		gopher.black	70
+i[ ]  h2ph		gopher.black	70
+i[ ]  h2xs		gopher.black	70
+i[ ]  head		gopher.black	70
+i[ ]  help		gopher.black	70
+i[ ]  hexdump		gopher.black	70
+i[ ]  hoststat		gopher.black	70
+i[ ]  htpasswd		gopher.black	70
+i[ ]  d		gopher.black	70
+i[ ]  dent		gopher.black	70
+i[ ]  ndent		gopher.black	70
+i[ ]  nfo		gopher.black	70
+i[ ]  nfocmp		gopher.black	70
+i[ ]  nfokey		gopher.black	70
+i[ ]  nfotocap		gopher.black	70
+i[ ]  nstall		gopher.black	70
+i[ ]  nstall-info		gopher.black	70
+i[ ]  nstmodsh		gopher.black	70
+i[ ]  pcrm		gopher.black	70
+i[ ]  pcs		gopher.black	70
+i[ ]  join		gopher.black	70
+i[ ]  jot		gopher.black	70
+i[ ]  kdump		gopher.black	70
+i[ ]  keynote		gopher.black	70
+i[ ]  ktrace		gopher.black	70
+i[ ]  lam		gopher.black	70
+i[ ]  last		gopher.black	70
+i[ ]  lastcomm		gopher.black	70
+i[ ]  ld		gopher.black	70
+i[ ]  ld.lld		gopher.black	70
+i[ ]  ldd		gopher.black	70
+i[ ]  leave		gopher.black	70
+i[ ]  less		gopher.black	70
+i[ ]  lesskey		gopher.black	70
+i[ ]  lex		gopher.black	70
+i[ ]  libnetcfg		gopher.black	70
+i[ ]  libtool		gopher.black	70
+i[ ]  lndir		gopher.black	70
+i[ ]  locale		gopher.black	70
+i[ ]  locate		gopher.black	70
+i[ ]  lock		gopher.black	70
+i[ ]  logger		gopher.black	70
+i[ ]  login		gopher.black	70
+i[ ]  logname		gopher.black	70
+i[ ]  look		gopher.black	70
+i[ ]  lorder		gopher.black	70
+i[ ]  lpq		gopher.black	70
+i[ ]  lpr		gopher.black	70
+i[ ]  lprm		gopher.black	70
+i[ ]  ltrace		gopher.black	70
+i[ ]  m4		gopher.black	70
+i[ ]  machine		gopher.black	70
+i[X]  mail		gopher.black	70
+i[ ]  mailq		gopher.black	70
+i[ ]  mailx		gopher.black	70
+i[ ]  make		gopher.black	70
+i[ ]  makeinfo		gopher.black	70
+i[ ]  man		gopher.black	70
+i[ ]  mandoc		gopher.black	70
+i[ ]  merge		gopher.black	70
+i[ ]  mesg		gopher.black	70
+i[ ]  mg		gopher.black	70
+i[ ]  midiplay		gopher.black	70
+i[ ]  mixerctl		gopher.black	70
+i[ ]  mkdep		gopher.black	70
+i[ ]  mklocale		gopher.black	70
+i[ ]  mktemp		gopher.black	70
+i[ ]  more		gopher.black	70
+i[ ]  nc		gopher.black	70
+i[ ]  netstat		gopher.black	70
+i[ ]  newaliases		gopher.black	70
+i[ ]  newsyslog		gopher.black	70
+i[ ]  nfsstat		gopher.black	70
+i[ ]  nice		gopher.black	70
+i[ ]  nl		gopher.black	70
+i[ ]  nm		gopher.black	70
+i[ ]  nohup		gopher.black	70
+i[ ]  objcopy		gopher.black	70
+i[ ]  objdump		gopher.black	70
+i[ ]  od		gopher.black	70
+i[ ]  opencvs		gopher.black	70
+i[ ]  openssl		gopher.black	70
+i[ ]  openup		gopher.black	70
+i[ ]  otp-md5		gopher.black	70
+i[ ]  otp-rmd160		gopher.black	70
+i[ ]  otp-sha1		gopher.black	70
+i[ ]  pagesize		gopher.black	70
+i[ ]  passwd		gopher.black	70
+i[ ]  paste		gopher.black	70
+i[ ]  patch		gopher.black	70
+i[ ]  pctr		gopher.black	70
+i[ ]  perl		gopher.black	70
+i[ ]  perlbug		gopher.black	70
+i[ ]  perldoc		gopher.black	70
+i[ ]  perlivp		gopher.black	70
+i[ ]  pgrep		gopher.black	70
+i[ ]  piconv		gopher.black	70
+i[ ]  pkg-config		gopher.black	70
+i[ ]  pkill		gopher.black	70
+i[ ]  pl2pm		gopher.black	70
+i[ ]  pod2html		gopher.black	70
+i[ ]  pod2man		gopher.black	70
+i[ ]  pod2text		gopher.black	70
+i[ ]  pod2usage		gopher.black	70
+i[ ]  podchecker		gopher.black	70
+i[ ]  podselect		gopher.black	70
+i[ ]  pr		gopher.black	70
+i[ ]  printenv		gopher.black	70
+i[ ]  printf		gopher.black	70
+i[ ]  prove		gopher.black	70
+i[ ]  pstruct		gopher.black	70
+i[ ]  purgestat		gopher.black	70
+i[ ]  quota		gopher.black	70
+i[ ]  radioctl		gopher.black	70
+i[ ]  ranlib		gopher.black	70
+i[ ]  rcs		gopher.black	70
+i[ ]  rcs2log		gopher.black	70
+i[ ]  rcsclean		gopher.black	70
+i[ ]  rcsdiff		gopher.black	70
+i[ ]  rcsmerge		gopher.black	70
+i[ ]  rdist		gopher.black	70
+i[ ]  rdistd		gopher.black	70
+i[ ]  rdsetroot		gopher.black	70
+i[ ]  readelf		gopher.black	70
+i[ ]  readlink		gopher.black	70
+i[ ]  renice		gopher.black	70
+i[ ]  reset		gopher.black	70
+i[ ]  rev		gopher.black	70
+i[ ]  rlog		gopher.black	70
+i[ ]  rpcgen		gopher.black	70
+i[ ]  rpcinfo		gopher.black	70
+i[ ]  rs		gopher.black	70
+i[ ]  rup		gopher.black	70
+i[ ]  rusers		gopher.black	70
+i[ ]  rwall		gopher.black	70
+i[ ]  scp		gopher.black	70
+i[ ]  script		gopher.black	70
+i[ ]  sdiff		gopher.black	70
+i[ ]  sed		gopher.black	70
+i[ ]  sendbug		gopher.black	70
+i[ ]  sftp		gopher.black	70
+i[ ]  shar		gopher.black	70
+i[ ]  showmount		gopher.black	70
+i[ ]  signify		gopher.black	70
+i[ ]  size		gopher.black	70
+i[ ]  skey		gopher.black	70
+i[ ]  skeyaudit		gopher.black	70
+i[ ]  skeyinfo		gopher.black	70
+i[ ]  skeyinit		gopher.black	70
+i[ ]  skeyprune		gopher.black	70
+i[ ]  sndiod		gopher.black	70
+i[ ]  sort		gopher.black	70
+i[ ]  spell		gopher.black	70
+i[ ]  splain		gopher.black	70
+i[ ]  split		gopher.black	70
+i[ ]  ssh		gopher.black	70
+i[ ]  ssh-add		gopher.black	70
+i[ ]  ssh-agent		gopher.black	70
+i[ ]  ssh-keygen		gopher.black	70
+i[ ]  ssh-keyscan		gopher.black	70
+i[ ]  stat		gopher.black	70
+i[ ]  strings		gopher.black	70
+i[ ]  strip		gopher.black	70
+i[ ]  su		gopher.black	70
+i[ ]  systat		gopher.black	70
+i[ ]  tail		gopher.black	70
+i[ ]  talk		gopher.black	70
+i[ ]  tcpbench		gopher.black	70
+i[ ]  tee		gopher.black	70
+i[ ]  telnet		gopher.black	70
+i[ ]  texi2dvi		gopher.black	70
+i[ ]  texi2pdf		gopher.black	70
+i[ ]  texindex		gopher.black	70
+i[ ]  tftp		gopher.black	70
+i[ ]  tic		gopher.black	70
+i[ ]  time		gopher.black	70
+i[ ]  tmux		gopher.black	70
+i[ ]  top		gopher.black	70
+i[ ]  touch		gopher.black	70
+i[ ]  tput		gopher.black	70
+i[ ]  tr		gopher.black	70
+i[ ]  true		gopher.black	70
+i[ ]  tset		gopher.black	70
+i[ ]  tsort		gopher.black	70
+i[ ]  tty		gopher.black	70
+i[ ]  ul		gopher.black	70
+i[ ]  uname		gopher.black	70
+i[ ]  uncompress		gopher.black	70
+i[ ]  unexpand		gopher.black	70
+i[ ]  unifdef		gopher.black	70
+i[ ]  uniq		gopher.black	70
+i[ ]  units		gopher.black	70
+i[ ]  unvis		gopher.black	70
+i[ ]  uptime		gopher.black	70
+i[ ]  usbhidaction		gopher.black	70
+i[ ]  usbhidctl		gopher.black	70
+i[ ]  users		gopher.black	70
+i[ ]  uudecode		gopher.black	70
+i[ ]  uuencode		gopher.black	70
+i[ ]  vacation		gopher.black	70
+i[ ]  vi		gopher.black	70
+i[ ]  view		gopher.black	70
+i[ ]  vis		gopher.black	70
+i[ ]  vmstat		gopher.black	70
+i[ ]  w		gopher.black	70
+i[ ]  wall		gopher.black	70
+i[ ]  wc		gopher.black	70
+i[ ]  what		gopher.black	70
+i[ ]  whatis		gopher.black	70
+i[ ]  whereis		gopher.black	70
+i[ ]  which		gopher.black	70
+i[ ]  who		gopher.black	70
+i[ ]  whoami		gopher.black	70
+i[ ]  whois		gopher.black	70
+i[ ]  write		gopher.black	70
+i[ ]  x99token		gopher.black	70
+i[ ]  xargs		gopher.black	70
+i[ ]  xsubpp		gopher.black	70
+i[ ]  yacc		gopher.black	70
+i[ ]  yes		gopher.black	70
+i[ ]  ypcat		gopher.black	70
+i[ ]  ypmatch		gopher.black	70
+i[ ]  ypwhich		gopher.black	70
+i[ ]  yyfix		gopher.black	70
+i[ ]  zcat		gopher.black	70
+i[ ]  zcmp		gopher.black	70
+i[ ]  zdiff		gopher.black	70
+i[ ]  zegrep		gopher.black	70
+i[ ]  zfgrep		gopher.black	70
+i[ ]  zforce		gopher.black	70
+i[ ]  zgrep		gopher.black	70
+i[ ]  zless		gopher.black	70
+i[ ]  zmore		gopher.black	70
+i[ ]  znew		gopher.black	70
+i		gopher.black	70
+i - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -		gopher.black	70
+iSecondary List		gopher.black	70
+ihttps://gist.github.com/QWxleA/0a3e28f4a3387e5087e8f3608c32fd03		gopher.black	70
+i		gopher.black	70
+i## Post install		gopher.black	70
+i		gopher.black	70
+i[X] afterboot(8)		gopher.black	70
+i[X] syspatch(8)		gopher.black	70
+i		gopher.black	70
+i[X] security(8)		gopher.black	70
+i[X] intro(8)		gopher.black	70
+i		gopher.black	70
+i[ ] passwd(8)		gopher.black	70
+i		gopher.black	70
+i[X] date(1)		gopher.black	70
+i[ ] ntpd(8)		gopher.black	70
+i		gopher.black	70
+i[ ] myname		gopher.black	70
+i[ ] mygate		gopher.black	70
+i[ ] hostname(1)		gopher.black	70
+i[ ] netstart(1)		gopher.black	70
+i[ ] ifconfig(8)		gopher.black	70
+i[ ] resolv.conf		gopher.black	70
+i		gopher.black	70
+i[ ] newaliases		gopher.black	70
+i		gopher.black	70
+i[ ] kbd(8)		gopher.black	70
+i		gopher.black	70
+i## Booting openBSD		gopher.black	70
+i		gopher.black	70
+i[ ] init(8)		gopher.black	70
+i		gopher.black	70
+i[ ] rc.conf(8)		gopher.black	70
+i[ ] rc.conf.local(8)		gopher.black	70
+i[ ] rc(8)		gopher.black	70
+i[ ] rcctl(8)		gopher.black	70
+i[ ] rc.d(8)		gopher.black	70
+i[ ] rc.subr(8)		gopher.black	70
+i		gopher.black	70
+i[ ] reboot(8)		gopher.black	70
+i[ ] halt(8)		gopher.black	70
+i		gopher.black	70
+i# User management		gopher.black	70
+i		gopher.black	70
+i[ ] user(8)		gopher.black	70
+i[ ] useradd(8)		gopher.black	70
+i[ ] userdel(8)		gopher.black	70
+i[ ] userinfo(8)		gopher.black	70
+i[ ] usermod(8)		gopher.black	70
+i		gopher.black	70
+i[ ] group(8)		gopher.black	70
+i[ ] groupadd(8)		gopher.black	70
+i[ ] groupdel(8)		gopher.black	70
+i[ ] groupinfo(8)		gopher.black	70
+i[ ] groupmod(8)		gopher.black	70
+i[ ] groups(1)		gopher.black	70
+i		gopher.black	70
+i[ ] vipw(8)		gopher.black	70
+i[ ] encrypt(1)		gopher.black	70
+i		gopher.black	70
+i[ ] shells(5)		gopher.black	70
+i[ ] login(1)		gopher.black	70
+i[ ] nologin(8)		gopher.black	70
+i		gopher.black	70
+i[ ] login.conf(5)		gopher.black	70
+i[ ] login(1)		gopher.black	70
+i[ ] id(1)		gopher.black	70
+i		gopher.black	70
+i## Root		gopher.black	70
+i		gopher.black	70
+i[ ] su(1)		gopher.black	70
+i[ ] doas(1)		gopher.black	70
+i		gopher.black	70
+i## Disks and filesystems		gopher.black	70
+i		gopher.black	70
+i[ ] fdisk		gopher.black	70
+i[ ] disklabel(8)		gopher.black	70
+i[ ] newfs(8)		gopher.black	70
+i[ ] mount(8)		gopher.black	70
+i[ ] fsck(8)		gopher.black	70
+i[ ] du(1)		gopher.black	70
+i[ ] df(1)		gopher.black	70
+i		gopher.black	70
+i## Securing OpenBSD		gopher.black	70
+i		gopher.black	70
+i[ ] chflags(1)		gopher.black	70
+i[ ] ls(1)		gopher.black	70
+i[ ] securelevel(7)		gopher.black	70
+i[ ] man sysctl(8)		gopher.black	70
+i[ ] chmod(1)		gopher.black	70
+i		gopher.black	70
+i## Software management		gopher.black	70
+i		gopher.black	70
+i[ ] pkg-config(1)		gopher.black	70
+i[ ] pkg_add(1)		gopher.black	70
+i[ ] pkg_create(1)		gopher.black	70
+i[ ] pkg_delete(1)		gopher.black	70
+i[ ] pkg_info(1)		gopher.black	70
+i[ ] pkg_mklocatedb(1)		gopher.black	70
+i[ ] pkg_sign(1)		gopher.black	70
+i		gopher.black	70
+i[ ] make(1)		gopher.black	70
+i		gopher.black	70
+i## System maintenance		gopher.black	70
+i		gopher.black	70
+i[ ] daily(8)		gopher.black	70
+i[ ] security(8)		gopher.black	70
+i[ ] syslogd(8)		gopher.black	70
+i[ ] syslogc(8)		gopher.black	70
+i[ ] logger(1)		gopher.black	70
+i[ ] cron(8)		gopher.black	70
+i		gopher.black	70
+i## Network Servers		gopher.black	70
+i		gopher.black	70
+i[ ] sshd(8)		gopher.black	70
+i[ ] sshd_config(5) 		gopher.black	70
+i[ ] smtpd(8) - Simple Mail Transfer Protocol daemon		gopher.black	70
+i[ ] smtpd.conf(5) - Simple Mail Transfer Protocol daemon configuration file		gopher.black	70
+i[ ] aliases(5) - aliases file for smtpd		gopher.black	70
+i[ ] table(5) - format description for smtpd tables		gopher.black	70
+i[ ] makemap(8) - create database maps for smtpd		gopher.black	70
+i[ ] sendmail(8) - a mail enqueuer for smtpd 8		gopher.black	70
+i[ ] inetd(8)		gopher.black	70
+i[ ] dhcpd(8) - Dynamic Host Configuration Protocol (DHCP) server		gopher.black	70
+i[ ] dhcpd.conf(5) - DHCP server configuration file		gopher.black	70
+i[ ] dhcpd.leases(5) - DHCP server lease database		gopher.black	70
+i		gopher.black	70
+i## Packet filtering		gopher.black	70
+i		gopher.black	70
+i[ ] pf.conf(5)		gopher.black	70
+i[ ] pfctl(8)		gopher.black	70
+i[ ] pflogd(8)		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i[ ] afterboot(8)		gopher.black	70
+i[ ] syspatch(8)		gopher.black	70
+i		gopher.black	70
+i[ ] security(8)		gopher.black	70
+i[ ] intro(8)		gopher.black	70
+i		gopher.black	70
+i[ ] passwd(8)		gopher.black	70
+i		gopher.black	70
+i[X] date(1)		gopher.black	70
+i[ ] ntpd(8)		gopher.black	70
+i		gopher.black	70
+i[ ] myname		gopher.black	70
+i[ ] mygate		gopher.black	70
+i[ ] hostname(1)		gopher.black	70
+i[ ] netstart(1)		gopher.black	70
+i[ ] ifconfig(8)		gopher.black	70
+i[ ] resolv.conf		gopher.black	70
+i		gopher.black	70
+i[ ] newaliases		gopher.black	70
+i		gopher.black	70
+i[ ] kbd(8)		gopher.black	70
+i		gopher.black	70
+i## Booting openBSD		gopher.black	70
+i		gopher.black	70
+i[ ] init(8)		gopher.black	70
+i		gopher.black	70
+i[ ] rc.conf(8)		gopher.black	70
+i[ ] rc.conf.local(8)		gopher.black	70
+i[ ] rc(8)		gopher.black	70
+i[ ] rcctl(8)		gopher.black	70
+i[ ] rc.d(8)		gopher.black	70
+i[ ] rc.subr(8)		gopher.black	70
+i		gopher.black	70
+i[ ] reboot(8)		gopher.black	70
+i[ ] halt(8)		gopher.black	70
+i		gopher.black	70
+i# User management		gopher.black	70
+i		gopher.black	70
+i[ ] user(8)		gopher.black	70
+i[ ] useradd(8)		gopher.black	70
+i[ ] userdel(8)		gopher.black	70
+i[ ] userinfo(8)		gopher.black	70
+i[ ] usermod(8)		gopher.black	70
+i		gopher.black	70
+i[ ] group(8)		gopher.black	70
+i[ ] groupadd(8)		gopher.black	70
+i[ ] groupdel(8)		gopher.black	70
+i[ ] groupinfo(8)		gopher.black	70
+i[ ] groupmod(8)		gopher.black	70
+i[ ] groups(1)		gopher.black	70
+i		gopher.black	70
+i[ ] vipw(8)		gopher.black	70
+i[ ] encrypt(1)		gopher.black	70
+i		gopher.black	70
+i[ ] shells(5)		gopher.black	70
+i[ ] login(1)		gopher.black	70
+i[ ] nologin(8)		gopher.black	70
+i		gopher.black	70
+i[ ] login.conf(5)		gopher.black	70
+i[ ] login(1)		gopher.black	70
+i[ ] id(1)		gopher.black	70
+i		gopher.black	70
+i## Root		gopher.black	70
+i		gopher.black	70
+i[ ] su(1)		gopher.black	70
+i[ ] doas(1)		gopher.black	70
+i		gopher.black	70
+i## Disks and filesystems		gopher.black	70
+i		gopher.black	70
+i[ ] fdisk		gopher.black	70
+i[ ] disklabel(8)		gopher.black	70
+i[ ] newfs(8)		gopher.black	70
+i[ ] mount(8)		gopher.black	70
+i[ ] fsck(8)		gopher.black	70
+i[ ] du(1)		gopher.black	70
+i[ ] df(1)		gopher.black	70
+i		gopher.black	70
+i## Securing OpenBSD		gopher.black	70
+i		gopher.black	70
+i[ ] chflags(1)		gopher.black	70
+i[ ] ls(1)		gopher.black	70
+i[ ] securelevel(7)		gopher.black	70
+i[ ] man sysctl(8)		gopher.black	70
+i[ ] chmod(1)		gopher.black	70
+i		gopher.black	70
+i## Software management		gopher.black	70
+i		gopher.black	70
+i[ ] pkg-config(1)		gopher.black	70
+i[ ] pkg_add(1)		gopher.black	70
+i[ ] pkg_create(1)		gopher.black	70
+i[ ] pkg_delete(1)		gopher.black	70
+i[ ] pkg_info(1)		gopher.black	70
+i[ ] pkg_mklocatedb(1)		gopher.black	70
+i[ ] pkg_sign(1)		gopher.black	70
+i		gopher.black	70
+i[ ] make(1)		gopher.black	70
+i		gopher.black	70
+i## System maintenance		gopher.black	70
+i		gopher.black	70
+i[ ] daily(8)		gopher.black	70
+i[ ] security(8)		gopher.black	70
+i[ ] syslogd(8)		gopher.black	70
+i[ ] syslogc(8)		gopher.black	70
+i[ ] logger(1)		gopher.black	70
+i[ ] cron(8)		gopher.black	70
+i		gopher.black	70
+i## Network Servers		gopher.black	70
+i		gopher.black	70
+i[ ] sshd(8)		gopher.black	70
+i[ ] sshd_config(5) 		gopher.black	70
+i[ ] smtpd(8) - Simple Mail Transfer Protocol daemon		gopher.black	70
+i[ ] smtpd.conf(5) - Simple Mail Transfer Protocol daemon configuration file		gopher.black	70
+i[ ] aliases(5) - aliases file for smtpd		gopher.black	70
+i[ ] table(5) - format description for smtpd tables		gopher.black	70
+i[ ] makemap(8) - create database maps for smtpd		gopher.black	70
+i[ ] sendmail(8) - a mail enqueuer for smtpd 8		gopher.black	70
+i[ ] inetd(8)		gopher.black	70
+i[ ] dhcpd(8) - Dynamic Host Configuration Protocol (DHCP) server		gopher.black	70
+i[ ] dhcpd.conf(5) - DHCP server configuration file		gopher.black	70
+i[ ] dhcpd.leases(5) - DHCP server lease database		gopher.black	70
+i		gopher.black	70
+i## Packet filtering		gopher.black	70
+i		gopher.black	70
+i[ ] pf.conf(5)		gopher.black	70
+i[ ] pfctl(8)		gopher.black	70
+i[ ] pflogd(8)		gopher.black	70
+i		gopher.black	70
