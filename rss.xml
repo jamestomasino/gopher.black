@@ -3,6 +3,37 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Oops</title>
+  <link>gopher://gopher.black/1/phlog/20181001-oops/</link>
+  <pubdate>Mon, 01 Oct 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Oops!
+October 01st, 2018
+----------------------------------------
+
+You might not be reading this right now unless you are checking
+out one of my mirrors on SDF.org or tilde.town. That's because
+I accidentally blew up gopher.black. OHNOES!
+
+I was getting annoyed at the buzzing from the fan on my pi's case.
+I opened it up and tried spraying it with a little lubricant, but
+it didn't make a difference in the sound. So, what the hell, I'll
+just pull it out. Unfortunately, in the process my jostling of the
+SD card put it into read-only mode and now nothing works.
+
+Since the card is still readable I'm dding it down to a backup.
+I've got a new SD card ordered from Amazon and it should be here
+by Wednesday. I'll restore, plug that bad-boy in, and hopefully
+everything will be right as rain. If not, I've got 3 extra
+raspberry pi's lying around that can happily become the next
+gopher.black. I've got the data, I've got redundant hardware. This
+shouldn't be too bad.
+
+Still... derp.
+</pre>]]></description>
+</item>
+<item>
   <title>Sdf Gopher Servers</title>
   <link>gopher://gopher.black/1/phlog/20180929-sdf-gopher-servers/</link>
   <pubdate>Sat, 29 Sep 2018 00:00:00 -0400</pubdate>
@@ -443,171 +474,6 @@ Then I closed the app, reopened it, and boom! Everything was fine.
 
 The interface is great. Very intuitive for swiping around. If
 you're an IRC junky and use weechat, check it out.
-</pre>]]></description>
-</item>
-<item>
-  <title>The Agrestic</title>
-  <link>gopher://gopher.black/1/phlog/20180824-the-agrestic/</link>
-  <pubdate>Fri, 24 Aug 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-The Agrestic
-August 24th, 2018
-----------------------------------------
-
-== Introduction ==
-
-I wrote an opinion piece in my college newspaper about the state
-of our campus due to excessive construction during my two years
-attending. There was no grass over the vast majority of the
-campus, only churned earth or piled dirt next to broken cement
-walkways. I don't remember much of the article except that I used
-the word "agrestic" in a way that suggested rural beauty. The
-editor of the paper had enormous issue with the word, claiming it
-wasn't a real word at all (her three degrees in English literature
-as proof). This outrage and logical fallacy cemented "agrestic" in
-my mind forever. Funny how brains work [0].
-
-[0] cat - Miscolored memory of Washington
-    gopher://baud.baby/0/phlog/fs20180825.txt
-
-This phost isn't about that article though. This phost is about
-the future, post-modernism, the death of the internet, and the
-rise of the agrarian renaissance. Hold on to your butts, we're
-going for a ride.
-
-
-== Time Travel == 
-
-In 1985 Back to the Future was released. Apart from it being
-a nearly flawless film giving us endless quotability and
-establishing a benchmark for all future time travel films, it also
-cemented into my budding consciousness the idea of temporal
-relativity. By this I don't mean anything to do with Einstein's
-terminology, but rather the sense of future and past being
-relative to your own present. What seems obvious from your point
-of view today gets very complex when you take into consideration
-time travel.
-
-Lets say you traveled back to 1955. When you say "in the future
-I want to be a rock star" do you mean back in 1985 where you're
-from, or in your personal future? Perhaps you'll return to your
-original timeline, or perhaps like Doc Brown you'll cut ties to it
-completely and move independently like a Time Lord. The further
-you get away from linear existence the harder relative temporal
-terms become. Or maybe they just become less useful since they
-lack a common vantage point. If you were the Doctor traveling with
-Rose Tyler, you could say, "let's get chips tomorrow" and it might
-still make sense, even if tomorrow happened to be in Victorian
-London.
-
-Time travel complicates everything [1], even basic language. But
-it doesn't take a T.A.R.D.I.S. to weaken a word into
-meaninglessness. It just takes aging.
-
-[1] tomasino - time travel
-    gopher://gopher.black/1/phlog/20171130-time-travel
-
-As a kid, the future represented sleek, pointy cars with sharp
-angles and neon colors. Badass dudes with giant shoulder pads
-would wear opaque shades while LA and NYC were either on fire or
-underwater. These days the future is global economic collapse as
-the balance of power shifts to China and a waffling United States
-falls back on military action to try and maintain a control it
-gave away through isolationism. The future, in essence, is nothing
-at all. It is a fantasy in constant flux with no anchor in reality
-or common experience. It is neither hope nor fear. It is
-intangible and ineffable, and utterly useless.
-
-In 1955, Marty McFly went back to the future. He returned to his
-nineteen eighty-five where sexy mom and successful dad were ruling
-the day. He had his truck, he had the girl, and everything was
-going to be okay. That moment of psychological juxtaposition where
-he physically entered into a new timeline that was not his own
-projections of anticipation or a cultural meme of anxiety but
-a physical reality that had been shaped by actions he would never
-personally witness--that was like the moment of birth all over
-again. He was in a new world, a "future" world, bearing no
-similarity to the other meaningless definitions of the term. His
-fictional actions made fictionally-real a concept which cannot
-ever be real. Rather than a tautology, this is something inverted:
-where the repetition of a meaningless idea becomes meaningful.
-
-If you're following my logic I commend you or apologize or both.
-Ultimately what I'm getting at is that the idea of a future is
-meaningless, except in context of its own manipulation. That
-manipulation is irrelevant without time travel or some other means
-of temporal scrying. You cannot change the future if you don't
-know what the future holds. The future is nothing becoming nothing
-otherwise. Simple, right?
-
-So, it with all of this in mind that I proclaim with all the
-seriousness of IHOP rebranding as IHOb that "The Future" must
-definitively refer to 1985 and nothing else or it will become
-meaningless once again. 
-
-Being that the definition of definition is (yes, tautology again),
-"a statement of the meaning of a word or word group or a sign or
-symbol," then only a statement that gives meaning to the word
-"future" can rightly be called a definition. If only such
-a situation as car-washer Biff can justify a true "future", there
-you have it. Let all other uses be damned. Change thy lexicon!
-
-
-== The Agrestic ==
-
-While sitting at a Denny's in Greenwood, Indiana, staring down at
-a paper place-mat featuring "Guess Who?", I had this conversation
-with my friend Josh. There was much coffee involved, and probably
-a burger in there somewhere, and we were more certainly awake far
-too late in the night. My argument stated, I continued for him as
-I will for you now.
-
-The future is over. It's been done, you see. 1985! We're well
-passed that, even if it was a fictional version of it. If this
-time is no longer the future, or even "A" future, what is it? We
-have generational terms, decade terms, and occasionally history
-grants a time with an overall label in retrospect. These are all
-scientific, calculated, or reactive. They don't attempt to
-describe us while we are still in the act of being. They describe
-the past, or they describe the calendar of the present.
-Uncertainty clouds the present and the days ahead and puts us back
-into nonsense-words again, right? 
-
-What if we chose a nonsense word for the times we're in and the
-times to come that wasn't bland or neutral, but instead one that
-evoked in us a primal sense of experience. Imagine that a word
-could convey in existential, individual, human terms a sense of
-the entire days to come. It wouldn't need to be packed with
-context from other sources but contain them within its full
-understanding.
-
-Agrestic.
-
-That is the "future" I envision and put forth in my own mind and
-in my interactions with the world. It can be summed up as the
-logical conclusion to the phrase:
-
-"Then they all decided the internet was a pretty bad idea."
-
-What happens next. What do we find. Rustic. Beauty. The Earth.
-Human animals in the dirt, in the trees, in the seas. Unpack as
-much as you can from the word and from its idea and from all that
-came before it and let it saturate you.
-
-Is it silly, is it absurd, is it infinitely unlikely to happen?
-Who cares? Flying cars are EXACTLY as absurd.
-
-Here's the key to the whole thing: whatever you aim at you're not
-going to hit, but you're going to end up close. If you aim at
-flying cars and nuclear war... I don't want to go there with you.
-If you aim at a world where we found peace with our planet and
-didn't let our creations define us then everyone deserves some
-god-damned high fives in my book.
-
-Agrestic. Say it with me. It may not be a word (it really, really
-is a word), but that doesn't matter. It's in your head and it's in
-my head and it's more fucking real than a flux capacitor.
 </pre>]]></description>
 </item>
 </channel>
