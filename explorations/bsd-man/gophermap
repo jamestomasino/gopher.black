@@ -52,8 +52,8 @@ i[x]  Mail		gopher.black	70
 i[x]  addr2line		gopher.black	70
 0[x]  apply	apply.txt
 i[x]  apropos		gopher.black	70
-i[ ]  ar		gopher.black	70
-i[ ]  arch		gopher.black	70
+i[x]  ar		gopher.black	70
+i[x]  arch		gopher.black	70
 i[ ]  as		gopher.black	70
 i[ ]  at		gopher.black	70
 i[ ]  atq		gopher.black	70
