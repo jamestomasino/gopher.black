@@ -54,16 +54,16 @@ i[x]  addr2line		gopher.black	70
 i[x]  apropos		gopher.black	70
 i[x]  ar		gopher.black	70
 i[x]  arch		gopher.black	70
-i[ ]  as		gopher.black	70
-i[ ]  at		gopher.black	70
-i[ ]  atq		gopher.black	70
-i[ ]  atrm		gopher.black	70
-i[ ]  aucat		gopher.black	70
-i[ ]  audioctl		gopher.black	70
-i[ ]  awk		gopher.black	70
-i[ ]  b64decode		gopher.black	70
-i[ ]  b64encode		gopher.black	70
-i[ ]  banner		gopher.black	70
+i[x]  as		gopher.black	70
+i[x]  at		gopher.black	70
+i[x]  atq		gopher.black	70
+i[x]  atrm		gopher.black	70
+i[x]  aucat		gopher.black	70
+i[x]  audioctl		gopher.black	70
+i[x]  awk		gopher.black	70
+i[x]  b64decode		gopher.black	70
+i[x]  b64encode		gopher.black	70
+i[x]  banner		gopher.black	70
 i[ ]  basename		gopher.black	70
 i[ ]  batch		gopher.black	70
 i[ ]  bc		gopher.black	70
@@ -201,7 +201,7 @@ i[ ]  lpr		gopher.black	70
 i[ ]  lprm		gopher.black	70
 i[ ]  ltrace		gopher.black	70
 i[ ]  m4		gopher.black	70
-i[ ]  machine		gopher.black	70
+i[x]  machine		gopher.black	70
 i[x]  mail		gopher.black	70
 i[ ]  mailq		gopher.black	70
 i[x]  mailx		gopher.black	70
