@@ -1,0 +1,71 @@
+i----------------------------------------		gopher.black	70
+iRestored		gopher.black	70
+iOctober 04th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThe restoration of gopher.black was quite eventful with some		gopher.black	70
+iabsolutely awful computer drama. If you care about such things,		gopher.black	70
+ihere's a recap:		gopher.black	70
+i		gopher.black	70
+iI have a few raspberry pis, model 3s and some zero Ws. One of them		gopher.black	70
+ihas this sick metal case with a fan. It's a beast. Used that		gopher.black	70
+ihardware for gopher.black along with a 64gb micro sd card. The		gopher.black	70
+ionly problem is, the fan sucks (or blows?). It has always been		gopher.black	70
+ireally noisy, and it eventually pissed me off enough to do		gopher.black	70
+isomething about it. Since the pis don't run hot anyway, I figured		gopher.black	70
+iit was unnecessary. But before I removed it completely I figured		gopher.black	70
+iI'd try lubricating it just in case that solved things.		gopher.black	70
+i		gopher.black	70
+iIt didn't.		gopher.black	70
+i		gopher.black	70
+iSo I opened the case up, ripped that bad boy out, and plugged her		gopher.black	70
+iback in. Only this time, something was wrong. I was up and		gopher.black	70
+irunning, but the system was in read-only mode. Uh, oh! I decided		gopher.black	70
+ito reboot and try again. This time, even worse... no boot.		gopher.black	70
+iI plugged in an HDMI monitor to watch the boot sequence and it		gopher.black	70
+isprawled a bunch of messages about read-only crap. A quick google		gopher.black	70
+irevealed that my SD card was likely at fault. It was going bad.		gopher.black	70
+iI assume it was related to me opening the thing up and closing it		gopher.black	70
+ia few times. I must have bumped it badly.		gopher.black	70
+i		gopher.black	70
+iIf the card was read-only, I figured I could still read it to get		gopher.black	70
+ian image. I did some dd magic and backed it up. Today I got a new		gopher.black	70
+i64GB sd card in the mail. I dd'd my backup onto that and plugged		gopher.black	70
+iit in but nothing happened. Not even a failed boot. Just nada.		gopher.black	70
+i		gopher.black	70
+iI thought... Lets make sure it's the SD card! So I swapped my SD		gopher.black	70
+icard from my pi-hole and gopher.black into the other hardware and		gopher.black	70
+iconfirmed... definitely the SD. I had to roll back to an earlier		gopher.black	70
+ibackup. 		gopher.black	70
+i		gopher.black	70
+iThe most recent I had was from June (yuck). Luckily, 90% of the		gopher.black	70
+icrap on gopher.black is in git, so it's just a matter of updating		gopher.black	70
+ifrom repos after restoring things. I smiled to myself at my own		gopher.black	70
+iawesome and went over to my PC which houses the older backups.		gopher.black	70
+iI plugged in my new SD card, opened up Etcher to image it from the		gopher.black	70
+ibackup and POOF, the MOTHERFUCKING drive hosting my backups		gopher.black	70
+idecided that it was the perfect moment to disappear!		gopher.black	70
+i		gopher.black	70
+iFast forward a bit to me restoring that drive from ITS backup,		gopher.black	70
+ieventually restoring my SD card from the old backup, plugging		gopher.black	70
+ithings into the pi, booting it up, and we're back in business.		gopher.black	70
+i		gopher.black	70
+iThings that still suck:		gopher.black	70
+i- Moku Pona is running again, but pretty much EVERYTHING updated		gopher.black	70
+i  since June, so the most recent phlogs is kinda a mess. It'll		gopher.black	70
+i  sort itself out in the days to come.		gopher.black	70
+i- All my web certs expired. I'm renewing them again now via		gopher.black	70
+i  acme.sh.		gopher.black	70
+i- Weechat's sec.conf does something weird. It doesn't know my		gopher.black	70
+i  master password. I have no idea what logic it uses, but this is		gopher.black	70
+i  the second time that's happened to me in a week. I appreciate		gopher.black	70
+i  that it externalizes passwords, but that's just BS. I'm better		gopher.black	70
+i  off typing them in each time I connect. It's not like I do it		gopher.black	70
+i  very often.		gopher.black	70
+i- Probably other stuff... I don't really recall everything I did		gopher.black	70
+i  on gopher.black over the last couple months. I'm sure most of it		gopher.black	70
+i  was content, but maybe there was something else that was super		gopher.black	70
+i  cool and I totally forgot. Meh, we'll make due.		gopher.black	70
+i		gopher.black	70
+iIf you notice anything wonky on my stuff in the next couple days,		gopher.black	70
+ihit me up.		gopher.black	70
