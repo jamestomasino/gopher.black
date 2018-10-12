@@ -3,6 +3,34 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Another Sdf Hiccup</title>
+  <link>gopher://gopher.black/1/phlog/20181012-another-sdf-hiccup/</link>
+  <pubdate>Fri, 12 Oct 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Another sdf hiccup?
+October 12th, 2018
+----------------------------------------
+
+It looks like gopher.club isn't resolving again. SDF.org is
+showing up. It's usually the other way around when it comes to
+gopher. I'm sick of switching the phlogroll back and forth. I'm
+going to leave things as they are for now and hope it resolves
+itself in the next day or two. If you notice your phlog not
+updating for a while, send me a note and I'll try to work around
+it.
+
+Also, welcome to a few new phloggers on the roll!
+
+inpefess
+    gopher://sdf.org/1/users/inpefess
+bradfonseca
+    gopher://sdf.org/1/users/bradfonseca/
+
+Some good content brewing there!
+</pre>]]></description>
+</item>
+<item>
   <title>Maps</title>
   <link>gopher://gopher.black/1/phlog/20181007-maps/</link>
   <pubdate>Sun, 07 Oct 2018 00:00:00 -0400</pubdate>
@@ -446,49 +474,6 @@ about Guess Who, btw). It made sense to put it on the web.
 I guess it once again illustrates why I prefer gopher. I can just
 write stuff here and I'm done. In the world of HTTP I need to
 massage stuff, play with themes, etc. Moops to that.
-</pre>]]></description>
-</item>
-<item>
-  <title>3d Printing</title>
-  <link>gopher://gopher.black/1/phlog/20180901-3d-printing/</link>
-  <pubdate>Sat, 01 Sep 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-3D Printing
-September 01st, 2018
-----------------------------------------
-
-I bought a 3D printer. It's a FlashForge Finder, available on
-Amazon for somewhere in the $300-350USD range at present. It
-prints PLA but not ABS, has a decent sized print area, comes fully
-assembled, and has fair community support. The service that
-FlashForge offers is extremely responsive and helpful. Overall I'm
-quite pleased with the purchase.
-
-Since Tuesday I've been printing things almost non-stop. I've made
-an external spool holder to support bigger filament spools than
-the printer can handle normally. I've got a tool holder caddy on
-the box as well. I've made an Arduino Uno bumper/baseplate, a few
-toys for my son including squishy turtles and a fully articulated
-snail with shell that opens. As I'm writing this a book holder
-just finished.
-
-I'll be making some desk accessories soon, and then I think I'll
-take my first stab at designing my own piece by modifying the
-hanging tool-holder to make a glue-stick holder of the same style.
-
-3D printing is pretty fantastic. It's really easy, way faster than
-I expected, and the quality of this personally affordable model is
-suprisingly good. I can make real things!
-
-Oh, I made a few rings for my wife. She's allergic to metal, so
-this is perfect. I've sanded them down and I'm priming them now.
-Later today I'll paint and seal them for her. Isn't that exciting?
-I can design her jewelry, print it, post-process, and she can wear
-it all in the same day. That's some agrestic shit right there [0].
-
-[0] Agrestic
-    gopher://gopher.black/1/phlog/20180824-the-agrestic
 </pre>]]></description>
 </item>
 </channel>
