@@ -64,8 +64,8 @@ i[x]  awk		gopher.black	70
 i[x]  b64decode		gopher.black	70
 i[x]  b64encode		gopher.black	70
 i[x]  banner		gopher.black	70
-i[ ]  basename		gopher.black	70
-i[ ]  batch		gopher.black	70
+i[x]  basename		gopher.black	70
+i[x]  batch		gopher.black	70
 i[ ]  bc		gopher.black	70
 i[ ]  bgplgsh		gopher.black	70
 i[ ]  biff		gopher.black	70
