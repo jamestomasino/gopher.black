@@ -3,6 +3,59 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Reading Plain Text</title>
+  <link>gopher://gopher.black/1/phlog/20181014-reading-plain-text/</link>
+  <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Reading plain text
+October 14th, 2018
+----------------------------------------
+
+While reading moji's phlog [0] I started considering how I read on
+gopher, or in plain text in general versus my methods on the web.
+Certainly I do more scanning in a web browser, which I attribute
+at least partially to the various font and style treatments that
+both allow for and promote the bite-sized ingestion of content.
+There is also an element of reading fatigue that plays out
+differently here in plain text, and thats where my mind went (not
+to say that moji was in any way tiring).
+
+When I'm tired of reading on gopher it is instantly apparent.
+I skim over blocks of text looking for something to jump out at
+me, but that isnt how it works. Warning claxxons blare in my brain
+and I shut down figuratively and literally. It's clear I need to
+do something else and come back later. I get no such signal on the
+web. I peruse long past the point of usefulness. I trade reading
+for browsing. Surfing becomes skimming. Infinite scroll is
+infinitely useless.
+
+My time in text is short and productive in the sense that I get
+something from it, whether information or entertainment. My time
+on the web offers sone of that, but the trappings are extreme and
+it is all too easy to give more time than necessary or helpful.
+
+This is intentional. Capitalism demands attention, and it is that
+monstrosity which guides the design patterns on port 80. Even
+informational sites follow the patterns because that is what
+drives engagement. Look at the analytics, measure your performance
+goals. How do we keep them longer? How do we show them more ads?
+How do we get them to spend a little more?
+
+I'm sick of environmental leeches. I want my landscapes clear and
+clean. Mow down the billboards and flashing neon and let me get
+where I'm going on my own terms, please.
+
+There is no way out on the web. The experience is condemned to
+these patterns. People scream when you try to pull that bandage
+off. They demand more convenience despite the cost. The masses
+want to live like this. We're the weirdos for questioning it.
+
+[0] moji - unlearning
+    gopher://circumlunar.space/0/~moji/phlog/20180928-unlearning.txt
+</pre>]]></description>
+</item>
+<item>
   <title>Little Free Library Part 1</title>
   <link>gopher://gopher.black/1/phlog/20181014-little-free-library-part-1/</link>
   <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
@@ -18,14 +71,14 @@ powered rapsberry pi zero w that will live off-grid with an open
 wifi access point. When a user connects to it, Captive Portal will
 automatically trigger a "sign-in" page. The page isn't meant to
 sign into anything, though. Instead it will present users with
-free ebooks for download to their devices! 
+free ebooks for download to their devices!
 
 My first go will likely be a collection of PDF maps from USGS,
 some trail guides and bird identification things that are
 appropriate for the trail that runs past my house.
 
 My TODO list remains:
-  
+
   - Test apple devices captive portal
   - Design a static site page to download the ebooks
 
@@ -262,7 +315,7 @@ redundency in my medical kit selection.
 - Quake Kare Emergency Thermal Blankets (4 Pack)
 
   A lot of serious medical injury is compounded by exposure. These
-  can help in a pinch. 
+  can help in a pinch.
 
 - Potable aqua iodine for water treatment
 
@@ -337,7 +390,7 @@ See, I told you I had something better than iodine.
   Seriously. It’ll take you five minutes to watch a video on
   youtube and it will make your outdoor living much, much easier.
 
-- Folding Camp Saw  
+- Folding Camp Saw
 
   Another backup for your chainsaw. Or maybe the chainsaw is the
   backup. If you’re going to stay outdoors for any length of time,
@@ -368,8 +421,8 @@ what's going on with the weather.
   long. If you plan on staying in touch with the outside world (or
   at least informed), having a backup radio with NOAA stations is
   important. Besides, this little guy will charge your cellphone
-  too! 
-  
+  too!
+
 - Petzl E97 Tikka Plus 2 Headlamp
 
   In the redundency department, along with your knives, add light
@@ -393,13 +446,13 @@ what's going on with the weather.
   length of rope. Paracord is extremely strong for its size, but
   it packs down light and tight. Use it for everything and
   everything from a clothesline to animal traps in the worst of
-  situations. 
+  situations.
 
 - Other Paracord
 
   I got a handful of free paracord bracelets at some festival and
   tossed them in the bag. A little extra rope never hurts.
-  
+
 - Size #36 Dyed Black & Tarred Twine, 1lb
 
   This is work-horse line. The other stuff is special and high
@@ -411,8 +464,8 @@ what's going on with the weather.
   Don’t settle for the cheap duct tape. Get the good outdoor
   all-weather stuff. One roll should be more than enough to patch
   things up, bandage you up, make a stretcher, or any number of
-  other tasks. 
-  
+  other tasks.
+
 - Smith’s PP1 Pocket Pal Multifunction Sharpener
 
   A dull knife is almost as bad as no knife. If you’re going to be
@@ -501,7 +554,7 @@ to look around for new ones of Iceland pretty soon, though.
 All of the things mentioned live in that ign.com gym bag, as
 I mentioned, but that doesn't represent all of my bug-out stuff.
 In an immediate emergency that is indeed what I grab and take out
-the door. 
+the door.
 
 In fact, a few months ago our Carbon Monoxide alarm sounded at two
 in the morning. We jumped out of bed, grabbed the kid, grabbed the
@@ -576,12 +629,12 @@ gets bundled up too. If we will take the car, then the cast iron
 stuff is coming with me, especially the dutch oven. If we're
 running from zombies, I'll probably leave the weight behind.
 
-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
 
 That was a lot to cover, and I feel like I must be forgeting about
 something important. Clothes? Solar panels? Probably some of that
 stuff. Regardless, it's a nice reference to have out there in
-gopherspace. 
+gopherspace.
 
 What do you have in your bag?
 </pre>]]></description>
@@ -640,7 +693,7 @@ In addition, I also have a map of the full county with topographic
 information and water systems clearly labeled. I keep both of
 these in a waterproof map case in my bag. I have a road atlas in
 my car for the whole country, but around home there may be need to
-understand the land more intimately in case of emergency. 
+understand the land more intimately in case of emergency.
 
 In short, maps are cool.
 </pre>]]></description>
@@ -688,7 +741,7 @@ it in but nothing happened. Not even a failed boot. Just nada.
 I thought... Lets make sure it's the SD card! So I swapped my SD
 card from my pi-hole and gopher.black into the other hardware and
 confirmed... definitely the SD. I had to roll back to an earlier
-backup. 
+backup.
 
 The most recent I had was from June (yuck). Luckily, 90% of the
 crap on gopher.black is in git, so it's just a matter of updating
@@ -780,7 +833,7 @@ at all, or loaded incorrectly. Second, the constant changes in
 server info means that our aggregators keep triggering as if
 everyone on SDF posted new content. I know this has been
 a challenge for logout [0] whose Bongusta! [1] aggregator has been
-affected. It's also affected my moku-pona listings [2]. 
+affected. It's also affected my moku-pona listings [2].
 
 As a result, for the time being I have reverted all SDF
 gopherholes to using the sdf.org domain instead of gopher.club in
@@ -943,30 +996,6 @@ bit.
 burrow phlog # still exists
 
 Neat stuff. Pull, make, make install
-</pre>]]></description>
-</item>
-<item>
-  <title>Choose Your Own Adventure Episode 2</title>
-  <link>gopher://gopher.black/1/phlog/20180920-choose-your-own-adventure-episode-2/</link>
-  <pubdate>Thu, 20 Sep 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Choose Your Own Adventure - Episode 2
-September 20th, 2018
-----------------------------------------
-
-The second episode of my aNONradio show aired tonight. If you
-missed it, check out the archive page here on gopher. It has
-a link to the episode audio so you can catch up!
-
-Episode 2
-    gopher://gopher.black/0/cyoa/2018-09-20-episode-002.txt
-
-If you're free next week, the show airs at 0100UTC on Fridays.
-That's 9PM EST on Thursday nights if you're in the United States.
-
-You can listen by going to http://anonradio.net or opening a vlc
-stream to "http://anonradio.net:8000/anonradio"
 </pre>]]></description>
 </item>
 </channel>
