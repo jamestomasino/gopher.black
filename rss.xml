@@ -3,6 +3,179 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Little Free Library Part 1</title>
+  <link>gopher://gopher.black/1/phlog/20181014-little-free-library-part-1/</link>
+  <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Little Free Library, part 1
+October 14th, 2018
+----------------------------------------
+
+Below is a list of notes I've prepared while building my little
+free ebook library. What is that, you ask? Well, it's a solar
+powered rapsberry pi zero w that will live off-grid with an open
+wifi access point. When a user connects to it, Captive Portal will
+automatically trigger a "sign-in" page. The page isn't meant to
+sign into anything, though. Instead it will present users with
+free ebooks for download to their devices! 
+
+My first go will likely be a collection of PDF maps from USGS,
+some trail guides and bird identification things that are
+appropriate for the trail that runs past my house.
+
+My TODO list remains:
+  
+  - Test apple devices captive portal
+  - Design a static site page to download the ebooks
+
+
+# Starting from a raspbian lite install on a raspberry pi zero w:
+
+# After setting up your local wifi connection in wpa_supplicant,
+# then proceed to make your littlefreelibrary work when away from
+# home...
+
+# Update packages to prepare
+
+$ sudo apt update
+$ sudo apt upgrade -y
+
+# Install dependencies, but disable by default
+
+$ sudo apt install dnsmasq hostapd nginx -y
+$ sudo systemctl disable hostapd
+$ sudo systemctl disable dnsmasq
+
+# Configure
+
+$ sudo vi /etc/hostapd/hostapd.conf
+
+    interface=wlan0
+    driver=nl80211
+    ssid=LittleFreeLibrary
+    hw_mode=g
+    channel=8
+    wmm_enabled=0
+    macaddr_acl=0
+    auth_algs=1
+    wpa=0
+    ignore_broadcast_ssid=0
+    country_code=US
+    ieee80211n=1
+
+$ sudo vi /etc/default/hostapd
+
+    DAEMON_CONF="/etc/hostapd/hostapd.conf" # change only this line
+
+$ sudo vi /etc/dnsmasq.conf # add the following to the end of file
+
+    bogus_priv
+    addrdess=/#/10.0.0.5
+    interface=wlan0
+    no-resolv
+    bind-interfaces
+    dhcp-range=10.0.0.50,10.0.0.100,12h
+
+$ sudo vi /etc/dchcpd.conf # add the following to the end of file
+
+    nohook wpa_supplicant
+
+$ sudo vi /etc/systemd/system/autohotspot.service
+
+    [Unit]
+    Description=Automatically generate an internet Hotspot when a valid ssid is not in range
+    After=multi-user.target
+    [Service]
+    Type=oneshot
+    RemainAfterExit=yes
+    ExecStart=/usr/bin/autohotspot
+    [Install]
+    WantedBy=multi-user.target
+
+$ sudo systemctl enable autohotspot.service
+
+$ curl http://www.raspberryconnect.com/images/Autohotspot/autohotspot-95-4/autohotspot.txt > autohotspot
+$ chmod 755 autohotspot
+$ sudo mv autohotspot /usr/bin/autohotspot
+
+# Change hostname to littlefreelibrary
+
+$ sudo hostname littlefreelibrary
+$ sudo vi /etc/hostname
+
+    littlefreelibrary
+
+$ sudo vi /etc/hosts
+
+    127.0.0.1
+
+# Set up a cron to detect changes
+
+$ crontab -e # add the following to the end of file
+
+    */5 * * * * sudo /usr/bin/autohotspot >/dev/null 2>&1
+
+# Set up nginx to work with captive portal
+
+$ sudo vi /etc/nginx/sites-available/default
+
+    server {
+            listen 80 default_server;
+            listen [::]:80 default_server;
+            root /var/www/html;
+            index index.html;
+            server_name _;
+
+            # For iOS
+            if ($http_user_agent ~* (CaptiveNetworkSupport) ) {
+                    return 302 http://littlefreelibrary.local/apple.html;
+            }
+
+            # For Android
+            location /generate_204 {
+                    return 302 http://littlefreelibrary.local/index.html;
+            }
+
+            location / {
+                    try_files $uri $uri/ /index.html;
+            }
+    }
+
+$ sudo service nginx restart
+
+# Add apple captive portal page
+
+$ sudo vi /var/www/html/apple.html
+
+    <!--
+    <?xml version="1.0" encoding="UTF-8"?>
+    <WISPAccessGatewayParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.wballiance.net/wispr_2_0.xsd">
+    <Redirect>
+    <MessageType>100</MessageType>
+    <ResponseCode>0</ResponseCode>
+    <VersionHigh>2.0</VersionHigh>
+    <VersionLow>1.0</VersionLow>
+    <AccessProcedure>1.0</AccessProcedure>
+    <AccessLocation>LittleFreeLibrary</AccessLocation>
+    <LocationName>LittleFreeLibrary</LocationName>
+    <LoginURL>http://littlefreelibrary.local/index.html</LoginURL>
+    </Redirect>
+    </WISPAccessGatewayParam>
+    -->
+
+# Create your library page
+
+$ sudo vi /var/www/html/index.html
+
+    TBD HTML code
+
+# To manage device when in AP mode
+
+$ ssh pi@10.0.0.5
+</pre>]]></description>
+</item>
+<item>
   <title>Bug Out Bag</title>
   <link>gopher://gopher.black/1/phlog/20181012-bug-out-bag/</link>
   <pubdate>Fri, 12 Oct 2018 00:00:00 -0400</pubdate>
@@ -794,68 +967,6 @@ That's 9PM EST on Thursday nights if you're in the United States.
 
 You can listen by going to http://anonradio.net or opening a vlc
 stream to "http://anonradio.net:8000/anonradio"
-</pre>]]></description>
-</item>
-<item>
-  <title>Anonradio Show</title>
-  <link>gopher://gopher.black/1/phlog/20180907-anonradio-show/</link>
-  <pubdate>Fri, 07 Sep 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-aNONradio show
-September 07th, 2018
-----------------------------------------
-
-Yesterday cat posted on Mastodon that someone should jump on
-openVOIP and monologue. That sounded like a great idea and
-I wasn't busy, so I decided I'd go for it. My first thought was
-that I'd read some Virgil or maybe Bronte. I walked into my dining
-room which has the main collection of our books and looked over my
-shelves for something good. Boy Scout Handbook... Nimzowitsch...
-Harry Potter in Latin... ahh, here we are:
-
-ZORK #4: Conquest at Quendor
-
-Is there a more perfect book for the SDF crew than a choose your
-own adventure ZORK? I snapped a quick picture of the cover and
-posted it to mastodon, then walked upstairs to my office. A note
-on IRC or two and I was dialing in to the openVOIP line. At first
-there was some sort of text adventure being played out with
-Daniel's robot voice narrating it. That wrapped up and I got
-started.
-
-It was awkward, silly, and entirely too much fun. Instead of
-picking the choices in the book myself I tossed them out to the
-crowd to chime in. The engagement from people in com, mastodon,
-and IRC made the experience for me. I was riding a high afterwards
-and talked myself into doing it again. This time, though, I'll do
-it right.
-
-The anonradio mailing list folks agreed that the show was worthy
-of a time slot, so now on Thursday nights/Friday mornings at 0100
-UTC, or 9PM EST, I'll be continuing our adventures. This first
-"real" show I'll finish up the ZORK story so I don't leave
-everyone hanging, and then we'll start a new adventure. I don't
-know that I'll make a point of finishing the adventures or not. If
-time runs out I may just start a new one the next week instead of
-trying to pick up again. On the one hand, it's nice to have some
-completion, but these are books designed to be tried again and
-again. Also, the authors aren't getting paid for this beyond me
-buying a book or two, so I like the idea of enticing people with
-the show so that they might go out and pick up a copy if they
-enjoy it. That makes the whole thing seem much more legit, right?
-
-To support the new show I've added a new section to my gopher
-hole. You can find it on the root gophermap and here: 
-Choose Your Own Adventure (anonradio)
-    gopher://gopher.black/1/cyoa
-
-For those who want to check it out, details about the first real
-episode can be found here:
-Episode 001 (2018-09-14)
-    gopher://gopher.black/0/cyoa/2018-09-14-episode-001.txt
-
-Please join me next week for the first show!
 </pre>]]></description>
 </item>
 </channel>

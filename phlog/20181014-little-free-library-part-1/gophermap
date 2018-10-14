@@ -1,0 +1,166 @@
+i----------------------------------------		gopher.black	70
+iLittle Free Library, part 1		gopher.black	70
+iOctober 14th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iBelow is a list of notes I've prepared while building my little		gopher.black	70
+ifree ebook library. What is that, you ask? Well, it's a solar		gopher.black	70
+ipowered rapsberry pi zero w that will live off-grid with an open		gopher.black	70
+iwifi access point. When a user connects to it, Captive Portal will		gopher.black	70
+iautomatically trigger a "sign-in" page. The page isn't meant to		gopher.black	70
+isign into anything, though. Instead it will present users with		gopher.black	70
+ifree ebooks for download to their devices! 		gopher.black	70
+i		gopher.black	70
+iMy first go will likely be a collection of PDF maps from USGS,		gopher.black	70
+isome trail guides and bird identification things that are		gopher.black	70
+iappropriate for the trail that runs past my house.		gopher.black	70
+i		gopher.black	70
+iMy TODO list remains:		gopher.black	70
+i  		gopher.black	70
+i  - Test apple devices captive portal		gopher.black	70
+i  - Design a static site page to download the ebooks		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i# Starting from a raspbian lite install on a raspberry pi zero w:		gopher.black	70
+i		gopher.black	70
+i# After setting up your local wifi connection in wpa_supplicant,		gopher.black	70
+i# then proceed to make your littlefreelibrary work when away from		gopher.black	70
+i# home...		gopher.black	70
+i		gopher.black	70
+i# Update packages to prepare		gopher.black	70
+i		gopher.black	70
+i$ sudo apt update		gopher.black	70
+i$ sudo apt upgrade -y		gopher.black	70
+i		gopher.black	70
+i# Install dependencies, but disable by default		gopher.black	70
+i		gopher.black	70
+i$ sudo apt install dnsmasq hostapd nginx -y		gopher.black	70
+i$ sudo systemctl disable hostapd		gopher.black	70
+i$ sudo systemctl disable dnsmasq		gopher.black	70
+i		gopher.black	70
+i# Configure		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /etc/hostapd/hostapd.conf		gopher.black	70
+i		gopher.black	70
+i    interface=wlan0		gopher.black	70
+i    driver=nl80211		gopher.black	70
+i    ssid=LittleFreeLibrary		gopher.black	70
+i    hw_mode=g		gopher.black	70
+i    channel=8		gopher.black	70
+i    wmm_enabled=0		gopher.black	70
+i    macaddr_acl=0		gopher.black	70
+i    auth_algs=1		gopher.black	70
+i    wpa=0		gopher.black	70
+i    ignore_broadcast_ssid=0		gopher.black	70
+i    country_code=US		gopher.black	70
+i    ieee80211n=1		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /etc/default/hostapd		gopher.black	70
+i		gopher.black	70
+i    DAEMON_CONF="/etc/hostapd/hostapd.conf" # change only this line		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /etc/dnsmasq.conf # add the following to the end of file		gopher.black	70
+i		gopher.black	70
+i    bogus_priv		gopher.black	70
+i    addrdess=/#/10.0.0.5		gopher.black	70
+i    interface=wlan0		gopher.black	70
+i    no-resolv		gopher.black	70
+i    bind-interfaces		gopher.black	70
+i    dhcp-range=10.0.0.50,10.0.0.100,12h		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /etc/dchcpd.conf # add the following to the end of file		gopher.black	70
+i		gopher.black	70
+i    nohook wpa_supplicant		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /etc/systemd/system/autohotspot.service		gopher.black	70
+i		gopher.black	70
+i    [Unit]		gopher.black	70
+i    Description=Automatically generate an internet Hotspot when a valid ssid is not in range		gopher.black	70
+i    After=multi-user.target		gopher.black	70
+i    [Service]		gopher.black	70
+i    Type=oneshot		gopher.black	70
+i    RemainAfterExit=yes		gopher.black	70
+i    ExecStart=/usr/bin/autohotspot		gopher.black	70
+i    [Install]		gopher.black	70
+i    WantedBy=multi-user.target		gopher.black	70
+i		gopher.black	70
+i$ sudo systemctl enable autohotspot.service		gopher.black	70
+i		gopher.black	70
+i$ curl http://www.raspberryconnect.com/images/Autohotspot/autohotspot-95-4/autohotspot.txt > autohotspot		gopher.black	70
+i$ chmod 755 autohotspot		gopher.black	70
+i$ sudo mv autohotspot /usr/bin/autohotspot		gopher.black	70
+i		gopher.black	70
+i# Change hostname to littlefreelibrary		gopher.black	70
+i		gopher.black	70
+i$ sudo hostname littlefreelibrary		gopher.black	70
+i$ sudo vi /etc/hostname		gopher.black	70
+i		gopher.black	70
+i    littlefreelibrary		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /etc/hosts		gopher.black	70
+i		gopher.black	70
+i    127.0.0.1	littlefreelibrary		gopher.black	70
+i		gopher.black	70
+i# Set up a cron to detect changes		gopher.black	70
+i		gopher.black	70
+i$ crontab -e # add the following to the end of file		gopher.black	70
+i		gopher.black	70
+i    */5 * * * * sudo /usr/bin/autohotspot >/dev/null 2>&1		gopher.black	70
+i		gopher.black	70
+i# Set up nginx to work with captive portal		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /etc/nginx/sites-available/default		gopher.black	70
+i		gopher.black	70
+i    server {		gopher.black	70
+i            listen 80 default_server;		gopher.black	70
+i            listen [::]:80 default_server;		gopher.black	70
+i            root /var/www/html;		gopher.black	70
+i            index index.html;		gopher.black	70
+i            server_name _;		gopher.black	70
+i		gopher.black	70
+i            # For iOS		gopher.black	70
+i            if ($http_user_agent ~* (CaptiveNetworkSupport) ) {		gopher.black	70
+i                    return 302 http://littlefreelibrary.local/apple.html;		gopher.black	70
+i            }		gopher.black	70
+i		gopher.black	70
+i            # For Android		gopher.black	70
+i            location /generate_204 {		gopher.black	70
+i                    return 302 http://littlefreelibrary.local/index.html;		gopher.black	70
+i            }		gopher.black	70
+i		gopher.black	70
+i            location / {		gopher.black	70
+i                    try_files $uri $uri/ /index.html;		gopher.black	70
+i            }		gopher.black	70
+i    }		gopher.black	70
+i		gopher.black	70
+i$ sudo service nginx restart		gopher.black	70
+i		gopher.black	70
+i# Add apple captive portal page		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /var/www/html/apple.html		gopher.black	70
+i		gopher.black	70
+i    <!--		gopher.black	70
+i    <?xml version="1.0" encoding="UTF-8"?>		gopher.black	70
+i    <WISPAccessGatewayParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.wballiance.net/wispr_2_0.xsd">		gopher.black	70
+i    <Redirect>		gopher.black	70
+i    <MessageType>100</MessageType>		gopher.black	70
+i    <ResponseCode>0</ResponseCode>		gopher.black	70
+i    <VersionHigh>2.0</VersionHigh>		gopher.black	70
+i    <VersionLow>1.0</VersionLow>		gopher.black	70
+i    <AccessProcedure>1.0</AccessProcedure>		gopher.black	70
+i    <AccessLocation>LittleFreeLibrary</AccessLocation>		gopher.black	70
+i    <LocationName>LittleFreeLibrary</LocationName>		gopher.black	70
+i    <LoginURL>http://littlefreelibrary.local/index.html</LoginURL>		gopher.black	70
+i    </Redirect>		gopher.black	70
+i    </WISPAccessGatewayParam>		gopher.black	70
+i    -->		gopher.black	70
+i		gopher.black	70
+i# Create your library page		gopher.black	70
+i		gopher.black	70
+i$ sudo vi /var/www/html/index.html		gopher.black	70
+i		gopher.black	70
+i    TBD HTML code		gopher.black	70
+i		gopher.black	70
+i# To manage device when in AP mode		gopher.black	70
+i		gopher.black	70
+i$ ssh pi@10.0.0.5		gopher.black	70
