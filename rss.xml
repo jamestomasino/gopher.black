@@ -3,6 +3,59 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Reading Plain Text</title>
+  <link>gopher://gopher.black/1/phlog/20181014-reading-plain-text/</link>
+  <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Reading plain text
+October 14th, 2018
+----------------------------------------
+
+While reading moji's phlog [0] I started considering how I read on
+gopher, or in plain text in general versus my methods on the web.
+Certainly I do more scanning in a web browser, which I attribute
+at least partially to the various font and style treatments that
+both allow for and promote the bite-sized ingestion of content.
+There is also an element of reading fatigue that plays out
+differently here in plain text, and thats where my mind went (not
+to say that moji was in any way tiring).
+
+When I'm tired of reading on gopher it is instantly apparent.
+I skim over blocks of text looking for something to jump out at
+me, but that isnt how it works. Warning claxxons blare in my brain
+and I shut down figuratively and literally. It's clear I need to
+do something else and come back later. I get no such signal on the
+web. I peruse long past the point of usefulness. I trade reading
+for browsing. Surfing becomes skimming. Infinite scroll is
+infinitely useless.
+
+My time in text is short and productive in the sense that I get
+something from it, whether information or entertainment. My time
+on the web offers sone of that, but the trappings are extreme and
+it is all too easy to give more time than necessary or helpful.
+
+This is intentional. Capitalism demands attention, and it is that
+monstrosity which guides the design patterns on port 80. Even
+informational sites follow the patterns because that is what
+drives engagement. Look at the analytics, measure your performance
+goals. How do we keep them longer? How do we show them more ads?
+How do we get them to spend a little more?
+
+I'm sick of environmental leeches. I want my landscapes clear and
+clean. Mow down the billboards and flashing neon and let me get
+where I'm going on my own terms, please.
+
+There is no way out on the web. The experience is condemned to
+these patterns. People scream when you try to pull that bandage
+off. They demand more convenience despite the cost. The masses
+want to live like this. We're the weirdos for questioning it.
+
+[0] moji - unlearning
+    gopher://circumlunar.space/0/~moji/phlog/20180928-unlearning.txt
+</pre>]]></description>
+</item>
+<item>
   <title>Bug Out Bag</title>
   <link>gopher://gopher.black/1/phlog/20181012-bug-out-bag/</link>
   <pubdate>Fri, 12 Oct 2018 00:00:00 -0400</pubdate>
@@ -794,68 +847,6 @@ That's 9PM EST on Thursday nights if you're in the United States.
 
 You can listen by going to http://anonradio.net or opening a vlc
 stream to "http://anonradio.net:8000/anonradio"
-</pre>]]></description>
-</item>
-<item>
-  <title>Anonradio Show</title>
-  <link>gopher://gopher.black/1/phlog/20180907-anonradio-show/</link>
-  <pubdate>Fri, 07 Sep 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-aNONradio show
-September 07th, 2018
-----------------------------------------
-
-Yesterday cat posted on Mastodon that someone should jump on
-openVOIP and monologue. That sounded like a great idea and
-I wasn't busy, so I decided I'd go for it. My first thought was
-that I'd read some Virgil or maybe Bronte. I walked into my dining
-room which has the main collection of our books and looked over my
-shelves for something good. Boy Scout Handbook... Nimzowitsch...
-Harry Potter in Latin... ahh, here we are:
-
-ZORK #4: Conquest at Quendor
-
-Is there a more perfect book for the SDF crew than a choose your
-own adventure ZORK? I snapped a quick picture of the cover and
-posted it to mastodon, then walked upstairs to my office. A note
-on IRC or two and I was dialing in to the openVOIP line. At first
-there was some sort of text adventure being played out with
-Daniel's robot voice narrating it. That wrapped up and I got
-started.
-
-It was awkward, silly, and entirely too much fun. Instead of
-picking the choices in the book myself I tossed them out to the
-crowd to chime in. The engagement from people in com, mastodon,
-and IRC made the experience for me. I was riding a high afterwards
-and talked myself into doing it again. This time, though, I'll do
-it right.
-
-The anonradio mailing list folks agreed that the show was worthy
-of a time slot, so now on Thursday nights/Friday mornings at 0100
-UTC, or 9PM EST, I'll be continuing our adventures. This first
-"real" show I'll finish up the ZORK story so I don't leave
-everyone hanging, and then we'll start a new adventure. I don't
-know that I'll make a point of finishing the adventures or not. If
-time runs out I may just start a new one the next week instead of
-trying to pick up again. On the one hand, it's nice to have some
-completion, but these are books designed to be tried again and
-again. Also, the authors aren't getting paid for this beyond me
-buying a book or two, so I like the idea of enticing people with
-the show so that they might go out and pick up a copy if they
-enjoy it. That makes the whole thing seem much more legit, right?
-
-To support the new show I've added a new section to my gopher
-hole. You can find it on the root gophermap and here: 
-Choose Your Own Adventure (anonradio)
-    gopher://gopher.black/1/cyoa
-
-For those who want to check it out, details about the first real
-episode can be found here:
-Episode 001 (2018-09-14)
-    gopher://gopher.black/0/cyoa/2018-09-14-episode-001.txt
-
-Please join me next week for the first show!
 </pre>]]></description>
 </item>
 </channel>
