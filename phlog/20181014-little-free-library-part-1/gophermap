@@ -99,7 +99,7 @@ i    littlefreelibrary		gopher.black	70
 i		gopher.black	70
 i$ sudo vi /etc/hosts		gopher.black	70
 i		gopher.black	70
-i    127.0.0.1	littlefreelibrary		gopher.black	70
+i    127.0.0.1 littlefreelibrary		gopher.black	70
 i		gopher.black	70
 i# Set up a cron to detect changes		gopher.black	70
 i		gopher.black	70
