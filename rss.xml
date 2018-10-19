@@ -3,6 +3,61 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Sprezzatura</title>
+  <link>gopher://gopher.black/1/phlog/20181018-sprezzatura/</link>
+  <pubdate>Thu, 18 Oct 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+sprezzatura
+October 18th, 2018
+----------------------------------------
+
+Castiglione wrote The Book of the Courtier between 1508 and 1528.
+It's a fantastic read, if you've never tried it before. In the
+book he introduces a newly created word: sprezzatura, defined as -
+
+  "I have found quite a universal rule which in this matter seems
+  to me valid above all other, and in all human affairs whether in
+  word or deed: and that is to avoid affectation in every way
+  possible as though it were some rough and dangerous reef; and
+  (to pronounce a new word perhaps) to practice in all things
+  a certain sprezzatura [nonchalance], so as to conceal all art
+  and make whatever is done or said appear to be without effort
+  and almost without any thought about it."
+
+It defined the ultimate goal of the courtiers at the court of
+Urbino. Look amazing at everything without trying.
+
+Ever since reading the book in high school that has been my
+personal motto. Even mentioning it "out loud" here in gopher
+undermines the effort somewhat. Talking about trying to be awesome
+at everything and seem effortless ... you get where I'm going with
+this.
+
+Anyway, I wanted to mention it for two reasons:
+
+1) When I was thinking of a show for anonradio, my first idea
+   centered around sprezzatura, but I couldn't come up with a way
+   to make it a thing without also completely destroying that
+   thing. It's tricky! Try it in your head.
+
+2) Some people these days are all too eager to "own" their
+   failings. There's a pride in being bad at stuff. It's probably
+   a generational thing. Showing vulnerability is cool as shit, or
+   something. I'm drunk and an old man when it comes to this
+   stuff. I'm of the opinion that if you can be a total badass at
+   every fucking thing, then you should be a badass at every
+   fucking thing. If you're a badass at 90% of the things, then
+   focus and fix that last 10% in the quiet of your bedroom until
+   you can be a rockstar there too.
+
+That's it. The whole point of this was to tell you all to go be
+badass at everything. Not good at something? Don't tell me about
+it. Go fix it. No.. don't fix it, master it. Master the heck out
+of that thing and then do it routinely as if it's no big deal.
+</pre>]]></description>
+</item>
+<item>
   <title>Reading Plain Text</title>
   <link>gopher://gopher.black/1/phlog/20181014-reading-plain-text/</link>
   <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
@@ -71,14 +126,14 @@ powered rapsberry pi zero w that will live off-grid with an open
 wifi access point. When a user connects to it, Captive Portal will
 automatically trigger a "sign-in" page. The page isn't meant to
 sign into anything, though. Instead it will present users with
-free ebooks for download to their devices!
+free ebooks for download to their devices! 
 
 My first go will likely be a collection of PDF maps from USGS,
 some trail guides and bird identification things that are
 appropriate for the trail that runs past my house.
 
 My TODO list remains:
-
+  
   - Test apple devices captive portal
   - Design a static site page to download the ebooks
 
@@ -161,7 +216,7 @@ $ sudo vi /etc/hostname
 
 $ sudo vi /etc/hosts
 
-    127.0.0.1
+    127.0.0.1 littlefreelibrary
 
 # Set up a cron to detect changes
 
@@ -315,7 +370,7 @@ redundency in my medical kit selection.
 - Quake Kare Emergency Thermal Blankets (4 Pack)
 
   A lot of serious medical injury is compounded by exposure. These
-  can help in a pinch.
+  can help in a pinch. 
 
 - Potable aqua iodine for water treatment
 
@@ -390,7 +445,7 @@ See, I told you I had something better than iodine.
   Seriously. It’ll take you five minutes to watch a video on
   youtube and it will make your outdoor living much, much easier.
 
-- Folding Camp Saw
+- Folding Camp Saw  
 
   Another backup for your chainsaw. Or maybe the chainsaw is the
   backup. If you’re going to stay outdoors for any length of time,
@@ -421,8 +476,8 @@ what's going on with the weather.
   long. If you plan on staying in touch with the outside world (or
   at least informed), having a backup radio with NOAA stations is
   important. Besides, this little guy will charge your cellphone
-  too!
-
+  too! 
+  
 - Petzl E97 Tikka Plus 2 Headlamp
 
   In the redundency department, along with your knives, add light
@@ -446,13 +501,13 @@ what's going on with the weather.
   length of rope. Paracord is extremely strong for its size, but
   it packs down light and tight. Use it for everything and
   everything from a clothesline to animal traps in the worst of
-  situations.
+  situations. 
 
 - Other Paracord
 
   I got a handful of free paracord bracelets at some festival and
   tossed them in the bag. A little extra rope never hurts.
-
+  
 - Size #36 Dyed Black & Tarred Twine, 1lb
 
   This is work-horse line. The other stuff is special and high
@@ -464,8 +519,8 @@ what's going on with the weather.
   Don’t settle for the cheap duct tape. Get the good outdoor
   all-weather stuff. One roll should be more than enough to patch
   things up, bandage you up, make a stretcher, or any number of
-  other tasks.
-
+  other tasks. 
+  
 - Smith’s PP1 Pocket Pal Multifunction Sharpener
 
   A dull knife is almost as bad as no knife. If you’re going to be
@@ -554,7 +609,7 @@ to look around for new ones of Iceland pretty soon, though.
 All of the things mentioned live in that ign.com gym bag, as
 I mentioned, but that doesn't represent all of my bug-out stuff.
 In an immediate emergency that is indeed what I grab and take out
-the door.
+the door. 
 
 In fact, a few months ago our Carbon Monoxide alarm sounded at two
 in the morning. We jumped out of bed, grabbed the kid, grabbed the
@@ -629,12 +684,12 @@ gets bundled up too. If we will take the car, then the cast iron
 stuff is coming with me, especially the dutch oven. If we're
 running from zombies, I'll probably leave the weight behind.
 
-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
 
 That was a lot to cover, and I feel like I must be forgeting about
 something important. Clothes? Solar panels? Probably some of that
 stuff. Regardless, it's a nice reference to have out there in
-gopherspace.
+gopherspace. 
 
 What do you have in your bag?
 </pre>]]></description>
@@ -693,7 +748,7 @@ In addition, I also have a map of the full county with topographic
 information and water systems clearly labeled. I keep both of
 these in a waterproof map case in my bag. I have a road atlas in
 my car for the whole country, but around home there may be need to
-understand the land more intimately in case of emergency.
+understand the land more intimately in case of emergency. 
 
 In short, maps are cool.
 </pre>]]></description>
@@ -741,7 +796,7 @@ it in but nothing happened. Not even a failed boot. Just nada.
 I thought... Lets make sure it's the SD card! So I swapped my SD
 card from my pi-hole and gopher.black into the other hardware and
 confirmed... definitely the SD. I had to roll back to an earlier
-backup.
+backup. 
 
 The most recent I had was from June (yuck). Luckily, 90% of the
 crap on gopher.black is in git, so it's just a matter of updating
@@ -833,7 +888,7 @@ at all, or loaded incorrectly. Second, the constant changes in
 server info means that our aggregators keep triggering as if
 everyone on SDF posted new content. I know this has been
 a challenge for logout [0] whose Bongusta! [1] aggregator has been
-affected. It's also affected my moku-pona listings [2].
+affected. It's also affected my moku-pona listings [2]. 
 
 As a result, for the time being I have reverted all SDF
 gopherholes to using the sdf.org domain instead of gopher.club in
@@ -949,53 +1004,6 @@ And yes, Linus is an ass.
 [0] I was really going to go look these up, but then I got
 distracted. Take my word for it. There were a lot of posts on the
 subject earlier this year.
-</pre>]]></description>
-</item>
-<item>
-  <title>Burrow 1 7 1</title>
-  <link>gopher://gopher.black/1/phlog/20180924-burrow-1-7-1/</link>
-  <pubdate>Mon, 24 Sep 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-burrow 1.7.1
-September 24th, 2018
-----------------------------------------
-
-Wow, so that was a big change. I was annoyed with some of my code
-in burrow so I did a bit of surgery and blew up some features and
-made some more generalized helpers instead.
-
-burrow recipe
-burrow topic
-burrow create-config
-GONE!
-
-burrow edit-config will generate a new config for you if you don't
-already have one. I've also added a new super-powerful command
-called:
-
-burrow gophermap
-
-Enter that and hit enter and it'll open your root gophermap. But
-that's not all!!! Hit tab after that bad-boy...
-
-burrow gophermap <tab>
-
-It'll list all your directories and any gophermaps you've got. You
-can crawl your way through with more tab completion. You don't
-need to be in your gopher directory for it either. It'll figure it
-all out! :D
-
-Once you hit enter it'll strip out "i" types and tabs and server
-info from your gophermap temporarily so you can edit it. Once you
-save it again it'll add all the fancy codes back in place. Open up
-a new filename that you make up on the spot to create a new
-gophermap. It'll default to no title, but you can fill in that
-bit.
-
-burrow phlog # still exists
-
-Neat stuff. Pull, make, make install
 </pre>]]></description>
 </item>
 </channel>
