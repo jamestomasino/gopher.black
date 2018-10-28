@@ -3,6 +3,32 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Knives</title>
+  <link>gopher://gopher.black/1/phlog/20181027-knives/</link>
+  <pubdate>Sat, 27 Oct 2018 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Knives
+October 27th, 2018
+----------------------------------------
+
+I'm on my way out the door to a Halloween party, so I'll make this
+quick. Knives are awesome. They are tools first, weapons second,
+and infinitely useful. I'm a Mora Classic #1 and #2 kind of guy.
+I have some Baretta tactical knives thate are pure beauty and
+a karambit that is sex in sickle form, but the work horse knife
+for me is the Mora. It runs about $12 retail in the US, and if
+well cared for it's multi-generational. The steel is excellent,
+the handle is sturdy. Great stuff.
+
+I'm disappointed in knife limiting laws. I don't see much of
+a parallel with gun control there. Gun's are instruments of death.
+Knives CAN be, but it is not a primary purpose. It's the same with
+an axe, or a hammer, for that matter. I like useful things, and
+sometimes those useful things are also beautiful. Knives... mmm.
+</pre>]]></description>
+</item>
+<item>
   <title>Seasoning</title>
   <link>gopher://gopher.black/1/phlog/20181019-seasoning/</link>
   <pubdate>Fri, 19 Oct 2018 00:00:00 -0400</pubdate>
@@ -1055,60 +1081,6 @@ gopher.black. I've got the data, I've got redundant hardware. This
 shouldn't be too bad.
 
 Still... derp.
-</pre>]]></description>
-</item>
-<item>
-  <title>Sdf Gopher Servers</title>
-  <link>gopher://gopher.black/1/phlog/20180929-sdf-gopher-servers/</link>
-  <pubdate>Sat, 29 Sep 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-sdf gopher servers
-September 29th, 2018
-----------------------------------------
-
-As many of you are aware, sdf.org recently performed some
-upgrading which somehow disrupted their gopher servers. As
-a result, everything reverted to being run off bucktooth instead
-of gophernicus. After a bunch of prodding on bboard, sdf.org was
-reverted to gophernicus, but a very out-of-date version.
-Gopher.club, the preferred DNS mirror of SDF for gopher according
-to its tutorials, is still left using bucktooth.
-
-There's a few painful parts to this. A few of the more active
-gopher users hosting on SDF were actively using the cgi script
-features of gophernicus which were not a part of bucktooth's
-offering. As a result, some of their gopher holes failed to load
-at all, or loaded incorrectly. Second, the constant changes in
-server info means that our aggregators keep triggering as if
-everyone on SDF posted new content. I know this has been
-a challenge for logout [0] whose Bongusta! [1] aggregator has been
-affected. It's also affected my moku-pona listings [2]. 
-
-As a result, for the time being I have reverted all SDF
-gopherholes to using the sdf.org domain instead of gopher.club in
-my listings. This way they will display correctly at least. Sadly,
-gophernicus outputs server information in a footer of gophermaps,
-so it will likely continue to trigger the mass-update phenomenon
-whenever NetBSD or gophernicus itself are updated. I think we've
-all learned to work around this by now, though.
-
-Finally, I've posted about all this on the sdf.org bboard in
-a single requests post. I'm hopeful that seeing it all clearly
-outlined will help the admins update gophernicus to the latest
-version and get gopher.club back in line. Time will tell! If you
-continue to see mass-updates on the aggregators I apologize, but
-there's limited control unless I go through manually to clean
-everything up each time (like logout does). It'll settle down
-eventually.
-
-[0] logout
-    gopher://i-logout.cz/1/
-[1] Bongusta
-    gopher://i-logout.cz/1/en/bongusta/
-[2] Phlog Roll
-    gopher://gopher.black/1/moku-pona
-
 </pre>]]></description>
 </item>
 </channel>
