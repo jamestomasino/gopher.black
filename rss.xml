@@ -3,6 +3,30 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Dad</title>
+  <link>gopher://gopher.black/1/phlog/20181106-dad/</link>
+  <pubdate>Tue, 06 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Dad
+November 06th, 2018
+----------------------------------------
+
+My dad can't feed himself anymore. I want to scream about that or
+cry about it depending on the moment. Instead I sit quietly and
+think about him through my life. The good moments come to me. I'm
+not sure where the bad ones went, with time.
+
+I remember throwing a ball, playing with a tape recorder, being
+chased on a field. I hold strong.
+
+His voice calls my name and I answer, "daddy" and I am six years
+old. I am my own son, and I see all our eyes. Then I cry.
+
+I'm not ready for him to go.
+</pre>]]></description>
+</item>
+<item>
   <title>Knives</title>
   <link>gopher://gopher.black/1/phlog/20181027-knives/</link>
   <pubdate>Sat, 27 Oct 2018 00:00:00 -0400</pubdate>
@@ -1050,37 +1074,6 @@ Things that still suck:
 
 If you notice anything wonky on my stuff in the next couple days,
 hit me up.
-</pre>]]></description>
-</item>
-<item>
-  <title>Oops</title>
-  <link>gopher://gopher.black/1/phlog/20181001-oops/</link>
-  <pubdate>Mon, 01 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Oops!
-October 01st, 2018
-----------------------------------------
-
-You might not be reading this right now unless you are checking
-out one of my mirrors on SDF.org or tilde.town. That's because
-I accidentally blew up gopher.black. OHNOES!
-
-I was getting annoyed at the buzzing from the fan on my pi's case.
-I opened it up and tried spraying it with a little lubricant, but
-it didn't make a difference in the sound. So, what the hell, I'll
-just pull it out. Unfortunately, in the process my jostling of the
-SD card put it into read-only mode and now nothing works.
-
-Since the card is still readable I'm dding it down to a backup.
-I've got a new SD card ordered from Amazon and it should be here
-by Wednesday. I'll restore, plug that bad-boy in, and hopefully
-everything will be right as rain. If not, I've got 3 extra
-raspberry pi's lying around that can happily become the next
-gopher.black. I've got the data, I've got redundant hardware. This
-shouldn't be too bad.
-
-Still... derp.
 </pre>]]></description>
 </item>
 </channel>
