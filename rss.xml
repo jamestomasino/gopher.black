@@ -3,6 +3,21 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>A Little Reminder</title>
+  <link>gopher://gopher.black/1/phlog/20181107-a-little-reminder/</link>
+  <pubdate>Wed, 07 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+A little reminder
+November 07th, 2018
+----------------------------------------
+
+Whether you're thrilled or devestated with the events of the past
+few days, I just wanted to remind everyone that representative
+government is terrible all around! :D
+</pre>]]></description>
+</item>
+<item>
   <title>Dad</title>
   <link>gopher://gopher.black/1/phlog/20181106-dad/</link>
   <pubdate>Tue, 06 Nov 2018 00:00:00 -0500</pubdate>
@@ -996,84 +1011,6 @@ my car for the whole country, but around home there may be need to
 understand the land more intimately in case of emergency. 
 
 In short, maps are cool.
-</pre>]]></description>
-</item>
-<item>
-  <title>Restored</title>
-  <link>gopher://gopher.black/1/phlog/20181004-restored/</link>
-  <pubdate>Thu, 04 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Restored
-October 04th, 2018
-----------------------------------------
-
-The restoration of gopher.black was quite eventful with some
-absolutely awful computer drama. If you care about such things,
-here's a recap:
-
-I have a few raspberry pis, model 3s and some zero Ws. One of them
-has this sick metal case with a fan. It's a beast. Used that
-hardware for gopher.black along with a 64gb micro sd card. The
-only problem is, the fan sucks (or blows?). It has always been
-really noisy, and it eventually pissed me off enough to do
-something about it. Since the pis don't run hot anyway, I figured
-it was unnecessary. But before I removed it completely I figured
-I'd try lubricating it just in case that solved things.
-
-It didn't.
-
-So I opened the case up, ripped that bad boy out, and plugged her
-back in. Only this time, something was wrong. I was up and
-running, but the system was in read-only mode. Uh, oh! I decided
-to reboot and try again. This time, even worse... no boot.
-I plugged in an HDMI monitor to watch the boot sequence and it
-sprawled a bunch of messages about read-only crap. A quick google
-revealed that my SD card was likely at fault. It was going bad.
-I assume it was related to me opening the thing up and closing it
-a few times. I must have bumped it badly.
-
-If the card was read-only, I figured I could still read it to get
-an image. I did some dd magic and backed it up. Today I got a new
-64GB sd card in the mail. I dd'd my backup onto that and plugged
-it in but nothing happened. Not even a failed boot. Just nada.
-
-I thought... Lets make sure it's the SD card! So I swapped my SD
-card from my pi-hole and gopher.black into the other hardware and
-confirmed... definitely the SD. I had to roll back to an earlier
-backup. 
-
-The most recent I had was from June (yuck). Luckily, 90% of the
-crap on gopher.black is in git, so it's just a matter of updating
-from repos after restoring things. I smiled to myself at my own
-awesome and went over to my PC which houses the older backups.
-I plugged in my new SD card, opened up Etcher to image it from the
-backup and POOF, the MOTHERFUCKING drive hosting my backups
-decided that it was the perfect moment to disappear!
-
-Fast forward a bit to me restoring that drive from ITS backup,
-eventually restoring my SD card from the old backup, plugging
-things into the pi, booting it up, and we're back in business.
-
-Things that still suck:
-- Moku Pona is running again, but pretty much EVERYTHING updated
-  since June, so the most recent phlogs is kinda a mess. It'll
-  sort itself out in the days to come.
-- All my web certs expired. I'm renewing them again now via
-  acme.sh.
-- Weechat's sec.conf does something weird. It doesn't know my
-  master password. I have no idea what logic it uses, but this is
-  the second time that's happened to me in a week. I appreciate
-  that it externalizes passwords, but that's just BS. I'm better
-  off typing them in each time I connect. It's not like I do it
-  very often.
-- Probably other stuff... I don't really recall everything I did
-  on gopher.black over the last couple months. I'm sure most of it
-  was content, but maybe there was something else that was super
-  cool and I totally forgot. Meh, we'll make due.
-
-If you notice anything wonky on my stuff in the next couple days,
-hit me up.
 </pre>]]></description>
 </item>
 </channel>
