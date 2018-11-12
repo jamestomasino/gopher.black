@@ -3,6 +3,20 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Notice</title>
+  <link>gopher://gopher.black/1/phlog/20181112-notice/</link>
+  <pubdate>Mon, 12 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+NOTICE
+November 12th, 2018
+----------------------------------------
+
+This gophermaster uses cookies (and milk). By reading this content
+you acknowledge and accept our use of cookies for eating purposes.
+</pre>]]></description>
+</item>
+<item>
   <title>A Little Reminder</title>
   <link>gopher://gopher.black/1/phlog/20181107-a-little-reminder/</link>
   <pubdate>Wed, 07 Nov 2018 00:00:00 -0500</pubdate>
@@ -980,37 +994,6 @@ bradfonseca
     gopher://sdf.org/1/users/bradfonseca/
 
 Some good content brewing there!
-</pre>]]></description>
-</item>
-<item>
-  <title>Maps</title>
-  <link>gopher://gopher.black/1/phlog/20181007-maps/</link>
-  <pubdate>Sun, 07 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Maps
-October 07th, 2018
-----------------------------------------
-
-I intend to do a longer phlog soon with an update on my bug-out
-bag and other emergency preparations, but in the meantime I wanted
-to highlight one thing I value that many people probably overlook.
-In the United States the USGS provides extremely detailed and well
-maintained maps for free (digital) or cheap (print) covering
-pretty much every inch of the country. The most popular of these
-maps are the 7.5 minute stretches, which cover about 64 square
-miles in each one. Here's the one that covers my house [0]!
-
-[0] 7.5 Minute Map (large file warning)
-    http://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/NJ/NJ_Trenton_West_20161025_TM_geo.pdf
-
-In addition, I also have a map of the full county with topographic
-information and water systems clearly labeled. I keep both of
-these in a waterproof map case in my bag. I have a road atlas in
-my car for the whole country, but around home there may be need to
-understand the land more intimately in case of emergency. 
-
-In short, maps are cool.
 </pre>]]></description>
 </item>
 </channel>
