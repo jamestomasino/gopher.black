@@ -3,6 +3,24 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Yourtilde Com</title>
+  <link>gopher://gopher.black/1/phlog/20181118-yourtilde-com/</link>
+  <pubdate>Sun, 18 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+yourtilde.com
+November 18th, 2018
+----------------------------------------
+
+I'm adding another mirror of gopher.black to yourtilde.com,
+a fantastic new addition to the tildeverse run by deepend.
+
+gopher://yourtilde.com/1/~tomasino
+
+Just in case, ya'll!
+</pre>]]></description>
+</item>
+<item>
   <title>Perfection</title>
   <link>gopher://gopher.black/1/phlog/20181113-perfection/</link>
   <pubdate>Tue, 13 Nov 2018 00:00:00 -0500</pubdate>
@@ -507,179 +525,6 @@ want to live like this. We're the weirdos for questioning it.
 
 [0] moji - unlearning
     gopher://circumlunar.space/0/~moji/phlog/20180928-unlearning.txt
-</pre>]]></description>
-</item>
-<item>
-  <title>Little Free Library Part 1</title>
-  <link>gopher://gopher.black/1/phlog/20181014-little-free-library-part-1/</link>
-  <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Little Free Library, part 1
-October 14th, 2018
-----------------------------------------
-
-Below is a list of notes I've prepared while building my little
-free ebook library. What is that, you ask? Well, it's a solar
-powered rapsberry pi zero w that will live off-grid with an open
-wifi access point. When a user connects to it, Captive Portal will
-automatically trigger a "sign-in" page. The page isn't meant to
-sign into anything, though. Instead it will present users with
-free ebooks for download to their devices! 
-
-My first go will likely be a collection of PDF maps from USGS,
-some trail guides and bird identification things that are
-appropriate for the trail that runs past my house.
-
-My TODO list remains:
-  
-  - Test apple devices captive portal
-  - Design a static site page to download the ebooks
-
-
-# Starting from a raspbian lite install on a raspberry pi zero w:
-
-# After setting up your local wifi connection in wpa_supplicant,
-# then proceed to make your littlefreelibrary work when away from
-# home...
-
-# Update packages to prepare
-
-$ sudo apt update
-$ sudo apt upgrade -y
-
-# Install dependencies, but disable by default
-
-$ sudo apt install dnsmasq hostapd nginx -y
-$ sudo systemctl disable hostapd
-$ sudo systemctl disable dnsmasq
-
-# Configure
-
-$ sudo vi /etc/hostapd/hostapd.conf
-
-    interface=wlan0
-    driver=nl80211
-    ssid=LittleFreeLibrary
-    hw_mode=g
-    channel=8
-    wmm_enabled=0
-    macaddr_acl=0
-    auth_algs=1
-    wpa=0
-    ignore_broadcast_ssid=0
-    country_code=US
-    ieee80211n=1
-
-$ sudo vi /etc/default/hostapd
-
-    DAEMON_CONF="/etc/hostapd/hostapd.conf" # change only this line
-
-$ sudo vi /etc/dnsmasq.conf # add the following to the end of file
-
-    bogus_priv
-    addrdess=/#/10.0.0.5
-    interface=wlan0
-    no-resolv
-    bind-interfaces
-    dhcp-range=10.0.0.50,10.0.0.100,12h
-
-$ sudo vi /etc/dchcpd.conf # add the following to the end of file
-
-    nohook wpa_supplicant
-
-$ sudo vi /etc/systemd/system/autohotspot.service
-
-    [Unit]
-    Description=Automatically generate an internet Hotspot when a valid ssid is not in range
-    After=multi-user.target
-    [Service]
-    Type=oneshot
-    RemainAfterExit=yes
-    ExecStart=/usr/bin/autohotspot
-    [Install]
-    WantedBy=multi-user.target
-
-$ sudo systemctl enable autohotspot.service
-
-$ curl http://www.raspberryconnect.com/images/Autohotspot/autohotspot-95-4/autohotspot.txt > autohotspot
-$ chmod 755 autohotspot
-$ sudo mv autohotspot /usr/bin/autohotspot
-
-# Change hostname to littlefreelibrary
-
-$ sudo hostname littlefreelibrary
-$ sudo vi /etc/hostname
-
-    littlefreelibrary
-
-$ sudo vi /etc/hosts
-
-    127.0.0.1 littlefreelibrary
-
-# Set up a cron to detect changes
-
-$ crontab -e # add the following to the end of file
-
-    */5 * * * * sudo /usr/bin/autohotspot >/dev/null 2>&1
-
-# Set up nginx to work with captive portal
-
-$ sudo vi /etc/nginx/sites-available/default
-
-    server {
-            listen 80 default_server;
-            listen [::]:80 default_server;
-            root /var/www/html;
-            index index.html;
-            server_name _;
-
-            # For iOS
-            if ($http_user_agent ~* (CaptiveNetworkSupport) ) {
-                    return 302 http://littlefreelibrary.local/apple.html;
-            }
-
-            # For Android
-            location /generate_204 {
-                    return 302 http://littlefreelibrary.local/index.html;
-            }
-
-            location / {
-                    try_files $uri $uri/ /index.html;
-            }
-    }
-
-$ sudo service nginx restart
-
-# Add apple captive portal page
-
-$ sudo vi /var/www/html/apple.html
-
-    <!--
-    <?xml version="1.0" encoding="UTF-8"?>
-    <WISPAccessGatewayParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.wballiance.net/wispr_2_0.xsd">
-    <Redirect>
-    <MessageType>100</MessageType>
-    <ResponseCode>0</ResponseCode>
-    <VersionHigh>2.0</VersionHigh>
-    <VersionLow>1.0</VersionLow>
-    <AccessProcedure>1.0</AccessProcedure>
-    <AccessLocation>LittleFreeLibrary</AccessLocation>
-    <LocationName>LittleFreeLibrary</LocationName>
-    <LoginURL>http://littlefreelibrary.local/index.html</LoginURL>
-    </Redirect>
-    </WISPAccessGatewayParam>
-    -->
-
-# Create your library page
-
-$ sudo vi /var/www/html/index.html
-
-    TBD HTML code
-
-# To manage device when in AP mode
-
-$ ssh pi@10.0.0.5
 </pre>]]></description>
 </item>
 </channel>
