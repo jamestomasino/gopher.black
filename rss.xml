@@ -3,6 +3,81 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Space Gopher Revisited</title>
+  <link>gopher://gopher.black/1/phlog/20181119-space-gopher-revisited/</link>
+  <pubdate>Mon, 19 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Space Gopher, Revisited
+November 19th, 2018
+----------------------------------------
+
+A while back I mused [0] about how some quantum mechanics mixed
+with interstellar travel could create a scenario for text-based
+communications to thrive, at least in fiction. Tonight the idea
+came back to me again. 
+
+I've been hanging out with the tilde [1] crowd a lot lately, and
+it's so inspiring. I want to give back and make more of these
+micro-instance outposts that offer one thing really well. So many
+people have been phlogging about it recently, especially
+solderpunk [2]. How can I legitimately contribute, though? I don't
+think I have the time or energy for a full tilde admin role. Plus,
+there's already a bunch of these general purpose communities. What
+would be unique about mine?
+
+So, then I began thinking about what motivates me and what I love.
+Storytelling is #1, especially role-playing games. Merge all that
+together and it gives me such a great idea:
+
+  Humanity has expanded to the stars, but it wasn't in a single
+  great migration as many thought. Small communities and
+  individual families have drifted impossible distances away,
+  connected only through the thin tethers of a Quantum Entaglement
+  Communicator (QEC) which bridges their tiny bandwidth back to
+  this ancient relay hub. These are pen-pal letters, reports,
+  updates, cries for help, and calls into the darkness. What is
+  delivered to the system is unfiltered. Some of it is
+  intelligible. For some, common language has drifted too far for
+  clear translation. 
+
+  The year is unimportant and irrelevant due to relativistic
+  travel. The only agreed upon date is the "now" of the QEC. 
+
+  Launching sometime soon: A gopher-focused tilde community that
+  exists 100% in-game, sharing stories across the universe on the
+  only remaining free, interconnected network that unites the
+  dispersed peoples of the stars.
+
+Would you participate?
+
+[0] Space Gopher 2000
+    gopher://gopher.black/1/phlog/20180705-space-gopher-2000
+[1] tildeverse
+    http://tildeverse.org/
+[2] Circumlunar Updates
+    gopher://circumlunar.space/0/~solderpunk/phlog/circumlunar-updates.txt
+</pre>]]></description>
+</item>
+<item>
+  <title>Yourtilde Com</title>
+  <link>gopher://gopher.black/1/phlog/20181118-yourtilde-com/</link>
+  <pubdate>Sun, 18 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+yourtilde.com
+November 18th, 2018
+----------------------------------------
+
+I'm adding another mirror of gopher.black to yourtilde.com,
+a fantastic new addition to the tildeverse run by deepend.
+
+gopher://yourtilde.com/1/~tomasino
+
+Just in case, ya'll!
+</pre>]]></description>
+</item>
+<item>
   <title>Perfection</title>
   <link>gopher://gopher.black/1/phlog/20181113-perfection/</link>
   <pubdate>Tue, 13 Nov 2018 00:00:00 -0500</pubdate>
@@ -454,232 +529,6 @@ That's it. The whole point of this was to tell you all to go be
 badass at everything. Not good at something? Don't tell me about
 it. Go fix it. No.. don't fix it, master it. Master the heck out
 of that thing and then do it routinely as if it's no big deal.
-</pre>]]></description>
-</item>
-<item>
-  <title>Reading Plain Text</title>
-  <link>gopher://gopher.black/1/phlog/20181014-reading-plain-text/</link>
-  <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Reading plain text
-October 14th, 2018
-----------------------------------------
-
-While reading moji's phlog [0] I started considering how I read on
-gopher, or in plain text in general versus my methods on the web.
-Certainly I do more scanning in a web browser, which I attribute
-at least partially to the various font and style treatments that
-both allow for and promote the bite-sized ingestion of content.
-There is also an element of reading fatigue that plays out
-differently here in plain text, and thats where my mind went (not
-to say that moji was in any way tiring).
-
-When I'm tired of reading on gopher it is instantly apparent.
-I skim over blocks of text looking for something to jump out at
-me, but that isnt how it works. Warning claxxons blare in my brain
-and I shut down figuratively and literally. It's clear I need to
-do something else and come back later. I get no such signal on the
-web. I peruse long past the point of usefulness. I trade reading
-for browsing. Surfing becomes skimming. Infinite scroll is
-infinitely useless.
-
-My time in text is short and productive in the sense that I get
-something from it, whether information or entertainment. My time
-on the web offers sone of that, but the trappings are extreme and
-it is all too easy to give more time than necessary or helpful.
-
-This is intentional. Capitalism demands attention, and it is that
-monstrosity which guides the design patterns on port 80. Even
-informational sites follow the patterns because that is what
-drives engagement. Look at the analytics, measure your performance
-goals. How do we keep them longer? How do we show them more ads?
-How do we get them to spend a little more?
-
-I'm sick of environmental leeches. I want my landscapes clear and
-clean. Mow down the billboards and flashing neon and let me get
-where I'm going on my own terms, please.
-
-There is no way out on the web. The experience is condemned to
-these patterns. People scream when you try to pull that bandage
-off. They demand more convenience despite the cost. The masses
-want to live like this. We're the weirdos for questioning it.
-
-[0] moji - unlearning
-    gopher://circumlunar.space/0/~moji/phlog/20180928-unlearning.txt
-</pre>]]></description>
-</item>
-<item>
-  <title>Little Free Library Part 1</title>
-  <link>gopher://gopher.black/1/phlog/20181014-little-free-library-part-1/</link>
-  <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Little Free Library, part 1
-October 14th, 2018
-----------------------------------------
-
-Below is a list of notes I've prepared while building my little
-free ebook library. What is that, you ask? Well, it's a solar
-powered rapsberry pi zero w that will live off-grid with an open
-wifi access point. When a user connects to it, Captive Portal will
-automatically trigger a "sign-in" page. The page isn't meant to
-sign into anything, though. Instead it will present users with
-free ebooks for download to their devices! 
-
-My first go will likely be a collection of PDF maps from USGS,
-some trail guides and bird identification things that are
-appropriate for the trail that runs past my house.
-
-My TODO list remains:
-  
-  - Test apple devices captive portal
-  - Design a static site page to download the ebooks
-
-
-# Starting from a raspbian lite install on a raspberry pi zero w:
-
-# After setting up your local wifi connection in wpa_supplicant,
-# then proceed to make your littlefreelibrary work when away from
-# home...
-
-# Update packages to prepare
-
-$ sudo apt update
-$ sudo apt upgrade -y
-
-# Install dependencies, but disable by default
-
-$ sudo apt install dnsmasq hostapd nginx -y
-$ sudo systemctl disable hostapd
-$ sudo systemctl disable dnsmasq
-
-# Configure
-
-$ sudo vi /etc/hostapd/hostapd.conf
-
-    interface=wlan0
-    driver=nl80211
-    ssid=LittleFreeLibrary
-    hw_mode=g
-    channel=8
-    wmm_enabled=0
-    macaddr_acl=0
-    auth_algs=1
-    wpa=0
-    ignore_broadcast_ssid=0
-    country_code=US
-    ieee80211n=1
-
-$ sudo vi /etc/default/hostapd
-
-    DAEMON_CONF="/etc/hostapd/hostapd.conf" # change only this line
-
-$ sudo vi /etc/dnsmasq.conf # add the following to the end of file
-
-    bogus_priv
-    addrdess=/#/10.0.0.5
-    interface=wlan0
-    no-resolv
-    bind-interfaces
-    dhcp-range=10.0.0.50,10.0.0.100,12h
-
-$ sudo vi /etc/dchcpd.conf # add the following to the end of file
-
-    nohook wpa_supplicant
-
-$ sudo vi /etc/systemd/system/autohotspot.service
-
-    [Unit]
-    Description=Automatically generate an internet Hotspot when a valid ssid is not in range
-    After=multi-user.target
-    [Service]
-    Type=oneshot
-    RemainAfterExit=yes
-    ExecStart=/usr/bin/autohotspot
-    [Install]
-    WantedBy=multi-user.target
-
-$ sudo systemctl enable autohotspot.service
-
-$ curl http://www.raspberryconnect.com/images/Autohotspot/autohotspot-95-4/autohotspot.txt > autohotspot
-$ chmod 755 autohotspot
-$ sudo mv autohotspot /usr/bin/autohotspot
-
-# Change hostname to littlefreelibrary
-
-$ sudo hostname littlefreelibrary
-$ sudo vi /etc/hostname
-
-    littlefreelibrary
-
-$ sudo vi /etc/hosts
-
-    127.0.0.1 littlefreelibrary
-
-# Set up a cron to detect changes
-
-$ crontab -e # add the following to the end of file
-
-    */5 * * * * sudo /usr/bin/autohotspot >/dev/null 2>&1
-
-# Set up nginx to work with captive portal
-
-$ sudo vi /etc/nginx/sites-available/default
-
-    server {
-            listen 80 default_server;
-            listen [::]:80 default_server;
-            root /var/www/html;
-            index index.html;
-            server_name _;
-
-            # For iOS
-            if ($http_user_agent ~* (CaptiveNetworkSupport) ) {
-                    return 302 http://littlefreelibrary.local/apple.html;
-            }
-
-            # For Android
-            location /generate_204 {
-                    return 302 http://littlefreelibrary.local/index.html;
-            }
-
-            location / {
-                    try_files $uri $uri/ /index.html;
-            }
-    }
-
-$ sudo service nginx restart
-
-# Add apple captive portal page
-
-$ sudo vi /var/www/html/apple.html
-
-    <!--
-    <?xml version="1.0" encoding="UTF-8"?>
-    <WISPAccessGatewayParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.wballiance.net/wispr_2_0.xsd">
-    <Redirect>
-    <MessageType>100</MessageType>
-    <ResponseCode>0</ResponseCode>
-    <VersionHigh>2.0</VersionHigh>
-    <VersionLow>1.0</VersionLow>
-    <AccessProcedure>1.0</AccessProcedure>
-    <AccessLocation>LittleFreeLibrary</AccessLocation>
-    <LocationName>LittleFreeLibrary</LocationName>
-    <LoginURL>http://littlefreelibrary.local/index.html</LoginURL>
-    </Redirect>
-    </WISPAccessGatewayParam>
-    -->
-
-# Create your library page
-
-$ sudo vi /var/www/html/index.html
-
-    TBD HTML code
-
-# To manage device when in AP mode
-
-$ ssh pi@10.0.0.5
 </pre>]]></description>
 </item>
 </channel>
