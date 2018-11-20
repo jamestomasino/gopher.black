@@ -8,6 +8,8 @@ Distance 24.33 ly
 Equinox J2000.0 SOL
 Year 3781, QEC adjusted
 
+[Autotranslator enabled...]
+
 Jerome Somerset Pasani, Warrant Master
 :::
 Cryogenic stasis was interrupted for wardroom officers and
