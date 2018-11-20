@@ -4,7 +4,7 @@ Source Melchizedek.0294
 Approach β Hyi
 Ascension 00h 25m 45.07036s
 Declination –77° 15′ 15.2860″
-Distance 24.33 ly
+Distance 24.33ly
 Equinox J2000.0 SOL
 Year 3781, QEC adjusted
 
