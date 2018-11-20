@@ -3,6 +3,63 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Space Gopher Revisited</title>
+  <link>gopher://gopher.black/1/phlog/20181119-space-gopher-revisited/</link>
+  <pubdate>Mon, 19 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Space Gopher, Revisited
+November 19th, 2018
+----------------------------------------
+
+A while back I mused [0] about how some quantum mechanics mixed
+with interstellar travel could create a scenario for text-based
+communications to thrive, at least in fiction. Tonight the idea
+came back to me again. 
+
+I've been hanging out with the tilde [1] crowd a lot lately, and
+it's so inspiring. I want to give back and make more of these
+micro-instance outposts that offer one thing really well. So many
+people have been phlogging about it recently, especially
+solderpunk [2]. How can I legitimately contribute, though? I don't
+think I have the time or energy for a full tilde admin role. Plus,
+there's already a bunch of these general purpose communities. What
+would be unique about mine?
+
+So, then I began thinking about what motivates me and what I love.
+Storytelling is #1, especially role-playing games. Merge all that
+together and it gives me such a great idea:
+
+  Humanity has expanded to the stars, but it wasn't in a single
+  great migration as many thought. Small communities and
+  individual families have drifted impossible distances away,
+  connected only through the thin tethers of a Quantum Entaglement
+  Communicator (QEC) which bridges their tiny bandwidth back to
+  this ancient relay hub. These are pen-pal letters, reports,
+  updates, cries for help, and calls into the darkness. What is
+  delivered to the system is unfiltered. Some of it is
+  intelligible. For some, common language has drifted too far for
+  clear translation. 
+
+  The year is unimportant and irrelevant due to relativistic
+  travel. The only agreed upon date is the "now" of the QEC. 
+
+  Launching sometime soon: A gopher-focused tilde community that
+  exists 100% in-game, sharing stories across the universe on the
+  only remaining free, interconnected network that unites the
+  dispersed peoples of the stars.
+
+Would you participate?
+
+[0] Space Gopher 2000
+    gopher://gopher.black/1/phlog/20180705-space-gopher-2000
+[1] tildeverse
+    http://tildeverse.org/
+[2] Circumlunar Updates
+    gopher://circumlunar.space/0/~solderpunk/phlog/circumlunar-updates.txt
+</pre>]]></description>
+</item>
+<item>
   <title>Yourtilde Com</title>
   <link>gopher://gopher.black/1/phlog/20181118-yourtilde-com/</link>
   <pubdate>Sun, 18 Nov 2018 00:00:00 -0500</pubdate>
@@ -472,59 +529,6 @@ That's it. The whole point of this was to tell you all to go be
 badass at everything. Not good at something? Don't tell me about
 it. Go fix it. No.. don't fix it, master it. Master the heck out
 of that thing and then do it routinely as if it's no big deal.
-</pre>]]></description>
-</item>
-<item>
-  <title>Reading Plain Text</title>
-  <link>gopher://gopher.black/1/phlog/20181014-reading-plain-text/</link>
-  <pubdate>Sun, 14 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Reading plain text
-October 14th, 2018
-----------------------------------------
-
-While reading moji's phlog [0] I started considering how I read on
-gopher, or in plain text in general versus my methods on the web.
-Certainly I do more scanning in a web browser, which I attribute
-at least partially to the various font and style treatments that
-both allow for and promote the bite-sized ingestion of content.
-There is also an element of reading fatigue that plays out
-differently here in plain text, and thats where my mind went (not
-to say that moji was in any way tiring).
-
-When I'm tired of reading on gopher it is instantly apparent.
-I skim over blocks of text looking for something to jump out at
-me, but that isnt how it works. Warning claxxons blare in my brain
-and I shut down figuratively and literally. It's clear I need to
-do something else and come back later. I get no such signal on the
-web. I peruse long past the point of usefulness. I trade reading
-for browsing. Surfing becomes skimming. Infinite scroll is
-infinitely useless.
-
-My time in text is short and productive in the sense that I get
-something from it, whether information or entertainment. My time
-on the web offers sone of that, but the trappings are extreme and
-it is all too easy to give more time than necessary or helpful.
-
-This is intentional. Capitalism demands attention, and it is that
-monstrosity which guides the design patterns on port 80. Even
-informational sites follow the patterns because that is what
-drives engagement. Look at the analytics, measure your performance
-goals. How do we keep them longer? How do we show them more ads?
-How do we get them to spend a little more?
-
-I'm sick of environmental leeches. I want my landscapes clear and
-clean. Mow down the billboards and flashing neon and let me get
-where I'm going on my own terms, please.
-
-There is no way out on the web. The experience is condemned to
-these patterns. People scream when you try to pull that bandage
-off. They demand more convenience despite the cost. The masses
-want to live like this. We're the weirdos for questioning it.
-
-[0] moji - unlearning
-    gopher://circumlunar.space/0/~moji/phlog/20180928-unlearning.txt
 </pre>]]></description>
 </item>
 </channel>
