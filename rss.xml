@@ -3,6 +3,47 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>The At Command</title>
+  <link>gopher://gopher.black/1/phlog/20181121-the-at-command/</link>
+  <pubdate>Wed, 21 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+the at command
+November 21st, 2018
+----------------------------------------
+
+I am going to be unavailable during my anonradio show tomorrow
+night, and I wanted to queue up my show stream in my absence.
+I knew that I could set up all the files I needed on a server
+somewhere (in this case, tilde.team) and cron job the stream, but
+it bothered me that I'd be setting up a reoccurring task for
+something that should be a one-shot. *nix is old enough that this
+couldn't be a new problem, so I searched around for a proper
+solution. 
+
+Enter 'at'. It's exactly what I needed. Run a script AT a certain
+time. Just once. Tada!
+
+$ man at
+
+This reveals a lot of info, but it's pretty poorly documented, at
+least by my new openbsd documentation standards. It took some
+trial and error and searching through examples before I settled on
+something that appears like it should work. We'll see tomorrow
+night, I suppose!
+
+One final note: at runs its script as you from your current
+directory using your current environment. Basically, whatever your
+shell looked like at the moment you defined the 'at' command,
+that's how it'll execute. This is a huge convenience for these
+one-shots. 
+
+If everything goes off well tomorrow night, I expect I'll be using
+this more often, maybe even to do simple things like cue up my
+outro-music for my show!
+</pre>]]></description>
+</item>
+<item>
   <title>Space Gopher Revisited</title>
   <link>gopher://gopher.black/1/phlog/20181119-space-gopher-revisited/</link>
   <pubdate>Mon, 19 Nov 2018 00:00:00 -0500</pubdate>
@@ -474,61 +515,6 @@ a brilliant cookware set!
 
 [1] Cleaning cast iron with electrolysis
     http://www.castironcollector.com/electrolysis.php
-</pre>]]></description>
-</item>
-<item>
-  <title>Sprezzatura</title>
-  <link>gopher://gopher.black/1/phlog/20181018-sprezzatura/</link>
-  <pubdate>Thu, 18 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-sprezzatura
-October 18th, 2018
-----------------------------------------
-
-Castiglione wrote The Book of the Courtier between 1508 and 1528.
-It's a fantastic read, if you've never tried it before. In the
-book he introduces a newly created word: sprezzatura, defined as -
-
-  "I have found quite a universal rule which in this matter seems
-  to me valid above all other, and in all human affairs whether in
-  word or deed: and that is to avoid affectation in every way
-  possible as though it were some rough and dangerous reef; and
-  (to pronounce a new word perhaps) to practice in all things
-  a certain sprezzatura [nonchalance], so as to conceal all art
-  and make whatever is done or said appear to be without effort
-  and almost without any thought about it."
-
-It defined the ultimate goal of the courtiers at the court of
-Urbino. Look amazing at everything without trying.
-
-Ever since reading the book in high school that has been my
-personal motto. Even mentioning it "out loud" here in gopher
-undermines the effort somewhat. Talking about trying to be awesome
-at everything and seem effortless ... you get where I'm going with
-this.
-
-Anyway, I wanted to mention it for two reasons:
-
-1) When I was thinking of a show for anonradio, my first idea
-   centered around sprezzatura, but I couldn't come up with a way
-   to make it a thing without also completely destroying that
-   thing. It's tricky! Try it in your head.
-
-2) Some people these days are all too eager to "own" their
-   failings. There's a pride in being bad at stuff. It's probably
-   a generational thing. Showing vulnerability is cool as shit, or
-   something. I'm drunk and an old man when it comes to this
-   stuff. I'm of the opinion that if you can be a total badass at
-   every fucking thing, then you should be a badass at every
-   fucking thing. If you're a badass at 90% of the things, then
-   focus and fix that last 10% in the quiet of your bedroom until
-   you can be a rockstar there too.
-
-That's it. The whole point of this was to tell you all to go be
-badass at everything. Not good at something? Don't tell me about
-it. Go fix it. No.. don't fix it, master it. Master the heck out
-of that thing and then do it routinely as if it's no big deal.
 </pre>]]></description>
 </item>
 </channel>

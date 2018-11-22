@@ -1,0 +1,34 @@
+i----------------------------------------		gopher.black	70
+ithe at command		gopher.black	70
+iNovember 21st, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI am going to be unavailable during my anonradio show tomorrow		gopher.black	70
+inight, and I wanted to queue up my show stream in my absence.		gopher.black	70
+iI knew that I could set up all the files I needed on a server		gopher.black	70
+isomewhere (in this case, tilde.team) and cron job the stream, but		gopher.black	70
+iit bothered me that I'd be setting up a reoccurring task for		gopher.black	70
+isomething that should be a one-shot. *nix is old enough that this		gopher.black	70
+icouldn't be a new problem, so I searched around for a proper		gopher.black	70
+isolution. 		gopher.black	70
+i		gopher.black	70
+iEnter 'at'. It's exactly what I needed. Run a script AT a certain		gopher.black	70
+itime. Just once. Tada!		gopher.black	70
+i		gopher.black	70
+i$ man at		gopher.black	70
+i		gopher.black	70
+iThis reveals a lot of info, but it's pretty poorly documented, at		gopher.black	70
+ileast by my new openbsd documentation standards. It took some		gopher.black	70
+itrial and error and searching through examples before I settled on		gopher.black	70
+isomething that appears like it should work. We'll see tomorrow		gopher.black	70
+inight, I suppose!		gopher.black	70
+i		gopher.black	70
+iOne final note: at runs its script as you from your current		gopher.black	70
+idirectory using your current environment. Basically, whatever your		gopher.black	70
+ishell looked like at the moment you defined the 'at' command,		gopher.black	70
+ithat's how it'll execute. This is a huge convenience for these		gopher.black	70
+ione-shots. 		gopher.black	70
+i		gopher.black	70
+iIf everything goes off well tomorrow night, I expect I'll be using		gopher.black	70
+ithis more often, maybe even to do simple things like cue up my		gopher.black	70
+ioutro-music for my show!		gopher.black	70
