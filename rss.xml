@@ -3,6 +3,31 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Easy Dated Files For Sorting</title>
+  <link>gopher://gopher.black/1/phlog/20181127-easy-dated-files-for-sorting/</link>
+  <pubdate>Tue, 27 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Easy dated files for sorting
+November 27th, 2018
+----------------------------------------
+
+For those of you out there using gophernicus and forcing
+yourselves to write your posts with cumbersome file-name prefixes
+for proper sorting, let me help you out.
+
+Gophernicus allows you to execute in-line scripts in your
+gophermaps. That means you can do something like this:
+
+=ls -1r | grep -v 'gophermap' | awk '{printf "0%s\t%s\n", $1, $1}'
+
+It will grab all the files in your directory, flip the order, and
+print them out into a pretty gophermap for you. Tada! Just drop
+files in place and name them with the date, YYYY-MM-DD. You'll
+sort just fine.
+</pre>]]></description>
+</item>
+<item>
   <title>Cosmic Voyage</title>
   <link>gopher://gopher.black/1/phlog/20181124-cosmic-voyage/</link>
   <pubdate>Sat, 24 Nov 2018 00:00:00 -0500</pubdate>
@@ -352,32 +377,6 @@ His voice calls my name and I answer, "daddy" and I am six years
 old. I am my own son, and I see all our eyes. Then I cry.
 
 I'm not ready for him to go.
-</pre>]]></description>
-</item>
-<item>
-  <title>Knives</title>
-  <link>gopher://gopher.black/1/phlog/20181027-knives/</link>
-  <pubdate>Sat, 27 Oct 2018 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Knives
-October 27th, 2018
-----------------------------------------
-
-I'm on my way out the door to a Halloween party, so I'll make this
-quick. Knives are awesome. They are tools first, weapons second,
-and infinitely useful. I'm a Mora Classic #1 and #2 kind of guy.
-I have some Baretta tactical knives thate are pure beauty and
-a karambit that is sex in sickle form, but the work horse knife
-for me is the Mora. It runs about $12 retail in the US, and if
-well cared for it's multi-generational. The steel is excellent,
-the handle is sturdy. Great stuff.
-
-I'm disappointed in knife limiting laws. I don't see much of
-a parallel with gun control there. Gun's are instruments of death.
-Knives CAN be, but it is not a primary purpose. It's the same with
-an axe, or a hammer, for that matter. I like useful things, and
-sometimes those useful things are also beautiful. Knives... mmm.
 </pre>]]></description>
 </item>
 </channel>

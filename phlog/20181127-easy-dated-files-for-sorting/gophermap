@@ -1,0 +1,18 @@
+i----------------------------------------		gopher.black	70
+iEasy dated files for sorting		gopher.black	70
+iNovember 27th, 2018		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iFor those of you out there using gophernicus and forcing		gopher.black	70
+iyourselves to write your posts with cumbersome file-name prefixes		gopher.black	70
+ifor proper sorting, let me help you out.		gopher.black	70
+i		gopher.black	70
+iGophernicus allows you to execute in-line scripts in your		gopher.black	70
+igophermaps. That means you can do something like this:		gopher.black	70
+i		gopher.black	70
+i=ls -1r | grep -v 'gophermap' | awk '{printf "0%s\t%s\n", $1, $1}'		gopher.black	70
+i		gopher.black	70
+iIt will grab all the files in your directory, flip the order, and		gopher.black	70
+iprint them out into a pretty gophermap for you. Tada! Just drop		gopher.black	70
+ifiles in place and name them with the date, YYYY-MM-DD. You'll		gopher.black	70
+isort just fine.		gopher.black	70
