@@ -3,6 +3,47 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Re Jynx So Much Cool Stuff Going On</title>
+  <link>gopher://gopher.black/1/phlog/20181128-re-jynx-so-much-cool-stuff-going-on/</link>
+  <pubdate>Wed, 28 Nov 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Re: jynx - so much cool stuff going on
+November 28th, 2018
+----------------------------------------
+
+Jynx recently wrote [0] about gopher decentralization (and gave me
+a cool shoutout). He also drew attention to federation tools
+between the tildeverse and other micro-communities like
+circumlunar. I love it and agree whole-heartedly. 
+
+Cosmic Voyage is hosting an ircd that is part of the
+irc.tilde.chat round-robin. I would love to figure out a way to
+make my local mail on that box play nicely with tilde's, but not
+open up wide to the universe. bbj style message boards that can
+federate would be great too, like FidoNet. Bring on the cool
+stuff, people.
+
+Oh, and jynx, please do set up something in the cosmic.voyage
+vein, even if it's via git. We need more!!! One of the folks that
+sits in tilde IRC mentioned to me this morning that he plans on
+making a D&D/Fantasy style version of cosmic. I would LOVE to see
+that, and likely join. I'm imagining it as stories being told
+"back at the inn". How cool.
+
+So yes, gopherspace is growing and exploding with badassery.
+Circumlunar phlogs are so popular. Maybe we can get tilde.team and
+tilde.town communities thinking a little more gophery and get
+their vast numbers phlogging too. Let's all keep on with
+solderpunk's call to arms [1]: Hey you! Host something!
+
+jynx - so much cool stuff going on
+    gopher://1436.ninja/0/Phlog/20181128.post
+solderpunk - hey you host something
+    gopher://circumlunar.space/0/~solderpunk/phlog/hey-you-host-something.txt
+</pre>]]></description>
+</item>
+<item>
   <title>Easy Dated Files For Sorting</title>
   <link>gopher://gopher.black/1/phlog/20181127-easy-dated-files-for-sorting/</link>
   <pubdate>Tue, 27 Nov 2018 00:00:00 -0500</pubdate>
@@ -353,30 +394,6 @@ November 07th, 2018
 Whether you're thrilled or devestated with the events of the past
 few days, I just wanted to remind everyone that representative
 government is terrible all around! :D
-</pre>]]></description>
-</item>
-<item>
-  <title>Dad</title>
-  <link>gopher://gopher.black/1/phlog/20181106-dad/</link>
-  <pubdate>Tue, 06 Nov 2018 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Dad
-November 06th, 2018
-----------------------------------------
-
-My dad can't feed himself anymore. I want to scream about that or
-cry about it depending on the moment. Instead I sit quietly and
-think about him through my life. The good moments come to me. I'm
-not sure where the bad ones went, with time.
-
-I remember throwing a ball, playing with a tape recorder, being
-chased on a field. I hold strong.
-
-His voice calls my name and I answer, "daddy" and I am six years
-old. I am my own son, and I see all our eyes. Then I cry.
-
-I'm not ready for him to go.
 </pre>]]></description>
 </item>
 </channel>
