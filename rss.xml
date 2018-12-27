@@ -3,6 +3,21 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Moku Pona Updates</title>
+  <link>gopher://gopher.black/1/phlog/20181226-moku-pona-updates/</link>
+  <pubdate>Wed, 26 Dec 2018 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Moku Pona updates
+December 26th, 2018
+----------------------------------------
+
+Thanks to a great deal of help from kensanata, my moku-pona page
+now supports phlog feeds. Ulcer is the first one benefiting from
+it. Have a look.
+</pre>]]></description>
+</item>
+<item>
   <title>Resolutions</title>
   <link>gopher://gopher.black/1/phlog/20181225-resolutions/</link>
   <pubdate>Tue, 25 Dec 2018 00:00:00 -0500</pubdate>
@@ -375,85 +390,6 @@ a fantastic new addition to the tildeverse run by deepend.
 gopher://yourtilde.com/1/~tomasino
 
 Just in case, ya'll!
-</pre>]]></description>
-</item>
-<item>
-  <title>Perfection</title>
-  <link>gopher://gopher.black/1/phlog/20181113-perfection/</link>
-  <pubdate>Tue, 13 Nov 2018 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Perfection
-November 13th, 2018
-----------------------------------------
-
-Very soon I'll be giving up my role as a manager and moving back
-into the world of sole contributer. For the past five or six years
-I've been a VP level director of a team or teams of developers. At
-one point in time I had 24 direct reports across three offices.
-These days I just have 3 direct reports at one office. Regardless,
-my role has been primarily focused on facilitation, management,
-coaching and strategy, with a heavy dollop of analytics work. It's
-not that I don't get my hands dirty; I code all the time. It's
-just that I'm typically jumping in to solve a single problem, or
-create a framework, or rescue something gone astray. I rarely find
-myself in the position of building things from scratch.
-
-There's freelance, of course. I just completed a landing page for
-a pharma company that will be launching shortly. It was an excuse
-for me to learn the newest CSS features out there, CSS-Grid, and
-to make sure I'm still sharp. Everything went exceptionally well,
-and I should have a nice little side-money from it soon.
-
-With the move out of the country I wanted to refocus on what
-I enjoy doing and what keeps the stress level low. My dad was
-a work-a-holic, and I could easily see myself falling into the
-trap. I'm staring at a career crossroads: do I continue on my
-present trajectory and take on C-suite positions and eventually
-start my own company, or do I take a step back and focus on family
-and friends at the cost of salary. It's not an easy decision.
-
-I'm hoping Iceland can be a disconnect from a life of things.
-I don't want all this stuff I've gathered. I have too many
-hobbies, too many computers, too many projects. I want to take
-a walk with the family and spend more time seeing my son smile.
-While I don't want the stress of bills piling up, we're well past
-the level of comfortable living. I don't need more if we're just
-going to spend it.
-
-So with the move to Iceland I'm giving up my VP title and my
-managerial duties. I'm taking a step back into a senior developer
-or lead architect role (whatever we decide to call it). I'll be
-building things again and taking a pay cut to align. This feels
-good and right, at least for now.
-
-And it gives me the opportunity to think about what I enjoy about
-coding. I'm a perfectionist in the work I do professionally. When
-given a task I dig deep and try to solve it in ways that
-anticipate things the designers never dreamed of. I anticipate the
-ways testers will try to break things. I focus intensely on
-pixel-perfect design execution without any compromise of speed or
-accessibility. I want every piece of throw-away advertising trash
-I build to be a perfect specimen.
-
-Today I built a digital sales aid for pharmaceutical reps
-detailing a drug that treats ALS. It's a tool that shows off payer
-data and coverage information relevant to the doctor being
-detailed. The original plan was for a national-level print piece,
-but we managed to get the company to send us a feed of their raw
-data. I worked on some analysis in R and generated specific
-breakdowns for their list and found an elegant way to side-load
-it into their presentations. The reps have extremely personalized
-digital pieces now, which will give the home office interesting
-analytics on the use of the tools and allow us to further segment
-their targets by degree of concern about access and coverage, if
-the client bothers to look at the data we collect anyway.
-
-While the content I'm building isn't particularly interesting
-I found ways to challenge myself, level it up, and focused on
-perfection. That gives me a great deal of satisfaction. When I can
-build something (even something dumb) perfectly in the first try,
-that's a great feeling. I'm looking forward to more of that soon.
 </pre>]]></description>
 </item>
 </channel>
