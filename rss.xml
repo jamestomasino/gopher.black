@@ -3,6 +3,54 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Talkd On Ubuntu</title>
+  <link>gopher://gopher.black/1/phlog/20190102-talkd-on-ubuntu/</link>
+  <pubdate>Wed, 02 Jan 2019 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+talkd on ubuntu
+January 02nd, 2019
+----------------------------------------
+
+I need to save these notes somewhere. I just got talkd working on
+ubuntu 18.10 and it was quite convoluted. Here's what I did:
+
+- install openbsd-inetd (not inetutils-inetd, it's shit)
+- install talkd (not inetutils-talkd, also shit)
+- install ytalk (better than talk by a mile)
+
+edit /etc/inetd.conf and add the following:
+
+#:BSD: Shell, login, exec and talk are BSD protocols.
+talk   dgram udp wait nobody.tty /usr/sbin/tcpd in.talkd
+ntalk  dgram udp wait nobody.tty /usr/sbin/tcpd in.ntalkd 
+
+note the /usr/sbin/tcpd. If talkd added content here for you,
+those are probably quite different. Trust tcpd to handle the
+connection for you and hand it off to in.talkd and in.ntalkd
+afterwards. 
+
+'nobody' will probably need to be added to the tty group. In truth
+you should make another dummy user without a login shell named
+'talkd' and add THAT user to tty, but this works.
+
+$ sudo usermod -a -G tty nobody
+
+Restart inetd:
+
+$ sudo service openbsd-inetd restart
+
+Now you should be able to use 'talk' on your server, locally at
+least.
+
+Ports 517 and 518 are for talkd, so you can open them up in your
+firewall and that should be enough to talk to other servers, but
+I don't have that piece of the puzzle just yet.
+
+Good luck!
+</pre>]]></description>
+</item>
+<item>
   <title>Reading Questions And Answers</title>
   <link>gopher://gopher.black/1/phlog/20181230-reading-questions-and-answers/</link>
   <pubdate>Sun, 30 Dec 2018 00:00:00 -0500</pubdate>
@@ -498,63 +546,6 @@ one-shots.
 If everything goes off well tomorrow night, I expect I'll be using
 this more often, maybe even to do simple things like cue up my
 outro-music for my show!
-</pre>]]></description>
-</item>
-<item>
-  <title>Space Gopher Revisited</title>
-  <link>gopher://gopher.black/1/phlog/20181119-space-gopher-revisited/</link>
-  <pubdate>Mon, 19 Nov 2018 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Space Gopher, Revisited
-November 19th, 2018
-----------------------------------------
-
-A while back I mused [0] about how some quantum mechanics mixed
-with interstellar travel could create a scenario for text-based
-communications to thrive, at least in fiction. Tonight the idea
-came back to me again. 
-
-I've been hanging out with the tilde [1] crowd a lot lately, and
-it's so inspiring. I want to give back and make more of these
-micro-instance outposts that offer one thing really well. So many
-people have been phlogging about it recently, especially
-solderpunk [2]. How can I legitimately contribute, though? I don't
-think I have the time or energy for a full tilde admin role. Plus,
-there's already a bunch of these general purpose communities. What
-would be unique about mine?
-
-So, then I began thinking about what motivates me and what I love.
-Storytelling is #1, especially role-playing games. Merge all that
-together and it gives me such a great idea:
-
-  Humanity has expanded to the stars, but it wasn't in a single
-  great migration as many thought. Small communities and
-  individual families have drifted impossible distances away,
-  connected only through the thin tethers of a Quantum Entaglement
-  Communicator (QEC) which bridges their tiny bandwidth back to
-  this ancient relay hub. These are pen-pal letters, reports,
-  updates, cries for help, and calls into the darkness. What is
-  delivered to the system is unfiltered. Some of it is
-  intelligible. For some, common language has drifted too far for
-  clear translation. 
-
-  The year is unimportant and irrelevant due to relativistic
-  travel. The only agreed upon date is the "now" of the QEC. 
-
-  Launching sometime soon: A gopher-focused tilde community that
-  exists 100% in-game, sharing stories across the universe on the
-  only remaining free, interconnected network that unites the
-  dispersed peoples of the stars.
-
-Would you participate?
-
-[0] Space Gopher 2000
-    gopher://gopher.black/1/phlog/20180705-space-gopher-2000
-[1] tildeverse
-    http://tildeverse.org/
-[2] Circumlunar Updates
-    gopher://circumlunar.space/0/~solderpunk/phlog/circumlunar-updates.txt
 </pre>]]></description>
 </item>
 </channel>

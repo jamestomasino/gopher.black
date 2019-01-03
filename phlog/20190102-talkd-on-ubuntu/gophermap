@@ -1,0 +1,41 @@
+i----------------------------------------		gopher.black	70
+italkd on ubuntu		gopher.black	70
+iJanuary 02nd, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI need to save these notes somewhere. I just got talkd working on		gopher.black	70
+iubuntu 18.10 and it was quite convoluted. Here's what I did:		gopher.black	70
+i		gopher.black	70
+i- install openbsd-inetd (not inetutils-inetd, it's shit)		gopher.black	70
+i- install talkd (not inetutils-talkd, also shit)		gopher.black	70
+i- install ytalk (better than talk by a mile)		gopher.black	70
+i		gopher.black	70
+iedit /etc/inetd.conf and add the following:		gopher.black	70
+i		gopher.black	70
+i#:BSD: Shell, login, exec and talk are BSD protocols.		gopher.black	70
+italk   dgram udp wait nobody.tty /usr/sbin/tcpd in.talkd		gopher.black	70
+intalk  dgram udp wait nobody.tty /usr/sbin/tcpd in.ntalkd 		gopher.black	70
+i		gopher.black	70
+inote the /usr/sbin/tcpd. If talkd added content here for you,		gopher.black	70
+ithose are probably quite different. Trust tcpd to handle the		gopher.black	70
+iconnection for you and hand it off to in.talkd and in.ntalkd		gopher.black	70
+iafterwards. 		gopher.black	70
+i		gopher.black	70
+i'nobody' will probably need to be added to the tty group. In truth		gopher.black	70
+iyou should make another dummy user without a login shell named		gopher.black	70
+i'talkd' and add THAT user to tty, but this works.		gopher.black	70
+i		gopher.black	70
+i$ sudo usermod -a -G tty nobody		gopher.black	70
+i		gopher.black	70
+iRestart inetd:		gopher.black	70
+i		gopher.black	70
+i$ sudo service openbsd-inetd restart		gopher.black	70
+i		gopher.black	70
+iNow you should be able to use 'talk' on your server, locally at		gopher.black	70
+ileast.		gopher.black	70
+i		gopher.black	70
+iPorts 517 and 518 are for talkd, so you can open them up in your		gopher.black	70
+ifirewall and that should be enough to talk to other servers, but		gopher.black	70
+iI don't have that piece of the puzzle just yet.		gopher.black	70
+i		gopher.black	70
+iGood luck!		gopher.black	70
