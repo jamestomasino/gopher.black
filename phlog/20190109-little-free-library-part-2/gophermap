@@ -1,0 +1,49 @@
+i----------------------------------------		gopher.black	70
+iLittle Free Library, part 2		gopher.black	70
+iJanuary 09th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI originally wrote part 1 of this build back in October [0] and		gopher.black	70
+iI have a few little things to add.		gopher.black	70
+i		gopher.black	70
+iFirst, I want to call out a major hurdle I'm facing: Captive		gopher.black	70
+iPortal browsers don't allow users to download files. It's		gopher.black	70
+ia security thing. That's annoying for a library that's designed to		gopher.black	70
+igive you ebooks, but it might not be a barrier for your uses.		gopher.black	70
+iSomeone on Mastodon mentioned making a video based thing, and that		gopher.black	70
+ishould work just fine entirely in captive portal.		gopher.black	70
+i		gopher.black	70
+iSecond, captive portal browsers are way behind the times with		gopher.black	70
+iregard to css support. No CSS-Grid here, folks. Sadly I had to		gopher.black	70
+ifall back on some older methods to make my page pretty.		gopher.black	70
+i		gopher.black	70
+iSpeaking of pages, here's a link to the repository that houses my		gopher.black	70
+iweb interface to the library [1].		gopher.black	70
+i		gopher.black	70
+iIf you're reading this as of the moment of posting then you'll see		gopher.black	70
+ithat I haven't addressed problem #1 yet. If you're finding this		gopher.black	70
+ilater in time, hopefully it's all fixed for you. Here's my current		gopher.black	70
+iplan of attack:		gopher.black	70
+i		gopher.black	70
+i- Create a very simple captive portal page that advertises the		gopher.black	70
+i  little free library and instructs users to open a regular		gopher.black	70
+i  browser and navigate to http://littlefreelibrary.local		gopher.black	70
+i- The generated library page will be hosted at the root url, not		gopher.black	70
+i  the captive-portal location, and will allow full downloads.		gopher.black	70
+i		gopher.black	70
+iThis is going to take some testing to get right, but once it's all		gopher.black	70
+isquared away I'll update that repo to contain both pages and		gopher.black	70
+ideployment scripts.		gopher.black	70
+i		gopher.black	70
+iFinally, I've purchased a solar battery that I'm going to try out.		gopher.black	70
+iIt's a very basic solar charging battery pack of Amazon that I'm		gopher.black	70
+inot going to bother linking. It's likely not the real solution		gopher.black	70
+ihere since they're notoriously bad at actually charging from the		gopher.black	70
+isun, and when they do they overheat and destroy the battery. But		gopher.black	70
+iit will finish my proof of concept, and that's what's important.		gopher.black	70
+i		gopher.black	70
+iOnce that arrives, I'll hopefully have time this weekend to give		gopher.black	70
+ithe project one last push and get it working in the woods.		gopher.black	70
+i		gopher.black	70
+0[0] Little Free Library, Part 1	/phlog/20181014-little-free-library-part-1
+h[1] Little Free Library Web Source	URL:http://github.com/jamestomasino/littlefreelibrary
