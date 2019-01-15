@@ -3,6 +3,49 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Little Free Library Part 3</title>
+  <link>gopher://gopher.black/1/phlog/20190115-little-free-library-part-3/</link>
+  <pubdate>Tue, 15 Jan 2019 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Little Free Library, part 3
+January 15th, 2019
+----------------------------------------
+
+The batter test is complete. I picked up a solar powered battery
+pack off Amazon and plugged in the pi, then left it in the dark to
+see how long it took to drain. It lasted just over 80 hours with
+no external charging. That's fantastic! 
+
+The unit claims that it can fully recharge in about 7 hours of
+sunlight. Given various seasons and overcast days, rain, etc, that
+should be plenty of buffer to allow the pi to remain perpetually
+active.
+
+With that, there's only 3 things left to do:
+
+- Update the captive portal screen to indicate to users that they
+  should: 1) disable their mobile data, and 2) browse to
+  http://littlefreelibrary.  The actual domain doesn't matter, but
+  that one seems easy enough to remember. The mobile data thing
+  came up in testing as a barrier to IP rules running on the Pi
+  that would normally redirect you to 10.0.0.5 and serve the web
+  content. Captive Portal may trigger, but I need a real redirect
+  of a real mobile browser for downloads. If you're reading this
+  and making a project that doesn't need javascript or downloads,
+  just do it IN the captive portal. It's much easier.
+
+- Build a weatherproof enclosure. The plan is to 3D print
+  something that can hold the battery and pi, or just the pi glued
+  on the battery, or a big glass box, or whatever. Something that
+  will survive in the woods and not be blocked by snowfall.
+
+- Take pictures and "blog" the full build instructions so others
+  can replicate and share it. This is a cool project and I hope
+  others can build upon it.
+</pre>]]></description>
+</item>
+<item>
   <title>Little Free Library Part 2</title>
   <link>gopher://gopher.black/1/phlog/20190109-little-free-library-part-2/</link>
   <pubdate>Wed, 09 Jan 2019 00:00:00 -0500</pubdate>
@@ -505,64 +548,6 @@ It will grab all the files in your directory, flip the order, and
 print them out into a pretty gophermap for you. Tada! Just drop
 files in place and name them with the date, YYYY-MM-DD. You'll
 sort just fine.
-</pre>]]></description>
-</item>
-<item>
-  <title>Cosmic Voyage</title>
-  <link>gopher://gopher.black/1/phlog/20181124-cosmic-voyage/</link>
-  <pubdate>Sat, 24 Nov 2018 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-cosmic.voyage
-November 24th, 2018
-----------------------------------------
-
-Cosmic Voyage is live!
-
-Cosmic Voyage on Gopher
-    gopher://cosmic.voyage/1/
-Cosmic Voyage on the Web
-    http://cosmic.voyage
-Cosmic Voyage RSS Feed
-    http://cosmic.voyage/rss.xml
-
-If you don't know what I'm talking about, look here:
-Space Gopher, Revisited
-    gopher://gopher.black/1/phlog/20181119-space-gopher-revisited
-
-If you'd like to join, send an email to:
-
-        tomasino [at] lavabit [dot] com
-
-Be sure to include the following:
-
-        1. Your desired username - we don't use it in the story
-           itself, but there may be some uses on the system for
-           local mail and logging in.
-
-        2. Your first ship/colony/outpost name - This is what
-           you'll be using to write the story content. You can
-           have as many ships as you'd like. Just send me a note
-           to request more.
-
-        3. A public SSH key - We use key-based logins to ssh, not
-           passwords. Shoot me the contents of the key or a link
-           to it.
-
-Once you sign up you'll receive an email detailing some basic
-operations on the server. For instance, to author a message in the
-story you'll need to be able to do two things:
-
-        1. Create & edit text files
-        2. Run the 'log' command and follow the prompts
-
-No gopher expertise is needed!
-
-If you have more questions, I'm pretty easy to find. For
-cosmic.voyage in particular I sit in the #cosmic channel on
-irc.tilde.chat. Information on how to connect to that server here:
-tilde.chat
-    http://tilde.chat/
 </pre>]]></description>
 </item>
 </channel>

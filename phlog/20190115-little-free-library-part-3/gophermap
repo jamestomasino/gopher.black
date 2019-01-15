@@ -1,0 +1,36 @@
+i----------------------------------------		gopher.black	70
+iLittle Free Library, part 3		gopher.black	70
+iJanuary 15th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThe batter test is complete. I picked up a solar powered battery		gopher.black	70
+ipack off Amazon and plugged in the pi, then left it in the dark to		gopher.black	70
+isee how long it took to drain. It lasted just over 80 hours with		gopher.black	70
+ino external charging. That's fantastic! 		gopher.black	70
+i		gopher.black	70
+iThe unit claims that it can fully recharge in about 7 hours of		gopher.black	70
+isunlight. Given various seasons and overcast days, rain, etc, that		gopher.black	70
+ishould be plenty of buffer to allow the pi to remain perpetually		gopher.black	70
+iactive.		gopher.black	70
+i		gopher.black	70
+iWith that, there's only 3 things left to do:		gopher.black	70
+i		gopher.black	70
+i- Update the captive portal screen to indicate to users that they		gopher.black	70
+i  should: 1) disable their mobile data, and 2) browse to		gopher.black	70
+i  http://littlefreelibrary.  The actual domain doesn't matter, but		gopher.black	70
+i  that one seems easy enough to remember. The mobile data thing		gopher.black	70
+i  came up in testing as a barrier to IP rules running on the Pi		gopher.black	70
+i  that would normally redirect you to 10.0.0.5 and serve the web		gopher.black	70
+i  content. Captive Portal may trigger, but I need a real redirect		gopher.black	70
+i  of a real mobile browser for downloads. If you're reading this		gopher.black	70
+i  and making a project that doesn't need javascript or downloads,		gopher.black	70
+i  just do it IN the captive portal. It's much easier.		gopher.black	70
+i		gopher.black	70
+i- Build a weatherproof enclosure. The plan is to 3D print		gopher.black	70
+i  something that can hold the battery and pi, or just the pi glued		gopher.black	70
+i  on the battery, or a big glass box, or whatever. Something that		gopher.black	70
+i  will survive in the woods and not be blocked by snowfall.		gopher.black	70
+i		gopher.black	70
+i- Take pictures and "blog" the full build instructions so others		gopher.black	70
+i  can replicate and share it. This is a cool project and I hope		gopher.black	70
+i  others can build upon it.		gopher.black	70
