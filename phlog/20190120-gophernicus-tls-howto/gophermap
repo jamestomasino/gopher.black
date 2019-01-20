@@ -1,0 +1,79 @@
+i----------------------------------------		gopher.black	70
+igophernicus TLS howto		gopher.black	70
+iJanuary 20th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iA few people on mastodon requested a little guide on how to set up		gopher.black	70
+istunnel4 with gophernicus to offer TLS. As you might know from my		gopher.black	70
+iearlier posts on gopher.black, I prefer to run this gopher server		gopher.black	70
+ias a tor service instead of using the TLS approach alone since it		gopher.black	70
+idoes all the same things plus some extra goodies and doesn't		gopher.black	70
+irequire modification to your gopher clients. Regardless, gopher		gopher.black	70
+iover TLS is cool in its own right (and I use it on cosmic.voyage).		gopher.black	70
+i		gopher.black	70
+iHere's how:		gopher.black	70
+i		gopher.black	70
+i1) Make sure you're using gophernicus and it's Kim's Prison		gopher.black	70
+i   Edition, not one of the ancient ones that shows up when you		gopher.black	70
+i   google gophernicus, like prologic's		gopher.black	70
+i		gopher.black	70
+i2) Have an SSL cert. I use letsencrypt because why pay for		gopher.black	70
+i   something that's free?		gopher.black	70
+i		gopher.black	70
+i3) Have stunnel4. I think it was an apt install for me.		gopher.black	70
+i		gopher.black	70
+iActually configuring everything is just a matter of tweaking		gopher.black	70
+i2 files:		gopher.black	70
+i		gopher.black	70
+i1) /etc/default/gophernicus		gopher.black	70
+i		gopher.black	70
+iOPTIONS="-o UTF-8 -nt -nh -nf -T 7070"		gopher.black	70
+i		gopher.black	70
+iThe important part for TLS is the last bit (-T PORT). The other		gopher.black	70
+iswitches hide the /stats page which is a security issue, and get		gopher.black	70
+irid of titles and footer and stuff, which make for a cleaner		gopher.black	70
+irendered gophermap. They're cool settings, but not necessary for		gopher.black	70
+iTLS.		gopher.black	70
+i		gopher.black	70
+i2) /etc/stunnel/gophernicus.conf		gopher.black	70
+i		gopher.black	70
+i;		gopher.black	70
+i; Gophernicus behind Stunnel4 for gopher over TLS		gopher.black	70
+i;		gopher.black	70
+i		gopher.black	70
+i; User/group for stunnel daemon		gopher.black	70
+isetuid = stunnel4		gopher.black	70
+isetgid = stunnel4		gopher.black	70
+i		gopher.black	70
+i; PID file location		gopher.black	70
+ipid = /var/run/stunnel4/gophernicus.pid		gopher.black	70
+i		gopher.black	70
+i; Log to file, not syslog		gopher.black	70
+ioutput = /var/log/stunnel4/gophernicus.log		gopher.black	70
+isyslog = no		gopher.black	70
+i		gopher.black	70
+i; Certificate in pem format is needed for TLS		gopher.black	70
+icert = /etc/letsencrypt/live/cosmic.voyage/fullchain.pem		gopher.black	70
+ikey = /etc/letsencrypt/live/cosmic.voyage/privkey.pem		gopher.black	70
+i		gopher.black	70
+i; Enable TCP wrappers		gopher.black	70
+ilibwrap = yes		gopher.black	70
+iservice = in.gophernicus-tls		gopher.black	70
+i		gopher.black	70
+i; Gopher over TLS service		gopher.black	70
+i[gophernicus]		gopher.black	70
+iaccept  = :::7070		gopher.black	70
+iconnect = 127.0.0.1:70		gopher.black	70
+iprotocol = proxy		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iSo I'm pointing at my letsencrypt cert for cosmic in this file,		gopher.black	70
+iand I've chosen to use port 7070 for TLS. Kensanata says there's		gopher.black	70
+ian argument for port 7443 that was given on the gopher mailing		gopher.black	70
+ilist, but I never read it. Use what makes sense to you, but make		gopher.black	70
+isure it matches what you have in /etc/default/gophernicus.		gopher.black	70
+i		gopher.black	70
+iAnd that's it. Oh, I guess you'll need to open up your port with		gopher.black	70
+iyour firewall, but everything else should just work(TM).		gopher.black	70
+i		gopher.black	70
+iGood luck!		gopher.black	70

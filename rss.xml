@@ -3,6 +3,92 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Gophernicus Tls Howto</title>
+  <link>gopher://gopher.black/1/phlog/20190120-gophernicus-tls-howto/</link>
+  <pubdate>Sun, 20 Jan 2019 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+gophernicus TLS howto
+January 20th, 2019
+----------------------------------------
+
+A few people on mastodon requested a little guide on how to set up
+stunnel4 with gophernicus to offer TLS. As you might know from my
+earlier posts on gopher.black, I prefer to run this gopher server
+as a tor service instead of using the TLS approach alone since it
+does all the same things plus some extra goodies and doesn't
+require modification to your gopher clients. Regardless, gopher
+over TLS is cool in its own right (and I use it on cosmic.voyage).
+
+Here's how:
+
+1) Make sure you're using gophernicus and it's Kim's Prison
+   Edition, not one of the ancient ones that shows up when you
+   google gophernicus, like prologic's
+
+2) Have an SSL cert. I use letsencrypt because why pay for
+   something that's free?
+
+3) Have stunnel4. I think it was an apt install for me.
+
+Actually configuring everything is just a matter of tweaking
+2 files:
+
+1) /etc/default/gophernicus
+
+OPTIONS="-o UTF-8 -nt -nh -nf -T 7070"
+
+The important part for TLS is the last bit (-T PORT). The other
+switches hide the /stats page which is a security issue, and get
+rid of titles and footer and stuff, which make for a cleaner
+rendered gophermap. They're cool settings, but not necessary for
+TLS.
+
+2) /etc/stunnel/gophernicus.conf
+
+;
+; Gophernicus behind Stunnel4 for gopher over TLS
+;
+
+; User/group for stunnel daemon
+setuid = stunnel4
+setgid = stunnel4
+
+; PID file location
+pid = /var/run/stunnel4/gophernicus.pid
+
+; Log to file, not syslog
+output = /var/log/stunnel4/gophernicus.log
+syslog = no
+
+; Certificate in pem format is needed for TLS
+cert = /etc/letsencrypt/live/cosmic.voyage/fullchain.pem
+key = /etc/letsencrypt/live/cosmic.voyage/privkey.pem
+
+; Enable TCP wrappers
+libwrap = yes
+service = in.gophernicus-tls
+
+; Gopher over TLS service
+[gophernicus]
+accept  = :::7070
+connect = 127.0.0.1:70
+protocol = proxy
+
+
+So I'm pointing at my letsencrypt cert for cosmic in this file,
+and I've chosen to use port 7070 for TLS. Kensanata says there's
+an argument for port 7443 that was given on the gopher mailing
+list, but I never read it. Use what makes sense to you, but make
+sure it matches what you have in /etc/default/gophernicus.
+
+And that's it. Oh, I guess you'll need to open up your port with
+your firewall, but everything else should just work(TM).
+
+Good luck!
+</pre>]]></description>
+</item>
+<item>
   <title>Little Free Library Part 3</title>
   <link>gopher://gopher.black/1/phlog/20190115-little-free-library-part-3/</link>
   <pubdate>Tue, 15 Jan 2019 00:00:00 -0500</pubdate>
@@ -523,31 +609,6 @@ jynx - so much cool stuff going on
     gopher://1436.ninja/0/Phlog/20181128.post
 solderpunk - hey you host something
     gopher://circumlunar.space/0/~solderpunk/phlog/hey-you-host-something.txt
-</pre>]]></description>
-</item>
-<item>
-  <title>Easy Dated Files For Sorting</title>
-  <link>gopher://gopher.black/1/phlog/20181127-easy-dated-files-for-sorting/</link>
-  <pubdate>Tue, 27 Nov 2018 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Easy dated files for sorting
-November 27th, 2018
-----------------------------------------
-
-For those of you out there using gophernicus and forcing
-yourselves to write your posts with cumbersome file-name prefixes
-for proper sorting, let me help you out.
-
-Gophernicus allows you to execute in-line scripts in your
-gophermaps. That means you can do something like this:
-
-=ls -1r | grep -v 'gophermap' | awk '{printf "0%s\t%s\n", $1, $1}'
-
-It will grab all the files in your directory, flip the order, and
-print them out into a pretty gophermap for you. Tada! Just drop
-files in place and name them with the date, YYYY-MM-DD. You'll
-sort just fine.
 </pre>]]></description>
 </item>
 </channel>
