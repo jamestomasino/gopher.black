@@ -89,6 +89,181 @@ Good luck!
 </pre>]]></description>
 </item>
 <item>
+  <title>Cosmic Voyage Part 1</title>
+  <link>gopher://gopher.black/1/phlog/20190120-cosmic-voyage-part-1/</link>
+  <pubdate>Sun, 20 Jan 2019 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Cosmic Voyage - Part 1
+January 20th, 2019
+----------------------------------------
+
+slackz [0] asked me to do some write-ups on cosmic.voyage from the
+architect POV. Here's part 1 of who knows how many.
+[0] slackz
+    gopher://gopher.orghub.co/1/
+
+If you don't know what cosmic.voyage is read this first [1]
+[1] Cosmic Voyage
+    gopher://gopher.black/1/phlog/20181124-cosmic-voyage
+
+Being a text-based writing adventure, and me being me,
+I immediately set out to make Cosmic sit primarily on gopher
+rather than web. At first I didn't plan to have a web presence for
+it at all, but that changed as things went along. Really, my goals
+and understanding of the system are ever-evolving and greatly
+informed by the active users.
+
+Regardless, things started with gopher. I knew I wanted a few
+things right away:
+
+- A single gopher structure, not individual user folders.
+- Users to be able to fully control their ships and stories, but
+  not mess with other users' things
+- An ongoing log that linked everything together.
+
+I use motsognir [2] on gopher.black, but I thought it might be
+easier to write scripts as gophermaps for cosmic if I stuck with
+gophernicus. I could have made things in cgi scripts, but I like
+the transparent heirarchical structure I get to this way instead.
+[2] motsognir
+    gopher://gopher.viste.fr/1/projects/motsognir
+
+The structure of cosmic's gopher hole looks like this:
+├── gophermap
+├── intro.gophermap
+├── listing.gophermap
+├── log
+│   ├── gophermap
+│   └── intro.gophermap
+├── Melchizedek (or any old ship)
+│   ├── 001.txt
+│   ├── 002.txt
+│   ├── 003.txt
+├── Melvin P Feltersnatch (another example ship)
+│   ├── 001.txt
+│   ├── 002.txt
+│   └── 003.txt
+├── rss.xml
+└── ships
+    ├── gophermap
+    ├── Melchizedek (example ship page directory)
+    │   └── gophermap -> /var/gopher/ships/ship/gophermap
+    ├── Melvin P Feltersnatch (another example ship page dir)
+    │   └── gophermap -> /var/gopher/ships/ship/gophermap
+    ├── ship
+    │   └── gophermap
+    └── ships.gophermap
+
+At the root level I have a gophermap that pulls in and processes
+other gophermaps, does a little shell scripting, and displays the
+basic content. Let's start by having a look at that code:
+
+  =intro.gophermap
+  1Complete Transmission Log /log
+  1Ships, Colonies, Outposts /ships
+  0RSS Feed /rss.xml
+
+  Most recent (20) log entries: 
+  =head -n 20 listing.gophermap | sed 's|^0||' | awk -v tot="$(wc -l listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0}'
+
+Gophernicus allows us to source in other gophermaps by using
+saying =gophermapname. In this way I can keep my intro text for
+cosmic in a separate file (which becomes helpful later when we
+look at web generation). Following that I have a few regular
+gophermap links using gophernicus' friendly shorthand syntax (no
+servername or port required). Finally I list the most recent log
+entries.
+
+In this, I grab the top 20 lines from listing.gophermap and number
+them properly.
+
+listing.gophermap is the heart of the cosmic log system. Each time
+a user adds a log to the site, it gets prepended to that file.
+That file in turn generates the log page, the short listings here,
+and content for the individual ship pages. It's a sensitive file
+because it needs to be writable by all users on the system. I've
+kicked around better ways to do that, but for now it seems to
+work. At least I back it up regularly.
+
+The /log/ page works very much like the root gophermap, but with
+a simpler rendering.
+
+=intro.gophermap
+=sed 's|^0||' /var/gopher/listing.gophermap | awk -v tot="$(wc -l /var/gopher/listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0'}  
+
+Simple, right? awk is the best.
+
+So what about the ship pages? Those are a little funkier. On the
+one hand, they pretty much just sed/awk their way through the
+listing.gophermap file as well, but there's also the matter of
+a navigable directory.
+
+From the list above you can see that there's a ships directory.
+Lets look more closely at an example:
+└── ships
+    ├── gophermap
+    ├── Enterprise NCC-1701
+    │   └── gophermap -> /var/gopher/ships/ship/gophermap
+    ├── ship
+    │   └── gophermap
+    └── ships.gophermap
+
+The root gophermap of the ships page does a little more hard work.
+This has a few long lines that might not render well on your
+screen. I apologize!:
+
+#!/bin/sh
+cat "ships.gophermap"
+find "/var/gopher/" -maxdepth 1 ! -path "/var/gopher/" ! -path "/var/gopher/ships" ! -path "/var/gopher/log" -type d -print | sed 's|/var/gopher/||' | sort | while read -r ship
+do
+  entry_num=$(grep -c "^0${ship}" "/var/gopher/listing.gophermap")
+  if [ "$entry_num" != "0" ]; then
+    printf "1%s (%s)\\t/ships/%s\\n" "$ship" "$entry_num" "$ship"
+  fi
+done
+
+We start by catting out the intro for the ships page from
+ships.gophermap, then we loop through all the ship directories on
+the system. Using each of those ships, we then check against
+listing.gophermap to see how many entries they have. If they don't
+have any entries, we leave them out of the listings. That was
+a nice idea from one of the cosmic users to avoid cluttering up
+the ship page with empty ships. If there ARE entries, we print
+a link to the ship page.
+
+The ship pages themselves are a bit of trickery. There's really
+only one ship page /ships/ship/gophermap. All the rest are just
+symlinks to it. But how!!?? What manner of sorcery is this?
+
+#!/bin/sh
+
+ship="$(/bin/pwd -L | sed 's|.*/||')"
+desc="/var/gopher/${ship}/.description"
+if [ -f "$desc" ]; then
+  cat "$desc"
+  printf "\\n"
+fi
+
+printf "%s - Ship Log\\n" "$ship"
+tac "/var/gopher/listing.gophermap" | sed "s|^0||" | awk '{print 0 NR " >> " $0}' | grep "^.*>>\\ ${ship}" 
+
+pwd -L gets the path of the current symlink, which reveals the
+ship name! Then we look to see if there's a ship description and
+finally we grab all the relevant logs from listings and number
+everything.
+
+Huzzah!
+
+That's it. That's the whole gopher structure that drives Cosmic
+Voyage. Next time I'll talk about the web generation and RSS
+feeds.
+
+If this inspired you to join the system, instructions can be found
+on cosmic's home page. See you in the stars!
+</pre>]]></description>
+</item>
+<item>
   <title>Little Free Library Part 3</title>
   <link>gopher://gopher.black/1/phlog/20190115-little-free-library-part-3/</link>
   <pubdate>Tue, 15 Jan 2019 00:00:00 -0500</pubdate>
@@ -568,47 +743,6 @@ Anyway, tfurrows, I hope you enjoy the ESV. There's a fantastic
 set of commentaries that goes with it which you can find online
 for free. Or, if you're just reading through for fun, you are
 welcome to use gopher!
-</pre>]]></description>
-</item>
-<item>
-  <title>Re Jynx So Much Cool Stuff Going On</title>
-  <link>gopher://gopher.black/1/phlog/20181128-re-jynx-so-much-cool-stuff-going-on/</link>
-  <pubdate>Wed, 28 Nov 2018 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Re: jynx - so much cool stuff going on
-November 28th, 2018
-----------------------------------------
-
-Jynx recently wrote [0] about gopher decentralization (and gave me
-a cool shoutout). He also drew attention to federation tools
-between the tildeverse and other micro-communities like
-circumlunar. I love it and agree whole-heartedly. 
-
-Cosmic Voyage is hosting an ircd that is part of the
-irc.tilde.chat round-robin. I would love to figure out a way to
-make my local mail on that box play nicely with tilde's, but not
-open up wide to the universe. bbj style message boards that can
-federate would be great too, like FidoNet. Bring on the cool
-stuff, people.
-
-Oh, and jynx, please do set up something in the cosmic.voyage
-vein, even if it's via git. We need more!!! One of the folks that
-sits in tilde IRC mentioned to me this morning that he plans on
-making a D&D/Fantasy style version of cosmic. I would LOVE to see
-that, and likely join. I'm imagining it as stories being told
-"back at the inn". How cool.
-
-So yes, gopherspace is growing and exploding with badassery.
-Circumlunar phlogs are so popular. Maybe we can get tilde.team and
-tilde.town communities thinking a little more gophery and get
-their vast numbers phlogging too. Let's all keep on with
-solderpunk's call to arms [1]: Hey you! Host something!
-
-jynx - so much cool stuff going on
-    gopher://1436.ninja/0/Phlog/20181128.post
-solderpunk - hey you host something
-    gopher://circumlunar.space/0/~solderpunk/phlog/hey-you-host-something.txt
 </pre>]]></description>
 </item>
 </channel>

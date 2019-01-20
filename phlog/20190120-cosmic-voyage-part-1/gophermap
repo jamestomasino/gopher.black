@@ -1,0 +1,165 @@
+i----------------------------------------		gopher.black	70
+iCosmic Voyage - Part 1		gopher.black	70
+iJanuary 20th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+islackz [0] asked me to do some write-ups on cosmic.voyage from the		gopher.black	70
+iarchitect POV. Here's part 1 of who knows how many.		gopher.black	70
+1[0] slackz	/	gopher.orghub.co	70
+i		gopher.black	70
+iIf you don't know what cosmic.voyage is read this first [1]		gopher.black	70
+1[1] Cosmic Voyage	/phlog/20181124-cosmic-voyage
+i		gopher.black	70
+iBeing a text-based writing adventure, and me being me,		gopher.black	70
+iI immediately set out to make Cosmic sit primarily on gopher		gopher.black	70
+irather than web. At first I didn't plan to have a web presence for		gopher.black	70
+iit at all, but that changed as things went along. Really, my goals		gopher.black	70
+iand understanding of the system are ever-evolving and greatly		gopher.black	70
+iinformed by the active users.		gopher.black	70
+i		gopher.black	70
+iRegardless, things started with gopher. I knew I wanted a few		gopher.black	70
+ithings right away:		gopher.black	70
+i		gopher.black	70
+i- A single gopher structure, not individual user folders.		gopher.black	70
+i- Users to be able to fully control their ships and stories, but		gopher.black	70
+i  not mess with other users' things		gopher.black	70
+i- An ongoing log that linked everything together.		gopher.black	70
+i		gopher.black	70
+iI use motsognir [2] on gopher.black, but I thought it might be		gopher.black	70
+ieasier to write scripts as gophermaps for cosmic if I stuck with		gopher.black	70
+igophernicus. I could have made things in cgi scripts, but I like		gopher.black	70
+ithe transparent heirarchical structure I get to this way instead.		gopher.black	70
+1[2] motsognir	/projects/motsognir	gopher.viste.fr	70
+i		gopher.black	70
+iThe structure of cosmic's gopher hole looks like this:		gopher.black	70
+i├── gophermap		gopher.black	70
+i├── intro.gophermap		gopher.black	70
+i├── listing.gophermap		gopher.black	70
+i├── log		gopher.black	70
+i│   ├── gophermap		gopher.black	70
+i│   └── intro.gophermap		gopher.black	70
+i├── Melchizedek (or any old ship)		gopher.black	70
+i│   ├── 001.txt		gopher.black	70
+i│   ├── 002.txt		gopher.black	70
+i│   ├── 003.txt		gopher.black	70
+i├── Melvin P Feltersnatch (another example ship)		gopher.black	70
+i│   ├── 001.txt		gopher.black	70
+i│   ├── 002.txt		gopher.black	70
+i│   └── 003.txt		gopher.black	70
+i├── rss.xml		gopher.black	70
+i└── ships		gopher.black	70
+i    ├── gophermap		gopher.black	70
+i    ├── Melchizedek (example ship page directory)		gopher.black	70
+i    │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
+i    ├── Melvin P Feltersnatch (another example ship page dir)		gopher.black	70
+i    │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
+i    ├── ship		gopher.black	70
+i    │   └── gophermap		gopher.black	70
+i    └── ships.gophermap		gopher.black	70
+i		gopher.black	70
+iAt the root level I have a gophermap that pulls in and processes		gopher.black	70
+iother gophermaps, does a little shell scripting, and displays the		gopher.black	70
+ibasic content. Let's start by having a look at that code:		gopher.black	70
+i		gopher.black	70
+i  =intro.gophermap		gopher.black	70
+i  1Complete Transmission Log /log		gopher.black	70
+i  1Ships, Colonies, Outposts /ships		gopher.black	70
+i  0RSS Feed /rss.xml		gopher.black	70
+i		gopher.black	70
+i  Most recent (20) log entries: 		gopher.black	70
+i  =head -n 20 listing.gophermap | sed 's|^0||' | awk -v tot="$(wc -l listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0}'		gopher.black	70
+i		gopher.black	70
+iGophernicus allows us to source in other gophermaps by using		gopher.black	70
+isaying =gophermapname. In this way I can keep my intro text for		gopher.black	70
+icosmic in a separate file (which becomes helpful later when we		gopher.black	70
+ilook at web generation). Following that I have a few regular		gopher.black	70
+igophermap links using gophernicus' friendly shorthand syntax (no		gopher.black	70
+iservername or port required). Finally I list the most recent log		gopher.black	70
+ientries.		gopher.black	70
+i		gopher.black	70
+iIn this, I grab the top 20 lines from listing.gophermap and number		gopher.black	70
+ithem properly.		gopher.black	70
+i		gopher.black	70
+ilisting.gophermap is the heart of the cosmic log system. Each time		gopher.black	70
+ia user adds a log to the site, it gets prepended to that file.		gopher.black	70
+iThat file in turn generates the log page, the short listings here,		gopher.black	70
+iand content for the individual ship pages. It's a sensitive file		gopher.black	70
+ibecause it needs to be writable by all users on the system. I've		gopher.black	70
+ikicked around better ways to do that, but for now it seems to		gopher.black	70
+iwork. At least I back it up regularly.		gopher.black	70
+i		gopher.black	70
+iThe /log/ page works very much like the root gophermap, but with		gopher.black	70
+ia simpler rendering.		gopher.black	70
+i		gopher.black	70
+i=intro.gophermap		gopher.black	70
+i=sed 's|^0||' /var/gopher/listing.gophermap | awk -v tot="$(wc -l /var/gopher/listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0'}  		gopher.black	70
+i		gopher.black	70
+iSimple, right? awk is the best.		gopher.black	70
+i		gopher.black	70
+iSo what about the ship pages? Those are a little funkier. On the		gopher.black	70
+ione hand, they pretty much just sed/awk their way through the		gopher.black	70
+ilisting.gophermap file as well, but there's also the matter of		gopher.black	70
+ia navigable directory.		gopher.black	70
+i		gopher.black	70
+iFrom the list above you can see that there's a ships directory.		gopher.black	70
+iLets look more closely at an example:		gopher.black	70
+i└── ships		gopher.black	70
+i    ├── gophermap		gopher.black	70
+i    ├── Enterprise NCC-1701		gopher.black	70
+i    │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
+i    ├── ship		gopher.black	70
+i    │   └── gophermap		gopher.black	70
+i    └── ships.gophermap		gopher.black	70
+i		gopher.black	70
+iThe root gophermap of the ships page does a little more hard work.		gopher.black	70
+iThis has a few long lines that might not render well on your		gopher.black	70
+iscreen. I apologize!:		gopher.black	70
+i		gopher.black	70
+i#!/bin/sh		gopher.black	70
+icat "ships.gophermap"		gopher.black	70
+ifind "/var/gopher/" -maxdepth 1 ! -path "/var/gopher/" ! -path "/var/gopher/ships" ! -path "/var/gopher/log" -type d -print | sed 's|/var/gopher/||' | sort | while read -r ship		gopher.black	70
+ido		gopher.black	70
+i  entry_num=$(grep -c "^0${ship}" "/var/gopher/listing.gophermap")		gopher.black	70
+i  if [ "$entry_num" != "0" ]; then		gopher.black	70
+i    printf "1%s (%s)\\t/ships/%s\\n" "$ship" "$entry_num" "$ship"		gopher.black	70
+i  fi		gopher.black	70
+idone		gopher.black	70
+i		gopher.black	70
+iWe start by catting out the intro for the ships page from		gopher.black	70
+iships.gophermap, then we loop through all the ship directories on		gopher.black	70
+ithe system. Using each of those ships, we then check against		gopher.black	70
+ilisting.gophermap to see how many entries they have. If they don't		gopher.black	70
+ihave any entries, we leave them out of the listings. That was		gopher.black	70
+ia nice idea from one of the cosmic users to avoid cluttering up		gopher.black	70
+ithe ship page with empty ships. If there ARE entries, we print		gopher.black	70
+ia link to the ship page.		gopher.black	70
+i		gopher.black	70
+iThe ship pages themselves are a bit of trickery. There's really		gopher.black	70
+ionly one ship page /ships/ship/gophermap. All the rest are just		gopher.black	70
+isymlinks to it. But how!!?? What manner of sorcery is this?		gopher.black	70
+i		gopher.black	70
+i#!/bin/sh		gopher.black	70
+i		gopher.black	70
+iship="$(/bin/pwd -L | sed 's|.*/||')"		gopher.black	70
+idesc="/var/gopher/${ship}/.description"		gopher.black	70
+iif [ -f "$desc" ]; then		gopher.black	70
+i  cat "$desc"		gopher.black	70
+i  printf "\\n"		gopher.black	70
+ifi		gopher.black	70
+i		gopher.black	70
+iprintf "%s - Ship Log\\n" "$ship"		gopher.black	70
+itac "/var/gopher/listing.gophermap" | sed "s|^0||" | awk '{print 0 NR " >> " $0}' | grep "^.*>>\\ ${ship}" 		gopher.black	70
+i		gopher.black	70
+ipwd -L gets the path of the current symlink, which reveals the		gopher.black	70
+iship name! Then we look to see if there's a ship description and		gopher.black	70
+ifinally we grab all the relevant logs from listings and number		gopher.black	70
+ieverything.		gopher.black	70
+i		gopher.black	70
+iHuzzah!		gopher.black	70
+i		gopher.black	70
+iThat's it. That's the whole gopher structure that drives Cosmic		gopher.black	70
+iVoyage. Next time I'll talk about the web generation and RSS		gopher.black	70
+ifeeds.		gopher.black	70
+i		gopher.black	70
+iIf this inspired you to join the system, instructions can be found		gopher.black	70
+ion cosmic's home page. See you in the stars!		gopher.black	70
