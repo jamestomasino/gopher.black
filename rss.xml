@@ -130,30 +130,30 @@ the transparent heirarchical structure I get to this way instead.
     gopher://gopher.viste.fr/1/projects/motsognir
 
 The structure of cosmic's gopher hole looks like this:
-├── gophermap
-├── intro.gophermap
-├── listing.gophermap
-├── log
-│   ├── gophermap
-│   └── intro.gophermap
-├── Melchizedek (or any old ship)
-│   ├── 001.txt
-│   ├── 002.txt
-│   ├── 003.txt
-├── Melvin P Feltersnatch (another example ship)
-│   ├── 001.txt
-│   ├── 002.txt
-│   └── 003.txt
-├── rss.xml
-└── ships
-    ├── gophermap
-    ├── Melchizedek (example ship page directory)
-    │   └── gophermap -> /var/gopher/ships/ship/gophermap
-    ├── Melvin P Feltersnatch (another example ship page dir)
-    │   └── gophermap -> /var/gopher/ships/ship/gophermap
-    ├── ship
-    │   └── gophermap
-    └── ships.gophermap
+  ├── gophermap
+  ├── intro.gophermap
+  ├── listing.gophermap
+  ├── log
+  │   ├── gophermap
+  │   └── intro.gophermap
+  ├── Melchizedek (or any old ship)
+  │   ├── 001.txt
+  │   ├── 002.txt
+  │   ├── 003.txt
+  ├── Melvin P Feltersnatch (another example ship)
+  │   ├── 001.txt
+  │   ├── 002.txt
+  │   └── 003.txt
+  ├── rss.xml
+  └── ships
+      ├── gophermap
+      ├── Melchizedek (example ship page directory)
+      │   └── gophermap -> /var/gopher/ships/ship/gophermap
+      ├── Melvin P Feltersnatch (another example ship page dir)
+      │   └── gophermap -> /var/gopher/ships/ship/gophermap
+      ├── ship
+      │   └── gophermap
+      └── ships.gophermap
 
 At the root level I have a gophermap that pulls in and processes
 other gophermaps, does a little shell scripting, and displays the
@@ -189,8 +189,8 @@ work. At least I back it up regularly.
 The /log/ page works very much like the root gophermap, but with
 a simpler rendering.
 
-=intro.gophermap
-=sed 's|^0||' /var/gopher/listing.gophermap | awk -v tot="$(wc -l /var/gopher/listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0'}  
+  =intro.gophermap
+  =sed 's|^0||' /var/gopher/listing.gophermap | awk -v tot="$(wc -l /var/gopher/listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0'}  
 
 Simple, right? awk is the best.
 
@@ -201,27 +201,27 @@ a navigable directory.
 
 From the list above you can see that there's a ships directory.
 Lets look more closely at an example:
-└── ships
-    ├── gophermap
-    ├── Enterprise NCC-1701
-    │   └── gophermap -> /var/gopher/ships/ship/gophermap
-    ├── ship
-    │   └── gophermap
-    └── ships.gophermap
+  └── ships
+      ├── gophermap
+      ├── Enterprise NCC-1701
+      │   └── gophermap -> /var/gopher/ships/ship/gophermap
+      ├── ship
+      │   └── gophermap
+      └── ships.gophermap
 
 The root gophermap of the ships page does a little more hard work.
 This has a few long lines that might not render well on your
 screen. I apologize!:
 
-#!/bin/sh
-cat "ships.gophermap"
-find "/var/gopher/" -maxdepth 1 ! -path "/var/gopher/" ! -path "/var/gopher/ships" ! -path "/var/gopher/log" -type d -print | sed 's|/var/gopher/||' | sort | while read -r ship
-do
-  entry_num=$(grep -c "^0${ship}" "/var/gopher/listing.gophermap")
-  if [ "$entry_num" != "0" ]; then
-    printf "1%s (%s)\\t/ships/%s\\n" "$ship" "$entry_num" "$ship"
-  fi
-done
+  #!/bin/sh
+  cat "ships.gophermap"
+  find "/var/gopher/" -maxdepth 1 ! -path "/var/gopher/" ! -path "/var/gopher/ships" ! -path "/var/gopher/log" -type d -print | sed 's|/var/gopher/||' | sort | while read -r ship
+  do
+    entry_num=$(grep -c "^0${ship}" "/var/gopher/listing.gophermap")
+    if [ "$entry_num" != "0" ]; then
+      printf "1%s (%s)\\t/ships/%s\\n" "$ship" "$entry_num" "$ship"
+    fi
+  done
 
 We start by catting out the intro for the ships page from
 ships.gophermap, then we loop through all the ship directories on
@@ -236,17 +236,17 @@ The ship pages themselves are a bit of trickery. There's really
 only one ship page /ships/ship/gophermap. All the rest are just
 symlinks to it. But how!!?? What manner of sorcery is this?
 
-#!/bin/sh
+  #!/bin/sh
 
-ship="$(/bin/pwd -L | sed 's|.*/||')"
-desc="/var/gopher/${ship}/.description"
-if [ -f "$desc" ]; then
-  cat "$desc"
-  printf "\\n"
-fi
+  ship="$(/bin/pwd -L | sed 's|.*/||')"
+  desc="/var/gopher/${ship}/.description"
+  if [ -f "$desc" ]; then
+    cat "$desc"
+    printf "\\n"
+  fi
 
-printf "%s - Ship Log\\n" "$ship"
-tac "/var/gopher/listing.gophermap" | sed "s|^0||" | awk '{print 0 NR " >> " $0}' | grep "^.*>>\\ ${ship}" 
+  printf "%s - Ship Log\\n" "$ship"
+  tac "/var/gopher/listing.gophermap" | sed "s|^0||" | awk '{print 0 NR " >> " $0}' | grep "^.*>>\\ ${ship}" 
 
 pwd -L gets the path of the current symlink, which reveals the
 ship name! Then we look to see if there's a ship description and

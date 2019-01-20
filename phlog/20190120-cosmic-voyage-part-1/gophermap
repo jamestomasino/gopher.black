@@ -32,30 +32,30 @@ ithe transparent heirarchical structure I get to this way instead.		gopher.black
 1[2] motsognir	/projects/motsognir	gopher.viste.fr	70
 i		gopher.black	70
 iThe structure of cosmic's gopher hole looks like this:		gopher.black	70
-i├── gophermap		gopher.black	70
-i├── intro.gophermap		gopher.black	70
-i├── listing.gophermap		gopher.black	70
-i├── log		gopher.black	70
-i│   ├── gophermap		gopher.black	70
-i│   └── intro.gophermap		gopher.black	70
-i├── Melchizedek (or any old ship)		gopher.black	70
-i│   ├── 001.txt		gopher.black	70
-i│   ├── 002.txt		gopher.black	70
-i│   ├── 003.txt		gopher.black	70
-i├── Melvin P Feltersnatch (another example ship)		gopher.black	70
-i│   ├── 001.txt		gopher.black	70
-i│   ├── 002.txt		gopher.black	70
-i│   └── 003.txt		gopher.black	70
-i├── rss.xml		gopher.black	70
-i└── ships		gopher.black	70
-i    ├── gophermap		gopher.black	70
-i    ├── Melchizedek (example ship page directory)		gopher.black	70
-i    │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
-i    ├── Melvin P Feltersnatch (another example ship page dir)		gopher.black	70
-i    │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
-i    ├── ship		gopher.black	70
-i    │   └── gophermap		gopher.black	70
-i    └── ships.gophermap		gopher.black	70
+i  ├── gophermap		gopher.black	70
+i  ├── intro.gophermap		gopher.black	70
+i  ├── listing.gophermap		gopher.black	70
+i  ├── log		gopher.black	70
+i  │   ├── gophermap		gopher.black	70
+i  │   └── intro.gophermap		gopher.black	70
+i  ├── Melchizedek (or any old ship)		gopher.black	70
+i  │   ├── 001.txt		gopher.black	70
+i  │   ├── 002.txt		gopher.black	70
+i  │   ├── 003.txt		gopher.black	70
+i  ├── Melvin P Feltersnatch (another example ship)		gopher.black	70
+i  │   ├── 001.txt		gopher.black	70
+i  │   ├── 002.txt		gopher.black	70
+i  │   └── 003.txt		gopher.black	70
+i  ├── rss.xml		gopher.black	70
+i  └── ships		gopher.black	70
+i      ├── gophermap		gopher.black	70
+i      ├── Melchizedek (example ship page directory)		gopher.black	70
+i      │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
+i      ├── Melvin P Feltersnatch (another example ship page dir)		gopher.black	70
+i      │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
+i      ├── ship		gopher.black	70
+i      │   └── gophermap		gopher.black	70
+i      └── ships.gophermap		gopher.black	70
 i		gopher.black	70
 iAt the root level I have a gophermap that pulls in and processes		gopher.black	70
 iother gophermaps, does a little shell scripting, and displays the		gopher.black	70
@@ -91,8 +91,8 @@ i		gopher.black	70
 iThe /log/ page works very much like the root gophermap, but with		gopher.black	70
 ia simpler rendering.		gopher.black	70
 i		gopher.black	70
-i=intro.gophermap		gopher.black	70
-i=sed 's|^0||' /var/gopher/listing.gophermap | awk -v tot="$(wc -l /var/gopher/listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0'}  		gopher.black	70
+i  =intro.gophermap		gopher.black	70
+i  =sed 's|^0||' /var/gopher/listing.gophermap | awk -v tot="$(wc -l /var/gopher/listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0'}  		gopher.black	70
 i		gopher.black	70
 iSimple, right? awk is the best.		gopher.black	70
 i		gopher.black	70
@@ -103,27 +103,27 @@ ia navigable directory.		gopher.black	70
 i		gopher.black	70
 iFrom the list above you can see that there's a ships directory.		gopher.black	70
 iLets look more closely at an example:		gopher.black	70
-i└── ships		gopher.black	70
-i    ├── gophermap		gopher.black	70
-i    ├── Enterprise NCC-1701		gopher.black	70
-i    │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
-i    ├── ship		gopher.black	70
-i    │   └── gophermap		gopher.black	70
-i    └── ships.gophermap		gopher.black	70
+i  └── ships		gopher.black	70
+i      ├── gophermap		gopher.black	70
+i      ├── Enterprise NCC-1701		gopher.black	70
+i      │   └── gophermap -> /var/gopher/ships/ship/gophermap		gopher.black	70
+i      ├── ship		gopher.black	70
+i      │   └── gophermap		gopher.black	70
+i      └── ships.gophermap		gopher.black	70
 i		gopher.black	70
 iThe root gophermap of the ships page does a little more hard work.		gopher.black	70
 iThis has a few long lines that might not render well on your		gopher.black	70
 iscreen. I apologize!:		gopher.black	70
 i		gopher.black	70
-i#!/bin/sh		gopher.black	70
-icat "ships.gophermap"		gopher.black	70
-ifind "/var/gopher/" -maxdepth 1 ! -path "/var/gopher/" ! -path "/var/gopher/ships" ! -path "/var/gopher/log" -type d -print | sed 's|/var/gopher/||' | sort | while read -r ship		gopher.black	70
-ido		gopher.black	70
-i  entry_num=$(grep -c "^0${ship}" "/var/gopher/listing.gophermap")		gopher.black	70
-i  if [ "$entry_num" != "0" ]; then		gopher.black	70
-i    printf "1%s (%s)\\t/ships/%s\\n" "$ship" "$entry_num" "$ship"		gopher.black	70
-i  fi		gopher.black	70
-idone		gopher.black	70
+i  #!/bin/sh		gopher.black	70
+i  cat "ships.gophermap"		gopher.black	70
+i  find "/var/gopher/" -maxdepth 1 ! -path "/var/gopher/" ! -path "/var/gopher/ships" ! -path "/var/gopher/log" -type d -print | sed 's|/var/gopher/||' | sort | while read -r ship		gopher.black	70
+i  do		gopher.black	70
+i    entry_num=$(grep -c "^0${ship}" "/var/gopher/listing.gophermap")		gopher.black	70
+i    if [ "$entry_num" != "0" ]; then		gopher.black	70
+i      printf "1%s (%s)\\t/ships/%s\\n" "$ship" "$entry_num" "$ship"		gopher.black	70
+i    fi		gopher.black	70
+i  done		gopher.black	70
 i		gopher.black	70
 iWe start by catting out the intro for the ships page from		gopher.black	70
 iships.gophermap, then we loop through all the ship directories on		gopher.black	70
@@ -138,17 +138,17 @@ iThe ship pages themselves are a bit of trickery. There's really		gopher.black	7
 ionly one ship page /ships/ship/gophermap. All the rest are just		gopher.black	70
 isymlinks to it. But how!!?? What manner of sorcery is this?		gopher.black	70
 i		gopher.black	70
-i#!/bin/sh		gopher.black	70
+i  #!/bin/sh		gopher.black	70
 i		gopher.black	70
-iship="$(/bin/pwd -L | sed 's|.*/||')"		gopher.black	70
-idesc="/var/gopher/${ship}/.description"		gopher.black	70
-iif [ -f "$desc" ]; then		gopher.black	70
-i  cat "$desc"		gopher.black	70
-i  printf "\\n"		gopher.black	70
-ifi		gopher.black	70
+i  ship="$(/bin/pwd -L | sed 's|.*/||')"		gopher.black	70
+i  desc="/var/gopher/${ship}/.description"		gopher.black	70
+i  if [ -f "$desc" ]; then		gopher.black	70
+i    cat "$desc"		gopher.black	70
+i    printf "\\n"		gopher.black	70
+i  fi		gopher.black	70
 i		gopher.black	70
-iprintf "%s - Ship Log\\n" "$ship"		gopher.black	70
-itac "/var/gopher/listing.gophermap" | sed "s|^0||" | awk '{print 0 NR " >> " $0}' | grep "^.*>>\\ ${ship}" 		gopher.black	70
+i  printf "%s - Ship Log\\n" "$ship"		gopher.black	70
+i  tac "/var/gopher/listing.gophermap" | sed "s|^0||" | awk '{print 0 NR " >> " $0}' | grep "^.*>>\\ ${ship}" 		gopher.black	70
 i		gopher.black	70
 ipwd -L gets the path of the current symlink, which reveals the		gopher.black	70
 iship name! Then we look to see if there's a ship description and		gopher.black	70
