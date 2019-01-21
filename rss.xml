@@ -3,6 +3,124 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Free Speech</title>
+  <link>gopher://gopher.black/1/phlog/20190121-free-speech/</link>
+  <pubdate>Mon, 21 Jan 2019 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+free speech
+January 21st, 2019
+----------------------------------------
+
+solderpunk, visiblink and yargo have a great thread going on the
+topic of discrimination. Here's the most recent link to it, but
+there's a history you can dig through [0].
+
+[0] visiblink - Of nature, nurture, and dinosaurs
+    gopher://zaibatsu.circumlunar.space/0/~visiblink/phlog/20190120
+
+In visiblink's first post on the topic the discussion began with
+a comedian who repeatedly ridiculed a disabled child and a human
+rights tribunal that then fined him for it. That's where I'd like
+to focus my very narrow band of thought on the topic.
+
+While the discussion that spawned has been interesting it has been
+focused on what constitutes an appropriate topic of criticism. Is
+it based on whether that factor is in full control of the
+individual, is it related to their culture or wealth, and does
+that play a factor in what is appropriate. Great stuff... go read.
+
+The part that stuck out to me was the concept of free speech and
+protected speech, their terminology, and the psychology involved
+in each. Yargo, in a simplistic and unfair summary to him, stated
+that he'd prefer to say whatever he likes without fear of legal
+consequences. That's a great place to start.
+
+There is some psychological system at play which places the idea
+of protection on the individuals who are criticized, or who are
+the subject of hate speech. Media discussions surround the idea of
+sensitivity and others refer to "snowflakes". Protection is
+demanded by the sensitive, or so it seems.
+
+We know in reality that it is the speech which is the subject to
+protection instead. It is not the targets of the speech, but the
+speaker who needs focus here, right?
+
+The distinction is minor because the relationship between the
+speaker and target haven't changed. But that's not the whole
+story, is it? If we use terms like "free speech" it hides part of
+the story. When we say "protected speech" now we get at the crux.
+Protected by whom, and from whom?
+
+There are other parties involved: the speaker, the subject, and
+the protective entity and the persecutive entity. So when we look
+back at the discussion of protected speech now we can fit everyone
+into context:
+
+A speaker's (subject) speech toward someone (object) is
+potentially protected (protector) from persecution (persecutor).
+
+Who is the persecutor? In the case of the United States and the
+1st amendment from which most of this discussion flows for
+Americans it is the US government itself.
+
+Who is the protector? Well, again in this case, the US government.
+
+  Congress shall make no law respecting an establishment of
+  religion, or prohibiting the free exercise thereof; or abridging
+  the freedom of speech, or of the press; or the right of the
+  people peaceably to assemble, and to petition the Government for
+  a redress of grievances.
+
+Congress is limited in their powers by the Constitution from
+abridging the freedom of speech.
+
+Done, right? libertarians have at it. Except, no. Oliver Wendell
+Holmes comes knocking next...
+
+In the landmark case of Schenck v. United States, Holmes stated, 
+
+  The most stringent protection of free speech would not protect a
+  man in falsely shouting fire in a theater and causing a panic
+
+Okay, so all speech is does not warrant protection under the first
+amendment. Where do we draw the line? Here we get into Public
+Forum Regulation, Prior Restraint, Expressive Conduct, Defamation,
+and so on. Most appropriate to our discussion is the topic of
+defamation, and inciting, provocative, or offensive speech. 
+
+Here we go to the courts to decide where the line should be. Did
+that speech represent an individual freedom, or did it put at risk
+the lives and liberty of others, such as by listing the home
+addresses of families of abortion doctors? The line gets blurry,
+right? We're not talking about feelings being hurt anymore. Our 
+objects of discussion potentially got much more serious.
+
+Back to my focus: the protector and persecutor are the same
+entity, though perhaps different departments of it. That entity
+is given the power to determine what it protects from itself.
+That's pretty weird when you word it like that, but so be it.
+What stands out though is that the justification for NOT
+protecting speech is required based on the wording of the
+constitution. The US government, at least, needs to justify a
+decision to step in and persecute a speaker (at least to itself).
+
+Where was I going with this? I don't remember. I tried writing
+this at work and got interrupted every five minutes. I think I was
+getting to something about the psychology of speech protection,
+asking an outside entity to come in and protect you from itself in
+some cases and not others. There was going to be a really cool
+reference to 80s sitcoms in there too.
+
+Meh, now I'm hungry and totally forgot where I was going. So, um,
+thanks for sticking with me through the first half of a well
+thought-out argument. Marsha will validate your parking on your
+way out.
+
+Cheers!
+</pre>]]></description>
+</item>
+<item>
   <title>Gophernicus Tls Howto</title>
   <link>gopher://gopher.black/1/phlog/20190120-gophernicus-tls-howto/</link>
   <pubdate>Sun, 20 Jan 2019 00:00:00 -0500</pubdate>
@@ -708,41 +826,6 @@ on the growing Zaibatsu adventure to the music generation scripts
 to the OTHER burrow to home-grown RPGs. You are all amazing people
 who keep me entertained and inspired. Especially you, Melton. Your
 life is incredible. Never stop writing.
-</pre>]]></description>
-</item>
-<item>
-  <title>Re Tfurrows Bible Translations</title>
-  <link>gopher://gopher.black/1/phlog/20181208-re-tfurrows-bible-translations/</link>
-  <pubdate>Sat, 08 Dec 2018 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Re: tfurrows - bible translations
-December 08th, 2018
-----------------------------------------
-
-tfurrows wrote [0] about picking up a copy of the English Standard
-Version (ESV) Bible, a modern language translation by Crossway. It
-just so happens that the ESV is my personal favorite translation
-for casual bible reading. I like it so much, in fact, that
-I sought out permission from Crossway to post the full contents of
-the ESV on gopher.black. You can find it over here [1]!
-
-[0] tfurrows - bible translations
-    gopher://circumlunar.space/0/~tfurrows/phlog/2018-12-05_bibleTranslations.txt
-[1] ESV Bible
-    gopher://gopher.black/1/bible
-
-I love the New American Standard Version (NASV) as well, as it's
-the one used in the Catholic mass in the US and it's a very good
-literal translation. For study I bounce around between versions,
-especially since my Greek and Hebrew aren't particularly strong
-language skills. I need to review alternate translations to find
-new ways at the text.
-
-Anyway, tfurrows, I hope you enjoy the ESV. There's a fantastic
-set of commentaries that goes with it which you can find online
-for free. Or, if you're just reading through for fun, you are
-welcome to use gopher!
 </pre>]]></description>
 </item>
 </channel>
