@@ -1,0 +1,194 @@
+----------------------------------------
+ilxd		gopher.black	70
+iJanuary 28th, 2019		gopher.black	70
+----------------------------------------
+i		gopher.black	70
+ilxd and lxc are amazing. If you know what they are, skip this		gopher.black	70
+iparagraph. If not, they're sort of like Docker, but instead of		gopher.black	70
+iencapsulating your application, they encapsulate a system. They're		gopher.black	70
+inot as broad as a whole VM, and in reality they're not really		gopher.black	70
+ia "thing" at all. They're a collection of isolation tools built		gopher.black	70
+iinto Linux that makes it seem like you're running on a whole new		gopher.black	70
+ivm while sharing kernels and junk. Um, go read about it somewhere		gopher.black	70
+ielse. There's some great material out there that will explain it		gopher.black	70
+ibetter than me.		gopher.black	70
+i		gopher.black	70
+iThe purpose if this phlog is to document my basic LXD setup. My		gopher.black	70
+ihost system is Ubuntu 18.04 as of this article being written, but		gopher.black	70
+iit really doesn't matter. Most of my containers are built using		gopher.black	70
+ithe latest stable Ubuntu, but that also doesn't really matter. My		gopher.black	70
+igoals are as follows:		gopher.black	70
+i		gopher.black	70
+- Be able to create and dispose of containers easily
+- All containers, by default, allow me to ssh in using my keys
+- I can ssh to the containers by their container name, not IP
+- I can apply a 'gui' profile and make a container work with my
+i  native display		gopher.black	70
+- I can apply a 'user' profile and make my container start with my
+i  dotfiles installed		gopher.black	70
+i		gopher.black	70
+iStep 1: Install LXD		gopher.black	70
+i		gopher.black	70
+iIf it's not already installed, you can grab the snap package.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iStep 2: Install ZFS		gopher.black	70
+i		gopher.black	70
+iIt's not necessary, but it performs better at start/stop		gopher.black	70
+ioperations. If you install it, LXD will use it as the default.		gopher.black	70
+i		gopher.black	70
+iStep 3: Configure LXD		gopher.black	70
+i		gopher.black	70
+i$ sudo lxd init		gopher.black	70
+i		gopher.black	70
+iJust say yes to the defaults.		gopher.black	70
+i		gopher.black	70
+iStep 4: Edit the default profile		gopher.black	70
+i		gopher.black	70
+i$ lxc profile edit default		gopher.black	70
+i		gopher.black	70
+iconfig:		gopher.black	70
+i  user.vendor-data: |		gopher.black	70
+i    #cloud-config		gopher.black	70
+i    package_upgrade: true		gopher.black	70
+i    packages:		gopher.black	70
+i      - build-essential		gopher.black	70
+i      - software-properties-common		gopher.black	70
+i    users:		gopher.black	70
+i      - name: ubuntu		gopher.black	70
+i        ssh-import-id: gh:jamestomasino		gopher.black	70
+i        shell: /bin/bash		gopher.black	70
+idescription: Default LXD profile		gopher.black	70
+idevices:		gopher.black	70
+i  eth0:		gopher.black	70
+i    name: eth0		gopher.black	70
+i    nictype: bridged		gopher.black	70
+i    parent: lxdbr0		gopher.black	70
+i    type: nic		gopher.black	70
+i  root:		gopher.black	70
+i    path: /		gopher.black	70
+i    pool: zfs		gopher.black	70
+i    type: disk		gopher.black	70
+iname: default		gopher.black	70
+iused_by: []		gopher.black	70
+i		gopher.black	70
+iThe key here is the ssh-import-id to pull my keys down from		gopher.black	70
+igithub. With that I can ssh in immediately instead of using the		gopher.black	70
+ilxc exec method to sudo in.		gopher.black	70
+i		gopher.black	70
+iStep 5: Edit the gui profile		gopher.black	70
+i		gopher.black	70
+iconfig:		gopher.black	70
+i  environment.DISPLAY: :0		gopher.black	70
+i  raw.idmap: both 1000 1000		gopher.black	70
+i  user.user-data: |		gopher.black	70
+i    #cloud-config		gopher.black	70
+i    runcmd:		gopher.black	70
+i      - 'sed -i "s/; enable-shm = yes/enable-shm = no/g" /etc/pulse/client.conf'		gopher.black	70
+i      - 'echo export PULSE_SERVER=unix:/tmp/.pulse-native | tee --append /home/ubuntu/.profile'		gopher.black	70
+i    packages:		gopher.black	70
+i      - x11-apps		gopher.black	70
+i      - mesa-utils		gopher.black	70
+i      - pulseaudio		gopher.black	70
+idescription: GUI LXD profile		gopher.black	70
+idevices:		gopher.black	70
+i  PASocket:		gopher.black	70
+i    path: /tmp/.pulse-native		gopher.black	70
+i    source: /run/user/1000/pulse/native		gopher.black	70
+i    type: disk		gopher.black	70
+i  X0:		gopher.black	70
+i    path: /tmp/.X11-unix/X0		gopher.black	70
+i    source: /tmp/.X11-unix/X0		gopher.black	70
+i    type: disk		gopher.black	70
+i  mygpu:		gopher.black	70
+i    type: gpu		gopher.black	70
+iname: gui		gopher.black	70
+iused_by: []		gopher.black	70
+i		gopher.black	70
+iThis magic sauce will set up all the dependencies needed to		gopher.black	70
+iconnect to my display when a gui app is run. I then SSH in with		gopher.black	70
+iexport x11 enabled and all is well.		gopher.black	70
+i		gopher.black	70
+iStep 6: Edit a user profile		gopher.black	70
+i		gopher.black	70
+iThis one involves a lot of runcmd: stuff in a row that points to		gopher.black	70
+imy dotfiles, installs other apt packages, does a little dance, and		gopher.black	70
+iends up with a working environment for me to do some damage. I'll		gopher.black	70
+ispare you all.		gopher.black	70
+i		gopher.black	70
+iStep 7: SSH		gopher.black	70
+i		gopher.black	70
+iI want to be able to connect to lxd containers by name, not just		gopher.black	70
+iIP address. I'm going to set that bit up in a minute using dnsmasq		gopher.black	70
+iand systemd, but first lets look at my ~/.ssh/config to see what		gopher.black	70
+igoodness lies within:		gopher.black	70
+i		gopher.black	70
+iHost *.lxd		gopher.black	70
+iStrictHostKeyChecking no		gopher.black	70
+iUserKnownHostsFile /dev/null		gopher.black	70
+iLogLevel QUIET		gopher.black	70
+iForwardX11 yes		gopher.black	70
+iForwardX11Trusted yes		gopher.black	70
+iUser ubuntu		gopher.black	70
+iIdentityFile ~/some/really/cool/path/to/SECRETS		gopher.black	70
+i		gopher.black	70
+iThe host checking and host file bit, along with LogLevel mean you		gopher.black	70
+iwon't get man-in-the-middle warnings if your container IP changes		gopher.black	70
+ione day from starting and stoping repeatedly. X11 forwarding there		gopher.black	70
+ifor display. I use ubuntu containers, so I've attached the		gopher.black	70
+iusername there as well.		gopher.black	70
+i		gopher.black	70
+iStep 8: DNS		gopher.black	70
+i		gopher.black	70
+i$ sudo vim /usr/local/bin/lxdhostdns_start.sh		gopher.black	70
+i		gopher.black	70
+#!/bin/sh
+i		gopher.black	70
+iLXDINTERFACE=lxdbr0		gopher.black	70
+iLXDDOMAIN=lxd		gopher.black	70
+iLXDDNSIP=$(ip addr show lxdbr0 | grep -Po 'inet \K[\d.]+')		gopher.black	70
+i		gopher.black	70
+i/usr/bin/systemd-resolve --interface ${LXDINTERFACE} \		gopher.black	70
+i                         --set-dns "${LXDDNSIP}" \		gopher.black	70
+i                         --set-domain ${LXDDOMAIN}		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i$ sudo vim /usr/local/bin/lxdhostdns_stop.sh		gopher.black	70
+i		gopher.black	70
+#!/bin/sh
+i		gopher.black	70
+iLXDINTERFACE=lxdbr0		gopher.black	70
+i		gopher.black	70
+i/usr/bin/systemd-resolve --interface ${LXDINTERFACE} --revert		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i$ sudo vim /lib/systemd/system/lxd-host-dns.service		gopher.black	70
+i		gopher.black	70
+i[Unit]		gopher.black	70
+iDescription=LXD host DNS service		gopher.black	70
+iAfter=multi-user.target		gopher.black	70
+i		gopher.black	70
+i[Service]		gopher.black	70
+iType=simple		gopher.black	70
+iExecStart=/usr/local/bin/lxdhostdns_start.sh		gopher.black	70
+iRemainAfterExit=true		gopher.black	70
+iExecStop=/usr/local/bin/lxdhostdns_stop.sh		gopher.black	70
+iStandardOutput=journal		gopher.black	70
+i		gopher.black	70
+i[Install]		gopher.black	70
+iWantedBy=multi-user.target		gopher.black	70
+i		gopher.black	70
+i$ sudo systemctl daemon-reload		gopher.black	70
+i$ sudo systemctl enable lxd-host-dns.service		gopher.black	70
+i$ sudo systemctl start lxd-host-dns.service		gopher.black	70
+i		gopher.black	70
+iBoom. If you didn't answer defaults on lxd init, then your		gopher.black	70
+iinterface might not be lxdbr0 and you'll need to change stuff.		gopher.black	70
+i		gopher.black	70
+iStep 9: Test it out		gopher.black	70
+i		gopher.black	70
+i$ lxc launch ubuntu: test		gopher.black	70
+i$ lxc list # wait until you can see the IP to know it's ready		gopher.black	70
+i$ ssh test.lxd		gopher.black	70
+i		gopher.black	70
+iWelcome to awesometown		gopher.black	70
