@@ -47,30 +47,30 @@ iStep 4: Edit the default profile		gopher.black	70
 i		gopher.black	70
 i$ lxc profile edit default		gopher.black	70
 i		gopher.black	70
-iconfig:		gopher.black	70
-i  user.vendor-data: |		gopher.black	70
-i    #cloud-config		gopher.black	70
-i    package_upgrade: true		gopher.black	70
-i    packages:		gopher.black	70
-i      - build-essential		gopher.black	70
-i      - software-properties-common		gopher.black	70
-i    users:		gopher.black	70
-i      - name: ubuntu		gopher.black	70
-i        ssh-import-id: gh:jamestomasino		gopher.black	70
-i        shell: /bin/bash		gopher.black	70
-idescription: Default LXD profile		gopher.black	70
-idevices:		gopher.black	70
-i  eth0:		gopher.black	70
-i    name: eth0		gopher.black	70
-i    nictype: bridged		gopher.black	70
-i    parent: lxdbr0		gopher.black	70
-i    type: nic		gopher.black	70
-i  root:		gopher.black	70
-i    path: /		gopher.black	70
-i    pool: zfs		gopher.black	70
-i    type: disk		gopher.black	70
-iname: default		gopher.black	70
-iused_by: []		gopher.black	70
+i  config:		gopher.black	70
+i    user.vendor-data: |		gopher.black	70
+i      #cloud-config		gopher.black	70
+i      package_upgrade: true		gopher.black	70
+i      packages:		gopher.black	70
+i        - build-essential		gopher.black	70
+i        - software-properties-common		gopher.black	70
+i      users:		gopher.black	70
+i        - name: ubuntu		gopher.black	70
+i          ssh-import-id: gh:jamestomasino		gopher.black	70
+i          shell: /bin/bash		gopher.black	70
+i  description: Default LXD profile		gopher.black	70
+i  devices:		gopher.black	70
+i    eth0:		gopher.black	70
+i      name: eth0		gopher.black	70
+i      nictype: bridged		gopher.black	70
+i      parent: lxdbr0		gopher.black	70
+i      type: nic		gopher.black	70
+i    root:		gopher.black	70
+i      path: /		gopher.black	70
+i      pool: zfs		gopher.black	70
+i      type: disk		gopher.black	70
+i  name: default		gopher.black	70
+i  used_by: []		gopher.black	70
 i		gopher.black	70
 iThe key here is the ssh-import-id to pull my keys down from		gopher.black	70
 igithub. With that I can ssh in immediately instead of using the		gopher.black	70
@@ -82,32 +82,32 @@ iIf you didn't install lxd via snap, you'll need to run this one liner:		gopher.
 i		gopher.black	70
 i$ echo "root:$UID:1" | sudo tee -a /etc/subuid /etc/subgid		gopher.black	70
 i		gopher.black	70
-iconfig:		gopher.black	70
-i  environment.DISPLAY: :0		gopher.black	70
-i  raw.idmap: both 1000 1000		gopher.black	70
-i  user.user-data: |		gopher.black	70
-i    #cloud-config		gopher.black	70
-i    runcmd:		gopher.black	70
-i      - 'sed -i "s/; enable-shm = yes/enable-shm = no/g" /etc/pulse/client.conf'		gopher.black	70
-i      - 'echo export PULSE_SERVER=unix:/tmp/.pulse-native | tee --append /home/ubuntu/.profile'		gopher.black	70
-i    packages:		gopher.black	70
-i      - x11-apps		gopher.black	70
-i      - mesa-utils		gopher.black	70
-i      - pulseaudio		gopher.black	70
-idescription: GUI LXD profile		gopher.black	70
-idevices:		gopher.black	70
-i  PASocket:		gopher.black	70
-i    path: /tmp/.pulse-native		gopher.black	70
-i    source: /run/user/1000/pulse/native		gopher.black	70
-i    type: disk		gopher.black	70
-i  X0:		gopher.black	70
-i    path: /tmp/.X11-unix/X0		gopher.black	70
-i    source: /tmp/.X11-unix/X0		gopher.black	70
-i    type: disk		gopher.black	70
-i  mygpu:		gopher.black	70
-i    type: gpu		gopher.black	70
-iname: gui		gopher.black	70
-iused_by: []		gopher.black	70
+i  config:		gopher.black	70
+i    environment.DISPLAY: :0		gopher.black	70
+i    raw.idmap: both 1000 1000		gopher.black	70
+i    user.user-data: |		gopher.black	70
+i      #cloud-config		gopher.black	70
+i      runcmd:		gopher.black	70
+i        - 'sed -i "s/; enable-shm = yes/enable-shm = no/g" /etc/pulse/client.conf'		gopher.black	70
+i        - 'echo export PULSE_SERVER=unix:/tmp/.pulse-native | tee --append /home/ubuntu/.profile'		gopher.black	70
+i      packages:		gopher.black	70
+i        - x11-apps		gopher.black	70
+i        - mesa-utils		gopher.black	70
+i        - pulseaudio		gopher.black	70
+i  description: GUI LXD profile		gopher.black	70
+i  devices:		gopher.black	70
+i    PASocket:		gopher.black	70
+i      path: /tmp/.pulse-native		gopher.black	70
+i      source: /run/user/1000/pulse/native		gopher.black	70
+i      type: disk		gopher.black	70
+i    X0:		gopher.black	70
+i      path: /tmp/.X11-unix/X0		gopher.black	70
+i      source: /tmp/.X11-unix/X0		gopher.black	70
+i      type: disk		gopher.black	70
+i    mygpu:		gopher.black	70
+i      type: gpu		gopher.black	70
+i  name: gui		gopher.black	70
+i  used_by: []		gopher.black	70
 i		gopher.black	70
 iThis magic sauce will set up all the dependencies needed to		gopher.black	70
 iconnect to my display when a gui app is run. I then SSH in with		gopher.black	70
@@ -146,41 +146,41 @@ iStep 8: DNS		gopher.black	70
 i		gopher.black	70
 i$ sudo vim /usr/local/bin/lxdhostdns_start.sh		gopher.black	70
 i		gopher.black	70
-#!/bin/sh
+i  #!/bin/sh		gopher.black	70
 i		gopher.black	70
-iLXDINTERFACE=lxdbr0		gopher.black	70
-iLXDDOMAIN=lxd		gopher.black	70
-iLXDDNSIP=$(ip addr show lxdbr0 | grep -Po 'inet \K[\d.]+')		gopher.black	70
+i  LXDINTERFACE=lxdbr0		gopher.black	70
+i  LXDDOMAIN=lxd		gopher.black	70
+i  LXDDNSIP=$(ip addr show lxdbr0 | grep -Po 'inet \K[\d.]+')		gopher.black	70
 i		gopher.black	70
-i/usr/bin/systemd-resolve --interface ${LXDINTERFACE} \		gopher.black	70
-i                         --set-dns "${LXDDNSIP}" \		gopher.black	70
-i                         --set-domain ${LXDDOMAIN}		gopher.black	70
+i  /usr/bin/systemd-resolve --interface ${LXDINTERFACE} \		gopher.black	70
+i                           --set-dns "${LXDDNSIP}" \		gopher.black	70
+i                           --set-domain ${LXDDOMAIN}		gopher.black	70
 i		gopher.black	70
 i		gopher.black	70
 i$ sudo vim /usr/local/bin/lxdhostdns_stop.sh		gopher.black	70
 i		gopher.black	70
-#!/bin/sh
+i  #!/bin/sh		gopher.black	70
 i		gopher.black	70
-iLXDINTERFACE=lxdbr0		gopher.black	70
+i  LXDINTERFACE=lxdbr0		gopher.black	70
 i		gopher.black	70
-i/usr/bin/systemd-resolve --interface ${LXDINTERFACE} --revert		gopher.black	70
+i  /usr/bin/systemd-resolve --interface ${LXDINTERFACE} --revert		gopher.black	70
 i		gopher.black	70
 i		gopher.black	70
 i$ sudo vim /lib/systemd/system/lxd-host-dns.service		gopher.black	70
 i		gopher.black	70
-i[Unit]		gopher.black	70
-iDescription=LXD host DNS service		gopher.black	70
-iAfter=multi-user.target		gopher.black	70
+i  [Unit]		gopher.black	70
+i  Description=LXD host DNS service		gopher.black	70
+i  After=multi-user.target		gopher.black	70
 i		gopher.black	70
-i[Service]		gopher.black	70
-iType=simple		gopher.black	70
-iExecStart=/usr/local/bin/lxdhostdns_start.sh		gopher.black	70
-iRemainAfterExit=true		gopher.black	70
-iExecStop=/usr/local/bin/lxdhostdns_stop.sh		gopher.black	70
-iStandardOutput=journal		gopher.black	70
+i  [Service]		gopher.black	70
+i  Type=simple		gopher.black	70
+i  ExecStart=/usr/local/bin/lxdhostdns_start.sh		gopher.black	70
+i  RemainAfterExit=true		gopher.black	70
+i  ExecStop=/usr/local/bin/lxdhostdns_stop.sh		gopher.black	70
+i  StandardOutput=journal		gopher.black	70
 i		gopher.black	70
-i[Install]		gopher.black	70
-iWantedBy=multi-user.target		gopher.black	70
+i  [Install]		gopher.black	70
+i  WantedBy=multi-user.target		gopher.black	70
 i		gopher.black	70
 i$ sudo systemctl daemon-reload		gopher.black	70
 i$ sudo systemctl enable lxd-host-dns.service		gopher.black	70
@@ -194,7 +194,6 @@ i		gopher.black	70
 i$ lxc launch ubuntu: test		gopher.black	70
 i$ lxc list # wait until you can see the IP to know it's ready		gopher.black	70
 i$ ssh test.lxd		gopher.black	70
-i		gopher.black	70
 i		gopher.black	70
 iIf everything blew up it's because you're with me and that DNS		gopher.black	70
 ihackery works great to be able to ssh in, but it also breaks the		gopher.black	70

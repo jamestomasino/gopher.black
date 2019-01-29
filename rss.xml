@@ -56,30 +56,30 @@ Step 4: Edit the default profile
 
 $ lxc profile edit default
 
-config:
-  user.vendor-data: |
-    #cloud-config
-    package_upgrade: true
-    packages:
-      - build-essential
-      - software-properties-common
-    users:
-      - name: ubuntu
-        ssh-import-id: gh:jamestomasino
-        shell: /bin/bash
-description: Default LXD profile
-devices:
-  eth0:
-    name: eth0
-    nictype: bridged
-    parent: lxdbr0
-    type: nic
-  root:
-    path: /
-    pool: zfs
-    type: disk
-name: default
-used_by: []
+  config:
+    user.vendor-data: |
+      #cloud-config
+      package_upgrade: true
+      packages:
+        - build-essential
+        - software-properties-common
+      users:
+        - name: ubuntu
+          ssh-import-id: gh:jamestomasino
+          shell: /bin/bash
+  description: Default LXD profile
+  devices:
+    eth0:
+      name: eth0
+      nictype: bridged
+      parent: lxdbr0
+      type: nic
+    root:
+      path: /
+      pool: zfs
+      type: disk
+  name: default
+  used_by: []
 
 The key here is the ssh-import-id to pull my keys down from
 github. With that I can ssh in immediately instead of using the
@@ -91,32 +91,32 @@ If you didn't install lxd via snap, you'll need to run this one liner:
 
 $ echo "root:$UID:1" | sudo tee -a /etc/subuid /etc/subgid
 
-config:
-  environment.DISPLAY: :0
-  raw.idmap: both 1000 1000
-  user.user-data: |
-    #cloud-config
-    runcmd:
-      - 'sed -i "s/; enable-shm = yes/enable-shm = no/g" /etc/pulse/client.conf'
-      - 'echo export PULSE_SERVER=unix:/tmp/.pulse-native | tee --append /home/ubuntu/.profile'
-    packages:
-      - x11-apps
-      - mesa-utils
-      - pulseaudio
-description: GUI LXD profile
-devices:
-  PASocket:
-    path: /tmp/.pulse-native
-    source: /run/user/1000/pulse/native
-    type: disk
-  X0:
-    path: /tmp/.X11-unix/X0
-    source: /tmp/.X11-unix/X0
-    type: disk
-  mygpu:
-    type: gpu
-name: gui
-used_by: []
+  config:
+    environment.DISPLAY: :0
+    raw.idmap: both 1000 1000
+    user.user-data: |
+      #cloud-config
+      runcmd:
+        - 'sed -i "s/; enable-shm = yes/enable-shm = no/g" /etc/pulse/client.conf'
+        - 'echo export PULSE_SERVER=unix:/tmp/.pulse-native | tee --append /home/ubuntu/.profile'
+      packages:
+        - x11-apps
+        - mesa-utils
+        - pulseaudio
+  description: GUI LXD profile
+  devices:
+    PASocket:
+      path: /tmp/.pulse-native
+      source: /run/user/1000/pulse/native
+      type: disk
+    X0:
+      path: /tmp/.X11-unix/X0
+      source: /tmp/.X11-unix/X0
+      type: disk
+    mygpu:
+      type: gpu
+  name: gui
+  used_by: []
 
 This magic sauce will set up all the dependencies needed to
 connect to my display when a gui app is run. I then SSH in with
@@ -155,41 +155,41 @@ Step 8: DNS
 
 $ sudo vim /usr/local/bin/lxdhostdns_start.sh
 
-#!/bin/sh
+  #!/bin/sh
 
-LXDINTERFACE=lxdbr0
-LXDDOMAIN=lxd
-LXDDNSIP=$(ip addr show lxdbr0 | grep -Po 'inet \K[\d.]+')
+  LXDINTERFACE=lxdbr0
+  LXDDOMAIN=lxd
+  LXDDNSIP=$(ip addr show lxdbr0 | grep -Po 'inet \K[\d.]+')
 
-/usr/bin/systemd-resolve --interface ${LXDINTERFACE} \
-                         --set-dns "${LXDDNSIP}" \
-                         --set-domain ${LXDDOMAIN}
+  /usr/bin/systemd-resolve --interface ${LXDINTERFACE} \
+                           --set-dns "${LXDDNSIP}" \
+                           --set-domain ${LXDDOMAIN}
 
 
 $ sudo vim /usr/local/bin/lxdhostdns_stop.sh
 
-#!/bin/sh
+  #!/bin/sh
 
-LXDINTERFACE=lxdbr0
+  LXDINTERFACE=lxdbr0
 
-/usr/bin/systemd-resolve --interface ${LXDINTERFACE} --revert
+  /usr/bin/systemd-resolve --interface ${LXDINTERFACE} --revert
 
 
 $ sudo vim /lib/systemd/system/lxd-host-dns.service
 
-[Unit]
-Description=LXD host DNS service
-After=multi-user.target
+  [Unit]
+  Description=LXD host DNS service
+  After=multi-user.target
 
-[Service]
-Type=simple
-ExecStart=/usr/local/bin/lxdhostdns_start.sh
-RemainAfterExit=true
-ExecStop=/usr/local/bin/lxdhostdns_stop.sh
-StandardOutput=journal
+  [Service]
+  Type=simple
+  ExecStart=/usr/local/bin/lxdhostdns_start.sh
+  RemainAfterExit=true
+  ExecStop=/usr/local/bin/lxdhostdns_stop.sh
+  StandardOutput=journal
 
-[Install]
-WantedBy=multi-user.target
+  [Install]
+  WantedBy=multi-user.target
 
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable lxd-host-dns.service
@@ -203,7 +203,6 @@ Step 9: Test it out
 $ lxc launch ubuntu: test
 $ lxc list # wait until you can see the IP to know it's ready
 $ ssh test.lxd
-
 
 If everything blew up it's because you're with me and that DNS
 hackery works great to be able to ssh in, but it also breaks the
