@@ -87,6 +87,10 @@ lxc exec method to sudo in.
 
 Step 5: Edit the gui profile
 
+If you didn't install lxd via snap, you'll need to run this one liner:
+
+$ echo "root:$UID:1" | sudo tee -a /etc/subuid /etc/subgid
+
 config:
   environment.DISPLAY: :0
   raw.idmap: both 1000 1000
@@ -200,7 +204,16 @@ $ lxc launch ubuntu: test
 $ lxc list # wait until you can see the IP to know it's ready
 $ ssh test.lxd
 
-Welcome to awesometown
+
+If everything blew up it's because you're with me and that DNS
+hackery works great to be able to ssh in, but it also breaks the
+ability for your container to connect to anything else. For now
+I'm disabling the DNS bit and sshing in via IP, or using the lxc
+exec sudo stuff to connect. I'm watching this post [0] for
+a comment response that will hopefully clarify that last bit.
+
+[0] How to use lxd container hostnames on the host in Ubuntu 18.04
+    http://blog.simos.info/how-to-use-lxd-container-hostnames-on-the-host-in-ubuntu-18-04/
 </pre>]]></description>
 </item>
 <item>

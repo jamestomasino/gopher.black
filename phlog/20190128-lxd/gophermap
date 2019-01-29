@@ -78,6 +78,10 @@ ilxc exec method to sudo in.		gopher.black	70
 i		gopher.black	70
 iStep 5: Edit the gui profile		gopher.black	70
 i		gopher.black	70
+iIf you didn't install lxd via snap, you'll need to run this one liner:		gopher.black	70
+i		gopher.black	70
+i$ echo "root:$UID:1" | sudo tee -a /etc/subuid /etc/subgid		gopher.black	70
+i		gopher.black	70
 iconfig:		gopher.black	70
 i  environment.DISPLAY: :0		gopher.black	70
 i  raw.idmap: both 1000 1000		gopher.black	70
@@ -191,4 +195,12 @@ i$ lxc launch ubuntu: test		gopher.black	70
 i$ lxc list # wait until you can see the IP to know it's ready		gopher.black	70
 i$ ssh test.lxd		gopher.black	70
 i		gopher.black	70
-iWelcome to awesometown		gopher.black	70
+i		gopher.black	70
+iIf everything blew up it's because you're with me and that DNS		gopher.black	70
+ihackery works great to be able to ssh in, but it also breaks the		gopher.black	70
+iability for your container to connect to anything else. For now		gopher.black	70
+iI'm disabling the DNS bit and sshing in via IP, or using the lxc		gopher.black	70
+iexec sudo stuff to connect. I'm watching this post [0] for		gopher.black	70
+ia comment response that will hopefully clarify that last bit.		gopher.black	70
+i		gopher.black	70
+h[0] How to use lxd container hostnames on the host in Ubuntu 18.04	URL:http://blog.simos.info/how-to-use-lxd-container-hostnames-on-the-host-in-ubuntu-18-04/
