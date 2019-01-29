@@ -1,7 +1,7 @@
-----------------------------------------
+i----------------------------------------		gopher.black	70
 ilxd		gopher.black	70
 iJanuary 28th, 2019		gopher.black	70
-----------------------------------------
+i----------------------------------------		gopher.black	70
 i		gopher.black	70
 ilxd and lxc are amazing. If you know what they are, skip this		gopher.black	70
 iparagraph. If not, they're sort of like Docker, but instead of		gopher.black	70
@@ -19,12 +19,12 @@ iit really doesn't matter. Most of my containers are built using		gopher.black	7
 ithe latest stable Ubuntu, but that also doesn't really matter. My		gopher.black	70
 igoals are as follows:		gopher.black	70
 i		gopher.black	70
-- Be able to create and dispose of containers easily
-- All containers, by default, allow me to ssh in using my keys
-- I can ssh to the containers by their container name, not IP
-- I can apply a 'gui' profile and make a container work with my
+i- Be able to create and dispose of containers easily		gopher.black	70
+i- All containers, by default, allow me to ssh in using my keys		gopher.black	70
+i- I can ssh to the containers by their container name, not IP		gopher.black	70
+i- I can apply a 'gui' profile and make a container work with my		gopher.black	70
 i  native display		gopher.black	70
-- I can apply a 'user' profile and make my container start with my
+i- I can apply a 'user' profile and make my container start with my		gopher.black	70
 i  dotfiles installed		gopher.black	70
 i		gopher.black	70
 iStep 1: Install LXD		gopher.black	70
