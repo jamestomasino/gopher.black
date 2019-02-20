@@ -3,6 +3,63 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Re Cdmnky Crazy Bugs</title>
+  <link>gopher://gopher.black/1/phlog/20190219-re-cdmnky-crazy-bugs/</link>
+  <pubdate>Tue, 19 Feb 2019 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+re: cdmnky - crazy bugs
+February 19th, 2019
+----------------------------------------
+
+Here's a couple techniques I've learned over the years to punch
+those sassy bugs that just won't go away square in the face-hole.
+
+1. Explain that part of the program bit by bit to someone
+   unfamiliar with it. It can be someone else in your class, or on
+   your team, or just someone you know. They don't need to be
+   coders. Just explain to them the logic of what you're doing and
+   walk them through that part out loud.
+
+   Often this will reveal your mistake sideways. You'll probably
+   catch yourself just before you say the next part out loud as
+   you unconsciously see the disconnect between what you expected
+   to see and what's there. It's frustrating that it works, but it
+   does. 
+
+   Don't let a full hour go by debugging a single issue without
+   trying this.
+
+2. Delete it and rewrite it.
+
+   No, shut-up. Just do it. I don't care that it SHOULD work.
+   I don't care that you're just going to type it again exactly
+   like the first time. Do it. Right, effing, now.
+
+   Does it work? Oh hells yes. Will it make you angry when it
+   does? Fuck yes.
+
+   Don't let half a day go by debugging a single issue without
+   trying this.
+
+3. Try to solve something else.
+
+   Take a break and work on a different thing if you can. Put it
+   out of your brain. Give a day to another project or subject or
+   call in sick with the butt-flu. Get some distance.
+
+   It's not as reliable a fix as the first two, but it can do the
+   trick. This is great if your issues is on a side-project or
+   hobby that's not under a pressing deadline. Go wind surfing, or
+   try to research different types of furry sub-culture, or
+   binge-watch the old MTV cartoon "Clone High" so I can make
+   jokes that people will get.
+
+Those are my big 3. Maybe some others out there have
+recommendations for you as well?
+</pre>]]></description>
+</item>
+<item>
   <title>On The Separation Of Artists From Their Art</title>
   <link>gopher://gopher.black/1/phlog/20190218-on-the-separation-of-artists-from-their-art/</link>
   <pubdate>Mon, 18 Feb 2019 00:00:00 -0500</pubdate>
@@ -887,54 +944,6 @@ the project one last push and get it working in the woods.
     gopher://gopher.black/1/phlog/20181014-little-free-library-part-1
 [1] Little Free Library Web Source
     http://github.com/jamestomasino/littlefreelibrary
-</pre>]]></description>
-</item>
-<item>
-  <title>Talkd On Ubuntu</title>
-  <link>gopher://gopher.black/1/phlog/20190102-talkd-on-ubuntu/</link>
-  <pubdate>Wed, 02 Jan 2019 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-talkd on ubuntu
-January 02nd, 2019
-----------------------------------------
-
-I need to save these notes somewhere. I just got talkd working on
-ubuntu 18.10 and it was quite convoluted. Here's what I did:
-
-- install openbsd-inetd (not inetutils-inetd, it's shit)
-- install talkd (not inetutils-talkd, also shit)
-- install ytalk (better than talk by a mile)
-
-edit /etc/inetd.conf and add the following:
-
-#:BSD: Shell, login, exec and talk are BSD protocols.
-talk   dgram udp wait nobody.tty /usr/sbin/tcpd in.talkd
-ntalk  dgram udp wait nobody.tty /usr/sbin/tcpd in.ntalkd 
-
-note the /usr/sbin/tcpd. If talkd added content here for you,
-those are probably quite different. Trust tcpd to handle the
-connection for you and hand it off to in.talkd and in.ntalkd
-afterwards. 
-
-'nobody' will probably need to be added to the tty group. In truth
-you should make another dummy user without a login shell named
-'talkd' and add THAT user to tty, but this works.
-
-$ sudo usermod -a -G tty nobody
-
-Restart inetd:
-
-$ sudo service openbsd-inetd restart
-
-Now you should be able to use 'talk' on your server, locally at
-least.
-
-Ports 517 and 518 are for talkd, so you can open them up in your
-firewall and that should be enough to talk to other servers, but
-I don't have that piece of the puzzle just yet.
-
-Good luck!
 </pre>]]></description>
 </item>
 </channel>
