@@ -1,0 +1,70 @@
+i----------------------------------------		gopher.black	70
+iada		gopher.black	70
+iMarch 02nd, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI must be 30% magpie or something because I can't steer clear of		gopher.black	70
+ishiny new things no matter how hard I try. In this case, the shiny		gopher.black	70
+i"new" thing isn't so new at all, but is a programming language		gopher.black	70
+ifrom 1980 (when I was born). Ada [0] is a brilliant language. It's		gopher.black	70
+iincredibly simple, syntactically, but also extremely powerful. It		gopher.black	70
+imakes conscious decisions to forgo speed and brevity in exchange		gopher.black	70
+ifor safety and clarity. It is cautious where other languages are		gopher.black	70
+ibold.		gopher.black	70
+i		gopher.black	70
+iHere's a "hello, world" example:		gopher.black	70
+i		gopher.black	70
+iwith Ada.Text_IO;		gopher.black	70
+iprocedure Hello is		gopher.black	70
+i  use Ada.Text_IO;		gopher.black	70
+ibegin		gopher.black	70
+i  Put_Line("Hello, World!");		gopher.black	70
+iend Hello;		gopher.black	70
+i		gopher.black	70
+iEverything is spelled out. Every instruction ends with		gopher.black	70
+ia semicolon, everything is case insensitive, variables must be		gopher.black	70
+ideclared between the "is" and "begin" of a procedure. Every		gopher.black	70
+ibeginning has an explicit end, which is labeled. It's so		gopher.black	70
+iridiculously cautious!		gopher.black	70
+i		gopher.black	70
+iI told ~ben the other day that it's the Tigran Petrosian [1] of		gopher.black	70
+iprogramming languages. The whole mentality is so neat to me.		gopher.black	70
+i		gopher.black	70
+iThere's a lot of languages out there and I don't need to learn		gopher.black	70
+ithis one. While it's true that I haven't kept up with any		gopher.black	70
+isystems-programming languages it's not really a gap in my		gopher.black	70
+iknowledge. It's just that I have no need of them since I don't do		gopher.black	70
+ithat type of work. So why learn something that's best suited to		gopher.black	70
+imassive government builds? Cause FUCK YOU, I wanna!		gopher.black	70
+i		gopher.black	70
+iLook forward to seeing a bunch of shell work done in Ada in the		gopher.black	70
+inear future. I was going to make Cosmic Voyage's web generation		gopher.black	70
+iscript in python instead of continuing to grow the massive /bin/sh		gopher.black	70
+iscript, but maybe I'll tackle it in Ada instead.		gopher.black	70
+i		gopher.black	70
+iHas anyone out there ever used it for web programming before? That		gopher.black	70
+itickles me pink!		gopher.black	70
+i		gopher.black	70
+iAnywho, any of you know and use Ada? I learned the basics in		gopher.black	70
+icollege but have never done anything worth a damn in it. I found		gopher.black	70
+ia bunch of resources online including a standards site with the		gopher.black	70
+imost Orwellian name ever: Ada Conformity Assessment Authority [2].		gopher.black	70
+iHah! So badass. They're serious about following conventions with		gopher.black	70
+iit, which really makes sense for the applications it serves. PEP8		gopher.black	70
+iis similar for python. If you feel like diving in with me, here's		gopher.black	70
+ia link to a crash-course in the form of a ~40pg PDF [3]. I'm going		gopher.black	70
+ito store my practice programs and notes in a git repo [4].		gopher.black	70
+i		gopher.black	70
+iNow, lets see if I can do this without cutting into my Icelandic		gopher.black	70
+ipractice, or my writing on this phlog, or on Cosmic Voyage, or my		gopher.black	70
+ipreparations for the upcoming move, or planning my wife's 50th		gopher.black	70
+ibirthday party (SEEEECRET) or any of the other things that are		gopher.black	70
+iactually important which I should be focusing on instead.		gopher.black	70
+i		gopher.black	70
+i- xoxo, magpie		gopher.black	70
+i		gopher.black	70
+0[0] Ada (programming language)	/Ada (programming language)	gopherpedia.com	70
+0[1] Tigran Petrosian	/Tigran Petrosian	gopherpedia.com	70
+h[2] Ada 2012 Language Reference Manual	URL:http://www.ada-auth.org/standards/ada12.html
+h[3] Ada Crash Course	URL:http://www.pchapin.org/VTC/TutorialAda/AdaCrash.pdf
+h[4] tomasino's ada practice repo	URL:http://github.com/jamestomasino/ada-practice

@@ -49,6 +49,90 @@ CAT IS HIS NAME!!!!
 
 cat's tilde.tel
     gopher://tilde.tel/1/
+sing-a-long
+    http://www.youtube.com/watch?v=DiXN5_KO-Ks
+</pre>]]></description>
+</item>
+<item>
+  <title>Ada</title>
+  <link>gopher://gopher.black/1/phlog/20190302-ada/</link>
+  <pubdate>Sat, 02 Mar 2019 00:00:00 -0500</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+ada
+March 02nd, 2019
+----------------------------------------
+
+I must be 30% magpie or something because I can't steer clear of
+shiny new things no matter how hard I try. In this case, the shiny
+"new" thing isn't so new at all, but is a programming language
+from 1980 (when I was born). Ada [0] is a brilliant language. It's
+incredibly simple, syntactically, but also extremely powerful. It
+makes conscious decisions to forgo speed and brevity in exchange
+for safety and clarity. It is cautious where other languages are
+bold.
+
+Here's a "hello, world" example:
+
+with Ada.Text_IO;
+procedure Hello is
+  use Ada.Text_IO;
+begin
+  Put_Line("Hello, World!");
+end Hello;
+
+Everything is spelled out. Every instruction ends with
+a semicolon, everything is case insensitive, variables must be
+declared between the "is" and "begin" of a procedure. Every
+beginning has an explicit end, which is labeled. It's so
+ridiculously cautious!
+
+I told ~ben the other day that it's the Tigran Petrosian [1] of
+programming languages. The whole mentality is so neat to me.
+
+There's a lot of languages out there and I don't need to learn
+this one. While it's true that I haven't kept up with any
+systems-programming languages it's not really a gap in my
+knowledge. It's just that I have no need of them since I don't do
+that type of work. So why learn something that's best suited to
+massive government builds? Cause FUCK YOU, I wanna!
+
+Look forward to seeing a bunch of shell work done in Ada in the
+near future. I was going to make Cosmic Voyage's web generation
+script in python instead of continuing to grow the massive /bin/sh
+script, but maybe I'll tackle it in Ada instead.
+
+Has anyone out there ever used it for web programming before? That
+tickles me pink!
+
+Anywho, any of you know and use Ada? I learned the basics in
+college but have never done anything worth a damn in it. I found
+a bunch of resources online including a standards site with the
+most Orwellian name ever: Ada Conformity Assessment Authority [2].
+Hah! So badass. They're serious about following conventions with
+it, which really makes sense for the applications it serves. PEP8
+is similar for python. If you feel like diving in with me, here's
+a link to a crash-course in the form of a ~40pg PDF [3]. I'm going
+to store my practice programs and notes in a git repo [4].
+
+Now, lets see if I can do this without cutting into my Icelandic
+practice, or my writing on this phlog, or on Cosmic Voyage, or my
+preparations for the upcoming move, or planning my wife's 50th
+birthday party (SEEEECRET) or any of the other things that are
+actually important which I should be focusing on instead.
+
+- xoxo, magpie
+
+[0] Ada (programming language)
+    gopher://gopherpedia.com/0/Ada (programming language)
+[1] Tigran Petrosian
+    gopher://gopherpedia.com/0/Tigran Petrosian
+[2] Ada 2012 Language Reference Manual
+    http://www.ada-auth.org/standards/ada12.html
+[3] Ada Crash Course
+    http://www.pchapin.org/VTC/TutorialAda/AdaCrash.pdf
+[4] tomasino's ada practice repo
+    http://github.com/jamestomasino/ada-practice
 </pre>]]></description>
 </item>
 <item>
@@ -892,49 +976,6 @@ feeds.
 
 If this inspired you to join the system, instructions can be found
 on cosmic's home page. See you in the stars!
-</pre>]]></description>
-</item>
-<item>
-  <title>Little Free Library Part 3</title>
-  <link>gopher://gopher.black/1/phlog/20190115-little-free-library-part-3/</link>
-  <pubdate>Tue, 15 Jan 2019 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Little Free Library, part 3
-January 15th, 2019
-----------------------------------------
-
-The batter test is complete. I picked up a solar powered battery
-pack off Amazon and plugged in the pi, then left it in the dark to
-see how long it took to drain. It lasted just over 80 hours with
-no external charging. That's fantastic! 
-
-The unit claims that it can fully recharge in about 7 hours of
-sunlight. Given various seasons and overcast days, rain, etc, that
-should be plenty of buffer to allow the pi to remain perpetually
-active.
-
-With that, there's only 3 things left to do:
-
-- Update the captive portal screen to indicate to users that they
-  should: 1) disable their mobile data, and 2) browse to
-  http://littlefreelibrary.  The actual domain doesn't matter, but
-  that one seems easy enough to remember. The mobile data thing
-  came up in testing as a barrier to IP rules running on the Pi
-  that would normally redirect you to 10.0.0.5 and serve the web
-  content. Captive Portal may trigger, but I need a real redirect
-  of a real mobile browser for downloads. If you're reading this
-  and making a project that doesn't need javascript or downloads,
-  just do it IN the captive portal. It's much easier.
-
-- Build a weatherproof enclosure. The plan is to 3D print
-  something that can hold the battery and pi, or just the pi glued
-  on the battery, or a big glass box, or whatever. Something that
-  will survive in the woods and not be blocked by snowfall.
-
-- Take pictures and "blog" the full build instructions so others
-  can replicate and share it. This is a cool project and I hope
-  others can build upon it.
 </pre>]]></description>
 </item>
 </channel>
