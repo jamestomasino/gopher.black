@@ -1,30 +1,30 @@
-----------------------------------------
+i----------------------------------------		gopher.black	70
 ilxd		gopher.black	70
 iJanuary 28th, 2019		gopher.black	70
-----------------------------------------
+i----------------------------------------		gopher.black	70
 i		gopher.black	70
 ilxd and lxc are amazing. If you know what they are, skip this		gopher.black	70
 iparagraph. If not, they're sort of like Docker, but instead of		gopher.black	70
 iencapsulating your application, they encapsulate a system. They're		gopher.black	70
 inot as broad as a whole VM, and in reality they're not really		gopher.black	70
 ia "thing" at all. They're a collection of isolation tools built		gopher.black	70
-iinto Linux that makes it seem like you're running on a whole new		gopher.black	70
+into Linux that makes it seem like you're running on a whole new		gopher.black	70
 ivm while sharing kernels and junk. Um, go read about it somewhere		gopher.black	70
 ielse. There's some great material out there that will explain it		gopher.black	70
 ibetter than me.		gopher.black	70
 i		gopher.black	70
 iThe purpose if this phlog is to document my basic LXD setup. My		gopher.black	70
 ihost system is Ubuntu 18.04 as of this article being written, but		gopher.black	70
-iit really doesn't matter. Most of my containers are built using		gopher.black	70
+it really doesn't matter. Most of my containers are built using		gopher.black	70
 ithe latest stable Ubuntu, but that also doesn't really matter. My		gopher.black	70
 igoals are as follows:		gopher.black	70
 i		gopher.black	70
-- Be able to create and dispose of containers easily
-- All containers, by default, allow me to ssh in using my keys
-- I can ssh to the containers by their container name, not IP
-- I can apply a 'gui' profile and make a container work with my
+i- Be able to create and dispose of containers easily		gopher.black	70
+i- All containers, by default, allow me to ssh in using my keys		gopher.black	70
+i- I can ssh to the containers by their container name, not IP		gopher.black	70
+i- I can apply a 'gui' profile and make a container work with my		gopher.black	70
 i  native display		gopher.black	70
-- I can apply a 'user' profile and make my container start with my
+i- I can apply a 'user' profile and make my container start with my		gopher.black	70
 i  dotfiles installed		gopher.black	70
 i		gopher.black	70
 iStep 1: Install LXD		gopher.black	70
@@ -187,7 +187,7 @@ i$ sudo systemctl enable lxd-host-dns.service		gopher.black	70
 i$ sudo systemctl start lxd-host-dns.service		gopher.black	70
 i		gopher.black	70
 iBoom. If you didn't answer defaults on lxd init, then your		gopher.black	70
-iinterface might not be lxdbr0 and you'll need to change stuff.		gopher.black	70
+interface might not be lxdbr0 and you'll need to change stuff.		gopher.black	70
 i		gopher.black	70
 iStep 9: Test it out		gopher.black	70
 i		gopher.black	70
@@ -203,7 +203,3 @@ iexec sudo stuff to connect. I'm watching this post [0] for		gopher.black	70
 ia comment response that will hopefully clarify that last bit.		gopher.black	70
 i		gopher.black	70
 h[0] How to use lxd container hostnames on the host in Ubuntu 18.04	URL:http://blog.simos.info/how-to-use-lxd-container-hostnames-on-the-host-in-ubuntu-18-04/
-i		gopher.black	70
-!
--
-*  Testing
