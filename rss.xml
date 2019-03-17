@@ -3,6 +3,92 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>The Spam Files Central Intellegence Agency</title>
+  <link>gopher://gopher.black/1/phlog/20190317-the-spam-files-central-intellegence-agency/</link>
+  <pubdate>Sun, 17 Mar 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+The Spam Files - Central Intellegence Agency
+March 17th, 2019
+----------------------------------------
+
+This is a really interesting new spam/blackmail attempt that I
+haven't seen before. I'm not sure exactly how it expects to be
+effective being that it requires the individual to sort-of admit
+to distribution and storage of child pornography. Hmmm...
+
+Well, here it is, with only the email targeted redacted.
+
+- - - - - - - - - - - - - - - - - - - -
+
+Case #47823596
+
+Distribution and storage of pornographic electronic materials
+involving underage children.
+
+My name is Sharika Snell and I am a technical collection officer
+working for Central Intelligence Agency.
+
+It has come to my attention that your personal details including
+your email address (<REDACTED>) are listed in case #47823596.
+
+The following details are listed in the document's attachment:
+
+    Your personal details,
+    Home address,
+    Work address,
+    List of relatives and their contact information.
+
+Case #47823596 is part of a large international operation set to
+arrest more than 2000 individuals suspected of paedophilia in 27
+countries.
+
+The data which could be used to acquire your personal information:
+
+    Your ISP web browsing history,
+    DNS queries history and connection logs,
+    Deep web .onion browsing and/or connection sharing,
+    Online chat-room logs,
+    Social media activity log.
+
+The first arrests are scheduled for April 8, 2019.
+
+Why am I contacting you ?
+
+I read the documentation and I know you are a wealthy person who
+may be concerned about reputation.
+
+I am one of several people who have access to those documents and
+I have enough security clearance to amend and remove your details
+from this case. Here is my proposition.
+
+Transfer exactly $10,000 USD (ten thousand dollars - about 2.5
+BTC) through Bitcoin network to this special bitcoin address:
+
+3CwcSdb9siP13NYpJ2Eck3dAfTAy3JCW1k
+
+You can transfer funds with online bitcoin exchanges such as
+Coinbase, Bitstamp or Coinmama. The deadline is March 27, 2019 (I
+need few days to access and edit the files).
+
+Upon confirming your transfer I will take care of all the files
+linked to you and you can rest assured no one will bother you.
+
+Please do not contact me. I will contact you and confirm only when
+I see the valid transfer.
+
+Regards,
+
+Sharika Snell
+
+Technical Collection Officer
+
+Directorate of Science and Technology
+
+Central Intelligence Agency
+</pre>]]></description>
+</item>
+<item>
   <title>Tilde Tel</title>
   <link>gopher://gopher.black/1/phlog/20190302-tilde-tel/</link>
   <pubdate>Sat, 02 Mar 2019 00:00:00 -0500</pubdate>
@@ -801,181 +887,6 @@ And that's it. Oh, I guess you'll need to open up your port with
 your firewall, but everything else should just work(TM).
 
 Good luck!
-</pre>]]></description>
-</item>
-<item>
-  <title>Cosmic Voyage Part 1</title>
-  <link>gopher://gopher.black/1/phlog/20190120-cosmic-voyage-part-1/</link>
-  <pubdate>Sun, 20 Jan 2019 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Cosmic Voyage - Part 1
-January 20th, 2019
-----------------------------------------
-
-slackz [0] asked me to do some write-ups on cosmic.voyage from the
-architect POV. Here's part 1 of who knows how many.
-[0] slackz
-    gopher://gopher.orghub.co/1/
-
-If you don't know what cosmic.voyage is read this first [1]
-[1] Cosmic Voyage
-    gopher://gopher.black/1/phlog/20181124-cosmic-voyage
-
-Being a text-based writing adventure, and me being me,
-I immediately set out to make Cosmic sit primarily on gopher
-rather than web. At first I didn't plan to have a web presence for
-it at all, but that changed as things went along. Really, my goals
-and understanding of the system are ever-evolving and greatly
-informed by the active users.
-
-Regardless, things started with gopher. I knew I wanted a few
-things right away:
-
-- A single gopher structure, not individual user folders.
-- Users to be able to fully control their ships and stories, but
-  not mess with other users' things
-- An ongoing log that linked everything together.
-
-I use motsognir [2] on gopher.black, but I thought it might be
-easier to write scripts as gophermaps for cosmic if I stuck with
-gophernicus. I could have made things in cgi scripts, but I like
-the transparent heirarchical structure I get to this way instead.
-[2] motsognir
-    gopher://gopher.viste.fr/1/projects/motsognir
-
-The structure of cosmic's gopher hole looks like this:
-  ├── gophermap
-  ├── intro.gophermap
-  ├── listing.gophermap
-  ├── log
-  │   ├── gophermap
-  │   └── intro.gophermap
-  ├── Melchizedek (or any old ship)
-  │   ├── 001.txt
-  │   ├── 002.txt
-  │   ├── 003.txt
-  ├── Melvin P Feltersnatch (another example ship)
-  │   ├── 001.txt
-  │   ├── 002.txt
-  │   └── 003.txt
-  ├── rss.xml
-  └── ships
-      ├── gophermap
-      ├── Melchizedek (example ship page directory)
-      │   └── gophermap -> /var/gopher/ships/ship/gophermap
-      ├── Melvin P Feltersnatch (another example ship page dir)
-      │   └── gophermap -> /var/gopher/ships/ship/gophermap
-      ├── ship
-      │   └── gophermap
-      └── ships.gophermap
-
-At the root level I have a gophermap that pulls in and processes
-other gophermaps, does a little shell scripting, and displays the
-basic content. Let's start by having a look at that code:
-
-  =intro.gophermap
-  1Complete Transmission Log /log
-  1Ships, Colonies, Outposts /ships
-  0RSS Feed /rss.xml
-
-  Most recent (20) log entries: 
-  =head -n 20 listing.gophermap | sed 's|^0||' | awk -v tot="$(wc -l listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0}'
-
-Gophernicus allows us to source in other gophermaps by using
-saying =gophermapname. In this way I can keep my intro text for
-cosmic in a separate file (which becomes helpful later when we
-look at web generation). Following that I have a few regular
-gophermap links using gophernicus' friendly shorthand syntax (no
-servername or port required). Finally I list the most recent log
-entries.
-
-In this, I grab the top 20 lines from listing.gophermap and number
-them properly.
-
-listing.gophermap is the heart of the cosmic log system. Each time
-a user adds a log to the site, it gets prepended to that file.
-That file in turn generates the log page, the short listings here,
-and content for the individual ship pages. It's a sensitive file
-because it needs to be writable by all users on the system. I've
-kicked around better ways to do that, but for now it seems to
-work. At least I back it up regularly.
-
-The /log/ page works very much like the root gophermap, but with
-a simpler rendering.
-
-  =intro.gophermap
-  =sed 's|^0||' /var/gopher/listing.gophermap | awk -v tot="$(wc -l /var/gopher/listing.gophermap)" '{print 0 int(tot)-NR+1 " >> " $0'}  
-
-Simple, right? awk is the best.
-
-So what about the ship pages? Those are a little funkier. On the
-one hand, they pretty much just sed/awk their way through the
-listing.gophermap file as well, but there's also the matter of
-a navigable directory.
-
-From the list above you can see that there's a ships directory.
-Lets look more closely at an example:
-  └── ships
-      ├── gophermap
-      ├── Enterprise NCC-1701
-      │   └── gophermap -> /var/gopher/ships/ship/gophermap
-      ├── ship
-      │   └── gophermap
-      └── ships.gophermap
-
-The root gophermap of the ships page does a little more hard work.
-This has a few long lines that might not render well on your
-screen. I apologize!:
-
-  #!/bin/sh
-  cat "ships.gophermap"
-  find "/var/gopher/" -maxdepth 1 ! -path "/var/gopher/" ! -path "/var/gopher/ships" ! -path "/var/gopher/log" -type d -print | sed 's|/var/gopher/||' | sort | while read -r ship
-  do
-    entry_num=$(grep -c "^0${ship}" "/var/gopher/listing.gophermap")
-    if [ "$entry_num" != "0" ]; then
-      printf "1%s (%s)\\t/ships/%s\\n" "$ship" "$entry_num" "$ship"
-    fi
-  done
-
-We start by catting out the intro for the ships page from
-ships.gophermap, then we loop through all the ship directories on
-the system. Using each of those ships, we then check against
-listing.gophermap to see how many entries they have. If they don't
-have any entries, we leave them out of the listings. That was
-a nice idea from one of the cosmic users to avoid cluttering up
-the ship page with empty ships. If there ARE entries, we print
-a link to the ship page.
-
-The ship pages themselves are a bit of trickery. There's really
-only one ship page /ships/ship/gophermap. All the rest are just
-symlinks to it. But how!!?? What manner of sorcery is this?
-
-  #!/bin/sh
-
-  ship="$(/bin/pwd -L | sed 's|.*/||')"
-  desc="/var/gopher/${ship}/.description"
-  if [ -f "$desc" ]; then
-    cat "$desc"
-    printf "\\n"
-  fi
-
-  printf "%s - Ship Log\\n" "$ship"
-  tac "/var/gopher/listing.gophermap" | sed "s|^0||" | awk '{print 0 NR " >> " $0}' | grep "^.*>>\\ ${ship}" 
-
-pwd -L gets the path of the current symlink, which reveals the
-ship name! Then we look to see if there's a ship description and
-finally we grab all the relevant logs from listings and number
-everything.
-
-Huzzah!
-
-That's it. That's the whole gopher structure that drives Cosmic
-Voyage. Next time I'll talk about the web generation and RSS
-feeds.
-
-If this inspired you to join the system, instructions can be found
-on cosmic's home page. See you in the stars!
 </pre>]]></description>
 </item>
 </channel>
