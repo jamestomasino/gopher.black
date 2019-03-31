@@ -3,6 +3,41 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Fun Questions</title>
+  <link>gopher://gopher.black/1/phlog/20190330-fun-questions/</link>
+  <pubdate>Sat, 30 Mar 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Fun Questions
+March 30th, 2019
+----------------------------------------
+
+I'm in a fun mood, so let's do something fun!
+
+christyotwisty had a post on circumlunar not too long ago asking
+users a bunch of reading questions. I'd link to it, but I can't
+seem to find the phlog entry. Regardless, it was really fun and
+got a lot of gopherspace engagement. I miss gopherspace
+engagement! I want more. So, this is my blatant attempt to fish
+interaction out of you all.
+
+Who among you likes movies? How about music? Any readers? Good!
+I was thinking of a nice, difficult challenge to throw your way.
+
+1. Name one film that everyone should see at least once.
+2. Name one book everyone should read at least TWICE.
+3. Name one song everyone should listen to at least once a year.
+
+Why those rules? Cause clickbait, baby!
+
+Here's mine with no context:
+
+1. Mary Poppins
+2. Dune
+3. Harry Chapin - Cat's in the Cradle
+</pre>]]></description>
+</item>
+<item>
   <title>The Spam Files Central Intellegence Agency</title>
   <link>gopher://gopher.black/1/phlog/20190317-the-spam-files-central-intellegence-agency/</link>
   <pubdate>Sun, 17 Mar 2019 00:00:00 -0400</pubdate>
@@ -801,92 +836,6 @@ thought-out argument. Marsha will validate your parking on your
 way out.
 
 Cheers!
-</pre>]]></description>
-</item>
-<item>
-  <title>Gophernicus Tls Howto</title>
-  <link>gopher://gopher.black/1/phlog/20190120-gophernicus-tls-howto/</link>
-  <pubdate>Sun, 20 Jan 2019 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-gophernicus TLS howto
-January 20th, 2019
-----------------------------------------
-
-A few people on mastodon requested a little guide on how to set up
-stunnel4 with gophernicus to offer TLS. As you might know from my
-earlier posts on gopher.black, I prefer to run this gopher server
-as a tor service instead of using the TLS approach alone since it
-does all the same things plus some extra goodies and doesn't
-require modification to your gopher clients. Regardless, gopher
-over TLS is cool in its own right (and I use it on cosmic.voyage).
-
-Here's how:
-
-1) Make sure you're using gophernicus and it's Kim's Prison
-   Edition, not one of the ancient ones that shows up when you
-   google gophernicus, like prologic's
-
-2) Have an SSL cert. I use letsencrypt because why pay for
-   something that's free?
-
-3) Have stunnel4. I think it was an apt install for me.
-
-Actually configuring everything is just a matter of tweaking
-2 files:
-
-1) /etc/default/gophernicus
-
-OPTIONS="-o UTF-8 -nt -nh -nf -T 7070"
-
-The important part for TLS is the last bit (-T PORT). The other
-switches hide the /stats page which is a security issue, and get
-rid of titles and footer and stuff, which make for a cleaner
-rendered gophermap. They're cool settings, but not necessary for
-TLS.
-
-2) /etc/stunnel/gophernicus.conf
-
-;
-; Gophernicus behind Stunnel4 for gopher over TLS
-;
-
-; User/group for stunnel daemon
-setuid = stunnel4
-setgid = stunnel4
-
-; PID file location
-pid = /var/run/stunnel4/gophernicus.pid
-
-; Log to file, not syslog
-output = /var/log/stunnel4/gophernicus.log
-syslog = no
-
-; Certificate in pem format is needed for TLS
-cert = /etc/letsencrypt/live/cosmic.voyage/fullchain.pem
-key = /etc/letsencrypt/live/cosmic.voyage/privkey.pem
-
-; Enable TCP wrappers
-libwrap = yes
-service = in.gophernicus-tls
-
-; Gopher over TLS service
-[gophernicus]
-accept  = :::7070
-connect = 127.0.0.1:70
-protocol = proxy
-
-
-So I'm pointing at my letsencrypt cert for cosmic in this file,
-and I've chosen to use port 7070 for TLS. Kensanata says there's
-an argument for port 7443 that was given on the gopher mailing
-list, but I never read it. Use what makes sense to you, but make
-sure it matches what you have in /etc/default/gophernicus.
-
-And that's it. Oh, I guess you'll need to open up your port with
-your firewall, but everything else should just work(TM).
-
-Good luck!
 </pre>]]></description>
 </item>
 </channel>
