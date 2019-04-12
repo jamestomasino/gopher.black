@@ -3,6 +3,89 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Phlog Listing Updates</title>
+  <link>gopher://gopher.black/1/phlog/20190411-phlog-listing-updates/</link>
+  <pubdate>Thu, 11 Apr 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+phlog listing updates
+April 11th, 2019
+----------------------------------------
+
+It looks like tilde.town recently updated gophernicus, which is
+awesome. Many of the servers out there running gophernicus leave
+the bottom footer active for their users, which shows the current
+gophernicus version that's running.
+
+In my /etc/default/gophernicus I like to disable headers, footers
+and the status page hidden at /server-status with the -nt -nh -nf
+flags, like so:
+
+OPTIONS="-o UTF-8 -nt -nh -nf -T 7070"
+
+Part of my reasoning is aesthetic. I don't need to show extra crud
+on gopher. Part of my reason is security. Not knowing which server
+I'm running may make attacks on it more difficult. Not seeing IP
+addresses of users engaged with my system helps them stay
+anonymous (server-status related). And part of my reasoning is so
+I don't accidentally trip up aggregators.
+
+When you upgrade gophernicus and that version in the footer
+changes, every aggregator out there suddenly thinks you made an
+update to your phlog. This happens routinely on SDF and suddenly
+every SDF member tracked on my moku-pona [0] sorts to the top of
+the list. Today that happened for our tilde.town users.
+
+Is it a big deal? Oh definitely not. Am I recommending others
+running gophernicus use those switches? It's totally up to them
+and I won't harp on the issue. I just want people to be aware that
+it's a thing. I suspect many would choose to add the flags if they
+knew about the situation, but I won't hold it against you if you
+disagree, or simply don't care. Gopher is whatever the hell you
+want to make it.
+
+Phlog Roll
+    gopher://gopher.black/1/phlogs
+
+- - - - - - - - - 
+
+Speaking of gopher being whatever the hell you want to make it,
+I was surprised to see Ze Libertine Gamer post recently that he
+may be deleting his phlog [1]. That's a real shock, to be honest.
+He's got some great content that goes back years. I wonder what
+sort of things might lead someone to deleting a phlog but not the
+entire gopher hole and I'm at a loss. I won't speculate here, but
+I will say to ZLG, I really hope you keep it around, even if you
+don't update very often. You've got some useful information you've
+shared and have been a big part of the community. I'd certainly
+miss your contributions.
+
+ZLG - 2019-04-10
+    gopher://zlg.space/0/phlog/2019-04-10_1813.txt
+
+- - - - - - - - - 
+
+To zcrayfish:
+
+I agree. WebP does indeed suck. [2] Stop trying to make "fetch"
+a thing, Google. Their sleasy method of inserting "switch to
+modern image formats" into website performance checkers is dirty
+and unwelcome. I don't like blackhat UI and I don't appreciate
+their "disruptions".
+
+zcrayfish - WebP Sucks
+    gopher://gopher.zcrayfish.soy/1/phlog/20190410-webp-sucks
+
+- - - - - - - - - 
+
+Thanks to all of you who answered my silly three questions. I got
+a lot of great movies to add to the playlist and I've been jamming
+to your songs all week.
+
+Keep gopherin' everyone!
+</pre>]]></description>
+</item>
+<item>
   <title>Fun Questions</title>
   <link>gopher://gopher.black/1/phlog/20190330-fun-questions/</link>
   <pubdate>Sat, 30 Mar 2019 00:00:00 -0400</pubdate>
@@ -718,124 +801,6 @@ a comment response that will hopefully clarify that last bit.
 
 [0] How to use lxd container hostnames on the host in Ubuntu 18.04
     http://blog.simos.info/how-to-use-lxd-container-hostnames-on-the-host-in-ubuntu-18-04/
-</pre>]]></description>
-</item>
-<item>
-  <title>Free Speech</title>
-  <link>gopher://gopher.black/1/phlog/20190121-free-speech/</link>
-  <pubdate>Mon, 21 Jan 2019 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-free speech
-January 21st, 2019
-----------------------------------------
-
-solderpunk, visiblink and yargo have a great thread going on the
-topic of discrimination. Here's the most recent link to it, but
-there's a history you can dig through [0].
-
-[0] visiblink - Of nature, nurture, and dinosaurs
-    gopher://zaibatsu.circumlunar.space/0/~visiblink/phlog/20190120
-
-In visiblink's first post on the topic the discussion began with
-a comedian who repeatedly ridiculed a disabled child and a human
-rights tribunal that then fined him for it. That's where I'd like
-to focus my very narrow band of thought on the topic.
-
-While the discussion that spawned has been interesting it has been
-focused on what constitutes an appropriate topic of criticism. Is
-it based on whether that factor is in full control of the
-individual, is it related to their culture or wealth, and does
-that play a factor in what is appropriate. Great stuff... go read.
-
-The part that stuck out to me was the concept of free speech and
-protected speech, their terminology, and the psychology involved
-in each. Yargo, in a simplistic and unfair summary to him, stated
-that he'd prefer to say whatever he likes without fear of legal
-consequences. That's a great place to start.
-
-There is some psychological system at play which places the idea
-of protection on the individuals who are criticized, or who are
-the subject of hate speech. Media discussions surround the idea of
-sensitivity and others refer to "snowflakes". Protection is
-demanded by the sensitive, or so it seems.
-
-We know in reality that it is the speech which is the subject to
-protection instead. It is not the targets of the speech, but the
-speaker who needs focus here, right?
-
-The distinction is minor because the relationship between the
-speaker and target haven't changed. But that's not the whole
-story, is it? If we use terms like "free speech" it hides part of
-the story. When we say "protected speech" now we get at the crux.
-Protected by whom, and from whom?
-
-There are other parties involved: the speaker, the subject, and
-the protective entity and the persecutive entity. So when we look
-back at the discussion of protected speech now we can fit everyone
-into context:
-
-A speaker's (subject) speech toward someone (object) is
-potentially protected (protector) from persecution (persecutor).
-
-Who is the persecutor? In the case of the United States and the
-1st amendment from which most of this discussion flows for
-Americans it is the US government itself.
-
-Who is the protector? Well, again in this case, the US government.
-
-  Congress shall make no law respecting an establishment of
-  religion, or prohibiting the free exercise thereof; or abridging
-  the freedom of speech, or of the press; or the right of the
-  people peaceably to assemble, and to petition the Government for
-  a redress of grievances.
-
-Congress is limited in their powers by the Constitution from
-abridging the freedom of speech.
-
-Done, right? libertarians have at it. Except, no. Oliver Wendell
-Holmes comes knocking next...
-
-In the landmark case of Schenck v. United States, Holmes stated, 
-
-  The most stringent protection of free speech would not protect a
-  man in falsely shouting fire in a theater and causing a panic
-
-Okay, so all speech is does not warrant protection under the first
-amendment. Where do we draw the line? Here we get into Public
-Forum Regulation, Prior Restraint, Expressive Conduct, Defamation,
-and so on. Most appropriate to our discussion is the topic of
-defamation, and inciting, provocative, or offensive speech. 
-
-Here we go to the courts to decide where the line should be. Did
-that speech represent an individual freedom, or did it put at risk
-the lives and liberty of others, such as by listing the home
-addresses of families of abortion doctors? The line gets blurry,
-right? We're not talking about feelings being hurt anymore. Our 
-objects of discussion potentially got much more serious.
-
-Back to my focus: the protector and persecutor are the same
-entity, though perhaps different departments of it. That entity
-is given the power to determine what it protects from itself.
-That's pretty weird when you word it like that, but so be it.
-What stands out though is that the justification for NOT
-protecting speech is required based on the wording of the
-constitution. The US government, at least, needs to justify a
-decision to step in and persecute a speaker (at least to itself).
-
-Where was I going with this? I don't remember. I tried writing
-this at work and got interrupted every five minutes. I think I was
-getting to something about the psychology of speech protection,
-asking an outside entity to come in and protect you from itself in
-some cases and not others. There was going to be a really cool
-reference to 80s sitcoms in there too.
-
-Meh, now I'm hungry and totally forgot where I was going. So, um,
-thanks for sticking with me through the first half of a well
-thought-out argument. Marsha will validate your parking on your
-way out.
-
-Cheers!
 </pre>]]></description>
 </item>
 </channel>

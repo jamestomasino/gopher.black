@@ -1,0 +1,73 @@
+i----------------------------------------		gopher.black	70
+iphlog listing updates		gopher.black	70
+iApril 11th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iIt looks like tilde.town recently updated gophernicus, which is		gopher.black	70
+iawesome. Many of the servers out there running gophernicus leave		gopher.black	70
+ithe bottom footer active for their users, which shows the current		gopher.black	70
+igophernicus version that's running.		gopher.black	70
+i		gopher.black	70
+iIn my /etc/default/gophernicus I like to disable headers, footers		gopher.black	70
+iand the status page hidden at /server-status with the -nt -nh -nf		gopher.black	70
+iflags, like so:		gopher.black	70
+i		gopher.black	70
+iOPTIONS="-o UTF-8 -nt -nh -nf -T 7070"		gopher.black	70
+i		gopher.black	70
+iPart of my reasoning is aesthetic. I don't need to show extra crud		gopher.black	70
+ion gopher. Part of my reason is security. Not knowing which server		gopher.black	70
+iI'm running may make attacks on it more difficult. Not seeing IP		gopher.black	70
+iaddresses of users engaged with my system helps them stay		gopher.black	70
+ianonymous (server-status related). And part of my reasoning is so		gopher.black	70
+iI don't accidentally trip up aggregators.		gopher.black	70
+i		gopher.black	70
+iWhen you upgrade gophernicus and that version in the footer		gopher.black	70
+ichanges, every aggregator out there suddenly thinks you made an		gopher.black	70
+iupdate to your phlog. This happens routinely on SDF and suddenly		gopher.black	70
+ievery SDF member tracked on my moku-pona [0] sorts to the top of		gopher.black	70
+ithe list. Today that happened for our tilde.town users.		gopher.black	70
+i		gopher.black	70
+iIs it a big deal? Oh definitely not. Am I recommending others		gopher.black	70
+irunning gophernicus use those switches? It's totally up to them		gopher.black	70
+iand I won't harp on the issue. I just want people to be aware that		gopher.black	70
+iit's a thing. I suspect many would choose to add the flags if they		gopher.black	70
+iknew about the situation, but I won't hold it against you if you		gopher.black	70
+idisagree, or simply don't care. Gopher is whatever the hell you		gopher.black	70
+iwant to make it.		gopher.black	70
+i		gopher.black	70
+1Phlog Roll	/phlogs
+i		gopher.black	70
+i- - - - - - - - - 		gopher.black	70
+i		gopher.black	70
+iSpeaking of gopher being whatever the hell you want to make it,		gopher.black	70
+iI was surprised to see Ze Libertine Gamer post recently that he		gopher.black	70
+imay be deleting his phlog [1]. That's a real shock, to be honest.		gopher.black	70
+iHe's got some great content that goes back years. I wonder what		gopher.black	70
+isort of things might lead someone to deleting a phlog but not the		gopher.black	70
+ientire gopher hole and I'm at a loss. I won't speculate here, but		gopher.black	70
+iI will say to ZLG, I really hope you keep it around, even if you		gopher.black	70
+idon't update very often. You've got some useful information you've		gopher.black	70
+ishared and have been a big part of the community. I'd certainly		gopher.black	70
+imiss your contributions.		gopher.black	70
+i		gopher.black	70
+0ZLG - 2019-04-10	/phlog/2019-04-10_1813.txt	zlg.space	70
+i		gopher.black	70
+i- - - - - - - - - 		gopher.black	70
+i		gopher.black	70
+iTo zcrayfish:		gopher.black	70
+i		gopher.black	70
+iI agree. WebP does indeed suck. [2] Stop trying to make "fetch"		gopher.black	70
+ia thing, Google. Their sleasy method of inserting "switch to		gopher.black	70
+imodern image formats" into website performance checkers is dirty		gopher.black	70
+iand unwelcome. I don't like blackhat UI and I don't appreciate		gopher.black	70
+itheir "disruptions".		gopher.black	70
+i		gopher.black	70
+1zcrayfish - WebP Sucks	/phlog/20190410-webp-sucks	gopher.zcrayfish.soy	70
+i		gopher.black	70
+i- - - - - - - - - 		gopher.black	70
+i		gopher.black	70
+iThanks to all of you who answered my silly three questions. I got		gopher.black	70
+ia lot of great movies to add to the playlist and I've been jamming		gopher.black	70
+ito your songs all week.		gopher.black	70
+i		gopher.black	70
+iKeep gopherin' everyone!		gopher.black	70
