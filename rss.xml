@@ -86,6 +86,67 @@ Keep gopherin' everyone!
 </pre>]]></description>
 </item>
 <item>
+  <title>Opening Gopher Links From Firefox In Lynx</title>
+  <link>gopher://gopher.black/1/phlog/20190411-opening-gopher-links-from-firefox-in-lynx/</link>
+  <pubdate>Thu, 11 Apr 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+opening gopher links from firefox in lynx
+April 11th, 2019
+----------------------------------------
+
+I was working on a goal of adding a new protocol handler to
+Firefox that would open gopher:// links in lynx. I think it's
+doable based on my research, but I'm not quite able to get it
+working. First of all, you can expose a protocol to request a new
+handler when invoked by adding a config item to Firefox via the
+about:config screen.
+
+network.protocol-handler.expose.gopher
+
+Add that entry as a boolean, and set it to false. Now the next
+time you click on a gopher link it will prompt you for the app to
+use. If you have a standalone gopher app with gui support, point
+at that and you're done! YAY!
+
+If you're like me and want it to launch a terminal window, start
+lynx, and browse to that gopher hole, well... I don't quite have
+the solve just yet. I found three potential ways to do it so far,
+but none is actually working.
+
+1. Point to a shell script that launches a terminal window running
+   lynx, and forward along the parameter. I created a bash script
+   that launched gnome-terminal and passed along the startup
+   script as lynx. Sounded good in theory, and if I invoke it from
+   the terminal myself it does indeed launch a new term running
+   lynx. That's cool, but Firefox seems to do nothing when it acts
+   as a handler. Damn.
+
+2. Define a new shell app like described in this webpage [0]
+[0] Firefox enable starting of scripts
+    https://www.bitkistl.com/2015/04/firefox-enable-starting-of-scripts-and.html
+
+3. Try to make a lynx.desktop file that will launch the lynx
+   browser. Here's mine:
+
+   [Desktop Entry]
+   Name=Lynx
+   Comment=Terminal Browser
+   Terminal=true
+   Type=Application
+   Exec=lynx %U
+   Categories=Application;Network;
+
+   That totally works once you trust it if you click on the app.
+   But it does jack shit when you try to use it as a Firefox
+   protocol handler. Ugh.
+
+Guys, I feel like I'm so damn close. Who wants to be my hero and
+swoop in and save the day. Gopher handlers will make my life 3%
+better overnight. Don't you want to be a part of that?
+</pre>]]></description>
+</item>
+<item>
   <title>Fun Questions</title>
   <link>gopher://gopher.black/1/phlog/20190330-fun-questions/</link>
   <pubdate>Sat, 30 Mar 2019 00:00:00 -0400</pubdate>
@@ -588,219 +649,6 @@ This is the crap that keeps me up past midnight.
 Who's got some other nerds from history to share? 
 
 Hic sunt neckbeardes?
-</pre>]]></description>
-</item>
-<item>
-  <title>Lxd</title>
-  <link>gopher://gopher.black/1/phlog/20190128-lxd/</link>
-  <pubdate>Mon, 28 Jan 2019 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-lxd
-January 28th, 2019
-----------------------------------------
-
-lxd and lxc are amazing. If you know what they are, skip this
-paragraph. If not, they're sort of like Docker, but instead of
-encapsulating your application, they encapsulate a system. They're
-not as broad as a whole VM, and in reality they're not really
-a "thing" at all. They're a collection of isolation tools built
-nto Linux that makes it seem like you're running on a whole new
-vm while sharing kernels and junk. Um, go read about it somewhere
-else. There's some great material out there that will explain it
-better than me.
-
-The purpose if this phlog is to document my basic LXD setup. My
-host system is Ubuntu 18.04 as of this article being written, but
-t really doesn't matter. Most of my containers are built using
-the latest stable Ubuntu, but that also doesn't really matter. My
-goals are as follows:
-
-- Be able to create and dispose of containers easily
-- All containers, by default, allow me to ssh in using my keys
-- I can ssh to the containers by their container name, not IP
-- I can apply a 'gui' profile and make a container work with my
-  native display
-- I can apply a 'user' profile and make my container start with my
-  dotfiles installed
-
-Step 1: Install LXD
-
-If it's not already installed, you can grab the snap package.
-
-
-Step 2: Install ZFS
-
-It's not necessary, but it performs better at start/stop
-operations. If you install it, LXD will use it as the default.
-
-Step 3: Configure LXD
-
-$ sudo lxd init
-
-Just say yes to the defaults.
-
-Step 4: Edit the default profile
-
-$ lxc profile edit default
-
-  config:
-    user.vendor-data: |
-      #cloud-config
-      package_upgrade: true
-      packages:
-        - build-essential
-        - software-properties-common
-      users:
-        - name: ubuntu
-          ssh-import-id: gh:jamestomasino
-          shell: /bin/bash
-  description: Default LXD profile
-  devices:
-    eth0:
-      name: eth0
-      nictype: bridged
-      parent: lxdbr0
-      type: nic
-    root:
-      path: /
-      pool: zfs
-      type: disk
-  name: default
-  used_by: []
-
-The key here is the ssh-import-id to pull my keys down from
-github. With that I can ssh in immediately instead of using the
-lxc exec method to sudo in.
-
-Step 5: Edit the gui profile
-
-If you didn't install lxd via snap, you'll need to run this one liner:
-
-$ echo "root:$UID:1" | sudo tee -a /etc/subuid /etc/subgid
-
-  config:
-    environment.DISPLAY: :0
-    raw.idmap: both 1000 1000
-    user.user-data: |
-      #cloud-config
-      runcmd:
-        - 'sed -i "s/; enable-shm = yes/enable-shm = no/g" /etc/pulse/client.conf'
-        - 'echo export PULSE_SERVER=unix:/tmp/.pulse-native | tee --append /home/ubuntu/.profile'
-      packages:
-        - x11-apps
-        - mesa-utils
-        - pulseaudio
-  description: GUI LXD profile
-  devices:
-    PASocket:
-      path: /tmp/.pulse-native
-      source: /run/user/1000/pulse/native
-      type: disk
-    X0:
-      path: /tmp/.X11-unix/X0
-      source: /tmp/.X11-unix/X0
-      type: disk
-    mygpu:
-      type: gpu
-  name: gui
-  used_by: []
-
-This magic sauce will set up all the dependencies needed to
-connect to my display when a gui app is run. I then SSH in with
-export x11 enabled and all is well.
-
-Step 6: Edit a user profile
-
-This one involves a lot of runcmd: stuff in a row that points to
-my dotfiles, installs other apt packages, does a little dance, and
-ends up with a working environment for me to do some damage. I'll
-spare you all.
-
-Step 7: SSH
-
-I want to be able to connect to lxd containers by name, not just
-IP address. I'm going to set that bit up in a minute using dnsmasq
-and systemd, but first lets look at my ~/.ssh/config to see what
-goodness lies within:
-
-Host *.lxd
-StrictHostKeyChecking no
-UserKnownHostsFile /dev/null
-LogLevel QUIET
-ForwardX11 yes
-ForwardX11Trusted yes
-User ubuntu
-IdentityFile ~/some/really/cool/path/to/SECRETS
-
-The host checking and host file bit, along with LogLevel mean you
-won't get man-in-the-middle warnings if your container IP changes
-one day from starting and stoping repeatedly. X11 forwarding there
-for display. I use ubuntu containers, so I've attached the
-username there as well.
-
-Step 8: DNS
-
-$ sudo vim /usr/local/bin/lxdhostdns_start.sh
-
-  #!/bin/sh
-
-  LXDINTERFACE=lxdbr0
-  LXDDOMAIN=lxd
-  LXDDNSIP=$(ip addr show lxdbr0 | grep -Po 'inet \K[\d.]+')
-
-  /usr/bin/systemd-resolve --interface ${LXDINTERFACE} \
-                           --set-dns "${LXDDNSIP}" \
-                           --set-domain ${LXDDOMAIN}
-
-
-$ sudo vim /usr/local/bin/lxdhostdns_stop.sh
-
-  #!/bin/sh
-
-  LXDINTERFACE=lxdbr0
-
-  /usr/bin/systemd-resolve --interface ${LXDINTERFACE} --revert
-
-
-$ sudo vim /lib/systemd/system/lxd-host-dns.service
-
-  [Unit]
-  Description=LXD host DNS service
-  After=multi-user.target
-
-  [Service]
-  Type=simple
-  ExecStart=/usr/local/bin/lxdhostdns_start.sh
-  RemainAfterExit=true
-  ExecStop=/usr/local/bin/lxdhostdns_stop.sh
-  StandardOutput=journal
-
-  [Install]
-  WantedBy=multi-user.target
-
-$ sudo systemctl daemon-reload
-$ sudo systemctl enable lxd-host-dns.service
-$ sudo systemctl start lxd-host-dns.service
-
-Boom. If you didn't answer defaults on lxd init, then your
-nterface might not be lxdbr0 and you'll need to change stuff.
-
-Step 9: Test it out
-
-$ lxc launch ubuntu: test
-$ lxc list # wait until you can see the IP to know it's ready
-$ ssh test.lxd
-
-If everything blew up it's because you're with me and that DNS
-hackery works great to be able to ssh in, but it also breaks the
-ability for your container to connect to anything else. For now
-I'm disabling the DNS bit and sshing in via IP, or using the lxc
-exec sudo stuff to connect. I'm watching this post [0] for
-a comment response that will hopefully clarify that last bit.
-
-[0] How to use lxd container hostnames on the host in Ubuntu 18.04
-    http://blog.simos.info/how-to-use-lxd-container-hostnames-on-the-host-in-ubuntu-18-04/
 </pre>]]></description>
 </item>
 </channel>

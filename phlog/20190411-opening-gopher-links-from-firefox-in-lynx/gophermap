@@ -1,0 +1,53 @@
+i----------------------------------------		gopher.black	70
+iopening gopher links from firefox in lynx		gopher.black	70
+iApril 11th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI was working on a goal of adding a new protocol handler to		gopher.black	70
+iFirefox that would open gopher:// links in lynx. I think it's		gopher.black	70
+idoable based on my research, but I'm not quite able to get it		gopher.black	70
+iworking. First of all, you can expose a protocol to request a new		gopher.black	70
+ihandler when invoked by adding a config item to Firefox via the		gopher.black	70
+iabout:config screen.		gopher.black	70
+i		gopher.black	70
+inetwork.protocol-handler.expose.gopher		gopher.black	70
+i		gopher.black	70
+iAdd that entry as a boolean, and set it to false. Now the next		gopher.black	70
+itime you click on a gopher link it will prompt you for the app to		gopher.black	70
+iuse. If you have a standalone gopher app with gui support, point		gopher.black	70
+iat that and you're done! YAY!		gopher.black	70
+i		gopher.black	70
+iIf you're like me and want it to launch a terminal window, start		gopher.black	70
+ilynx, and browse to that gopher hole, well... I don't quite have		gopher.black	70
+ithe solve just yet. I found three potential ways to do it so far,		gopher.black	70
+ibut none is actually working.		gopher.black	70
+i		gopher.black	70
+i1. Point to a shell script that launches a terminal window running		gopher.black	70
+i   lynx, and forward along the parameter. I created a bash script		gopher.black	70
+i   that launched gnome-terminal and passed along the startup		gopher.black	70
+i   script as lynx. Sounded good in theory, and if I invoke it from		gopher.black	70
+i   the terminal myself it does indeed launch a new term running		gopher.black	70
+i   lynx. That's cool, but Firefox seems to do nothing when it acts		gopher.black	70
+i   as a handler. Damn.		gopher.black	70
+i		gopher.black	70
+i2. Define a new shell app like described in this webpage [0]		gopher.black	70
+h[0] Firefox enable starting of scripts	URL:https://www.bitkistl.com/2015/04/firefox-enable-starting-of-scripts-and.html
+i		gopher.black	70
+i3. Try to make a lynx.desktop file that will launch the lynx		gopher.black	70
+i   browser. Here's mine:		gopher.black	70
+i		gopher.black	70
+i   [Desktop Entry]		gopher.black	70
+i   Name=Lynx		gopher.black	70
+i   Comment=Terminal Browser		gopher.black	70
+i   Terminal=true		gopher.black	70
+i   Type=Application		gopher.black	70
+i   Exec=lynx %U		gopher.black	70
+i   Categories=Application;Network;		gopher.black	70
+i		gopher.black	70
+i   That totally works once you trust it if you click on the app.		gopher.black	70
+i   But it does jack shit when you try to use it as a Firefox		gopher.black	70
+i   protocol handler. Ugh.		gopher.black	70
+i		gopher.black	70
+iGuys, I feel like I'm so damn close. Who wants to be my hero and		gopher.black	70
+iswoop in and save the day. Gopher handlers will make my life 3%		gopher.black	70
+ibetter overnight. Don't you want to be a part of that?		gopher.black	70
