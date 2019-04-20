@@ -1,0 +1,196 @@
+i----------------------------------------		gopher.black	70
+issh over tor		gopher.black	70
+iApril 20th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iMy upcoming tilde server, tilde.black, is going to be focused on		gopher.black	70
+iprivacy, anonymity, and security. As part of that effort the tilde		gopher.black	70
+iitself is a playground for activites and code that supports those		gopher.black	70
+iefforts. One example of this is connecting to the server over tor.		gopher.black	70
+i		gopher.black	70
+iAs described in a		gopher.black	70
+0LifeHacker article	URL:https://lifehacker.com/what-is-tor-and-should-i-use-it-1527891029
+i		gopher.black	70
+i    Tor is short for The Onion Router (thus the logo) and was		gopher.black	70
+i    initially a worldwide network of servers developed with the		gopher.black	70
+i    U.S. Navy that enabled people to browse the internet		gopher.black	70
+i    anonymously. Now, it's a non-profit organization whose main		gopher.black	70
+i    purpose is the research and development of online privacy		gopher.black	70
+i    tools.		gopher.black	70
+i		gopher.black	70
+i    The Tor network disguises your identity by moving your traffic		gopher.black	70
+i    across different Tor servers, and encrypting that traffic so		gopher.black	70
+i    it isn't traced back to you. Anyone who tries would see		gopher.black	70
+i    traffic coming from random nodes on the Tor network, rather		gopher.black	70
+i    than your computer. 		gopher.black	70
+i		gopher.black	70
+iWe have tor running on tilde.black and some services are offered		gopher.black	70
+ithere directly as "onion services". You can browse the website by		gopher.black	70
+iusing a tor browser and going to http://tdblackjcbw5kc46.onion. Or		gopher.black	70
+iyou can view the gopher site at gopher://tdblackjcbw5kc46.onion.		gopher.black	70
+iFinally, you can ssh to the machine at tdblackjcbw5kc46.onion		gopher.black	70
+iinstead of tilde.black.		gopher.black	70
+i		gopher.black	70
+i    (Some people may note that the web link protocol above is		gopher.black	70
+i    HTTP, not HTTPS. Onion sites are already end-to-end encrypted		gopher.black	70
+i    and get no benefit from HTTPS beyond publishing their		gopher.black	70
+i    identity, which in many cases is contrary to the goals of		gopher.black	70
+i    having an onion site. Browsing non-onion sites on tor is still		gopher.black	70
+i    best done with HTTPS, though, because all traffic from an exit		gopher.black	70
+i    node to that server will need some method of encryption.)		gopher.black	70
+i		gopher.black	70
+iSo why might we want to use tor to ssh? Anonymity of course! When		gopher.black	70
+iyou log into a shared system other users can see a lot of		gopher.black	70
+iinformation about you as a user. For instance, here's just the		gopher.black	70
+ifirst few lines of output from the 'w' command on cosmic.voyage:		gopher.black	70
+i		gopher.black	70
+iUSER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT		gopher.black	70
+itomasino pts/0    98.22.17.30-     08:27    1.00s  0.09s  0.00s tmux -u2 attach		gopher.black	70
+i		gopher.black	70
+iWell lookie there... my IP address. Depending on my threat model,		gopher.black	70
+ithat may not be something I want to leave lying around everywhere		gopher.black	70
+iI go since it can be traced back to me so easily. So lets look at		gopher.black	70
+ione small way we can incrementally help stay anonymous.		gopher.black	70
+i		gopher.black	70
+iPART ONE: tor on the server		gopher.black	70
+i		gopher.black	70
+iI've covered this process in the past [1] to show how easy it is		gopher.black	70
+ito set up gopher over tor. Lets review the basics again anyway.		gopher.black	70
+i		gopher.black	70
+iYou'll need to:		gopher.black	70
+i    - Install tor		gopher.black	70
+i    - Configure tor		gopher.black	70
+i    - Start tor		gopher.black	70
+i    - Find your hostname		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iStep 1: Install tor		gopher.black	70
+i		gopher.black	70
+iCheck out the install instructions on the tor website. In mos		gopher.black	70
+icases it's as simple as:		gopher.black	70
+i		gopher.black	70
+i    sudo apt install tor		gopher.black	70
+i		gopher.black	70
+iStep 2: Configure tor		gopher.black	70
+i		gopher.black	70
+iEverything you need to configure in tor is located at		gopher.black	70
+i/etc/tor/torrc. Edit that file and search for HiddenServiceDir.		gopher.black	70
+iUncomment or add lines as follows		gopher.black	70
+i		gopher.black	70
+i HiddenServiceDir /var/lib/tor/hidden_service/		gopher.black	70
+i HiddenServicePort 22 127.0.0.1:22		gopher.black	70
+i		gopher.black	70
+iThe first line is where your hidden service will store all its		gopher.black	70
+isecrets, like the private key it's going to auto-generate for you.		gopher.black	70
+iWe'll look there in a minute to find the hostname. NOTE: the		gopher.black	70
+i/hidden_service/ part of the directory path is changable. If you		gopher.black	70
+iwant to run multiple different tor services by different names,		gopher.black	70
+iyou can add more of these blocks and change that /hidden_service/		gopher.black	70
+ito something else, like /pants/ or /web/. A cooresponding folder		gopher.black	70
+iwill be created automatically when you run tor.		gopher.black	70
+i		gopher.black	70
+iThe HiddenServicePort line maps tor's port to your system's port.		gopher.black	70
+iIf you are running ssh on port 22, this is what you'll need. NOTE:		gopher.black	70
+iRunning ssh on another port does not add any tangible security,		gopher.black	70
+ibut can help avoid log spam from bots that hammer at port 22.		gopher.black	70
+i		gopher.black	70
+iStep 3: Start tor		gopher.black	70
+i		gopher.black	70
+i    sudo service tor start # linuxy style		gopher.black	70
+i    rcctl enable tor && rcctl start tor # openbsd style		gopher.black	70
+i		gopher.black	70
+iStep 4: Find your hostname		gopher.black	70
+i		gopher.black	70
+iAs a super-user, browse to the directory listed in		gopher.black	70
+iHiddenServiceDir and you will see two files, a private key and		gopher.black	70
+ia hostname. View the hostname file and you'll see your public		gopher.black	70
+ionion address. Copy that for later. The private key is something		gopher.black	70
+iyou may want to back up if you want to use this onion address		gopher.black	70
+isafely in the future. If you lose the private key you will not be		gopher.black	70
+iable to run tor at that onion address anymore. The generation of		gopher.black	70
+ionion addresses can be done more creatively using tools like		gopher.black	70
+iEschalot to hash millions of possible onion addresses until you		gopher.black	70
+ifind a pattern that matches what you like. For instance,		gopher.black	70
+itilde.black has the onion address:		gopher.black	70
+i		gopher.black	70
+i    tdblackjcbw5kc46.onion		gopher.black	70
+i		gopher.black	70
+iPART TWO: tor on the client		gopher.black	70
+i		gopher.black	70
+iIn order to ssh over tor, we'll need some way to make our terminal		gopher.black	70
+isession or a terminal command run over the tor network. My		gopher.black	70
+ifavorite way to do this is with a program called 'torsocks'. This		gopher.black	70
+iutility pushes a single command or an entire shell through a socks		gopher.black	70
+iproxy to your tor connection. Since torsocks is just a socks proxy		gopher.black	70
+ithat means we'll need to do a couple things to get it to work.		gopher.black	70
+i		gopher.black	70
+iYou'll need to:		gopher.black	70
+i    - Install tor		gopher.black	70
+i    - Configure tor		gopher.black	70
+i    - Install torsocks		gopher.black	70
+i    - Configure torsocks		gopher.black	70
+i    - Start tor & torsocks		gopher.black	70
+i    - ssh		gopher.black	70
+i		gopher.black	70
+iStep 1: Install tor		gopher.black	70
+i		gopher.black	70
+iJust like on the server you'll need to install tor on your local		gopher.black	70
+imachine. Read up on the tor website to see which method works best		gopher.black	70
+ifor your operating system. It's probably a one-liner.		gopher.black	70
+i		gopher.black	70
+iStep 2: Configure tor		gopher.black	70
+i		gopher.black	70
+iWe need to configure our local tor differently than we did the		gopher.black	70
+iserver. We don't need any hidden services this time, but we do		gopher.black	70
+ineed to allow local connections to use it as a SOCKS proxy. Here's		gopher.black	70
+ithe key lines you'll need to uncomment, change, or add:		gopher.black	70
+i		gopher.black	70
+i    SOCKSPort 9050		gopher.black	70
+i    SOCKSPolicy accept 192.168.0.0/16		gopher.black	70
+i    SOCKSPolicy accept6 FC00::/7		gopher.black	70
+i    ControlPort 9051		gopher.black	70
+i    CookieAuthentication 1		gopher.black	70
+i		gopher.black	70
+iStep 3: Install torsocks		gopher.black	70
+i		gopher.black	70
+i    sudo apt install torsocks # linux		gopher.black	70
+i    pkg_add torsocks # openbsd		gopher.black	70
+i    brew install torsocks # probably works on osx?		gopher.black	70
+i		gopher.black	70
+iStep 4: Configure torsocks		gopher.black	70
+i		gopher.black	70
+iTo be honest, I don't remember if this is required or if it comes		gopher.black	70
+ilike this out of the box. Edit the file /etc/tor/torsocks.conf and		gopher.black	70
+iverify that the following lines are present and not commented out:		gopher.black	70
+i		gopher.black	70
+i    TorAddress 127.0.0.1		gopher.black	70
+i    TorPort 9050		gopher.black	70
+i		gopher.black	70
+iStep 5: Start tor & torsocks		gopher.black	70
+i		gopher.black	70
+iNow that everything is all configured, whenever you want to run		gopher.black	70
+itorsocks you'll need to first start tor in another terminal or		gopher.black	70
+itmux pane. Running tor is as easy as typing:		gopher.black	70
+i		gopher.black	70
+i    $ tor		gopher.black	70
+i		gopher.black	70
+iYou'll get some interesting output before it eventually says 100%		gopher.black	70
+ibootstrapped. That means you're up and running. Now in your other		gopher.black	70
+iterminal window you can start the torsocks proxy connection like		gopher.black	70
+iso:		gopher.black	70
+i		gopher.black	70
+i    $ . torsocks on		gopher.black	70
+i		gopher.black	70
+iThis will respond back with: "Tor mode activated. Every command		gopher.black	70
+iwill be torified for this shell." And that's exactly it. You		gopher.black	70
+ishould be fully running now and able to try your ssh connection.		gopher.black	70
+i		gopher.black	70
+iStep 6: ssh		gopher.black	70
+i		gopher.black	70
+i    $ ssh buffalo@tdblackjcbw5kc46.onion -p 1337		gopher.black	70
+i		gopher.black	70
+iA connection like above will try to connect to ssh on port 1337		gopher.black	70
+iover tor using the user "buffalo". I'm using tilde.black's tor		gopher.black	70
+iaddress as an example.		gopher.black	70
+i		gopher.black	70
+iSo give it a try and let me know it worked for you!		gopher.black	70
