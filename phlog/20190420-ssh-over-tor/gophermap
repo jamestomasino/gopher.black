@@ -8,8 +8,8 @@ iprivacy, anonymity, and security. As part of that effort the tilde		gopher.blac
 iitself is a playground for activites and code that supports those		gopher.black	70
 iefforts. One example of this is connecting to the server over tor.		gopher.black	70
 i		gopher.black	70
-iAs described in a		gopher.black	70
-0LifeHacker article	URL:https://lifehacker.com/what-is-tor-and-should-i-use-it-1527891029
+iAs described in a LifeHacker article [0]:		gopher.black	70
+h[0] LifeHacker article	URL:https://lifehacker.com/what-is-tor-and-should-i-use-it-1527891029
 i		gopher.black	70
 i    Tor is short for The Onion Router (thus the logo) and was		gopher.black	70
 i    initially a worldwide network of servers developed with the		gopher.black	70
@@ -56,6 +56,7 @@ iPART ONE: tor on the server		gopher.black	70
 i		gopher.black	70
 iI've covered this process in the past [1] to show how easy it is		gopher.black	70
 ito set up gopher over tor. Lets review the basics again anyway.		gopher.black	70
+1[1] gopher.black on tor	/phlog/20180427-gopher-black-on-tor-part-1
 i		gopher.black	70
 iYou'll need to:		gopher.black	70
 i    - Install tor		gopher.black	70
