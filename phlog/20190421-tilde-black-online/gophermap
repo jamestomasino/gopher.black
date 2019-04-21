@@ -1,0 +1,36 @@
+i----------------------------------------		gopher.black	70
+itilde.black online		gopher.black	70
+iApril 21st, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iMy new tilde community, tilde.black, is officially online:		gopher.black	70
+i		gopher.black	70
+hWebsite	URL:https://tilde.black
+1Gopher	/	tilde.black	70
+hWebsite over tor	URL:http://tdblackjcbw5kc46.onion
+1Gopher over tor	/	tdblackjcbw5kc46.onion	70
+i		gopher.black	70
+iIt is an openbsd 6.4 system that will be focused on activities		gopher.black	70
+iaround privacy, anonymity, and security. To be clear, this is not		gopher.black	70
+ia system for black-hat hacking (whether targeted at tilde.black or		gopher.black	70
+ioutward), but rather for discussion and testing of ideas that		gopher.black	70
+ipromote smart behaviors around privacy online. I hope we will		gopher.black	70
+icreate some well-reviewed guides in the near future.		gopher.black	70
+i		gopher.black	70
+iIf you want to join tilde.black, send me an ssh pubkey and an		gopher.black	70
+iemail address to receive your welcome email. If you want to remain		gopher.black	70
+ianonymous on the system, you can use a disposable email address,		gopher.black	70
+iand you can connect to the server via ssh over tor [0].		gopher.black	70
+i		gopher.black	70
+1[0] ssh over tor	/phlog/20190420-ssh-over-tor
+i		gopher.black	70
+iAdditionally, users on tilde.black don't get to choose a username.		gopher.black	70
+iInstead you are assigned 10 of the 10,000 usernames that have been		gopher.black	70
+ipregenerated from a wordlist on the system. You can log in to any		gopher.black	70
+ior all of them. They're all full users with all access rights. You		gopher.black	70
+ican swap between them in the forums (not live yet) or send email		gopher.black	70
+iamongst yourself. If you connect to the server over tor nobody		gopher.black	70
+iwill know the difference!		gopher.black	70
+i		gopher.black	70
+iIn case you're curious, openbsd doesn't seem to have any noticable		gopher.black	70
+islowdown with 10,000 user accounts. That's pretty cool!		gopher.black	70

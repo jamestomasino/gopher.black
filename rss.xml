@@ -3,6 +3,54 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Tilde Black Online</title>
+  <link>gopher://gopher.black/1/phlog/20190421-tilde-black-online/</link>
+  <pubdate>Sun, 21 Apr 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+tilde.black online
+April 21st, 2019
+----------------------------------------
+
+My new tilde community, tilde.black, is officially online:
+
+Website
+    https://tilde.black
+Gopher
+    gopher://tilde.black/1/
+Website over tor
+    http://tdblackjcbw5kc46.onion
+Gopher over tor
+    gopher://tdblackjcbw5kc46.onion/1/
+
+It is an openbsd 6.4 system that will be focused on activities
+around privacy, anonymity, and security. To be clear, this is not
+a system for black-hat hacking (whether targeted at tilde.black or
+outward), but rather for discussion and testing of ideas that
+promote smart behaviors around privacy online. I hope we will
+create some well-reviewed guides in the near future.
+
+If you want to join tilde.black, send me an ssh pubkey and an
+email address to receive your welcome email. If you want to remain
+anonymous on the system, you can use a disposable email address,
+and you can connect to the server via ssh over tor [0].
+
+[0] ssh over tor
+    gopher://gopher.black/1/phlog/20190420-ssh-over-tor
+
+Additionally, users on tilde.black don't get to choose a username.
+Instead you are assigned 10 of the 10,000 usernames that have been
+pregenerated from a wordlist on the system. You can log in to any
+or all of them. They're all full users with all access rights. You
+can swap between them in the forums (not live yet) or send email
+amongst yourself. If you connect to the server over tor nobody
+will know the difference!
+
+In case you're curious, openbsd doesn't seem to have any noticable
+slowdown with 10,000 user accounts. That's pretty cool!
+</pre>]]></description>
+</item>
+<item>
   <title>Ssh Over Tor</title>
   <link>gopher://gopher.black/1/phlog/20190420-ssh-over-tor/</link>
   <pubdate>Sat, 20 Apr 2019 00:00:00 -0400</pubdate>
@@ -17,9 +65,9 @@ privacy, anonymity, and security. As part of that effort the tilde
 itself is a playground for activites and code that supports those
 efforts. One example of this is connecting to the server over tor.
 
-As described in a
-LifeHacker article
-    gopher://gopher.black/0URL:https://lifehacker.com/what-is-tor-and-should-i-use-it-1527891029
+As described in a LifeHacker article [0]:
+[0] LifeHacker article
+    https://lifehacker.com/what-is-tor-and-should-i-use-it-1527891029
 
     Tor is short for The Onion Router (thus the logo) and was
     initially a worldwide network of servers developed with the
@@ -66,6 +114,8 @@ PART ONE: tor on the server
 
 I've covered this process in the past [1] to show how easy it is
 to set up gopher over tor. Lets review the basics again anyway.
+[1] gopher.black on tor
+    gopher://gopher.black/1/phlog/20180427-gopher-black-on-tor-part-1
 
 You'll need to:
     - Install tor
@@ -674,88 +724,6 @@ cat's tilde.tel
     gopher://tilde.tel/1/
 sing-a-long
     http://www.youtube.com/watch?v=DiXN5_KO-Ks
-</pre>]]></description>
-</item>
-<item>
-  <title>Ada</title>
-  <link>gopher://gopher.black/1/phlog/20190302-ada/</link>
-  <pubdate>Sat, 02 Mar 2019 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-ada
-March 02nd, 2019
-----------------------------------------
-
-I must be 30% magpie or something because I can't steer clear of
-shiny new things no matter how hard I try. In this case, the shiny
-"new" thing isn't so new at all, but is a programming language
-from 1980 (when I was born). Ada [0] is a brilliant language. It's
-incredibly simple, syntactically, but also extremely powerful. It
-makes conscious decisions to forgo speed and brevity in exchange
-for safety and clarity. It is cautious where other languages are
-bold.
-
-Here's a "hello, world" example:
-
-with Ada.Text_IO;
-procedure Hello is
-  use Ada.Text_IO;
-begin
-  Put_Line("Hello, World!");
-end Hello;
-
-Everything is spelled out. Every instruction ends with
-a semicolon, everything is case insensitive, variables must be
-declared between the "is" and "begin" of a procedure. Every
-beginning has an explicit end, which is labeled. It's so
-ridiculously cautious!
-
-I told ~ben the other day that it's the Tigran Petrosian [1] of
-programming languages. The whole mentality is so neat to me.
-
-There's a lot of languages out there and I don't need to learn
-this one. While it's true that I haven't kept up with any
-systems-programming languages it's not really a gap in my
-knowledge. It's just that I have no need of them since I don't do
-that type of work. So why learn something that's best suited to
-massive government builds? Cause FUCK YOU, I wanna!
-
-Look forward to seeing a bunch of shell work done in Ada in the
-near future. I was going to make Cosmic Voyage's web generation
-script in python instead of continuing to grow the massive /bin/sh
-script, but maybe I'll tackle it in Ada instead.
-
-Has anyone out there ever used it for web programming before? That
-tickles me pink!
-
-Anywho, any of you know and use Ada? I learned the basics in
-college but have never done anything worth a damn in it. I found
-a bunch of resources online including a standards site with the
-most Orwellian name ever: Ada Conformity Assessment Authority [2].
-Hah! So badass. They're serious about following conventions with
-it, which really makes sense for the applications it serves. PEP8
-is similar for python. If you feel like diving in with me, here's
-a link to a crash-course in the form of a ~40pg PDF [3]. I'm going
-to store my practice programs and notes in a git repo [4].
-
-Now, lets see if I can do this without cutting into my Icelandic
-practice, or my writing on this phlog, or on Cosmic Voyage, or my
-preparations for the upcoming move, or planning my wife's 50th
-birthday party (SEEEECRET) or any of the other things that are
-actually important which I should be focusing on instead.
-
-- xoxo, magpie
-
-[0] Ada (programming language)
-    gopher://gopherpedia.com/0/Ada (programming language)
-[1] Tigran Petrosian
-    gopher://gopherpedia.com/0/Tigran Petrosian
-[2] Ada 2012 Language Reference Manual
-    http://www.ada-auth.org/standards/ada12.html
-[3] Ada Crash Course
-    http://www.pchapin.org/VTC/TutorialAda/AdaCrash.pdf
-[4] tomasino's ada practice repo
-    http://github.com/jamestomasino/ada-practice
 </pre>]]></description>
 </item>
 </channel>
