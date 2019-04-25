@@ -3,6 +3,76 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Solarpunk Thoughts</title>
+  <link>gopher://gopher.black/1/phlog/20190425-solarpunk-thoughts/</link>
+  <pubdate>Thu, 25 Apr 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+solarpunk thoughts
+April 25th, 2019
+----------------------------------------
+
+cmccabe just posted [0] some thoughts on solarpunk as a cultural
+phenomenon, as a set of aesthetics surrounding shared goals for
+the future, and as a visual and literary style. It's worth the
+quick read. Go check it out, I'll wait here.
+
+[0] cmccabe - solarpunk optimism 
+    gopher://zaibatsu.circumlunar.space/0/~cmccabe/15-solarpunk-optimism.txt
+
+As it so often happens on gopher, his phlog set off a chain of
+thought in me that is tangential. It reminded me of a fantastic
+book from last year's reading list [1]:
+
+[1] Trekonomics: The Economics of Star Trek
+    https://www.goodreads.com/book/show/27040338-trekonomics
+
+In this surprisingly-great book, author Manu Saadia makes a case
+for the true vision of Star Trek future through the lens of the
+morals, values, and hard economics that underpin the series’ ideal
+society. It's a substantial work that deserves serious attention.
+
+The utopian future of Star Trek is optimistic and it manages to
+challenge us in many unique ways. It questions our need for
+financial incentives, the mores of competition vs honor, even the
+idea of humanity itself. It also reminds me of that endless
+conviction of Doctor Who that underpins everything [2]:
+
+[2] "Intellect and romance over brute force and cynicism!"
+    Intellect and romance over brute force and cynicism!
+
+Solarpunk is just this. Yes, there's an artistic aesthetic.
+There's probably something to be claimed as original for
+a literary style as well. Ultimately, though, it is a response to
+the gritty, post-modern brutalism of cyberpunk. Instead of the
+wastelands of Detroit overrun by cyber-drugs [3], we see green
+pasture-lands infused with a shining beacon of optimism in the
+form of solar arrays and wind turbines.
+
+[3] NUKE
+    https://www.youtube.com/watch?v=2Hg-nM3YLnE
+
+I can take or leave Earth Day. It's not a part of solarpunk as
+much as a Delorian topped with a "Mr. Fusion", or as much as a guy
+on gopher that powers his farm with a solar array and shares his
+water conservation stories on his phlog [4].
+
+[4] melton
+    gopher://sdf.org/1/users/melton/
+
+It all gives me hope. Star Trek, Doctor Who, gopher,
+little-free-librarys [5], and all of you. Keep on being awesome.
+
+[5] Little Free Library 1
+    gopher://gopher.black/1/phlog/20181014-little-free-library-part-1
+[5] Little Free Library 2
+    gopher://gopher.black/1/phlog/20190109-little-free-library-part-2
+[5] Little Free Library 3
+    gopher://gopher.black/1/phlog/20190115-little-free-library-part-3
+
+</pre>]]></description>
+</item>
+<item>
   <title>Tilde Black Online</title>
   <link>gopher://gopher.black/1/phlog/20190421-tilde-black-online/</link>
   <pubdate>Sun, 21 Apr 2019 00:00:00 -0400</pubdate>
@@ -673,57 +743,6 @@ Technical Collection Officer
 Directorate of Science and Technology
 
 Central Intelligence Agency
-</pre>]]></description>
-</item>
-<item>
-  <title>Tilde Tel</title>
-  <link>gopher://gopher.black/1/phlog/20190302-tilde-tel/</link>
-  <pubdate>Sat, 02 Mar 2019 00:00:00 -0500</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-tilde.tel
-March 02nd, 2019
-----------------------------------------
-
-cat (cat is excitement)
-ooh, cat (cat is adventure)
-oooh (glamour and glitter, babies and phones)
-
-cat has created something truly outrageous
-truly, truly, truly outrageous. 
-Whoa, cat! tilde.tel's contagious (outrageous)
-cat is his name, no one else is the same
-cat is his name
-
-      But we're the pubnix
-      Our tilde's better
-      We are the pubnix, the PUBNIX
-      And we're gonna get 'em
-
-CAT (CAT!), tilde.tel's contagious (outrageous)
-cat is his name, no one else is the same
-CAT IS HIS NAME!!!!
-
-                                    ,---,  
-                                 ,`--.' |  
-                          ___    |   :  :  
-                        ,--.'|_  '   '  ;  
-                        |  | :,' |   |  |  
-                        :  : ' : '   :  ;  
-   ,---.     ,--.--.  .;__,'  /  |   |  '  
-  /     \   /       \ |  |   |   '   :  |  
- /    / '  .--.  .-. |:__,'| :   ;   |  ;  
-.    ' /    \__\/: . .  '  : |__ `---'. |  
-'   ; :__   ," .--.; |  |  | '.'| `--..`;  
-'   | '.'| /  /  ,.  |  ;  :    ;.--,_     
-|   :    :;  :   .'   \ |  ,   / |    |`.  
- \   \  / |  ,     .-./  ---`-'  `-- -`, ; 
-  `----'   `--`---'                '---`"
-
-cat's tilde.tel
-    gopher://tilde.tel/1/
-sing-a-long
-    http://www.youtube.com/watch?v=DiXN5_KO-Ks
 </pre>]]></description>
 </item>
 </channel>
