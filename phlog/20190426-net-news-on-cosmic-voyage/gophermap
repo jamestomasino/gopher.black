@@ -140,6 +140,9 @@ i  tabs needed changes based on the length of the group name. If		gopher.black	7
 i  you line things up nicely with tabs you probably counted right.		gopher.black	70
 i  These names appear in the newsreader clients.		gopher.black	70
 i		gopher.black	70
+i  NOTE: before you add them to this file you need to actually create		gopher.black	70
+i  the groups using: sudo ctlinnd newgroup <groupname>		gopher.black	70
+i		gopher.black	70
 i  control                 Various control messages (no posting)		gopher.black	70
 i  control.cancel          Cancel messages (no posting)		gopher.black	70
 i  control.checkgroups     Hierarchy check control messages (no posting)		gopher.black	70
@@ -170,6 +173,11 @@ i		gopher.black	70
 i- OPEN PORT 119!!!!!		gopher.black	70
 i		gopher.black	70
 i  sudo ufw allow 119		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i- Restart innd		gopher.black	70
+i		gopher.black	70
+i  sudo ctlinnd xexec innd		gopher.black	70
 i		gopher.black	70
 i		gopher.black	70
 iI think that's it. Remember, your peer will need to set all this		gopher.black	70
