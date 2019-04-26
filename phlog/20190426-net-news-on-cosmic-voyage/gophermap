@@ -1,0 +1,179 @@
+i----------------------------------------		gopher.black	70
+inet news on cosmic.voyage		gopher.black	70
+iApril 26th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThanks to the hard work of pople like dbucklin, deepend and		gopher.black	70
+ivilmibm, we now have net news (read: USENET without the spam)		gopher.black	70
+iinstalled and working on cosmic.voyage AND it peers with		gopher.black	70
+inews.tildeverse.org and tilde.team! This is huge, folks.		gopher.black	70
+i		gopher.black	70
+iTo run it on cosmic, just type 'news'. I made a little wrapper		gopher.black	70
+iaround slrn that handles creating a configuration file and		gopher.black	70
+idownloading group descriptions. You can also run it from 'menu'.		gopher.black	70
+iBut that's not what I want to talk about on this phlog. Instead,		gopher.black	70
+iI'm going to _try_ to capture all the stuff I did to get it		gopher.black	70
+iworking. INN2 is not exactly intuitive to set up.		gopher.black	70
+i		gopher.black	70
+iFirst, the caveats:		gopher.black	70
+i		gopher.black	70
+i- This install is on Ubuntu. Your milage may vary.		gopher.black	70
+i- Peering is working for NEW messages, but we don't have historics		gopher.black	70
+i  syncing across systems yet. It probably has something to do with		gopher.black	70
+i  control messages.		gopher.black	70
+i- Peering requires both parties to set this up. You can't just set		gopher.black	70
+i  up your system to watch another. Each host must explicitly send		gopher.black	70
+i  to another AND listen for incoming messages from other specific		gopher.black	70
+i  hosts.		gopher.black	70
+i- You must have created the local groups on your system that you		gopher.black	70
+i  want to receive messages. They're not created automatically.		gopher.black	70
+i  Again, this is probably a function of control messages that we		gopher.black	70
+i  haven't figured out yet.		gopher.black	70
+i		gopher.black	70
+iNow, configuration:		gopher.black	70
+i		gopher.black	70
+i- Install inn2. In Ubuntu it's just apt install inn2. On openbsd		gopher.black	70
+i  you will need to use the --without-openssl switch or it will die		gopher.black	70
+i  on make.		gopher.black	70
+i		gopher.black	70
+i- Make sure that the 'news' user is created and all the folder		gopher.black	70
+i  paths listed in inn2's INSTALL file exist. If doing this via apt		gopher.black	70
+i  you should be good to go.		gopher.black	70
+i		gopher.black	70
+i- Files for configuration are mostly in /etc/news/ with one		gopher.black	70
+i  exception in /var/lib/news which we'll deal with at the end. If		gopher.black	70
+i  you're not on Ubuntu/Debian, the paths may be different. See		gopher.black	70
+i  INSTALL for a mapping by system.		gopher.black	70
+i		gopher.black	70
+i- /etc/news/inn.conf  # this is the main config		gopher.black	70
+i		gopher.black	70
+i  Changes:		gopher.black	70
+i		gopher.black	70
+i  organization: this is a site description in quotes		gopher.black	70
+i  pathhost, domain, server: all should be your fqdn		gopher.black	70
+i		gopher.black	70
+i- /etc/news/incoming.conf  # where to listen for new incoming data		gopher.black	70
+i		gopher.black	70
+i  At the bottom, follow this convention:		gopher.black	70
+i		gopher.black	70
+i  peer ME {		gopher.black	70
+i    hostname:         "localhost, 127.0.0.1, ::1"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  peer tildeverse {		gopher.black	70
+i    hostname:         "news.tildeverse.org"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  peer team {		gopher.black	70
+i    hostname:         "tilde.team"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i- /etc/news/innfeed.conf  # where are we sending our data		gopher.black	70
+i		gopher.black	70
+i  Define peers here. ip-name is the only required field:		gopher.black	70
+i		gopher.black	70
+i  peer team {		gopher.black	70
+i      ip-name: tilde.team		gopher.black	70
+i      initial-connections: 2		gopher.black	70
+i      max-connections: 5		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  peer tildeverse		gopher.black	70
+i  {		gopher.black	70
+i      ip-name: news.tildeverse.org		gopher.black	70
+i      initial-connections: 2		gopher.black	70
+i      max-connections: 5		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i- /etc/news/newsfeeds   # defines what we send to whom		gopher.black	70
+i		gopher.black	70
+i  This is the most complex file and hardest to grok. Note the		gopher.black	70
+i  !cosmic.* lines in the peers. That keeps cosmic's local groups		gopher.black	70
+i  (which start with cosmic.) from sending to remotes. Change it up		gopher.black	70
+i  for your own system.		gopher.black	70
+i		gopher.black	70
+i  innfeed!\		gopher.black	70
+i        :!*\		gopher.black	70
+i        :Tc,Wnm*\		gopher.black	70
+i        :/usr/lib/news/bin/innfeed		gopher.black	70
+i		gopher.black	70
+i  tildeverse\		gopher.black	70
+i        :*,!local,!local.*,!cosmic.*,!control,!control.*,!junk/!local\		gopher.black	70
+i        :Af,Ap,C20,G12,U5,<32768,Tm\		gopher.black	70
+i        :innfeed!		gopher.black	70
+i		gopher.black	70
+i  team\		gopher.black	70
+i        :*,!local,!local.*,!cosmic.*,!control,!control.*,!junk/!local\		gopher.black	70
+i        :Af,Ap,C20,G12,U5,<32768,Tm\		gopher.black	70
+i        :innfeed!		gopher.black	70
+i		gopher.black	70
+i- /etc/news/server  # should be your fqdn		gopher.black	70
+i		gopher.black	70
+i  cosmic.voyage		gopher.black	70
+i		gopher.black	70
+i- /etc/news/nntpsend.ctl  # actually sends the data!		gopher.black	70
+i		gopher.black	70
+i  # host : fqdn : size limit : flags		gopher.black	70
+i  tildeverse:news.tildeverse.org:2m:-t 180		gopher.black	70
+i  team:tilde.team:2m:-t 180		gopher.black	70
+i		gopher.black	70
+i- /etc/news/readers.conf  # for local stuff		gopher.black	70
+i		gopher.black	70
+i  newsgroups filters hide the junk and control folders from your		gopher.black	70
+i  local users. They don't need to see that junk.		gopher.black	70
+i		gopher.black	70
+i  auth "localhost" {		gopher.black	70
+i      hosts: "localhost, 127.0.0.1, ::1, stdin"		gopher.black	70
+i      default: "<localhost>"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  access "localhost" {		gopher.black	70
+i    users: "<localhost>"		gopher.black	70
+i    newsgroups: "*,!junk,!control,!control.*"		gopher.black	70
+i    access: RPA		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i- /var/lib/news/newsgroups  # all groups, local and remote		gopher.black	70
+i		gopher.black	70
+i  tabs separate the group name and the description. The number of		gopher.black	70
+i  tabs needed changes based on the length of the group name. If		gopher.black	70
+i  you line things up nicely with tabs you probably counted right.		gopher.black	70
+i  These names appear in the newsreader clients.		gopher.black	70
+i		gopher.black	70
+i  control                 Various control messages (no posting)		gopher.black	70
+i  control.cancel          Cancel messages (no posting)		gopher.black	70
+i  control.checkgroups     Hierarchy check control messages (no posting)		gopher.black	70
+i  control.newgroup        Newsgroup creation control messages (no posting)		gopher.black	70
+i  control.rmgroup         Newsgroup removal control messages (no posting)		gopher.black	70
+i  junk                    Unfiled articles (no posting)		gopher.black	70
+i  local.general           Local general group		gopher.black	70
+i  local.test              Local test group		gopher.black	70
+i  cosmic.general          General Discussion		gopher.black	70
+i  cosmic.storyhelp        Help with storylines and characters		gopher.black	70
+i  cosmic.worldbuilding    Expanding the universe		gopher.black	70
+i  tilde.cosmic            Tildeverse chat about cosmic.voyage		gopher.black	70
+i  tilde.meta		gopher.black	70
+i  tilde.services.uucp		gopher.black	70
+i  tilde.ascii		gopher.black	70
+i  tilde.food+drink		gopher.black	70
+i  tilde.javascript		gopher.black	70
+i  tilde.meetups		gopher.black	70
+i  tilde.nsfw		gopher.black	70
+i  tilde.php		gopher.black	70
+i  tilde.python		gopher.black	70
+i  tilde.poetry		gopher.black	70
+i  tilde.projects		gopher.black	70
+i  tilde.services		gopher.black	70
+i  tilde.team		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i- OPEN PORT 119!!!!!		gopher.black	70
+i		gopher.black	70
+i  sudo ufw allow 119		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iI think that's it. Remember, your peer will need to set all this		gopher.black	70
+iup to point back at you or nothing will share.		gopher.black	70
+i		gopher.black	70
+iIf we figure out the control group stuff I'll make a follow-up		gopher.black	70
+ipost.		gopher.black	70

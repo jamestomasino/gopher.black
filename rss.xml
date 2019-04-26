@@ -3,6 +3,192 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Net News On Cosmic Voyage</title>
+  <link>gopher://gopher.black/1/phlog/20190426-net-news-on-cosmic-voyage/</link>
+  <pubdate>Fri, 26 Apr 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+net news on cosmic.voyage
+April 26th, 2019
+----------------------------------------
+
+Thanks to the hard work of pople like dbucklin, deepend and
+vilmibm, we now have net news (read: USENET without the spam)
+installed and working on cosmic.voyage AND it peers with
+news.tildeverse.org and tilde.team! This is huge, folks.
+
+To run it on cosmic, just type 'news'. I made a little wrapper
+around slrn that handles creating a configuration file and
+downloading group descriptions. You can also run it from 'menu'.
+But that's not what I want to talk about on this phlog. Instead,
+I'm going to _try_ to capture all the stuff I did to get it
+working. INN2 is not exactly intuitive to set up.
+
+First, the caveats:
+
+- This install is on Ubuntu. Your milage may vary.
+- Peering is working for NEW messages, but we don't have historics
+  syncing across systems yet. It probably has something to do with
+  control messages.
+- Peering requires both parties to set this up. You can't just set
+  up your system to watch another. Each host must explicitly send
+  to another AND listen for incoming messages from other specific
+  hosts.
+- You must have created the local groups on your system that you
+  want to receive messages. They're not created automatically.
+  Again, this is probably a function of control messages that we
+  haven't figured out yet.
+
+Now, configuration:
+
+- Install inn2. In Ubuntu it's just apt install inn2. On openbsd
+  you will need to use the --without-openssl switch or it will die
+  on make.
+
+- Make sure that the 'news' user is created and all the folder
+  paths listed in inn2's INSTALL file exist. If doing this via apt
+  you should be good to go.
+
+- Files for configuration are mostly in /etc/news/ with one
+  exception in /var/lib/news which we'll deal with at the end. If
+  you're not on Ubuntu/Debian, the paths may be different. See
+  INSTALL for a mapping by system.
+
+- /etc/news/inn.conf  # this is the main config
+
+  Changes:
+
+  organization: this is a site description in quotes
+  pathhost, domain, server: all should be your fqdn
+
+- /etc/news/incoming.conf  # where to listen for new incoming data
+
+  At the bottom, follow this convention:
+
+  peer ME {
+    hostname:         "localhost, 127.0.0.1, ::1"
+  }
+
+  peer tildeverse {
+    hostname:         "news.tildeverse.org"
+  }
+
+  peer team {
+    hostname:         "tilde.team"
+  }
+
+- /etc/news/innfeed.conf  # where are we sending our data
+
+  Define peers here. ip-name is the only required field:
+
+  peer team {
+      ip-name: tilde.team
+      initial-connections: 2
+      max-connections: 5
+  }
+
+  peer tildeverse
+  {
+      ip-name: news.tildeverse.org
+      initial-connections: 2
+      max-connections: 5
+  }
+
+- /etc/news/newsfeeds   # defines what we send to whom
+
+  This is the most complex file and hardest to grok. Note the
+  !cosmic.* lines in the peers. That keeps cosmic's local groups
+  (which start with cosmic.) from sending to remotes. Change it up
+  for your own system.
+
+  innfeed!\
+        :!*\
+        :Tc,Wnm*\
+        :/usr/lib/news/bin/innfeed
+
+  tildeverse\
+        :*,!local,!local.*,!cosmic.*,!control,!control.*,!junk/!local\
+        :Af,Ap,C20,G12,U5,<32768,Tm\
+        :innfeed!
+
+  team\
+        :*,!local,!local.*,!cosmic.*,!control,!control.*,!junk/!local\
+        :Af,Ap,C20,G12,U5,<32768,Tm\
+        :innfeed!
+
+- /etc/news/server  # should be your fqdn
+
+  cosmic.voyage
+
+- /etc/news/nntpsend.ctl  # actually sends the data!
+
+  # host : fqdn : size limit : flags
+  tildeverse:news.tildeverse.org:2m:-t 180
+  team:tilde.team:2m:-t 180
+
+- /etc/news/readers.conf  # for local stuff
+
+  newsgroups filters hide the junk and control folders from your
+  local users. They don't need to see that junk.
+
+  auth "localhost" {
+      hosts: "localhost, 127.0.0.1, ::1, stdin"
+      default: "<localhost>"
+  }
+
+  access "localhost" {
+    users: "<localhost>"
+    newsgroups: "*,!junk,!control,!control.*"
+    access: RPA
+  }
+
+- /var/lib/news/newsgroups  # all groups, local and remote
+
+  tabs separate the group name and the description. The number of
+  tabs needed changes based on the length of the group name. If
+  you line things up nicely with tabs you probably counted right.
+  These names appear in the newsreader clients.
+
+  control                 Various control messages (no posting)
+  control.cancel          Cancel messages (no posting)
+  control.checkgroups     Hierarchy check control messages (no posting)
+  control.newgroup        Newsgroup creation control messages (no posting)
+  control.rmgroup         Newsgroup removal control messages (no posting)
+  junk                    Unfiled articles (no posting)
+  local.general           Local general group
+  local.test              Local test group
+  cosmic.general          General Discussion
+  cosmic.storyhelp        Help with storylines and characters
+  cosmic.worldbuilding    Expanding the universe
+  tilde.cosmic            Tildeverse chat about cosmic.voyage
+  tilde.meta
+  tilde.services.uucp
+  tilde.ascii
+  tilde.food+drink
+  tilde.javascript
+  tilde.meetups
+  tilde.nsfw
+  tilde.php
+  tilde.python
+  tilde.poetry
+  tilde.projects
+  tilde.services
+  tilde.team
+
+
+- OPEN PORT 119!!!!!
+
+  sudo ufw allow 119
+
+
+I think that's it. Remember, your peer will need to set all this
+up to point back at you or nothing will share.
+
+If we figure out the control group stuff I'll make a follow-up
+post.
+</pre>]]></description>
+</item>
+<item>
   <title>Solarpunk Thoughts</title>
   <link>gopher://gopher.black/1/phlog/20190425-solarpunk-thoughts/</link>
   <pubdate>Thu, 25 Apr 2019 00:00:00 -0400</pubdate>
@@ -38,8 +224,8 @@ financial incentives, the mores of competition vs honor, even the
 idea of humanity itself. It also reminds me of that endless
 conviction of Doctor Who that underpins everything [2]:
 
-[2] "Intellect and romance over brute force and cynicism!"
-    Intellect and romance over brute force and cynicism!
+[2] Intellect and romance over brute force and cynicism!
+    https://www.youtube.com/watch?v=0sK5d3oshp8
 
 Solarpunk is just this. Yes, there's an artistic aesthetic.
 There's probably something to be claimed as original for
@@ -657,92 +843,6 @@ Here's mine with no context:
 1. Mary Poppins
 2. Dune
 3. Harry Chapin - Cat's in the Cradle
-</pre>]]></description>
-</item>
-<item>
-  <title>The Spam Files Central Intellegence Agency</title>
-  <link>gopher://gopher.black/1/phlog/20190317-the-spam-files-central-intellegence-agency/</link>
-  <pubdate>Sun, 17 Mar 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-The Spam Files - Central Intellegence Agency
-March 17th, 2019
-----------------------------------------
-
-This is a really interesting new spam/blackmail attempt that I
-haven't seen before. I'm not sure exactly how it expects to be
-effective being that it requires the individual to sort-of admit
-to distribution and storage of child pornography. Hmmm...
-
-Well, here it is, with only the email targeted redacted.
-
-- - - - - - - - - - - - - - - - - - - -
-
-Case #47823596
-
-Distribution and storage of pornographic electronic materials
-involving underage children.
-
-My name is Sharika Snell and I am a technical collection officer
-working for Central Intelligence Agency.
-
-It has come to my attention that your personal details including
-your email address (<REDACTED>) are listed in case #47823596.
-
-The following details are listed in the document's attachment:
-
-    Your personal details,
-    Home address,
-    Work address,
-    List of relatives and their contact information.
-
-Case #47823596 is part of a large international operation set to
-arrest more than 2000 individuals suspected of paedophilia in 27
-countries.
-
-The data which could be used to acquire your personal information:
-
-    Your ISP web browsing history,
-    DNS queries history and connection logs,
-    Deep web .onion browsing and/or connection sharing,
-    Online chat-room logs,
-    Social media activity log.
-
-The first arrests are scheduled for April 8, 2019.
-
-Why am I contacting you ?
-
-I read the documentation and I know you are a wealthy person who
-may be concerned about reputation.
-
-I am one of several people who have access to those documents and
-I have enough security clearance to amend and remove your details
-from this case. Here is my proposition.
-
-Transfer exactly $10,000 USD (ten thousand dollars - about 2.5
-BTC) through Bitcoin network to this special bitcoin address:
-
-3CwcSdb9siP13NYpJ2Eck3dAfTAy3JCW1k
-
-You can transfer funds with online bitcoin exchanges such as
-Coinbase, Bitstamp or Coinmama. The deadline is March 27, 2019 (I
-need few days to access and edit the files).
-
-Upon confirming your transfer I will take care of all the files
-linked to you and you can rest assured no one will bother you.
-
-Please do not contact me. I will contact you and confirm only when
-I see the valid transfer.
-
-Regards,
-
-Sharika Snell
-
-Technical Collection Officer
-
-Directorate of Science and Technology
-
-Central Intelligence Agency
 </pre>]]></description>
 </item>
 </channel>
