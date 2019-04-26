@@ -1,0 +1,31 @@
+i----------------------------------------		gopher.black	70
+inet news on tilde.black		gopher.black	70
+iApril 26th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iWhat a great day for net news! Not only is cosmic.voyage,		gopher.black	70
+itilde.team, and news.tildeverse.org (yourtilde.com) peering, but		gopher.black	70
+inow tilde.black has been added as well. Tilde Black is my tilde		gopher.black	70
+idedicated to discussions, research and expirementation on the		gopher.black	70
+itopics of privacy, anonymity and and security. It's an openbsd		gopher.black	70
+imachine, which brought with it a new set of challenges. 		gopher.black	70
+i		gopher.black	70
+iHere's a quick note on special sauce needed for openbsd:		gopher.black	70
+i		gopher.black	70
+i- clone from source as there's no package		gopher.black	70
+i- make sure to install a bunch of perl dependencies listed in the		gopher.black	70
+i  INSTALL file. It makes heavy use of these during make		gopher.black	70
+i- use gmake not make if you can		gopher.black	70
+i- configure --without-openssl is a must. The specific requirements		gopher.black	70
+i  for TLS don't play nice with libssl		gopher.black	70
+i- once you make install the paths will not be /etc/news and		gopher.black	70
+i  /var/lib/news but rather /usr/local/news/etc and		gopher.black	70
+i  /usr/local/news/db respectively.		gopher.black	70
+i- innd won't start automatically. You'll need to change to the		gopher.black	70
+i  "news" user and run /usr/local/news/bin/rc.news start.		gopher.black	70
+i  I installed sudo to do it since my news user is non-login.		gopher.black	70
+i- /usr/local/news/bin is also the path to ctlinnd, which you need		gopher.black	70
+i  to install groups and restart the innd process.		gopher.black	70
+i		gopher.black	70
+iOtherwise the setup was pretty much the same as in my previous		gopher.black	70
+ipost. Very cool.		gopher.black	70

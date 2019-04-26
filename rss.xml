@@ -3,6 +3,44 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Net News On Tilde Black</title>
+  <link>gopher://gopher.black/1/phlog/20190426-net-news-on-tilde-black/</link>
+  <pubdate>Fri, 26 Apr 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+net news on tilde.black
+April 26th, 2019
+----------------------------------------
+
+What a great day for net news! Not only is cosmic.voyage,
+tilde.team, and news.tildeverse.org (yourtilde.com) peering, but
+now tilde.black has been added as well. Tilde Black is my tilde
+dedicated to discussions, research and expirementation on the
+topics of privacy, anonymity and and security. It's an openbsd
+machine, which brought with it a new set of challenges. 
+
+Here's a quick note on special sauce needed for openbsd:
+
+- clone from source as there's no package
+- make sure to install a bunch of perl dependencies listed in the
+  INSTALL file. It makes heavy use of these during make
+- use gmake not make if you can
+- configure --without-openssl is a must. The specific requirements
+  for TLS don't play nice with libssl
+- once you make install the paths will not be /etc/news and
+  /var/lib/news but rather /usr/local/news/etc and
+  /usr/local/news/db respectively.
+- innd won't start automatically. You'll need to change to the
+  "news" user and run /usr/local/news/bin/rc.news start.
+  I installed sudo to do it since my news user is non-login.
+- /usr/local/news/bin is also the path to ctlinnd, which you need
+  to install groups and restart the innd process.
+
+Otherwise the setup was pretty much the same as in my previous
+post. Very cool.
+</pre>]]></description>
+</item>
+<item>
   <title>Net News On Cosmic Voyage</title>
   <link>gopher://gopher.black/1/phlog/20190426-net-news-on-cosmic-voyage/</link>
   <pubdate>Fri, 26 Apr 2019 00:00:00 -0400</pubdate>
@@ -149,6 +187,9 @@ Now, configuration:
   you line things up nicely with tabs you probably counted right.
   These names appear in the newsreader clients.
 
+  NOTE: before you add them to this file you need to actually create
+  the groups using: sudo ctlinnd newgroup <groupname>
+
   control                 Various control messages (no posting)
   control.cancel          Cancel messages (no posting)
   control.checkgroups     Hierarchy check control messages (no posting)
@@ -179,6 +220,11 @@ Now, configuration:
 - OPEN PORT 119!!!!!
 
   sudo ufw allow 119
+
+
+- Restart innd
+
+  sudo ctlinnd xexec innd
 
 
 I think that's it. Remember, your peer will need to set all this
@@ -808,41 +854,6 @@ but none is actually working.
 Guys, I feel like I'm so damn close. Who wants to be my hero and
 swoop in and save the day. Gopher handlers will make my life 3%
 better overnight. Don't you want to be a part of that?
-</pre>]]></description>
-</item>
-<item>
-  <title>Fun Questions</title>
-  <link>gopher://gopher.black/1/phlog/20190330-fun-questions/</link>
-  <pubdate>Sat, 30 Mar 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Fun Questions
-March 30th, 2019
-----------------------------------------
-
-I'm in a fun mood, so let's do something fun!
-
-christyotwisty had a post on circumlunar not too long ago asking
-users a bunch of reading questions. I'd link to it, but I can't
-seem to find the phlog entry. Regardless, it was really fun and
-got a lot of gopherspace engagement. I miss gopherspace
-engagement! I want more. So, this is my blatant attempt to fish
-interaction out of you all.
-
-Who among you likes movies? How about music? Any readers? Good!
-I was thinking of a nice, difficult challenge to throw your way.
-
-1. Name one film that everyone should see at least once.
-2. Name one book everyone should read at least TWICE.
-3. Name one song everyone should listen to at least once a year.
-
-Why those rules? Cause clickbait, baby!
-
-Here's mine with no context:
-
-1. Mary Poppins
-2. Dune
-3. Harry Chapin - Cat's in the Cradle
 </pre>]]></description>
 </item>
 </channel>
