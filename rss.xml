@@ -3,6 +3,31 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Poppy</title>
+  <link>gopher://gopher.black/1/phlog/20190429-poppy/</link>
+  <pubdate>Mon, 29 Apr 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Poppy
+April 29th, 2019
+----------------------------------------
+
+I just learned about youtube personality and musician, Poppy.
+Thanks, brendantcc! Her music isn't bad, and the humor she
+obviously has with it makes it a pretty fun listen. The track "X"
+is my favorite so far with it's genre defying silliness. The rest
+of this (apparently 2nd) album seems a bit more like generic club
+stuff, but still catchy.
+
+Unfortunately for Poppy, I just grabbed the latest (and last)
+Cranberries album "In The End". It fills that Cranberries shaped
+hole in my heart perfectly. If you're a fan or still reeling from
+the loss of Dolores O'Riordan then have no fear in picking it up.
+Solid stuff. I'll be listening to this on repeat for a while.
+Maybe Poppy will still be a thing when I dig back out.
+</pre>]]></description>
+</item>
+<item>
   <title>Net News On Tilde Black</title>
   <link>gopher://gopher.black/1/phlog/20190426-net-news-on-tilde-black/</link>
   <pubdate>Fri, 26 Apr 2019 00:00:00 -0400</pubdate>
@@ -793,67 +818,6 @@ a lot of great movies to add to the playlist and I've been jamming
 to your songs all week.
 
 Keep gopherin' everyone!
-</pre>]]></description>
-</item>
-<item>
-  <title>Opening Gopher Links From Firefox In Lynx</title>
-  <link>gopher://gopher.black/1/phlog/20190411-opening-gopher-links-from-firefox-in-lynx/</link>
-  <pubdate>Thu, 11 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-opening gopher links from firefox in lynx
-April 11th, 2019
-----------------------------------------
-
-I was working on a goal of adding a new protocol handler to
-Firefox that would open gopher:// links in lynx. I think it's
-doable based on my research, but I'm not quite able to get it
-working. First of all, you can expose a protocol to request a new
-handler when invoked by adding a config item to Firefox via the
-about:config screen.
-
-network.protocol-handler.expose.gopher
-
-Add that entry as a boolean, and set it to false. Now the next
-time you click on a gopher link it will prompt you for the app to
-use. If you have a standalone gopher app with gui support, point
-at that and you're done! YAY!
-
-If you're like me and want it to launch a terminal window, start
-lynx, and browse to that gopher hole, well... I don't quite have
-the solve just yet. I found three potential ways to do it so far,
-but none is actually working.
-
-1. Point to a shell script that launches a terminal window running
-   lynx, and forward along the parameter. I created a bash script
-   that launched gnome-terminal and passed along the startup
-   script as lynx. Sounded good in theory, and if I invoke it from
-   the terminal myself it does indeed launch a new term running
-   lynx. That's cool, but Firefox seems to do nothing when it acts
-   as a handler. Damn.
-
-2. Define a new shell app like described in this webpage [0]
-[0] Firefox enable starting of scripts
-    https://www.bitkistl.com/2015/04/firefox-enable-starting-of-scripts-and.html
-
-3. Try to make a lynx.desktop file that will launch the lynx
-   browser. Here's mine:
-
-   [Desktop Entry]
-   Name=Lynx
-   Comment=Terminal Browser
-   Terminal=true
-   Type=Application
-   Exec=lynx %U
-   Categories=Application;Network;
-
-   That totally works once you trust it if you click on the app.
-   But it does jack shit when you try to use it as a Firefox
-   protocol handler. Ugh.
-
-Guys, I feel like I'm so damn close. Who wants to be my hero and
-swoop in and save the day. Gopher handlers will make my life 3%
-better overnight. Don't you want to be a part of that?
 </pre>]]></description>
 </item>
 </channel>
