@@ -3,6 +3,75 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Asmr</title>
+  <link>gopher://gopher.black/1/phlog/20190502-asmr/</link>
+  <pubdate>Thu, 02 May 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+ASMR
+May 02nd, 2019
+----------------------------------------
+
+                      *scritch scritch*
+
+                        *breathing*
+
+                       *tappy-taps*
+
+can you...
+
+
+                                                      ...hear me?
+
+
+                     *gentle mic rubs*
+
+                      *more breathing*
+
+
+welcome to my
+underground...
+
+
+              A
+
+
+                                                        S
+
+
+
+     M
+
+
+
+
+                                           R
+
+
+                                                      pure gopher
+                                                       experience
+
+
+i'm your
+hhhhhhhhhhhhhost
+
+
+
+                          tomasino
+
+
+
+                      *crinkling paper*
+
+                  *eating a hard shell taco*
+
+                    *popping bubble wrap*
+
+                    *even more breathing*
+
+</pre>]]></description>
+</item>
+<item>
   <title>Poppy</title>
   <link>gopher://gopher.black/1/phlog/20190429-poppy/</link>
   <pubdate>Mon, 29 Apr 2019 00:00:00 -0400</pubdate>
@@ -735,89 +804,6 @@ break probably won't mean great investments of time into tildes or
 even writing on Cosmic Voyage. There's a couple more months of
 this ahead, and then craziness once we arrive in Iceland.
 Hopefully I'll be slowing down a notch or two mid-August. :)
-</pre>]]></description>
-</item>
-<item>
-  <title>Phlog Listing Updates</title>
-  <link>gopher://gopher.black/1/phlog/20190411-phlog-listing-updates/</link>
-  <pubdate>Thu, 11 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-phlog listing updates
-April 11th, 2019
-----------------------------------------
-
-It looks like tilde.town recently updated gophernicus, which is
-awesome. Many of the servers out there running gophernicus leave
-the bottom footer active for their users, which shows the current
-gophernicus version that's running.
-
-In my /etc/default/gophernicus I like to disable headers, footers
-and the status page hidden at /server-status with the -nt -nh -nf
-flags, like so:
-
-OPTIONS="-o UTF-8 -nt -nh -nf -T 7070"
-
-Part of my reasoning is aesthetic. I don't need to show extra crud
-on gopher. Part of my reason is security. Not knowing which server
-I'm running may make attacks on it more difficult. Not seeing IP
-addresses of users engaged with my system helps them stay
-anonymous (server-status related). And part of my reasoning is so
-I don't accidentally trip up aggregators.
-
-When you upgrade gophernicus and that version in the footer
-changes, every aggregator out there suddenly thinks you made an
-update to your phlog. This happens routinely on SDF and suddenly
-every SDF member tracked on my moku-pona [0] sorts to the top of
-the list. Today that happened for our tilde.town users.
-
-Is it a big deal? Oh definitely not. Am I recommending others
-running gophernicus use those switches? It's totally up to them
-and I won't harp on the issue. I just want people to be aware that
-it's a thing. I suspect many would choose to add the flags if they
-knew about the situation, but I won't hold it against you if you
-disagree, or simply don't care. Gopher is whatever the hell you
-want to make it.
-
-Phlog Roll
-    gopher://gopher.black/1/phlogs
-
-- - - - - - - - - 
-
-Speaking of gopher being whatever the hell you want to make it,
-I was surprised to see Ze Libertine Gamer post recently that he
-may be deleting his phlog [1]. That's a real shock, to be honest.
-He's got some great content that goes back years. I wonder what
-sort of things might lead someone to deleting a phlog but not the
-entire gopher hole and I'm at a loss. I won't speculate here, but
-I will say to ZLG, I really hope you keep it around, even if you
-don't update very often. You've got some useful information you've
-shared and have been a big part of the community. I'd certainly
-miss your contributions.
-
-ZLG - 2019-04-10
-    gopher://zlg.space/0/phlog/2019-04-10_1813.txt
-
-- - - - - - - - - 
-
-To zcrayfish:
-
-I agree. WebP does indeed suck. [2] Stop trying to make "fetch"
-a thing, Google. Their sleasy method of inserting "switch to
-modern image formats" into website performance checkers is dirty
-and unwelcome. I don't like blackhat UI and I don't appreciate
-their "disruptions".
-
-zcrayfish - WebP Sucks
-    gopher://gopher.zcrayfish.soy/1/phlog/20190410-webp-sucks
-
-- - - - - - - - - 
-
-Thanks to all of you who answered my silly three questions. I got
-a lot of great movies to add to the playlist and I've been jamming
-to your songs all week.
-
-Keep gopherin' everyone!
 </pre>]]></description>
 </item>
 </channel>
