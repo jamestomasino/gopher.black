@@ -3,6 +3,26 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Tea And Shakuhachi</title>
+  <link>gopher://gopher.black/1/phlog/20190510-tea-and-shakuhachi/</link>
+  <pubdate>Fri, 10 May 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+tea and shakuhachi
+May 10th, 2019
+----------------------------------------
+
+I'm having an accidental Japanese moment. I'm prepping for
+a Traveller RPG game that will be starting in 30 minutes and I put
+on some Shakuhachi music [0] to test my headset. I also have
+a lovely cup of tea next to me. It's peaceful and I thought I'd
+share.
+
+[0] Rodrigo Rodriguez - A Winter Night
+    https://www.youtube.com/watch?v=wscHJc4NRfo
+</pre>]]></description>
+</item>
+<item>
   <title>Asmr</title>
   <link>gopher://gopher.black/1/phlog/20190502-asmr/</link>
   <pubdate>Thu, 02 May 2019 00:00:00 -0400</pubdate>
@@ -713,97 +733,6 @@ on this stuff and have the COOLEST. IDEA. EVER. that you can't
 share cause it's special. So don't. Keep that to yourself!
 Instead, join hyperboreddoubt and give him some of your B-level
 ideas, or just yell a bunch really loud to hype up the crowd.
-</pre>]]></description>
-</item>
-<item>
-  <title>Ssh Keys</title>
-  <link>gopher://gopher.black/1/phlog/20190414-ssh-keys/</link>
-  <pubdate>Sun, 14 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-ssh keys
-April 14th, 2019
-----------------------------------------
-
-I'm listening to Go Go Penguin's tiny desk concert [0] right now
-while I type this little phlog. You should join me if you can.
-They're incredible. 
-
-[0] Go Go Penguin Tiny Desk Concert
-    https://www.youtube.com/watch?v=47XlUL6sRow
-
-Yesterday I got snookered into starting up a new tilde [1] server
-called tilde.black. My reasoning was pretty simple: gopher.black
-is literally the only .black TLD site I know. I can't have someone
-else starting tilde.black! It must be me.
-
-[1] The Tildeverse
-    gopher://tildeverse.org/1/;tildeverse.org
-
-So I was going to spin up a general purpose thing in Ubuntu 18.04
-cause that's what I know best, but again I let myself get talked
-into doing more. So, the machine is running OpenBSD 6.4. It's
-going to be focused on privacy, anonymity, and security once
-I open her up to new members. And I was close today! I had web
-& gopher set up, lets encrypt all configured, tor worked on web,
-gopher and even SSH. All was glorious. But then something wonky
-happened with rcctl and a forum post I read recommended tossing
-some config line in place and restarting the box. Big. Mistake.
-
-So it didn't come back up and now I'm starting over. This time
-around though I wanted to give some time and consideration to my
-ssh keys and how I'm managing all that gibberish. One thing led to
-another and Michael W. Lucas's SSH Mastery book kept slapping me
-in the face. The way I had my keys set up was criminally simple
-and insecure. I needed to do something before I launch a project
-with security in the goals.
-
-So, I bit the bullet and dove in to posts on ssh-agent and using
-gpg-agent to interface with ssh and a host of other things. I can
-now say with the confidence of a person who skimmed web pages for
-an hour that all that shit needs some work. In fact, I hope it's
-something the community on tilde.black will do eventually. There
-should be simple guides for new people on these topics. There
-should be examples, recommendations, watch-outs, and more. Instead
-there's aging stack-exchange posts with scripts that throw errors
-in modern ssh-agent, hordes of contradictory blog posts, and
-worse. This is fundamental stuff for terminal work, guys! We can
-do better. The knowledge is in our circle, lets share it, okay?
-
-In the meantime I did what I always do. I said "eff it, I'll roll
-my own solution with a shell script". And I did! You can see it
-over here [2] if you want. Here's the gist:
-
-  1) Every service gets its own ssh key. Period. 
-  2) Every ssh key gets a password. 
-  3) These passwords are not all the same thing. 
-  4) Simple script to enable/disable the keys when I need them
-     without having to memorize all the passwords.
-
-[2] lssh
-    https://github.com/jamestomasino/dotfiles/blob/master/bin/lssh
-
-What I wrote is a wrapper around Lastpass, the password manager
-I use. Lastpass has a cli tool called lpass which is great.
-I added entries in Lastpass for each of my ssh keys' passwords,
-placed them into a sync folder using Spideroak (my preferred
-secure sync solution) and made an easy shell wrapper to activate
-whichever one I need. The activated key goes into ssh-agent. I can
-easily clear ssh-agent with ssh-add -D, so that didn't need any
-special wrapping (though I may add a quick switch to my script
-anyway for that purpose). It's all very basic stuff, again, but it
-works well and brings me closer to "safe" for my threat level.
-
-I'd like to clean the script up more and put some bells & whistles
-on it, but that will come with time.
-
-Next week it's back to the grindstone at work, but after Friday
-I have a week off. My mother-in-law is in town and there's some
-things I really need to focus on for the move, though, so this
-break probably won't mean great investments of time into tildes or
-even writing on Cosmic Voyage. There's a couple more months of
-this ahead, and then craziness once we arrive in Iceland.
-Hopefully I'll be slowing down a notch or two mid-August. :)
 </pre>]]></description>
 </item>
 </channel>
