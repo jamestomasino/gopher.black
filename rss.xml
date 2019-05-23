@@ -3,6 +3,39 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Offline For A Bit</title>
+  <link>gopher://gopher.black/1/phlog/20190523-offline-for-a-bit/</link>
+  <pubdate>Thu, 23 May 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+offline for a bit
+May 23rd, 2019
+----------------------------------------
+
+gopher.black will be going offline for a couple months sometime in
+early June. We're packing everything up to put on the container to
+ship to Iceland. That includes my lovely little pi here. Once we
+have a long-term place to live with internet access and a router
+that I can set up port forwarding on we'll be back in business.
+Until then, my lovely Moku Pona feed will disappear for a bit.
+
+The good news is my high quality phlogging action can still be
+found at the 3 mirroring locations I have:
+
+sdf mirror
+    gopher://sdf.org/1/user/tomasino
+tilde.town mirror
+    gopher://tilde.town/1/~tomasino
+yourtilde.com mirror
+    gopher://yourtilde.com/1/~tomasino
+
+I'm not sure when this site will be back. I'm guessing sometime in
+August. You can find me on IRC still during the break. 
+
+þetta reddast!
+</pre>]]></description>
+</item>
+<item>
   <title>Tea And Shakuhachi</title>
   <link>gopher://gopher.black/1/phlog/20190510-tea-and-shakuhachi/</link>
   <pubdate>Fri, 10 May 2019 00:00:00 -0400</pubdate>
@@ -706,33 +739,6 @@ for better things. Even if that's all we can do, I hope it gives
 you some solace.
 
 And drugs.
-</pre>]]></description>
-</item>
-<item>
-  <title>Gopher Conlang Yes Please</title>
-  <link>gopher://gopher.black/1/phlog/20190416-gopher-conlang-yes-please/</link>
-  <pubdate>Tue, 16 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-gopher conlang? Yes please!
-April 16th, 2019
-----------------------------------------
-
-Guys! hyperboreddoubt has a new gopherhole on tilde.pink (btw,
-tilde.pink is a thing now) and his new place is focused on putting
-together an invented language for the intersection of tildes and
-gopher. Cool right? You bet your ass it is.
-
-Conlang for Gopher and Tildes
-    gopher://tilde.pink/1/~ff69b4
-
-Now I know you're secretly into conlangs and have been working on
-your own one that you'll use in your amazing novels whenever you
-get around to writing them. You've got a whole folder of bookmarks
-on this stuff and have the COOLEST. IDEA. EVER. that you can't
-share cause it's special. So don't. Keep that to yourself!
-Instead, join hyperboreddoubt and give him some of your B-level
-ideas, or just yell a bunch really loud to hype up the crowd.
 </pre>]]></description>
 </item>
 </channel>
