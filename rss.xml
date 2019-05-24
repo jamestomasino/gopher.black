@@ -3,6 +3,34 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Robots Txt</title>
+  <link>gopher://gopher.black/1/phlog/20190524-robots-txt/</link>
+  <pubdate>Fri, 24 May 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+robots.txt
+May 24th, 2019
+----------------------------------------
+
+I've run a little disallow robots.txt file on this gopher hole for
+a while. Now there's been more discussion about its inclusion on
+gopher for gopher search engines. This leads me to a little
+problem.
+
+My robots.txt file is not meant for gopher crawlers. I created it
+because I do not want my site crawled by web crawlers trawling
+through proxies to gopher. There's some question as to whether
+a robots.txt file is effective in that way (technically the proxy
+should have one, not the site itself), but I thought it better
+than nothing.
+
+Now I have a dilemma. I would very much like my site to be crawled
+by Veronica-2 and other gopher-centric search engines, but I don't
+want Google plopping my burrowy-thoughts on the web. What's
+a gopher to do?
+</pre>]]></description>
+</item>
+<item>
   <title>Offline For A Bit</title>
   <link>gopher://gopher.black/1/phlog/20190523-offline-for-a-bit/</link>
   <pubdate>Thu, 23 May 2019 00:00:00 -0400</pubdate>
@@ -703,42 +731,6 @@ over tor using the user "buffalo". I'm using tilde.black's tor
 address as an example.
 
 So give it a try and let me know it worked for you!
-</pre>]]></description>
-</item>
-<item>
-  <title>Re Cat Dispossession</title>
-  <link>gopher://gopher.black/1/phlog/20190416-re-cat-dispossession/</link>
-  <pubdate>Tue, 16 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-re: cat dispossession
-April 16th, 2019
-----------------------------------------
-
-Recently cat phlogged [0] a thing that made me sad. I like that
-dude a lot and hearing about the tough stuff he's feeling made me
-wish I could fix it.
-
-[0] cat - anxiety, dispossession & cult leader live
-    gopher://baud.baby/0/phlog/fs20190414.txt
-
-I can't do much for your anxiety, cat, or fix the state of the
-world's social spaces. I wish I could channel more of the fun
-"small internet" vibe to keep you thriving. I guess the one thing
-I can do is not focus on techy stuff on my gopher all the time.
-I don't know what my ratio of tech to non-tech is, but I'll try to
-keep it in mind. I have so many tech outlets and not many that
-I can just write my thoughts as they come to me, post them, and
-know that people are out there reading. That's pretty cool and
-I don't want to abuse it.
-
-You've got that too, cat. I guess if things feel like they're
-boiling over, feel free to drop us a phlog and rant and rave, or
-whatever it takes to get back to yourself. We all read it and hope
-for better things. Even if that's all we can do, I hope it gives
-you some solace.
-
-And drugs.
 </pre>]]></description>
 </item>
 </channel>

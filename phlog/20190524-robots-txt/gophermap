@@ -1,0 +1,21 @@
+i----------------------------------------		gopher.black	70
+irobots.txt		gopher.black	70
+iMay 24th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI've run a little disallow robots.txt file on this gopher hole for		gopher.black	70
+ia while. Now there's been more discussion about its inclusion on		gopher.black	70
+igopher for gopher search engines. This leads me to a little		gopher.black	70
+iproblem.		gopher.black	70
+i		gopher.black	70
+iMy robots.txt file is not meant for gopher crawlers. I created it		gopher.black	70
+ibecause I do not want my site crawled by web crawlers trawling		gopher.black	70
+ithrough proxies to gopher. There's some question as to whether		gopher.black	70
+ia robots.txt file is effective in that way (technically the proxy		gopher.black	70
+ishould have one, not the site itself), but I thought it better		gopher.black	70
+ithan nothing.		gopher.black	70
+i		gopher.black	70
+iNow I have a dilemma. I would very much like my site to be crawled		gopher.black	70
+iby Veronica-2 and other gopher-centric search engines, but I don't		gopher.black	70
+iwant Google plopping my burrowy-thoughts on the web. What's		gopher.black	70
+ia gopher to do?		gopher.black	70
