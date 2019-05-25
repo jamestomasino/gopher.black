@@ -31,6 +31,29 @@ a gopher to do?
 </pre>]]></description>
 </item>
 <item>
+  <title>Not Going Anywhere</title>
+  <link>gopher://gopher.black/1/phlog/20190524-not-going-anywhere/</link>
+  <pubdate>Fri, 24 May 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Not going anywhere
+May 24th, 2019
+----------------------------------------
+
+Remember like five minutes ago when I said gopher.black was going
+offline for a bit? [0] Yeah, I'm full of crap. I spent a couple
+hours tonight and migrated everything on that lovely little
+raspberry pi that's been in my bedroom up to a sexy little VM on
+vultr. Gopher.black is out among the clouds now, and it's not
+going anywhere while I move. So, keep your dial tuned to that
+gophery station if you dig what you see. More shenanigans are on
+their way.
+
+[0] offline for a bit
+    gopher://gopher.black/1/phlog/20190523-offline-for-a-bit
+</pre>]]></description>
+</item>
+<item>
   <title>Offline For A Bit</title>
   <link>gopher://gopher.black/1/phlog/20190523-offline-for-a-bit/</link>
   <pubdate>Thu, 23 May 2019 00:00:00 -0400</pubdate>
@@ -525,212 +548,6 @@ will know the difference!
 
 In case you're curious, openbsd doesn't seem to have any noticable
 slowdown with 10,000 user accounts. That's pretty cool!
-</pre>]]></description>
-</item>
-<item>
-  <title>Ssh Over Tor</title>
-  <link>gopher://gopher.black/1/phlog/20190420-ssh-over-tor/</link>
-  <pubdate>Sat, 20 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-ssh over tor
-April 20th, 2019
-----------------------------------------
-
-My upcoming tilde server, tilde.black, is going to be focused on
-privacy, anonymity, and security. As part of that effort the tilde
-itself is a playground for activites and code that supports those
-efforts. One example of this is connecting to the server over tor.
-
-As described in a LifeHacker article [0]:
-[0] LifeHacker article
-    https://lifehacker.com/what-is-tor-and-should-i-use-it-1527891029
-
-    Tor is short for The Onion Router (thus the logo) and was
-    initially a worldwide network of servers developed with the
-    U.S. Navy that enabled people to browse the internet
-    anonymously. Now, it's a non-profit organization whose main
-    purpose is the research and development of online privacy
-    tools.
-
-    The Tor network disguises your identity by moving your traffic
-    across different Tor servers, and encrypting that traffic so
-    it isn't traced back to you. Anyone who tries would see
-    traffic coming from random nodes on the Tor network, rather
-    than your computer. 
-
-We have tor running on tilde.black and some services are offered
-there directly as "onion services". You can browse the website by
-using a tor browser and going to http://tdblackjcbw5kc46.onion. Or
-you can view the gopher site at gopher://tdblackjcbw5kc46.onion.
-Finally, you can ssh to the machine at tdblackjcbw5kc46.onion
-instead of tilde.black.
-
-    (Some people may note that the web link protocol above is
-    HTTP, not HTTPS. Onion sites are already end-to-end encrypted
-    and get no benefit from HTTPS beyond publishing their
-    identity, which in many cases is contrary to the goals of
-    having an onion site. Browsing non-onion sites on tor is still
-    best done with HTTPS, though, because all traffic from an exit
-    node to that server will need some method of encryption.)
-
-So why might we want to use tor to ssh? Anonymity of course! When
-you log into a shared system other users can see a lot of
-information about you as a user. For instance, here's just the
-first few lines of output from the 'w' command on cosmic.voyage:
-
-USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-tomasino pts/0    98.22.17.30-     08:27    1.00s  0.09s  0.00s tmux -u2 attach
-
-Well lookie there... my IP address. Depending on my threat model,
-that may not be something I want to leave lying around everywhere
-I go since it can be traced back to me so easily. So lets look at
-one small way we can incrementally help stay anonymous.
-
-PART ONE: tor on the server
-
-I've covered this process in the past [1] to show how easy it is
-to set up gopher over tor. Lets review the basics again anyway.
-[1] gopher.black on tor
-    gopher://gopher.black/1/phlog/20180427-gopher-black-on-tor-part-1
-
-You'll need to:
-    - Install tor
-    - Configure tor
-    - Start tor
-    - Find your hostname
-
-
-Step 1: Install tor
-
-Check out the install instructions on the tor website. In mos
-cases it's as simple as:
-
-    sudo apt install tor
-
-Step 2: Configure tor
-
-Everything you need to configure in tor is located at
-/etc/tor/torrc. Edit that file and search for HiddenServiceDir.
-Uncomment or add lines as follows
-
- HiddenServiceDir /var/lib/tor/hidden_service/
- HiddenServicePort 22 127.0.0.1:22
-
-The first line is where your hidden service will store all its
-secrets, like the private key it's going to auto-generate for you.
-We'll look there in a minute to find the hostname. NOTE: the
-/hidden_service/ part of the directory path is changable. If you
-want to run multiple different tor services by different names,
-you can add more of these blocks and change that /hidden_service/
-to something else, like /pants/ or /web/. A cooresponding folder
-will be created automatically when you run tor.
-
-The HiddenServicePort line maps tor's port to your system's port.
-If you are running ssh on port 22, this is what you'll need. NOTE:
-Running ssh on another port does not add any tangible security,
-but can help avoid log spam from bots that hammer at port 22.
-
-Step 3: Start tor
-
-    sudo service tor start # linuxy style
-    rcctl enable tor && rcctl start tor # openbsd style
-
-Step 4: Find your hostname
-
-As a super-user, browse to the directory listed in
-HiddenServiceDir and you will see two files, a private key and
-a hostname. View the hostname file and you'll see your public
-onion address. Copy that for later. The private key is something
-you may want to back up if you want to use this onion address
-safely in the future. If you lose the private key you will not be
-able to run tor at that onion address anymore. The generation of
-onion addresses can be done more creatively using tools like
-Eschalot to hash millions of possible onion addresses until you
-find a pattern that matches what you like. For instance,
-tilde.black has the onion address:
-
-    tdblackjcbw5kc46.onion
-
-PART TWO: tor on the client
-
-In order to ssh over tor, we'll need some way to make our terminal
-session or a terminal command run over the tor network. My
-favorite way to do this is with a program called 'torsocks'. This
-utility pushes a single command or an entire shell through a socks
-proxy to your tor connection. Since torsocks is just a socks proxy
-that means we'll need to do a couple things to get it to work.
-
-You'll need to:
-    - Install tor
-    - Configure tor
-    - Install torsocks
-    - Configure torsocks
-    - Start tor & torsocks
-    - ssh
-
-Step 1: Install tor
-
-Just like on the server you'll need to install tor on your local
-machine. Read up on the tor website to see which method works best
-for your operating system. It's probably a one-liner.
-
-Step 2: Configure tor
-
-We need to configure our local tor differently than we did the
-server. We don't need any hidden services this time, but we do
-need to allow local connections to use it as a SOCKS proxy. Here's
-the key lines you'll need to uncomment, change, or add:
-
-    SOCKSPort 9050
-    SOCKSPolicy accept 192.168.0.0/16
-    SOCKSPolicy accept6 FC00::/7
-    ControlPort 9051
-    CookieAuthentication 1
-
-Step 3: Install torsocks
-
-    sudo apt install torsocks # linux
-    pkg_add torsocks # openbsd
-    brew install torsocks # probably works on osx?
-
-Step 4: Configure torsocks
-
-To be honest, I don't remember if this is required or if it comes
-like this out of the box. Edit the file /etc/tor/torsocks.conf and
-verify that the following lines are present and not commented out:
-
-    TorAddress 127.0.0.1
-    TorPort 9050
-
-Step 5: Start tor & torsocks
-
-Now that everything is all configured, whenever you want to run
-torsocks you'll need to first start tor in another terminal or
-tmux pane. Running tor is as easy as typing:
-
-    $ tor
-
-You'll get some interesting output before it eventually says 100%
-bootstrapped. That means you're up and running. Now in your other
-terminal window you can start the torsocks proxy connection like
-so:
-
-    $ . torsocks on
-
-This will respond back with: "Tor mode activated. Every command
-will be torified for this shell." And that's exactly it. You
-should be fully running now and able to try your ssh connection.
-
-Step 6: ssh
-
-    $ ssh buffalo@tdblackjcbw5kc46.onion -p 1337
-
-A connection like above will try to connect to ssh on port 1337
-over tor using the user "buffalo". I'm using tilde.black's tor
-address as an example.
-
-So give it a try and let me know it worked for you!
 </pre>]]></description>
 </item>
 </channel>
