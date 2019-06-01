@@ -3,6 +3,147 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Everything Is Evil</title>
+  <link>gopher://gopher.black/1/phlog/20190601-everything-is-evil/</link>
+  <pubdate>Sat, 01 Jun 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+everything is evil
+June 01st, 2019
+----------------------------------------
+
+There's a link on tilde.news [0] to a blog post by Nolan Lawson on
+"Tech Veganism" [1]. It is, in his summary:
+
+ - a preference for open-source software over proprietary software
+ - a suspicion of big tech companies 
+ - a high bar for privacy and security
+
+[0] tilde.news
+    https://tilde.news
+[1] Tech Veganism
+    https://nolanlawson.com/2019/05/31/tech-veganism/
+
+My initial reaction was a visceral gagging at the name. I readied
+my angriest typing fingers and opened up the lobste.rs style
+comments ready to dive in as soon as I consumed this article.
+I opened it up, clicked on my Stutter [2] icon and binged it in
+a minute.
+
+[2] Stutter
+    https://github.com/jamestomasino/stutter
+
+What came out deflated me. He argues some good points early on in
+the ways that the behavior of open source purists, security
+experts, and digital conspiracy theorists comes across to others
+in the same ways as veganism (or crossfit). And, while the article
+loses some focus toward the end, it did a decent job of what it
+set out to do.
+
+It got me thinking about the whole situation from a different
+perspective. For a moment I was running in place like Fred
+Flinstone [3] trying to snap an argument into place so I could
+fill in that comment box, but eventually I gave up.
+
+[3] Flinstones Running
+    https://www.hooktube.com/watch?v=TudMykewh_I
+
+Instead, I imagined the mid-century world with its post-war
+optimism and renewed sense of manifest destiny in the United
+States. In place of a territorial expansion it was an expansion of
+the confidence of indifatigable America and its moral democracy
+and powerful innovation. You can feel it in the pride of the
+newsreels. The awe capped off with a man standing on the moon.
+Progress is perfect. Capitalism and the democratic republic,
+combined with the "cowboy" ideal and puritan ethics is the
+ultimate way forward. Every child will have a better life than
+their parent and the world will grow in all things exponentially.
+
+And so with the invincible self-confidence of a teenage boy on
+a half-pipe, America jumped head first. Its power on the world
+stage was unequaled militarily and in terms of media. Regulation
+and timidity took a back seat and we all went barrelling down the
+ramp.
+
+But the mid-century sci-fi authors taught us something else. It
+lingered in their messages, only to hit main stream pop culture
+years later. We saw the danger of machines, of a runaway state, of
+unchecked power, of the masses deciding for all. Literature,
+comics, art, they put a spotlight on all aspects of life, not just
+the "big dream" of a nation. They help us see the cracks. Even
+post-war, things were not perfect by any means, as those who
+suffered outrageous oppression (and still do) can attest. They
+were not part of that narrative. Unchecked capitalism devours
+everything it touches, and so it did to the American economy in
+the 70s. The counter-culture of disco, an attempt at glamour in
+the squalid realities of life, is art screaming for help.
+
+Here we are three quarters of a century on from that ridiculous
+vision of a country who can do no wrong. We see those ideals
+spread far, far beyond the US boundaries. The ideas themselves are
+an identity for many, disconnected from their birthplace. Even now
+we hear the same tripe of trickle-down economics cross the lips of
+idiots. Even now we have those who believe in their hearts that
+technology will save us from ourselves, as if innovation could
+ever outpace hubris.
+
+That was the daydream of thoughts that overtook me from this
+little article on tech veganism. And with that lense I look again
+and see something different. I don't see angry white men sitting
+at their computers bitching about Google spying on them. I see
+people who are walking with the rest of the world across
+a landscape of ease and luxury, but have stumbled and looked down
+and realized what we're crushing under our feet with each step.
+
+Progress isn't perfect.
+
+Everything we do has the infinite consequences that come from
+being a part of this insane system of reality, a piece of humanity
+as a whole, and a spec of unique life in the midst of a biosphere
+hugging an oblique spheriod tumbling through the vacuum of space
+like mildew around a shower handle. Everything about us is messy,
+gross, and complex. It's hard enough to change something
+intentionally for the good without unintended consequences
+crushing your idea of progress. And it is so much easier to do
+immesurable damage to our world and ourselves with the reckless
+abandon of innovation for its own sake (or worse, for money).
+
+I think back to the optimism of the space age and the pulp view of
+"good" that it represents. It is not an objective reality, but it
+had a presence and an affect at the time. In that way it was
+"real". Today our tech advancements promise us pleasure and ease
+and luxury at the cost of data, access, information, exposure, and
+all the other little things that seem intangible and "no big deal"
+in marketing-speak. Many, many people will take that deal. Why
+not? Why pay for TV when you can sit through ads and let the
+company know what you like. You'll just get better targeted ads.
+Where's the harm? Right?
+
+Where the dewey-eyed comic view of the 40s and 50s had eyes on
+shiny rockets and travels to the moon, these days we know the
+ineffible terror of an all-powerful algorithm, a machine
+intelligence, churning numbers about each of us and uncovering
+secrets we didn't know we had. We know governments use these for
+their own aims, often against the individual. We know hackers can
+exploit this. We know that advertisers care about money, not what
+we want to see. We know that consumerism will push us toward
+a place where we spend every dollar and borrow more to spend
+ourselves into debt. We know that the world will enslave us in
+a thousand ways to keep power with those in power.
+
+We know, in effect, that the whole world is driven by evil
+intentions. Evil in selfishness and in dehumanization and in the
+lack of concern for future generations, environment, and the world
+in general. 
+
+Everything is evil.
+
+It might not be objective reality, but it has a presence and
+affect on everything. In that way it is our "reality". It's almost
+enough to make me accept the vegan label without cringing. Almost.
+</pre>]]></description>
+</item>
+<item>
   <title>Board Games</title>
   <link>gopher://gopher.black/1/phlog/20190529-board-games/</link>
   <pubdate>Wed, 29 May 2019 00:00:00 -0400</pubdate>
@@ -562,76 +703,6 @@ up to point back at you or nothing will share.
 
 If we figure out the control group stuff I'll make a follow-up
 post.
-</pre>]]></description>
-</item>
-<item>
-  <title>Solarpunk Thoughts</title>
-  <link>gopher://gopher.black/1/phlog/20190425-solarpunk-thoughts/</link>
-  <pubdate>Thu, 25 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-solarpunk thoughts
-April 25th, 2019
-----------------------------------------
-
-cmccabe just posted [0] some thoughts on solarpunk as a cultural
-phenomenon, as a set of aesthetics surrounding shared goals for
-the future, and as a visual and literary style. It's worth the
-quick read. Go check it out, I'll wait here.
-
-[0] cmccabe - solarpunk optimism 
-    gopher://zaibatsu.circumlunar.space/0/~cmccabe/15-solarpunk-optimism.txt
-
-As it so often happens on gopher, his phlog set off a chain of
-thought in me that is tangential. It reminded me of a fantastic
-book from last year's reading list [1]:
-
-[1] Trekonomics: The Economics of Star Trek
-    https://www.goodreads.com/book/show/27040338-trekonomics
-
-In this surprisingly-great book, author Manu Saadia makes a case
-for the true vision of Star Trek future through the lens of the
-morals, values, and hard economics that underpin the series’ ideal
-society. It's a substantial work that deserves serious attention.
-
-The utopian future of Star Trek is optimistic and it manages to
-challenge us in many unique ways. It questions our need for
-financial incentives, the mores of competition vs honor, even the
-idea of humanity itself. It also reminds me of that endless
-conviction of Doctor Who that underpins everything [2]:
-
-[2] Intellect and romance over brute force and cynicism!
-    https://www.youtube.com/watch?v=0sK5d3oshp8
-
-Solarpunk is just this. Yes, there's an artistic aesthetic.
-There's probably something to be claimed as original for
-a literary style as well. Ultimately, though, it is a response to
-the gritty, post-modern brutalism of cyberpunk. Instead of the
-wastelands of Detroit overrun by cyber-drugs [3], we see green
-pasture-lands infused with a shining beacon of optimism in the
-form of solar arrays and wind turbines.
-
-[3] NUKE
-    https://www.youtube.com/watch?v=2Hg-nM3YLnE
-
-I can take or leave Earth Day. It's not a part of solarpunk as
-much as a Delorian topped with a "Mr. Fusion", or as much as a guy
-on gopher that powers his farm with a solar array and shares his
-water conservation stories on his phlog [4].
-
-[4] melton
-    gopher://sdf.org/1/users/melton/
-
-It all gives me hope. Star Trek, Doctor Who, gopher,
-little-free-librarys [5], and all of you. Keep on being awesome.
-
-[5] Little Free Library 1
-    gopher://gopher.black/1/phlog/20181014-little-free-library-part-1
-[5] Little Free Library 2
-    gopher://gopher.black/1/phlog/20190109-little-free-library-part-2
-[5] Little Free Library 3
-    gopher://gopher.black/1/phlog/20190115-little-free-library-part-3
-
 </pre>]]></description>
 </item>
 </channel>
