@@ -3,6 +3,26 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Strike A Pose</title>
+  <link>gopher://gopher.black/1/phlog/20190605-strike-a-pose/</link>
+  <pubdate>Wed, 05 Jun 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+strike a pose
+June 05th, 2019
+----------------------------------------
+
+I was reading a twitter thread about the history of linked-list
+questions in interviews [0] and a commenter asked how the poster
+added a strikethrough to a tweet. He linked to a neat little site
+that lets you type a message and generate a unicode strikethrough
+version. You can then copy the g̶o̶o̶f̶y̶ ̶s̶h̶e̶n̶a̶n̶i̶g̶a̶n̶s̶ well-formatted
+unicode and it should show up for you.
+
+I obviously had to p̶r̶o̶v̶e̶ ̶m̶y̶ ̶n̶e̶r̶d̶i̶n̶e̶s̶s̶ test it out!
+</pre>]]></description>
+</item>
+<item>
   <title>Everything Is Evil</title>
   <link>gopher://gopher.black/1/phlog/20190601-everything-is-evil/</link>
   <pubdate>Sat, 01 Jun 2019 00:00:00 -0400</pubdate>
@@ -110,7 +130,7 @@ abandon of innovation for its own sake (or worse, for money).
 
 I think back to the optimism of the space age and the pulp view of
 "good" that it represents. It is not an objective reality, but it
-had a presence and an affect at the time. In that way it was
+had a presence and an effect at the time. In that way it was
 "real". Today our tech advancements promise us pleasure and ease
 and luxury at the cost of data, access, information, exposure, and
 all the other little things that seem intangible and "no big deal"
@@ -139,7 +159,7 @@ in general.
 Everything is evil.
 
 It might not be objective reality, but it has a presence and
-affect on everything. In that way it is our "reality". It's almost
+effect on everything. In that way it is our "reality". It's almost
 enough to make me accept the vegan label without cringing. Almost.
 </pre>]]></description>
 </item>
@@ -509,200 +529,6 @@ Here's a quick note on special sauce needed for openbsd:
 
 Otherwise the setup was pretty much the same as in my previous
 post. Very cool.
-</pre>]]></description>
-</item>
-<item>
-  <title>Net News On Cosmic Voyage</title>
-  <link>gopher://gopher.black/1/phlog/20190426-net-news-on-cosmic-voyage/</link>
-  <pubdate>Fri, 26 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-net news on cosmic.voyage
-April 26th, 2019
-----------------------------------------
-
-Thanks to the hard work of pople like dbucklin, deepend and
-vilmibm, we now have net news (read: USENET without the spam)
-installed and working on cosmic.voyage AND it peers with
-news.tildeverse.org and tilde.team! This is huge, folks.
-
-To run it on cosmic, just type 'news'. I made a little wrapper
-around slrn that handles creating a configuration file and
-downloading group descriptions. You can also run it from 'menu'.
-But that's not what I want to talk about on this phlog. Instead,
-I'm going to _try_ to capture all the stuff I did to get it
-working. INN2 is not exactly intuitive to set up.
-
-First, the caveats:
-
-- This install is on Ubuntu. Your milage may vary.
-- Peering is working for NEW messages, but we don't have historics
-  syncing across systems yet. It probably has something to do with
-  control messages.
-- Peering requires both parties to set this up. You can't just set
-  up your system to watch another. Each host must explicitly send
-  to another AND listen for incoming messages from other specific
-  hosts.
-- You must have created the local groups on your system that you
-  want to receive messages. They're not created automatically.
-  Again, this is probably a function of control messages that we
-  haven't figured out yet.
-
-Now, configuration:
-
-- Install inn2. In Ubuntu it's just apt install inn2. On openbsd
-  you will need to use the --without-openssl switch or it will die
-  on make.
-
-- Make sure that the 'news' user is created and all the folder
-  paths listed in inn2's INSTALL file exist. If doing this via apt
-  you should be good to go.
-
-- Files for configuration are mostly in /etc/news/ with one
-  exception in /var/lib/news which we'll deal with at the end. If
-  you're not on Ubuntu/Debian, the paths may be different. See
-  INSTALL for a mapping by system.
-
-- /etc/news/inn.conf  # this is the main config
-
-  Changes:
-
-  organization: this is a site description in quotes
-  pathhost, domain, server: all should be your fqdn
-
-- /etc/news/incoming.conf  # where to listen for new incoming data
-
-  At the bottom, follow this convention:
-
-  peer ME {
-    hostname:         "localhost, 127.0.0.1, ::1"
-  }
-
-  peer tildeverse {
-    hostname:         "news.tildeverse.org"
-  }
-
-  peer team {
-    hostname:         "tilde.team"
-  }
-
-- /etc/news/innfeed.conf  # where are we sending our data
-
-  Define peers here. ip-name is the only required field:
-
-  peer team {
-      ip-name: tilde.team
-      initial-connections: 2
-      max-connections: 5
-  }
-
-  peer tildeverse
-  {
-      ip-name: news.tildeverse.org
-      initial-connections: 2
-      max-connections: 5
-  }
-
-- /etc/news/newsfeeds   # defines what we send to whom
-
-  This is the most complex file and hardest to grok. Note the
-  !cosmic.* lines in the peers. That keeps cosmic's local groups
-  (which start with cosmic.) from sending to remotes. Change it up
-  for your own system.
-
-  innfeed!\
-        :!*\
-        :Tc,Wnm*\
-        :/usr/lib/news/bin/innfeed
-
-  tildeverse\
-        :*,!local,!local.*,!cosmic.*,!control,!control.*,!junk/!local\
-        :Af,Ap,C20,G12,U5,<32768,Tm\
-        :innfeed!
-
-  team\
-        :*,!local,!local.*,!cosmic.*,!control,!control.*,!junk/!local\
-        :Af,Ap,C20,G12,U5,<32768,Tm\
-        :innfeed!
-
-- /etc/news/server  # should be your fqdn
-
-  cosmic.voyage
-
-- /etc/news/nntpsend.ctl  # actually sends the data!
-
-  # host : fqdn : size limit : flags
-  tildeverse:news.tildeverse.org:2m:-t 180
-  team:tilde.team:2m:-t 180
-
-- /etc/news/readers.conf  # for local stuff
-
-  newsgroups filters hide the junk and control folders from your
-  local users. They don't need to see that junk.
-
-  auth "localhost" {
-      hosts: "localhost, 127.0.0.1, ::1, stdin"
-      default: "<localhost>"
-  }
-
-  access "localhost" {
-    users: "<localhost>"
-    newsgroups: "*,!junk,!control,!control.*"
-    access: RPA
-  }
-
-- /var/lib/news/newsgroups  # all groups, local and remote
-
-  tabs separate the group name and the description. The number of
-  tabs needed changes based on the length of the group name. If
-  you line things up nicely with tabs you probably counted right.
-  These names appear in the newsreader clients.
-
-  NOTE: before you add them to this file you need to actually create
-  the groups using: sudo ctlinnd newgroup <groupname>
-
-  control                 Various control messages (no posting)
-  control.cancel          Cancel messages (no posting)
-  control.checkgroups     Hierarchy check control messages (no posting)
-  control.newgroup        Newsgroup creation control messages (no posting)
-  control.rmgroup         Newsgroup removal control messages (no posting)
-  junk                    Unfiled articles (no posting)
-  local.general           Local general group
-  local.test              Local test group
-  cosmic.general          General Discussion
-  cosmic.storyhelp        Help with storylines and characters
-  cosmic.worldbuilding    Expanding the universe
-  tilde.cosmic            Tildeverse chat about cosmic.voyage
-  tilde.meta
-  tilde.services.uucp
-  tilde.ascii
-  tilde.food+drink
-  tilde.javascript
-  tilde.meetups
-  tilde.nsfw
-  tilde.php
-  tilde.python
-  tilde.poetry
-  tilde.projects
-  tilde.services
-  tilde.team
-
-
-- OPEN PORT 119!!!!!
-
-  sudo ufw allow 119
-
-
-- Restart innd
-
-  sudo ctlinnd xexec innd
-
-
-I think that's it. Remember, your peer will need to set all this
-up to point back at you or nothing will share.
-
-If we figure out the control group stuff I'll make a follow-up
-post.
 </pre>]]></description>
 </item>
 </channel>
