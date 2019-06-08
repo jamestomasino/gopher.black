@@ -3,6 +3,35 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Gopher 2 0</title>
+  <link>gopher://gopher.black/1/phlog/20190607-gopher-2-0/</link>
+  <pubdate>Fri, 07 Jun 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+gopher 2.0
+June 07th, 2019
+----------------------------------------
+
+ratfactor has been writing on the age-old topic of updating the
+gopher protocol. [0][1] Many others have covered off on this stuff
+recently, like solderpunk.
+
+[0] Gopher 2.0 Pros 'n' Cons
+    gopher://sdf.org/0/users/ratfactor/phlog/2019-06-04-gopher-2.0-pros-cons
+[1] Gopher 2.0 - The protocol
+    gopher://sdf.org/0/users/ratfactor/phlog/2019-06-07-gopher-2.0-protocol
+
+At this point I think my 2-cents are that these folks should be
+aiming at a new protocol, not an update to gopher. Call it
+something else, give it a new port, define it with an RFC all
+you'd like. Let it be similar or not. Just leave gopher alone.
+
+We can plug things in creatively to get gopher over TLS and tor
+already in its current state. New stuff is cool, but just call it
+something else. 
+</pre>]]></description>
+</item>
+<item>
   <title>Strike A Pose</title>
   <link>gopher://gopher.black/1/phlog/20190605-strike-a-pose/</link>
   <pubdate>Wed, 05 Jun 2019 00:00:00 -0400</pubdate>
@@ -16,10 +45,15 @@ I was reading a twitter thread about the history of linked-list
 questions in interviews [0] and a commenter asked how the poster
 added a strikethrough to a tweet. He linked to a neat little site
 that lets you type a message and generate a unicode strikethrough
-version. You can then copy the g̶o̶o̶f̶y̶ ̶s̶h̶e̶n̶a̶n̶i̶g̶a̶n̶s̶ well-formatted
+version [1]. You can then copy the g̶o̶o̶f̶y̶ ̶s̶h̶e̶n̶a̶n̶i̶g̶a̶n̶s̶ well-formatted
 unicode and it should show up for you.
 
 I obviously had to p̶r̶o̶v̶e̶ ̶m̶y̶ ̶n̶e̶r̶d̶i̶n̶e̶s̶s̶ test it out!
+
+[0] twitter thread
+    https://mobile.twitter.com/hillelogram/status/962424365819277312
+[1] strike through generator
+    http://adamvarga.com/strike/
 </pre>]]></description>
 </item>
 <item>
@@ -491,44 +525,6 @@ hole in my heart perfectly. If you're a fan or still reeling from
 the loss of Dolores O'Riordan then have no fear in picking it up.
 Solid stuff. I'll be listening to this on repeat for a while.
 Maybe Poppy will still be a thing when I dig back out.
-</pre>]]></description>
-</item>
-<item>
-  <title>Net News On Tilde Black</title>
-  <link>gopher://gopher.black/1/phlog/20190426-net-news-on-tilde-black/</link>
-  <pubdate>Fri, 26 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-net news on tilde.black
-April 26th, 2019
-----------------------------------------
-
-What a great day for net news! Not only is cosmic.voyage,
-tilde.team, and news.tildeverse.org (yourtilde.com) peering, but
-now tilde.black has been added as well. Tilde Black is my tilde
-dedicated to discussions, research and expirementation on the
-topics of privacy, anonymity and and security. It's an openbsd
-machine, which brought with it a new set of challenges. 
-
-Here's a quick note on special sauce needed for openbsd:
-
-- clone from source as there's no package
-- make sure to install a bunch of perl dependencies listed in the
-  INSTALL file. It makes heavy use of these during make
-- use gmake not make if you can
-- configure --without-openssl is a must. The specific requirements
-  for TLS don't play nice with libssl
-- once you make install the paths will not be /etc/news and
-  /var/lib/news but rather /usr/local/news/etc and
-  /usr/local/news/db respectively.
-- innd won't start automatically. You'll need to change to the
-  "news" user and run /usr/local/news/bin/rc.news start.
-  I installed sudo to do it since my news user is non-login.
-- /usr/local/news/bin is also the path to ctlinnd, which you need
-  to install groups and restart the innd process.
-
-Otherwise the setup was pretty much the same as in my previous
-post. Very cool.
 </pre>]]></description>
 </item>
 </channel>
