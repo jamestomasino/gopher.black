@@ -3,6 +3,50 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Nobody Leaves Without Singing The Blues</title>
+  <link>gopher://gopher.black/1/phlog/20190615-nobody-leaves-without-singing-the-blues/</link>
+  <pubdate>Sat, 15 Jun 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Nobody leaves without singing the blues
+June 15th, 2019
+----------------------------------------
+
+In the film Adventures in Babysitting (1987), Elisabeth Shue and
+the kids she's watching find themselves unexpectedly on stage in
+a blues club. When she tries to just pass through the old man in
+charge of the band challenges her, "Nobody leaves without singing
+the blues." [0]
+
+[0] Babysitting Blues
+    https://www.youtube.com/watch?v=ZkThz92lkwE
+
+Well, tag this post as "meta-gopher" because that's how I feel
+about port 70. The ratio of consumer to creator is remarkably
+matched as observed over on lambda lab [1]. We have a significant
+technical barrier to use (for good or ill), but a very low
+secondary barrier to contribution. I think of it like a reef that
+protects the cove of port 70. If you know how to navigate into our
+safe little space then you already have more than enough skill to
+become an active part of the community. That's cool.
+
+[1] lambda labs - dwarves and gophers
+    gopher://lambda.icytree.org/0/phlog/2019-06-15-Dwarves-and-Gophers.txt
+
+You all remember a few months back when solderpunk was all like,
+"go make stuff, suckas"? [2] Let's not lose sight of that.
+
+[2] solderpunk - hey you, host something
+    gopher://circumlunar.space/0/~solderpunk/phlog/hey-you-host-something.txt
+
+New blood, welcome. If you're sitting there with a phlog entry or
+two brainstorming how you can do something special and stand out,
+don't let that cripple you from just jumping in. Big ideas are
+cool when they come, but cat needs daily phlogs to feed him or
+he'll DIE! Save the cat, phlog regularly.
+</pre>]]></description>
+</item>
+<item>
   <title>Gopher 2 0</title>
   <link>gopher://gopher.black/1/phlog/20190607-gopher-2-0/</link>
   <pubdate>Fri, 07 Jun 2019 00:00:00 -0400</pubdate>
@@ -500,31 +544,6 @@ hhhhhhhhhhhhhost
 
                     *even more breathing*
 
-</pre>]]></description>
-</item>
-<item>
-  <title>Poppy</title>
-  <link>gopher://gopher.black/1/phlog/20190429-poppy/</link>
-  <pubdate>Mon, 29 Apr 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Poppy
-April 29th, 2019
-----------------------------------------
-
-I just learned about youtube personality and musician, Poppy.
-Thanks, brendantcc! Her music isn't bad, and the humor she
-obviously has with it makes it a pretty fun listen. The track "X"
-is my favorite so far with it's genre defying silliness. The rest
-of this (apparently 2nd) album seems a bit more like generic club
-stuff, but still catchy.
-
-Unfortunately for Poppy, I just grabbed the latest (and last)
-Cranberries album "In The End". It fills that Cranberries shaped
-hole in my heart perfectly. If you're a fan or still reeling from
-the loss of Dolores O'Riordan then have no fear in picking it up.
-Solid stuff. I'll be listening to this on repeat for a while.
-Maybe Poppy will still be a thing when I dig back out.
 </pre>]]></description>
 </item>
 </channel>
