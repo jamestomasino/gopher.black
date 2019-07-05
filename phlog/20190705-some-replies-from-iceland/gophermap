@@ -1,0 +1,114 @@
+i----------------------------------------		gopher.black	70
+iSome replies from Iceland		gopher.black	70
+iJuly 05th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iHi everybody! I'm in Iceland now. We moved this past weekend and		gopher.black	70
+iwe're settled in an airbnb for July getting everything in place.		gopher.black	70
+iIf you're interested in my expat adventures, that's something I'm		gopher.black	70
+iwriting over in web-land so my parents and wife's friends can		gopher.black	70
+ifollow. Check it out [0].		gopher.black	70
+i		gopher.black	70
+h[0] tomasino blog	URL:https://blog.tomasino.org
+i		gopher.black	70
+iTonight I thought it would be fun to take stock of recent things		gopher.black	70
+ihappening on gopher and send some feedback. So, here goes:		gopher.black	70
+i		gopher.black	70
+imoji, over on circumlunar, has detailed their efforts to cut back		gopher.black	70
+ion the caffeine [1]. It's a solid post and raises some good		gopher.black	70
+ithoughts on what it means to be reliant on something like coffee.		gopher.black	70
+iAddictions, even relatively benign ones, have some hold on you.		gopher.black	70
+iI can totally respect the effort. More power too you.		gopher.black	70
+i		gopher.black	70
+0[1] moji - caffeine	/~moji/phlog/20190107-caffeine.txt	zaibatsu.circumlunar.space	70
+i		gopher.black	70
+ipkotrcka, whose name I have to be very careful typing out, wrote		gopher.black	70
+ia neat phlog about cameras that put my head in weird places [2].		gopher.black	70
+iMainly it made me sad that photography is pretty much dead.		gopher.black	70
+iI mean, not really at all, but as a profession it's gone from this		gopher.black	70
+ihighly technical artform with super expensive equipment, years of		gopher.black	70
+itraining required and it's been overrun by quick snaps with your		gopher.black	70
+iphone and bottled filters. There's little spots left for the art,		gopher.black	70
+ilike wedding photos and... is that it? Really though it's a "dead"		gopher.black	70
+itechnology in the same way gopher is.		gopher.black	70
+i		gopher.black	70
+iThere's the part where my mind turned happy again. When we say		gopher.black	70
+iit's dead that just means that capitalism stopped seeing monetary		gopher.black	70
+ivalue. That's not the same thing at all. Why is there no money in		gopher.black	70
+igopher? Well, not enough people to be worth the effort investing.		gopher.black	70
+iPhotography? Same thing. Niche stuff sure, but other than than		gopher.black	70
+ijust let it return to the afficianados. Let the pkotrckas of the		gopher.black	70
+iworld have their fun, right? Keep on keeping on, pkotrcka.		gopher.black	70
+i		gopher.black	70
+0[2] pkotrcka - cameras	/users/pkotrcka/0022	sdf.org	70
+i		gopher.black	70
+iThe amazing, incredible visiblink did some hard work recently		gopher.black	70
+icleaning up insulation and maybe asbestos [3]. Well done. That's		gopher.black	70
+inot what I wanted to comment on at all, though. At the very end of		gopher.black	70
+ithe phlog they mention that the gopher hole switched over to a pi		gopher.black	70
+izero w, saving more power. I love this ultra-low power stuff.		gopher.black	70
+iI have some basic notes on how I stripped my pi zero down to the		gopher.black	70
+iminimum draw for the little free library project. I recommend		gopher.black	70
+ichecking it out in my archives for tidbits.		gopher.black	70
+i		gopher.black	70
+0[3] visiblink - asbestos	/~visiblink/phlog/20190702	zaibatsu.circumlunar.space	70
+i		gopher.black	70
+iUbergeek kayaking with son		gopher.black	70
+i		gopher.black	70
+iubergeek got his son out kayaking and that's so awesome [4].		gopher.black	70
+iI adore kayaking. It was really sad having to sell my kayak when		gopher.black	70
+iwe moved. There's something really ... perfect about being out on		gopher.black	70
+ithe water. I can close my eyes and feel myself relax just thinking		gopher.black	70
+iabout it.		gopher.black	70
+i		gopher.black	70
+iI learned to kayak in Alaska in Resurrection Bay, near Seward. It		gopher.black	70
+iwas cold and beautiful. I saw bears and salmon and eagles and was		gopher.black	70
+iforever in love. I love lakes now. They're so smooth and you can		gopher.black	70
+ijust pull yourself a bit with the paddles and drift away.		gopher.black	70
+i		gopher.black	70
+iAnyway, I can see why his son is connecting with it. I wish you		gopher.black	70
+iboth the best. It's some special stuff, there. Good dad-ing.		gopher.black	70
+i		gopher.black	70
+0[4] ubergeek - kayaking	/~ubergeek/feels/20190703.txt	yourtilde.com	70
+i		gopher.black	70
+iOur pal heavysquare sent me an email the other day asking me to		gopher.black	70
+ipoint his phlog roll post to the root directory where he's added		gopher.black	70
+ia really killer gophermap. There's so much more to see than just		gopher.black	70
+ithe "noise" phlog I had there before. Check him out [5].		gopher.black	70
+i		gopher.black	70
+1[5] heavysquare	/	heavysquare.com	70
+i		gopher.black	70
+iFinally, there was a lot of talk this past week about Gemini's		gopher.black	70
+ilink syntax [6,7,8]. Out goes the [|] and in comes the =>. I'm		gopher.black	70
+iinto it, guys. It's cool as heck. Here's my 2-cents:		gopher.black	70
+i		gopher.black	70
+i1. Spaces optional. You can split on whitespace easy enough with		gopher.black	70
+i   regex alone and not care if it's one space, zero, or		gopher.black	70
+i   a tab-space-tab-space salsa.		gopher.black	70
+i		gopher.black	70
+i2. Link first. We're talking about clients doing some magic in the		gopher.black	70
+i   gemini world, but how much should we rely on the client's		gopher.black	70
+i   display choices to fulfill that important note that a URL		gopher.black	70
+i   should always be shown. If we have it at the end it could get		gopher.black	70
+i   cropped off screen or hidden in a wrap or any number of things.		gopher.black	70
+i   Link first is more likely to be seen, easier to parse across		gopher.black	70
+i   languages, and MOST importantly, means that the label can be		gopher.black	70
+i   optional. 		gopher.black	70
+i		gopher.black	70
+i   You see how I'm linking to things paragraph by paragraph in		gopher.black	70
+i   this post? I have numbers referencing things with the square		gopher.black	70
+i   bracket syntax because it's my convention, but the position of		gopher.black	70
+i   the links in context to the copy says enough about what they		gopher.black	70
+i   are. In many cases I just described the link in a paragraph and		gopher.black	70
+i   the label on the link is redundant. If the label in gemini is		gopher.black	70
+i   optional then you can just do something like:		gopher.black	70
+i		gopher.black	70
+i   => gemini://cosmic.voyage		gopher.black	70
+i		gopher.black	70
+i   And let it live on its own.		gopher.black	70
+i		gopher.black	70
+0[6] solderpunk - quick update on link syntax	/~solderpunk/gemini/quick-update-on-link-syntax.txt	zaibatsu.circumlunar.space	70
+0[7] ascraeus - peter frampton reference	/phlog/019.txt	ascraeus.org	70
+1[8] sloum - commentary on link syntax	/~sloum/phlog/190704-21.txt	colorfield.space	70
+i		gopher.black	70
+iThanks gophers. Keep gophin' around.		gopher.black	70

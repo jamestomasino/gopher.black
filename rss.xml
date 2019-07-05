@@ -3,6 +3,136 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Some Replies From Iceland</title>
+  <link>gopher://gopher.black/1/phlog/20190705-some-replies-from-iceland/</link>
+  <pubdate>Fri, 05 Jul 2019 00:00:00 -0400</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Some replies from Iceland
+July 05th, 2019
+----------------------------------------
+
+Hi everybody! I'm in Iceland now. We moved this past weekend and
+we're settled in an airbnb for July getting everything in place.
+If you're interested in my expat adventures, that's something I'm
+writing over in web-land so my parents and wife's friends can
+follow. Check it out [0].
+
+[0] tomasino blog
+    https://blog.tomasino.org
+
+Tonight I thought it would be fun to take stock of recent things
+happening on gopher and send some feedback. So, here goes:
+
+moji, over on circumlunar, has detailed their efforts to cut back
+on the caffeine [1]. It's a solid post and raises some good
+thoughts on what it means to be reliant on something like coffee.
+Addictions, even relatively benign ones, have some hold on you.
+I can totally respect the effort. More power too you.
+
+[1] moji - caffeine
+    gopher://zaibatsu.circumlunar.space/0/~moji/phlog/20190107-caffeine.txt
+
+pkotrcka, whose name I have to be very careful typing out, wrote
+a neat phlog about cameras that put my head in weird places [2].
+Mainly it made me sad that photography is pretty much dead.
+I mean, not really at all, but as a profession it's gone from this
+highly technical artform with super expensive equipment, years of
+training required and it's been overrun by quick snaps with your
+phone and bottled filters. There's little spots left for the art,
+like wedding photos and... is that it? Really though it's a "dead"
+technology in the same way gopher is.
+
+There's the part where my mind turned happy again. When we say
+it's dead that just means that capitalism stopped seeing monetary
+value. That's not the same thing at all. Why is there no money in
+gopher? Well, not enough people to be worth the effort investing.
+Photography? Same thing. Niche stuff sure, but other than than
+just let it return to the afficianados. Let the pkotrckas of the
+world have their fun, right? Keep on keeping on, pkotrcka.
+
+[2] pkotrcka - cameras
+    gopher://sdf.org/0/users/pkotrcka/0022
+
+The amazing, incredible visiblink did some hard work recently
+cleaning up insulation and maybe asbestos [3]. Well done. That's
+not what I wanted to comment on at all, though. At the very end of
+the phlog they mention that the gopher hole switched over to a pi
+zero w, saving more power. I love this ultra-low power stuff.
+I have some basic notes on how I stripped my pi zero down to the
+minimum draw for the little free library project. I recommend
+checking it out in my archives for tidbits.
+
+[3] visiblink - asbestos
+    gopher://zaibatsu.circumlunar.space/0/~visiblink/phlog/20190702
+
+Ubergeek kayaking with son
+
+ubergeek got his son out kayaking and that's so awesome [4].
+I adore kayaking. It was really sad having to sell my kayak when
+we moved. There's something really ... perfect about being out on
+the water. I can close my eyes and feel myself relax just thinking
+about it.
+
+I learned to kayak in Alaska in Resurrection Bay, near Seward. It
+was cold and beautiful. I saw bears and salmon and eagles and was
+forever in love. I love lakes now. They're so smooth and you can
+just pull yourself a bit with the paddles and drift away.
+
+Anyway, I can see why his son is connecting with it. I wish you
+both the best. It's some special stuff, there. Good dad-ing.
+
+[4] ubergeek - kayaking
+    gopher://yourtilde.com/0/~ubergeek/feels/20190703.txt
+
+Our pal heavysquare sent me an email the other day asking me to
+point his phlog roll post to the root directory where he's added
+a really killer gophermap. There's so much more to see than just
+the "noise" phlog I had there before. Check him out [5].
+
+[5] heavysquare
+    gopher://heavysquare.com/1/
+
+Finally, there was a lot of talk this past week about Gemini's
+link syntax [6,7,8]. Out goes the [|] and in comes the =>. I'm
+into it, guys. It's cool as heck. Here's my 2-cents:
+
+1. Spaces optional. You can split on whitespace easy enough with
+   regex alone and not care if it's one space, zero, or
+   a tab-space-tab-space salsa.
+
+2. Link first. We're talking about clients doing some magic in the
+   gemini world, but how much should we rely on the client's
+   display choices to fulfill that important note that a URL
+   should always be shown. If we have it at the end it could get
+   cropped off screen or hidden in a wrap or any number of things.
+   Link first is more likely to be seen, easier to parse across
+   languages, and MOST importantly, means that the label can be
+   optional. 
+
+   You see how I'm linking to things paragraph by paragraph in
+   this post? I have numbers referencing things with the square
+   bracket syntax because it's my convention, but the position of
+   the links in context to the copy says enough about what they
+   are. In many cases I just described the link in a paragraph and
+   the label on the link is redundant. If the label in gemini is
+   optional then you can just do something like:
+
+   => gemini://cosmic.voyage
+
+   And let it live on its own.
+
+[6] solderpunk - quick update on link syntax
+    gopher://zaibatsu.circumlunar.space/0/~solderpunk/gemini/quick-update-on-link-syntax.txt
+[7] ascraeus - peter frampton reference
+    gopher://ascraeus.org/0/phlog/019.txt
+[8] sloum - commentary on link syntax
+    gopher://colorfield.space/1/~sloum/phlog/190704-21.txt
+
+Thanks gophers. Keep gophin' around.
+</pre>]]></description>
+</item>
+<item>
   <title>Nobody Leaves Without Singing The Blues</title>
   <link>gopher://gopher.black/1/phlog/20190615-nobody-leaves-without-singing-the-blues/</link>
   <pubdate>Sat, 15 Jun 2019 00:00:00 -0400</pubdate>
@@ -475,75 +605,6 @@ share.
 
 [0] Rodrigo Rodriguez - A Winter Night
     https://www.youtube.com/watch?v=wscHJc4NRfo
-</pre>]]></description>
-</item>
-<item>
-  <title>Asmr</title>
-  <link>gopher://gopher.black/1/phlog/20190502-asmr/</link>
-  <pubdate>Thu, 02 May 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-ASMR
-May 02nd, 2019
-----------------------------------------
-
-                      *scritch scritch*
-
-                        *breathing*
-
-                       *tappy-taps*
-
-can you...
-
-
-                                                      ...hear me?
-
-
-                     *gentle mic rubs*
-
-                      *more breathing*
-
-
-welcome to my
-underground...
-
-
-              A
-
-
-                                                        S
-
-
-
-     M
-
-
-
-
-                                           R
-
-
-                                                      pure gopher
-                                                       experience
-
-
-i'm your
-hhhhhhhhhhhhhost
-
-
-
-                          tomasino
-
-
-
-                      *crinkling paper*
-
-                  *eating a hard shell taco*
-
-                    *popping bubble wrap*
-
-                    *even more breathing*
-
 </pre>]]></description>
 </item>
 </channel>
