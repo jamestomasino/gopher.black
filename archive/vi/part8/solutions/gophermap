@@ -1,0 +1,39 @@
+iHint to Part 8 Exercise	
+i	
+i  Using a global  command can cut the length of the command	
+i  sequence roughly in half. The correct way to use it depends on	
+i  something I did not explicitly say about global commands, but	
+i  which you should be able to guess from what I did say.	
+i	
+iAnswer to Part 8 Exercise	
+i	
+i  A fairly simple way to handle both writing the tab-revised	
+i  version of your file and keeping the original version in the	
+i  editor buffer is this sequence: 	
+i	
+i  :.g/^/%s/\({*\)^I^I/\1{/g|%s/^\({*\)^I/\1    /|%s/{/^I/g|w 	
+i  u	
+i	
+i  The first line is pretty straightforward, excepting the initial	
+i  global command.  Otherwise it just replaces every pair of tabs at	
+i  the start of a line with the dummy character "{", then changes	
+i  any remaining solitary tab in the initial whitespace with four	
+i  space characters, changes every dummy "{" to a single tab, and	
+i  finally writes the file.  	
+i	
+i  That initial global command seems silly, I know.  It scans over	
+i  just the current line, it marks that line without fail because	
+i  every line has a starting point, and so it ends up running the	
+i  remaining commands on the line for sure and exactly once. This is	
+i  just what the command line would do without that initial global.	
+i  So why is it there?  	
+i	
+i  The answer is in that second line.  When you run an undo after a	
+i  global command, you don't just undo the last command the global	
+i  ran; you undo every buffer change done by every command the	
+i  global ran.  (Note that the u is not preceded by a colon (":");	
+i  it is a screen-mode command.)  So as soon as the write is	
+i  finished, the undo puts the entire buffer back as it was.  	
+i	
+1Back to Part 8	/archive/vi/part8/	
+1Back to the index	/archive/vi/	
