@@ -8,6 +8,8 @@ iavailable Gemini clients. I went with AV-98 [0] from solderpunk.		gopher.black	
 iIt's interface is basically the same as VF-1, so it had that going		gopher.black	70
 ifor it. Also, I didn't need to download a rust compiler. ;)		gopher.black	70
 i		gopher.black	70
+h[0] AV-98	URL:https://tildegit.org/solderpunk/AV-98
+i		gopher.black	70
 iWhile there's not a lot of content around gemini-space (more on		gopher.black	70
 ithis in a second), it was still nice to have a way in to poke		gopher.black	70
 iaround. I see some journal activity already taking shape, and		gopher.black	70
@@ -27,6 +29,8 @@ i		gopher.black	70
 i"Gemini maps" are the temporary term for the document format of		gopher.black	70
 ia Gemini server. It's coined by solderpunk here [1] and only named		gopher.black	70
 ithat "until a better name comes along."		gopher.black	70
+i		gopher.black	70
+0[1] Gemini maps	/~solderpunk/gemini/gemini-maps.txt	zaibatsu.circumlunar.space	70
 i		gopher.black	70
 i"Geminiholes" - mentioned by solderpunk, but noone is using it.		gopher.black	70
 i		gopher.black	70
