@@ -3,9 +3,81 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Gemini First Impressions</title>
+  <link>gopher://gopher.black/1/phlog/20190729-gemini-first-impressions/</link>
+  <pubdate>Mon, 29 Jul 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Gemini first impressions
+July 29th, 2019
+----------------------------------------
+
+I finally spent the 5 minutes necessary to download one of the few
+available Gemini clients. I went with AV-98 [0] from solderpunk.
+It's interface is basically the same as VF-1, so it had that going
+for it. Also, I didn't need to download a rust compiler. ;)
+
+While there's not a lot of content around gemini-space (more on
+this in a second), it was still nice to have a way in to poke
+around. I see some journal activity already taking shape, and
+that's a great place to start.
+
+I'll be honest. At first I thought of Gemini as a neat but
+ultimately useless side project of the already-tiny gopher
+community. The more I've seen it worked on and thought about it
+the more I've come to consider it a "real thing" of some
+importance. But lets come back to that idea in a minute.
+
+First, lets talk about the naming of things.
+
+"Gemini" is the protocol. It appears to be capitalized in all
+occurences within solderpunk's FAQ. 
+
+"Gemini maps" are the temporary term for the document format of
+a Gemini server. It's coined by solderpunk here [1] and only named
+that "until a better name comes along."
+
+"Geminiholes" - mentioned by solderpunk, but noone is using it.
+
+"Gemini server/client" are the defacto name for individual tools
+that power it.
+
+"Gemini-verse / Gemini-sphere / Gemini ecosystem" - I haven't
+noted any special term for this akin to "the web" or
+"gopherspace". Is there something already in use?
+
+"Journal" - weB LOG / goPHer LOG like structure. Is there
+a playful term for these yet?
+
+What other terms are we missing?
+
+Okay, enough of that. Time for THOUGHTS OF IMPORTANCE!
+
+The built-in TLS by design of Gemini is great, and combined with
+the natural ability to run it unpriviliged and require very little
+bandwidth I can see it serving a valuable purpose in safely
+providing a platform for authors in situations where the web is
+not. Take Khazikstan, for instance, who is MITMing the entire
+country. Gopher was always a nice idea to help in these
+situations, but the lack of reliable security on it meant major
+problems for real applications. Gemini fixes that. What's more,
+Gemini over tor adds in anonymity.
+
+I have more thoughts on the tor thing, and around real-world
+applications for a minimalist hyperlinkable publishing protocol
+with built in anonymity and safety, but my internet connection is
+dying and I have to finish this post while tethered to my phone.
+Thank goodness for low bandwidth stuff like gopher and Gemini,
+right?
+
+In the meantime, what are your thoughts on using Gemini (one day)
+in a setting that's not just hobby play?
+</pre>]]></description>
+</item>
+<item>
   <title>Zine</title>
   <link>gopher://gopher.black/1/phlog/20190719-zine/</link>
-  <pubdate>Fri, 19 Jul 2019 00:00:00 -0400</pubdate>
+  <pubdate>Fri, 19 Jul 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 zine
@@ -150,7 +222,7 @@ doing something so I know that this is gonna work).
 <item>
   <title>Some Replies From Iceland</title>
   <link>gopher://gopher.black/1/phlog/20190705-some-replies-from-iceland/</link>
-  <pubdate>Fri, 05 Jul 2019 00:00:00 -0400</pubdate>
+  <pubdate>Fri, 05 Jul 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Some replies from Iceland
@@ -280,7 +352,7 @@ Thanks gophers. Keep gophin' around.
 <item>
   <title>Nobody Leaves Without Singing The Blues</title>
   <link>gopher://gopher.black/1/phlog/20190615-nobody-leaves-without-singing-the-blues/</link>
-  <pubdate>Sat, 15 Jun 2019 00:00:00 -0400</pubdate>
+  <pubdate>Sat, 15 Jun 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Nobody leaves without singing the blues
@@ -324,7 +396,7 @@ he'll DIE! Save the cat, phlog regularly.
 <item>
   <title>Gopher 2 0</title>
   <link>gopher://gopher.black/1/phlog/20190607-gopher-2-0/</link>
-  <pubdate>Fri, 07 Jun 2019 00:00:00 -0400</pubdate>
+  <pubdate>Fri, 07 Jun 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 gopher 2.0
@@ -353,7 +425,7 @@ something else.
 <item>
   <title>Strike A Pose</title>
   <link>gopher://gopher.black/1/phlog/20190605-strike-a-pose/</link>
-  <pubdate>Wed, 05 Jun 2019 00:00:00 -0400</pubdate>
+  <pubdate>Wed, 05 Jun 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 strike a pose
@@ -378,7 +450,7 @@ I obviously had to p̶r̶o̶v̶e̶ ̶m̶y̶ ̶n̶e̶r̶d̶i̶n̶e̶s̶s̶ test i
 <item>
   <title>Everything Is Evil</title>
   <link>gopher://gopher.black/1/phlog/20190601-everything-is-evil/</link>
-  <pubdate>Sat, 01 Jun 2019 00:00:00 -0400</pubdate>
+  <pubdate>Sat, 01 Jun 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 everything is evil
@@ -519,7 +591,7 @@ enough to make me accept the vegan label without cringing. Almost.
 <item>
   <title>Board Games</title>
   <link>gopher://gopher.black/1/phlog/20190529-board-games/</link>
-  <pubdate>Wed, 29 May 2019 00:00:00 -0400</pubdate>
+  <pubdate>Wed, 29 May 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 board games
@@ -651,7 +723,7 @@ Okay, people... what's your top 3?
 <item>
   <title>Robots Txt</title>
   <link>gopher://gopher.black/1/phlog/20190524-robots-txt/</link>
-  <pubdate>Fri, 24 May 2019 00:00:00 -0400</pubdate>
+  <pubdate>Fri, 24 May 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 robots.txt
@@ -679,7 +751,7 @@ a gopher to do?
 <item>
   <title>Not Going Anywhere</title>
   <link>gopher://gopher.black/1/phlog/20190524-not-going-anywhere/</link>
-  <pubdate>Fri, 24 May 2019 00:00:00 -0400</pubdate>
+  <pubdate>Fri, 24 May 2019 00:00:00 +0000</pubdate>
   <description><![CDATA[<pre>
 ----------------------------------------
 Not going anywhere
@@ -697,39 +769,6 @@ their way.
 
 [0] offline for a bit
     gopher://gopher.black/1/phlog/20190523-offline-for-a-bit
-</pre>]]></description>
-</item>
-<item>
-  <title>Offline For A Bit</title>
-  <link>gopher://gopher.black/1/phlog/20190523-offline-for-a-bit/</link>
-  <pubdate>Thu, 23 May 2019 00:00:00 -0400</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-offline for a bit
-May 23rd, 2019
-----------------------------------------
-
-gopher.black will be going offline for a couple months sometime in
-early June. We're packing everything up to put on the container to
-ship to Iceland. That includes my lovely little pi here. Once we
-have a long-term place to live with internet access and a router
-that I can set up port forwarding on we'll be back in business.
-Until then, my lovely Moku Pona feed will disappear for a bit.
-
-The good news is my high quality phlogging action can still be
-found at the 3 mirroring locations I have:
-
-sdf mirror
-    gopher://sdf.org/1/user/tomasino
-tilde.town mirror
-    gopher://tilde.town/1/~tomasino
-yourtilde.com mirror
-    gopher://yourtilde.com/1/~tomasino
-
-I'm not sure when this site will be back. I'm guessing sometime in
-August. You can find me on IRC still during the break. 
-
-þetta reddast!
 </pre>]]></description>
 </item>
 </channel>

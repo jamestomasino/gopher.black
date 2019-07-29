@@ -1,0 +1,65 @@
+i----------------------------------------		gopher.black	70
+iGemini first impressions		gopher.black	70
+iJuly 29th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI finally spent the 5 minutes necessary to download one of the few		gopher.black	70
+iavailable Gemini clients. I went with AV-98 [0] from solderpunk.		gopher.black	70
+iIt's interface is basically the same as VF-1, so it had that going		gopher.black	70
+ifor it. Also, I didn't need to download a rust compiler. ;)		gopher.black	70
+i		gopher.black	70
+iWhile there's not a lot of content around gemini-space (more on		gopher.black	70
+ithis in a second), it was still nice to have a way in to poke		gopher.black	70
+iaround. I see some journal activity already taking shape, and		gopher.black	70
+ithat's a great place to start.		gopher.black	70
+i		gopher.black	70
+iI'll be honest. At first I thought of Gemini as a neat but		gopher.black	70
+iultimately useless side project of the already-tiny gopher		gopher.black	70
+icommunity. The more I've seen it worked on and thought about it		gopher.black	70
+ithe more I've come to consider it a "real thing" of some		gopher.black	70
+iimportance. But lets come back to that idea in a minute.		gopher.black	70
+i		gopher.black	70
+iFirst, lets talk about the naming of things.		gopher.black	70
+i		gopher.black	70
+i"Gemini" is the protocol. It appears to be capitalized in all		gopher.black	70
+ioccurences within solderpunk's FAQ. 		gopher.black	70
+i		gopher.black	70
+i"Gemini maps" are the temporary term for the document format of		gopher.black	70
+ia Gemini server. It's coined by solderpunk here [1] and only named		gopher.black	70
+ithat "until a better name comes along."		gopher.black	70
+i		gopher.black	70
+i"Geminiholes" - mentioned by solderpunk, but noone is using it.		gopher.black	70
+i		gopher.black	70
+i"Gemini server/client" are the defacto name for individual tools		gopher.black	70
+ithat power it.		gopher.black	70
+i		gopher.black	70
+i"Gemini-verse / Gemini-sphere / Gemini ecosystem" - I haven't		gopher.black	70
+inoted any special term for this akin to "the web" or		gopher.black	70
+i"gopherspace". Is there something already in use?		gopher.black	70
+i		gopher.black	70
+i"Journal" - weB LOG / goPHer LOG like structure. Is there		gopher.black	70
+ia playful term for these yet?		gopher.black	70
+i		gopher.black	70
+iWhat other terms are we missing?		gopher.black	70
+i		gopher.black	70
+iOkay, enough of that. Time for THOUGHTS OF IMPORTANCE!		gopher.black	70
+i		gopher.black	70
+iThe built-in TLS by design of Gemini is great, and combined with		gopher.black	70
+ithe natural ability to run it unpriviliged and require very little		gopher.black	70
+ibandwidth I can see it serving a valuable purpose in safely		gopher.black	70
+iproviding a platform for authors in situations where the web is		gopher.black	70
+inot. Take Khazikstan, for instance, who is MITMing the entire		gopher.black	70
+icountry. Gopher was always a nice idea to help in these		gopher.black	70
+isituations, but the lack of reliable security on it meant major		gopher.black	70
+iproblems for real applications. Gemini fixes that. What's more,		gopher.black	70
+iGemini over tor adds in anonymity.		gopher.black	70
+i		gopher.black	70
+iI have more thoughts on the tor thing, and around real-world		gopher.black	70
+iapplications for a minimalist hyperlinkable publishing protocol		gopher.black	70
+iwith built in anonymity and safety, but my internet connection is		gopher.black	70
+idying and I have to finish this post while tethered to my phone.		gopher.black	70
+iThank goodness for low bandwidth stuff like gopher and Gemini,		gopher.black	70
+iright?		gopher.black	70
+i		gopher.black	70
+iIn the meantime, what are your thoughts on using Gemini (one day)		gopher.black	70
+iin a setting that's not just hobby play?		gopher.black	70
