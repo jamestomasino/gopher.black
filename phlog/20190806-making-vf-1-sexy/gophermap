@@ -1,0 +1,70 @@
+i----------------------------------------		gopher.black	70
+iMaking VF-1 Sexy		gopher.black	70
+iAugust 06th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iVF-1 is fast, but it's also pretty basic. It doesn't (yet) do		gopher.black	70
+ipretty colors by types or anything sweet like that. Many of you		gopher.black	70
+iare probably fine with that. "Colors are useless" people... I 		gopher.black	70
+ihear you, but I don't agree.		gopher.black	70
+i		gopher.black	70
+iIn fact, even if the colors aren't structured, I still want them!		gopher.black	70
+iI've been piping my VF-1 output through lolcat for a few months.		gopher.black	70
+iIt's brilliant, but was incomplete.		gopher.black	70
+i		gopher.black	70
+iNot to mention any names, but some of you don't wrap your text. I		gopher.black	70
+itry not to be picky about whether wrapping happens at 80cols or at		gopher.black	70
+i67cols, but when a gopher doesn't wrap at all it makes it very		gopher.black	70
+ihard to read. I'll be honest, I usually just skim those posts as a		gopher.black	70
+iresult.		gopher.black	70
+i		gopher.black	70
+i"Why," I ask myself, "don't they just run it through fold(1)?"		gopher.black	70
+i		gopher.black	70
+i"Duh," I answer myself, "they don't want to or don't care."		gopher.black	70
+i		gopher.black	70
+i"But self, it would make my reading more convenient!"		gopher.black	70
+i		gopher.black	70
+i"Come'on, tomasino. What part of _don't care_ did you not get?"		gopher.black	70
+i		gopher.black	70
+i"I suppose you have a point. You're pretty smart."		gopher.black	70
+i		gopher.black	70
+i"Damn right..."		gopher.black	70
+i		gopher.black	70
+i"So..."		gopher.black	70
+i		gopher.black	70
+i"Oh crap--"		gopher.black	70
+i		gopher.black	70
+i"Why don't you solve it on the client end?"		gopher.black	70
+i		gopher.black	70
+iAnd I sigh and say, "Of course. VF-1 lets me lolcat. Why not fold		gopher.black	70
+ias well? It should be simple."		gopher.black	70
+i		gopher.black	70
+iIf you don't care about lolcat and only want to fold output		gopher.black	70
+iautomatically in VF-1, here's what you do. Add the following line		gopher.black	70
+ito your ~/.vf1rc:		gopher.black	70
+i		gopher.black	70
+i  $ cat ~/.vf1rc		gopher.black	70
+i		gopher.black	70
+i  handler text/plain fold -sw 80 %s		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iIf you want to lolcat it too, like me, then you need to do a		gopher.black	70
+ilittle bit more. I'm not sure what method VF-1 uses internally to		gopher.black	70
+iparse the handlers, but it chokes hard on pipes. So, I wrote a very,		gopher.black	70
+ivery basic shell script to do it for me.		gopher.black	70
+i		gopher.black	70
+i  $ cat ~/bin/goph		gopher.black	70
+i		gopher.black	70
+i  #!/bin/sh		gopher.black	70
+i  FIN=${1:-"/dev/stdin"}		gopher.black	70
+i  fold -sw 80 "$FIN" | lolcat -f		gopher.black	70
+i 		gopher.black	70
+iPut that in your PATH and now you can pipe anything you want to		gopher.black	70
+i'goph' and have it be pretty. It'll also take a file input. Then,		gopher.black	70
+iin your ~/.vf1rc, you can add:		gopher.black	70
+i		gopher.black	70
+i  $ cat ~/.vf1rc		gopher.black	70
+i		gopher.black	70
+i  handler text/plain goph %s		gopher.black	70
+i		gopher.black	70
+iLet there be color, and pretty wrapping. Enjoy.		gopher.black	70

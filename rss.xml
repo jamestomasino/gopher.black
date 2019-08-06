@@ -3,6 +3,83 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Making Vf 1 Sexy</title>
+  <link>gopher://gopher.black/1/phlog/20190806-making-vf-1-sexy/</link>
+  <pubdate>Tue, 06 Aug 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Making VF-1 Sexy
+August 06th, 2019
+----------------------------------------
+
+VF-1 is fast, but it's also pretty basic. It doesn't (yet) do
+pretty colors by types or anything sweet like that. Many of you
+are probably fine with that. "Colors are useless" people... I 
+hear you, but I don't agree.
+
+In fact, even if the colors aren't structured, I still want them!
+I've been piping my VF-1 output through lolcat for a few months.
+It's brilliant, but was incomplete.
+
+Not to mention any names, but some of you don't wrap your text. I
+try not to be picky about whether wrapping happens at 80cols or at
+67cols, but when a gopher doesn't wrap at all it makes it very
+hard to read. I'll be honest, I usually just skim those posts as a
+result.
+
+"Why," I ask myself, "don't they just run it through fold(1)?"
+
+"Duh," I answer myself, "they don't want to or don't care."
+
+"But self, it would make my reading more convenient!"
+
+"Come'on, tomasino. What part of _don't care_ did you not get?"
+
+"I suppose you have a point. You're pretty smart."
+
+"Damn right..."
+
+"So..."
+
+"Oh crap--"
+
+"Why don't you solve it on the client end?"
+
+And I sigh and say, "Of course. VF-1 lets me lolcat. Why not fold
+as well? It should be simple."
+
+If you don't care about lolcat and only want to fold output
+automatically in VF-1, here's what you do. Add the following line
+to your ~/.vf1rc:
+
+  $ cat ~/.vf1rc
+
+  handler text/plain fold -sw 80 %s
+
+
+If you want to lolcat it too, like me, then you need to do a
+little bit more. I'm not sure what method VF-1 uses internally to
+parse the handlers, but it chokes hard on pipes. So, I wrote a very,
+very basic shell script to do it for me.
+
+  $ cat ~/bin/goph
+
+  #!/bin/sh
+  FIN=${1:-"/dev/stdin"}
+  fold -sw 80 "$FIN" | lolcat -f
+ 
+Put that in your PATH and now you can pipe anything you want to
+'goph' and have it be pretty. It'll also take a file input. Then,
+in your ~/.vf1rc, you can add:
+
+  $ cat ~/.vf1rc
+
+  handler text/plain goph %s
+
+Let there be color, and pretty wrapping. Enjoy.
+</pre>]]></description>
+</item>
+<item>
   <title>Gemini First Impressions</title>
   <link>gopher://gopher.black/1/phlog/20190729-gemini-first-impressions/</link>
   <pubdate>Mon, 29 Jul 2019 00:00:00 +0000</pubdate>
@@ -16,6 +93,9 @@ I finally spent the 5 minutes necessary to download one of the few
 available Gemini clients. I went with AV-98 [0] from solderpunk.
 It's interface is basically the same as VF-1, so it had that going
 for it. Also, I didn't need to download a rust compiler. ;)
+
+[0] AV-98
+    https://tildegit.org/solderpunk/AV-98
 
 While there's not a lot of content around gemini-space (more on
 this in a second), it was still nice to have a way in to poke
@@ -36,6 +116,9 @@ occurences within solderpunk's FAQ.
 "Gemini maps" are the temporary term for the document format of
 a Gemini server. It's coined by solderpunk here [1] and only named
 that "until a better name comes along."
+
+[1] Gemini maps
+    gopher://zaibatsu.circumlunar.space/0/~solderpunk/gemini/gemini-maps.txt
 
 "Geminiholes" - mentioned by solderpunk, but noone is using it.
 
@@ -746,29 +829,6 @@ Now I have a dilemma. I would very much like my site to be crawled
 by Veronica-2 and other gopher-centric search engines, but I don't
 want Google plopping my burrowy-thoughts on the web. What's
 a gopher to do?
-</pre>]]></description>
-</item>
-<item>
-  <title>Not Going Anywhere</title>
-  <link>gopher://gopher.black/1/phlog/20190524-not-going-anywhere/</link>
-  <pubdate>Fri, 24 May 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Not going anywhere
-May 24th, 2019
-----------------------------------------
-
-Remember like five minutes ago when I said gopher.black was going
-offline for a bit? [0] Yeah, I'm full of crap. I spent a couple
-hours tonight and migrated everything on that lovely little
-raspberry pi that's been in my bedroom up to a sexy little VM on
-vultr. Gopher.black is out among the clouds now, and it's not
-going anywhere while I move. So, keep your dial tuned to that
-gophery station if you dig what you see. More shenanigans are on
-their way.
-
-[0] offline for a bit
-    gopher://gopher.black/1/phlog/20190523-offline-for-a-bit
 </pre>]]></description>
 </item>
 </channel>
