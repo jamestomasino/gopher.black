@@ -3,6 +3,67 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Music As Milestone</title>
+  <link>gopher://gopher.black/1/phlog/20190816-music-as-milestone/</link>
+  <pubdate>Fri, 16 Aug 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+music as milestone
+August 16th, 2019
+----------------------------------------
+
+Passing through major change makes itself manifest in a number of
+ways. For me, one of the most notable is a musical genre shift.
+
+At the end of a long and tumultuous relationship I set out on
+a thirteen hour drive home, newly single, skipping through
+stations at 5am in search of something to capture the hole I felt
+inside. I caught the beginning of Mountain Stage on NPR (National
+Public Radio) as a trio was just starting out. The band, The Be
+Good Tanyas [0], are a folk/Americana band from Canada. They
+started out their set with a cover of the gospel song, "In My Time
+of Dying", most famously performed by Led Zeppelin & Blind Willie
+Johnson [1].
+
+[0] The Be Good Tanyas
+    gopher://gopherpedia.com/0/The Be Good Tanyas
+[1] In My Time of Dying
+    https://www.youtube.com/watch?v=352KDhl4i4c
+
+There it was, the resonating echo of my inner self. I was hooked
+and would go on to binge the bluegrassy/folk/Americana
+scene--especially the likes of Jolie Holland--to great depths over
+the next few years. It was a music for the time.
+
+Years earlier I experienced something similar with Enya that you
+can all thank for my multi-hour "All Enya" streams on tilderadio.
+Joining the Navy took me on a wild ride of electronica and
+euro-vocal-trance. My time in Alaska introduced me to the depths
+of Nordic electronic minimalism.
+
+And so, with the move to Iceland I expected something to develop.
+I know that my tastes would shift. I already adore so many
+Icelandic bands, would that grow and encompass a major part of my
+life? Would I slide deeper into the fediverse's obsession with
+vaporwave? Apparently the answer is no.
+
+Somehow--illogically--I've found myself listening to Reggae [2,3].
+
+[2] Mike Love - Permanent Holiday
+    https://www.youtube.com/watch?v=fU7hZ3smj0g
+[3] Chronixx - Here Comes Trouble
+    https://www.youtube.com/watch?v=LfeIfiiBTfY
+
+I'm not sure if I can say definitively that this is my new jam,
+but it sure is happening a lot. I guess it proves that you can't
+predict what the future will hold.
+
+What are your signs of change? Do you change tastes in music like
+me, or is it something else? Change nicknames? Take up new
+hobbies?
+</pre>]]></description>
+</item>
+<item>
   <title>Making Vf 1 Sexy</title>
   <link>gopher://gopher.black/1/phlog/20190806-making-vf-1-sexy/</link>
   <pubdate>Tue, 06 Aug 2019 00:00:00 +0000</pubdate>
@@ -801,34 +862,6 @@ probably have to write more about that soon.
 
 
 Okay, people... what's your top 3?
-</pre>]]></description>
-</item>
-<item>
-  <title>Robots Txt</title>
-  <link>gopher://gopher.black/1/phlog/20190524-robots-txt/</link>
-  <pubdate>Fri, 24 May 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-robots.txt
-May 24th, 2019
-----------------------------------------
-
-I've run a little disallow robots.txt file on this gopher hole for
-a while. Now there's been more discussion about its inclusion on
-gopher for gopher search engines. This leads me to a little
-problem.
-
-My robots.txt file is not meant for gopher crawlers. I created it
-because I do not want my site crawled by web crawlers trawling
-through proxies to gopher. There's some question as to whether
-a robots.txt file is effective in that way (technically the proxy
-should have one, not the site itself), but I thought it better
-than nothing.
-
-Now I have a dilemma. I would very much like my site to be crawled
-by Veronica-2 and other gopher-centric search engines, but I don't
-want Google plopping my burrowy-thoughts on the web. What's
-a gopher to do?
 </pre>]]></description>
 </item>
 </channel>
