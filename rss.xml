@@ -3,6 +3,45 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Re Lambdalab Email Thoughts</title>
+  <link>gopher://gopher.black/1/phlog/20190827-re-lambdalab-email-thoughts/</link>
+  <pubdate>Tue, 27 Aug 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+re: lambdalab - email thoughts
+August 27th, 2019
+----------------------------------------
+
+The lambda lab wrote [0] about setting up email and asked for some
+thoughts on relaying that mail to others around gopherspace. I do
+something like that on cosmic.voyage. Namely, I have installed and
+enabled postfix to allow for outbound emails only to specific
+hosts. [1,2] Since I'm targeting other tildes and not big email
+providers I don't need to worry about ending up on spam lists
+because of unauthenticated emails to Biggy-G. It also means I can
+be lazy about it.
+
+If you're using the host yourself and not sharing it with others
+then you don't even need to go that far. Just be selective about
+who you email, I guess.
+
+But honestly, setting up DKIM, SPF, etc, isn't too bad these days.
+The hard part is dealing with the Notorious-G and others
+blacklisting you because they don't care, forcing you to manually
+intercede and get clearance. The last time I dealt with that with
+them I had to do a bunch of extra crap to figure out how to see
+the error message that had some obscure URL they wanted me to
+visit. Yuck.
+
+[0] thelambdalab - email thoughts
+    gopher://70/0/phlog/2019-08-27-Email-woes.txtthelambdalab.xyz
+[1] postfix transport
+    ttps://tildegit.org/cosmic/cosmic/src/branch/master/postfix/transport
+[2] postfix transport install
+    https://tildegit.org/cosmic/cosmic/src/branch/master/Makefile#L55-L62
+</pre>]]></description>
+</item>
+<item>
   <title>Music As Milestone</title>
   <link>gopher://gopher.black/1/phlog/20190816-music-as-milestone/</link>
   <pubdate>Fri, 16 Aug 2019 00:00:00 +0000</pubdate>
@@ -730,138 +769,6 @@ Everything is evil.
 It might not be objective reality, but it has a presence and
 effect on everything. In that way it is our "reality". It's almost
 enough to make me accept the vegan label without cringing. Almost.
-</pre>]]></description>
-</item>
-<item>
-  <title>Board Games</title>
-  <link>gopher://gopher.black/1/phlog/20190529-board-games/</link>
-  <pubdate>Wed, 29 May 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-board games
-May 29th, 2019
-----------------------------------------
-
-cat just dropped a nice phlog [0] about board and card games that
-he loves. He wrapped up by asking others what they enjoy.
-
-[0] cat - top 3 board & card games
-    gopher://baud.baby/0/phlog/fs20190528.txt
-
-I'll try to keep this to just 3 games as well (with an honorable
-mention or two). Unlike cat, who favors the solo or two player
-games, I'm a fan of the epic.
-
-1. The Republic of Rome (Avalon Hill)
-
-Avalon Hill is famous for making complex war simulation board
-games that take hours to set up, let alone play. It is a company
-at the forefront of destroying friendships. Diplomacy is probably
-the game responsible for the most gamer-feuds in history, which
-makes Republic of Rome remarkable in that it was created
-specifically for gamers who thought it too tame. Avalon Hill had
-a rating system for complexity in their games and at the time of
-its release, RoR was the first game to max it out. These days we
-can enjoy a few that have since jumped the shark in terms of
-complexity [1].
-
-[1] The Campaign for North Africa
-    https://boardgamegeek.com/boardgame/4815/campaign-north-africa
-
-For all its ridiculous complexity and legal-code rulebook, it's
-a brilliantly fun game to tackle with a group of friends. The
-players control factions of senators in either the early, middle,
-or late republic time periods of Roman history. They struggle
-against one another for money, influence, popularity, and military
-might until one comes out dominant enough to meet one of several
-victory conditions. But they must be careful! If the factions
-don't cooperate, Rome itself can fall and everyone loses.
-
-This has been responsible for so many amazing nights of board game
-fun I can't sing its praises enough. As I'm gearing up to leave
-the country, my friends here planned one last get together to say
-farewell and what better way could they have done so than with
-a game of RoR.
-
-
-2. Carcassonne (Hans im Glück)
-
-This tile-laying game is fast (20-30 min), easy-to-learn, and
-endlessly amusing. It's a great lunch-time game if you work with
-another board game geek. You are building a sprawling city and
-trying to occupy the buildings you create to score points when
-they are completed. You farm the lands servicing these buildings
-and set up monestaries. Oh, and don't forget to build roads! All
-of this is done with puzzle-like square tiles that connect and
-extend the existing city into a new crazy puzzle of awesome. Score
-keeping is a little tricky at first, but it becomes second nature.
-
-
-3. Once Upon a Time: The Storytelling Card Game (AMIGO)
-
-I adore storytelling and this game really scratches that itch.
-It's a card-game with fantastic creatures and items all fantasy
-themed. You will find character types like the witch, or princess,
-and items like magic swords. You'll also find story elements like
-a broken promise. With these building blocks you and your friends
-will create an epic tale. Together. Entirely improv style.
-
-The way it works is really cool. Someone starts telling the story.
-As they tell their story they will begin to play cards in their
-hand that match the story they're telling. If they introduce
-a swarthy princess who runs an illegal footwear consortium, then
-they may lay down the princess card. If that princess discovers
-a way to hide switch blades in the magical Air Jordans she's
-creating, then the player may play the magical sword card. But
-it's not as simple as just making up gibberish and laying down
-your cards!
-
-If the story fails to make sense, contradicts itself, or if the
-player pauses too long (as determined by the other players) then
-the story moves to the next clockwise player and the previous
-storyteller must draw a new card to their hand for having "lost"
-the story. There's also a tricky way to steal a story from
-a storyteller. If the storyteller mentions a story element that
-matches a card in your hand, you can play that card and take over
-the story. But you better be ready to start right away or you may
-pause too long and lose it.
-
-All of this storytelling and card playing/drawing is leading
-toward and ending that's unique to each player. You draw secret
-ending cards at the start of the game. Your ending is different
-from the other players and you need to steer the narative in the
-right direction to get there. If your story ends with "The twins
-were cooked in the pie." and the story doesn't even have twins
-introduced, you have some catching up to do.
-
-This game requires outgoing friends and benefits from some
-moderate drinking. It also has a special place in my game
-collection because of our house rule on "who goes first." 
-
-No matter what game we're playing, the choice of who goes first
-comes down to the Once Upon a Time deck. Everyone cuts the deck
-and takes out one card. Whichever card is "Closest to Unicorn"
-goes first. We love the ambiguity and determining whether the
-Princess or the Magic Sword is closer to unicorn (magic sword,
-obviously). It starts every game out with a smile.
-
-
-Honorable Mentions:
-
-A. Chess
-
-A classic, and I'm totally addicted, but it didn't feel right to
-include in this list.
-
-B. Tabletop RPGs
-
-Pathfinder, D&D, Fate, The Riddle of Steel, Alternity, Fiasco, and
-all the rest are the very best games in the world. As much as
-I love a board game, a D&D campaign has no equal. I guess I'll
-probably have to write more about that soon.
-
-
-Okay, people... what's your top 3?
 </pre>]]></description>
 </item>
 </channel>

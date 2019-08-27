@@ -1,0 +1,29 @@
+i----------------------------------------		gopher.black	70
+ire: lambdalab - email thoughts		gopher.black	70
+iAugust 27th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThe lambda lab wrote [0] about setting up email and asked for some		gopher.black	70
+ithoughts on relaying that mail to others around gopherspace. I do		gopher.black	70
+isomething like that on cosmic.voyage. Namely, I have installed and		gopher.black	70
+ienabled postfix to allow for outbound emails only to specific		gopher.black	70
+ihosts. [1,2] Since I'm targeting other tildes and not big email		gopher.black	70
+iproviders I don't need to worry about ending up on spam lists		gopher.black	70
+ibecause of unauthenticated emails to Biggy-G. It also means I can		gopher.black	70
+ibe lazy about it.		gopher.black	70
+i		gopher.black	70
+iIf you're using the host yourself and not sharing it with others		gopher.black	70
+ithen you don't even need to go that far. Just be selective about		gopher.black	70
+iwho you email, I guess.		gopher.black	70
+i		gopher.black	70
+iBut honestly, setting up DKIM, SPF, etc, isn't too bad these days.		gopher.black	70
+iThe hard part is dealing with the Notorious-G and others		gopher.black	70
+iblacklisting you because they don't care, forcing you to manually		gopher.black	70
+iintercede and get clearance. The last time I dealt with that with		gopher.black	70
+ithem I had to do a bunch of extra crap to figure out how to see		gopher.black	70
+ithe error message that had some obscure URL they wanted me to		gopher.black	70
+ivisit. Yuck.		gopher.black	70
+i		gopher.black	70
+0[0] thelambdalab - email thoughts	/phlog/2019-08-27-Email-woes.txtthelambdalab.xyz	70
+h[1] postfix transport	URLhttps://tildegit.org/cosmic/cosmic/src/branch/master/postfix/transport
+h[2] postfix transport install	URL:https://tildegit.org/cosmic/cosmic/src/branch/master/Makefile#L55-L62
