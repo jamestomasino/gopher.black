@@ -3,6 +3,55 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Busses</title>
+  <link>gopher://gopher.black/1/phlog/20190902-busses/</link>
+  <pubdate>Mon, 02 Sep 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+busses
+September 02nd, 2019
+----------------------------------------
+
+I never spent much time on busses growing up. We were a car family
+in the suburbs. I either rode my bike places or we drove a car.
+Nothing was accessible by foot, and busses didnt run close by.
+
+Upon moving to Reykjavík we decided to go without a car for the
+first year to save money and get to know the area more intimately.
+It forces me to walk place to place, which is exercise I need, and
+it slows the pace of life.
+
+Today I wanted to buy new 3D filament. I've only found one store
+that sells it so far, and it took me almost two hours to get there
+and make the purchase with all the transfers. A single errand is
+a day's outing. 
+
+Even now as I'm on the bus home I feel a strange reaction from
+completing a simple task. It reminds me of the pleasures of the
+Slow Internet.
+
+My wife went grocery shopping this morning. She walked the 2 km
+into town (down a big hill and up another) then shopped and rode
+the bus home. She accomplished something more significant than it
+would have been by car.
+
+This is all of mind due to the convergence of solderpunk's
+ROOPHLOCH and kensanata's thread on creating, or rather the notion
+of being productive. It seems to me that the method contributes so
+much to the worth that I'm not sure end products are of much use in
+determining quality of time spent.
+
+Another case in point, sewing. I routinely did the sewing in our
+last home by machine. It gave satisfaction for creation, but since
+moving all my needle work has been by hand. It took me an hour to
+make finger puppets for my son, but the satisfaction scaled more
+rapidly than the increased effort. Some of that may be novelty, but
+the same could be said for the machine.
+
+Working manually by choice gives strange fruit.
+</pre>]]></description>
+</item>
+<item>
   <title>Hammer Time Extended</title>
   <link>gopher://gopher.black/1/phlog/20190901-hammer-time-extended/</link>
   <pubdate>Sun, 01 Sep 2019 00:00:00 +0000</pubdate>
@@ -624,31 +673,6 @@ you'd like. Let it be similar or not. Just leave gopher alone.
 We can plug things in creatively to get gopher over TLS and tor
 already in its current state. New stuff is cool, but just call it
 something else. 
-</pre>]]></description>
-</item>
-<item>
-  <title>Strike A Pose</title>
-  <link>gopher://gopher.black/1/phlog/20190605-strike-a-pose/</link>
-  <pubdate>Wed, 05 Jun 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-strike a pose
-June 05th, 2019
-----------------------------------------
-
-I was reading a twitter thread about the history of linked-list
-questions in interviews [0] and a commenter asked how the poster
-added a strikethrough to a tweet. He linked to a neat little site
-that lets you type a message and generate a unicode strikethrough
-version [1]. You can then copy the g̶o̶o̶f̶y̶ ̶s̶h̶e̶n̶a̶n̶i̶g̶a̶n̶s̶ well-formatted
-unicode and it should show up for you.
-
-I obviously had to p̶r̶o̶v̶e̶ ̶m̶y̶ ̶n̶e̶r̶d̶i̶n̶e̶s̶s̶ test it out!
-
-[0] twitter thread
-    https://mobile.twitter.com/hillelogram/status/962424365819277312
-[1] strike through generator
-    http://adamvarga.com/strike/
 </pre>]]></description>
 </item>
 </channel>
