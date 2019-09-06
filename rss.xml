@@ -3,6 +3,98 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>The Apocrypha Of Cat The Desert</title>
+  <link>gopher://gopher.black/1/phlog/20190906-the-apocrypha-of-cat-the-desert/</link>
+  <pubdate>Fri, 06 Sep 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+the apocrypha of cat - the desert
+September 06th, 2019
+----------------------------------------
+
+It is said that before the desert, there was no cat.
+
+It is also said that before cat, there was no desert.
+
+What is known is that when cat left the desert he left a piece of
+himself behind and took something different in its place. For
+before the desert was a time when cat wore colors, when he sang
+karaoke, and most importantly, when he had hair.
+
+The sages speak of a time before myth and before legend when the
+world held its breath waiting for a story to begin and set all in
+motion. In some traditions this began with a Word, or a song that
+can be heard in the Vedas, but the true devotee knows the truth.
+The story began with a baby doll crying.
+
+Cat found the doll at the edge of the great expanse stretching
+endlessly beyond horizon covered in scrub brush and dust devils.
+Low in the sky, the sun was quickly fleeing the heat of the day.
+The baby cried once, twice, and a third time as a true harbinger.
+In that aged voice-box a clarion rang from the heavens and opened
+cat's eyes to Truth, such as needs capitalization and archaic
+meter.
+
+He lifted the baby in his arms with tender care and when he looked
+down again his shoes had become Doc Martens. He knew these boots
+were meant for walking, and that's just what he did as they
+carried him deeper into the void. A voice then spoke, and cat knew
+it to be his own though it carried no identifiable accent. It had
+the cadence of an American and the diction of an Aussie but
+scrambled deep in the bowels of bargain-bin Anime and food trucks.
+The words themselves sounded like carnies trying their best to
+hide their shame on a home visit for Christmas. It was glorious
+and held the true power that can only be found in softness.
+
+When cat asked the wind, "Why do I sound like this?" The wind
+responded with a susurrus more brutal and jagged than cat's own
+voice. In that moment the wind relented knowing that cat had
+become as wind himself. And so he drifted forward further into the
+desert.
+
+In the desert he found many things. Boredom was chief amongst his
+discoveries, though. His ennui bore a hole into the Earth,
+hallowing it out and filling it with monsters and myth. It
+expanded to the heavens and cast aliens from the sky raining down
+across time. It filled our oceans and created Seaquest DSV, which
+it is said nobody watched, ever. Finally his boredom brought him
+back to the baby with it's soft coos and stuttered cries. In that
+beatific countenance he saw the purity of purpose of the crafted
+doll and it spoke a second Truth. Forever would he seek such
+perfection in all things that crossed his gaze.
+
+But his quest for beauty was at odds with the desert, for the only
+beauty of the desert is in its solitude. While cat remained it
+could never be itself. To love a thing and to crave for it such
+beauty as he did, cat knew he had to leave.
+
+And so, with the pure will of his element, he breathed outward
+across the landscape and painted it with all his colors. The pinks
+and fuchsias washed across the sky and land. The deep blues of his
+eyes filled the sky. But green, which he always had avoided in his
+youth, would not come from him. And so the desert would hold its
+purity and its beauty for all time while cat was left with only
+darkness to shroud himself.
+
+In Doc Martens he walked forth and it is whispered that he left
+three secrets behind in the vastness. The first was a fax number
+of unknown purpose. The second was a horde of unused raspberry
+pis. And the third was the greatest mix tape of all time.
+
+These days cat wanders the Earth in search of beauty and truth
+while battling those forces diametrically opposed. Chiefly among
+these is Salesforce, which cat has made his personal dragon to
+slay.
+
+One day cat may return to the desert and teach it the secrets he
+has learned. It is said you can find hints of these secrets buried
+underground in the depths of his latest baby, if you know where to
+look.
+
+Remember what cat does for us each and every day and give thanks.
+</pre>]]></description>
+</item>
+<item>
   <title>Busses</title>
   <link>gopher://gopher.black/1/phlog/20190902-busses/</link>
   <pubdate>Mon, 02 Sep 2019 00:00:00 +0000</pubdate>
@@ -644,35 +736,6 @@ two brainstorming how you can do something special and stand out,
 don't let that cripple you from just jumping in. Big ideas are
 cool when they come, but cat needs daily phlogs to feed him or
 he'll DIE! Save the cat, phlog regularly.
-</pre>]]></description>
-</item>
-<item>
-  <title>Gopher 2 0</title>
-  <link>gopher://gopher.black/1/phlog/20190607-gopher-2-0/</link>
-  <pubdate>Fri, 07 Jun 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-gopher 2.0
-June 07th, 2019
-----------------------------------------
-
-ratfactor has been writing on the age-old topic of updating the
-gopher protocol. [0][1] Many others have covered off on this stuff
-recently, like solderpunk.
-
-[0] Gopher 2.0 Pros 'n' Cons
-    gopher://sdf.org/0/users/ratfactor/phlog/2019-06-04-gopher-2.0-pros-cons
-[1] Gopher 2.0 - The protocol
-    gopher://sdf.org/0/users/ratfactor/phlog/2019-06-07-gopher-2.0-protocol
-
-At this point I think my 2-cents are that these folks should be
-aiming at a new protocol, not an update to gopher. Call it
-something else, give it a new port, define it with an RFC all
-you'd like. Let it be similar or not. Just leave gopher alone.
-
-We can plug things in creatively to get gopher over TLS and tor
-already in its current state. New stuff is cool, but just call it
-something else. 
 </pre>]]></description>
 </item>
 </channel>
