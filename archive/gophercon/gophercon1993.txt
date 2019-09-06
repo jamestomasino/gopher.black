@@ -1,0 +1,428 @@
+Original version from:
+gopher://it.is.rice.edu:70/00/TripReports/IS/gophercon-93
+
+----
+
+                             GopherCon '93:
+        Internet Gopher Workshop and Internet Gopher Conference
+
+                           April 12-13, 1993
+                         Minneapolis, Minnesota
+
+                            Prentiss Riddle
+                            riddle@rice.edu
+
+
+CopherCon '93 consisted of two events: an invitation-only workshop for
+about 75 participants focusing on technical details mostly related to
+the Gopher+ development effort, and a larger conference of some 250
+participants covering a broader range of topics including CWIS and
+library applications of Internet Gopher.  Both events were jointly
+sponsored by the University of Minnesota and by CICnet.
+
+Day 1: the Workshop
+
+GOPHER HISTORY:  After greetings from our hosts, things got rolling
+with reports on the past, present and future of Gopher from the UMinn
+GopherTeam.  Farhad Anklesaria began by recounting the history of
+Gopher development:  UMinn's first attempt to design a CWIS resulted in
+a classic design-by-committee monstrosity, to which the Gopher Team
+responded by proposing a very simple protocol which they believed they
+could actually implement.  The proposal was not well received by the
+CWIS committee, but after an attempt to out-source computing services
+at UMinn failed, its opponents retreated and the Gopher Team was
+permitted to proceed.  (This was enlightening not only as an example
+of the effect of political history on technology, but also because it
+may explain something about the Gopher Team's mistrust of design by
+committee, about which more later.)  The talk also illustrated how much
+ground Gopher has covered:  from in-house demo to a very popular
+technology and an RFC (#1436) on the IETF standards track in just two
+short years.
+
+GOPHER PRESENT AND FUTURE:  Mark McCahill gave an overview of the
+features being developed in Gopher+, the upwardly-compatible extension
+to the protocol (also known as "a gopher with a bag on the side to hold
+more"):
+
+   -- Item attributes: meta-information about Gopher objects.
+
+   -- Multiple views of objects.
+
+   -- ASK blocks: a method of passing information from the user to the
+   server.  While originally conceived as a forms fillout mechanism,
+   ASK blocks are now expected to provide much more, including a way to
+   make structured queries against a database.
+
+   -- "AdmitOne", a home-brewed authentication mechanism based on
+   single-use tickets.
+
+McCahill also mentioned some future directions for Gopher development:
+
+   -- Support for URNs and URLs ("Unified Resource Names" and "Unified
+   Resource Locators"), a pair of standards in the IETF process for
+   identifying Internet resources.
+
+   -- A Gopher->Z39.50 gateway.
+
+   -- The idea of combining ASK blocks with an authentication mechanism
+   to create read-write Gopherspace.  (While I find the prospect
+   intriguing, I wonder about the wisdom of jerry-rigging it this way
+   rather than designing the necessary protocol extensions to support
+   it explicitly.)
+
+   -- Support for Whois++ (an IETF effort intended as a simpler
+   alternative to X.500).
+
+The other members of the Gopher development team reported on their
+work:
+
+   -- Paul Lindner, author of the Unix server and curses client,
+   continues to enhance the base Gopher versions while working on
+   Gopher+.  The latest version of the base Gopher client now offers a
+   download menu for dialup users; a better CSO interface; faster I/O;
+   and snazzy dialogue boxes.  The base Gopher server now uses a config
+   file to eliminate compile-time defaults; user-configurable filename
+   extensions; better numbering support ("Numb=" is fixed); and
+   improved IP-based security.  The Gopher+ server and client are
+   coming along: they already implement forms via ASK blocks (the
+   resulting information is processed by being handed off to perl
+   scripts); alternate views and languages; extended information about
+   items; and AdmitOne authentication.  Upcoming enhancements for the
+   Gopher+ client include specification of preferred data types and
+   languages to take advantages of alternate views and a pretty,
+   integrated pager, while Paul's plans for the Gopher+ server include
+   automated mirroring of data and the integration of a relational
+   database.
+
+   -- Bob Alberti reported on fixes to the Gopher-FTP gateway.
+
+   -- Dan Torrey spoke of his work on the PC client: he had programmed
+   himself into a corner with the previous version, so he threw it out
+   and started over.  The result is PC Gopher III, which is
+   multi-threaded to allow for menu accessibility even in the middle of
+   a retrieve and appears much faster to the user.  Future plans
+   include a new memory management scheme to allow for Gopher+ and
+   files over 360K; support for other TCP/IP stacks; internal support
+   for 3270 sessions; and improver "helper" applications (image viewers
+   etc.).
+
+   -- Dave Johnson reported on his Mac client work.  He has made
+   various speed and user interface enhancements to the base Gopher
+   client, and also has written a Gopher+ client which supports item
+   attributes, alternate views, ASK blocks and AdmitOne
+   authentication.
+
+VERONICA: Fred Barrie and Steve Foster of the University of Nevada at
+Reno led a session on Veronica.  Veronica is making great strides in
+the direction of reliability and responsiveness by dividing the work:
+at the time of the conference there were two Veronica servers up (at
+UNR and CNIDR), with three more expected soon.  Recent improvements to
+Veronica software include faster server code, boolean support (AND and
+OR, but not NOT or parens), and better data harvesting and cleaning.
+
+Some Veronica statistics:  UNR has been receiving 150,000 queries per
+month; it takes 30 hours to prowl "known Gopherspace", meaning the 400+
+servers in the UMN master list and their children (amounting to 1200
+servers all told); Veronica detects over 10 million Gopher items, which
+it reduces after eliminating redundancies to about 1.5 million items;
+Veronica's database now takes up 350 Mb for raw data and 40 Mb for the
+index; up to 10% of the items in Gopherspace turn over in 1-2 weeks.
+
+There is a lot to be gained by making Veronica use Gopher+ attributes,
+such as abstracts, keywords, or a controlled-vocabulary classification
+scheme.  Not only will Gopher+ allow for better searching, but it
+should help with one of the most common user requests, namely
+additional context surrounding the items returned from a Veronica
+search.
+
+Problems still to be solved: scaling (although this may not be a
+problem -- Barrie and Foster think that 12 servers should be sufficient
+through the end of the year); how to let people control their own data
+harvesting (ideas: a cache at the top of the Gopher tree, perhaps in a
+".veronica" file, and/or coordination through regional networks); lack
+of permission to publish information gathered by Veronica ("we haven't
+been sued yet"); "Where am I?" questions for users; topic-oriented
+Veronica servers; meta-searches (like a "monster mindex").
+
+GOPHER+ DIRECTIONS: This session began with a "lively exchange of
+views" between the Gopher development team and members of the Gopher
+community who felt that Gopher would benefit by paying more attention
+to standards which either already exist or are in parallel
+development.  To overdramatize the split, one could call it an argument
+between "design by committee" and "design over a couple of weekends".
+Among the points of the critics: Gopher should try to be more
+expandable and more easily integrated with other protocols (we should
+avoid the need for gateways if possible); Gopher should support MIME
+types, which is distinct from supporting *a* MIME type; Gopher has
+confused the encoding type (e.g. compressed) with the content type
+(e.g. text), while MIME keeps these distinct.  The standards which were
+most often discussed as being of potential benefit to Gopher were MIME,
+WWW, WAIS (and Z39.50), URLs and URNs.
+
+Paul Lindner gave a short but provocative talk on a proposed
+"geographic" view type, "directory/GVIEW", which would present a menu
+as an image with "hot spots".  His original idea was for "geographic"
+menus like maps of bus routes or Gopher sites, but it could also be
+used to create Gopher menus which would resemble VNS pages or WWW
+hypertext documents.  (I am struck by the tendency of the these
+technologies to start resembling one another.)
+
+ACROBAT DEMO: Gary Cosimini of Adobe gave a talk on a very
+interesting forthcoming product called Acrobat which is intended to
+move Adobe from being a printer company to being a document language
+company.  Evidently Adobe was surprised to see PostScript become a
+means of transmitting documents from place to place, ridden as it is
+with printer dependencies.  Acrobat is Adobe's answer: a program which
+converts between PostScript and a PostScript-like document language
+called PDF ("Portable Document Format").  It is Adobe's bid to come up
+with a standard so ubiquitous that they are calling it "electronic
+paper".  In addition to increased portability, PDF has several features
+desirable in a document exchange format: it retains the structure of the
+document, allows direct access to any page in the document, allows for
+embedded special fonts and replaces missing fonts on the fly, includes
+efficient compression techniques, and is extensible to include
+multimedia and programmatic objects in the future.  PDF will be an open
+format and Adobe plans to help develop "save as" modules for common
+document preparation tools.  Adobe plans to offer Windows and Mac
+viewers for PDF this summer and DOS and Unix viewers soon thereafter.
+If it catches on this would be a good candidate for a Gopher data
+type and could solve many document incompatibility problems.
+
+ATTRIBUTE REGISTRY: This was dominated by another exchange between the
+Gopher development team and the proponents of compatibility with other
+standards.  The main proposal was that rather than Gopher developing
+its own attribute registry, Gopher should use the IANA ("Internet
+Assigned Numbers Authority") registration process, which according to
+some only takes 3 to 4 weeks.  There was also further discussion of
+MIME.  Result: the UMinn GopherTeam agreed to look harder at MIME.
+
+SOFTWARE LICENSING: The much-awaited confrontation between Shih-Pau Yen
+of UMinn and the Gopher community at large was heated, as expected.
+Mr. Yen presented a draft of a three-tiered licensing scheme: separate
+categories of licenses for educational institutions, small businesses
+and large businesses.  Mr. Yen pointed out that all UMinn software
+released prior to GopherCon would be considered freeware and not
+restricted by the license, hence the license covered effectively only
+future Gopher+ development; furthermore, the licenses restricted only
+Gopher servers, not clients.  Under the proposal, educational
+institutions would be exempt from licensing fees and in fact need not
+even sign the license.  Rates for businesses would vary according to
+the size of the business and the use to which it put its servers
+(whether it charged for information served out); rates would go as high
+for large businesses as the greater of $5000 per server or 7.5% of fees
+charged for Gopher services.
+
+Among the criticisms of Mr. Yen's proposal:  By charging fees
+exclusively for servers, he would penalize organizations which wish to
+put information into Gopherspace to the benefit of us all; it might
+make more sense to charge for clients.  The license agreements defined
+fees per year and made no guarantees that fees won't go up in
+subsequent years, raising fears of price hikes once the market was
+hooked on Gopher.  The language of the license agreements defined the
+size of a business by the gross incomes of all entities owning a share
+of or partially owned by the business, which would mean that one
+wealthy investor owning 1% of an otherwise small business could kick it
+up into the large business bracket.  Finally, there were the familiar
+complaints that the UMinn code wasn't written entirely by UMinn, that
+it has or will soon have freeware competitors, and that it doesn't come
+with the sort of support structure one might expect from commercial
+software.  Mr. Yen seemed determined to proceed with licensing fees of
+some kind, and it was unclear to me how much he would modify his
+proposal in the light of the comments at GopherCon.
+
+Day 2: the Conference
+
+The second day began with a recap of the Gopher update from day 1.
+
+REPORTS FROM MONDAY'S BREAKOUT SESSIONS:
+
+Using Other Technologies -- MIME, Kerberos, Z39.50, etc (Jane Smith,
+CNIDR): Repeated the plea that the Gopher developers take a harder look
+at other standards and strive for interoperability.
+
+Cataloging E-journals and Resources (Billy Barron, UTDallas): Spoke
+about the gains to be made from improved Veronica, including a
+controlled vocabulary for searching and use of Veronica data for
+research on the most common terms currently used in Gopherspace titles
+and Veronica searches.  Experiments in the past few months suggest that
+Gopher classification efforts based on schemes like the Library of
+Congress or Dewey Decimal system are less successful than ad hoc "used
+bookstore" schemes.
+
+Security, Authentication and Signatures (Tamara Iversen,
+Northwestern):  Session focused on a hole in the design of the AdmitOne
+authentication scheme discovered by Lee Brintle of UIowa; suggested a
+modular authentication scheme selectable by each Gopher site.
+
+Gopher Front-Ends to Databases (Paul Lindner): A number of efforts have
+taken place to integrate both relational and flat-file databases with
+Gopher.  Two basic methods are common: a "shadow" system, in which
+reports are generated from the database and moved into Gopherspace, and
+on-line access to an interactive query engine.  Paul plans to work
+toward integrated Gopher support of one flat-file db (DBase is the most
+popular) and one generic SQL db.
+
+GOPHER+ ATTRIBUTE REGISTRY: The Gopher development team agreed to
+consider using the IANA registration process in the future.  For now,
+new attribute types are to be registered by sending mail to the
+gopher-news list and reaching some sort of consensus in the ensuing
+discussion.
+
+NEW GOPHER USES AND TOOLS: unless otherwise specified, any tools
+mentioned here are said to be available in the archives on
+boombox.micro.umn.edu.
+
+   Jughead (Rhett "Jonzy" Jones, UUtah): "Jonzy's Universal Gopher
+   Hierarchy Excavation And Display", this is like a local veronica --
+   it allows for search by title of items in a local Gopher hierarchy.
+   It supports boolean searches (AND, OR and NOT).  A Gopher tree of
+   some 45000 items takes about 30 minutes to walk and 10 minutes to
+   index.
+
+   Procmail (Marie-Christine Mahe, Yale): a mail-to-whatever gateway
+   which Marie-Christine has used as a way to put things into
+   Gopherspace.
+
+   WELL Gopher (Paul Holbrook of CICnet): an interesting collection of
+   original text resources from a well-known Internet watering hole.
+   Highlights include works by Bruce Sterling and Stewart Brand.
+   Gopher to nkosi.well.sf.ca.us port 70.
+
+   Ac (Eric Morgan, NCSU Libraries): an interactive tool for the
+   systematic acquisition of electronic journals.
+
+   OS/2 Gopher client and server (David Singer, IBM Almaden Research
+   Center):  the client is already on boombox, the server is expected
+   soon.
+
+   Gmail/gmailcal (Prentiss Riddle, Rice University): a
+   mail-to-gopherspace gateway with an accompanying events calendar
+   manager.
+
+   Grabdata (Mahesh Subramaniam, Notre Dame): a tool to gather data
+   from users' AFS directories, perform various validation checks, and
+   move it into Gopherspace.
+
+   Relational database of course schedules (Ed Moy, UCal): A gateway
+   between Gopher and a relational database containing a course
+   schedule.  Works by selecting a set of courses and successively
+   limiting it by such categories as day, department, starting time,
+   ending time, room, instructor, etc.
+
+   MOOGopher (Erik Ostrom, Gustavus Adolphus College, and Larry
+   Masinter, Xerox PARC):  An object-oriented MUD (multi-user
+   dungeon/dimension) with an integrated Gopher client.  Objects in the
+   MUD can contain Gopher items, and users can move about Gopherspace
+   analogously to exploring a MUD.  To see this in action, telnet to
+   Jay's House MOO at theory.cs.mankato.msus.edu port 1709.
+
+   Overview of MSU tools and applications (Rich Wiggins and Dennis
+   Boone):  Lots of nifty things at MSU, including sound archives
+   (historic voices and 1992 Presidential debates), tools to generate a
+   Gopher "road map" and analyze Gopher logs, an "online photo gallery"
+   of campus sites, and a "guest book" for recording user comments.
+
+The coveted stuffed gopher was won by Erik Ostrom and Larry Masinter
+for MOOGopher.
+
+SERVER ADMINISTRATION: The Server Administration breakout session was
+in some ways a continuation of the tool-off, but it got beyond tools to
+cover Gopher administration and design philosophy as well.  Joel Cooper
+spoke more about how Notre Dame copies data from individuals' AFS
+directories into Gopherspace.  The procedure includes much
+error-checking and requires files to include a template containing
+information about author, expiration, etc.
+
+Dennis Boone spoke about the design rules for the MSU CWIS, which may
+bear repeating here:
+
+   -- Ample "About" files.
+   -- No "hunt the wumpus" games -- hierarchy is preferable to a maze.
+   -- Lots of navigational tools (e.g., a title indexer)
+   -- The root directory should include help and be understandable
+   -- Directories should not exceed a screenful in length
+   -- Identity of data providers should be attached to all documents
+   -- Reliability: 24 by 7 support for Gopher services
+   -- Lowest common denominator: assume screens <= 72 columns wide
+      and <= 16 rows high
+   -- No dead ends, no sparse directories
+   -- Local-use information is most important
+   -- Break these rules when necessary
+
+Paul Lindner spoke about the trials and tribulations of getting a CWIS
+off the ground at UMinn.  Although he and the rest of the Gopher
+development team are celebrities in Gopherspace, he's "just another
+joe" at his home institution.  Some interesting tidbits: the principal
+servers at UMinn are a mirrored pair of Macintosh IIci's running AUX;
+they carry out some 50000 transactions a day.  UMinn is interested in
+ways to provide redundant servers, including the use of DNS route
+shuffling.  The UMinn method of CWIS design emphasizes decentralization
+using small, cheap hardware, typically Mac servers.  They see
+decentralization as a proper response both to the fact that "machines
+go down" and the need to put power in the hands of the people with the
+data.
+
+I spoke about our experiences at Rice University with RiceInfo and some
+of the formal steps we've taken (the "RiceInfo Management Proposal",
+CWIS committees, Data Maintainer's Agreements, etc.).  I also noted
+that, like MSU, we see reliability issues as encouraging reliably
+maintained central services over a potential chaos of less reliably
+maintained small servers.
+
+ORGANIZING SUBJECT-MATTER BASED GOPHERS:  A lively breakout session
+which made me wish I could have attended the other library- and
+resource-oriented sessions earlier in the conference.
+
+Dan Jacobson of Johns Hopkins spoke about his biology Gopher server; he
+believes in the need for control to be in the hands of specialists in a
+field, not librarians.  He also spoke of the need for context: guess
+what happens when a biologist does a veronica search on the word
+"mouse"? :-)
+
+Mike McGervin of Stanford spoke of his work building a Gopher server of
+medical informatics sources based on ten years' experience with the
+SUMEX-AIM ftp archives.
+
+Librarian Nancy John of the University of Illinois mentioned an Educom
+paper by Howard Strauss entitled "Anarchy in the CWIS".  She spoke of
+the need to go beyond old methods developed for print resources
+(including the LC and Dewey classification schemes).  One promising
+direction is the use of Veronica with Gopher+ attributes (Academic
+Discipline, Audience, Format (newspaper or novel), etc.) to provide
+needed context for searches.
+
+(I piped up from the audience with a plea for feedback mechanisms from
+users and a community organized around each subject area, rather than
+depending on Gophermeisters discovering resources in isolation.  I'd
+like to see a set of discipline-specific newsgroups or mailing lists
+devoted to the discovery of resources.  I also talked a bit about
+"linkmerge", my ad-hoc scheme to merge subject-tree directories from
+other sites.  Much to my surprise, people seem to like it, even the
+librarians who I expected to be horrified.)
+
+CLOSING: The conference ended with a general question and answer
+session.  Highlights: Someone suggested a common conference at which
+Gopher, WAIS, WWW, etc. developers could meet (a good candidate to host
+such a conference would be someplace like CNIDR).  Paul Lindner agreed
+to put ".cap" support back into the Unix Gopher server as an #ifdef
+option.  The Gopher development team talked again about farming out
+documentation to outside volunteers.
+
+My conclusions?  There's lots happening in Gopherspace.  It was very
+exciting to see all these talented people carrying out all of these
+great ideas.  Gopher's explosive growth is continuing with no end in
+sight.  At the same time, I was disappointed that Gopher+ has not
+matured more than it has -- there are still nagging details about the
+protocol, the feasibility of small clients, and the licensing of
+UMinn-developed software which could make Gopher+ less successful at
+fulfilling its goals than basic Gopher has been.  I had hoped that
+these issues would be put behind us at the conference, but it is now
+clear that we will continue to struggle with them for some time.
+
+-- Prentiss Riddle ("aprendiz de todo, maestro de nada") riddle@rice.edu
+-- Unix Systems Programmer, Office of Networking and Computing Systems
+-- Opinions expressed are not necessarily those of my employer.
+
+Prentiss Riddle
+(riddle@rice.edu)
+1993.05.11 / 1998.05.14
