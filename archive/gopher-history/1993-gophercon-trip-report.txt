@@ -1,7 +1,21 @@
-Original version from:
-gopher://it.is.rice.edu:70/00/TripReports/IS/gophercon-93
+Path: gmd.de!ira.uka.de!math.fu-berlin.de!news.netmbx.de!Germany.EU.net!mcsun!uunet!
+europa.eng.gtefsd.com!darwin.sura.net!news-feed-1.peachnet.edu!umn.edu!news2.cis.umn.edu!
+gopher-news-dae...@boombox.micro.umn.edu
+From: rid...@is.rice.edu (Prentiss Riddle)
+Message-ID: <9305120102.AA15593@is.rice.edu>
+Subject: Yet another GopherCon 93 trip report
+Original-To: gopher-n...@boombox.micro.umn.edu
+Date: Tue, 11 May 93 20:02:02 CDT
+X-Mailer: ELM [version 2.3 PL11]
+Newsgroups: comp.infosystems.gopher
+Distribution: comp
+Sender: n...@news2.cis.umn.edu
+Approved: comp.infosystems.gop...@news.cis.umn.edu
+Lines: 424
 
-----
+[This is a bit too late to help anybody who's trying to write his or
+her own trip report, but several people asked for this, so here it is.]
+
 
                              GopherCon '93:
         Internet Gopher Workshop and Internet Gopher Conference
@@ -10,7 +24,7 @@ gopher://it.is.rice.edu:70/00/TripReports/IS/gophercon-93
                          Minneapolis, Minnesota
 
                             Prentiss Riddle
-                            riddle@rice.edu
+                            rid...@rice.edu
 
 
 CopherCon '93 consisted of two events: an invitation-only workshop for
@@ -167,7 +181,7 @@ used to create Gopher menus which would resemble VNS pages or WWW
 hypertext documents.  (I am struck by the tendency of the these
 technologies to start resembling one another.)
 
-ACROBAT DEMO: Gary Cosimini of Adobe gave a talk on a very
+ACROBAT DEMO: Gary Cassamiti (?) of Adobe gave a talk on a very
 interesting forthcoming product called Acrobat which is intended to
 move Adobe from being a printer company to being a document language
 company.  Evidently Adobe was surprised to see PostScript become a
@@ -419,10 +433,7 @@ fulfilling its goals than basic Gopher has been.  I had hoped that
 these issues would be put behind us at the conference, but it is now
 clear that we will continue to struggle with them for some time.
 
--- Prentiss Riddle ("aprendiz de todo, maestro de nada") riddle@rice.edu
+-- Prentiss Riddle ("aprendiz de todo, maestro de nada") rid...@rice.edu
 -- Unix Systems Programmer, Office of Networking and Computing Systems
+-- Rice University, POB 1892, Houston, TX 77251 / Mudd 208 / 713-285-5327
 -- Opinions expressed are not necessarily those of my employer.
-
-Prentiss Riddle
-(riddle@rice.edu)
-1993.05.11 / 1998.05.14
