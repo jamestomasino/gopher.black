@@ -1,0 +1,57 @@
+From: lind...@cs.umn.edu (Paul Lindner)
+Newsgroups: comp.unix.misc,comp.protocols.tcp-ip
+Subject: Internet Gopher v0.2 Curses Client and Server is available
+Message-ID: <1991Sep10.020238.4751@cs.umn.edu>
+Date: 10 Sep 91 02:02:38 GMT
+Reply-To: lind...@boombox.micro.umn.edu
+Followup-To: comp.unix.misc
+Organization: University of Minnesota, Minneapolis, CSci dept.
+Lines: 48
+
+
+                         The Internet Gopher
+                  A Distributed Information Service
+
+         Unix-Server, Curses-Client Release 0.2, 9 Sep. 1991
+
+                       University of Minnesota
+                  Computer and Information Services
+
+The Internet Gopher is a distributed docuemnt delivery service.   It
+allows a neophyte user to access various types of data residing on
+multiple hosts in a seamless fashion.  This is accomplished by
+presenting the user a hierarchical arrangement of documents and by
+using a client-server communications model.  The Internet Gopher
+Curses Client allows a user on a terminal to access the vast array of
+information available on various gopher servers.  The Internet Gopher
+Server accepts simple queries, and responds by sending the client a
+document.
+
+Also included in the release are experimental clients and servers for
+real-time radio, utilities for using gopher in shell scripts (written
+in perl), and some sound utilities for NeXT machines.
+
+Other Internet Gopher Software available includes:
+
+Macintosh Gopher client written in HyperCard.
+Macintosh Gopher Server software.
+PC Gopher Client with a Borland Turbo Vision Interface.
+Full Text Indexing servers for NeXT machines.
+NeXT Gopher client (provided by Max Tardiveau of the University of St.
+                    Thomas.)
+
+All of this software is available for anonymous ftp to
+boombox.micro.umn.edu (128.101.95.95) in the /pub/gopher directory.
+
+The Internet Gopher Development Team can be reached via e-mail as
+gop...@boombox.micro.umn.edu.  If you prefer paper we can be reached
+at:
+
+Internet Gopher Team
+132 Shepherd Labs
+100 Union Street SE
+Minneapolis, MN 55455
+--
+ | Paul Lindner | lind...@boombox.micro.umn.edu   |"You have to spit
+ |              | Computer & Information Services | to see the shine..."
+ |              | University of Minnesota         | -- Babes in Toyland
