@@ -1,0 +1,86 @@
+Path: sparky!uunet!spool.mu.edu!umn.edu!news2.cis.umn.edu!gopher-news-requ...@boombox.micro.umn.edu
+From: daniel@bauhaus ("Daniel Torrey")
+Newsgroups: alt.gopher
+Subject: PC Gopher II Released
+Message-ID: <9204100046.AA01004@bauhaus.micro.umn.edu>
+Date: 10 Apr 92 00:26:07 GMT
+Article-I.D.: bauhaus.9204100046.AA01004
+Sender: n...@news2.cis.umn.edu
+Distribution: alt
+Lines: 73
+Approved: alt.gop...@news.cis.umn.edu
+Original-To: gopher-n...@boombox.micro.umn.edu
+
+PC Gopher II, the new Internet Gopher client for DOS-based
+microcomputers, is now available for anonymous ftp from
+
+
+  boombox.micro.umn.edu
+
+in the directory
+
+
+  /pub/gopher/PC_client/PC_Gopher_II
+
+The directory contains the following files:
+
+        GOPHER.EXE  The main executable file.
+        GOPHER.OVR  The overlay file.
+        GOPHER.REZ  The resource / configuration info file.
+        REZGEN.EXE  A utility to generate a new resource file,
+              should your old one get munged.
+        GENV.BAT    An EXAMPLE of a batchfile to set up your
+              environment properly for PC Gopher II - it's
+              ONLY an example, and won't work if you don't
+              modify it to suit your environment!
+        About_PCGII List of changes, etc.
+
+        PCGII.ZIP   All of the above, archived with PKZIP
+
+        PCG2_SRC.ZIP  The source files, Turbo Pascal v6.0, and the
+                TCP/IP driver, IBMTCP.DVR
+        PKUNZIP.EXE          A program to unarchive the .ZIP files
+        00README                  This file, more or less.
+
+
+REMEMBER TO SET THE FTP TRANSFER MODE TO BINARY BEFORE YOU GRAB
+THESE FILES.
+
+Also, be sure to read the accompanying file About_PCGII!  Many things
+have changed between the old PC Gopher and PC Gopher II; if you just
+grab the executable and run it, you will certainly run into trouble!
+
+A quick rundown of what's new:
+
+1. Support for the Gopher <--> WAIS gateway
+
+2. Minimal support for CSO servers
+
+3. Path to telnet application is now read from the environment
+
+4. Fully overlaid; overlay buffer kept in EMS if available.
+
+5. Directory cacheing
+
+In order to run PC Gopher II, you'll need a packet driver; the
+version 9 distribution of the Clarkson packet drivers is available in
+the directory
+
+
+   /pub/gopher/PC_client/drivers
+
+
+All available previous versions have all been moved to a directory
+called
+
+
+   /pub/gopher/PC_client/old_client
+
+
+Bug reports, flames, beer, and cash should all be sent to:
+
+
+   gop...@boombox.micro.umn.edu
+
+
+-daniel

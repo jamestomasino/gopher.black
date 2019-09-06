@@ -1,0 +1,298 @@
+Comments: Gated by NETN...@AUVM.AMERICAN.EDU
+Path: gmd.de!newsserver.jvnc.net!darwin.sura.net!paladin.american.edu!auvm!MSU.BITNET!RWWMAINT
+Return-Path: <@AUVM.AMERICAN.EDU,@VTBIT.BITNET:CWI...@WUVMD.BITNET>
+Return-Path: <@WUVMD.WUSTL.EDU:RWWMA...@MSU.BITNET>
+Message-ID: < CWIS-L%93050112322880@WUVMD.WUSTL.EDU>
+Newsgroups: bit.listserv.cwis-l
+Date:         Sat, 1 May 1993 12:31:33 EDT
+Sender:       "Campus-Wide Information Systems" < CWI...@WUVMD.BITNET>
+From:         Richard W Wiggins < RWWMA...@MSU.BITNET>
+Subject:      Re: WWW vs. Gopher
+Comments: To: "Campus-Wide Information Systems" < CWI...@WUVMD.BITNET>,
+          Tim Berners-Lee < t...@info.cern.ch>
+In-Reply-To:  Message of Fri, 30 Apr 1993 14:58:00 EDT from < NOYES@HARTFORD>
+Lines: 111
+
+If you look at the history of Gopher and WWW, it appears they were
+conceived and discussed at about the same time (mid 1991) and deployed
+at roughly the same pace. But Gopher seems to be winning: There are 400
+or so registered Gopher servers on the net; over 1100 are indexed by
+Veronica. There are about 50 Web servers. Gopher is currently number
+about number 10 in the list of applications generating traffic on the
+NSFnet backbone; WWW is 50. Both are growing rapidly. (These numbers are
+somewhat biased; WWW is more popular in Europe, so NSFnet numbers don't
+cover it; also, Gopher "front ends" a lot of WAIS data.) Why is Gopher
+ahead?
+
+At the recent meeting of the Internet Engineering Task Force in Columbus
+OH, this question was raised more than once. There was a "Birds of a
+Feather" session for WWW, and another one for Gopher. We had about 23
+folks at the WWW session; there were about 54 at the Gopher one. Tim
+Berners-Lee, the principal architect of WWW, asked how many were running
+Web servers -- answer 3 or 4. At the Gopher BOF, I asked how many folks
+run Gopher servers -- answer just about all 54 attendees.
+
+Reasons given as to why Gopher is "winning":
+
+1. Client software is available on popular platforms (PC, Mac)
+
+2. Good VT100 support via "curses" client
+
+3. The perception that hypertext is inherently complicated, always
+   leading to a "twisty maze of passages all alike" (this perception is
+   of course not shared by WWW adherents)
+
+4. The relative ease of setting up a server. Some folks have a Gopher
+   server running within an hour or two of downloading the package.
+   Initial WWW setup takes quite a but longer. (One attendee reported
+   that the installation documentation came in HTML, the markup language
+   used by WWW, creating an interesting bootstrap problem)
+
+5. U Minn as a central registry in the US, providing a visible "home
+   page" for all Gophers
+
+6. Gopher is very strong at linking to various document types. You can
+   point a Gopher server at a Unix mail file, a WAIS server, or an FTP
+   site, and  you've got an instant gateway.
+
+... but there may be solutions to all this:
+
+1. NCSA says Mosaic will be available under other platforms (PC, Mac) at
+   some point. Cornell Law School is working on a multipurpose client by
+   the name of Cello.  Others will surely come.
+
+2. The curses client for WWW provided by Kansas with Lynx seems to fill
+   this bill.
+
+3. WWW folks feel that this is a bad rap for hypertext. As folks get
+   more experience with hypertext documents in various systems, they'll
+   accept it more. A Gopher tree can be represented in a Web; one need
+   not build a complicated mesh of interwoven links. Hypertext just
+   means you can have links within documents.
+
+4. Tim Berners-Lee said there are some improvements to server
+   administration that could be implemented. He mentioned simplifying
+   setup of rules files.
+
+5. There's no reason why a visible master WWW registry couldn't be
+   prominently documented
+
+6. This sort of functionality could be added or enhanced in WWW.
+   (Perhaps someone from the Web community could share with us what's
+   possible here.  Can Web use WAIS indexing?  Can it point to WAIS
+   SRCs as easily as Gopher can?)
+
+We've been running a Gopher service since early 1992, and we're very
+active in the community. But after seeing Mosaic and WWW, it is very
+hard to deny the benefits of networked hypertext. Via Mosaic I showed
+Berners-Lee our Gopher at Michigan State. The first document we opened
+says "Look in the xxx folder for more information." B-L said "Now with
+WWW that would be an embedded pointer." In Mosaic, the hypertext links
+appear in color within the document. Links you've clicked on appear in a
+different color -- a nice touch. An example of a lovely use of WWW is an
+experiment at Ohio State, where they made a cross-referenced set of Unix
+'man' pages. You see a reference to another page; the title is in red on
+the screen; click on it if it is of interest;  it's on your screen.
+
+After IETF I showed all this to my management. I think there's a very
+good chance we'll want to migrate to the Web at some point within the
+next year or so. I would urge all readers of this list to find someone
+with an X-Windows capable workstation, get hold of Mosaic, and use it to
+check out WWW.  Mosaic is worth seeing on its own, with nice features
+such as infinite history of documents selected.
+
+Working against Gopher lately has been the U Mn attitude towards the
+software. There has been the licensing flap, which is chronicled in
+comp.infosystems.gopher, and not worth rehashing here. Recently we had
+another disappointment: for over a year we've been patching the U Mn
+MS-DOS client, PC Gopher, to work with FTP Software Inc's suite
+(supplying the fix to U Mn each time). Now U Mn won't share the source
+code with us, saying that they will fix this themselves. This client was
+announced on March 19, 1993. It's now May 1, and none of our users can
+exploit this client. While U Mn is taking a more proprietary view of
+their software, Berners-Lee is working to open up the license for WWW.
+
+Despite all the above: Sites should not necessarily avoid Gopher as they
+set up new services. Right now, today, you can get going quickly in
+Gopher, and can serve virtually all users. When multipurpose clients
+come out for PCs and Macs, you can migrate to the Web.  Already, one can
+view a Gopher tree having started in the Web, so a server set up under
+Gopher can deliver data to users after an announced migration to WWW.
+(Ie a logical migration need not mean an immediate physical move of
+data.) NCSA is even talking about providing a unified WWW/Gopher server.
+
+/Rich Wiggins, Gopher Coordinator, Michigan State U
+               ^^^^^^
+            (er, CWIS?)
+
+Comments: Gated by NETN...@AUVM.AMERICAN.EDU
+Path: gmd.de!newsserver.jvnc.net!howland.reston.ans.net!paladin.american.edu!auvm!
+SOUTHAMPTON.AC.UK!C.K.WORK
+Return-Path: <@AUVM.AMERICAN.EDU,@VTBIT.BITNET:CWI...@WUVMD.BITNET>
+Return-Path: <@WUVMD.WUSTL.EDU,@WUVMD.Wustl.Edu:C.K.W...@southampton.ac.uk>
+Via: uk.ac.southampton; Wed, 5 May 1993 09:44:36 +0100
+X-Mailer: ELM [version 2.3 PL11]
+Message-ID: <10620.9305050824@mail.soton.ac.uk>
+Newsgroups: bit.listserv.cwis-l
+Date:         Wed, 5 May 1993 09:24:32 BST
+Sender:       "Campus-Wide Information Systems" < CWI...@WUVMD.BITNET>
+From:         "C.K.Work" < C.K.W...@SOUTHAMPTON.AC.UK>
+Subject:      Re: WWW vs. Gopher
+Comments: To: CWI...@WUVMD.Wustl.Edu
+In-Reply-To:  < no.id>; from "Richard W Wiggins" at May 1, 93 12:31 pm
+Lines: 44
+
+R. Wiggins said ...
+
+>
+> If you look at the history of Gopher and WWW, it appears they were
+> conceived and discussed at about the same time (mid 1991) and deployed
+> at roughly the same pace. But Gopher seems to be winning: There are 400
+> or so registered Gopher servers on the net; over 1100 are indexed by
+> Veronica. There are about 50 Web servers. Gopher is currently number
+> about number 10 in the list of applications generating traffic on the
+> NSFnet backbone; WWW is 50. Both are growing rapidly. (These numbers are
+> somewhat biased; WWW is more popular in Europe, so NSFnet numbers don't
+> cover it; also, Gopher "front ends" a lot of WAIS data.) Why is Gopher
+> ahead?
+>
+
+This is followed by a number of reasons, which I agree with, but also feel
+will be addressed in time. To my mind, there is another problem with WWW
+which is inherent in all hypertext systems - the ongoing cost of preparing
+material for the service.
+
+To look at the narrow case of CWISes (for which Gopher seems very popular),
+it would seem that the way forward is to distribute the Info provision role
+across the institution - resulting in a diverse, and hopefully balanced,
+collection of info. However, in doing this, a degree of editorial control
+is lost. If we use WWW, who will put in the links? How will the systematic
+and consistent use of links be maintained ... unless considerable (and
+expensive) effort is directed towards this?
+
+I do not dismiss WWW as a valuable tool - but, in general purpose applications,
+it may prove to expensive to use. And unless the linkages can be maintained
+to a high standard, the prime benefit of WWW is lost. As in all hypertext
+systems, WWW can only be as good as the "link-author" makes it. We've probably
+all seen examples of good and bad PC/MAC based hypertext applications. In my
+experience, the good ones are narrowly focused, and written by an individual
+or under strong editorial control. The worst ones are inconsistent
+incomplete and contain 'black holes'. I don't see how the latter can be
+avoided in the case of general info systems with multiple sources (except
+at great expense).
+
+Colin K. Work
+
+Uni. of Southampton Computing Services
+C.K.W...@Southampton.AC.UK
+>
+
+Comments: Gated by NETN...@AUVM.AMERICAN.EDU
+Path: gmd.de!ira.uka.de!howland.reston.ans.net!paladin.american.edu!auvm!WWW3.CERN.CH!TIMBL
+Return-Path: <@AUVM.AMERICAN.EDU,@VTBIT.BITNET:CWI...@WUVMD.BITNET>
+Return-Path: <@WUVMD.WUSTL.EDU,@CEARN.CERN.CH:t...@WWW3.CERN.CH>
+Message-ID: <9305051445.AA16604@www3.cern.ch>
+Newsgroups: bit.listserv.cwis-l
+Date:         Wed, 5 May 1993 15:45:58 +0100
+Sender:       "Campus-Wide Information Systems" < CWI...@WUVMD.BITNET>
+From:         Tim Berners-Lee < t...@WWW3.CERN.CH>
+Subject:      Re: WWW vs. Gopher
+Comments: To: "Campus-Wide Information Systems"
+          < CWIS-L%WUVMD.BIT...@cearn.BITNET>
+Lines: 95
+
+> Date:         Wed, 5 May 1993 09:24:32 BST
+> From: "C.K.Work" < C.K.W...@southampton.ac.uk>
+[...]
+> To my mind, there is another problem with WWW
+> which is inherent in all hypertext systems -
+> the ongoing cost of preparing material for the service.
+
+No no no no no.  This is one of the BIG falacies about WWW.
+You don't HAVE to write hypertext. The fact that a number of
+people have written some very nice hypertext out there doesn't
+mean you can't just run a W3 server on your Gopher data.
+
+If you take the NCSA public domain W3 server and run it just
+like you run your Gopher server.  I mean, put it in the same
+way into inetd.conf and point it at the same directory.
+It will pick up the same .cap and other magic gopher files
+and make a nice hypertext tree up for you.
+So if you are readingthis and you are running a gopher server,
+you can go pick up the NCSA httpd server fron ftp.ncsa.uiuc.edu
+and slot it in right away, and you are on the web.
+
+Sure, you might too find that you wnat to write some hypertext
+just for the welcome page at lease... but these is NO ongoing cost.
+
+> To look at the narrow case of CWISes (for which Gopher seems very
+popular),
+> it would seem that the way forward is to distribute the Info
+provision role
+> across the institution - resulting in a diverse, and hopefully
+balanced,
+> collection of info. However, in doing this, a degree of editorial
+control
+> is lost. If we use WWW, who will put in the links?
+
+
+If you use Gopher, who will put in the links?  WWW and Gopher
+both have the ability to point from one node to any other node.
+The webs you make with Gopher and those you make with WWW have
+the same topology.  The difference is NOT in the topology.  It is
+in the format of a node.  In Gopher, it is a MENU or a flat
+document.  In WWW, it is a hypertext node which can be more
+expressive than a menu.
+
+(Already with the basic httpd server from CERN you get README
+files put in above or below your directory listings, which
+can allow you to include explanations which make your
+web easier to follow)
+
+> How will the systematic
+> and consistent use of links be maintained ... unless considerable
+(and
+> expensive) effort is directed towards this?
+
+Both WWW and Gopher have this problem. Any open system
+of references has the problem that you can link to something not
+under your control which then goes away.
+
+[...]
+> WWW can only be as good as the "link-author" makes it. We've
+probably
+> all seen examples of good and bad PC/MAC based hypertext
+applications. In my
+> experience, the good ones are narrowly focused, and written by an
+individual
+> or under strong editorial control. The worst ones are inconsistent
+> incomplete and contain 'black holes'. I don't see how the latter
+can be
+> avoided in the case of general info systems with multiple sources
+(except
+> at great expense).
+
+This applies equally to WWW and Gopher.  In both cases, sticking
+to a a basic hierarchical structure, and only putting external links
+to things you have some confidence in, lead to a very useable system.
+A few tools to check for dangling links are always useful, although
+as servers can be down temporaily it is dangereous to delete
+links on the first failure.
+
+If (and only if) you do start to write real hypertext documents, then
+I agree with your observations about good hypertexts. There is a
+small style guide which is now part of the www server guide
+(ftp://info.cern.ch/pub/www/doc/www-server-guide.ps)
+or available online as
+http://info.cern.ch/hypertext/WWW/Provider/Style/Overview.html
+which makes some suggestions for good online hypertext.
+Any comments additions are welcome.
+
+> Colin K. Work
+>
+
+> Uni. of Southampton Computing Services
+> C.K.W...@Southampton.AC.UK
+
+Tim Berners-Lee
+W3 team at CERN

@@ -1,0 +1,158 @@
+Path: sparky!uunet!cs.utexas.edu!zaphod.mps.ohio-state.edu!sol.ctr.columbia.edu!
+The-Star.honeywell.com!umn.edu!news2.cis.umn.edu!gopher-news-requ...@boombox.micro.umn.edu
+From: lindner@mudhoney (Paul Lindner)
+Message-ID: <199206120206.AA29359@mudhoney.micro.umn.edu>
+Subject: Announcing release of gopher v1.0 for Unix boxes
+Original-To: gopher-n...@boombox.micro.umn.edu (Gopher News Mailing List)
+Date: Thu, 11 Jun 92 21:06:34 CDT
+Reply-To: lind...@boombox.micro.umn.edu.
+X-Mailer: ELM [version 2.3 PL11]
+Newsgroups: alt.gopher
+Distribution: alt
+Sender: n...@news2.cis.umn.edu
+Approved: alt.gop...@news.cis.umn.edu
+Lines: 144
+
+Gopher v1.0 for unix boxes is now available for anonymous ftp from
+boombox.micro.umn.edu as /pub/gopher/Unix/gopher1.0.tar.Z
+
+There are many changes and enhancements to this version.  Specifically
+the file organization has changed quite drastically.  There are now
+only two files to configure the whole thing.  Compilation should be as
+easy as typing make on most systems.  Compiles cleanly on the
+following systems with a minimum of fuss:
+
+SunOS 4.1.2
+AIX 3.1.7
+Dynix
+UMAX4.3
+ES/IX (mips)
+A/UX (2.0 and 3.0)
+IRIX 4.0
+
+Configuration is more automatic than before, we really try and find
+out what the system is like before.  Note that the HTML code in the
+client is still not the hottest.  Beware..  It will probably be
+rewritten once the screen mode WWW source hits the streets.
+
+
+Here are the changes to the client:
+-----------------------------------
+
+Experimental MIME type is now supported. (Type 'M').
+
+TN3270 type is now supported (Type 'T').
+
+User can now escape from the Telnet/TN3270 connection screen.
+
+Ctrl-g will abort you out of all prompts, ala emacs.
+
+Added bookmark support and gopherrc file support.  Bookmarks can be
+defined with the 'a' or 'A' key.  The first marks the item under the
+cursor, the other marks the current directory.  Bookmarks are stored
+in ~/.gopherrc, along with other configuration parameters.
+
+Client now does nifty twirl output to let you know it's up to
+something.  It currently does this for directorys (one twirl per
+entry) and textfiles/cso searches (one twirl per 25 lines)  This
+stuff is adapted from the panda code.
+
+Added more information on connections.  It displays "connecting..."
+before it displays "retrieving directory..."
+
+Client beeps at you if you press the wrong keys now.
+
+The client doesn't redisplay the menu when an invalid key is pressed.
+Nice for people dialing in on 2400 bps lines.
+
+Now linking in the new swanky gopher library.  I got tired of having
+many different versions of the same code lying around.
+
+Added fix from John Sellens that allows the user to escape from a CSO
+query.
+
+Fixed problem with titles not being updated when moving back a level.
+
+The client checks for environment variables for its configuration
+information.  The following variables can be used:
+    GOPHER_MAIL    The program to send mail with (must understad -s option)
+    GOPHER_TELNET  The program to contact telnet services with.
+    GOPHER_PLAY    The program to play sound from a pipe.
+    GOPHER_PRINTER The program to print from a pipe.
+This was all suggested and coded by Timothy M. Sigmon.
+
+Fixed typos in error.c relating to vprintf and err_init, patch from
+Jim Meyering.
+
+Cleaned up the SYSVCURSES stuff.  You no longer need to specify
+whether or not you're using System V curses.  Also fixed a problem
+relating to Newline and KEY_ENTER confusion.  All in all the curses
+code is cleaned up quite a bit.
+
+Made the interface more consistent.  Pressing 'l' will let you enter
+into and item (just like return and the right arrow..)  (Glenn F.
+Leavell)
+
+
+Here are the changes to the server:
+----------------------------------
+
+Gopherd now moonlights as gindexd as well.  Usage is slightly
+different though.  Instead of a -d flag, just add the database name to
+the index_directory.
+
+.cache files are ignored by the search engine routines.
+
+Added utility "gopherls".  It's really just a link to gopherd.  But it
+easily allows you to see what all the .Links, .caps, etc. will look
+like, without constantly running a client.
+
+Added the wais gateway functionality directly into the server.
+To add a wais database put a link like this:
+
+  Name=Whatever
+  Path=waissrc:/the/path/here
+  Type=7
+  Host=+
+  Port=+
+
+The server will automagically turn files ending in .src into
+wais databases...  Mondo cool.
+
+Made the server more agressive wrt caching. It will check the
+modification times on the files in the directory and the .cap
+directory before remaking the .cache file.  Mods from Earl Fogel.
+
+Now linking in the swanky gopher library.  Now we can really have
+shared code!
+
+Added HTML support.  A gopher server can be now queried with a WWW
+(World wide Web) client.  The server also understands html files and
+can serve them up to WWW clients.  Note that this is different from
+the built in support that WWW has for gopher servers, in that you can
+add descriptive text to a directory listing by putting a .about.html
+file in the directory.
+
+Added an ftp gateway to the server.  Make a link with a path like
+ftp:hostname@pathname.  This may not work on all systems...
+
+When retrieving ranges of files the server outputs from which file
+it's getting the data from..
+
+Fixed bug with the variable inline in index.c
+
+Changed behavior of logfiling...  When running non-inetd, the server
+would hold the logfile open.  Deleting the logfile wouldn't free the
+space.  The server now reopens the logfile for every request..
+
+Added better hostdata support.  The server will now look for
+.hostdata before just the plain vanilla "hostdata".  Thus it
+is now possible to have multiple indices in the same directory. (mic)
+
+
+
+
+--
+ | Paul Lindner | lind...@boombox.micro.umn.edu   | Slipping into madness
+ |              | Computer & Information Services | is good for the sake
+ | GopherMaster | University of Minnesota         | of comparision.

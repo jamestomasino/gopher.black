@@ -1,0 +1,177 @@
+Path: sparky!uunet!mcsun!Germany.EU.net!gmd.de!ira.uka.de!yale.edu!qt.cs.utexas.edu!
+cs.utexas.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!usc!sdd.hp.com!
+saimiri.primate.wisc.edu!doug.cae.wisc.edu!umn.edu!news2.cis.umn.edu!
+gopher-news-dae...@boombox.micro.umn.edu
+Date: Mon, 25 Jan 93 23:10:47 CST
+Message-ID: <9301260510.AA06369@boombox.micro.umn.edu>
+From: gop...@boombox.micro.umn.edu ("The Gopher Team" )
+Original-To: gopher-n...@boombox.micro.umn.edu, resource-discuss...@unt.edu,
+        PAC...@UHUPVM1.bitnet
+Subject: Internet Gopher '93   [LONG]
+Newsgroups: comp.infosystems.gopher
+Distribution: comp
+Sender: n...@news2.cis.umn.edu
+Approved: comp.infosystems.gop...@news.cis.umn.edu
+Lines: 162
+
+
+                       Internet Gopher '93
+
+                         co sponsored by
+
+               The University of Minnesota & CICNet
+
+                        April 13, 1993
+                    University of Minnesota
+                    Minneapolis,  Minnesota
+
+_________________________________________________________________
+
+The University of Minnesota and CICNet are pleased to announce
+Internet Gopher '93.  The objective of this one-day conference is
+to provide participants with an update on present and planned
+Gopher software and technologies, as well as related issues such
+as maintaining Gopher servers and categorizing and indexing
+information.
+
+The one-day conference will be held from 8 AM to 5 PM on Tuesday,
+April 13, 1993 at the Radisson Hotel Metrodome, conveniently located
+on the campus of the University of Minnesota.
+
+___________________________________________________________________
+
+                           Registration
+
+Registration is limited to 200 participants so register now to reserve
+a place. A detailed agenda is being prepared and will be available in two
+ways: by gopher and anonymous ftp.
+
+To access by gopher:
+From the top level University of Minnesota gopher server, look
+in the "Information about Gopher" item for the gopher93
+directory.
+
+To access by anonymous ftp:
+Use anonymous ftp to connect to boombox.micro.umn.edu. The agenda is
+in the /pub/gopher/gopher93/ directory tree.
+
+For further information send e-mail to gophe...@boombox.micro.umn.edu.
+
+You may pick up your conference materials when you check in at the Radisson
+Hotel or at the conference itself.
+
+____________________________________________________________________________
+
+                           Tentative Schedule
+
+
+8:00 -   9:00   Registration
+9:00 -   9:10   Introductory Remarks    Don Riley
+9:10 -  10:30   Gopher Update           The Minnesota Gopher Team
+
+Coffee Break
+
+10:45 - 12:00   New Gopher Services
+                    Veronica            Fred Barrie & Steve Foster
+                    Gateways            Paul Lindner
+                    Attribute Registry  Anklesaria & McCahill
+
+12:00 - 1:00    Lunch
+
+Track 1
+1:00 - 2:15 Panel: Server administration
+2:30 - 3:45 Panel: Security/Authentication
+
+Track 2
+1:00 - 2:15 Panel: Getting up to speed with Gopher
+2:30 - 3:45 Panel: Training server administrators
+
+Track 3
+1:00 - 2:15 Panel: Resource location/classification
+2:30 - 3:45 Panel: Organizing subject-matter based gophers
+
+4:00 - 5:00 General Session:
+(open mike)
+
+
+---------------------------------------------------------------
+                             Transportation
+
+For assistance with your travel arrangements, you may contact:
+
+Carlson Travel Network
+Radisson University Hotel
+615 Washington Ave, S.E.
+Minneapolis, MN 55414
+Telephone: (612) 379-8421 or 1-800-825-9190
+Fax: (612) 379-8447
+
+For travel  between the airport and the Radisson, you may wish to use the
+airport express bus. A one-way ticket costs $9.00; round-trip cost is $13.00.
+
+                              Accommodations
+
+Radisson Hotel Metrodome
+615 Washington Ave. S.E.
+Minneapolis, MN 55414
+Telephone: (612) 379-8888
+For reservations only call 1-800-822-MPLS
+Fax (612) 379-8682
+Rate: Single - $66.00
+      Double - $71.00
+
+Rooms at this special rate will be held until March 25th. You must inform the
+hotel that you are attending Internet Gopher '93, by the above date, to
+ensure that you get the conference rate. You are encouraged to book early so
+that you will get your preference.
+
+                               Weather
+Minnesota can be rather cold in April.  Bring casual warm clothes.
+____________________________________________________________________________
+
+                           Registration Form
+
+You may register by mail, electronic mail or by FAX.***
+Use the following format and return the completed form to:
+
+E-mail -     gophe...@boombox.micro.umn.edu
+
+Fax -        (612) 625-6817
+
+or mail to:  Internet Gopher 1993
+             c/o Susan Saronitman
+             Microcomputer Center
+             190 Shepherd Labs
+             University of Minnesota
+             Minneapolis, MN 55455
+             USA
+
+------------------------------------------------------------------------------
+
+- - ---------------------------CUT HERE------------------------------------
+
+
+Registration Form - Internet Gopher '93 , April 13, 1993
+University of Minnesota
+
+
+Name:
+E-mail address:
+Work Phone:
+Institution:
+Address of your institution's primary Gopher server:
+Emergency contact:                            Phone:
+Hotel you will be staying at in Minneapolis-St. Paul:
+Do you have special meal requirements?
+T-shirt size:  ____ Medium  ____ Large ____ X-Large ____ XX-Large
+
+Cut-off date for registration is March 31, 1993.
+
+Conference Fee
+    Before March 31st: $75.00/person
+    After March 31st:  $150.00/person
+
+
+***Please note that your registration will not be final until your conference
+fee has been received. You may pay by check or money order. Sorry, we cannot
+accept credit cards or cash.

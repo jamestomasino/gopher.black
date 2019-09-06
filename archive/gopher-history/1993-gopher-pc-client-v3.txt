@@ -1,0 +1,127 @@
+Comments: Gated by NETN...@AUVM.AMERICAN.EDU
+Path: sparky!uunet!zaphod.mps.ohio-state.edu!uwm.edu!psuvax1!psuvm!auvm!PLAINS.NODAK.EDU!SACKMAN
+Return-Path: <@AUVM.AMERICAN.EDU,
+             @PSUVM.PSU.EDU:owner-edt...@OHSTVMA.ACS.OHIO-STATE.EDU>
+Return-Path: <@OHSTVMA.ACS.OHIO-STATE.EDU:21765...@MSU.BITNET>
+Approved-By:  EDTECH Moderator <21765...@MSU.BITNET>
+Message-ID: < EDTECH%93032408170871@OHSTVMA.ACS.OHIO-STATE.EDU>
+Newsgroups: bit.listserv.edtech
+Approved: NETN...@AUVM.AMERICAN.EDU
+Date:         Wed, 24 Mar 1993 08:15:57 EST
+Sender:       EDTECH - Educational Technology < EDT...@OHSTVMA.BITNET>
+From:         Gleason Sackman < sack...@plains.nodak.edu>
+Subject:      PC Gopher III version 1.00 Released (fwd)
+Lines: 112
+
+---------- Forwarded message ----------
+Date: Fri, 19 Mar 93 18:08:10 CST
+From: microcomputer-news < n...@boombox.micro.umn.edu>
+Subject: PC Gopher III version 1.00 Released
+
+The latest version of the new DOS gopher client, PC Gopher III
+version 1.00, is now available via gopher to gopher.tc.umn.edu,
+or anonymous ftp to boombox.micro.umn.edu, in /pub/gopher/PC_client.
+
+Once again, BE SURE THAT YOU GET RID OF THE OLD .REZ FILE
+before running this version.  This will be the last time you
+have to do this, as I've added a version marker to the file;
+future versions will update the .REZ file if it's fairly
+recent, otherwise just create a new one and stomp on your
+old configuration settings.  Life is hard.
+
+---------------------------------
+            Fixed Bugs
+---------------------------------
+
+  * QEMM 6.0 -- PC Gopher III is "executing an illegal
+  instruction"; this was a long-standing bug in the TCP
+  driver, which was also causing "system integrity
+  violation" errors when run under Windows.  Thanks to
+  George Gonzalez and Earl Schleske for fixing this (and,
+  incidentally, for supplying all of the versions of PC
+  Gopher with their TCP/IP guts).
+
+  * fixed embarrassing "out of heap space" errors, forever.
+  I think.
+
+  * fixed a memory leak in the textfile save routine
+
+  * changed the overlay strategy, moving approximately 40K
+  from the executable file into the overlay file
+
+  * secondary server support added
+
+  * fixed text-formatting glitch
+
+  * fixed nagging standard file dialog bug (actually, Earl
+  fixed this one)
+
+  * single-window mode windows, when scrolled down from the
+  top position, were giving birth to mutant children with
+  mangled scrollers.  Fixed.
+
+---------------------------------
+          Added Features
+---------------------------------
+
+  * added a version marker to the resource file, to simplify
+  upgrades to future releases
+
+  * text window and browser window positioning code works in
+  a more rational manner (or at least in what I consider to
+  be a more rational manner)
+
+---------------------------------
+           Unfixed Bugs
+---------------------------------
+
+  * I've had a few reports of "Error 210, Object not
+  initialized". Anyone who sees this -- PLEASE send mail and
+  let me know EXACTLY what the sequence of events is to
+  reproduce it.  It's a rare, intermittent bug, the worst
+  kind...
+
+  * status indicator in browser and textwindow frames should
+  keep the byte count visible at all times
+
+  * if there's a non-single-window mode browser on the
+  screen, and you switch to single-window mode, you have to
+  open a new browser to get the "Go Back" button to appear
+
+  * in single-window mode, a failed query shouldn't close the
+  window
+
+  * reposition windows when changing video mode
+
+  * where's the help system?
+
+  * why isn't there a manual?
+
+  * peek in gplustest/ask/e-mail directory crashes client
+
+  * empty directories shouldn't be displayed
+
+  * need window tile and cascade functions
+
+  * small CSO dialog needs status line
+
+  * search text should be preserved across CSO lookups when
+  using large CSO dialog box
+
+  * null/blank queries to index servers need to be filtered
+  out
+
+  * should be able to choose large or small CSO dialog as
+  default
+
+Have fun, and keep reporting bugs!
+
+Daniel A. Torrey
+Chief Cook and Bottle-washer, PC Gopher
+dan...@boombox.micro.umn.edu
+
+-----------------------------------------------------------------------------
+Gleason Sackman, Coordinator              BBS:       sack...@sendit.nodak.edu
+SENDIT - NoDak's K-12 Telcom Network      Internet:  sack...@plains.nodak.edu
+226 IACC, North Dakota State University   Bitnet:    sack...@plains.bitnet
+Fargo, ND  58105  Voice: (701)237-8109    Fax: (701)237-8541
