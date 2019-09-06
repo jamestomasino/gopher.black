@@ -1,0 +1,70 @@
+Path: gmd.de!Germany.EU.net!news.dfn.de!xlink.net!howland.reston.ans.net!agate!usenet
+From: gop...@boombox.micro.umn.edu ("The Internet Gopher Team" )
+Newsgroups: comp.archives
+Subject: [comp.infosystems.gopher] Announcing 4 new Gopher+ implimentations
+Followup-To: comp.infosystems.gopher
+Date: 1 Aug 1993 07:43:04 GMT
+Organization: University of California, Berkeley
+Lines: 55
+Sender: adam@soda
+Approved: adam@soda
+Distribution: world
+Message-ID: <23fs68$qsj@agate.berkeley.edu>
+References: <9307310125.AA08209@boombox.micro.umn.edu>
+Reply-To: "The Internet Gopher Team"
+NNTP-Posting-Host: soda.berkeley.edu
+X-Original-Newsgroups: comp.infosystems.gopher
+X-Original-Date: Fri, 30 Jul 93 20:25:10 CDT
+
+Archive-name: auto/comp.infosystems.gopher/Announcing-4-new-Gopher-implimentations
+
+FOR IMMEDIATE RELEASE:
+We are please to announce 4 new implimentations of the Gopher+ software.
+
+There is now a new Unix server (version 2.0), a new Unix and VMS curses-based
+client (version 2.0), a new PC-DOS client (PC Gopher III version 1.10), and a
+new Macintosh client (TurboGopher version 1.07).
+
+Gopher+ is an upward-compatible extension of the original Gopher protocol;
+old gopher servers are accessible to Gopher+ clients, and old clients can
+access information on Gopher+ servers. The Gopher+ extensions allow for
+
+ - open-ended definition of item attributes. Items in gopherspace can have
+   arbitrary sets of attributes associated with them. Attributes can be
+   used to hold information about the server administrator, the version
+   of the software being run, or other meta-information that the server
+   administrator wishes to associate with a gopher item.
+
+ - alternate views of an item in gopherspace while preserving text as
+   the lowest common denominator. With Gopher+ alternate views you can
+   find out the size, langauge, and format of alternate representations
+   of an item, and select the view that best fits you needs. Gopher+ now
+   uses MIME content types to name alternate views.
+
+ - better binary transfer methods which make it more efficient to move
+   binary data such as images, video, and sound.
+
+ - ASK blocks to make it possible to solicit structured information from
+   users. With a Gopher+ ASK block, a server administrator can define a
+   set of prompts and questions to ask the user, then take the users
+   responses and feed them to a shell script for further processing.
+
+Because we have moved from using our own naming scheme for gopher+ alternate
+views to using MIME content types, we have had to register a large numebr of
+MIME content types with IANA and change the mappings in the beta-test versions
+of the Macintosh and Unix gopher+ software. If you are using an earlier version
+of the gopher software, we urge you to upgrade now to the new release so that
+we can make a quick, clean migration to MIME content types for alternate views.
+
+We have been very busy finishing the software we have not had a great
+deal of time to put up Gopher+ alternate views of the information on our
+servers. Look for this to change over the next week. As of now we are running
+gopher+ on all of our servers and distributing Gopher+ clients to our
+users at the University of Minnesota.
+
+You can get the current versions of Gopher+ via Gopher by connecting to
+gopher.tc.umn.edu port 70, selecting "Information About Gopher" and opening the
+"Gopher Software Distribution" -or- via anoymous ftp to boombox.micro.umn.edu
+in the /pub/gopher heirarchy.
+
+To report bugs (or send praise) e-mail us at gop...@boombox.micro.umn.edu
