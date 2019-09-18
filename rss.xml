@@ -3,6 +3,53 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Compassion Is Important</title>
+  <link>gopher://gopher.black/1/phlog/20190918-compassion-is-important/</link>
+  <pubdate>Wed, 18 Sep 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+compassion is important
+September 18th, 2019
+----------------------------------------
+
+I started this phost intending to say something about RMS [0] and
+the various responses I see coming out on the web and in
+gopherspace.
+
+[0] Richard Stallman and the Fall of the Clueless Nerd
+    https://www.wired.com/story/richard-stallman-and-the-fall-of-the-clueless-nerd/
+
+The thing is, nobody really cares about "yet another opinion".
+It's just another example of how comments are useless [1].
+
+[1] "Comments" on Labs blog
+    https://labs.tomasino.org/comments/
+
+Instead I think I'll say something about compassion.
+
+Right now people are suffering. Richard Stallman is watching in
+shock, outrage, and yes, in pain, as the world he built around
+himself falls apart. He is suffering.
+
+Also, the dozens of individuals he has interacted with over the
+years who have been the targets of his well-meaning pedantry, of
+his priviliged musings, and of his "hot takes", are feeling the
+painful effects of those encounters. They feel demeaned,
+less-than, or ignored. They feel injured, helpless, outraged, and
+yes, in pain. They are suffering.
+
+Epstein's victims have suffered horrendously and suffer still as
+the government closes their options for compensation in the wake
+of his suicide.
+
+In short, there's a whole lot of pain going around and we'd all be
+a little bit better people if we took a moment to consider it
+before we launch into our next diatribe. That's not to say you
+should shut up. Just try not to forget there's humans on the other
+side of your outrage.
+</pre>]]></description>
+</item>
+<item>
   <title>The Apocrypha Of Cat The Desert</title>
   <link>gopher://gopher.black/1/phlog/20190906-the-apocrypha-of-cat-the-desert/</link>
   <pubdate>Fri, 06 Sep 2019 00:00:00 +0000</pubdate>
@@ -92,6 +139,9 @@ underground in the depths of his latest baby, if you know where to
 look.
 
 Remember what cat does for us each and every day and give thanks.
+
+cat
+    gopher://baud.baby/1/
 </pre>]]></description>
 </item>
 <item>
@@ -692,50 +742,6 @@ into it, guys. It's cool as heck. Here's my 2-cents:
     gopher://colorfield.space/1/~sloum/phlog/190704-21.txt
 
 Thanks gophers. Keep gophin' around.
-</pre>]]></description>
-</item>
-<item>
-  <title>Nobody Leaves Without Singing The Blues</title>
-  <link>gopher://gopher.black/1/phlog/20190615-nobody-leaves-without-singing-the-blues/</link>
-  <pubdate>Sat, 15 Jun 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Nobody leaves without singing the blues
-June 15th, 2019
-----------------------------------------
-
-In the film Adventures in Babysitting (1987), Elisabeth Shue and
-the kids she's watching find themselves unexpectedly on stage in
-a blues club. When she tries to just pass through the old man in
-charge of the band challenges her, "Nobody leaves without singing
-the blues." [0]
-
-[0] Babysitting Blues
-    https://www.youtube.com/watch?v=ZkThz92lkwE
-
-Well, tag this post as "meta-gopher" because that's how I feel
-about port 70. The ratio of consumer to creator is remarkably
-matched as observed over on lambda lab [1]. We have a significant
-technical barrier to use (for good or ill), but a very low
-secondary barrier to contribution. I think of it like a reef that
-protects the cove of port 70. If you know how to navigate into our
-safe little space then you already have more than enough skill to
-become an active part of the community. That's cool.
-
-[1] lambda labs - dwarves and gophers
-    gopher://lambda.icytree.org/0/phlog/2019-06-15-Dwarves-and-Gophers.txt
-
-You all remember a few months back when solderpunk was all like,
-"go make stuff, suckas"? [2] Let's not lose sight of that.
-
-[2] solderpunk - hey you, host something
-    gopher://circumlunar.space/0/~solderpunk/phlog/hey-you-host-something.txt
-
-New blood, welcome. If you're sitting there with a phlog entry or
-two brainstorming how you can do something special and stand out,
-don't let that cripple you from just jumping in. Big ideas are
-cool when they come, but cat needs daily phlogs to feed him or
-he'll DIE! Save the cat, phlog regularly.
 </pre>]]></description>
 </item>
 </channel>
