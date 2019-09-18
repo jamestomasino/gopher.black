@@ -50,6 +50,53 @@ side of your outrage.
 </pre>]]></description>
 </item>
 <item>
+  <title>Av 98 And Vf 1 Daydream</title>
+  <link>gopher://gopher.black/1/phlog/20190918-av-98-and-vf-1-daydream/</link>
+  <pubdate>Wed, 18 Sep 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+av-98 and vf-1 daydream
+September 18th, 2019
+----------------------------------------
+
+This is mostly directed at solderpunk.
+
+I was thinking on AV-98 and VF-1 and how they're so wonderfully
+similar. It would be so neat to have a single client that could
+browse gopher & gemini protocols seemlessly, and they're kinda the
+perfect place to start that thought.
+
+But then I was thinking, "Oh, it would be terrible to start your
+journey thinking you're on Gemini and safely using TLS only to
+move into Gopher without realizing it and be unprotected." But if
+there was a way to differentiate between the modes, sort of like
+"battle mode" that visually indicated you were TLS protected, then
+things would be better.
+
+I thought about the way I've got my vim status bar configured to
+change color when I'm in insert vs normal modes and thought about
+that in VF1. One color for "secure" one color for "unsecure".
+That'd be neat, right? And what about onion addresses? VF-1 works
+quite well over tor, and onion addresses provide end-to-end
+encryption. So they could be safely grouped in the "secure" block,
+or maybe get a third color.
+
+And that's great for knowing where you are, but not where you're
+going. Colorizing links with matching colors would help indicate
+your options.
+
+But then again, not everybody like colors, so maybe a prefix on
+links or the bar like an "@" or a "!" or something? Or maybe
+that's a configuration option.
+
+Anyway, it's a whole bunch of thoughts about somebody elses code
+and clients and not my place at all to direct, but I thought I'd
+share my thinking in case it inspires anything in you.
+
+Cheers!
+</pre>]]></description>
+</item>
+<item>
   <title>The Apocrypha Of Cat The Desert</title>
   <link>gopher://gopher.black/1/phlog/20190906-the-apocrypha-of-cat-the-desert/</link>
   <pubdate>Fri, 06 Sep 2019 00:00:00 +0000</pubdate>
@@ -612,136 +659,6 @@ something fo-rizzle. Capice?
 
 Now, my minions, GO FORTH AND CREATE! (and also email me if you're
 doing something so I know that this is gonna work).
-</pre>]]></description>
-</item>
-<item>
-  <title>Some Replies From Iceland</title>
-  <link>gopher://gopher.black/1/phlog/20190705-some-replies-from-iceland/</link>
-  <pubdate>Fri, 05 Jul 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Some replies from Iceland
-July 05th, 2019
-----------------------------------------
-
-Hi everybody! I'm in Iceland now. We moved this past weekend and
-we're settled in an airbnb for July getting everything in place.
-If you're interested in my expat adventures, that's something I'm
-writing over in web-land so my parents and wife's friends can
-follow. Check it out [0].
-
-[0] tomasino blog
-    https://blog.tomasino.org
-
-Tonight I thought it would be fun to take stock of recent things
-happening on gopher and send some feedback. So, here goes:
-
-moji, over on circumlunar, has detailed their efforts to cut back
-on the caffeine [1]. It's a solid post and raises some good
-thoughts on what it means to be reliant on something like coffee.
-Addictions, even relatively benign ones, have some hold on you.
-I can totally respect the effort. More power too you.
-
-[1] moji - caffeine
-    gopher://zaibatsu.circumlunar.space/0/~moji/phlog/20190107-caffeine.txt
-
-pkotrcka, whose name I have to be very careful typing out, wrote
-a neat phlog about cameras that put my head in weird places [2].
-Mainly it made me sad that photography is pretty much dead.
-I mean, not really at all, but as a profession it's gone from this
-highly technical artform with super expensive equipment, years of
-training required and it's been overrun by quick snaps with your
-phone and bottled filters. There's little spots left for the art,
-like wedding photos and... is that it? Really though it's a "dead"
-technology in the same way gopher is.
-
-There's the part where my mind turned happy again. When we say
-it's dead that just means that capitalism stopped seeing monetary
-value. That's not the same thing at all. Why is there no money in
-gopher? Well, not enough people to be worth the effort investing.
-Photography? Same thing. Niche stuff sure, but other than than
-just let it return to the afficianados. Let the pkotrckas of the
-world have their fun, right? Keep on keeping on, pkotrcka.
-
-[2] pkotrcka - cameras
-    gopher://sdf.org/0/users/pkotrcka/0022
-
-The amazing, incredible visiblink did some hard work recently
-cleaning up insulation and maybe asbestos [3]. Well done. That's
-not what I wanted to comment on at all, though. At the very end of
-the phlog they mention that the gopher hole switched over to a pi
-zero w, saving more power. I love this ultra-low power stuff.
-I have some basic notes on how I stripped my pi zero down to the
-minimum draw for the little free library project. I recommend
-checking it out in my archives for tidbits.
-
-[3] visiblink - asbestos
-    gopher://zaibatsu.circumlunar.space/0/~visiblink/phlog/20190702
-
-Ubergeek kayaking with son
-
-ubergeek got his son out kayaking and that's so awesome [4].
-I adore kayaking. It was really sad having to sell my kayak when
-we moved. There's something really ... perfect about being out on
-the water. I can close my eyes and feel myself relax just thinking
-about it.
-
-I learned to kayak in Alaska in Resurrection Bay, near Seward. It
-was cold and beautiful. I saw bears and salmon and eagles and was
-forever in love. I love lakes now. They're so smooth and you can
-just pull yourself a bit with the paddles and drift away.
-
-Anyway, I can see why his son is connecting with it. I wish you
-both the best. It's some special stuff, there. Good dad-ing.
-
-[4] ubergeek - kayaking
-    gopher://yourtilde.com/0/~ubergeek/feels/20190703.txt
-
-Our pal heavysquare sent me an email the other day asking me to
-point his phlog roll post to the root directory where he's added
-a really killer gophermap. There's so much more to see than just
-the "noise" phlog I had there before. Check him out [5].
-
-[5] heavysquare
-    gopher://heavysquare.com/1/
-
-Finally, there was a lot of talk this past week about Gemini's
-link syntax [6,7,8]. Out goes the [|] and in comes the =>. I'm
-into it, guys. It's cool as heck. Here's my 2-cents:
-
-1. Spaces optional. You can split on whitespace easy enough with
-   regex alone and not care if it's one space, zero, or
-   a tab-space-tab-space salsa.
-
-2. Link first. We're talking about clients doing some magic in the
-   gemini world, but how much should we rely on the client's
-   display choices to fulfill that important note that a URL
-   should always be shown. If we have it at the end it could get
-   cropped off screen or hidden in a wrap or any number of things.
-   Link first is more likely to be seen, easier to parse across
-   languages, and MOST importantly, means that the label can be
-   optional. 
-
-   You see how I'm linking to things paragraph by paragraph in
-   this post? I have numbers referencing things with the square
-   bracket syntax because it's my convention, but the position of
-   the links in context to the copy says enough about what they
-   are. In many cases I just described the link in a paragraph and
-   the label on the link is redundant. If the label in gemini is
-   optional then you can just do something like:
-
-   => gemini://cosmic.voyage
-
-   And let it live on its own.
-
-[6] solderpunk - quick update on link syntax
-    gopher://zaibatsu.circumlunar.space/0/~solderpunk/gemini/quick-update-on-link-syntax.txt
-[7] ascraeus - peter frampton reference
-    gopher://ascraeus.org/0/phlog/019.txt
-[8] sloum - commentary on link syntax
-    gopher://colorfield.space/1/~sloum/phlog/190704-21.txt
-
-Thanks gophers. Keep gophin' around.
 </pre>]]></description>
 </item>
 </channel>

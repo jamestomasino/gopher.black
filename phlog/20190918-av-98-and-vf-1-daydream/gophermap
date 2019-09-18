@@ -1,0 +1,40 @@
+i----------------------------------------		gopher.black	70
+iav-98 and vf-1 daydream		gopher.black	70
+iSeptember 18th, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThis is mostly directed at solderpunk.		gopher.black	70
+i		gopher.black	70
+iI was thinking on AV-98 and VF-1 and how they're so wonderfully		gopher.black	70
+isimilar. It would be so neat to have a single client that could		gopher.black	70
+ibrowse gopher & gemini protocols seemlessly, and they're kinda the		gopher.black	70
+iperfect place to start that thought.		gopher.black	70
+i		gopher.black	70
+iBut then I was thinking, "Oh, it would be terrible to start your		gopher.black	70
+ijourney thinking you're on Gemini and safely using TLS only to		gopher.black	70
+imove into Gopher without realizing it and be unprotected." But if		gopher.black	70
+ithere was a way to differentiate between the modes, sort of like		gopher.black	70
+i"battle mode" that visually indicated you were TLS protected, then		gopher.black	70
+ithings would be better.		gopher.black	70
+i		gopher.black	70
+iI thought about the way I've got my vim status bar configured to		gopher.black	70
+ichange color when I'm in insert vs normal modes and thought about		gopher.black	70
+ithat in VF1. One color for "secure" one color for "unsecure".		gopher.black	70
+iThat'd be neat, right? And what about onion addresses? VF-1 works		gopher.black	70
+iquite well over tor, and onion addresses provide end-to-end		gopher.black	70
+iencryption. So they could be safely grouped in the "secure" block,		gopher.black	70
+ior maybe get a third color.		gopher.black	70
+i		gopher.black	70
+iAnd that's great for knowing where you are, but not where you're		gopher.black	70
+igoing. Colorizing links with matching colors would help indicate		gopher.black	70
+iyour options.		gopher.black	70
+i		gopher.black	70
+iBut then again, not everybody like colors, so maybe a prefix on		gopher.black	70
+ilinks or the bar like an "@" or a "!" or something? Or maybe		gopher.black	70
+ithat's a configuration option.		gopher.black	70
+i		gopher.black	70
+iAnyway, it's a whole bunch of thoughts about somebody elses code		gopher.black	70
+iand clients and not my place at all to direct, but I thought I'd		gopher.black	70
+ishare my thinking in case it inspires anything in you.		gopher.black	70
+i		gopher.black	70
+iCheers!		gopher.black	70
