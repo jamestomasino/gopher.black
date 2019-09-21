@@ -1,0 +1,30 @@
+i----------------------------------------		gopher.black	70
+iAV-98 gopher proxy on gopher.black		gopher.black	70
+iSeptember 21st, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iSolderpunk had a great response to my VF-1 & AV-98 musings that		gopher.black	70
+iyou can read here [0].		gopher.black	70
+i		gopher.black	70
+0[0] solderpunk - vf1 av98 and agena	/~solderpunk/phlog/vf1-av98-and-agena.txt	zaibatsu.circumlunar.space	70
+i		gopher.black	70
+iIn it he shares the secret of an awesome little project, agena,		gopher.black	70
+ithat is a gopher to gemini proxy. AV-98 is already capable of		gopher.black	70
+iusing it out of the box, you just need a proxy to point to.		gopher.black	70
+i		gopher.black	70
+iWell, gopher.black is happy to be your Huckleberry. If you use		gopher.black	70
+iAV-98 you can try it out now.		gopher.black	70
+i		gopher.black	70
+i    AV-98> set gopher_proxy gopher.black:1965		gopher.black	70
+i		gopher.black	70
+iThat's it. I think you can set that in a config file too, if I'm		gopher.black	70
+inot mistaken. Then, if you browse past the limits of gemspace and		gopher.black	70
+ihit gopher your adventures will just keep going.		gopher.black	70
+i		gopher.black	70
+iI may add this to tilde.black on a different port (since 1965 is		gopher.black	70
+ialready in use for that server's gemini pages). If you are extra,		gopher.black	70
+iridiculously paranoid you could then torify your AV-98 session and		gopher.black	70
+ihit the tilde.black proxy over tor. You're welcome, Mr. Snowden.		gopher.black	70
+i		gopher.black	70
+iSolderpunk has lots of improvements planned for it, so I expect		gopher.black	70
+iagena to grow up real fast.		gopher.black	70

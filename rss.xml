@@ -3,6 +3,44 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Av 98 Gopher Proxy On Gopher Black</title>
+  <link>gopher://gopher.black/1/phlog/20190921-av-98-gopher-proxy-on-gopher-black/</link>
+  <pubdate>Sat, 21 Sep 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+AV-98 gopher proxy on gopher.black
+September 21st, 2019
+----------------------------------------
+
+Solderpunk had a great response to my VF-1 & AV-98 musings that
+you can read here [0].
+
+[0] solderpunk - vf1 av98 and agena
+    gopher://zaibatsu.circumlunar.space/0/~solderpunk/phlog/vf1-av98-and-agena.txt
+
+In it he shares the secret of an awesome little project, agena,
+that is a gopher to gemini proxy. AV-98 is already capable of
+using it out of the box, you just need a proxy to point to.
+
+Well, gopher.black is happy to be your Huckleberry. If you use
+AV-98 you can try it out now.
+
+    AV-98> set gopher_proxy gopher.black:1965
+
+That's it. I think you can set that in a config file too, if I'm
+not mistaken. Then, if you browse past the limits of gemspace and
+hit gopher your adventures will just keep going.
+
+I may add this to tilde.black on a different port (since 1965 is
+already in use for that server's gemini pages). If you are extra,
+ridiculously paranoid you could then torify your AV-98 session and
+hit the tilde.black proxy over tor. You're welcome, Mr. Snowden.
+
+Solderpunk has lots of improvements planned for it, so I expect
+agena to grow up real fast.
+</pre>]]></description>
+</item>
+<item>
   <title>Compassion Is Important</title>
   <link>gopher://gopher.black/1/phlog/20190918-compassion-is-important/</link>
   <pubdate>Wed, 18 Sep 2019 00:00:00 +0000</pubdate>
@@ -514,151 +552,6 @@ right?
 
 In the meantime, what are your thoughts on using Gemini (one day)
 in a setting that's not just hobby play?
-</pre>]]></description>
-</item>
-<item>
-  <title>Zine</title>
-  <link>gopher://gopher.black/1/phlog/20190719-zine/</link>
-  <pubdate>Fri, 19 Jul 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-zine
-July 19th, 2019
-----------------------------------------
-
-I'm going to make a zine.
-
-SDF said they were going to do one last year and I volunteered to
-contribute, but it seems like nothing came of it. So, what the
-hell, lets get our zine on.
-
-Are you unfamiliar with zines? A zine is a small-circulation
-self-published work of original or appropriated texts and images,
-usually reproduced via photocopier. (Thanks Gopherpedia) [0] They
-were really big in the early 90s. They also went digital and there
-was a whole Usenet alt for them at one point. Here, check out
-a famous hacker one. [1]
-
-[0] Zine
-    gopher://gopherpedia.com/0/Zine
-[1] Phrack
-    gopher://fnord.one/1/Mirrors/Phrack/Archive/Issues/
-
-I've got some ideas around this zine, so let me blast you in the
-face with some awesome. 
-
-1. Issues will be published in entirely arbitrary times. I'm not
-   going to make this a regular thing, and I'm not promising
-   you'll see an issue number 3.
-
-2. The format is mutable. You may get a PDF for one, a weird
-   side-scrolling website for another, or a weird port listener
-   interactive experience [2] that fails to meet any common
-   definition.
-
-8[2] Allegra	help	cosmic.voyage	1822
-
-3. There will be a theme to each issue. The glue that binds it all
-   together will be the theme (and possibly horse parts). Expect
-   wild takes on the theme, possible nonsense.
-
-4. It must be community driven.
-
-   Here's where you come in! See, I want to put it all together
-   and have fun and stuff, but I don't want to create 100% of the
-   weird crap on my own. So, I figure I'll announce the theme and
-   give you guys a way to contact me if you're interested in
-   contributing.
-
-   In fact, lets just cut to that part right now.
-
-The yet-to-be-named zine will have its inaugural issue soon. If
-you'd like to be a contributor, it's easy! Here's what you do:
-
-- Contact me via email. You can find my addresses in the About
-  page on this gopher hole [3].
-
-[3] About me!
-    gopher://gopher.black/1/about
-
-- Tell me that you want to contribute something. You don't need to
-  tell me what it is you want to contribute. I don't care what
-  format it is in, whether it's words or art or music or a dance.
-  I don't care if you're cutting out cardboard creatures and
-  snaping pics of them doing naughty shit. If it fits the theme,
-  go to town.
-
-- Meet the deadline. I'll set a date when I need stuff by. Gimme
-  access to whatever you've done by then or I'll assume you flaked
-  out again, Jeff.
-
-- Let me know if you want to be identified, or how you want to be
-  identified for your work.
-
-- Bask in the glory. Seriously. This is a requirement. No sitting
-  back and gracefully accepting praise is allowed. You MUST bask
-  in the glory. I'll be watching.
-
-So, what's the theme of this first issue, already? What format
-will it take? When's the deadline? What other questions can I ask
-as I type out this phlog because I'm stalling while I try to make
-a decision on the fly? Who else expected that I knew these answers
-before I started this post? Did anyone really expect me to have
-a well thought out plan here, or is it obvious this is coming out
-of my butt right now? Is my internal monologue-turned-gopher-phlog
-making you smile at least?
-
-The theme is...
-
-                            HAMMER
-
-Yep, Hammer. What sort of Hammer am I talking about? Is it the
-former M.C.? Or maybe the tool? Or the sport? Or maybe the
-weapon!? Or maybe it's the part of a gun you cock (teehee). Or the
-tiny bones in your ear. Or maybe it's something else entirely. I'm
-not saying! You figure it out, suckas.
-
-As for the format of the first zine... that depends on what sort
-of shit I get back. I'm not telling you, so you can go off the
-deep end if you want. I'll just have to deal with whatever comes
-in. 
-
-Again, absolutely ANYTHING is okay to submit if it fits the theme
-in any way. If you have a stirring and deviant fursona fanfic of
-Logan's Run that you've been dying to share, then find a way to
-make it about HAMMER and you're in. If you want to draw me
-a picture of a HAMMER, cool. Maybe you have a really good
-technique for keying in MORSE? That arm thingy is kinda like
-a HAMMER, right? Be creative, be technical, be personal, be
-awesome.
-
-Also, I'm not censoring anything here. If you have stuff that's
-wildly inappropriate, bring. it. on.
-
-So, when's the due date? Hmmmmm....
-
-                          Tomorrow!
-
-
-
-                       no. not really.
-
-      That sounded fun in my head, but it would be idiotic.
-
-
-                       Let's go with...
-
-
-
-                         August 31st.
-                        
-Got it? That's just over a month to put together something,
-anything, that can be shoved into a weird-ass package and put out
-into the intertubes. Once I get all the shizzle, I'll make
-something fo-rizzle. Capice?
-
-Now, my minions, GO FORTH AND CREATE! (and also email me if you're
-doing something so I know that this is gonna work).
 </pre>]]></description>
 </item>
 </channel>
