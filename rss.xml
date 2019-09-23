@@ -3,6 +3,93 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Banshee</title>
+  <link>gopher://gopher.black/1/phlog/20190923-banshee/</link>
+  <pubdate>Mon, 23 Sep 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Banshee
+September 23rd, 2019
+----------------------------------------
+
+I have an idea for a thing. 
+
+Now, I get a lot of ideas for things and some of them are just too
+big for me to do in a reasonable timeframe. Sometimes they're so
+big my eyes glaze over at the very thought, so I just tell
+everyone else in a blog or phlog and hope someone else does it.
+Sometimes the idea is so dumb that I know I'm the only hope and
+have to do it myself. Sometimes the timinging is such that it
+needs to be done right away or it's not relevant. Sometimes time
+doesn't matter and I can just ignore it until I'm bored one night.
+In my head this all adds up to a sort of Eisenhower decision
+matrix:
+
+                        URGENT               NOT URGENT
+               +---------------------------------------------+
+               |                     |                       |
+               |                     |                       |
+  Important    |     Do it First     |     Schedule it       |
+               |                     |                       |
+               |                     |                       |
+               |                     |                       |
+               +---------------------+-----------------------+
+               |                     |                       |
+               |                     |                       |
+     Not       |                     |                       |
+  Important    |     Delegate it     |     Don't do it       |
+               |                     |                       |
+               |                     |                       |
+               |                     |                       |
+               +---------------------------------------------+
+
+Except in my case it's more of a "don't do it and feel bad vs
+don't do it and don't care".
+
+Well, now I've got an idea for  +-----------------------------+
+a project that is too big for   | One of the reasons (not the |
+me to do in a weekend, but it   | #1, but up there) that      |
+might actually matter to        | I wanted to move to Iceland |
+people. Do I just go for it and | was to get away from coding |
+drop all the other things I've  | for evil (pharma, mostly)   |
+got going? Ugh, probably not,   | and get around to doing     |
+but I need to come up with a    | something for the betterment|
+real plan if I have any hope of | of people. I haven't found  |
+accomplishing the goal.         | a lot of opportunity for    |
+                                | that just yet, but I'm      |
+But I never said what this is   | getting there.              |
+all about, did I?               +-----------------------------+
+
+So what is it?
+
+I want to make an easily deployable system that creates a platform
+for publishing text which does so on web, gopher, gemini, and any
+other logical systems, is made available on tor, IPFS, zero-web,
+and so on (RSS, fediverse?, moar). Basically, I want you to be
+able to click "go" and spin up a server that will push your
+text-based content out into the wild on all possible channels at
+maximum volume. (Hence why this phost is called Banshee)
+
+Why?
+
+Some people have a hard time getting their voice out from behind
+firewalls, oppressive regimes, and so on. I want to make it easy
+for them to toss something on a raspberry pi, or spin up a virtual
+machine, or SOMETHING, and have a way to be heard.
+
+How?
+
+I really don't know. I assume I could look into containers as
+a start. There's a heavy devops part of this that's not my
+wheel-house. Frankly, I think I'll need help.
+
+I'm going to start up a tildegit org for this, stub out a repo
+with a readme and get some conversations going. I think this could
+really help people with real problems today. Hopefully it won't
+fall off my radar and into the "someday" category.
+</pre>]]></description>
+</item>
+<item>
   <title>Av 98 Gopher Proxy On Gopher Black</title>
   <link>gopher://gopher.black/1/phlog/20190921-av-98-gopher-proxy-on-gopher-black/</link>
   <pubdate>Sat, 21 Sep 2019 00:00:00 +0000</pubdate>
@@ -38,6 +125,10 @@ hit the tilde.black proxy over tor. You're welcome, Mr. Snowden.
 
 Solderpunk has lots of improvements planned for it, so I expect
 agena to grow up real fast.
+
+EDIT:
+
+I'm now running agena on tilde.black on port 1966 as well.
 </pre>]]></description>
 </item>
 <item>
@@ -474,84 +565,6 @@ in your ~/.vf1rc, you can add:
   handler text/plain goph %s
 
 Let there be color, and pretty wrapping. Enjoy.
-</pre>]]></description>
-</item>
-<item>
-  <title>Gemini First Impressions</title>
-  <link>gopher://gopher.black/1/phlog/20190729-gemini-first-impressions/</link>
-  <pubdate>Mon, 29 Jul 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Gemini first impressions
-July 29th, 2019
-----------------------------------------
-
-I finally spent the 5 minutes necessary to download one of the few
-available Gemini clients. I went with AV-98 [0] from solderpunk.
-It's interface is basically the same as VF-1, so it had that going
-for it. Also, I didn't need to download a rust compiler. ;)
-
-[0] AV-98
-    https://tildegit.org/solderpunk/AV-98
-
-While there's not a lot of content around gemini-space (more on
-this in a second), it was still nice to have a way in to poke
-around. I see some journal activity already taking shape, and
-that's a great place to start.
-
-I'll be honest. At first I thought of Gemini as a neat but
-ultimately useless side project of the already-tiny gopher
-community. The more I've seen it worked on and thought about it
-the more I've come to consider it a "real thing" of some
-importance. But lets come back to that idea in a minute.
-
-First, lets talk about the naming of things.
-
-"Gemini" is the protocol. It appears to be capitalized in all
-occurences within solderpunk's FAQ. 
-
-"Gemini maps" are the temporary term for the document format of
-a Gemini server. It's coined by solderpunk here [1] and only named
-that "until a better name comes along."
-
-[1] Gemini maps
-    gopher://zaibatsu.circumlunar.space/0/~solderpunk/gemini/gemini-maps.txt
-
-"Geminiholes" - mentioned by solderpunk, but noone is using it.
-
-"Gemini server/client" are the defacto name for individual tools
-that power it.
-
-"Gemini-verse / Gemini-sphere / Gemini ecosystem" - I haven't
-noted any special term for this akin to "the web" or
-"gopherspace". Is there something already in use?
-
-"Journal" - weB LOG / goPHer LOG like structure. Is there
-a playful term for these yet?
-
-What other terms are we missing?
-
-Okay, enough of that. Time for THOUGHTS OF IMPORTANCE!
-
-The built-in TLS by design of Gemini is great, and combined with
-the natural ability to run it unpriviliged and require very little
-bandwidth I can see it serving a valuable purpose in safely
-providing a platform for authors in situations where the web is
-not. Take Khazikstan, for instance, who is MITMing the entire
-country. Gopher was always a nice idea to help in these
-situations, but the lack of reliable security on it meant major
-problems for real applications. Gemini fixes that. What's more,
-Gemini over tor adds in anonymity.
-
-I have more thoughts on the tor thing, and around real-world
-applications for a minimalist hyperlinkable publishing protocol
-with built in anonymity and safety, but my internet connection is
-dying and I have to finish this post while tethered to my phone.
-Thank goodness for low bandwidth stuff like gopher and Gemini,
-right?
-
-In the meantime, what are your thoughts on using Gemini (one day)
-in a setting that's not just hobby play?
 </pre>]]></description>
 </item>
 </channel>

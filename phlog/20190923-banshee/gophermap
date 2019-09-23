@@ -1,0 +1,80 @@
+i----------------------------------------		gopher.black	70
+iBanshee		gopher.black	70
+iSeptember 23rd, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI have an idea for a thing. 		gopher.black	70
+i		gopher.black	70
+iNow, I get a lot of ideas for things and some of them are just too		gopher.black	70
+ibig for me to do in a reasonable timeframe. Sometimes they're so		gopher.black	70
+ibig my eyes glaze over at the very thought, so I just tell		gopher.black	70
+ieveryone else in a blog or phlog and hope someone else does it.		gopher.black	70
+iSometimes the idea is so dumb that I know I'm the only hope and		gopher.black	70
+ihave to do it myself. Sometimes the timinging is such that it		gopher.black	70
+ineeds to be done right away or it's not relevant. Sometimes time		gopher.black	70
+idoesn't matter and I can just ignore it until I'm bored one night.		gopher.black	70
+iIn my head this all adds up to a sort of Eisenhower decision		gopher.black	70
+imatrix:		gopher.black	70
+i		gopher.black	70
+i                        URGENT               NOT URGENT		gopher.black	70
+i               +---------------------------------------------+		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i  Important    |     Do it First     |     Schedule it       |		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i               +---------------------+-----------------------+		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i     Not       |                     |                       |		gopher.black	70
+i  Important    |     Delegate it     |     Don't do it       |		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i               |                     |                       |		gopher.black	70
+i               +---------------------------------------------+		gopher.black	70
+i		gopher.black	70
+iExcept in my case it's more of a "don't do it and feel bad vs		gopher.black	70
+idon't do it and don't care".		gopher.black	70
+i		gopher.black	70
+iWell, now I've got an idea for  +-----------------------------+		gopher.black	70
+ia project that is too big for   | One of the reasons (not the |		gopher.black	70
+ime to do in a weekend, but it   | #1, but up there) that      |		gopher.black	70
+imight actually matter to        | I wanted to move to Iceland |		gopher.black	70
+ipeople. Do I just go for it and | was to get away from coding |		gopher.black	70
+idrop all the other things I've  | for evil (pharma, mostly)   |		gopher.black	70
+igot going? Ugh, probably not,   | and get around to doing     |		gopher.black	70
+ibut I need to come up with a    | something for the betterment|		gopher.black	70
+ireal plan if I have any hope of | of people. I haven't found  |		gopher.black	70
+iaccomplishing the goal.         | a lot of opportunity for    |		gopher.black	70
+i                                | that just yet, but I'm      |		gopher.black	70
+iBut I never said what this is   | getting there.              |		gopher.black	70
+iall about, did I?               +-----------------------------+		gopher.black	70
+i		gopher.black	70
+iSo what is it?		gopher.black	70
+i		gopher.black	70
+iI want to make an easily deployable system that creates a platform		gopher.black	70
+ifor publishing text which does so on web, gopher, gemini, and any		gopher.black	70
+iother logical systems, is made available on tor, IPFS, zero-web,		gopher.black	70
+iand so on (RSS, fediverse?, moar). Basically, I want you to be		gopher.black	70
+iable to click "go" and spin up a server that will push your		gopher.black	70
+itext-based content out into the wild on all possible channels at		gopher.black	70
+imaximum volume. (Hence why this phost is called Banshee)		gopher.black	70
+i		gopher.black	70
+iWhy?		gopher.black	70
+i		gopher.black	70
+iSome people have a hard time getting their voice out from behind		gopher.black	70
+ifirewalls, oppressive regimes, and so on. I want to make it easy		gopher.black	70
+ifor them to toss something on a raspberry pi, or spin up a virtual		gopher.black	70
+imachine, or SOMETHING, and have a way to be heard.		gopher.black	70
+i		gopher.black	70
+iHow?		gopher.black	70
+i		gopher.black	70
+iI really don't know. I assume I could look into containers as		gopher.black	70
+ia start. There's a heavy devops part of this that's not my		gopher.black	70
+iwheel-house. Frankly, I think I'll need help.		gopher.black	70
+i		gopher.black	70
+iI'm going to start up a tildegit org for this, stub out a repo		gopher.black	70
+iwith a readme and get some conversations going. I think this could		gopher.black	70
+ireally help people with real problems today. Hopefully it won't		gopher.black	70
+ifall off my radar and into the "someday" category.		gopher.black	70
