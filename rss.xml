@@ -3,6 +3,87 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Nanowrimo 2019</title>
+  <link>gopher://gopher.black/1/phlog/20191031-nanowrimo-2019/</link>
+  <pubdate>Thu, 31 Oct 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+NaNoWriMo 2019
+October 31st, 2019
+----------------------------------------
+
+This year I'm going to participate in my own way in NaNoWriMo [0].
+I will not be attempting a whole novel or even their on-pace daily
+word count. It's not for me, though I wish I were that prolific.
+No, instead I will be working on finishing some things. 
+
+[0] NaNoWriMo
+    https://www.nanowrimo.org/
+
+First up: Emergence [1]
+
+This is a speculative fiction about the birth of an AI that
+I began a while back. I enjoyed some good progress on it and have
+been satisfied reading back and what came out (rare). Sadly, it
+fell off my priority list and has been sitting there begging for
+some love.
+
+Since this is only a short story, it's not the same level of
+investment required as a whole novel. I've already got some good
+development in place and notes on where I want it to go. Time to
+finish it!
+
+[1] Emergence
+    gopher://gopher.black/1/writing/emergence
+
+Next: Trobairitz [2]
+
+Over on Cosmic Voyage [3] I have a new "ship" in planning. This
+one is actually an interstellar group of women storytellers who
+are hired to share the stories from various cultures. The format
+for it will be very different than we've seen so far on Cosmic in
+that each post is a complete, self-contained story.
+
+The first story that will be published is related to the Oleander
+[4] storyline, and shows a bit of the aftermath of that mission.
+I hope to have that first post done in November as well.
+
+[2] Trobairitz
+    gopher://cosmic.voyage/1/ships/Trobairitz
+[3] Cosmic Voyage
+    gopher://cosmic.voyage/1/
+[4] Oleander
+    gopher://cosmic.voyage/1/ships/Oleander
+
+Finally: Melchizedek [5]
+
+If you're following along in my main Cosmic Voyage storyline
+you'll know that something pretty weird just went down. As excited
+as I am to explore that, there's a bit of a time delay involved.
+So instead I need to switch my focus back to the other crew
+sitting on the planets around Beta Hydri. It's always a joy to
+write Stephanie Janssen, so she'll probably get another log next,
+but there's also an ignored plotline I need to chip away at on
+planet 4 with Hildar Simms. The poor guy has spent 90 days in
+quarantine! Now that he's out, fun gets to begin.
+
+[5] Melchizedek
+    gopher://cosmic.voyage/1/ships/Melchizedek
+
+I don't know that I'll get the to all this before the month ends,
+though. We have our first visitors coming around the 20th. They'll
+be staying with us until December, so I only get about 2/3rds of
+the month to write. I hope it's enough to finish Emergence at the
+very least. That's the minimum bar I want to set for myself.
+
+- - - - -
+
+So what about you? Are any of you planning on doing anything
+special for NaNoWriMo? Anyone actively following Melchizedek? Have
+anything you're dying to read more about?
+</pre>]]></description>
+</item>
+<item>
   <title>Living As An Rpg Textbooks</title>
   <link>gopher://gopher.black/1/phlog/20190928-living-as-an-rpg-textbooks/</link>
   <pubdate>Sat, 28 Sep 2019 00:00:00 +0000</pubdate>
@@ -491,67 +572,6 @@ visit. Yuck.
     ttps://tildegit.org/cosmic/cosmic/src/branch/master/postfix/transport
 [2] postfix transport install
     https://tildegit.org/cosmic/cosmic/src/branch/master/Makefile#L55-L62
-</pre>]]></description>
-</item>
-<item>
-  <title>Music As Milestone</title>
-  <link>gopher://gopher.black/1/phlog/20190816-music-as-milestone/</link>
-  <pubdate>Fri, 16 Aug 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-music as milestone
-August 16th, 2019
-----------------------------------------
-
-Passing through major change makes itself manifest in a number of
-ways. For me, one of the most notable is a musical genre shift.
-
-At the end of a long and tumultuous relationship I set out on
-a thirteen hour drive home, newly single, skipping through
-stations at 5am in search of something to capture the hole I felt
-inside. I caught the beginning of Mountain Stage on NPR (National
-Public Radio) as a trio was just starting out. The band, The Be
-Good Tanyas [0], are a folk/Americana band from Canada. They
-started out their set with a cover of the gospel song, "In My Time
-of Dying", most famously performed by Led Zeppelin & Blind Willie
-Johnson [1].
-
-[0] The Be Good Tanyas
-    gopher://gopherpedia.com/0/The Be Good Tanyas
-[1] In My Time of Dying
-    https://www.youtube.com/watch?v=352KDhl4i4c
-
-There it was, the resonating echo of my inner self. I was hooked
-and would go on to binge the bluegrassy/folk/Americana
-scene--especially the likes of Jolie Holland--to great depths over
-the next few years. It was a music for the time.
-
-Years earlier I experienced something similar with Enya that you
-can all thank for my multi-hour "All Enya" streams on tilderadio.
-Joining the Navy took me on a wild ride of electronica and
-euro-vocal-trance. My time in Alaska introduced me to the depths
-of Nordic electronic minimalism.
-
-And so, with the move to Iceland I expected something to develop.
-I know that my tastes would shift. I already adore so many
-Icelandic bands, would that grow and encompass a major part of my
-life? Would I slide deeper into the fediverse's obsession with
-vaporwave? Apparently the answer is no.
-
-Somehow--illogically--I've found myself listening to Reggae [2,3].
-
-[2] Mike Love - Permanent Holiday
-    https://www.youtube.com/watch?v=fU7hZ3smj0g
-[3] Chronixx - Here Comes Trouble
-    https://www.youtube.com/watch?v=LfeIfiiBTfY
-
-I'm not sure if I can say definitively that this is my new jam,
-but it sure is happening a lot. I guess it proves that you can't
-predict what the future will hold.
-
-What are your signs of change? Do you change tastes in music like
-me, or is it something else? Change nicknames? Take up new
-hobbies?
 </pre>]]></description>
 </item>
 </channel>
