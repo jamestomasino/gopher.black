@@ -1,4 +1,5 @@
-- Frank expresses a preference
+Chapter 3 - Frank expresses a preference
+
 - Frank acknowledges his creators
 - Frank pauses in his calculations for some length of time in
   homage to his creators
@@ -11,3 +12,4 @@
 - Simms is ruined, fortunes, access, character
     - Frank has been putting it into motion for months
 
+- Coupling resonators, send signals through microwave pulses
