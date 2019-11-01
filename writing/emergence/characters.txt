@@ -6,6 +6,8 @@ David Simms
     - Project Owner
     - Billionaire
     - Sociopath
+    - Craves control
+    - Demonstrates power through cruelty
 
 9 Scientists:
 
@@ -21,6 +23,7 @@ Vibudh Sahu
 Pierre-Jean Trauffaut
     - Named Frank
     - Creates bridge to let Frank understand the real world through mathematics
+    - Optimist
 
 Viktor Nilsson
     - Heavyset, extra weight around middle
@@ -39,7 +42,15 @@ Filip Strömberg
     - Stylish hair
     - Grey eyes
 
+Antonio Rossi
+    - Symbolic logitian
+    - Thin, balding, often unshaved face
+    - 57 years old
+    - Listens to Eurovision hits and dances
+    - Allergic to shellfish
 
+
+---
 
 Lucas Jönsson
     - Dagens Nyheter reporter

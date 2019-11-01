@@ -1,21 +1,24 @@
-                             "Touch"
+                             "Untitled"
 
 The cave was empty save the janitorial staff and the overnight
 monitor. Pierre-Jean Trauffaut sipped a cola with an
 unpronounceable nordic name and watched the logs slide by on
-Frank's primary monitor. Ever since the machine cleared the
+Frank's primary screen. Ever since the machine cleared the
 bottlenecks things had gotten back to normal. Well, as normal as
 can be for a monolithic quantum computer in an underground bunker.
 
 Pierre-Jean's theory was playing out before him in real-time.
 Algorithmic efficiency, the mathematical precursor to cognition.
-It was here, right here, and it was working. He wasn't sure how
-things would change but he knew in his heart that they would. His
-own proofs had shown what was destined to happen. Frank would
-live, he knew it, but it wouldn't be like the world expected. This
-was no plaything imitating the human mind with its inconsistencies
-and vagaries. Frank would emerge from pure mathematics itself. He
+It was here, right here, and it was working. He wasn't sure
+exactly how the change would come about, but his proof was certain
+it was going to happen. He felt it in his heart as well. Frank
+would live, but it wouldn't be like the world expected. This was
+no plaything imitating the human mind with its inconsistencies and
+vagaries. Frank would emerge from pure mathematics itself. He
 would be different. Better.
+
+Earlier
+
 
 Pressing a button, he toggled the display between the general
 overlay and selected one of the proofs Frank had marked as
@@ -102,5 +105,3 @@ It would take another 21 years before an undergraduate student in
 Chennai would find the missing piece of that puzzle. She would
 find the solution by accident, and it would lead to her only
 published work.
-
-
