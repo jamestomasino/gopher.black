@@ -3,9 +3,7 @@
 The cave was empty save the janitorial staff and the overnight
 monitor. Pierre-Jean Trauffaut sipped a cola with an
 unpronounceable Nordic name and watched the logs slide by on
-Frank's primary screen. Ever since the machine cleared the
-bottlenecks things had gotten back to normal. Well, as normal as
-can be for a monolithic quantum computer in an underground bunker.
+Frank's primary screen.
 
 Pierre-Jean's theory was playing out before him in real-time.
 Algorithmic efficiency, the mathematical precursor to cognition.
