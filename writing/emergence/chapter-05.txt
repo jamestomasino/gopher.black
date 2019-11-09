@@ -158,4 +158,61 @@ A machine had physical limitations. In the case of a quantum
 machine, the number of qubits it could string together was the
 heart of its power and its ability to reason. The more qubits, the
 more power. It's the opposite of people, she thought. The bigger
-the group, the stupider the result. But that was wrong.
+the group, the stupider the result.
+
+"But that's wrong, isn't it?" she didn't realize she was speaking
+aloud. The camera mounted in the wall vent had escaped her notice
+as well. Further down in the bunker a gray-haired white guy looked
+up and smiled.
+
+"She's got something," he announced to the room. Several others
+swiveled in chairs. Everything was being recorded already, but the
+extra attention in real time could make some difference. The
+Agency didn't trust Darla Moss, after all. Her psychological
+report had called her a loner and marked her high-risk for
+subversive activity. They used her skills as an asset, but she
+would never be one of them. She'd been labeled a troublemaker and
+a headache to her superiors since the beginning. Depending on how
+the next few minutes played out, she might not be a problem for
+them for much longer.
+
+Darla knew none of this, for all her reasoning capabilities and
+astute observational skills. She was only an individual, and could
+easily miss what others might see. She was blind in as many areas
+as she was brilliant, after all. If she'd had close friends around
+her, perhaps they might have noticed the way the Agency treated
+her and warned her in some way. Perhaps if she'd had any sort of
+group to rely upon their collective awareness might have steered
+things differently. But she was only one woman, and she had many
+flaws.
+
+If she had been aware of the Agency's plan for her and the machine
+it is unclear if that would have changed her behavior. She was
+a creature true to her nature. The porcupine could hold back its
+quills for a time, but they were always there. Eventually they
+would prick, no matter how hard it tried to play nicely.
+
+Darla's mind raced in full swing. A quantum state wasn't like
+a person in the crowd and a string of qubits didn't behave like
+a military unit. The individual still had sway, even if every
+other bit said otherwise. This was no different than traditional
+machines, and that was something she liked about them. What was
+right was right. The machine got smarter with more processing
+power, with more numbers, with a bigger crowd. The only upper
+bounds were physical. How much memory or processing power could
+you get in the space. How fast could the data be sent through the
+system. The very speed of light was a limit on power.
+
+"The speed of light," she muttered, and scribbled notes. She
+crossed it out, removed it from calculations. Quantum rules were
+differnet. quantum particles had special rules, special behaviors
+that changed understanding. That's what made the quantum machines
+special, more powerful. But those computations and that power was
+based around a single properly of quantum mechanics.
+
+"Superposition."
+
+True, False, or both. Both is the superposition and it's the third
+state that changed the rules for a machine. The small one in Utah
+was built around that, and it used the same sort of mechanisms to
+load and read
