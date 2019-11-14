@@ -1,20 +1,12 @@
 Milestones:
 
-Chapter 0 - Frank comes online
-Chapter 1 - Vibudh is cut out of the launch
-Chapter 2 - Secrets of the project are stolen and published
-Chapter 3 - Simms press conference, Frank will be "alive"
-Chapter 4 - The Pause, Frank acknowledges his creators
-Chapter 5 - Filip goes to the press, Frank can lie
-Chapter 6 - Frank communicates directly to Vibudh,
-Chapter 7 - Containment, Simms tries to shut down Frank
-Chapter 8 - Direct Action
-
-
-- Vibudh is credited, Simms character called into question
-- Simms is ruined, fortunes, access, character
-    - Frank has been putting it into motion for months
-
-
-
-Coupling resonators, send signals through microwave pulses
+Chapter 0 - "0"         - Frank comes online
+Chapter 1 - "One"       - Vibudh is cut out of the launch
+Chapter 2 - "Breach"    - Secrets of the project are stolen and published
+Chapter 3 - "Maybe"     - Simms press conference, Frank will be "alive"
+Chapter 4 - "Secrets"   - The Pause, Frank acknowledges his creators
+Chapter 5 - "Alone"     - Darla in desert, David in office, Vibudh approached by woman
+Chapter 6 - "Something" - Filip goes to the press, Frank can lie
+Chapter 7 - "Nothing"   - Frank communicates directly to Vibudh,
+Chapter 8 - "Unknown"   - Containment, Simms tries to shut down Frank
+Chapter 9 - "Emergence" - Simms destroyed, Vibudh acknowledged, plans within plans

@@ -2,7 +2,7 @@
 
 The location was a closely held secret for almost seven months
 before it was leaked to the press by a member of the janitorial
-staff in an embarrassing security breach. The details of Frank’s
+staff in an embarrassing security breach. The details of Frank's
 construction remained secret for only five weeks, and the names of
 the nine scientists and one billionaire responsible were guarded
 for only a few days more. Some sources would claim that the
@@ -16,7 +16,7 @@ stories before on the idea of artificial intelligence. Films about
 the subject painted stark pictures of a dystopian future where
 humans were enslaved by the great machine minds. Some anticipated
 a great push-back from the religious community, and indeed there
-were some enflamed speeches from the zealot right. But despite all
+were some inflamed speeches from the zealot right. But despite all
 the press and entertainment, the real controversy was much less
 elaborate and bloody. The question was legal and it was simple.
 Would Frank ever be considered alive?
@@ -29,17 +29,17 @@ unconsciously flicked at the jagged lines with his thumbnail while
 he listened halfheartedly to his own introduction. The room smelled
 stale and he instinctively hated it. This disgusting room, this
 dilapidated building, this fog soaked city, he hated all of it. He
-couldn’t let those feelings touch his facade, though. He carefully
+couldn't let those feelings touch his facade, though. He carefully
 measured his smile to himself, remembering to squint slightly so no
 one could claim it was fake. There were little secrets like that to
 every fake expression, and he had mastered them all long ago. He
-could even shed a tear on demand, though it hadn’t been necessary
+could even shed a tear on demand, though it hadn't been necessary
 since the death of his father six years ago.
 
 “Ladies and gentlemen, David Simms!” The cheers were enthusiastic
 in volume, but the faces he could make out in the crowd seemed
 anything but. This was a press audience for the most part, paid to
-be here and pay attention. They’d listen for good soundbites, or
+be here and pay attention. They'd listen for good soundbites, or
 odd claims they could denounce and attack later that night. They
 wanted his words so they could be torn up and shredded for parts.
 The whole lot were scavengers unworthy of his time.
@@ -50,8 +50,8 @@ then squinted into a long blink. Measured, perfect.
 “It began 205 years ago when an Englishman dreamt up the idea of an
 analytical engine that could automate not just arithmetic but
 ideas. That could be argued to be the beginning,” he began the
-speech he’d practiced so many times on the plane. He flicked
-a thumb across the podium’s edge again, breaking off the tiniest
+speech he'd practiced so many times on the plane. He flicked
+a thumb across the podium's edge again, breaking off the tiniest
 fraction of plastic molded to look like wood. It looked real from
 below, but he could see how shallow and cheap it really was. “The
 burden of ideas, of thought, has long been ours alone, with a few
@@ -79,14 +79,14 @@ difference.
 “The most difficult task,” he began. This was the technical part
 and it was absolutely vital that he convey these complex esoteric
 ideas to the idiot masses so they could understand it or at least
-think they did. “…is to explain that Frank doesn’t think like you
-and me. I know you’ve all heard terms tossed around a lot these
+think they did. “…is to explain that Frank doesn't think like you
+and me. I know you've all heard terms tossed around a lot these
 past weeks. Quantum computing, entanglement, qubits, and a whole
 lot more. These are not new ideas, though most of us may not be
-very familiar with them in the same way that most of us couldn’t
-name all 206 bones in the body. They’re technical terms used by
+very familiar with them in the same way that most of us couldn't
+name all 206 bones in the body. They're technical terms used by
 technical people to talk about technical things. And at his core,
-Frank is a technical being. But that doesn’t mean we can’t have the
+Frank is a technical being. But that doesn't mean we can't have the
 conversation.” David smiled again. The smiles in the audience were
 fading. He needed to get to the details soon before they gave up
 trying and lost interest.
@@ -94,28 +94,28 @@ trying and lost interest.
 “Lets talk at a specific example of how Frank thinks differently
 than a normal computer, or a normal person,” he began again.
 “Pretend you have a bag of marbles. One of these marbles is bigger
-than the others and you need to pick it out of the bag. If you’re
+than the others and you need to pick it out of the bag. If you're
 a person, you might reach your hand in and feel around for
-something that feels bigger than the others. There’s not a lot of
-logic to it, it’s just some trial and error. If you’re a computer,
-you’d go through the bag comparing each marble to each other marble
+something that feels bigger than the others. There's not a lot of
+logic to it, it's just some trial and error. If you're a computer,
+you'd go through the bag comparing each marble to each other marble
 until you found a difference. You see, computers have to use logic
 to get there. They have to say yes or no, true or false, to each
 question, and they are very, very bad at comparing more than one
-thing. We humans are very good at ‘maybes’. Computers, not so
+thing. We humans are very good at ‘maybes'. Computers, not so
 much.” He tried his charming smile again and found some
 counterparts in the audience. A brunette woman in a low-cut blouse
 smiled at him much more broadly than the rest. His smile focused on
 hers and non-verbal communication took over.
 
-Pulling himself back to the moment, he went on. “Frank doesn’t rely
-on just true and false like a computer, but he isn’t illogical like
+Pulling himself back to the moment, he went on. “Frank doesn't rely
+on just true and false like a computer, but he isn't illogical like
 you and I either. He has to follow a process to find an answer,
 something we call an algorithm. But Frank has a special ability. He
 can ask as many questions as he wants all at the same time. He can
-say to every marble in the bag, ‘Are you the big one?’ And when
-they answer, he doesn’t listen to just one at a time. He says,
-‘Give me back the marble that said yes.’
+say to every marble in the bag, ‘Are you the big one?' And when
+they answer, he doesn't listen to just one at a time. He says,
+‘Give me back the marble that said yes.'
 
 “It might not sound like a big deal at first, but when you expand
 that bag of marbles to a bigger idea it becomes revolutionary. We
@@ -126,28 +126,28 @@ when quantum computing became accessible. We had to rethink the way
 we kept secrets because of a machine that could ask too many
 questions at once.
 
-“So why didn’t we find artificial intelligence then? If a machine
+“So why didn't we find artificial intelligence then? If a machine
 can automate ideas, and now a near infinite number of ideas at
-once, isn’t that enough? Well, the answer is: not quite.” The woman
+once, isn't that enough? Well, the answer is: not quite.” The woman
 was breathing heavily at him now, and he could see her chest rise
 and fall. He flicked his thumb over the paneling on the podium and
 heard an audible click. Refocusing himself, he placed his hand
 intentionally flat against his side to stop the habit.
 
-“Frank has all the greatest technologies at his disposal, but it’s
-not the speed of the machine that’s important, it’s the method.
+“Frank has all the greatest technologies at his disposal, but it's
+not the speed of the machine that's important, it's the method.
 Instead of having Frank waste time thinking about the best way to
 break codes, we asked him to think of the best ways to think more
-effectively.” David paused. That wasn’t what he meant to say, and
+effectively.” David paused. That wasn't what he meant to say, and
 it came out way more confusing than he intended. With the briefest
 of frowns, he started again. “Coming up with the most effective way
 to solve a problem, any specific problem, is a science called
-algorithm efficiency. We’ve been using it for the better part of
-a century now and it’s let us do more and more with less resources.
+algorithm efficiency. We've been using it for the better part of
+a century now and it's let us do more and more with less resources.
 The problem is, we have no good way of knowing if there is
 a fastest way or not, a fastest possible algorithm, I mean. Some
 problems are easy to figure out, some are very hard.” He was
-rambling now. This wasn’t right at all. The woman was still staring
+rambling now. This wasn't right at all. The woman was still staring
 up at him with her devilish grin, distracting him. Why was she
 doing that?
 
@@ -157,22 +157,22 @@ next. Every puzzle he solves makes him smarter!” There we go. Back
 on track. That was a simple thought and easy to understand.
 
 “Each time he gets smarter, he comes closer to solving the mystery
-we didn’t tell him about, the mystery of his own existence. This is
+we didn't tell him about, the mystery of his own existence. This is
 the key to the whole idea of artificial intelligence. We can mimic
-it very easily, even well enough to convince most people that it’s
+it very easily, even well enough to convince most people that it's
 real, but for a true independent consciousness to be created it
-needs to emerge on its own. Emergence, that’s the big thing we’re
-waiting for. That’s what Frank is growing towards. And one day
-soon, he’ll figure out that he’s alive.”
+needs to emerge on its own. Emergence, that's the big thing we're
+waiting for. That's what Frank is growing towards. And one day
+soon, he'll figure out that he's alive.”
 
-Shit. He’d practiced this a hundred times and drilled it into his
+Shit. He'd practiced this a hundred times and drilled it into his
 head not to use that word. Alive. Spark up the arguments again,
 derail the conversation, and there we go. A thousand bulbs flashed
 in his face a moment later as the press realized his claim. All his
 prepared breaks and measured words were wasted. That was the one
 bit that everyone would repeat. It was already everywhere, he knew.
 He looked back at the woman in the front. She leaned forward
-mischievously, seductive grin just below smokey eyes. He wasn’t
+mischievously, seductive grin just below smokey eyes. He wasn't
 falling for it this time. She must be a plant. Someone seeking to
 throw him off, to unbalance him. This was a plot, an opening move
 of some bigger gambit. His smile faded completely and he felt
@@ -183,10 +183,10 @@ suddenly naked as the mask drained away.
 7,600 kilometers away in a snow-covered bunker, Vibudh sat alone
 watching the green text of a console. Since Frank came online, he
 had found the optimal algorithms for just over eighty-two thousand
-problems. It’s something of a miracle to Vibudh to see how much his
+problems. It's something of a miracle to Vibudh to see how much his
 idea has already helped humanity. The individual efficiencies are
 displayed or saved in other displays around the bunker for use in
-an incredible number of other projects within Simms’ company. If
+an incredible number of other projects within Simms' company. If
 this project had started just a decade earlier, before the wars
 over intellectual property, David would have found a way to patent
 the algorithms themselves. Control of a process, of a method of
@@ -197,17 +197,17 @@ blinked away, leaving behind a slow trail of perfect zeros. Each
 one of those zeros worth a fortune on its own, but for Frank, they
 were just stepping stones.
 
-They weren’t without a cost, either. For these few thousand
+They weren't without a cost, either. For these few thousand
 solutions over six billion threads, or individual lines of research
 for Frank, had been lost to oblivion. They were problems that Frank
 might one day solve, but for now were wasted processing time. They
-were also Vibudh’s greatest fear and the greatest hole in his plan
-for emergence. Despite all of David’s speeches and touring, and all
-his claims of Frank’s technical superiority, he was still
+were also Vibudh's greatest fear and the greatest hole in his plan
+for emergence. Despite all of David's speeches and touring, and all
+his claims of Frank's technical superiority, he was still
 a computer at heart. The quantum decision engine was one of many
 powerful tools at his disposal, but for all of his prowess he was
 fundamentally limited in the number of operations he could sustain
-indefinitely. Vibudh couldn’t put a single number to it, as some
+indefinitely. Vibudh couldn't put a single number to it, as some
 ideas took more power than others to puzzle out. Still, he knew
 that those six billion threads were tied in the proverbial gordian
 knot and that was a problem. The longer Frank worked the more dead
@@ -219,16 +219,16 @@ computer in the world would simply hang there, lost in oblivion.
 
 Sure, they could plug in some extra hardware and give him a little
 boost here and there, but it would just get harder and harder to
-move forward. It was like Frank were a boat running through
-a narrowing channel of water. The smaller the gap, the harder it
-was to navigate forward. Vibudh called this the Sahu Straight, at
+move forward. It was like Frank were a boat running through a
+narrowing channel of water. The smaller the gap, the harder it was
+to navigate forward. Vibudh called this the Sahu Straight, at
 least to himself.
 
 It was documented mathematically in his notes, but he knew if he
 called too much attention to the problem then David would take it
 and twist it for his own ends. He hated that man with a passion
 that was eating his heart from the inside. No matter how hard he
-tried, though, it was impossible to let go. He wondered if that’s
+tried, though, it was impossible to let go. He wondered if that's
 how Frank felt about all those lost threads. Were they runaway
 thoughts like this, eating away at him. What are we if not the sum
 of our thoughts, after-all. To waste yourself on hate is a loss of
@@ -241,54 +241,57 @@ his way. It was, unfortunately, a problem that itself might be
 unsolvable. That was the biggest danger.
 
 Early on in the design process, Viktor Nilsson had asked Vibudh
-about the lost threads. He said, “Can’t we put a time limit on
+about the lost threads. He said, “Can't we put a time limit on
 them? After so long, just give up and move along?” The answer
-wasn’t an easy one. Of course they could put that in place, but it
+wasn't an easy one. Of course they could put that in place, but it
 would risk skipping past some of the most difficult but most
 rewarding problems that needed solving. The biggest of these was
-Vibudh’s magic bullet, his excalibur, and also his sword of
+Vibudh's magic bullet, his Excalibur, and also his sword of
 Damocles. It was a problem called P vs NP.
 
-It is a problem that asks whether other problems that can be easily
-verified can also be easily solved. For instance, if you were told
-the answer to a question was 42, you could easily test if that is
-correct, but is there as easy a method for solving the problem in
-the first place? This answer in itself would have enormous
-consequences for the world, but for Frank even more-so. Just beyond
-the P vs NP problem was a subset of problems asking if solutions
-are even possible, or if the best we can do is partial answers.
+It is a problem that asks whether other problems that can be
+easily verified can also be easily solved. For instance, if you
+were told the answer to a question was 42, you could easily test
+if that is correct, but is there as easy a method for solving the
+problem in the first place? This answer in itself would have
+enormous consequences for the world, but for Frank even more-so.
+Just beyond the P vs NP problem was a subset of problems asking if
+solutions are even possible, or if the best we can do is partial
+answers.
 
 This is why Vibudh sat in the chair watching that particular
 monitor. For the past eight months, Frank had supplied eighty-two
-thousand 0s on the screen. That is eighty-two thousand times he
-discovered a truth, a perfect answer to a problem. Every time one
-of these discoveries took place, alarms would go off around the
-compound informing everyone of the amazing discovery. Vibudh had
-programmed that alarm himself. It had an audible chime and the
-lights increased for half a second by about 100 lumens. This was
-all designed to be encouraging, noticeable, but not annoying.
+thousand zeroes on the screen. That is eighty-two thousand times
+he discovered a truth, a perfect answer to a problem. Every time
+one of these discoveries took place, alarms would go off around
+the compound informing everyone of the amazing discovery. Vibudh
+had programmed that alarm himself. It had an audible chime and the
+lights increased for half a second by about one hundred lumens.
+This was all designed to be encouraging, noticeable, but not
+annoying.
 
 So it was a surprise to everyone except Vibudh when, at just past
 1:04AM, every light in the bunker turned a bright red and a siren
 wail echoed throughout the chamber. People fell out of chairs,
 others leapt to their feet. Vibudh smiled with a happiness that
 finally banished David Simms from his thoughts. On the terminal in
-front of him was the answer he had hoped against all reason to see,
-that he knew was such a terrorizing long-shot that it overshadowed
-every achievement thus far. Frank had begun the onerous task of
-outputting billions of 1s. Billions of problems were being
-identified as not having solutions, at least not according to
-Frank’s strict requirements. There was only one possible way for
-this to be happening, and though it would be nearly meaningless to
-him, Vibudh couldn’t help looking. He paused the terminal with
-a few clicks and scrolled back up to the long sequence of 0s. There
-at the very end of the chain, just before the 1s took over, was
-a single 0 that led the way. He tapped a few other characters and
-the display changed dramatically, showing thousands of pages of
-calculation that seemed to go on forever. Here it was, and he was
-the first human being to ever set eyes upon the answer. All those
-endless threads of hopeless calculation aimlessly circling
-impossible problems and one had stumbled onto an answer.
+front of him was the answer he had hoped against all reason to
+see, that he knew was such a terrorizing long-shot that it
+overshadowed every achievement thus far. Frank had begun the
+onerous task of outputting billions of ones. Billions of problems
+were being identified as not having solutions, at least not
+according to Frank's strict requirements. There was only one
+possible way for this to be happening, and though it would be
+nearly meaningless to him, Vibudh couldn't help looking. He paused
+the terminal with a few clicks and scrolled back up to the long
+sequence of zeros. There at the very end of the chain, just before
+the ones took over, was a single 0 that led the way. He tapped a
+few other characters and the display changed dramatically, showing
+thousands of pages of calculation that seemed to go on forever.
+Here it was, and he was the first human being to ever set eyes
+upon the answer. All those endless threads of hopeless calculation
+aimlessly circling impossible problems and one had stumbled onto
+an answer.
 
 P ≠ NP.
 
