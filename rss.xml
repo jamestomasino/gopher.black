@@ -3,6 +3,138 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Re Gopher Resiliency</title>
+  <link>gopher://gopher.black/1/phlog/20191115-re-gopher-resiliency/</link>
+  <pubdate>Fri, 15 Nov 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+re: gopher resiliency
+November 15th, 2019
+----------------------------------------
+
+The illustrious tfurrows recently wrote [0] on the topic of
+resiliency of his gopher content. He brings up a familiar topic
+and one tangentially related to the recently popular "right to be
+forgotten" vs "archival" debates.
+
+[0] tfurrows - gopher resiliency
+    gopher://zaibatsu.circumlunar.space/0/~tfurrows/phlog/2019-11-14_gopherResiliency.txt
+
+I think I have something to say on the subject, but I started this
+reply before I thought everything out. Lets see what comes up as
+I go…
+
+When I was a boy I had a cabinet in by bedroom. At some point in
+time, for Christmas, I got my very own TV that sat on top of it.
+Inside, at a later Christmas, I was able to add my Nintendo
+Entertainment System and a few games. A bit later the cabinet
+would welcome the introduction of some new controllers and my
+first issue of Nintendo Power Magazine. The magazines grew quickly
+from one to 10 to 40 until they took up most of the cabinet space.
+At some point or another my subscription ended, though I couldn't
+say when or why exactly. I grew up, my interests changed. I was on
+BBSes and Prodigy all day instead of trying futilely to beat
+Battle Toads. The cabinet door closed one day an didn't open again
+for a very long time.
+
+When it did open, I was older and with wildly different interests.
+The NES still had its charm, so it came out of the cabinet and
+journeyed with me to college and beyond. The magazines, though,
+stayed on the shelf. Another decade passed and it was time to
+empty out the cabinet from my parents' home as they planned their
+retirement move. I cracked open the doors and there they were. In
+a moment of nostalgia, I flipped through some pages. The air
+filled with a familiar smell that transported me back to a time
+when these characters, interviews, reviews and comics were vibrant
+and new. I was 9 years old again and filled with joy for a moment.
+
+But I wasn't there to take a massive collection of magazines with
+me. I was there to empty out the trash, to toss it and let it go.
+I put those magazines in an empty box that once held printer
+paper, scribbled a label and tossed in in the car. I wasn't going
+to keep them, but I wasn't ready for them to disappear just yet
+either.
+
+The box sat under my desk in my house for another couple years
+totally forgotten until a friend's son developed a magical
+infatuation with Mario that can only come with youth. He dressed
+as Mario, got every toy Mario imaginable, and even enjoyed playing
+the old games on his dad's emulator. One day the little guy got
+quite the surprise when a giant box showed up on his table. He
+looked inside, pulled out a magazine and started flipping through.
+His eyes lit up when he saw that it was filled with Mario and all
+the other familiar characters he loved.
+
+He couldn't care less about game strategy guides for a system he
+didn't have, but he loved the comic stories and the artwork. We
+gave him some scissors and chopped them up to make new artwork.
+His mom is an elementary school art teacher, so resources were
+readily available. He made some really great stuff from those
+dusty pages.
+
+This came to mind as I was thinking about resiliency and I wanted
+to share even if I couldn't articulate it perfectly. I guess it's
+about the meaning of art in a way. Some argue that an artist (or
+writer) has an intention with their work and that is the value.
+Their intended sharing of an idea or experience is the art. Others
+say that the experience of the viewer or reader is what matters.
+I think there's enough value for both to be true.
+
+When I write a phlog post or share some experiment on gopher I get
+satisfaction from sharing my thoughts or notes or otherwise
+contributing to the little quiet space we have carved out. I also
+get joy knowing that you all read it. Over the years I've seen
+first-hand how the things I've shared have landed with some of you
+in an unintended way. Maybe they've inspired a response, or
+reminded you of a long forgotten hobby. Maybe a silly project
+I started and gave up on had a clue to something you were
+struggling with. But there's more than the immediate effect.
+
+I've run across old gopher content from the 90s detailing
+conferences, meet-ups, and stories that are otherwise unknown to
+me. I can witness snapshots in time as someone tried to puzzle out
+the future of the internet, not knowing what was about to blow up
+around them. Their goals of communication have little to do with
+the experience I now have in reading. Instead of learning about
+possible futures I get a glimpse of human struggle against the
+unknown, teamwork and camaraderie. I get to see the problems of
+the day in a way that's hard from this vantage. I get to remember
+my own early internet days and pick out pieces of history. And
+that's just from some gopher history [1]. How much more exciting
+is it when I find old code or diaries.
+
+[1] gopher history archives
+    gopher://gopher.black/1/archive/gopher-history
+
+Resiliency conjures up this idea that our writing is somehow
+either indelible or written in disappearing ink. Some people will
+assuredly make the choice to nuke their archives and skip out on
+gopher or the web or whatever. Some will have hardware failures or
+platforms will go away. Others will surely continue to archive.
+Cameron Kaiser will continue his efforts, or others will rise up
+and do the same, and much of this will survive in someone's text
+archives. Others will come and go from places like SDF, leaving
+behind a few postings and files before forgetting their account
+exists. tfurrows has four cosmic posts [2] and five more secret
+gopher postings [3] that link up a really cool and interesting
+science fiction story. If that story doesn't continue then it
+still exists as part of the shared universe. It adds to the vibe
+and contributes in itself.
+
+[2] Xero Carbon Wells
+    gopher://cosmic.voyage/1/ships/Xero Carbon Wells
+[3] Wells' Carbon Clique
+    gopher://167.88.113.62/1/~wells
+
+Perhaps one day in the distant future our silly thoughts and ideas
+will be gathered together, chopped up, and turned into something
+new and unexpected. Maybe we'll all sit in a virtual cabinet for
+decades first. Maybe some of it will fade away or be lost, but
+I think there's a good chance for resiliency. Our stuff is mostly
+text, after all, and that doesn't take up much space.
+</pre>]]></description>
+</item>
+<item>
   <title>Nanowrimo 2019</title>
   <link>gopher://gopher.black/1/phlog/20191031-nanowrimo-2019/</link>
   <pubdate>Thu, 31 Oct 2019 00:00:00 +0000</pubdate>
@@ -533,45 +665,6 @@ Saturday morning GMT to toss your hammer in.
 
 Thanks to everyone who submitted or will. I think this will be
 a fun little thing.
-</pre>]]></description>
-</item>
-<item>
-  <title>Re Lambdalab Email Thoughts</title>
-  <link>gopher://gopher.black/1/phlog/20190827-re-lambdalab-email-thoughts/</link>
-  <pubdate>Tue, 27 Aug 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-re: lambdalab - email thoughts
-August 27th, 2019
-----------------------------------------
-
-The lambda lab wrote [0] about setting up email and asked for some
-thoughts on relaying that mail to others around gopherspace. I do
-something like that on cosmic.voyage. Namely, I have installed and
-enabled postfix to allow for outbound emails only to specific
-hosts. [1,2] Since I'm targeting other tildes and not big email
-providers I don't need to worry about ending up on spam lists
-because of unauthenticated emails to Biggy-G. It also means I can
-be lazy about it.
-
-If you're using the host yourself and not sharing it with others
-then you don't even need to go that far. Just be selective about
-who you email, I guess.
-
-But honestly, setting up DKIM, SPF, etc, isn't too bad these days.
-The hard part is dealing with the Notorious-G and others
-blacklisting you because they don't care, forcing you to manually
-intercede and get clearance. The last time I dealt with that with
-them I had to do a bunch of extra crap to figure out how to see
-the error message that had some obscure URL they wanted me to
-visit. Yuck.
-
-[0] thelambdalab - email thoughts
-    gopher://70/0/phlog/2019-08-27-Email-woes.txtthelambdalab.xyz
-[1] postfix transport
-    ttps://tildegit.org/cosmic/cosmic/src/branch/master/postfix/transport
-[2] postfix transport install
-    https://tildegit.org/cosmic/cosmic/src/branch/master/Makefile#L55-L62
 </pre>]]></description>
 </item>
 </channel>
