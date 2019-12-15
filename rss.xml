@@ -3,6 +3,69 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Years Of Journaling</title>
+  <link>gopher://gopher.black/1/phlog/20191215-years-of-journaling/</link>
+  <pubdate>Sun, 15 Dec 2019 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+years of journaling
+December 15th, 2019
+----------------------------------------
+
+A few of you brilliant gopherites have been talking about the
+length of time they've been blogging [0,1]. 20 years is a lot of
+blog posts whether collected on the web or gopher. It's great to
+see collections like this all together surviving so long.
+
+[0] It was 20 years ago today
+    gopher://gopher.conman.org/0/Phlog:2019/12/04.1
+[1] On 16 years of blogging
+    gopher://republic.circumlunar.space/0/~slugmax/phlog/2019-12-13-on-16-years-of-blogging
+
+I've had people go spelunking down into my own blog [2] archives
+before and I have to say it's a really cool feeling. Journaling is
+inherently about yourself. When another human decides to spend
+their time reading your personal thoughts and history, it's very
+flattering (at least to me).
+
+[2] tomasino blog
+    https://blog.tomasino.org
+
+There are technical blogs aplenty which focus on code or math or
+science or whatever topic that isn't the self. They're great too,
+but I don't see them the same way. I'm sure they provide great
+interest to people when they're published, and interesting history
+to those that come later. Sharing a personal blog is so much more
+intimate. Keeping one up for an extended period of time is its own
+type of vulnerability. It's not just showing your timely thoughts
+of today, but also the cringe-worthy worries of younger you. It's
+easy to spotlight the mistakes, the lack of understanding, and the
+ideas that you'd eventually grow out of. That's beautiful stuff,
+if horribly embarrassing.
+
+I started journaling when I was 14. I have a shelf of paper
+journals sitting over there --> that I flip through still. I still
+do some paper journaling these days, too. Those moleskines aren't
+going to fill themselves, after all.
+
+It wasn't until 1998 that I started writing a blog online. I was
+off to college and learning how to do all this crazy web stuff.
+I kept text notes on that website for a while (lost now even to
+the wayback machine, sadly). I later moved to livejournal and kept
+a pretty decent journal there with a ring of friends. Thankfully
+I harvested some of those old posts before nuking my livejournal
+account years later. Those earliest posts on my blog now were
+written there. They've been updated a few times to move to
+wordpress, jekyll, and now hugo. I keep that stuff in git now,
+too. Better peace of mind, for sure.
+
+Anyway, I don't have much more to say on the subject. It's pretty
+cool that I've almost got 20 years of journaling history up on the
+internet myself. I hope I have much more to offer down the line in
+gopher as well.
+</pre>]]></description>
+</item>
+<item>
   <title>Sdf Minecraft Question</title>
   <link>gopher://gopher.black/1/phlog/20191115-sdf-minecraft-question/</link>
   <pubdate>Fri, 15 Nov 2019 00:00:00 +0000</pubdate>
@@ -616,55 +679,6 @@ Remember what cat does for us each and every day and give thanks.
 
 cat
     gopher://baud.baby/1/
-</pre>]]></description>
-</item>
-<item>
-  <title>Busses</title>
-  <link>gopher://gopher.black/1/phlog/20190902-busses/</link>
-  <pubdate>Mon, 02 Sep 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-busses
-September 02nd, 2019
-----------------------------------------
-
-I never spent much time on busses growing up. We were a car family
-in the suburbs. I either rode my bike places or we drove a car.
-Nothing was accessible by foot, and busses didnt run close by.
-
-Upon moving to Reykjavík we decided to go without a car for the
-first year to save money and get to know the area more intimately.
-It forces me to walk place to place, which is exercise I need, and
-it slows the pace of life.
-
-Today I wanted to buy new 3D filament. I've only found one store
-that sells it so far, and it took me almost two hours to get there
-and make the purchase with all the transfers. A single errand is
-a day's outing. 
-
-Even now as I'm on the bus home I feel a strange reaction from
-completing a simple task. It reminds me of the pleasures of the
-Slow Internet.
-
-My wife went grocery shopping this morning. She walked the 2 km
-into town (down a big hill and up another) then shopped and rode
-the bus home. She accomplished something more significant than it
-would have been by car.
-
-This is all of mind due to the convergence of solderpunk's
-ROOPHLOCH and kensanata's thread on creating, or rather the notion
-of being productive. It seems to me that the method contributes so
-much to the worth that I'm not sure end products are of much use in
-determining quality of time spent.
-
-Another case in point, sewing. I routinely did the sewing in our
-last home by machine. It gave satisfaction for creation, but since
-moving all my needle work has been by hand. It took me an hour to
-make finger puppets for my son, but the satisfaction scaled more
-rapidly than the increased effort. Some of that may be novelty, but
-the same could be said for the machine.
-
-Working manually by choice gives strange fruit.
 </pre>]]></description>
 </item>
 </channel>
