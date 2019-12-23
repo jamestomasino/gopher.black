@@ -1,0 +1,101 @@
+i----------------------------------------		gopher.black	70
+iwebmentions and microsub		gopher.black	70
+iDecember 23rd, 2019		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iThis phlog is about web stuff. Specifically it's about Indyweb		gopher.black	70
+ithings and microformats.		gopher.black	70
+i		gopher.black	70
+iI use my website https://tomasino.org as an IndieAuth [0] portal.		gopher.black	70
+iWhen logging into sites that understand the IndieWeb concept,		gopher.black	70
+iI provide my "Home" URL as an identifier. Then the site scrubs		gopher.black	70
+ithrough all the various links I have on that page and picks out		gopher.black	70
+ithose that it can understand for authentication. In most cases		gopher.black	70
+iI get GPG and GitHub hits, though occasionally a site will support		gopher.black	70
+imore. I oAuth in, and bam... identified. It's pretty neat and		gopher.black	70
+irequires very little effort on my side.		gopher.black	70
+i		gopher.black	70
+h[0] IndieAuth	URL:https://indieauth.com/
+i		gopher.black	70
+iThere are much fancier IndieWeb doodads though, and I wanted to		gopher.black	70
+istart taking advantage of some. In particular Webmentions had		gopher.black	70
+idrawn my attention. It's a different way to handle commenting		gopher.black	70
+ithat, honestly, reminds me of what we do here in gopherspace.		gopher.black	70
+iInstead of leaving a comment on a post somewhere, you just write		gopher.black	70
+iyour own blog post and "notify" the original. The original page		gopher.black	70
+ican then choose whether to add a link to yours or ignore it or		gopher.black	70
+iwhatever. Everyone maintains control of their own words and all is		gopher.black	70
+iwell!		gopher.black	70
+i		gopher.black	70
+iSo I opened up the IndieWeb sites and went digging into		gopher.black	70
+iWebmentions [1]. I was immediately reminded why I abandonded this		gopher.black	70
+ithe last time around. While the concept is incredibly simple, the		gopher.black	70
+iimplementation is annoyingly complex and the terminology for		gopher.black	70
+ithings is as bad as git [2].		gopher.black	70
+i		gopher.black	70
+h[1] Webmentions	URL:https://webmention.net/
+h[2] Git Man Page Generator	URL:https://git-man-page-generator.lokaltog.net/
+i		gopher.black	70
+iSince my sites are all static I wasn't looking for a plugin or		gopher.black	70
+ieven something that automatically displayed anything on the		gopher.black	70
+ifront-end at all. I just wanted something to process webmentions		gopher.black	70
+iand give me a way to see that they happened. For my low traffic		gopher.black	70
+isites, a Webmention-to-Email system would have been perfect.		gopher.black	70
+i		gopher.black	70
+iThere are a number of things out there already. Some support the		gopher.black	70
+iWebmention client role and others the server because--did I not		gopher.black	70
+imention this?--you need webmentions set up on both sides for it to		gopher.black	70
+iwork. So to actually do it you need reading, writing, discovery		gopher.black	70
+iand parsing. There are a handful of projects doing the various		gopher.black	70
+ipoints and most of them are "in development" to varying degrees.		gopher.black	70
+iAlmost all of them have complex esoteric documentation that only		gopher.black	70
+imakes sense if you're already familiar with the protocol enough to		gopher.black	70
+iwrite your own software. Lovely!		gopher.black	70
+i		gopher.black	70
+iThere are a few 3rd party services that offer the basics without		gopher.black	70
+icharge. I don't know if they work or not, but that's what I ended		gopher.black	70
+iup trying. I really don't want to spend the whole Christmas break		gopher.black	70
+ifiguring this stuff out. I don't expect to get many, if any,		gopher.black	70
+imentions anyway. Webmention.io is the service I went with. I used		gopher.black	70
+iIndieAuth to log in and then grabbed the links it gave me to paste		gopher.black	70
+ion my various blogs. I have no idea how to "use" Webmentions from		gopher.black	70
+ithe other side, and no idea how to test if I'm set up correctly.		gopher.black	70
+i		gopher.black	70
+iI wonder if I need to IndieAuth with the blog URL itself and then		gopher.black	70
+iuse webmention.io directly to that property only and then repeat		gopher.black	70
+ithe process for the other site. It says I should be able to use it		gopher.black	70
+ion many sites though, so hopefully it's fine. Time will tell.		gopher.black	70
+i		gopher.black	70
+iWebmention.io provides a microformat feed of the mentions you		gopher.black	70
+ireceive. I was going to grab the RSS one and plug it into my RSS		gopher.black	70
+ireader until I noticed the mention of this other IndieWeb format,		gopher.black	70
+iMicrosub.		gopher.black	70
+i		gopher.black	70
+iOh joy! Another one. :D		gopher.black	70
+i		gopher.black	70
+iMicrosub seems like an abstraction layer above microformats that		gopher.black	70
+ican be interpretted as feeds or notifications. RSS and Atom are		gopher.black	70
+ivalid inputs, but so are other bits. Like other IndieWeb things,		gopher.black	70
+ithere's a big push to separate client & servers. In this case		gopher.black	70
+iI found Aperture [3] as a server and I'm using a couple different		gopher.black	70
+iclients to see the front-end.		gopher.black	70
+i		gopher.black	70
+h[3] Aperture	URL:https://aperture.p3k.io/
+i		gopher.black	70
+iMost of these projects are also "in development", but they seem		gopher.black	70
+ifunctional enough that I was able to dupe my tt-rss contents over.		gopher.black	70
+iAs I mentioned in my last post [4], I'm looking for a replacement		gopher.black	70
+ifor that software anyway so maybe this will work out.		gopher.black	70
+i		gopher.black	70
+iEventually I'd like to run all these services myself (though		gopher.black	70
+iI have no desire to write the software to do so myself). I have		gopher.black	70
+inginx running on this webserver already so if I can dockerize the		gopher.black	70
+ibits & pieces together into an IndieWeb multi-container and		gopher.black	70
+ireverse proxy everything that would be perfect. For now I'm		gopher.black	70
+iputting a pin in it. Things are good enough.		gopher.black	70
+i		gopher.black	70
+i- - - - -		gopher.black	70
+i		gopher.black	70
+iAre any of you running IndieWeb goodness? Have thoughts or		gopher.black	70
+isuggestions? Wanna vent? Send me a mention in the lovely gopher		gopher.black	70
+istyle!		gopher.black	70
