@@ -87,6 +87,8 @@ ifunctional enough that I was able to dupe my tt-rss contents over.		gopher.blac
 iAs I mentioned in my last post [4], I'm looking for a replacement		gopher.black	70
 ifor that software anyway so maybe this will work out.		gopher.black	70
 i		gopher.black	70
+1[4] Poisoning the Well	/phlog/20191216-poisoning-the-well
+i		gopher.black	70
 iEventually I'd like to run all these services myself (though		gopher.black	70
 iI have no desire to write the software to do so myself). I have		gopher.black	70
 inginx running on this webserver already so if I can dockerize the		gopher.black	70
