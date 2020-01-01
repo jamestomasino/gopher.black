@@ -3,6 +3,74 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Resolution</title>
+  <link>gopher://gopher.black/1/phlog/20200101-resolution/</link>
+  <pubdate>Wed, 01 Jan 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Resolution
+January 01st, 2020
+----------------------------------------
+
+I've got a little history [0,1] of making new years resolution
+posts on this phlog. I suppose I'll continue the trend. Three
+years in a row makes it a tradition, wouldn't you say?
+
+[0] Resolution (2018)
+    gopher://gopher.black/1/phlog/20180101-resolution
+[1] Resolution (2019)
+    gopher://gopher.black/1/phlog/20181225-resolutions
+
+In 2018 I resolved that I'd try to avoid time traps and spend time
+on things that matter. I picked up a few new hobbies and did
+pretty well with the effort. In 2019 I taught the phlogosphere
+about my buddy's ridiculous resolutions and said that it would be
+the year I was impeached. While I didn't manage to get impeached,
+at least someone did.
+
+This year I haven't really been thinking about it much, so as the
+fireworks go BANG in the background I'll do some real-time
+pondering. Perhaps it might be a good opportunity to affect some
+sort of ridiculous word usage, like 'whilst' or 'whomst'. That's
+pretty saucy, but is it resolution material? What about something
+more serious and purposeful, like de-googling completely. But one
+of my contract gigs uses Google apps for everything, so that's
+probably out. I could pick one of my hobbies, like yarn spinning,
+and set a public goal. That might be good.
+
+I should probably start with the silliness, though. Those come to
+me more easily anyway. Lets see... what's something that would be
+impossible for me but is definitely attainable by SOMEONE. Hmmm...
+I've got it!
+
+2020 will be the year Taylor Swift releases an album featuring ME!
+
+Perfect. I'll just practice my hip-hop stylings by singing my own
+name over the start of her songs. This is gonna be bangin'.
+
+As for a real resolution, I could stand to burn some weight, pray
+more, eat better, walk more. That's all a constant goal, though.
+It doesn't need a special new year kickoff.
+
+I think 2020 will borrow some sentiment from 2018 and a bit from
+Dune. This will be the year of my Butlerian Jihad, if you will.
+I don't want the computer to be my default place to hang out. As
+much as I love you guys, it's an easy trap for me here in Iceland.
+I don't need to work to inculturate, practice my language skills,
+or any of that jazz. I am instantly connected to everyone and it's
+too easy to let that fill my day.
+
+So there it is, my 2020 Resolution is "Thou shalt not make
+a machine in the likeness of a human mind". In this case I'll use
+a (very) liberal interpretation of that to mean my own mind shall
+not be trapped by machines. (Yeah, yeah, I know that's not what it
+means. Shuddup!)
+
+Never fear, dear gopherites. I still work on the computer and will
+surely be around plenty even with this goal. It's inevitable.
+</pre>]]></description>
+</item>
+<item>
   <title>Webmentions And Microsub</title>
   <link>gopher://gopher.black/1/phlog/20191223-webmentions-and-microsub/</link>
   <pubdate>Mon, 23 Dec 2019 00:00:00 +0000</pubdate>
@@ -99,6 +167,9 @@ Most of these projects are also "in development", but they seem
 functional enough that I was able to dupe my tt-rss contents over.
 As I mentioned in my last post [4], I'm looking for a replacement
 for that software anyway so maybe this will work out.
+
+[4] Poisoning the Well
+    gopher://gopher.black/1/phlog/20191216-poisoning-the-well
 
 Eventually I'd like to run all these services myself (though
 I have no desire to write the software to do so myself). I have
@@ -684,48 +755,6 @@ I'm going to start up a tildegit org for this, stub out a repo
 with a readme and get some conversations going. I think this could
 really help people with real problems today. Hopefully it won't
 fall off my radar and into the "someday" category.
-</pre>]]></description>
-</item>
-<item>
-  <title>Av 98 Gopher Proxy On Gopher Black</title>
-  <link>gopher://gopher.black/1/phlog/20190921-av-98-gopher-proxy-on-gopher-black/</link>
-  <pubdate>Sat, 21 Sep 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-AV-98 gopher proxy on gopher.black
-September 21st, 2019
-----------------------------------------
-
-Solderpunk had a great response to my VF-1 & AV-98 musings that
-you can read here [0].
-
-[0] solderpunk - vf1 av98 and agena
-    gopher://zaibatsu.circumlunar.space/0/~solderpunk/phlog/vf1-av98-and-agena.txt
-
-In it he shares the secret of an awesome little project, agena,
-that is a gopher to gemini proxy. AV-98 is already capable of
-using it out of the box, you just need a proxy to point to.
-
-Well, gopher.black is happy to be your Huckleberry. If you use
-AV-98 you can try it out now.
-
-    AV-98> set gopher_proxy gopher.black:1965
-
-That's it. I think you can set that in a config file too, if I'm
-not mistaken. Then, if you browse past the limits of gemspace and
-hit gopher your adventures will just keep going.
-
-I may add this to tilde.black on a different port (since 1965 is
-already in use for that server's gemini pages). If you are extra,
-ridiculously paranoid you could then torify your AV-98 session and
-hit the tilde.black proxy over tor. You're welcome, Mr. Snowden.
-
-Solderpunk has lots of improvements planned for it, so I expect
-agena to grow up real fast.
-
-EDIT:
-
-I'm now running agena on tilde.black on port 1966 as well.
 </pre>]]></description>
 </item>
 </channel>
