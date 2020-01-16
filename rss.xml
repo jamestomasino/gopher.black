@@ -3,6 +3,71 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>A Film A Day And Other Mental Magic</title>
+  <link>gopher://gopher.black/1/phlog/20200116-a-film-a-day-and-other-mental-magic/</link>
+  <pubdate>Thu, 16 Jan 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+A Film A Day and other mental magic
+January 16th, 2020
+----------------------------------------
+
+In the early days of the web I had a site called A Film A Day.
+Why, oh, why, did the Internet Archive fail to archive it, I shall
+never know. For about 5 years I kept up a practice of watching (on
+average) one film per day and reviewing it. Of course I didn't
+watch something every single day, so I'd bank by watching a few on
+the weekends and so on. The important part wasn't getting my
+yearly quota, though. I was on a mission to prove a point in an
+argument I'd had at a diner.
+
+                      Every movie is a
+                      five star movie
+                      if you watch it
+                      the right way.
+
+That was my angle, you see. My reviews weren't about giving
+ratings to the films. It was all about figuring out how to watch
+them to get the most enjoyment. I managed it, too! with a few
+notable exceptions (no one can get 5 stars from Battlefield
+Earth).
+
+You need an example? Let's take the unfortunate film, Alien Vs.
+Predator. What should have been a bloody affair was hamstrung by
+a PG-13 rating and a setting so isolated in the arctic that
+nothing really felt at stake. But... twist it in your mind and let
+it become the greatest video game trailer of all time and entire
+story now has purpose and drive.
+
+Sometimes that's all it takes. Just tweak your mind a little bit
+and see things from another angle and it's awesome! Other times it
+takes much more work. 
+
+I've been thinking on the Star Wars films and how I might approach
+them so they're enjoyable. I think the best angle might be through
+compassion. I imagine the filmmakers as a kid in high school who
+adores this fandom. He eats up everything he can about the
+theories and fan-fiction. He lives his life so deep in it that he
+forgets there are casual fans. There are people who watched the
+movies once and then moved on. There is no place left in his world
+that hasn't been taken over with esoteric knowledge of this
+imagined universe.
+
+We feel a little sorry for that kid and wish he could enjoy
+something else, something more. But we know, also, that he gets
+such joy from this that we feel for him and want him to experience
+it where he can.
+
+And so, these other Star Wars movies are his. They are not part of
+the series. They are not "real". The universe bestowed a gift upon
+that nerd and let him use real actors and studios to produce his
+opus of fandom. It is filled with false nostalgia and fan theories
+jumbled up into a hodgepodge. It is not there to make sense. It is
+not there to complete a great epic. It is a fulfillment of
+a nerd's dream, and we can compassionately enjoy it with him.
+</pre>]]></description>
+</item>
+<item>
   <title>Resolution</title>
   <link>gopher://gopher.black/1/phlog/20200101-resolution/</link>
   <pubdate>Wed, 01 Jan 2020 00:00:00 +0000</pubdate>
@@ -668,93 +733,6 @@ important that you can't crack a book in the bathroom for a few
 minutes while you do your business?
 
 Learn new skills, level up, take on new quests, be heroes.
-</pre>]]></description>
-</item>
-<item>
-  <title>Banshee</title>
-  <link>gopher://gopher.black/1/phlog/20190923-banshee/</link>
-  <pubdate>Mon, 23 Sep 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Banshee
-September 23rd, 2019
-----------------------------------------
-
-I have an idea for a thing. 
-
-Now, I get a lot of ideas for things and some of them are just too
-big for me to do in a reasonable timeframe. Sometimes they're so
-big my eyes glaze over at the very thought, so I just tell
-everyone else in a blog or phlog and hope someone else does it.
-Sometimes the idea is so dumb that I know I'm the only hope and
-have to do it myself. Sometimes the timinging is such that it
-needs to be done right away or it's not relevant. Sometimes time
-doesn't matter and I can just ignore it until I'm bored one night.
-In my head this all adds up to a sort of Eisenhower decision
-matrix:
-
-                        URGENT               NOT URGENT
-               +---------------------------------------------+
-               |                     |                       |
-               |                     |                       |
-  Important    |     Do it First     |     Schedule it       |
-               |                     |                       |
-               |                     |                       |
-               |                     |                       |
-               +---------------------+-----------------------+
-               |                     |                       |
-               |                     |                       |
-     Not       |                     |                       |
-  Important    |     Delegate it     |     Don't do it       |
-               |                     |                       |
-               |                     |                       |
-               |                     |                       |
-               +---------------------------------------------+
-
-Except in my case it's more of a "don't do it and feel bad vs
-don't do it and don't care".
-
-Well, now I've got an idea for  +-----------------------------+
-a project that is too big for   | One of the reasons (not the |
-me to do in a weekend, but it   | #1, but up there) that      |
-might actually matter to        | I wanted to move to Iceland |
-people. Do I just go for it and | was to get away from coding |
-drop all the other things I've  | for evil (pharma, mostly)   |
-got going? Ugh, probably not,   | and get around to doing     |
-but I need to come up with a    | something for the betterment|
-real plan if I have any hope of | of people. I haven't found  |
-accomplishing the goal.         | a lot of opportunity for    |
-                                | that just yet, but I'm      |
-But I never said what this is   | getting there.              |
-all about, did I?               +-----------------------------+
-
-So what is it?
-
-I want to make an easily deployable system that creates a platform
-for publishing text which does so on web, gopher, gemini, and any
-other logical systems, is made available on tor, IPFS, zero-web,
-and so on (RSS, fediverse?, moar). Basically, I want you to be
-able to click "go" and spin up a server that will push your
-text-based content out into the wild on all possible channels at
-maximum volume. (Hence why this phost is called Banshee)
-
-Why?
-
-Some people have a hard time getting their voice out from behind
-firewalls, oppressive regimes, and so on. I want to make it easy
-for them to toss something on a raspberry pi, or spin up a virtual
-machine, or SOMETHING, and have a way to be heard.
-
-How?
-
-I really don't know. I assume I could look into containers as
-a start. There's a heavy devops part of this that's not my
-wheel-house. Frankly, I think I'll need help.
-
-I'm going to start up a tildegit org for this, stub out a repo
-with a readme and get some conversations going. I think this could
-really help people with real problems today. Hopefully it won't
-fall off my radar and into the "someday" category.
 </pre>]]></description>
 </item>
 </channel>
