@@ -3,6 +3,31 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>I Don T Give A Damn</title>
+  <link>gopher://gopher.black/1/phlog/20200212-i-don-t-give-a-damn/</link>
+  <pubdate>Wed, 12 Feb 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+I don't give a damn
+February 12th, 2020
+----------------------------------------
+
+I saw some posts on HN recently in the style of "Why I quit
+working at Google" or "Lessons from a former Facebook Engineer".
+These things pop up pretty frequently and I'd like to share my
+opinion with this hidden corner of the internet that I don't give
+a damn. More than that, I find the entire situation that feeds the
+ego of these people despicable. Your having worked for an evil
+(yes, evil) company does not put you into a special category that
+warrants extra attention. It does not prove you are on some higher
+level of computing prowess, for I know so many world class
+intellects who know better than to soil themselves at one of these
+behemoths.
+
+So yeah, I don't give a damn.
+</pre>]]></description>
+</item>
+<item>
   <title>Repair</title>
   <link>gopher://gopher.black/1/phlog/20200203-repair/</link>
   <pubdate>Mon, 03 Feb 2020 00:00:00 +0000</pubdate>
@@ -649,87 +674,6 @@ new and unexpected. Maybe we'll all sit in a virtual cabinet for
 decades first. Maybe some of it will fade away or be lost, but
 I think there's a good chance for resiliency. Our stuff is mostly
 text, after all, and that doesn't take up much space.
-</pre>]]></description>
-</item>
-<item>
-  <title>Nanowrimo 2019</title>
-  <link>gopher://gopher.black/1/phlog/20191031-nanowrimo-2019/</link>
-  <pubdate>Thu, 31 Oct 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-NaNoWriMo 2019
-October 31st, 2019
-----------------------------------------
-
-This year I'm going to participate in my own way in NaNoWriMo [0].
-I will not be attempting a whole novel or even their on-pace daily
-word count. It's not for me, though I wish I were that prolific.
-No, instead I will be working on finishing some things. 
-
-[0] NaNoWriMo
-    https://www.nanowrimo.org/
-
-First up: Emergence [1]
-
-This is a speculative fiction about the birth of an AI that
-I began a while back. I enjoyed some good progress on it and have
-been satisfied reading back and what came out (rare). Sadly, it
-fell off my priority list and has been sitting there begging for
-some love.
-
-Since this is only a short story, it's not the same level of
-investment required as a whole novel. I've already got some good
-development in place and notes on where I want it to go. Time to
-finish it!
-
-[1] Emergence
-    gopher://gopher.black/1/writing/emergence
-
-Next: Trobairitz [2]
-
-Over on Cosmic Voyage [3] I have a new "ship" in planning. This
-one is actually an interstellar group of women storytellers who
-are hired to share the stories from various cultures. The format
-for it will be very different than we've seen so far on Cosmic in
-that each post is a complete, self-contained story.
-
-The first story that will be published is related to the Oleander
-[4] storyline, and shows a bit of the aftermath of that mission.
-I hope to have that first post done in November as well.
-
-[2] Trobairitz
-    gopher://cosmic.voyage/1/ships/Trobairitz
-[3] Cosmic Voyage
-    gopher://cosmic.voyage/1/
-[4] Oleander
-    gopher://cosmic.voyage/1/ships/Oleander
-
-Finally: Melchizedek [5]
-
-If you're following along in my main Cosmic Voyage storyline
-you'll know that something pretty weird just went down. As excited
-as I am to explore that, there's a bit of a time delay involved.
-So instead I need to switch my focus back to the other crew
-sitting on the planets around Beta Hydri. It's always a joy to
-write Stephanie Janssen, so she'll probably get another log next,
-but there's also an ignored plotline I need to chip away at on
-planet 4 with Hildar Simms. The poor guy has spent 90 days in
-quarantine! Now that he's out, fun gets to begin.
-
-[5] Melchizedek
-    gopher://cosmic.voyage/1/ships/Melchizedek
-
-I don't know that I'll get the to all this before the month ends,
-though. We have our first visitors coming around the 20th. They'll
-be staying with us until December, so I only get about 2/3rds of
-the month to write. I hope it's enough to finish Emergence at the
-very least. That's the minimum bar I want to set for myself.
-
-- - - - -
-
-So what about you? Are any of you planning on doing anything
-special for NaNoWriMo? Anyone actively following Melchizedek? Have
-anything you're dying to read more about?
 </pre>]]></description>
 </item>
 </channel>
