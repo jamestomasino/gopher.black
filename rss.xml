@@ -3,6 +3,72 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Mike Tyson S Punch Out</title>
+  <link>gopher://gopher.black/1/phlog/20200223-mike-tyson-s-punch-out/</link>
+  <pubdate>Sun, 23 Feb 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Mike Tyson's Punch-Out
+February 23rd, 2020
+----------------------------------------
+
+Years ago there was a series of videos on youtube that outlined
+the deep, deep secrets and strategies of Mike Tyson's Punch-Out in
+exquisite detail. The series was quite long, if memory serves.
+Perhaps 10 or 12 videos in all. I remember it from the late 2000s
+but it seems to have vanished from the internet completely.
+
+In the first of the videos the author explained some of the
+fundamentals. These are things we take for granted about the game
+that are so basic they set up the mind for later revelations. The
+first can be demonstrated by a very basic question: which punch
+does more damage, left or right? Do you know? Do you think you
+have an answer? Or did you, like most people, just punch whichever
+was convenient and then alternate away? Would you be surprised to
+learn that there is an actual benefit for choosing one over the
+other. There is indeed, and it depends upon which direction your
+opponent attacked from last.
+
+The sequence of punching, whether to stay on left or right for
+a series or to alternate, also changes depending on a number of
+cues that are all right there in the game. There's so much at
+work, such rich programming and strategy, that it's unfathomable
+that it's escaped notice for so long.
+
+What else can I tell you about? The various techniques to gain
+stars, the methods of using those stars that results in opponent
+reactions you've never even seen. Seriously, there's like 10
+videos worth of gold that was out there!
+
+But now it's gone. Poof. I've looked a bunch of times without any
+luck. The author pulled the videos down and vanished long ago and
+no manner of sleuthing has uncovered a crumb.
+
+It's contrary to the idea we're normally presented with that once
+something is on the internet it's there forever. We gopher
+dwellers know the truth, though. This is all vapour and fleeting.
+How much of the web was purely in Flash and completely
+inaccessible now? How much was never archived in the wayback, or
+was behind a login? My own earliest websites are gone. And that's
+just the web! How much of gopherspace is lost to us? These
+protocols, around in force since the mid 90s only, 25-30 years of
+content that seems at once like everything that has ever been, and
+also a flash in the pan. How long until the next technological
+upheaval closes another door to our past? How long until all of
+this is fleeting memory?
+
+We are better at archiving than many here in our burrows. It's
+mostly plain text, after all, and easily stored. But it's also
+difficult to index, and links vanish without a clue as to where
+those backup treasure troves might be. If we lose a few
+cornerstones like Cameron's Floodgap, or SDF, how much goes with
+it?
+
+Anyway, I guess what I'm saying is... have any of you seen the
+Punch-Out videos? I really want to watch them again.
+</pre>]]></description>
+</item>
+<item>
   <title>Green Energy In Iceland</title>
   <link>gopher://gopher.black/1/phlog/20200218-green-energy-in-iceland/</link>
   <pubdate>Tue, 18 Feb 2020 00:00:00 +0000</pubdate>
@@ -701,37 +767,6 @@ Anyway, I don't have much more to say on the subject. It's pretty
 cool that I've almost got 20 years of journaling history up on the
 internet myself. I hope I have much more to offer down the line in
 gopher as well.
-</pre>]]></description>
-</item>
-<item>
-  <title>Qr Codes</title>
-  <link>gopher://gopher.black/1/phlog/20191215-qr-codes/</link>
-  <pubdate>Sun, 15 Dec 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-QR codes
-December 15th, 2019
-----------------------------------------
-
-I've been sitting on this link for a while. I couldn't come up
-with a magical brilliant use for it though. So... here it is.
-
-
-      █▀▀▀▀▀█ ▀▀   ▀  █ █▀▀▀▀▀█
-      █ ███ █ █▄ ███▀▀  █ ███ █
-      █ ▀▀▀ █ ▀█▀▀ ▀█▀▀ █ ▀▀▀ █
-      ▀▀▀▀▀▀▀ ▀▄▀▄▀ ▀▄▀ ▀▀▀▀▀▀▀
-      ▀███  ▀▄▀▄ ▄▀▄▀ █▀ ▄▀▀▀▄▀
-      ▀█ ▄▀ ▀ ▄  ▀ ▄█▄ █▄█ ▄▄  
-      ▀▀█▀ ▀▀▀▄▀▄▀███▄ ████ ▀▀█
-      ▄▀▀ █ ▀▄▀██ ▄ ▀ ▀▄█  ▄▀▀▄
-        ▀   ▀ ▄█ ███ ▄█▀▀▀█▀▀▀█
-      █▀▀▀▀▀█   █ █ █▄█ ▀ █▀▀█▀
-      █ ███ █ ▄███▄ ▀ ▀██▀█ ▄██
-      █ ▀▀▀ █ █▄▄▀ ▄▄▄ ▀█▀█▀█▀ 
-      ▀▀▀▀▀▀▀ ▀▀▀▀ ▀▀  ▀▀▀▀▀▀▀▀
-
-Maybe you all can think of cool ways to use it. :D
 </pre>]]></description>
 </item>
 </channel>
