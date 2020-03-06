@@ -72,6 +72,91 @@ there notable negatives?
 </pre>]]></description>
 </item>
 <item>
+  <title>Re Smolderingwizard Roll Vs Roleplaying</title>
+  <link>gopher://gopher.black/1/phlog/20200306-re-smolderingwizard-roll-vs-roleplaying/</link>
+  <pubdate>Fri, 06 Mar 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+re: smolderingwizard - roll vs roleplaying
+March 06th, 2020
+----------------------------------------
+
+I just read a really interesting observational phlog post from
+smolderingwizard [0] on his experiences in a 5th edition D&D game.
+He describes everything in 5th edition coming down to a mechanic
+role and that those rolls are happening constantly and distracting
+from the game.
+
+[0] smolderingwizard - roll vs role-playing
+    gopher://gopher.smolderingwizard.com/0/phlog/2020-03-05-roll-vs-role-5e-vs-old-school.md
+
+I've run into this in some games as well and feel it's ultimately
+the fault of the DM/GM, though I can't judge them harshly for it.
+Running a game is hard work and it's not a skill that's usually
+taught. People learn in their own way, from playing with others
+and emulating good GMs, or watching games online, or just doing
+their best to guess their way through. 
+
+One big influence these days is computer gaming. It's had immense
+impact on tabletop RPGs over the years, going so far as to
+completely screw up D&D into the mess that was 4th edition AKA
+World of Warcraft on paper. But even in the early days of say, 2nd
+edition, there were books and books describing mechanics that you
+could turn into rolls. I remember one guidebook describing the
+fall-off rate of light from various sized campfires and the impact
+for low-light vision at each distance in a grid. It got silly.
+
+But those books didn't come from a vacuum. People wanted that in
+their games. There's always been a subset of gamers who want the
+mechanics to rule the action. Sometimes these are reflected in
+power-gaming, or just optimized buildes. Sometimes it's just
+a style of play that the group enjoys.
+
+I cannot put myself in that camp, personally. My most formative
+long-term RPG was played 1-on-1 with my DM in high school. It was
+a solo game and we rolled almost never. The entire game was
+role-play and that has had enormous impact on my own style.
+
+In the Fate Core System book, the game designers have this to say:
+
+  When to Roll Dice
+
+  Roll the dice when succeeding or failing at the action could
+  each contribute something interesting to the game...
+
+  The worst, WORST thing you can do is have a failed roll that
+  means NOTHING HAPPENS--no new knowledge, no new course of action
+  to take, and no change in the situation. This is totally
+  boring...
+
+  If you can't imagine an interesting outcome from both results,
+  then don't call for that roll. If failure is the uninteresting
+  option, just give the PCs what thy want and call for a roll
+  later, when you CAN think of an interesting failure. If success
+  is the boring option, then see if you can turn your idea for
+  failure into [a motivation for the PC to role play their
+  character that way]. 
+
+In combat things are simple. You failed a roll or you succeed at
+it have immediate consequences. If you're rolling as you walk down
+a hallway, what happens if you fail? You triggered a trap? But
+what if you succeed? Did you just notice the trap? That's boring
+because it doesn't change anything. What if the success meant you
+spotted a trap that was about to affect the party behind you. Your
+quick action let you spring up and grab a counterweight. Now you
+have to hold it in place so the others can get across. The
+challenge has changed the dynamic of the action and given the
+party a reason to interact with one another. Is your character
+strong enough to hold it for the whole party? What if you this
+splits you up? What if you have to choose who to drop it on before
+you're pulled inside the mechanism?
+
+Anyway, I digress. Chat with your DM and talk about the rolls. Or
+talk about it with the whole group. Are they into it? Maybe so.
+Maybe they're just waiting for the topic to come up.
+</pre>]]></description>
+</item>
+<item>
   <title>Mike Tyson S Punch Out</title>
   <link>gopher://gopher.black/1/phlog/20200223-mike-tyson-s-punch-out/</link>
   <pubdate>Sun, 23 Feb 2020 00:00:00 +0000</pubdate>
@@ -680,99 +765,6 @@ putting a pin in it. Things are good enough.
 Are any of you running IndieWeb goodness? Have thoughts or
 suggestions? Wanna vent? Send me a mention in the lovely gopher
 style!
-</pre>]]></description>
-</item>
-<item>
-  <title>Poisoning The Well</title>
-  <link>gopher://gopher.black/1/phlog/20191216-poisoning-the-well/</link>
-  <pubdate>Mon, 16 Dec 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-poisoning the well
-December 16th, 2019
-----------------------------------------
-
-This week I learned that the RSS aggregator I use, tt-rss, is
-developed by an individual whose personal politics are at odds
-with my own. This morning I became aware that the creator of the
-television show, The IT Crowd, appears to be a scumbag. If we look
-back over the last year or two it's easy to spot Chik Fil A and
-Harvey Weinstein and a hundred other cases where a person or
-organization has become pariah. Their works are stained forever.
-
-A number of questions came to me after considering our present
-reality:
-
-  - Is it universal? Does the idea of individual moral judgement
-    apply the same way to all people? What about companies?
-  - Is this new? Is it a continuous development from some earlier
-    state?
-  - Is it "fair", not to the subject of the moral judgement, but
-    to the works? What about collective works where only a single
-    contributor is a problem? Does their position of authority
-    change the judgement?
-
-There's too much to go into in a gopher phlog. I'm not going to
-write some massive moral treatise here. There's really two bits
-I'm focused on anyway, so pitter-patter, as they say…
-
-First is the question of large collective works, like film.
-According to some web page I read in passing, which queried data
-from the top IMDB films, the average crew on a film is about 588
-members strong. If we assume that the moral distribution of
-individuals on a given film is representative of the general
-population (safe enough, not given a specific film) then we might
-expect some sort of normal distribution of morality (if such
-a thing were quantifiable). If one of these individuals were to
-score at an extreme to one degree or another it will not shift the
-distribution noticeably. The overall morality of those making this
-piece of collective art is unchanged.
-
-But we punish them, don't we? Many of us will boycott the movie
-because of what that actor said, or what the director did. We will
-spite the 587 others on a film for that one person. They have, in
-effect, poisoned the well. 
-
-But maybe it's not about the math of morality. Maybe it's because
-we must take action in the face of injustice. Something we
-perceive as wrong cannot be allowed to occur, even if our methods
-will cause harm to others. That sounds silly, doesn't it? It does
-to me.
-
-Maybe it matters more when justice would not be done without the
-masses acting in protest. If the courts won't prosecute, then the
-voice of the consumer will blacklist them. Let capitalism rear its
-power for justice for once, right?
-
-Ultimately I think it's harder to let go of something we see as
-wrong than it is to ignore the damage we cause others. Collateral
-damage is a shame, but at least we got THAT guy.
-
-So yeah, there's some moral ambiguity here in collective works,
-but what about individual creators? Should everyone boycott
-tt-rss? Should we avoid using suckless code? Stop listening to
-somebody's music? Maybe that's easier here. After all, we're not
-hurting anyone else with this sort of mob justice.
-
-There's just so many "what ifs" floating around. What if the
-despicable person created something that helps people? What if
-they pioneered a green energy revolution? What if they found
-a disease cure? What if they make a really good software package
-for the blind?
-
-Yes, on the one hand it is the old debate about whether you can
-separate art from artist. But there's the question of utility as
-well. At what point does the good of the work outweigh the bad of
-the individual.
-
-This is where my head has been all morning and I'm not coming up
-with any concrete answers. That's probably a sign that I shouldn't
-expect a fixed set of rules to apply. In the case of films, I'll
-probably keep seeing them. In the case of tt-rss, I will probably
-jump to another project if I find one comparable. In the case of
-the IT Crowd, I'll continue to quote and enjoy it and probably use
-that moment to also inform others around me that Graham Linehan as
-a shitbag. Double-win, right?
 </pre>]]></description>
 </item>
 </channel>
