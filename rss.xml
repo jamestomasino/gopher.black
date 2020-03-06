@@ -3,6 +3,75 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>The Effects Of Deleting A Social Medium</title>
+  <link>gopher://gopher.black/1/phlog/20200306-the-effects-of-deleting-a-social-medium/</link>
+  <pubdate>Fri, 06 Mar 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+The effects of deleting a social medium
+March 06th, 2020
+----------------------------------------
+
+I recently removed the Instagram app from my phone. (pause for
+applause).
+
+This is not a statement about the evils of social media, or the
+objectification of ketogenic foods, or whatever else you might be
+guessing. It's about time.
+
+I removed the app because of the little magnifying-glass button
+next to the home feed. There was a tendency for me to fill my time
+by looking at random pictures Instagram thought relevant to me.
+This was really easy for their algorithm to game and optimize.
+Very quickly I had an endless scroll of "neat" stuff, and that was
+sucking up way too much of my time without any tangible reward.
+
+I like my own instagram feed. Seeing photos from friends and
+places that interest me is cool and relatively quick to consume.
+I don't need to read much and I can "catch up" quickly in a linear
+timeline. If there were a way to disable that little magnifier
+icon the app would still be on my phone.
+
+I've since started posting pictures on pixelfed [0]. There's not
+much to that app except the posting of pictures, so the temptation
+to check it at other times is gone. When I post something I give
+the feed a quick scroll to see if anything new is there, and then
+I'm done. Easy!
+
+[0] pixelfed
+    https://pixfed.com/jamestomasino
+
+Even so, in the days following the Instagram change I went through
+the usual withdrawl. I ended up closing and opening mastodon again
+several times in a row as my hands tried to fill the habit with
+the available tools. Now several days in I'm no longer in that
+habitual loop and I've begun reclaiming my time [1].
+
+[1] Reclaiming my time
+    https://www.youtube.com/watch?v=tqCZzs7UXIo
+
+The first effect is my improved patience with long-form content.
+I've been catching up on phlogs & blogs (RSS) more readily. That
+was unexpected but appreciated. It makes me wonder about the
+implications too. If cutting out one small habit that involved
+short attention-span cycling has such a major effect on my overall
+patience, how crippled is my current state? If I cut out Mastodon
+and even IRC, would that attention continue to grow? How fast?
+This might warrant some experimentation.
+
+Another effect is a diminishing of the value of my phone.
+I haven't ceased using it and there are plenty of other apps that
+hold my attention for lengthy periods. Still, the change has been
+tangible. Again, further experimentation is needed.
+
+I know this community is filled with folks who have gone through
+similar changes. What's your experience with cutting out a social
+platform? Has it remained cut out? Do you still see the tangibles
+in your life, or did those fade to some sort of "rest state"? Were
+there notable negatives?
+</pre>]]></description>
+</item>
+<item>
   <title>Mike Tyson S Punch Out</title>
   <link>gopher://gopher.black/1/phlog/20200223-mike-tyson-s-punch-out/</link>
   <pubdate>Sun, 23 Feb 2020 00:00:00 +0000</pubdate>
@@ -704,69 +773,6 @@ jump to another project if I find one comparable. In the case of
 the IT Crowd, I'll continue to quote and enjoy it and probably use
 that moment to also inform others around me that Graham Linehan as
 a shitbag. Double-win, right?
-</pre>]]></description>
-</item>
-<item>
-  <title>Years Of Journaling</title>
-  <link>gopher://gopher.black/1/phlog/20191215-years-of-journaling/</link>
-  <pubdate>Sun, 15 Dec 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-years of journaling
-December 15th, 2019
-----------------------------------------
-
-A few of you brilliant gopherites have been talking about the
-length of time they've been blogging [0,1]. 20 years is a lot of
-blog posts whether collected on the web or gopher. It's great to
-see collections like this all together surviving so long.
-
-[0] It was 20 years ago today
-    gopher://gopher.conman.org/0Phlog:2019/12/04.1
-[1] On 16 years of blogging
-    gopher://republic.circumlunar.space/0/~slugmax/phlog/2019-12-13-on-16-years-of-blogging
-
-I've had people go spelunking down into my own blog [2] archives
-before and I have to say it's a really cool feeling. Journaling is
-inherently about yourself. When another human decides to spend
-their time reading your personal thoughts and history, it's very
-flattering (at least to me).
-
-[2] tomasino blog
-    https://blog.tomasino.org
-
-There are technical blogs aplenty which focus on code or math or
-science or whatever topic that isn't the self. They're great too,
-but I don't see them the same way. I'm sure they provide great
-interest to people when they're published, and interesting history
-to those that come later. Sharing a personal blog is so much more
-intimate. Keeping one up for an extended period of time is its own
-type of vulnerability. It's not just showing your timely thoughts
-of today, but also the cringe-worthy worries of younger you. It's
-easy to spotlight the mistakes, the lack of understanding, and the
-ideas that you'd eventually grow out of. That's beautiful stuff,
-if horribly embarrassing.
-
-I started journaling when I was 14. I have a shelf of paper
-journals sitting over there --> that I flip through still. I still
-do some paper journaling these days, too. Those moleskines aren't
-going to fill themselves, after all.
-
-It wasn't until 1998 that I started writing a blog online. I was
-off to college and learning how to do all this crazy web stuff.
-I kept text notes on that website for a while (lost now even to
-the wayback machine, sadly). I later moved to livejournal and kept
-a pretty decent journal there with a ring of friends. Thankfully
-I harvested some of those old posts before nuking my livejournal
-account years later. Those earliest posts on my blog now were
-written there. They've been updated a few times to move to
-wordpress, jekyll, and now hugo. I keep that stuff in git now,
-too. Better peace of mind, for sure.
-
-Anyway, I don't have much more to say on the subject. It's pretty
-cool that I've almost got 20 years of journaling history up on the
-internet myself. I hope I have much more to offer down the line in
-gopher as well.
 </pre>]]></description>
 </item>
 </channel>
