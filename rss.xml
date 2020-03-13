@@ -3,6 +3,56 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Fables</title>
+  <link>gopher://gopher.black/1/phlog/20200313-fables/</link>
+  <pubdate>Fri, 13 Mar 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Fables
+March 13th, 2020
+----------------------------------------
+
+This week I finally got off my bum and contributed something to
+the excellent project over at tilde.tel [0]. This is a small
+community run by cat [1] which is all about internet phone stuff.
+I'm sure many of you gopherites know all about SIP and all that,
+so if you want to join and play, he's the man to talk to.
+
+[0] https://tilde.tel/
+    https://tilde.tel/
+[1] cat
+    gopher://baud.baby/1/
+
+So what did I contribute? I made a special phone extension (1969)
+called Tilde.Tel Story Time. If you call it you'll get to listen
+to me telling you a story. What sorts of stories you might ask?
+Well, I'm starting off with Aesop's Fables. So far I've recorded
+25 of them, all from the text on project gutenberg.
+
+  Side note: the gopher front-end to project gutenberg seems to
+  have exploded into little bits. I forget who was running that.
+  Was it you jynx? Anyway, I'd love to link to it again, if that
+  gets patched up.
+
+Since some of you aren't internet phone people, and because I'd
+hate to lose all the work, I've also archived the stories here on
+gopher.black. You can find them over at Story Time [2].
+
+[2] Story Time
+    gopher://gopher.black/1/storytime
+
+If you listened to Choose Your Own Adventure [3] on anonradio,
+then you know I'm far, far removed from a professional voice guy.
+(I have a lisp and stuff) I did clean up the audio a tiny bit, but
+I figured it was meant to be heard over phone lines so it is what
+it is. I hope you enjoy the recordings. I'll continue to add to
+the collection over time.
+
+[3] Choose Your Own Adventure (anonradio)
+    gopher://gopher.black/1/cyoa
+</pre>]]></description>
+</item>
+<item>
   <title>The Effects Of Deleting A Social Medium</title>
   <link>gopher://gopher.black/1/phlog/20200306-the-effects-of-deleting-a-social-medium/</link>
   <pubdate>Fri, 06 Mar 2020 00:00:00 +0000</pubdate>
@@ -529,121 +579,6 @@ means. Shuddup!)
 
 Never fear, dear gopherites. I still work on the computer and will
 surely be around plenty even with this goal. It's inevitable.
-</pre>]]></description>
-</item>
-<item>
-  <title>Webmentions And Microsub</title>
-  <link>gopher://gopher.black/1/phlog/20191223-webmentions-and-microsub/</link>
-  <pubdate>Mon, 23 Dec 2019 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-webmentions and microsub
-December 23rd, 2019
-----------------------------------------
-
-This phlog is about web stuff. Specifically it's about Indyweb
-things and microformats.
-
-I use my website https://tomasino.org as an IndieAuth [0] portal.
-When logging into sites that understand the IndieWeb concept,
-I provide my "Home" URL as an identifier. Then the site scrubs
-through all the various links I have on that page and picks out
-those that it can understand for authentication. In most cases
-I get GPG and GitHub hits, though occasionally a site will support
-more. I oAuth in, and bam... identified. It's pretty neat and
-requires very little effort on my side.
-
-[0] IndieAuth
-    https://indieauth.com/
-
-There are much fancier IndieWeb doodads though, and I wanted to
-start taking advantage of some. In particular Webmentions had
-drawn my attention. It's a different way to handle commenting
-that, honestly, reminds me of what we do here in gopherspace.
-Instead of leaving a comment on a post somewhere, you just write
-your own blog post and "notify" the original. The original page
-can then choose whether to add a link to yours or ignore it or
-whatever. Everyone maintains control of their own words and all is
-well!
-
-So I opened up the IndieWeb sites and went digging into
-Webmentions [1]. I was immediately reminded why I abandonded this
-the last time around. While the concept is incredibly simple, the
-implementation is annoyingly complex and the terminology for
-things is as bad as git [2].
-
-[1] Webmentions
-    https://webmention.net/
-[2] Git Man Page Generator
-    https://git-man-page-generator.lokaltog.net/
-
-Since my sites are all static I wasn't looking for a plugin or
-even something that automatically displayed anything on the
-front-end at all. I just wanted something to process webmentions
-and give me a way to see that they happened. For my low traffic
-sites, a Webmention-to-Email system would have been perfect.
-
-There are a number of things out there already. Some support the
-Webmention client role and others the server because--did I not
-mention this?--you need webmentions set up on both sides for it to
-work. So to actually do it you need reading, writing, discovery
-and parsing. There are a handful of projects doing the various
-points and most of them are "in development" to varying degrees.
-Almost all of them have complex esoteric documentation that only
-makes sense if you're already familiar with the protocol enough to
-write your own software. Lovely!
-
-There are a few 3rd party services that offer the basics without
-charge. I don't know if they work or not, but that's what I ended
-up trying. I really don't want to spend the whole Christmas break
-figuring this stuff out. I don't expect to get many, if any,
-mentions anyway. Webmention.io is the service I went with. I used
-IndieAuth to log in and then grabbed the links it gave me to paste
-on my various blogs. I have no idea how to "use" Webmentions from
-the other side, and no idea how to test if I'm set up correctly.
-
-I wonder if I need to IndieAuth with the blog URL itself and then
-use webmention.io directly to that property only and then repeat
-the process for the other site. It says I should be able to use it
-on many sites though, so hopefully it's fine. Time will tell.
-
-Webmention.io provides a microformat feed of the mentions you
-receive. I was going to grab the RSS one and plug it into my RSS
-reader until I noticed the mention of this other IndieWeb format,
-Microsub.
-
-Oh joy! Another one. :D
-
-Microsub seems like an abstraction layer above microformats that
-can be interpretted as feeds or notifications. RSS and Atom are
-valid inputs, but so are other bits. Like other IndieWeb things,
-there's a big push to separate client & servers. In this case
-I found Aperture [3] as a server and I'm using a couple different
-clients to see the front-end.
-
-[3] Aperture
-    https://aperture.p3k.io/
-
-Most of these projects are also "in development", but they seem
-functional enough that I was able to dupe my tt-rss contents over.
-As I mentioned in my last post [4], I'm looking for a replacement
-for that software anyway so maybe this will work out.
-
-[4] Poisoning the Well
-    gopher://gopher.black/1/phlog/20191216-poisoning-the-well
-
-Eventually I'd like to run all these services myself (though
-I have no desire to write the software to do so myself). I have
-nginx running on this webserver already so if I can dockerize the
-bits & pieces together into an IndieWeb multi-container and
-reverse proxy everything that would be perfect. For now I'm
-putting a pin in it. Things are good enough.
-
-- - - - -
-
-Are any of you running IndieWeb goodness? Have thoughts or
-suggestions? Wanna vent? Send me a mention in the lovely gopher
-style!
 </pre>]]></description>
 </item>
 </channel>
