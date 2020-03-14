@@ -3,6 +3,43 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Tls On Gopher Update</title>
+  <link>gopher://gopher.black/1/phlog/20200314-tls-on-gopher-update/</link>
+  <pubdate>Sat, 14 Mar 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+TLS on gopher update
+March 14th, 2020
+----------------------------------------
+
+jan [0] is working on adding TLS support to his gopher client,
+ncgopher [1]. I am running gopher over tls on cosmic.voyage via
+port 7070 [2]. I went to check on it this morning and saw it was
+giving me a cert error.
+
+I'm using stunnel4 to handle the TLS stuff, and then configuring
+a second copy of gophernicus to serve up the goods. The whole
+process is outlined in an old phlog here [3]. 
+
+What I failed to take into account is that letsencrypt updates my
+keys routinely, but stunnel doesn't reload them. It's as easy to
+fix as: 
+
+  $ sudo /etc/init.d/stunnel4 restart 
+
+Now I need to think about how to automate that when letsencrypt
+does its business. Hmmm...
+
+[0] jan
+    gopher://jan.bio/1
+[1] ncgopher user guide
+    gopher://jan.bio/1ncgopher
+[2] cosmic on tls
+    gopher://cosmic.voyage/1/
+1[3] gophernicus TLS howto /phlog/20190120-gophernicus-tls-howto
+</pre>]]></description>
+</item>
+<item>
   <title>Fables</title>
   <link>gopher://gopher.black/1/phlog/20200313-fables/</link>
   <pubdate>Fri, 13 Mar 2020 00:00:00 +0000</pubdate>

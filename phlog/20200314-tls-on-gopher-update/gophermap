@@ -1,0 +1,27 @@
+i----------------------------------------		gopher.black	70
+iTLS on gopher update		gopher.black	70
+iMarch 14th, 2020		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+ijan [0] is working on adding TLS support to his gopher client,		gopher.black	70
+incgopher [1]. I am running gopher over tls on cosmic.voyage via		gopher.black	70
+iport 7070 [2]. I went to check on it this morning and saw it was		gopher.black	70
+igiving me a cert error.		gopher.black	70
+i		gopher.black	70
+iI'm using stunnel4 to handle the TLS stuff, and then configuring		gopher.black	70
+ia second copy of gophernicus to serve up the goods. The whole		gopher.black	70
+iprocess is outlined in an old phlog here [3]. 		gopher.black	70
+i		gopher.black	70
+iWhat I failed to take into account is that letsencrypt updates my		gopher.black	70
+ikeys routinely, but stunnel doesn't reload them. It's as easy to		gopher.black	70
+ifix as: 		gopher.black	70
+i		gopher.black	70
+i  $ sudo /etc/init.d/stunnel4 restart 		gopher.black	70
+i		gopher.black	70
+iNow I need to think about how to automate that when letsencrypt		gopher.black	70
+idoes its business. Hmmm...		gopher.black	70
+i		gopher.black	70
+1[0] jan		jan.bio	70
+1[1] ncgopher user guide	ncgopher	jan.bio	70
+1[2] cosmic on tls	/	cosmic.voyage	7070
+i1[3] gophernicus TLS howto /phlog/20190120-gophernicus-tls-howto		gopher.black	70
