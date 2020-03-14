@@ -19,7 +19,12 @@ i		gopher.black	70
 i  $ sudo /etc/init.d/stunnel4 restart 		gopher.black	70
 i		gopher.black	70
 iNow I need to think about how to automate that when letsencrypt		gopher.black	70
-idoes its business. Hmmm...		gopher.black	70
+idoes its business. Hmmm... ahha!		gopher.black	70
+i		gopher.black	70
+i/lib/systemd/system/certbot.service:		gopher.black	70
+i		gopher.black	70
+i  ExecStart=/usr/bin/certbot -q renew \		gopher.black	70
+i    --post-hook "/etc/init.d/stunnel4 restart"		gopher.black	70
 i		gopher.black	70
 1[0] jan		jan.bio	70
 1[1] ncgopher user guide	ncgopher	jan.bio	70
