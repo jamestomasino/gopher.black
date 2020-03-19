@@ -3,6 +3,26 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>The Floor Of Mecca Is White</title>
+  <link>gopher://gopher.black/1/phlog/20200319-the-floor-of-mecca-is-white/</link>
+  <pubdate>Thu, 19 Mar 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+The Floor of Mecca is White
+March 19th, 2020
+----------------------------------------
+
+I saw a picture of Mecca today, and specifically the space
+surrounding the Ka'bah at the center. It was empty. Not a single
+soul praying, doing their seven circles or otherwise fulfilling
+the hajj. It was eerie. It was also white.
+
+The floor, specifically, is a bright white. I guess I've never
+noticed, or never seen it clearly. It's always covered in people.
+Perhaps it was obvious to others. It has lingered with me.
+</pre>]]></description>
+</item>
+<item>
   <title>Tls On Gopher Update</title>
   <link>gopher://gopher.black/1/phlog/20200314-tls-on-gopher-update/</link>
   <pubdate>Sat, 14 Mar 2020 00:00:00 +0000</pubdate>
@@ -28,7 +48,12 @@ fix as:
   $ sudo /etc/init.d/stunnel4 restart 
 
 Now I need to think about how to automate that when letsencrypt
-does its business. Hmmm...
+does its business. Hmmm... ahha!
+
+/lib/systemd/system/certbot.service:
+
+  ExecStart=/usr/bin/certbot -q renew \
+    --post-hook "/etc/init.d/stunnel4 restart"
 
 [0] jan
     gopher://jan.bio/1
@@ -36,7 +61,8 @@ does its business. Hmmm...
     gopher://jan.bio/1ncgopher
 [2] cosmic on tls
     gopher://cosmic.voyage/1/
-1[3] gophernicus TLS howto /phlog/20190120-gophernicus-tls-howto
+[3] gophernicus TLS howto
+    gopher://gopher.black/1/phlog/20190120-gophernicus-tls-howto
 </pre>]]></description>
 </item>
 <item>
@@ -548,74 +574,6 @@ opus of fandom. It is filled with false nostalgia and fan theories
 jumbled up into a hodgepodge. It is not there to make sense. It is
 not there to complete a great epic. It is a fulfillment of
 a nerd's dream, and we can compassionately enjoy it with him.
-</pre>]]></description>
-</item>
-<item>
-  <title>Resolution</title>
-  <link>gopher://gopher.black/1/phlog/20200101-resolution/</link>
-  <pubdate>Wed, 01 Jan 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Resolution
-January 01st, 2020
-----------------------------------------
-
-I've got a little history [0,1] of making new years resolution
-posts on this phlog. I suppose I'll continue the trend. Three
-years in a row makes it a tradition, wouldn't you say?
-
-[0] Resolution (2018)
-    gopher://gopher.black/1/phlog/20180101-resolution
-[1] Resolution (2019)
-    gopher://gopher.black/1/phlog/20181225-resolutions
-
-In 2018 I resolved that I'd try to avoid time traps and spend time
-on things that matter. I picked up a few new hobbies and did
-pretty well with the effort. In 2019 I taught the phlogosphere
-about my buddy's ridiculous resolutions and said that it would be
-the year I was impeached. While I didn't manage to get impeached,
-at least someone did.
-
-This year I haven't really been thinking about it much, so as the
-fireworks go BANG in the background I'll do some real-time
-pondering. Perhaps it might be a good opportunity to affect some
-sort of ridiculous word usage, like 'whilst' or 'whomst'. That's
-pretty saucy, but is it resolution material? What about something
-more serious and purposeful, like de-googling completely. But one
-of my contract gigs uses Google apps for everything, so that's
-probably out. I could pick one of my hobbies, like yarn spinning,
-and set a public goal. That might be good.
-
-I should probably start with the silliness, though. Those come to
-me more easily anyway. Lets see... what's something that would be
-impossible for me but is definitely attainable by SOMEONE. Hmmm...
-I've got it!
-
-2020 will be the year Taylor Swift releases an album featuring ME!
-
-Perfect. I'll just practice my hip-hop stylings by singing my own
-name over the start of her songs. This is gonna be bangin'.
-
-As for a real resolution, I could stand to burn some weight, pray
-more, eat better, walk more. That's all a constant goal, though.
-It doesn't need a special new year kickoff.
-
-I think 2020 will borrow some sentiment from 2018 and a bit from
-Dune. This will be the year of my Butlerian Jihad, if you will.
-I don't want the computer to be my default place to hang out. As
-much as I love you guys, it's an easy trap for me here in Iceland.
-I don't need to work to inculturate, practice my language skills,
-or any of that jazz. I am instantly connected to everyone and it's
-too easy to let that fill my day.
-
-So there it is, my 2020 Resolution is "Thou shalt not make
-a machine in the likeness of a human mind". In this case I'll use
-a (very) liberal interpretation of that to mean my own mind shall
-not be trapped by machines. (Yeah, yeah, I know that's not what it
-means. Shuddup!)
-
-Never fear, dear gopherites. I still work on the computer and will
-surely be around plenty even with this goal. It's inevitable.
 </pre>]]></description>
 </item>
 </channel>
