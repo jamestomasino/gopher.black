@@ -1,0 +1,35 @@
+i----------------------------------------		gopher.black	70
+iPlaintext passwords		gopher.black	70
+iMay 12th, 2020		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iA recent set of exchanges on the fediverse reminded me that		gopher.black	70
+ithere's still plenty of poorly run websites and institutions who		gopher.black	70
+iare still storing user credentials in plain text. Yes, unencrypted		gopher.black	70
+iplain text.		gopher.black	70
+i		gopher.black	70
+iI remember the horror in my heart back in 2008 when I was trying		gopher.black	70
+ito learn about virtual credit cards from my bank (a cool idea		gopher.black	70
+iwhich went away for no good reason). I was on the phone and the		gopher.black	70
+icustomer service representative asked me for the 3rd and 5th		gopher.black	70
+iletter in my password to verify my identity.		gopher.black	70
+i		gopher.black	70
+iDid it hit you too? Did that little pit in your stomach open up		gopher.black	70
+ilike it did for me? How could this person know a specific		gopher.black	70
+icharacter in my password?		gopher.black	70
+i		gopher.black	70
+iNeedless to say, the conversation I had with the bank that day		gopher.black	70
+iquickly changed. I wish that was the only time I had the		gopher.black	70
+iexperience, but it happened a second time in the same year in		gopher.black	70
+ia conversation with Fidelity, who ran my 401k at my job at the		gopher.black	70
+itime. In that case I was stuck. I couldn't choose to move my 401k		gopher.black	70
+ito another provider. Thanks America.		gopher.black	70
+i		gopher.black	70
+iAnyway, there's a ton of these places including a downright scary		gopher.black	70
+inumber of banks (looking at you Tesco). I figured gopher needed		gopher.black	70
+isome place to reference the list of shame, so I made one [0] over		gopher.black	70
+iin my Experiments section. There's a link over there to the master		gopher.black	70
+ilist managed in github as well. If you have others to add, make		gopher.black	70
+ia PR and help shame them.		gopher.black	70
+i		gopher.black	70
+0[0] List of sites storing passwords in plain text	/explorations/plaintext/list-of-plaintext-passwords.txt

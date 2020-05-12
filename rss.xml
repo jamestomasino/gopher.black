@@ -3,6 +3,49 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Plaintext Passwords</title>
+  <link>gopher://gopher.black/1/phlog/20200512-plaintext-passwords/</link>
+  <pubdate>Tue, 12 May 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Plaintext passwords
+May 12th, 2020
+----------------------------------------
+
+A recent set of exchanges on the fediverse reminded me that
+there's still plenty of poorly run websites and institutions who
+are still storing user credentials in plain text. Yes, unencrypted
+plain text.
+
+I remember the horror in my heart back in 2008 when I was trying
+to learn about virtual credit cards from my bank (a cool idea
+which went away for no good reason). I was on the phone and the
+customer service representative asked me for the 3rd and 5th
+letter in my password to verify my identity.
+
+Did it hit you too? Did that little pit in your stomach open up
+like it did for me? How could this person know a specific
+character in my password?
+
+Needless to say, the conversation I had with the bank that day
+quickly changed. I wish that was the only time I had the
+experience, but it happened a second time in the same year in
+a conversation with Fidelity, who ran my 401k at my job at the
+time. In that case I was stuck. I couldn't choose to move my 401k
+to another provider. Thanks America.
+
+Anyway, there's a ton of these places including a downright scary
+number of banks (looking at you Tesco). I figured gopher needed
+some place to reference the list of shame, so I made one [0] over
+in my Experiments section. There's a link over there to the master
+list managed in github as well. If you have others to add, make
+a PR and help shame them.
+
+[0] List of sites storing passwords in plain text
+    gopher://gopher.black/0/explorations/plaintext/list-of-plaintext-passwords.txt
+</pre>]]></description>
+</item>
+<item>
   <title>Out Of The Past</title>
   <link>gopher://gopher.black/1/phlog/20200430-out-of-the-past/</link>
   <pubdate>Thu, 30 Apr 2020 00:00:00 +0000</pubdate>
@@ -561,96 +604,6 @@ it?
 
 Anyway, I guess what I'm saying is... have any of you seen the
 Punch-Out videos? I really want to watch them again.
-</pre>]]></description>
-</item>
-<item>
-  <title>Green Energy In Iceland</title>
-  <link>gopher://gopher.black/1/phlog/20200218-green-energy-in-iceland/</link>
-  <pubdate>Tue, 18 Feb 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Green Energy in Iceland
-February 18th, 2020
-----------------------------------------
-
-I don't complain about many things in Iceland because, frankly,
-there aren't a whole lot of things to complain about. By almost
-every measure, life here is superior to the United States. In
-fact, the thing I'm about to complain about in this phlog is
-nitpicking. The situation in the United States is worse, frankly.
-
-What I'm talking about in green power, or carbon neutral power, or
-sustainable energy, or whatever else you want to call it. You may
-be aware that Iceland's grid is pretty much 100% renewable energy.
-Put a period there at the end of that sentence and things feel
-pretty damn good. The island has rich resources in terms of
-hydroelectric power, geothermal power, and wind. You can read all
-about it on this site [0].
-
-Why Iceland - Competitively Priced Green Energy
-    https://www.invest.is/why-iceland/competitively-priced-green-energy
-
-So what's the problem then? Two things. I'll call one the lesser
-evil and the other one the great lie.
-
-
-The Lesser Evil
-
-Power distribution in Iceland is not balanced between individuals
-and corporations. The rates are different, their power channels
-are different, and their use and the care with which is is taken
-is different. In short, companies can get away with some shady
-stuff. 
-
-Is it as bad as the US? Oh hell no. After all, we're not dumping
-toxic coal ash into major waterways or anything [1] here. 
-
-Duke Energy Coal Ash in North Carolina
-    https://www.newsobserver.com/news/politics-government/article238898708.html
-
-Even so, there's some ecological impact at stake, and a misuse or
-unbalanced use of public resources that favors large capitalist
-enterprise without paying back into the local economy. I could go
-into more detail here, but I'm just gonna leave it vague because
-I really want to focus on...
-
-
-The Great Lie
-
-Iceland sells its green resources as credits that companies can
-pay for to offset their own polluting behavior. If a shitty
-polluter like Duke Energy wants to seem cleaner, they can pay
-Iceland and claim the renewable energy as their own despite not
-using it. This lowers Iceland's real contribution to the Earth in
-a major way, all but removing it as a good from the world because
-it allows these other companies to continue their damage while
-claiming to be better.
-
-It's a short term gain for a country that was recently in
-a financial crisis. What a great way to bring in extra funds for
-doing nothing, right? Except it does have a major cost to the
-world as a whole.
-
-Is this worse than what the US is doing? Well, no. The US is
-actively polluting and subsidising fossil fuel industries. But
-that doesn't give Iceland a pass. This country has pinned its
-reputation in the world as a Green Nation while it makes back-room
-deals to sell off the fruits of that labor at the cost of our
-future. There are many MPs here who are working on this and
-a number of other issues. Fundamental to all of these efforts is
-the new constitution that was passed by public referendum years
-ago but has not been ratified by the alþingi, our parliament. It's
-a powerful document that returns natural resources to the public
-and out of the hands of a small number of oligarchs. You can see
-why it hasn't happened yet right there.
-
-The people all want it. Many MPs want it. It will happen. These
-petty corruptions that take advantage of the fisheries, of the
-power systems, of plundering the Namibian fishing quotas [2], they
-will all be outed. We'll get there.
-
-Icelandic Fishing Company Engaged In Bribery, Tax Evasion, Plundering African Resources
-    https://grapevine.is/news/2019/11/13/icelandic-fishing-company-engaged-in-bribery-tax-evasion-plundering-african-resources/
 </pre>]]></description>
 </item>
 </channel>
