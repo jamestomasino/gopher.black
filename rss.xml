@@ -3,6 +3,33 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>More Deaths Poetry</title>
+  <link>gopher://gopher.black/1/phlog/20200602-more-deaths-poetry/</link>
+  <pubdate>Tue, 02 Jun 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+more deaths - poetry
+June 02nd, 2020
+----------------------------------------
+
+Another high school friend died on Saturday. I met her in poetry
+class in my junior year. She sat behind me and we had a lot of
+fun. In fact, we had so much fun that we attracted the attention
+of another person across the room, Kristin. She came to join us
+after a few weeks in our little area and would eventually become
+my best friend.
+
+In honor of Erin, may she rest in peace, I'm reading back over my
+poetry here on gopher and in old notebooks. So much of it makes me
+cringe now (I obviously read too much Dickenson & Browning at the
+time) but I can still feel the youthful passion. I wish I had some
+of her poems around.
+
+Old poems of dubious quality
+    gopher://gopher.black/1/writing/poetry 
+</pre>]]></description>
+</item>
+<item>
   <title>New Car</title>
   <link>gopher://gopher.black/1/phlog/20200526-new-car/</link>
   <pubdate>Tue, 26 May 2020 00:00:00 +0000</pubdate>
@@ -508,56 +535,6 @@ does its business. Hmmm... ahha!
     gopher://cosmic.voyage/1/
 [3] gophernicus TLS howto
     gopher://gopher.black/1/phlog/20190120-gophernicus-tls-howto
-</pre>]]></description>
-</item>
-<item>
-  <title>Fables</title>
-  <link>gopher://gopher.black/1/phlog/20200313-fables/</link>
-  <pubdate>Fri, 13 Mar 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Fables
-March 13th, 2020
-----------------------------------------
-
-This week I finally got off my bum and contributed something to
-the excellent project over at tilde.tel [0]. This is a small
-community run by cat [1] which is all about internet phone stuff.
-I'm sure many of you gopherites know all about SIP and all that,
-so if you want to join and play, he's the man to talk to.
-
-[0] https://tilde.tel/
-    https://tilde.tel/
-[1] cat
-    gopher://baud.baby/1/
-
-So what did I contribute? I made a special phone extension (1969)
-called Tilde.Tel Story Time. If you call it you'll get to listen
-to me telling you a story. What sorts of stories you might ask?
-Well, I'm starting off with Aesop's Fables. So far I've recorded
-25 of them, all from the text on project gutenberg.
-
-  Side note: the gopher front-end to project gutenberg seems to
-  have exploded into little bits. I forget who was running that.
-  Was it you jynx? Anyway, I'd love to link to it again, if that
-  gets patched up.
-
-Since some of you aren't internet phone people, and because I'd
-hate to lose all the work, I've also archived the stories here on
-gopher.black. You can find them over at Story Time [2].
-
-[2] Story Time
-    gopher://gopher.black/1/storytime
-
-If you listened to Choose Your Own Adventure [3] on anonradio,
-then you know I'm far, far removed from a professional voice guy.
-(I have a lisp and stuff) I did clean up the audio a tiny bit, but
-I figured it was meant to be heard over phone lines so it is what
-it is. I hope you enjoy the recordings. I'll continue to add to
-the collection over time.
-
-[3] Choose Your Own Adventure (anonradio)
-    gopher://gopher.black/1/cyoa
 </pre>]]></description>
 </item>
 </channel>
