@@ -3,6 +3,40 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Fun Questions Part 2</title>
+  <link>gopher://gopher.black/1/phlog/20200605-fun-questions-part-2/</link>
+  <pubdate>Fri, 05 Jun 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Fun Questions - Part 2
+June 05th, 2020
+----------------------------------------
+
+Last spring I asked gopherspace a few fun questions to get some
+interactions rolling [0]. Lots of people participated and
+I personally got a lot of joy from seeing both the feedback and
+learning a bit more about all of you. Well, I'm in desperate need
+of some joy right now so I figure it's a good time for part 2!
+
+[0] fun questions
+    gopher://gopher.black/1/phlog/20190330-fun-questions
+
+I'll keep with the theme and ask 3 questions again. If you want to
+participate, you can answer any or all. Phlog the answer over on
+your own gopher hole and we'll read up on them. Send me a note if
+you do so and I'll add a link to the bottom of this post so
+everyone can read your responses.
+
+1. Think back and try to remember the most satisfying drink of
+   water in your life. What's the story of that drink?
+
+2. Have you ever personally witnessed an act off human compassion
+   that brought you to tears?
+
+3. When is the last time you fell off a bicycle?
+</pre>]]></description>
+</item>
+<item>
   <title>More Deaths Poetry</title>
   <link>gopher://gopher.black/1/phlog/20200602-more-deaths-poetry/</link>
   <pubdate>Tue, 02 Jun 2020 00:00:00 +0000</pubdate>
@@ -26,7 +60,7 @@ time) but I can still feel the youthful passion. I wish I had some
 of her poems around.
 
 Old poems of dubious quality
-    gopher://gopher.black/1/writing/poetry 
+    gopher://gopher.black/1/writing/poetry
 </pre>]]></description>
 </item>
 <item>
@@ -492,49 +526,6 @@ the hajj. It was eerie. It was also white.
 The floor, specifically, is a bright white. I guess I've never
 noticed, or never seen it clearly. It's always covered in people.
 Perhaps it was obvious to others. It has lingered with me.
-</pre>]]></description>
-</item>
-<item>
-  <title>Tls On Gopher Update</title>
-  <link>gopher://gopher.black/1/phlog/20200314-tls-on-gopher-update/</link>
-  <pubdate>Sat, 14 Mar 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-TLS on gopher update
-March 14th, 2020
-----------------------------------------
-
-jan [0] is working on adding TLS support to his gopher client,
-ncgopher [1]. I am running gopher over tls on cosmic.voyage via
-port 7070 [2]. I went to check on it this morning and saw it was
-giving me a cert error.
-
-I'm using stunnel4 to handle the TLS stuff, and then configuring
-a second copy of gophernicus to serve up the goods. The whole
-process is outlined in an old phlog here [3]. 
-
-What I failed to take into account is that letsencrypt updates my
-keys routinely, but stunnel doesn't reload them. It's as easy to
-fix as: 
-
-  $ sudo /etc/init.d/stunnel4 restart 
-
-Now I need to think about how to automate that when letsencrypt
-does its business. Hmmm... ahha!
-
-/lib/systemd/system/certbot.service:
-
-  ExecStart=/usr/bin/certbot -q renew \
-    --post-hook "/etc/init.d/stunnel4 restart"
-
-[0] jan
-    gopher://jan.bio/1
-[1] ncgopher user guide
-    gopher://jan.bio/1ncgopher
-[2] cosmic on tls
-    gopher://cosmic.voyage/1/
-[3] gophernicus TLS howto
-    gopher://gopher.black/1/phlog/20190120-gophernicus-tls-howto
 </pre>]]></description>
 </item>
 </channel>
