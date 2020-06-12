@@ -3,6 +3,37 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>What Is Gemini</title>
+  <link>gopher://gopher.black/1/phlog/20200612-what-is-gemini/</link>
+  <pubdate>Fri, 12 Jun 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+What is Gemini?
+June 12th, 2020
+----------------------------------------
+
+Last night I recorded a video about the new Gemini protocol [0],
+created by solderpunk [1] which has been _taking off_ remarkably
+well. If you aren't familiar with Gemini by now, it is a new
+protocol that is very similar to gopher but with some
+enhancements. It is still far, far away from being anything like
+the web, but it brings some modern thought and consideration to
+hypertext browsing.
+
+[0] gemini protocol
+    gopher://gemini.circumlunar.space/1/
+[1] solderpunk
+    gopher://zaibatsu.circumlunar.space/1/~solderpunk
+
+You can watch my video on peertube or on youtube! [2,3]
+
+[2] peertube
+    https://toobnix.org/videos/watch/8ee54700-971c-4da3-a8b4-7a78ed9ac42e
+[3] youtube
+    https://www.youtube.com/watch?v=QGCSYyH2r6k
+</pre>]]></description>
+</item>
+<item>
   <title>Fun Questions Part 2</title>
   <link>gopher://gopher.black/1/phlog/20200605-fun-questions-part-2/</link>
   <pubdate>Fri, 05 Jun 2020 00:00:00 +0000</pubdate>
@@ -34,6 +65,14 @@ everyone can read your responses.
    that brought you to tears?
 
 3. When is the last time you fell off a bicycle?
+
+Replies:
+seedy
+    gopher://seedy.xyz/0/phlog/2020/jun/20200605.txt
+christyotwisty
+    gopher://sdf.org/0/users/christyotwisty/phlog/2020-06-05.txt
+jebug29
+    gopher://sdf.org/0/users/jebug29/log/2020-06/09-0348
 </pre>]]></description>
 </item>
 <item>
@@ -506,26 +545,6 @@ really substantial to my emerging identity and I'm appreciative.
 
 Do you have anything like that? Books, movies? A horrible drive
 you took with the family every year that scarred you for life?
-</pre>]]></description>
-</item>
-<item>
-  <title>The Floor Of Mecca Is White</title>
-  <link>gopher://gopher.black/1/phlog/20200319-the-floor-of-mecca-is-white/</link>
-  <pubdate>Thu, 19 Mar 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-The Floor of Mecca is White
-March 19th, 2020
-----------------------------------------
-
-I saw a picture of Mecca today, and specifically the space
-surrounding the Ka'bah at the center. It was empty. Not a single
-soul praying, doing their seven circles or otherwise fulfilling
-the hajj. It was eerie. It was also white.
-
-The floor, specifically, is a bright white. I guess I've never
-noticed, or never seen it clearly. It's always covered in people.
-Perhaps it was obvious to others. It has lingered with me.
 </pre>]]></description>
 </item>
 </channel>
