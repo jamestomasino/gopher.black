@@ -12,9 +12,8 @@ ilet me know about it.		gopher.black	70
 i		gopher.black	70
 i      Primary : gopher://gopher.black		gopher.black	70
 i        Onion : gopher://blackgviz2y4nhrd.onion		gopher.black	70
-i     Mirror 1 : gopher://sdf.org/1/users/tomasino		gopher.black	70
-i     Mirror 2 : gopher://tilde.town/1/~tomasino		gopher.black	70
-i     Mirror 3 : gopher://yourtilde.com/1/~tomasino		gopher.black	70
+i     Mirror 1 : gopher://tilde.town/1/~tomasino		gopher.black	70
+i     Mirror 2 : gopher://yourtilde.com/1/~tomasino		gopher.black	70
 i		gopher.black	70
 i		gopher.black	70
 i                              |             |		gopher.black	70
@@ -23,20 +22,11 @@ i               \__|\___/_| _|\__|\__,_|\__|\__|		gopher.black	70
 i		gopher.black	70
 i		gopher.black	70
 iwire:           jamestomasino		gopher.black	70
-imastodon:       @tomasino@mastodon.sdf.org		gopher.black	70
-ivoip:           1897@sip.sdf.org		gopher.black	70
+imastodon:       @tomasino@tilde.zone		gopher.black	70
+ivoip:           202-3101@tilde.tel		gopher.black	70
+iirc:            tomasino@tilde.chat		gopher.black	70
+iweb:            https://tomasino.org		gopher.black	70
 i		gopher.black	70
-iblog:           https://blog.tomasino.org		gopher.black	70
-ilabs:           https://labs.tomasino.org		gopher.black	70
-iresume:         https://jamestomasino.com		gopher.black	70
-isdf:            https://tomasino.sdf.org		gopher.black	70
-i		gopher.black	70
-iinsecure email: tomasino@sdf.org		gopher.black	70
-i		gopher.black	70
-isecure email 1: tomasino@lavabit.com		gopher.black	70
-ifingerprint:    29E28CF52D93FF5A2C2B649E40FCE6A73F47A582		gopher.black	70
-0public key	/about/tomasino-lavabit.public.asc
-i		gopher.black	70
-isecure email 2: james@tomasino.org		gopher.black	70
+iemail:          james@tomasino.org		gopher.black	70
 ifingerprint:    368CD75F5CD5F1E9A72F639F4E0FEB0E09DDD7DF		gopher.black	70
 0public key	/about/james-tomasino.public.asc
