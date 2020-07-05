@@ -37,7 +37,7 @@ and/or Juliet.
   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
 
 Listen to the initial openVOIP archive. The story starts at the
-1/2 mark: http://anonradio.net/archive/201809070200_openvoip.mp3
+1/2 mark: https://anonradio.net/archive/201809070200_openvoip.mp3
 
 We began reading the Zork story during an OpenVOIP. We’ll pick up
 where we left off at the top of this episode, then continue on
