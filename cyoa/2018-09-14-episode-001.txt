@@ -36,8 +36,12 @@ and/or Juliet.
 
   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
 
-Listen to the initial openVOIP archive. The story starts at the
-1/2 mark: https://anonradio.net/archive/201809070200_openvoip.mp3
+Listen to the initial openVOIP archive. I've removed the first
+half of the stream before I dialed in. There's still quite a bit
+of robot take-over interrupting the story.
+
+Episode 0 (open-mic):
+https://tomasino.is/cyoa/archives/201809070200_openvoip.mp3
 
 We began reading the Zork story during an OpenVOIP. We’ll pick up
 where we left off at the top of this episode, then continue on
@@ -50,3 +54,6 @@ out. Message me on Mastodon ( @tomasino@mastodon.sdf.org ) or on
 SDF’s com, or IRC, and join the discussion.
 
 In this show, the choices are yours!
+
+Episode 1:
+https://tomasino.is/cyoa/archives/201809140100_tomasino.mp3
