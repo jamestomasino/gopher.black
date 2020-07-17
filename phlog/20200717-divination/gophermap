@@ -1,0 +1,111 @@
+i----------------------------------------		gopher.black	70
+idivination		gopher.black	70
+iJuly 17th, 2020		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iA few days ago I coded a shell-script version of the I Ching (Book		gopher.black	70
+iof Changes), and made it accessible on Gemini [0]. In the process		gopher.black	70
+iI added a note on the Gemini site quickly addressing some concerns		gopher.black	70
+iover the use of digital tools for divination. It all felt rushed		gopher.black	70
+iand incomplete and I think I have more to say on the subject,		gopher.black	70
+iperhaps a lot more. Gemini isn't the place for that, though. This		gopher.black	70
+iis definitely a gopher topic.		gopher.black	70
+i		gopher.black	70
+h[0] I Ching Shell Script	URL:https://github.com/jamestomasino/iching
+i		gopher.black	70
+iI practice a number of forms of divination including consulting		gopher.black	70
+ithe I Ching, tarot cards, tasseography, cleromancy (whether with		gopher.black	70
+idice, dominos, or runes), and so on. There's a number of forms		gopher.black	70
+iI don't practice for various reasons: horoscopy, gematria,		gopher.black	70
+iextispicy (ew), ouija, augury, and oh so many more. Someone has		gopher.black	70
+ifigured out a way to use just about anything for divination.		gopher.black	70
+i		gopher.black	70
+iBefore we get too far into this, let me drop some dictionary magic		gopher.black	70
+ion you. Here's the definition from two online dictionaries: 		gopher.black	70
+i		gopher.black	70
+i  Divination: 		gopher.black	70
+i  		gopher.black	70
+i  1. the practice of seeking knowledge of the future or the		gopher.black	70
+i     unknown by supernatural means		gopher.black	70
+i		gopher.black	70
+i  2. the art or practice that seeks to foresee or foretell future		gopher.black	70
+i     events or discover hidden knowledge usually by the		gopher.black	70
+i     interpretation of omens or by the aid of supernatural powers		gopher.black	70
+i		gopher.black	70
+iSeeking knowledge, usually hidden knowledge, by the aid of the		gopher.black	70
+isupernatural. Cool. Got it?		gopher.black	70
+i		gopher.black	70
+iSo there are a billion forms of divination out there, but why? Do		gopher.black	70
+ithey all work? Do any of them work? How do they purport to work?		gopher.black	70
+iLets focus on the last bit first. How does divination work? This		gopher.black	70
+iis the interesting bit for me at least.		gopher.black	70
+i		gopher.black	70
+iIn cleromancy the mechanism of action is some sort of randomness.		gopher.black	70
+iCleromancy is about "tossing stuff" like dice and seeing what		gopher.black	70
+icomes up. Some practitioners suggest that the randomness allows		gopher.black	70
+ithe supernatural to take direct action and influence the results		gopher.black	70
+iof the toss. Other practitioners would say that the toss and its		gopher.black	70
+irandomness is just that and not influenced by the supernatural,		gopher.black	70
+ibut the querent (person seeking information) must use their		gopher.black	70
+iintuition to understand the results of the toss. That type of		gopher.black	70
+ipractitioner moves the supernatural action internal to the		gopher.black	70
+iunconscious mind and changes its domain of action to the		gopher.black	70
+iinterpretation alone. But there are still other types! Some see		gopher.black	70
+ithe unconscious mind as affecting the toss itself in a sort of		gopher.black	70
+iblend of the first two. Others shy away from intuition and suggest		gopher.black	70
+iself-reflection and psychology allow the interpretation of any		gopher.black	70
+isymbol to be helpful as a means of thinking in a new way about the		gopher.black	70
+iissue.		gopher.black	70
+i		gopher.black	70
+iYeesh, that's a lot, and that's just cleromancy! But what about		gopher.black	70
+ichartomancy (books & cards)? Is the mechanism of action different?		gopher.black	70
+i		gopher.black	70
+iOn the one hand, there are far more established symbols present		gopher.black	70
+iin, say, a tarot card than in a rune. Consulting the I Ching or		gopher.black	70
+ithe Bible likewise greatly increases the available symbols and		gopher.black	70
+iinterpretations. The act itself is still governed by some sort of		gopher.black	70
+irandomness, or chaotic action as I like to call it. Shuffling		gopher.black	70
+icards, separating yarrow stalks, even flipping pages promotes some		gopher.black	70
+isort of uncertainty and allows for the possibility of and unknown.		gopher.black	70
+i		gopher.black	70
+iDoes this unknown mean that a supernatural power is guiding the		gopher.black	70
+iresult? That's a matter of faith and, ultimately, irrelevant. What		gopher.black	70
+iabout the interpretation? Is that guided by a supernatural power?		gopher.black	70
+iAgain, a question of faith that has no ultimate bearing on the		gopher.black	70
+ivalue of divination. What‽		gopher.black	70
+i		gopher.black	70
+iYeah, you read me correctly. I'm saying that it doesn't matter if		gopher.black	70
+ithere's no supernatural involved at all or if there is. The aim of		gopher.black	70
+idivination is to seek to foresee the future or discover hidden		gopher.black	70
+iknowledge and divination can succeed in  both cases regardless of		gopher.black	70
+ithe origin of its power.		gopher.black	70
+i		gopher.black	70
+iLets side with the pragmatic doubter practitioner for a moment and		gopher.black	70
+iassume that there's no magic at work here at all. We're going to		gopher.black	70
+igo through some exercise that will result in symbols ready for		gopher.black	70
+iinterpretation. The process we have just taken was designed to		gopher.black	70
+iorient our mind to the problem, focus upon it seriously, perhaps		gopher.black	70
+ispending a significant amount of time in so doing. We are now		gopher.black	70
+iasked to review and interpret these forms which have a variety of		gopher.black	70
+ipossible meanings requiring we try to apply them systematically		gopher.black	70
+iand in various combinations to the problem or subject. That		gopher.black	70
+ithought process involves mental judo and an openness to new ideas.		gopher.black	70
+iIt will inevitably bring insight and... wait for it... hidden		gopher.black	70
+iknowledge. It will also undoubtedly influence future actions and		gopher.black	70
+ihave a major impact on the events to come. BAM! Divined.		gopher.black	70
+i		gopher.black	70
+iNow, allow yourself to take the seat as an individual who has		gopher.black	70
+ifaith in the machinations of the supernatural. Given even a hint		gopher.black	70
+iof influence from that "other", the results gain significance and		gopher.black	70
+itheir origins may carry more weight, but the interpretation and		gopher.black	70
+iinternalization of that information is unchanged. It really		gopher.black	70
+idoesn't matter.		gopher.black	70
+i		gopher.black	70
+iI really enjoy the processes, especially the lengthy ones with		gopher.black	70
+imuch ritual like the yarrow stalk I Ching method, or the ones that		gopher.black	70
+iare inherently delicious like tasseography (reading tea leaves).		gopher.black	70
+i		gopher.black	70
+iIf I have any advice to give on the subject it is to enter into		gopher.black	70
+idivination with healthy skepticism, not to undermine the results		gopher.black	70
+ibut to fully engage with them. Don't take any reading at face		gopher.black	70
+ivalue or you've done yourself a disservice.		gopher.black	70
