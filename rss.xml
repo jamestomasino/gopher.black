@@ -3,6 +3,108 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Goodbye Tilde Black</title>
+  <link>gopher://gopher.black/1/phlog/20200905-goodbye-tilde-black/</link>
+  <pubdate>Sat, 05 Sep 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+goodbye tilde.black
+September 05th, 2020
+----------------------------------------
+
+A few days ago I woke up to a string of emails about abuse from
+a member of tilde.black upon EFNet, the IRC network. I was about
+to start work and didn't have the energy or time to deal with the
+problem, so I took the server offline. The next day I thought more
+about the situation and realization came to me that I had
+absolutely no desire to spend my time figuring out who the bad
+apple was this time, removing them, and sealing the door against
+them returning. It wasn't the first time I'd had to act upon
+someone taking advantage of the system and it sure looked like
+this wouldn't be the last time either.
+
+When I created tilde.black it was on a whim. I had this silly idea
+that I could pre-generate usernames from dictionary words and then
+when people joined they would get a random name. What better way
+to provide anonymity, right? Since it was going to be a system
+about privacy, I felt a secure OS was warranted and I went with
+openbsd despite knowing nothing about it. This was an opportunity
+to learn, and learn I did. I learned to value and appreciate a lot
+about that system. The sane defaults, the truly incredible
+documentation, and the intuitive configuration were all pleasant
+surprises. The web server, horribly named httpd (try web-searching
+for help on that) was another matter. Shortly before this incident
+I had finally broken down and just installed nginx.
+
+The experiment was good. It lasted far longer than I expected and
+gained far, far more users than I ever thought would find it
+interesting. For one thing the very nature of this private tilde
+went against the concepts of community building that really make
+a tilde work. There was almost no peer engagement happening. But
+people were attracted to the idea of the server. I think, in the
+end, I was too. I really liked the concept of a private, anonymous
+place where people could experiment. In reality it was pretty
+boring, though.
+
+From a user perspective the best thing that came out of it was
+brool, a user who kept a file called "stoned.txt". It was in
+essence a never-ending phlog/journal of random thoughts, ideas,
+and art that came to them while they were high. It was fantastic.
+I'm sad that's not around anymore. I hope whoever made it has
+a copy somewhere and finds a way to ressurect it on another
+server. It spawned a few copy-cat files, but it was a true
+masterpiece and really deserves some recognition.
+
+Beyond that there was some stock market analysis, a few irc bot
+coding projects, the odd shell scripting thing here or there, and
+a few minimal websites. Not a lot to miss.
+
+I had put my initial gemini work up on the server. In fact, I made
+it a point not to put gemini on gopher.black or on any of my
+tomasino domains specifically as an excuse to log into tilde.black
+and do something. That was all backed up in git, though, and has
+since migrated over to tilde.team[0].
+
+[0] Tomasino's Gemini site
+    gemini://tilde.team/~tomasino/
+
+Tilde.Black is shut down for good. I stopped seeing it as fun at
+some point and it had become a burden. I hadn't been able to put
+that into words until this EFNet incident. Were it not for this
+trigger the site may have continued for months more, but it would
+have inevitably fallen. It was a neat idea and that's good enough.
+
+Now I have cosmic.voyage as my sole remaining tilde community and
+I want to put my love back into it. With the growing popularity of
+black I hadn't spent nearly enough time looking after cosmic. It's
+been sort of on autopilot, you might say. There's still writers
+writing. There's still chatters in the channel in IRC. I find
+I still have a passion for it and an excitement for it to continue
+and grow.
+
+This November I'm going to put out a series of writing prompts as
+a sort of mini-contest to see how much we can all write. I don't
+know that there are any prizes, but hey, maybe? I just want to
+really do something for it to give it the love. Do you know what
+I mean?
+
+It reminds me a bit of cat's sites: baud.baby, baud.vision, and
+konpeito.media. There's a guy who has some incredible passion to
+the stuff he puts out there and I am in awe of it each time he
+does so. But like cat, I get bored of it sometimes. Bored isn't
+even the right word. Other things come first and it sort of
+doesn't matter. Or maybe it does matter, but the fact that it
+matters annoys me so I ignore it. Or maybe my mind is just sick of
+dealing with thoughts in the way required to engage with my
+project. There's a hundred metaphors and none are quite correct.
+
+Cosmic will be getting more love soon. Hopefully my gopher hole
+will as well. Once I start writing in one place it's hard not to
+write everywhere. Maybe this post will help kick it off! Either
+way, saying goodbye to Tilde Black feels great.
+</pre>]]></description>
+</item>
+<item>
   <title>Divination</title>
   <link>gopher://gopher.black/1/phlog/20200717-divination/</link>
   <pubdate>Fri, 17 Jul 2020 00:00:00 +0000</pubdate>
@@ -481,67 +583,6 @@ to listen. I can't even put into words how much it means to me.
 
 Story to Tell (Soundcloud)
     https://soundcloud.com/dwayne-keith-kessel/itunesexport-m4a/s-Zq9n0kPcDms
-</pre>]]></description>
-</item>
-<item>
-  <title>Renting A Video Game</title>
-  <link>gopher://gopher.black/1/phlog/20200429-renting-a-video-game/</link>
-  <pubdate>Wed, 29 Apr 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Renting a video game
-April 29th, 2020
-----------------------------------------
-
-Nostalgia struck. I'm back in a childhood home giddy with
-excitement over the Nintendo Entertainment System which stealthily
-arrived as the last present opened at Christmas. My parents sprung
-for the unit that came with two game cartridges, not just one:
-Super Mario Bros. & Duck Hunt on one cartridge, and Teenage Mutant
-Ninja Turtles on the other. It's visceral. I can smell the box.
-Feel the plastic.
-
-Games then were expensive. I suppose they're still expensive, but
-I don't buy so many. A game like Teenage Mutant Ninja Turtles cost
-about $50 in the late 80s. With some napkin math, that's around
-$80-85 today. Pricey, as I said. We didn't get new ones often.
-Years--and many garage sales--later, I have 57 games in my
-collection. As a kid, I had around 20 at the most.
-
-Don't get me wrong. I'm not suggesting games were worth this much
-back then, but it's what we had. There's games I've got that
-aren't worth a dime. The Adventures of Dino Rikki comes to mind.
-What a piece of trash! Still, it cost a fortune and I had no way
-of knowing if it was going to be terrible. Maybe a friend had it
-and could warn me. Maybe it would get a mention in Nintendo Power
-magazine. Otherwise, you're shopping by box art.
-
-That was until the video rental stores got in on the action. It
-was a brilliant outgrowth from home video. For a dollar or two you
-could take home a game for a few days. Sure, you weren't likely to
-master it or beat it, and your save game was gone when it was
-returned. Even so, what an incredible tool to avoid wasting big
-money on flops.
-
-I vividly remember renting Life Force [0] from the Video Stop.
-What a brilliant game that was. I loved the gameplay and the
-sprites. There was one that looked like an uncooked chicken
-crawling on the ground. Awesome. I believe that eventually many of
-those sprites, sound effects, and much of the gameplay code would
-get revisited in The Guardian Legend, my favorite NES game of all
-time.
-
-[0] Life Force
-    https://www.youtube.com/watch?v=dt-pMJiQTTk
-
-That rental was awesome and eventually I'd get my own copy of the
-game. Others... well [1], I own some of those anyway.
-
-[1] Not so awesome NES games
-    https://www.youtube.com/watch?v=2KgwO0N6e8U
-
-I don't really have a big reason for sharing this. It just came to
-my mind and was worth a smile. Hope it gave you one too.
 </pre>]]></description>
 </item>
 </channel>
