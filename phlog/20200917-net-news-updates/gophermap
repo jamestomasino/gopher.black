@@ -1,0 +1,105 @@
+i----------------------------------------		gopher.black	70
+inet news updates		gopher.black	70
+iSeptember 17th, 2020		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iLast year I wrote a guide on how I set up net news (USENET) on		gopher.black	70
+iCosmic Voyage [0]. It's designed not to peer with the big USENET,		gopher.black	70
+ibut rather with other tilde servers to make a micro net news		gopher.black	70
+inetwork just for us. That post is still valid and if you run		gopher.black	70
+ia tilde or pubnix and want to peer with cosmic, reach out and let		gopher.black	70
+ime know.		gopher.black	70
+i		gopher.black	70
+1[0] net news on cosmic voyage	/phlog/20190426-net-news-on-cosmic-voyage
+i		gopher.black	70
+iSince Tilde Club rejoined the fold and has become an active member		gopher.black	70
+iof the tildeverse, deepend has been good enough to set up a net		gopher.black	70
+inews node there as well. We ran into some challenges with the		gopher.black	70
+ipeering setup early on due to IPV6, but that's been solved. Now		gopher.black	70
+iwe're growing together and learning new tricks.		gopher.black	70
+i		gopher.black	70
+iTilde Club opened up its access for using net news remotely, not		gopher.black	70
+ijust from the local system [1]. If you want to jump into the		gopher.black	70
+iconversation now and aren't on Cosmic or Club, you can follow the		gopher.black	70
+iinstructions there to do so.		gopher.black	70
+i		gopher.black	70
+h[1] usenet news via tilde.club	URL:https://tilde.club/wiki/usenet-news.html
+i		gopher.black	70
+iUser xwindows was chatting with me today about a mission to fix		gopher.black	70
+ithe few problems we have remaining on the network. Perhaps the		gopher.black	70
+imost important is the expiration of old messages. As of this phlog		gopher.black	70
+iClub is set to expire net news messages after only 15 days.		gopher.black	70
+iHopefully that will be rectified in the next few days, but also		gopher.black	70
+iwe're working on a way to suck in all the old posts off cosmic to		gopher.black	70
+irefill the system. Cosmic's posts are set to expire after 1 year,		gopher.black	70
+iso it has much more post data to share with the rest of the		gopher.black	70
+inetwork. Today's immediate challenge was that cosmic didn't have		gopher.black	70
+ia method to view that data from outside cosmic itself. Unlike Club		gopher.black	70
+iI hadn't set up external access.		gopher.black	70
+i		gopher.black	70
+iWith a bit of investigation and some trial & error that has been		gopher.black	70
+ifixed. If you connect to cosmic.voyage from an external net news		gopher.black	70
+iclient you can get a read-only view of everything on the system.		gopher.black	70
+iIf your net news client allows you to pass login information and		gopher.black	70
+iyou use your cosmic voyage username and password (it was in your		gopher.black	70
+iwelcome email if you forgot), then you should be able to post to		gopher.black	70
+ithe newsgroups in addition to reading.		gopher.black	70
+i		gopher.black	70
+iThe only change required to make this happen was in		gopher.black	70
+i'readers.conf':		gopher.black	70
+i		gopher.black	70
+i  auth "localhost" {		gopher.black	70
+i      hosts: "localhost, 127.0.0.1, ::1, stdin"		gopher.black	70
+i      default: "<localhost>"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  access "localhost" {		gopher.black	70
+i      users: "<localhost>"		gopher.black	70
+i      newsgroups: "*,!junk,!control,!control.*"		gopher.black	70
+i      access: RPA		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  auth "default" {		gopher.black	70
+i      hosts: "*"		gopher.black	70
+i      auth: "ckpasswd -s"		gopher.black	70
+i      default: "anonymous"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  access regular {		gopher.black	70
+i      read: "*,!junk,!control,!control.*"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  access full {		gopher.black	70
+i      users: "*,!anonymous"		gopher.black	70
+i      newsgroups: "*,!junk,!control,!control.*"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+iThe first two blocks handle local access which is basically saying		gopher.black	70
+iif you're on cosmic you're good to go. Post away.		gopher.black	70
+i		gopher.black	70
+iThe three blocks following set up a two-case scenario for everyone		gopher.black	70
+ielse. If you connect and successfully auth your user will be set		gopher.black	70
+ito whatever your username is. If not, you get the default name		gopher.black	70
+i"anonymous". Then I have a blanket rule for everyone to be able to		gopher.black	70
+iread everything, and finally a special rule for everyone not named		gopher.black	70
+ianonymous allowing posting.		gopher.black	70
+i		gopher.black	70
+iSo far testing seems to be working alright!		gopher.black	70
+i		gopher.black	70
+iOh, and one last thing... If you want to make sure your expiration		gopher.black	70
+isettings are nice and long (say... 1 year) then I'm pretty sure		gopher.black	70
+iyou only need to change one line near the bottom of 'expire.ctl':		gopher.black	70
+i		gopher.black	70
+i  *:A:1:365:never		gopher.black	70
+i		gopher.black	70
+iSee the 365? make sure that's not something smaller, like 15.		gopher.black	70
+i		gopher.black	70
+iBut just in case, here's the other two mentions of 365 in my		gopher.black	70
+iconfig files:		gopher.black	70
+i		gopher.black	70
+i  # innreport.conf		gopher.black	70
+i  cycle 365;		gopher.black	70
+i		gopher.black	70
+i  # inn.conf		gopher.black	70
+i  artcutoff: 365		gopher.black	70
+i		gopher.black	70

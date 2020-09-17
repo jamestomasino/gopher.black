@@ -3,6 +3,120 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Net News Updates</title>
+  <link>gopher://gopher.black/1/phlog/20200917-net-news-updates/</link>
+  <pubdate>Thu, 17 Sep 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+net news updates
+September 17th, 2020
+----------------------------------------
+
+Last year I wrote a guide on how I set up net news (USENET) on
+Cosmic Voyage [0]. It's designed not to peer with the big USENET,
+but rather with other tilde servers to make a micro net news
+network just for us. That post is still valid and if you run
+a tilde or pubnix and want to peer with cosmic, reach out and let
+me know.
+
+[0] net news on cosmic voyage
+    gopher://gopher.black/1/phlog/20190426-net-news-on-cosmic-voyage
+
+Since Tilde Club rejoined the fold and has become an active member
+of the tildeverse, deepend has been good enough to set up a net
+news node there as well. We ran into some challenges with the
+peering setup early on due to IPV6, but that's been solved. Now
+we're growing together and learning new tricks.
+
+Tilde Club opened up its access for using net news remotely, not
+just from the local system [1]. If you want to jump into the
+conversation now and aren't on Cosmic or Club, you can follow the
+instructions there to do so.
+
+[1] usenet news via tilde.club
+    https://tilde.club/wiki/usenet-news.html
+
+User xwindows was chatting with me today about a mission to fix
+the few problems we have remaining on the network. Perhaps the
+most important is the expiration of old messages. As of this phlog
+Club is set to expire net news messages after only 15 days.
+Hopefully that will be rectified in the next few days, but also
+we're working on a way to suck in all the old posts off cosmic to
+refill the system. Cosmic's posts are set to expire after 1 year,
+so it has much more post data to share with the rest of the
+network. Today's immediate challenge was that cosmic didn't have
+a method to view that data from outside cosmic itself. Unlike Club
+I hadn't set up external access.
+
+With a bit of investigation and some trial & error that has been
+fixed. If you connect to cosmic.voyage from an external net news
+client you can get a read-only view of everything on the system.
+If your net news client allows you to pass login information and
+you use your cosmic voyage username and password (it was in your
+welcome email if you forgot), then you should be able to post to
+the newsgroups in addition to reading.
+
+The only change required to make this happen was in
+'readers.conf':
+
+  auth "localhost" {
+      hosts: "localhost, 127.0.0.1, ::1, stdin"
+      default: "<localhost>"
+  }
+
+  access "localhost" {
+      users: "<localhost>"
+      newsgroups: "*,!junk,!control,!control.*"
+      access: RPA
+  }
+
+  auth "default" {
+      hosts: "*"
+      auth: "ckpasswd -s"
+      default: "anonymous"
+  }
+
+  access regular {
+      read: "*,!junk,!control,!control.*"
+  }
+
+  access full {
+      users: "*,!anonymous"
+      newsgroups: "*,!junk,!control,!control.*"
+  }
+
+The first two blocks handle local access which is basically saying
+if you're on cosmic you're good to go. Post away.
+
+The three blocks following set up a two-case scenario for everyone
+else. If you connect and successfully auth your user will be set
+to whatever your username is. If not, you get the default name
+"anonymous". Then I have a blanket rule for everyone to be able to
+read everything, and finally a special rule for everyone not named
+anonymous allowing posting.
+
+So far testing seems to be working alright!
+
+Oh, and one last thing... If you want to make sure your expiration
+settings are nice and long (say... 1 year) then I'm pretty sure
+you only need to change one line near the bottom of 'expire.ctl':
+
+  *:A:1:365:never
+
+See the 365? make sure that's not something smaller, like 15.
+
+But just in case, here's the other two mentions of 365 in my
+config files:
+
+  # innreport.conf
+  cycle 365;
+
+  # inn.conf
+  artcutoff: 365
+
+</pre>]]></description>
+</item>
+<item>
   <title>Goodbye Tilde Black</title>
   <link>gopher://gopher.black/1/phlog/20200905-goodbye-tilde-black/</link>
   <pubdate>Sat, 05 Sep 2020 00:00:00 +0000</pubdate>
@@ -542,47 +656,6 @@ a PR and help shame them.
 
 [0] List of sites storing passwords in plain text
     gopher://gopher.black/0/explorations/plaintext/list-of-plaintext-passwords.txt
-</pre>]]></description>
-</item>
-<item>
-  <title>Out Of The Past</title>
-  <link>gopher://gopher.black/1/phlog/20200430-out-of-the-past/</link>
-  <pubdate>Thu, 30 Apr 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Out of the past
-April 30th, 2020
-----------------------------------------
-
-I adored this band when I was a teen. They were local and played
-mostly in bookstores and small venues or the occasional folk
-festival. I would see them as much as possible, listened to their
-music around the clock... you get it.
-
-Well, 20+ years later, the keyboardist and main songwriter was
-stuck at home due to covid-19. He sat at his piano and started
-playing a song that he'd forgotten all about. It was from the time
-leading up to their second indy album but the feel wasn't right
-for that collection. Much later on he thought he'd lost all traces
-of it: gone from memory and never recorded. Here we was, just
-barely remembering the tune.
-
-Then serendipity struck. Today he dusted off an old, ancient iPod
-and plugged it in. Amazingly it still worked. He put it on shuffle
-with his collection of thousands of songs when what should start
-coming through his speakers but the very mystery song he'd lost.
-
-Sometime in the mid-nineties he had put together a demo track with
-just him and the lead singer. One take, no practice. It had been
-mis-labeled as a different track ("More to This") and tossed into
-a collection and forgotten.
-
-Today it speaks across time not just to him, but to all of us who
-loved that music and the band, and to everyone who spends the time
-to listen. I can't even put into words how much it means to me.
-
-Story to Tell (Soundcloud)
-    https://soundcloud.com/dwayne-keith-kessel/itunesexport-m4a/s-Zq9n0kPcDms
 </pre>]]></description>
 </item>
 </channel>
