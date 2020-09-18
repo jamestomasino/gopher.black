@@ -40,29 +40,22 @@ i		gopher.black	70
 iWith a bit of investigation and some trial & error that has been		gopher.black	70
 ifixed. If you connect to cosmic.voyage from an external net news		gopher.black	70
 iclient you can get a read-only view of everything on the system.		gopher.black	70
-iIf your net news client allows you to pass login information and		gopher.black	70
-iyou use your cosmic voyage username and password (it was in your		gopher.black	70
-iwelcome email if you forgot), then you should be able to post to		gopher.black	70
-ithe newsgroups in addition to reading.		gopher.black	70
 i		gopher.black	70
 iThe only change required to make this happen was in		gopher.black	70
 i'readers.conf':		gopher.black	70
 i		gopher.black	70
-i  auth "localhost" {		gopher.black	70
-i      hosts: "localhost, 127.0.0.1, ::1, stdin"		gopher.black	70
-i      default: "<localhost>"		gopher.black	70
-i  }		gopher.black	70
-i		gopher.black	70
-i  access "localhost" {		gopher.black	70
-i      users: "<localhost>"		gopher.black	70
-i      newsgroups: "*,!junk,!control,!control.*"		gopher.black	70
-i      access: RPA		gopher.black	70
-i  }		gopher.black	70
+i  # auth blocks match whichever group succeeds LAST		gopher.black	70
+i  # so having the local group below the wildcard		gopher.black	70
+i  # is important		gopher.black	70
 i		gopher.black	70
 i  auth "default" {		gopher.black	70
 i      hosts: "*"		gopher.black	70
-i      auth: "ckpasswd -s"		gopher.black	70
 i      default: "anonymous"		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
+i  auth "localhost" {		gopher.black	70
+i      hosts: "localhost, 127.0.0.1, ::1, stdin"		gopher.black	70
+i      default: "<localhost>"		gopher.black	70
 i  }		gopher.black	70
 i		gopher.black	70
 i  access regular {		gopher.black	70
@@ -74,8 +67,14 @@ i      users: "*,!anonymous"		gopher.black	70
 i      newsgroups: "*,!junk,!control,!control.*"		gopher.black	70
 i  }		gopher.black	70
 i		gopher.black	70
+i  access "localhost" {		gopher.black	70
+i      users: "<localhost>"		gopher.black	70
+i      newsgroups: "*,!junk,!control,!control.*"		gopher.black	70
+i      access: RPA		gopher.black	70
+i  }		gopher.black	70
+i		gopher.black	70
 iThe first two blocks handle local access which is basically saying		gopher.black	70
-iif you're on cosmic you're good to go. Post away.		gopher.black	70
+iif you're on cosmic you're good to go. Post away. Otherwise read.		gopher.black	70
 i		gopher.black	70
 iThe three blocks following set up a two-case scenario for everyone		gopher.black	70
 ielse. If you connect and successfully auth your user will be set		gopher.black	70
@@ -87,19 +86,14 @@ i		gopher.black	70
 iSo far testing seems to be working alright!		gopher.black	70
 i		gopher.black	70
 iOh, and one last thing... If you want to make sure your expiration		gopher.black	70
-isettings are nice and long (say... 1 year) then I'm pretty sure		gopher.black	70
-iyou only need to change one line near the bottom of 'expire.ctl':		gopher.black	70
+isettings are nice and long (say... several years) then you only 		gopher.black	70
+ineed to change a few config lines:		gopher.black	70
 i		gopher.black	70
-i  *:A:1:365:never		gopher.black	70
-i		gopher.black	70
-iSee the 365? make sure that's not something smaller, like 15.		gopher.black	70
-i		gopher.black	70
-iBut just in case, here's the other two mentions of 365 in my		gopher.black	70
-iconfig files:		gopher.black	70
+i  # expire.ctl		gopher.black	70
+i  *:A:365:1095:never		gopher.black	70
 i		gopher.black	70
 i  # innreport.conf		gopher.black	70
 i  cycle 365;		gopher.black	70
 i		gopher.black	70
 i  # inn.conf		gopher.black	70
 i  artcutoff: 365		gopher.black	70
-i		gopher.black	70
