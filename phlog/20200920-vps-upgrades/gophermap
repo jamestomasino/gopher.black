@@ -1,0 +1,86 @@
+i----------------------------------------		gopher.black	70
+iVPS upgrades		gopher.black	70
+iSeptember 20th, 2020		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iYesterday I upgraded gopher.black. Technically I did quite a bit		gopher.black	70
+imore than that, but that's probably the most relevant bits for you		gopher.black	70
+igopherites. I have a personal Vultr VPS that hosts this gopher		gopher.black	70
+ihole as well as most of my personal websites, my weechat IRC		gopher.black	70
+iclient, an SMS-to-email relay for my old US-based phone number		gopher.black	70
+ithat's now a SIP line, my Calibre library, and a whole bunch of		gopher.black	70
+iother nonsense that nobody cares about but me. That was all		gopher.black	70
+irunning on a 25GB instance and doing alright, but free space was		gopher.black	70
+igetting a little tight.		gopher.black	70
+i		gopher.black	70
+iThe upgrade was set in motion by my desire to start a new		gopher.black	70
+iTildeRadio show. It's called Sci-Fi Radio and will be airing on		gopher.black	70
+iTuesdays and Thursdays at 22:00 UTC. It's a 30-minute program that		gopher.black	70
+iplays vintage science fiction radio dramas. Specifically the show		gopher.black	70
+iwill start by re-airing all 125 episodes of X Minus One, and NBC		gopher.black	70
+iprogram from the 1950s. At the conclusion of those episodes we'll		gopher.black	70
+ifollow up with Dimension X, and then some other programs. I do		gopher.black	70
+ihope you'll tune in!		gopher.black	70
+i		gopher.black	70
+iAnyway, in order to set up this stream I wanted to queue up all		gopher.black	70
+ithe content and then automate the playback via a cron job on my		gopher.black	70
+iVPS. That necessitated installing liquidsoap and having enough		gopher.black	70
+ispace for all the files. Liquidsoap is a bit of a pain in the ass		gopher.black	70
+ito get installed properly on Ubuntu. It fails to install the		gopher.black	70
+ineeded libraries or puts them in the wrong place. I figured out		gopher.black	70
+ia solve for it on my home machine running Ubuntu 20.04, but my VPS		gopher.black	70
+iwas still having issues since it was on 18.04. Also, the mp3s for		gopher.black	70
+ithe show exceeded my remaining disk space.		gopher.black	70
+i		gopher.black	70
+iSo, I decided to upgrade my VPS to a bigger plan! The next problem		gopher.black	70
+iwas that I didn't have enough remaining disk space to auto-expand		gopher.black	70
+ithe volume with a plan increase. Instead I needed to snapshot the		gopher.black	70
+iinstance and spin up a brand new server on a new plan. Fine fine		gopher.black	70
+ifine... So I did that, but my static IP pointing to the old server		gopher.black	70
+iwouldn't release to let me point it at the new one. This may be		gopher.black	70
+ibecause I chose to put the new server in Amsterdam instead of		gopher.black	70
+iLondon (I still don't trust Brexit). Or maybe it's a Vultr thing		gopher.black	70
+iI couldn't figure out. I have no clue.		gopher.black	70
+i		gopher.black	70
+iSo here I am, restoring this new box with a new IP which means now		gopher.black	70
+iI need to update all my DNS records for the bajillions of domains		gopher.black	70
+ithat point here. I logged into NameSilo, which is my preferred		gopher.black	70
+iregistrar, and I started the process. I really don't like dealing		gopher.black	70
+iwith DNS inside NameSilo, though. For work I typically just point		gopher.black	70
+ithe DNS to DigitalOcean for droplets I make there. Why not do the		gopher.black	70
+isame thing for Vultr? So I did that! I updated the nameservers for		gopher.black	70
+iall those domains and painstakingly set up the DNS on Vultr		gopher.black	70
+iinstead.		gopher.black	70
+i		gopher.black	70
+iAbout this time the box came back up and I just had to wait on DNS		gopher.black	70
+ipropagation. As that finished I was up to my next step, the		gopher.black	70
+iupgrade to 20.04. This VPS was my 5th such upgrade and it went		gopher.black	70
+ivery smooth. I had to manually restart one service and then I was		gopher.black	70
+ijust fighting a few odds and ends. The "python" binary was still		gopher.black	70
+ipointing to python2 which was breaking some things. I blew that		gopher.black	70
+iaway and also removed python2 completely from the system because,		gopher.black	70
+i"screw that jazz". I manually relinked python to python3 and it		gopher.black	70
+iJust Works™. UFW didn't like the upgrade and reset all my firewall		gopher.black	70
+irules, so I did a little netstat check and enabled the necessary		gopher.black	70
+ibits there. And then the last bit of work was going through my		gopher.black	70
+inginx config and patching the few services that weren't showing		gopher.black	70
+iup, like Calibre-web and my URL shortner service at ino.is. While		gopher.black	70
+iI was tinkering I enabled IPv6 for https://tomasino.org because		gopher.black	70
+iI noticed it was missing. I should do the same for my other sites,		gopher.black	70
+ibut I haven't bothered.		gopher.black	70
+i		gopher.black	70
+iAt this point the only things that aren't up and running are:		gopher.black	70
+i		gopher.black	70
+i- The web interface to my syncthing server on the VPS. Syncthing		gopher.black	70
+i  itself is running fine and the data is transmitting fine. I can		gopher.black	70
+i  ssh-tunnel into the VPS and see the web interface, but my nginx		gopher.black	70
+i  reverse proxy won't work. Blerg.		gopher.black	70
+i		gopher.black	70
+i- My minimal gemini server that was running on tomasino.org. That		gopher.black	70
+i  uses ncat, part of the nmap project. When I tried installing		gopher.black	70
+i  that on Ubuntu 20.04 it failed. Maybe I'll set up a proper		gopher.black	70
+i  gemini server instead, or maybe not. I haven't decided.		gopher.black	70
+i		gopher.black	70
+iOh, and once everything was updated I was able to install		gopher.black	70
+iliquidsoap and test out my stream for Sci-Fi Radio. It's		gopher.black	70
+igood-to-go for the stream on Tuesday! Woo!		gopher.black	70
