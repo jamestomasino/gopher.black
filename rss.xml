@@ -3,6 +3,26 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Reading The Roophlochs</title>
+  <link>gopher://gopher.black/1/phlog/20200928-reading-the-roophlochs/</link>
+  <pubdate>Mon, 28 Sep 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+reading the roophlochs
+September 28th, 2020
+----------------------------------------
+
+You are all so amazing. I just read logout, katolaz, and jynx's
+roophloch posts and they're so inspiring. I don't have anything
+exceptional planned to join you this year but that stuff is really
+motivating me to do more. I've been quiet lately and I'm not sure
+that's healthy for me. Gopher is a really special place and
+I should keep sharing.
+
+More to come from me on that front. Until then, well done!
+</pre>]]></description>
+</item>
+<item>
   <title>Vps Upgrades</title>
   <link>gopher://gopher.black/1/phlog/20200920-vps-upgrades/</link>
   <pubdate>Sun, 20 Sep 2020 00:00:00 +0000</pubdate>
@@ -639,67 +659,6 @@ up.
 I won't want my son to feel this way. I'll want him to be happy
 with his life and live it brilliantly. My dad surely wants the
 same. I'm glad for that knowledge too. I just miss my daddy.
-</pre>]]></description>
-</item>
-<item>
-  <title>A Few Years Of Gophering</title>
-  <link>gopher://gopher.black/1/phlog/20200513-a-few-years-of-gophering/</link>
-  <pubdate>Wed, 13 May 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-a few years of gophering
-May 13th, 2020
-----------------------------------------
-
-Our good gopher citizen, solderpunk, recently shared his past
-three years of gophering [0]. What an awesome view, seeing how
-many posts we make on gopher month by month.
-
-[0] solderpunk - three years of gopher
-    gopher://zaibatsu.circumlunar.space/0/~solderpunk/phlog/three-years-of-gopher.txt
-
-I wanted to see the same thing on my own gopher history and he was
-kind enough to share his code. With very little tweaking, I found
-this:
-
-Aug 2017: 13 posts |**************************
-Sep 2017: 15 posts |******************************
-Oct 2017: 09 posts |******************
-Nov 2017: 10 posts |********************
-Dec 2017: 08 posts |****************
-Jan 2018: 19 posts |**************************************
-Feb 2018: 11 posts |**********************
-Mar 2018: 34 posts |************************************************
-                  +|********************
-Apr 2018: 23 posts |**********************************************
-May 2018: 14 posts |****************************
-Jun 2018: 12 posts |************************
-Jul 2018: 17 posts |**********************************
-Aug 2018: 07 posts |**************
-Sep 2018: 07 posts |**************
-Oct 2018: 10 posts |********************
-Nov 2018: 11 posts |**********************
-Dec 2018: 05 posts |**********
-Jan 2019: 09 posts |******************
-Feb 2019: 02 posts |****
-Mar 2019: 04 posts |********
-Apr 2019: 11 posts |**********************
-May 2019: 06 posts |************
-Jun 2019: 04 posts |********
-Jul 2019: 03 posts |******
-Aug 2019: 03 posts |******
-Sep 2019: 08 posts |****************
-Oct 2019: 01 posts |**
-Nov 2019: 02 posts |****
-Dec 2019: 04 posts |********
-Jan 2020: 02 posts |****
-Feb 2020: 04 posts |********
-Mar 2020: 06 posts |************
-Apr 2020: 02 posts |****
-May 2020: 01 posts |**
-
-March of 2018 was CRAZY! 34 posts in 31 days. I guess I had a lot
-to say. We'll see how this goes in the future. :D Thx solderpunk!
 </pre>]]></description>
 </item>
 </channel>
