@@ -1,0 +1,35 @@
+i----------------------------------------		gopher.black	70
+italkd fixes in ubuntu 20.04		gopher.black	70
+iOctober 11th, 2020		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iWhen cosmic voyage updated to ubuntu 20.04 subtle things broke		gopher.black	70
+ithat I didn't notice right away. One of these was talk(1). We were		gopher.black	70
+iusing ytalk(1) as the program of choice back in 18.10, but that		gopher.black	70
+iseems to no longer be in apt. I reinstalled it from source and was		gopher.black	70
+ihopeful that it would do the trick. Not so much.		gopher.black	70
+i		gopher.black	70
+iI fought this for an hour tonight with a very patient voyager		gopher.black	70
+ihelping me out. I tried closing out of mosh and tmux to narrow		gopher.black	70
+idown the issue. Eventually I got a clue from the error message in		gopher.black	70
+isyslog.		gopher.black	70
+i		gopher.black	70
+italkd[411722]: 127.0.0.1 (127.0.0.1): unintelligible packet		gopher.black	70
+i		gopher.black	70
+iI had a lot of these messages and they eventually got me to		gopher.black	70
+ia redhat bug report that suggested removing the inetd entry for		gopher.black	70
+italkd would fix it. I commented that out and left the ntalkd line		gopher.black	70
+iin place.		gopher.black	70
+i		gopher.black	70
+iI also fixed a thing that bugged me from back in the day. The		gopher.black	70
+inobody user had been configured to be a part of the tty group and		gopher.black	70
+iI was using it in that inetd line. That felt dirty since nobody		gopher.black	70
+ishouldn't have access to anything.		gopher.black	70
+i		gopher.black	70
+i  sudo useradd -c 'in.talkd User' \		gopher.black	70
+i  -d /nonexistent \ -s /usr/sbin/nologin \		gopher.black	70
+i  -r -g tty talk		gopher.black	70
+i		gopher.black	70
+iSo I added a 'talk' user, gave it the proper access, and swapped		gopher.black	70
+iinetd to use that instead. Then I gave it a kick (restart the		gopher.black	70
+iprocess) and things are working again. Whew!		gopher.black	70
