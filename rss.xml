@@ -3,6 +3,33 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Resolution</title>
+  <link>gopher://gopher.black/1/phlog/20201231-resolution/</link>
+  <pubdate>Thu, 31 Dec 2020 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Resolution
+December 31st, 2020
+----------------------------------------
+
+Be it resolved: 
+
+This year I shall have a statue built in my honor AND torn down
+in disgrace.
+
+Oh, and regarding that resolution from 2020... 
+Taylor Swift (featuring tomasino) - TomasWillow
+    https://tomasino.is/music/assorted/taylorswift-tomaswillow.mp3
+
+2020 Resolution
+    gopher://gopher.black/1/phlog/20200101-resolution
+2019 Resolution
+    gopher://gopher.black/1/phlog/20181225-resolutions
+2018 Resolution
+    gopher://gopher.black/1/phlog/20180101-resolution
+</pre>]]></description>
+</item>
+<item>
   <title>Seeing Colors</title>
   <link>gopher://gopher.black/1/phlog/20201129-seeing-colors/</link>
   <pubdate>Sun, 29 Nov 2020 00:00:00 +0000</pubdate>
@@ -698,52 +725,6 @@ You can watch my video on peertube or on youtube! [2,3]
     https://toobnix.org/videos/watch/8ee54700-971c-4da3-a8b4-7a78ed9ac42e
 [3] youtube
     https://www.youtube.com/watch?v=DoEI6VzybDk
-</pre>]]></description>
-</item>
-<item>
-  <title>Fun Questions Part 2</title>
-  <link>gopher://gopher.black/1/phlog/20200605-fun-questions-part-2/</link>
-  <pubdate>Fri, 05 Jun 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Fun Questions - Part 2
-June 05th, 2020
-----------------------------------------
-
-Last spring I asked gopherspace a few fun questions to get some
-interactions rolling [0]. Lots of people participated and
-I personally got a lot of joy from seeing both the feedback and
-learning a bit more about all of you. Well, I'm in desperate need
-of some joy right now so I figure it's a good time for part 2!
-
-[0] fun questions
-    gopher://gopher.black/1/phlog/20190330-fun-questions
-
-I'll keep with the theme and ask 3 questions again. If you want to
-participate, you can answer any or all. Phlog the answer over on
-your own gopher hole and we'll read up on them. Send me a note if
-you do so and I'll add a link to the bottom of this post so
-everyone can read your responses.
-
-1. Think back and try to remember the most satisfying drink of
-   water in your life. What's the story of that drink?
-
-2. Have you ever personally witnessed an act off human compassion
-   that brought you to tears?
-
-3. When is the last time you fell off a bicycle?
-
-Replies:
-seedy
-    gopher://seedy.xyz/0/phlog/2020/jun/20200605.txt
-christyotwisty
-    gopher://sdf.org/0/users/christyotwisty/phlog/2020-06-05.txt
-jebug29
-    gopher://sdf.org/0/users/jebug29/log/2020-06/09-0348
-tfurrows
-    gopher://zaibatsu.circumlunar.space/0/~tfurrows/phlog/2020-06-24_reFunQuestions2.txt
-plugd
-    gopher://thelambdalab.xyz/0/phlog/2020-06-23-Eight-Answers-(Replies-to-Tomasino-and-Christina).txt
 </pre>]]></description>
 </item>
 </channel>
