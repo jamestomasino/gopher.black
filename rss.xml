@@ -3,6 +3,19 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Inauguration</title>
+  <link>gopher://gopher.black/1/phlog/20210120-inauguration/</link>
+  <pubdate>Wed, 20 Jan 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+inauguration
+January 20th, 2021
+----------------------------------------
+
+A tangible weight has been lifted from my chest.
+</pre>]]></description>
+</item>
+<item>
   <title>Resolution</title>
   <link>gopher://gopher.black/1/phlog/20201231-resolution/</link>
   <pubdate>Thu, 31 Dec 2020 00:00:00 +0000</pubdate>
@@ -694,37 +707,6 @@ If I have any advice to give on the subject it is to enter into
 divination with healthy skepticism, not to undermine the results
 but to fully engage with them. Don't take any reading at face
 value or you've done yourself a disservice.
-</pre>]]></description>
-</item>
-<item>
-  <title>What Is Gemini</title>
-  <link>gopher://gopher.black/1/phlog/20200612-what-is-gemini/</link>
-  <pubdate>Fri, 12 Jun 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-What is Gemini?
-June 12th, 2020
-----------------------------------------
-
-Last night I recorded a video about the new Gemini protocol [0],
-created by solderpunk [1] which has been _taking off_ remarkably
-well. If you aren't familiar with Gemini by now, it is a new
-protocol that is very similar to gopher but with some
-enhancements. It is still far, far away from being anything like
-the web, but it brings some modern thought and consideration to
-hypertext browsing.
-
-[0] gemini protocol
-    gopher://gemini.circumlunar.space/1/
-[1] solderpunk
-    gopher://zaibatsu.circumlunar.space/1/~solderpunk
-
-You can watch my video on peertube or on youtube! [2,3]
-
-[2] peertube
-    https://toobnix.org/videos/watch/8ee54700-971c-4da3-a8b4-7a78ed9ac42e
-[3] youtube
-    https://www.youtube.com/watch?v=DoEI6VzybDk
 </pre>]]></description>
 </item>
 </channel>
