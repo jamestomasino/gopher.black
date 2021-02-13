@@ -3,6 +3,51 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Bun Day</title>
+  <link>gopher://gopher.black/1/phlog/20210213-bun-day/</link>
+  <pubdate>Sat, 13 Feb 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Bun Day
+February 13th, 2021
+----------------------------------------
+
+Monday is Bun Day here in Iceland. Bollur, the buns of the day,
+are sort of like cream puffs. Folks get jams and whipped cream and
+mix them together and stuff the buns to overflowing, then smother
+them in chocolate sauce. It's a healthy time!
+
+There's also a super-duper Icelandic tradition with bun day that
+many parents choose to not teach their kids. Early on Monday
+morning children in the know will wake up early, sneak into their
+parents' bedroom and WHACK WHACK WHACK them in their bed with
+sticks! However many whacks they get in before the parents get up
+is how many buns they get. Lovely!
+
+Following Bun Day is a sort of Fat Tuesday-like holiday that
+involves gorging yourself on all sorts of special foods that are
+terrible for you. I forget the name of that one, but it's nice
+too. 
+
+Finally we get to Ash Wednesday. Here in Iceland Ash Wednesday is
+the costume & candy holiday. Halloween is a relatively recent
+phenomenon here and not very popular mostly because they already
+have most of those traditions at the start of lent. Kids dress up
+in all sorts of costumes, go to school that way, and then later go
+around begging for candy. But here they don't go to individual
+homes and say "trick or treat". Instead they go to businesses and
+sing songs for their treats! If you head downtown to Reykjavik on
+Wednesday you'll see this in full swing. It's really cute and so
+strange to see bank-branded popcorn bags and the like.
+
+Needless to say the next 3 days are pretty much party-time for the
+kids. No school work will get done and that's a joy in itself.
+Everyone is going to be on a crazy sugar rush. Good for them. :)
+
+
+</pre>]]></description>
+</item>
+<item>
   <title>Inauguration</title>
   <link>gopher://gopher.black/1/phlog/20210120-inauguration/</link>
   <pubdate>Wed, 20 Jan 2021 00:00:00 +0000</pubdate>
@@ -486,227 +531,6 @@ need to change a few config lines:
 
   # inn.conf
   artcutoff: 365
-</pre>]]></description>
-</item>
-<item>
-  <title>Goodbye Tilde Black</title>
-  <link>gopher://gopher.black/1/phlog/20200905-goodbye-tilde-black/</link>
-  <pubdate>Sat, 05 Sep 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-goodbye tilde.black
-September 05th, 2020
-----------------------------------------
-
-A few days ago I woke up to a string of emails about abuse from
-a member of tilde.black upon EFNet, the IRC network. I was about
-to start work and didn't have the energy or time to deal with the
-problem, so I took the server offline. The next day I thought more
-about the situation and realization came to me that I had
-absolutely no desire to spend my time figuring out who the bad
-apple was this time, removing them, and sealing the door against
-them returning. It wasn't the first time I'd had to act upon
-someone taking advantage of the system and it sure looked like
-this wouldn't be the last time either.
-
-When I created tilde.black it was on a whim. I had this silly idea
-that I could pre-generate usernames from dictionary words and then
-when people joined they would get a random name. What better way
-to provide anonymity, right? Since it was going to be a system
-about privacy, I felt a secure OS was warranted and I went with
-openbsd despite knowing nothing about it. This was an opportunity
-to learn, and learn I did. I learned to value and appreciate a lot
-about that system. The sane defaults, the truly incredible
-documentation, and the intuitive configuration were all pleasant
-surprises. The web server, horribly named httpd (try web-searching
-for help on that) was another matter. Shortly before this incident
-I had finally broken down and just installed nginx.
-
-The experiment was good. It lasted far longer than I expected and
-gained far, far more users than I ever thought would find it
-interesting. For one thing the very nature of this private tilde
-went against the concepts of community building that really make
-a tilde work. There was almost no peer engagement happening. But
-people were attracted to the idea of the server. I think, in the
-end, I was too. I really liked the concept of a private, anonymous
-place where people could experiment. In reality it was pretty
-boring, though.
-
-From a user perspective the best thing that came out of it was
-brool, a user who kept a file called "stoned.txt". It was in
-essence a never-ending phlog/journal of random thoughts, ideas,
-and art that came to them while they were high. It was fantastic.
-I'm sad that's not around anymore. I hope whoever made it has
-a copy somewhere and finds a way to ressurect it on another
-server. It spawned a few copy-cat files, but it was a true
-masterpiece and really deserves some recognition.
-
-Beyond that there was some stock market analysis, a few irc bot
-coding projects, the odd shell scripting thing here or there, and
-a few minimal websites. Not a lot to miss.
-
-I had put my initial gemini work up on the server. In fact, I made
-it a point not to put gemini on gopher.black or on any of my
-tomasino domains specifically as an excuse to log into tilde.black
-and do something. That was all backed up in git, though, and has
-since migrated over to tilde.team[0].
-
-[0] Tomasino's Gemini site
-    gemini://tilde.team/~tomasino/
-
-Tilde.Black is shut down for good. I stopped seeing it as fun at
-some point and it had become a burden. I hadn't been able to put
-that into words until this EFNet incident. Were it not for this
-trigger the site may have continued for months more, but it would
-have inevitably fallen. It was a neat idea and that's good enough.
-
-Now I have cosmic.voyage as my sole remaining tilde community and
-I want to put my love back into it. With the growing popularity of
-black I hadn't spent nearly enough time looking after cosmic. It's
-been sort of on autopilot, you might say. There's still writers
-writing. There's still chatters in the channel in IRC. I find
-I still have a passion for it and an excitement for it to continue
-and grow.
-
-This November I'm going to put out a series of writing prompts as
-a sort of mini-contest to see how much we can all write. I don't
-know that there are any prizes, but hey, maybe? I just want to
-really do something for it to give it the love. Do you know what
-I mean?
-
-It reminds me a bit of cat's sites: baud.baby, baud.vision, and
-konpeito.media. There's a guy who has some incredible passion to
-the stuff he puts out there and I am in awe of it each time he
-does so. But like cat, I get bored of it sometimes. Bored isn't
-even the right word. Other things come first and it sort of
-doesn't matter. Or maybe it does matter, but the fact that it
-matters annoys me so I ignore it. Or maybe my mind is just sick of
-dealing with thoughts in the way required to engage with my
-project. There's a hundred metaphors and none are quite correct.
-
-Cosmic will be getting more love soon. Hopefully my gopher hole
-will as well. Once I start writing in one place it's hard not to
-write everywhere. Maybe this post will help kick it off! Either
-way, saying goodbye to Tilde Black feels great.
-</pre>]]></description>
-</item>
-<item>
-  <title>Divination</title>
-  <link>gopher://gopher.black/1/phlog/20200717-divination/</link>
-  <pubdate>Fri, 17 Jul 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-divination
-July 17th, 2020
-----------------------------------------
-
-A few days ago I coded a shell-script version of the I Ching (Book
-of Changes), and made it accessible on Gemini [0]. In the process
-I added a note on the Gemini site quickly addressing some concerns
-over the use of digital tools for divination. It all felt rushed
-and incomplete and I think I have more to say on the subject,
-perhaps a lot more. Gemini isn't the place for that, though. This
-is definitely a gopher topic.
-
-[0] I Ching Shell Script
-    https://github.com/jamestomasino/iching
-
-I practice a number of forms of divination including consulting
-the I Ching, tarot cards, tasseography, cleromancy (whether with
-dice, dominos, or runes), and so on. There's a number of forms
-I don't practice for various reasons: horoscopy, gematria,
-extispicy (ew), ouija, augury, and oh so many more. Someone has
-figured out a way to use just about anything for divination.
-
-Before we get too far into this, let me drop some dictionary magic
-on you. Here's the definition from two online dictionaries: 
-
-  Divination: 
-  
-  1. the practice of seeking knowledge of the future or the
-     unknown by supernatural means
-
-  2. the art or practice that seeks to foresee or foretell future
-     events or discover hidden knowledge usually by the
-     interpretation of omens or by the aid of supernatural powers
-
-Seeking knowledge, usually hidden knowledge, by the aid of the
-supernatural. Cool. Got it?
-
-So there are a billion forms of divination out there, but why? Do
-they all work? Do any of them work? How do they purport to work?
-Lets focus on the last bit first. How does divination work? This
-is the interesting bit for me at least.
-
-In cleromancy the mechanism of action is some sort of randomness.
-Cleromancy is about "tossing stuff" like dice and seeing what
-comes up. Some practitioners suggest that the randomness allows
-the supernatural to take direct action and influence the results
-of the toss. Other practitioners would say that the toss and its
-randomness is just that and not influenced by the supernatural,
-but the querent (person seeking information) must use their
-intuition to understand the results of the toss. That type of
-practitioner moves the supernatural action internal to the
-unconscious mind and changes its domain of action to the
-interpretation alone. But there are still other types! Some see
-the unconscious mind as affecting the toss itself in a sort of
-blend of the first two. Others shy away from intuition and suggest
-self-reflection and psychology allow the interpretation of any
-symbol to be helpful as a means of thinking in a new way about the
-issue.
-
-Yeesh, that's a lot, and that's just cleromancy! But what about
-chartomancy (books & cards)? Is the mechanism of action different?
-
-On the one hand, there are far more established symbols present
-in, say, a tarot card than in a rune. Consulting the I Ching or
-the Bible likewise greatly increases the available symbols and
-interpretations. The act itself is still governed by some sort of
-randomness, or chaotic action as I like to call it. Shuffling
-cards, separating yarrow stalks, even flipping pages promotes some
-sort of uncertainty and allows for the possibility of and unknown.
-
-Does this unknown mean that a supernatural power is guiding the
-result? That's a matter of faith and, ultimately, irrelevant. What
-about the interpretation? Is that guided by a supernatural power?
-Again, a question of faith that has no ultimate bearing on the
-value of divination. What‽
-
-Yeah, you read me correctly. I'm saying that it doesn't matter if
-there's no supernatural involved at all or if there is. The aim of
-divination is to seek to foresee the future or discover hidden
-knowledge and divination can succeed in  both cases regardless of
-the origin of its power.
-
-Lets side with the pragmatic doubter practitioner for a moment and
-assume that there's no magic at work here at all. We're going to
-go through some exercise that will result in symbols ready for
-interpretation. The process we have just taken was designed to
-orient our mind to the problem, focus upon it seriously, perhaps
-spending a significant amount of time in so doing. We are now
-asked to review and interpret these forms which have a variety of
-possible meanings requiring we try to apply them systematically
-and in various combinations to the problem or subject. That
-thought process involves mental judo and an openness to new ideas.
-It will inevitably bring insight and... wait for it... hidden
-knowledge. It will also undoubtedly influence future actions and
-have a major impact on the events to come. BAM! Divined.
-
-Now, allow yourself to take the seat as an individual who has
-faith in the machinations of the supernatural. Given even a hint
-of influence from that "other", the results gain significance and
-their origins may carry more weight, but the interpretation and
-internalization of that information is unchanged. It really
-doesn't matter.
-
-I really enjoy the processes, especially the lengthy ones with
-much ritual like the yarrow stalk I Ching method, or the ones that
-are inherently delicious like tasseography (reading tea leaves).
-
-If I have any advice to give on the subject it is to enter into
-divination with healthy skepticism, not to undermine the results
-but to fully engage with them. Don't take any reading at face
-value or you've done yourself a disservice.
 </pre>]]></description>
 </item>
 </channel>
