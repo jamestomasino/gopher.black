@@ -3,6 +3,38 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Cold</title>
+  <link>gopher://gopher.black/1/phlog/20210227-cold/</link>
+  <pubdate>Sat, 27 Feb 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+cold
+February 27th, 2021
+----------------------------------------
+
+I've got a cold. It's just a regular one, don't worry. Even so,
+it's so frustrating. I go to few places, mix with very few people,
+wear a mask in public, wash my hands and disinfect things, and
+still I get a cold. It's not the first one either. I've been sick
+a lot this past year.
+
+The source is probably the kid and his friends. Little kids bring
+all the illnesses with them and I tend to get them all. Even
+taking that into account, though, they're isolated and their
+spaces are cleaned religiously. They should be a smaller vector
+now too. But my sniffly nose disagrees.
+
+I've started taking in-person Icelandic classes this past week.
+No, the illness isn't from there. Nobody there is sick and we're
+all distanced and whatnot. I go back on Monday and I hope I'm
+feeling better by then. I can't willingly bring a cold into that
+room and I know if I start missing classes I'm not going to keep
+up.
+
+Hurry up, nose!
+</pre>]]></description>
+</item>
+<item>
   <title>Bun Day</title>
   <link>gopher://gopher.black/1/phlog/20210213-bun-day/</link>
   <pubdate>Sat, 13 Feb 2021 00:00:00 +0000</pubdate>
@@ -423,114 +455,6 @@ At this point the only things that aren't up and running are:
 Oh, and once everything was updated I was able to install
 liquidsoap and test out my stream for Sci-Fi Radio. It's
 good-to-go for the stream on Tuesday! Woo!
-</pre>]]></description>
-</item>
-<item>
-  <title>Net News Updates</title>
-  <link>gopher://gopher.black/1/phlog/20200917-net-news-updates/</link>
-  <pubdate>Thu, 17 Sep 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-net news updates
-September 17th, 2020
-----------------------------------------
-
-Last year I wrote a guide on how I set up net news (USENET) on
-Cosmic Voyage [0]. It's designed not to peer with the big USENET,
-but rather with other tilde servers to make a micro net news
-network just for us. That post is still valid and if you run
-a tilde or pubnix and want to peer with cosmic, reach out and let
-me know.
-
-[0] net news on cosmic voyage
-    gopher://gopher.black/1/phlog/20190426-net-news-on-cosmic-voyage
-
-Since Tilde Club rejoined the fold and has become an active member
-of the tildeverse, deepend has been good enough to set up a net
-news node there as well. We ran into some challenges with the
-peering setup early on due to IPV6, but that's been solved. Now
-we're growing together and learning new tricks.
-
-Tilde Club opened up its access for using net news remotely, not
-just from the local system [1]. If you want to jump into the
-conversation now and aren't on Cosmic or Club, you can follow the
-instructions there to do so.
-
-[1] usenet news via tilde.club
-    https://tilde.club/wiki/usenet-news.html
-
-User xwindows was chatting with me today about a mission to fix
-the few problems we have remaining on the network. Perhaps the
-most important is the expiration of old messages. As of this phlog
-Club is set to expire net news messages after only 15 days.
-Hopefully that will be rectified in the next few days, but also
-we're working on a way to suck in all the old posts off cosmic to
-refill the system. Cosmic's posts are set to expire after 1 year,
-so it has much more post data to share with the rest of the
-network. Today's immediate challenge was that cosmic didn't have
-a method to view that data from outside cosmic itself. Unlike Club
-I hadn't set up external access.
-
-With a bit of investigation and some trial & error that has been
-fixed. If you connect to cosmic.voyage from an external net news
-client you can get a read-only view of everything on the system.
-
-The only change required to make this happen was in
-'readers.conf':
-
-  # auth blocks match whichever group succeeds LAST
-  # so having the local group below the wildcard
-  # is important
-
-  auth "default" {
-      hosts: "*"
-      default: "anonymous"
-  }
-
-  auth "localhost" {
-      hosts: "localhost, 127.0.0.1, ::1, stdin"
-      default: "<localhost>"
-  }
-
-  access regular {
-      read: "*,!junk,!control,!control.*"
-  }
-
-  access full {
-      users: "*,!anonymous"
-      newsgroups: "*,!junk,!control,!control.*"
-  }
-
-  access "localhost" {
-      users: "<localhost>"
-      newsgroups: "*,!junk,!control,!control.*"
-      access: RPA
-  }
-
-The first two blocks handle local access which is basically saying
-if you're on cosmic you're good to go. Post away. Otherwise read.
-
-The three blocks following set up a two-case scenario for everyone
-else. If you connect and successfully auth your user will be set
-to whatever your username is. If not, you get the default name
-"anonymous". Then I have a blanket rule for everyone to be able to
-read everything, and finally a special rule for everyone not named
-anonymous allowing posting.
-
-So far testing seems to be working alright!
-
-Oh, and one last thing... If you want to make sure your expiration
-settings are nice and long (say... several years) then you only 
-need to change a few config lines:
-
-  # expire.ctl
-  *:A:365:1095:never
-
-  # innreport.conf
-  cycle 365;
-
-  # inn.conf
-  artcutoff: 365
 </pre>]]></description>
 </item>
 </channel>
