@@ -1,27 +1,27 @@
-i                         |
-i                      _|   \   -_)(_-<(_-<	
-i                    \__|_| _|\___|___/___/	
-
-
-i                       ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖	
-i                       ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙	
-i                       . . . . . . . .	
-i                       . . . . . . . .	
-i                       . . . . . . . .	
-i                       . . . . . . . .	
-i                       ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟	
-i                       ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜	
-
-iGame                   Description	
-
+i                         |		gopher.black	70
+i                      _|   \   -_)(_-<(_-<		gopher.black	70
+i                    \__|_| _|\___|___/___/		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+i                       ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖		gopher.black	70
+i                       ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙		gopher.black	70
+i                       . . . . . . . .		gopher.black	70
+i                       . . . . . . . .		gopher.black	70
+i                       . . . . . . . .		gopher.black	70
+i                       . . . . . . . .		gopher.black	70
+i                       ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟		gopher.black	70
+i                       ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜		gopher.black	70
+i		gopher.black	70
+iGame                   Description		gopher.black	70
+i		gopher.black	70
 0Wins                   PGNs of my winning games	pgn/tomasino-wins.pgn
 0Losses                 PGNs of my losing games	pgn/tomasino-loss.pgn
 0Draws                  PGNs of my drawing games	pgn/tomasino-draws.pgn
 0Blitz                  PGNs of my blitz games	pgn/tomasino-blitz.pgn
-
+i		gopher.black	70
 0Tal Wins White         Games won by Mikhail Tal as White	pgn/tal-wins-white.pgn
 0Tal Wins Black         Games won by Mikhail Tal as Black	pgn/tal-wins-black.pgn
-0Petrosian Wins White   Games won by Mikhail Tal as Black	pgn/petrosian-wins-white.pgn
-0Petrosian Wins Black   Games won by Mikhail Tal as Black	pgn/petrosian-wins-black.pgn
+0Petrosian Wins White   Games won by Tigran Petrosian as White	pgn/petrosian-wins-white.pgn
+0Petrosian Wins Black   Games won by Tigran Petrosian as Black	pgn/petrosian-wins-black.pgn
 0Mating Patterns        Common Mating Patterns	pgn/mating-patterns.pgn
 0Mating Patterns 2      10001 Brilliant Mating Patterns	pgn/1001-brilliant-checkmates.pgn
