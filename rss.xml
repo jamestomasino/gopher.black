@@ -3,6 +3,183 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Stallman</title>
+  <link>gopher://gopher.black/1/phlog/20210326-stallman/</link>
+  <pubdate>Fri, 26 Mar 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Stallman
+March 26th, 2021
+----------------------------------------
+
+Richard Stallman is back on the board of directors at the Free
+Software Foundation (FSF) after having resigned eighteen months
+ago under mounting public pressure for him to be removed for his
+controversial comments about consent in reference to Jeffrey
+Epstein sex-trafficking charges. 
+
+Virginia Roberts Giuffre was a 17 year old victim of Epstein who
+in her deposition stated that she was directed to have sex with
+Marvin Minsky, a member of the MIT faculty. In response to an MIT
+CSAIL (Computer Science and Artificial Intelligence Laboratory)
+email thread planning a protest at MIT over the institution's
+relationship with Epstein, Stallman raised issues with the term
+"assaulting", stating, "The word 'assaulting' presumes that he
+applied force or violence, in some unspecified way, but the
+article itself did say no such thing. Only that they had sex."
+
+In addition to the immediate backlash, statements from Stallman's
+blog added fuel to the flames. I am skeptical of the claim that
+voluntarily [sic] pedophilia harms children." (Stallman, 2006)
+
+In 2019 he later amended, "Through personal conversations in
+recent years, I've learned to understand how sex with a child can
+harm per psychologically. This changed my mind about the matter:
+I think adults should not do that. I am grateful for the
+conversations that enabled me to understand why."
+
+Though often accused of defending Epstein, Stallman has made it
+clear that he sees the man as a serial-rapist and condemns his
+acts. It is instead these statements surrounding the ideas of
+consent and sexual violence that have sparked the majority of the
+outrage.
+
+Many people feel it is appropriate to separate Stallman from the
+FSF and other libre software movements as these personal
+statements and views reflects negatively on that community and
+their efforts. Others see in him a champion unmatched in calling
+for libre software engagement and adoption. Many groups in the
+field have been forced to make a public stance in favor or against
+his involvement, such as Mozilla and the Tor Project [0].
+
+[0] Mozilla and Tor join calls to oust ...
+    https://www.fastcompany.com/90618666/mozilla-and-tor-join-calls-to-oust-richard-stallman-from-free-software-foundation
+
+                           - - -
+
+So what do I think? I think the man is a mixture of good ideas and
+bad. I think he's naturally brusque and his elevated position in
+his narrow community has fed his ego dangerously, as any power is
+wont to do. 
+
+I am also guilty of having been wrong in the past. I'm thankful
+that most of my wrongness isn't in permanent written form and
+I don't have enemies who seek out my own poor behavior in the past
+to drag it into the light today. It's hard enough to change your
+mind without being anchored to those past decisions through
+constant reminder.
+
+Stallman has lived his life in a tech world with tech solutions,
+logic, and a type of pseudo-logical rhetoric that can make his
+statements seem detached or disingenuous. It's something I see
+commonly in communities dominated by autistic people, though it's
+not limited to those or necessarily present among all autistics.
+Whatever the case, it doesn't mesh well with the highly emotional
+topics such as sexual predation. The tone itself harms, which is
+something I suspect Stallman is both unaware of and incapable of
+addressing. Coming from a white man in position of power adds to
+the harm and further alienates those who hear what he says. All
+this harm comes separate from and in addition to the comments
+themselves. He was rightfully argued against in that email list
+and I think the escalation of the issue into a public forum was
+necessary to balance the scales of power. Unfortunately in an
+institution like MIT and in a group like CSAIL the opinions of
+Richard Stallman are not in balance with the others speaking.
+
+We do not currently have a mechanism in our society to address
+these public social grievances of powerful people beyond seeking
+punishment through their employment, platform, sponsorship, and
+other mechanisms that enable their power. Our public speech is
+unbalanced in power in favor of the rich and powerful, and so some
+measures will necessarily be taken to counter it. 
+
+Is it right? Is it just? It is literally our only recourse. It's
+hard to make an ethical judgement without alternatives. I would
+love a world where there were other means of public censor.
+History doesn't provide us many options without blood to model
+after, though. Perhaps getting someone removed from a board of
+directors isn't such a bad course.
+
+And now that he has returned, just 18 months after the incident of
+note and without much change in public opinion, what are we to
+think? Is his short statement on his blog about learning that
+pedophilia is wrong sufficient to let him off the hook for his
+statements minimizing sexual abuse? No, I don't think so. That may
+address his 2006 statements, but not those regarding Virginia
+Roberts Giuffre.
+
+                           - - -
+
+But what of the FSF and libre software in general? Without
+Stallman at the helm will that effort fail?
+
+Here first I will make an ethical statement that libre software is
+not important when juxtaposed by the physical safety of a human
+being. It is not important when juxtaposed with the safety of
+minors, of women, or in relation to sexual abuse. If Richard
+Stallman was the one and only human being who could make libre
+software succeed or fail it is still not worth giving the man
+power if it leads toward the increase in actual harm to actual
+human beings.
+
+Thankfully Stallman isn't that important. He has done quite a bit
+of work in the field. That is unarguable. 
+
+In political theory there is the idea of the Overton window [1].
+There is a spectrum of political discourse from far extreme to
+moderate to far extreme in the other direction. The Overton window
+represents the scope along this spectrum of politically acceptable
+policies. Notably, though, is the need for actors that exceed the
+boundaries of this window to widen it in their given direction.
+For instance, an extreme leftist view allows for a more moderate
+leftist view to be politically acceptable. Without that extremist
+view the window will shift to the right and the moderate practice
+will seem extreme.
+
+[1] Overton window
+    gopher://gopherpedia.com/0/Overton%20window
+
+I think this idea is applicable to more than politics, or perhaps
+more than traditional politics. The politics of technology and
+thir place in the world has extremists and Richard Stallman is
+one. The idea that all software and hardware on a user's system
+must fit his libre definition is one such view. It enables us to
+have more reasonable discussions about the importance of the open
+source community, of public access to code, and intellectual
+property in general.
+
+For this reason I appreciate the Stallmans in the world, but not
+enough to give him a pass on other behavior. Thankfully we still
+have plenty more assholes expanding our Overton window. We don't
+need Stallman for that anymore.
+
+In some cases it is difficult to separate art from artist when the
+artist does something heinous. This is most often if the art
+represents a substantial and important cultural work, or if, as is
+more often the case, it is not an individual work but the work of
+many people. Take the Cosby Show as an example here. Do we
+write-off that television series because of the acts of Bill
+Cosby? That unjustly punishes all of the other actors, staff, and
+production crews that put their work into a very good program to
+spite one man. This is a difficult ethical choice. In the case of
+Richard Stallman it was fairly simple to punish the man and ignore
+the FSF itself 18 months ago. The choice of the board to reinstate
+him, however, now stains the rest of them with the conscious
+choice to value him over the harm his statements cause.
+
+So that's my extremely long-winded way of saying I agree with
+Mozilla and the Tor Project. We must censor Stallman and the FSF
+board of directors. The means of doing so is their removal from
+that position. Let it be done and done peacefully. Let them learn
+from it as Stallman learned that his 2006 statements were
+dangerous and damaging. Maybe by removing them from power others
+will learn as well. These ideas they're arguing are widening an
+Overton window around sexual consent that doesn't need widening.
+Lets quiet the extremists and bring that window to a healthier
+place.
+</pre>]]></description>
+</item>
+<item>
   <title>Cold</title>
   <link>gopher://gopher.black/1/phlog/20210227-cold/</link>
   <pubdate>Sat, 27 Feb 2021 00:00:00 +0000</pubdate>
@@ -362,99 +539,6 @@ that's healthy for me. Gopher is a really special place and
 I should keep sharing.
 
 More to come from me on that front. Until then, well done!
-</pre>]]></description>
-</item>
-<item>
-  <title>Vps Upgrades</title>
-  <link>gopher://gopher.black/1/phlog/20200920-vps-upgrades/</link>
-  <pubdate>Sun, 20 Sep 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-VPS upgrades
-September 20th, 2020
-----------------------------------------
-
-Yesterday I upgraded gopher.black. Technically I did quite a bit
-more than that, but that's probably the most relevant bits for you
-gopherites. I have a personal Vultr VPS that hosts this gopher
-hole as well as most of my personal websites, my weechat IRC
-client, an SMS-to-email relay for my old US-based phone number
-that's now a SIP line, my Calibre library, and a whole bunch of
-other nonsense that nobody cares about but me. That was all
-running on a 25GB instance and doing alright, but free space was
-getting a little tight.
-
-The upgrade was set in motion by my desire to start a new
-TildeRadio show. It's called Sci-Fi Radio and will be airing on
-Tuesdays and Thursdays at 22:00 UTC. It's a 30-minute program that
-plays vintage science fiction radio dramas. Specifically the show
-will start by re-airing all 125 episodes of X Minus One, and NBC
-program from the 1950s. At the conclusion of those episodes we'll
-follow up with Dimension X, and then some other programs. I do
-hope you'll tune in!
-
-Anyway, in order to set up this stream I wanted to queue up all
-the content and then automate the playback via a cron job on my
-VPS. That necessitated installing liquidsoap and having enough
-space for all the files. Liquidsoap is a bit of a pain in the ass
-to get installed properly on Ubuntu. It fails to install the
-needed libraries or puts them in the wrong place. I figured out
-a solve for it on my home machine running Ubuntu 20.04, but my VPS
-was still having issues since it was on 18.04. Also, the mp3s for
-the show exceeded my remaining disk space.
-
-So, I decided to upgrade my VPS to a bigger plan! The next problem
-was that I didn't have enough remaining disk space to auto-expand
-the volume with a plan increase. Instead I needed to snapshot the
-instance and spin up a brand new server on a new plan. Fine fine
-fine... So I did that, but my static IP pointing to the old server
-wouldn't release to let me point it at the new one. This may be
-because I chose to put the new server in Amsterdam instead of
-London (I still don't trust Brexit). Or maybe it's a Vultr thing
-I couldn't figure out. I have no clue.
-
-So here I am, restoring this new box with a new IP which means now
-I need to update all my DNS records for the bajillions of domains
-that point here. I logged into NameSilo, which is my preferred
-registrar, and I started the process. I really don't like dealing
-with DNS inside NameSilo, though. For work I typically just point
-the DNS to DigitalOcean for droplets I make there. Why not do the
-same thing for Vultr? So I did that! I updated the nameservers for
-all those domains and painstakingly set up the DNS on Vultr
-instead.
-
-About this time the box came back up and I just had to wait on DNS
-propagation. As that finished I was up to my next step, the
-upgrade to 20.04. This VPS was my 5th such upgrade and it went
-very smooth. I had to manually restart one service and then I was
-just fighting a few odds and ends. The "python" binary was still
-pointing to python2 which was breaking some things. I blew that
-away and also removed python2 completely from the system because,
-"screw that jazz". I manually relinked python to python3 and it
-Just Works™. UFW didn't like the upgrade and reset all my firewall
-rules, so I did a little netstat check and enabled the necessary
-bits there. And then the last bit of work was going through my
-nginx config and patching the few services that weren't showing
-up, like Calibre-web and my URL shortner service at ino.is. While
-I was tinkering I enabled IPv6 for https://tomasino.org because
-I noticed it was missing. I should do the same for my other sites,
-but I haven't bothered.
-
-At this point the only things that aren't up and running are:
-
-- The web interface to my syncthing server on the VPS. Syncthing
-  itself is running fine and the data is transmitting fine. I can
-  ssh-tunnel into the VPS and see the web interface, but my nginx
-  reverse proxy won't work. Blerg.
-
-- My minimal gemini server that was running on tomasino.org. That
-  uses ncat, part of the nmap project. When I tried installing
-  that on Ubuntu 20.04 it failed. Maybe I'll set up a proper
-  gemini server instead, or maybe not. I haven't decided.
-
-Oh, and once everything was updated I was able to install
-liquidsoap and test out my stream for Sci-Fi Radio. It's
-good-to-go for the stream on Tuesday! Woo!
 </pre>]]></description>
 </item>
 </channel>
