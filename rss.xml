@@ -3,6 +3,51 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Limited Resources</title>
+  <link>gopher://gopher.black/1/phlog/20210330-limited-resources/</link>
+  <pubdate>Tue, 30 Mar 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+limited resources
+March 30th, 2021
+----------------------------------------
+
+Tonight I set up resource limits on cosmic. Specifically I set up
+CPU and Memory limits for users. I don't get a lot of bad eggs
+amongst the voyagers, but it's easy to take a bigger slice of the
+pie than you intend on a tiny tilde. Someone had a newsreader
+running tonight that was accidentally using the entire 1024MB
+I have to offer.
+
+I wasn't sure how to set this up, so I did a little research and
+for once systemd came to the rescue. Here's what I did:
+
+----
+
+mkdir -p /etc/systemd/system/user-.slice.d
+
+cat > /etc/systemd/system/user-.slice.d/50-memory.conf << EOF
+[Slice]
+MemoryMax=80M
+CPUQuota=8%
+EOF
+
+sudo vim /etc/systemd/system.conf
+
+# uncomment and set the following values in that file:
+DefaultCPUAccounting=yes
+DefaultMemoryAccounting=yes
+
+systemctl daemon-reload
+
+----
+
+And that's it! I may tweak those quota values over time to make
+sure the system stays healthy but people can still use it. So far
+so good.
+</pre>]]></description>
+</item>
+<item>
   <title>Cli Tricks Remind</title>
   <link>gopher://gopher.black/1/phlog/20210330-cli-tricks-remind/</link>
   <pubdate>Tue, 30 Mar 2021 00:00:00 +0000</pubdate>
@@ -608,48 +653,6 @@ not pretending to be one. It's literally named for the one guy.
 I am okay with this. They could have made the entire show about
 him growing grapes on his vineyard and I'd have sat through it to
 see Patrick Stewart act.
-</pre>]]></description>
-</item>
-<item>
-  <title>Talkd Fixes In Ubuntu 20 04</title>
-  <link>gopher://gopher.black/1/phlog/20201011-talkd-fixes-in-ubuntu-20-04/</link>
-  <pubdate>Sun, 11 Oct 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-talkd fixes in ubuntu 20.04
-October 11th, 2020
-----------------------------------------
-
-When cosmic voyage updated to ubuntu 20.04 subtle things broke
-that I didn't notice right away. One of these was talk(1). We were
-using ytalk(1) as the program of choice back in 18.10, but that
-seems to no longer be in apt. I reinstalled it from source and was
-hopeful that it would do the trick. Not so much.
-
-I fought this for an hour tonight with a very patient voyager
-helping me out. I tried closing out of mosh and tmux to narrow
-down the issue. Eventually I got a clue from the error message in
-syslog.
-
-talkd[411722]: 127.0.0.1 (127.0.0.1): unintelligible packet
-
-I had a lot of these messages and they eventually got me to
-a redhat bug report that suggested removing the inetd entry for
-talkd would fix it. I commented that out and left the ntalkd line
-in place.
-
-I also fixed a thing that bugged me from back in the day. The
-nobody user had been configured to be a part of the tty group and
-I was using it in that inetd line. That felt dirty since nobody
-shouldn't have access to anything.
-
-  sudo useradd -c 'in.talkd User' \
-  -d /nonexistent \ -s /usr/sbin/nologin \
-  -r -g tty talk
-
-So I added a 'talk' user, gave it the proper access, and swapped
-inetd to use that instead. Then I gave it a kick (restart the
-process) and things are working again. Whew!
 </pre>]]></description>
 </item>
 </channel>

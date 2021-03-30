@@ -1,0 +1,38 @@
+i----------------------------------------		gopher.black	70
+ilimited resources		gopher.black	70
+iMarch 30th, 2021		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iTonight I set up resource limits on cosmic. Specifically I set up		gopher.black	70
+iCPU and Memory limits for users. I don't get a lot of bad eggs		gopher.black	70
+iamongst the voyagers, but it's easy to take a bigger slice of the		gopher.black	70
+ipie than you intend on a tiny tilde. Someone had a newsreader		gopher.black	70
+irunning tonight that was accidentally using the entire 1024MB		gopher.black	70
+iI have to offer.		gopher.black	70
+i		gopher.black	70
+iI wasn't sure how to set this up, so I did a little research and		gopher.black	70
+ifor once systemd came to the rescue. Here's what I did:		gopher.black	70
+i		gopher.black	70
+i----		gopher.black	70
+i		gopher.black	70
+imkdir -p /etc/systemd/system/user-.slice.d		gopher.black	70
+i		gopher.black	70
+icat > /etc/systemd/system/user-.slice.d/50-memory.conf << EOF		gopher.black	70
+i[Slice]		gopher.black	70
+iMemoryMax=80M		gopher.black	70
+iCPUQuota=8%		gopher.black	70
+iEOF		gopher.black	70
+i		gopher.black	70
+isudo vim /etc/systemd/system.conf		gopher.black	70
+i		gopher.black	70
+i# uncomment and set the following values in that file:		gopher.black	70
+iDefaultCPUAccounting=yes		gopher.black	70
+iDefaultMemoryAccounting=yes		gopher.black	70
+i		gopher.black	70
+isystemctl daemon-reload		gopher.black	70
+i		gopher.black	70
+i----		gopher.black	70
+i		gopher.black	70
+iAnd that's it! I may tweak those quota values over time to make		gopher.black	70
+isure the system stays healthy but people can still use it. So far		gopher.black	70
+iso good.		gopher.black	70
