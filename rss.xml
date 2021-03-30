@@ -3,6 +3,137 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Cli Tricks Remind</title>
+  <link>gopher://gopher.black/1/phlog/20210330-cli-tricks-remind/</link>
+  <pubdate>Tue, 30 Mar 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+CLI Tricks: remind
+March 30th, 2021
+----------------------------------------
+
+remind - a sophisticated reminder service
+
+One of the little cool CLI utilities I've been meaning to use is
+remind(1). It's a tool with a plain text, human readable calendar
+format and some hefty power under the hood.
+
+Let's look at an example entry in a reminder file:
+
+  REM July 6 +7 MSG tomasino's birthday %b%
+
+In looking at this line you can have a pretty good guess what it
+means without any help at all. These insructions can become far
+more complex and esoteric as you start using the powerful
+programming features built into remind, but most of your entries
+are probably going to be as simple as this.
+
+The main structure of a remind entry is:
+
+  <trigger> <action> <body>
+
+In the example above the trigger is:
+
+  REM July 6 +7
+
+The action is:
+
+  MSG
+
+And the body is:
+
+  tomasino's birthday %b
+
+Technically the "REM" at the start is optional, except in some
+weird cases where the line might begin with OMIT or RUN. It's
+safest just to keep it. Every line ends in % also.
+
+Want the full list of options for a REM line? Sure...
+
+REM  [ONCE] [date_spec] [back] [delta] [repeat] [PRIORITY prio]
+[SKIP | BEFORE | AFTER] [OMIT omit_list]  [OMITFUNC  omit_func‐
+tion] [AT time [tdelta] [trepeat]] [SCHED sched_function] [WARN
+warn_function] [UNTIL expiry_date | THROUGH  last_date]  [SCAN‐
+FROM scan_date | FROM start_date] [DURATION duration] [TAG tag]
+<MSG | MSF | RUN | CAL | SATISFY | SPECIAL special | PS  |  PS‐
+FILE> body
+
+The trigger section is often a date and they follow some really
+simple and intuitive rules. If you list a full date including day,
+month, and year, then it will trigger on that day. If you omit the
+year then it will remind you on that calendar day every year. Omit
+the month and it will remind you on that day every month. Simple,
+right?
+
+What if you want the reminder to occur for several days leading up
+to the date? Just like in my example above, the +7 following
+a date will do that. In my case you get a full week's worth of
+reminders leading up to my birthday.
+
+Date's can be more than just calendar days, though. For instance:
+
+  REM SUN 1 --7 at 23:30 MSG Tilde Trivia with Tomasino %
+
+Here I'm setting the date to the first Sunday of the month, minus
+seven days at 11:30pm. Well, if you move backwards one week from
+the first sunday that gets you the last sunday of the month.
+A nice trick, right? Here we have a reminder for my radio show on
+tilderadio.org. I should note that all times in remind(1) are in
+your local timezone. If you are scripting something with external
+data and need to convert timezones there are functions built in
+for that, though.
+
+So far I've just shown off the MSG action, but there are several
+others. Most notably there's the RUN action, which lets you
+execute a program on your machine when the trigger occurs. Perhaps
+you want to use that to output your todo list every Monday? Or
+maybe you have it automatically email you a system report on the
+second Tuesday of the month. There's no limit to the options
+available.
+
+So how do you use it?
+
+Well, first you install remind(1). It's available in apt and most
+other package managers. There's a package for MacOS as well. It
+will come with two executables: remind(1) and rem(1). The latter
+is a shortcut that will run remind(1) with the default remind file
+(normally ~/.reminders, but you can change it with an ENV var).
+
+In my .profile I have the environment variable set to use a remind
+file in XDG_CONFIG_HOME since I like a clean home dir.
+
+  export DOTREMINDERS=$XDG_CONFIG_HOME/remind/reminders
+
+Then inside that 'reminders' file I use a tiny script to
+automatically include any files that match "*.rem" inside
+a special syncthing folder:
+
+  SET HOME getenv("HOME")
+  include [HOME]/.syncthing/remind/
+
+This means I can organize my stuff into relevant files like
+"work.rem" and "birthdays.rem".
+
+There's an incredible amount of depth you can get into with this
+thing. It can output to a terminal calendar or even an html
+calendar or just the plain reminders. It can generate a postscript
+printer file and allows advanced commands for shading. It has
+a robust programming language built in as well that will make you
+scratch your head at first and then scoff at the childish
+limitations of Outlook and Google Calendar. You can even build
+your own custom functions in this thing.
+
+The remind(1) man page is well written and packed full of
+examples, but there's also some great tutorials online. Here's
+a few to start your explorations:
+
+Keep your calendar in plain text with Remind
+    https://lifehacker.com/geek-to-live-keep-your-calendar-in-plain-text-with-rem-186661
+Roaring Penguin's Remind FAQ
+    https://www.roaringpenguin.com/wiki/index.php/Remind_FAQ
+</pre>]]></description>
+</item>
+<item>
   <title>Stallman</title>
   <link>gopher://gopher.black/1/phlog/20210326-stallman/</link>
   <pubdate>Fri, 26 Mar 2021 00:00:00 +0000</pubdate>
@@ -137,7 +268,7 @@ view the window will shift to the right and the moderate practice
 will seem extreme.
 
 [1] Overton window
-    gopher://gopherpedia.com/0/Overton%20window
+    gopher://gopherpedia.com/0/Overton window
 
 I think this idea is applicable to more than politics, or perhaps
 more than traditional politics. The politics of technology and
@@ -519,26 +650,6 @@ shouldn't have access to anything.
 So I added a 'talk' user, gave it the proper access, and swapped
 inetd to use that instead. Then I gave it a kick (restart the
 process) and things are working again. Whew!
-</pre>]]></description>
-</item>
-<item>
-  <title>Reading The Roophlochs</title>
-  <link>gopher://gopher.black/1/phlog/20200928-reading-the-roophlochs/</link>
-  <pubdate>Mon, 28 Sep 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-reading the roophlochs
-September 28th, 2020
-----------------------------------------
-
-You are all so amazing. I just read logout, katolaz, and jynx's
-roophloch posts and they're so inspiring. I don't have anything
-exceptional planned to join you this year but that stuff is really
-motivating me to do more. I've been quiet lately and I'm not sure
-that's healthy for me. Gopher is a really special place and
-I should keep sharing.
-
-More to come from me on that front. Until then, well done!
 </pre>]]></description>
 </item>
 </channel>

@@ -1,0 +1,122 @@
+i----------------------------------------		gopher.black	70
+iCLI Tricks: remind		gopher.black	70
+iMarch 30th, 2021		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iremind - a sophisticated reminder service		gopher.black	70
+i		gopher.black	70
+iOne of the little cool CLI utilities I've been meaning to use is		gopher.black	70
+iremind(1). It's a tool with a plain text, human readable calendar		gopher.black	70
+iformat and some hefty power under the hood.		gopher.black	70
+i		gopher.black	70
+iLet's look at an example entry in a reminder file:		gopher.black	70
+i		gopher.black	70
+i  REM July 6 +7 MSG tomasino's birthday %b%		gopher.black	70
+i		gopher.black	70
+iIn looking at this line you can have a pretty good guess what it		gopher.black	70
+imeans without any help at all. These insructions can become far		gopher.black	70
+imore complex and esoteric as you start using the powerful		gopher.black	70
+iprogramming features built into remind, but most of your entries		gopher.black	70
+iare probably going to be as simple as this.		gopher.black	70
+i		gopher.black	70
+iThe main structure of a remind entry is:		gopher.black	70
+i		gopher.black	70
+i  <trigger> <action> <body>		gopher.black	70
+i		gopher.black	70
+iIn the example above the trigger is:		gopher.black	70
+i		gopher.black	70
+i  REM July 6 +7		gopher.black	70
+i		gopher.black	70
+iThe action is:		gopher.black	70
+i		gopher.black	70
+i  MSG		gopher.black	70
+i		gopher.black	70
+iAnd the body is:		gopher.black	70
+i		gopher.black	70
+i  tomasino's birthday %b		gopher.black	70
+i		gopher.black	70
+iTechnically the "REM" at the start is optional, except in some		gopher.black	70
+iweird cases where the line might begin with OMIT or RUN. It's		gopher.black	70
+isafest just to keep it. Every line ends in % also.		gopher.black	70
+i		gopher.black	70
+iWant the full list of options for a REM line? Sure...		gopher.black	70
+i		gopher.black	70
+iREM  [ONCE] [date_spec] [back] [delta] [repeat] [PRIORITY prio]		gopher.black	70
+i[SKIP | BEFORE | AFTER] [OMIT omit_list]  [OMITFUNC  omit_func‐		gopher.black	70
+ition] [AT time [tdelta] [trepeat]] [SCHED sched_function] [WARN		gopher.black	70
+iwarn_function] [UNTIL expiry_date | THROUGH  last_date]  [SCAN‐		gopher.black	70
+iFROM scan_date | FROM start_date] [DURATION duration] [TAG tag]		gopher.black	70
+i<MSG | MSF | RUN | CAL | SATISFY | SPECIAL special | PS  |  PS‐		gopher.black	70
+iFILE> body		gopher.black	70
+i		gopher.black	70
+iThe trigger section is often a date and they follow some really		gopher.black	70
+isimple and intuitive rules. If you list a full date including day,		gopher.black	70
+imonth, and year, then it will trigger on that day. If you omit the		gopher.black	70
+iyear then it will remind you on that calendar day every year. Omit		gopher.black	70
+ithe month and it will remind you on that day every month. Simple,		gopher.black	70
+iright?		gopher.black	70
+i		gopher.black	70
+iWhat if you want the reminder to occur for several days leading up		gopher.black	70
+ito the date? Just like in my example above, the +7 following		gopher.black	70
+ia date will do that. In my case you get a full week's worth of		gopher.black	70
+ireminders leading up to my birthday.		gopher.black	70
+i		gopher.black	70
+iDate's can be more than just calendar days, though. For instance:		gopher.black	70
+i		gopher.black	70
+i  REM SUN 1 --7 at 23:30 MSG Tilde Trivia with Tomasino %		gopher.black	70
+i		gopher.black	70
+iHere I'm setting the date to the first Sunday of the month, minus		gopher.black	70
+iseven days at 11:30pm. Well, if you move backwards one week from		gopher.black	70
+ithe first sunday that gets you the last sunday of the month.		gopher.black	70
+iA nice trick, right? Here we have a reminder for my radio show on		gopher.black	70
+itilderadio.org. I should note that all times in remind(1) are in		gopher.black	70
+iyour local timezone. If you are scripting something with external		gopher.black	70
+idata and need to convert timezones there are functions built in		gopher.black	70
+ifor that, though.		gopher.black	70
+i		gopher.black	70
+iSo far I've just shown off the MSG action, but there are several		gopher.black	70
+iothers. Most notably there's the RUN action, which lets you		gopher.black	70
+iexecute a program on your machine when the trigger occurs. Perhaps		gopher.black	70
+iyou want to use that to output your todo list every Monday? Or		gopher.black	70
+imaybe you have it automatically email you a system report on the		gopher.black	70
+isecond Tuesday of the month. There's no limit to the options		gopher.black	70
+iavailable.		gopher.black	70
+i		gopher.black	70
+iSo how do you use it?		gopher.black	70
+i		gopher.black	70
+iWell, first you install remind(1). It's available in apt and most		gopher.black	70
+iother package managers. There's a package for MacOS as well. It		gopher.black	70
+iwill come with two executables: remind(1) and rem(1). The latter		gopher.black	70
+iis a shortcut that will run remind(1) with the default remind file		gopher.black	70
+i(normally ~/.reminders, but you can change it with an ENV var).		gopher.black	70
+i		gopher.black	70
+iIn my .profile I have the environment variable set to use a remind		gopher.black	70
+ifile in XDG_CONFIG_HOME since I like a clean home dir.		gopher.black	70
+i		gopher.black	70
+i  export DOTREMINDERS=$XDG_CONFIG_HOME/remind/reminders		gopher.black	70
+i		gopher.black	70
+iThen inside that 'reminders' file I use a tiny script to		gopher.black	70
+iautomatically include any files that match "*.rem" inside		gopher.black	70
+ia special syncthing folder:		gopher.black	70
+i		gopher.black	70
+i  SET HOME getenv("HOME")		gopher.black	70
+i  include [HOME]/.syncthing/remind/		gopher.black	70
+i		gopher.black	70
+iThis means I can organize my stuff into relevant files like		gopher.black	70
+i"work.rem" and "birthdays.rem".		gopher.black	70
+i		gopher.black	70
+iThere's an incredible amount of depth you can get into with this		gopher.black	70
+ithing. It can output to a terminal calendar or even an html		gopher.black	70
+icalendar or just the plain reminders. It can generate a postscript		gopher.black	70
+iprinter file and allows advanced commands for shading. It has		gopher.black	70
+ia robust programming language built in as well that will make you		gopher.black	70
+iscratch your head at first and then scoff at the childish		gopher.black	70
+ilimitations of Outlook and Google Calendar. You can even build		gopher.black	70
+iyour own custom functions in this thing.		gopher.black	70
+i		gopher.black	70
+iThe remind(1) man page is well written and packed full of		gopher.black	70
+iexamples, but there's also some great tutorials online. Here's		gopher.black	70
+ia few to start your explorations:		gopher.black	70
+i		gopher.black	70
+hKeep your calendar in plain text with Remind	URL:https://lifehacker.com/geek-to-live-keep-your-calendar-in-plain-text-with-rem-186661
+hRoaring Penguin's Remind FAQ	URL:https://www.roaringpenguin.com/wiki/index.php/Remind_FAQ
