@@ -1,0 +1,70 @@
+i----------------------------------------		gopher.black	70
+ipython virtualenv invoking without activate		gopher.black	70
+iApril 26th, 2021		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI like python. I do not like python packaging. I run into the same		gopher.black	70
+iproblem again and again: I want to make a useful tool like		gopher.black	70
+i'burrow' that can be distributed and used by others (or myself on		gopher.black	70
+iother systems). Inevitably I'll need to use other packages,		gopher.black	70
+ithough, so I'll need to pip-install those. I don't want to pollute		gopher.black	70
+ithe system, though, so I'd better create a virtual environment and		gopher.black	70
+iinstall those there. So now I have my requirements.txt file and		gopher.black	70
+ican do things inside this little container, but now what?		gopher.black	70
+i		gopher.black	70
+iDo I bundle this thing and put it in pip? Am I now expecting		gopher.black	70
+isomeone else will pip install it globally to run it on their		gopher.black	70
+isystem? Of course not, because everything python should be safely		gopher.black	70
+istored away in a virtual environment. But I don't want them to		gopher.black	70
+iwrite a program that uses my program as a library. I just want to		gopher.black	70
+iinvoke it? Does that change the rules? Will my app's dependencies		gopher.black	70
+ithen pollute their system?		gopher.black	70
+i		gopher.black	70
+iAnd then I throw my hands in the air and give up and do something		gopher.black	70
+ielse.		gopher.black	70
+i		gopher.black	70
+iWell, recently I decided I wanted to work on a side-project on		gopher.black	70
+icosmic that khuxkm started in python: an anonymous remailer that		gopher.black	70
+iactually works over email. We'd gone down this path in the past		gopher.black	70
+iand it almost worked. I had motivation and wanted to see it		gopher.black	70
+ithrough. Immediately I knew I was about to hit that problem from		gopher.black	70
+iabove, though. In fact, I was going to hit it with even more		gopher.black	70
+icomplications.		gopher.black	70
+i		gopher.black	70
+iSee, in order to handle incoming mail and pass it off to a script		gopher.black	70
+iI was using a feature of ~/.forward that lets you do that. The		gopher.black	70
+i.forward file works just like the aliases system file, but only on		gopher.black	70
+ithe right-hand side of an alias definition. That means you can do		gopher.black	70
+imore than just specify an email or emails to deliver the mail to,		gopher.black	70
+iyou can pipe it to a script like so:		gopher.black	70
+i		gopher.black	70
+i  |/home/anonhmmst/mailhandler/parse_email.py		gopher.black	70
+i		gopher.black	70
+iThat leading pipe is important. It's also important to know that		gopher.black	70
+iscripts invoked this way are passed the contents of the incoming		gopher.black	70
+imail, but invoked by the 'nobody' user. That's a security thing		gopher.black	70
+iand for the best, but it complicated my script running.		gopher.black	70
+i		gopher.black	70
+iIf I used the anonhmmst user and installed python packages for		gopher.black	70
+ithis parse_email.py script at the user-level they wouldn't work		gopher.black	70
+iwhen invoked by nobody. I needed to set up a virtual environment		gopher.black	70
+ito get everything bundled, but I also needed a way to invoke it		gopher.black	70
+iwithout having to manually activate the virtual environment first.		gopher.black	70
+i		gopher.black	70
+iThe solution turned out to be pretty simple:		gopher.black	70
+i  - make the python script executable		gopher.black	70
+i  - point the hashbang at the virtual environment python binary		gopher.black	70
+i		gopher.black	70
+iIn my case:		gopher.black	70
+i		gopher.black	70
+i  #!/home/anonhmmst/mailhandler/env/bin/python3		gopher.black	70
+i		gopher.black	70
+iI had to do a bit more work on cosmic with the sudoers file to		gopher.black	70
+ienable the nobody user to run some cosmic-specific scripts, but		gopher.black	70
+ithe virtual-environment setup was the big take-away. It doesn't		gopher.black	70
+isolve all my python packaging woes, but it fixed this one nicely.		gopher.black	70
+i		gopher.black	70
+iWhat about you? What do you do in these situations? Do you pip		gopher.black	70
+iinstall binaries as your user without virtual environments for		gopher.black	70
+iutilities or do you wrap them in a virtual environment somehow?		gopher.black	70
+iHow do you distribute your own projects?		gopher.black	70

@@ -3,6 +3,83 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Python Virtualenv Invoking Without Activate</title>
+  <link>gopher://gopher.black/1/phlog/20210426-python-virtualenv-invoking-without-activate/</link>
+  <pubdate>Mon, 26 Apr 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+python virtualenv invoking without activate
+April 26th, 2021
+----------------------------------------
+
+I like python. I do not like python packaging. I run into the same
+problem again and again: I want to make a useful tool like
+'burrow' that can be distributed and used by others (or myself on
+other systems). Inevitably I'll need to use other packages,
+though, so I'll need to pip-install those. I don't want to pollute
+the system, though, so I'd better create a virtual environment and
+install those there. So now I have my requirements.txt file and
+can do things inside this little container, but now what?
+
+Do I bundle this thing and put it in pip? Am I now expecting
+someone else will pip install it globally to run it on their
+system? Of course not, because everything python should be safely
+stored away in a virtual environment. But I don't want them to
+write a program that uses my program as a library. I just want to
+invoke it? Does that change the rules? Will my app's dependencies
+then pollute their system?
+
+And then I throw my hands in the air and give up and do something
+else.
+
+Well, recently I decided I wanted to work on a side-project on
+cosmic that khuxkm started in python: an anonymous remailer that
+actually works over email. We'd gone down this path in the past
+and it almost worked. I had motivation and wanted to see it
+through. Immediately I knew I was about to hit that problem from
+above, though. In fact, I was going to hit it with even more
+complications.
+
+See, in order to handle incoming mail and pass it off to a script
+I was using a feature of ~/.forward that lets you do that. The
+.forward file works just like the aliases system file, but only on
+the right-hand side of an alias definition. That means you can do
+more than just specify an email or emails to deliver the mail to,
+you can pipe it to a script like so:
+
+  |/home/anonhmmst/mailhandler/parse_email.py
+
+That leading pipe is important. It's also important to know that
+scripts invoked this way are passed the contents of the incoming
+mail, but invoked by the 'nobody' user. That's a security thing
+and for the best, but it complicated my script running.
+
+If I used the anonhmmst user and installed python packages for
+this parse_email.py script at the user-level they wouldn't work
+when invoked by nobody. I needed to set up a virtual environment
+to get everything bundled, but I also needed a way to invoke it
+without having to manually activate the virtual environment first.
+
+The solution turned out to be pretty simple:
+  - make the python script executable
+  - point the hashbang at the virtual environment python binary
+
+In my case:
+
+  #!/home/anonhmmst/mailhandler/env/bin/python3
+
+I had to do a bit more work on cosmic with the sudoers file to
+enable the nobody user to run some cosmic-specific scripts, but
+the virtual-environment setup was the big take-away. It doesn't
+solve all my python packaging woes, but it fixed this one nicely.
+
+What about you? What do you do in these situations? Do you pip
+install binaries as your user without virtual environments for
+utilities or do you wrap them in a virtual environment somehow?
+How do you distribute your own projects?
+</pre>]]></description>
+</item>
+<item>
   <title>Limited Resources</title>
   <link>gopher://gopher.black/1/phlog/20210330-limited-resources/</link>
   <pubdate>Tue, 30 Mar 2021 00:00:00 +0000</pubdate>
@@ -500,159 +577,6 @@ selective about that in good ol' brain meats, that would make
 sense.
 
 Have you ever tried this? Any luck?
-</pre>]]></description>
-</item>
-<item>
-  <title>Star Trek Discovery</title>
-  <link>gopher://gopher.black/1/phlog/20201126-star-trek-discovery/</link>
-  <pubdate>Thu, 26 Nov 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Star Trek Discovery
-November 26th, 2020
-----------------------------------------
-
-Holy shit, this show is the worst. It's physically painful for me.
-Uggggghhhhhhh.
-
-I was thinking about doing a systematic take-down laying out all
-the failings in a logical way and truly sticking it to the
-writers, but who has the energy for all that. Instead, here's
-a rambling whine of why I think this is officially the worst trek
-that has ever been.
-
-First and foremost, Star Trek has always been an ensemble story*.
-Discovery is a major departure for that and tries to lie to itself
-that it's not. But James, what about the shaved-head pilot girl,
-and the red-head, and the squid-faced guy, and the mushroom drive
-guy and his husband the doctor? Fine. Name them. Seriously. What
-is anyone's name on this damn show? Don't know, don't care. Nobody
-gets more than half an episode of back-story except our darling.
-
-Michael Burnham is the main character. She is, quite frankly,
-a Mary Sue of the worst variety. Not only is every problem faced
-by the universe something that she needs to fix personally, but
-she will mutiny and disobey direct orders to do so only to be
-forgiven time and time again because "she had no choice."
-Bullshit. Utter crap. This character is relentlessly self-absorbed
-and pig-headed. She acts recklessly and has gotten her own best
-friend and captain killed in the process but learned nothing from
-it. The worst of it is that she as this false modesty. "We'll do
-it as a team," she says to the crew of nameless people after she
-just went off solo and spoke for the whole federation without
-consulting anyone on shit.
-
-And what is with that? Everything Discovery does is saving the
-entire universe or starting or ending galactic wars, the end of
-all life, or some massive thing like that. The show starts out
-with the Klingon wars which they either started or ended or both,
-I can't keep it straight. Next up they're destroying empires in
-the mirror universe and then I guess they ran out of history to
-mess with so they've jumped forward in time so the Federation is
-failing again so they can save it anew. This is a bad fanfiction
-where everything needs to be the 100% most dramatic bullshit at
-any moment. Why is one ship that nobody has ever heard of or
-mentioned at all at the heart of every fucking event in history?
-Why even mention the ship, how about we just mention Michael
-Burnham, who has saved everything countless times and deserves
-a whole planet to be carved into a statue of her. Except she is
-also so meaningless that nobody ever mentioned that Spock had
-a sister and she was human and did all this stuff. Yeah. that's
-right. Spock's sister. Cause fanfic.
-
-Okay, okay, so the plots are dumb and the characters illogical,
-non-trek in style, and flat. But at least it's well constructed,
-right? Well... sorta, except how the big bad Klingon lady in the
-first season had such a shitty mask on she couldn't speak clearly
-through it and everything came out muffled. Or there's the lens
-flares on everything as if JJ Abrams didn't get his ass chewed out
-over that a decade ago. Or silly things like having the saucer
-section spin. Why does it do that? What purpose does that possibly
-serve? And why does the ship flip upside down when it travels on
-the mushroom super-highway.
-
-Riiiiight, did I not mention the mushroom super-highway before?
-That's the show's mcguffin right there. It can go anywhere
-instantly. Nice, right? Except maybe that was a little too
-powerful so we'll spend the next 3 seasons hamstringing it and
-trying to backpedal. 
-
-There's just so much stupid shit I can keep going forever. In
-tonight's episode, for instance, the captain decided that after
-Michael Burnham's 53rd disobeying of orders he should probably not
-make her his first officer anymore. So who should replace her? Oh,
-what about the plucky comic relief ensign? She's literally the
-lowest ranked person on the entire fucking ship. Let's make her #2
-in charge, mmmkay? But she's obviously not cut out for it and is
-gonna sweat over the decision. I know, we'll have everyone chime
-in and tell her to say yes to the dress and it'll be this epic
-moment of solidarity. *VOMIT*
-
-And that brings me to my last point. Last not because it's the
-last thing wrong with the show but because I'm too bored of
-talking about this waste of time to continue. "The Epic Moment"
-
-That's what this show tries to be. The Epic Moment, again and
-again and again. Why? Cause that's what fanfic does. Jump from
-amazing thing to amazing thing, let your Mary Sue save the day and
-have Epic Moments. Monologue, YES. Threaten and then do some
-badass fighty shit and win. Don't worry that your ship is
-literally 1000 years old and a little kid's toy bike could take
-out your star ship now, you've got moxie. And the Epic Moments
-won't just be action and adventure, but heartfelt too. How do we
-know? Well, everyone will whisper and tear up! Yes, even the
-Mirror Universe queen of evil shit will have a soft spot for
-Michael Burnham's ass because Mary Sue!
-
-In all of this, in every single moment, nothing is earned. Michael
-will get 1 episode to journey into the future and adventure
-wondering where the Discovery is. The very start of episode 2 she
-finds the ship and has a tearful reunion about how she's been
-searching for them for a whole year. You can tell cause her hair
-got longer. We saw none of it, felt none of it, and so the payoff
-is flat. It's the same when we say a tearful goodbye to bridge
-crew member #7 who I never learned the name of, but had a funny
-mouth guard. It's all meaningless drivel without actual emotional
-depth because they never invested in anyone or anything. We were
-too busy jumping through mushrooms to the next moment of awesome.
-
-Nate Cull on Mastodon had this to add:
-
-  I really feel that kids today (by which I mean most movie and TV
-  sci-fi writers) just have zero experience of working in
-  a competent functioning team and so they can't write stories in
-  a setting that requires there be a competent functioning team.
-  It's all gotta be "BUT MY PROBLEMS COME FIRST" and having loud
-  temper tantrums while trying to, eg, run an actual ship which
-  will explode if anyone pushes the wrong button at any moment on
-  their shift.
-
-  I wonder if this is partly because having a career in movies or
-  TV writing is something that only spoiled rich kids can afford
-  to do nowadays, and so they literally can't comprehend what it's
-  like to not always be the most important person in the room. Or
-  is it just a deliberate dumbing down of writing to try to
-  capture a young mass audience who have mostly never experienced
-  working in even, say, a factory, let alone a military?
-
-  But I mean if you even ran a McDonalds like the Federation runs
-  the Starship Discovery, yikes.
-
-I couldn't agree more.
-
-This show is just terrible writing. It's an embarrassment to the
-Star Trek franchise. It undermines what it stands for and weakens
-canon with nonsense. The best I can hope for is that the last act
-of the dying crew will be to erase themselves from history so we
-can all ignore this shit and get back to our lives.
-
------ 
-
-* I acknowledge that Picard is not an ensemble story, but it is
-not pretending to be one. It's literally named for the one guy.
-I am okay with this. They could have made the entire show about
-him growing grapes on his vineyard and I'd have sat through it to
-see Patrick Stewart act.
 </pre>]]></description>
 </item>
 </channel>
