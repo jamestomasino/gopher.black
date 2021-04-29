@@ -3,6 +3,55 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Re Rss</title>
+  <link>gopher://gopher.black/1/phlog/20210429-re-rss/</link>
+  <pubdate>Thu, 29 Apr 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+re: RSS
+April 29th, 2021
+----------------------------------------
+
+sloum just wrote about RSS [0] wondering what happend to it and
+why nobody links to their feeds anymore. It's a good question.
+I have an RSS feed on my blog and my labs blog, but I don't have
+a link in the webpage to them. The <link rel='alternate' is in
+there.
+
+[0] sloum - RSS
+    gopher://circumlunar.space/0/~sloum/phlog/20210428.txt
+
+I do publish the feed links on cosmic, but that's sort of
+a byproduct of doing it on gopher where there's no link element to
+do it behind the scenes. So why don't I link to them on more
+sites? I think it's partially habit. Browsers just used to expose
+RSS feeds and subscription buttons so naturally in the browser
+interface I got used to it. When they stopped that I didn't
+retroactively promote it on my pages.
+
+Now that I'm thinking about it actively, that's pretty stupid. I'm
+going to spend some time to add feed links back onto my pages
+soon. The attack on RSS/Atom has been ongoing and should be fought
+on all levels including individual action. Google Reader shutting
+down and the major browsers removing feed reading were arguably
+the biggest blows to the standard, but the efforts haven't won out
+yet. Podcasts have a stronghold still and there are still plenty
+of readers out there. I'll do my part.
+
+If you want my blog & labs feed, here they are to copy/paste:
+
+  https://blog.tomasino.org/index.xml
+  https://labs.tomasino.org/index.xml
+
+Oh, and this gopher phlog has a feed at:
+
+  gopher://gopher.black/0/rss.xml
+
+which you can reach via proxy or by piping it through curl if your
+rss reader can't do gopher.
+</pre>]]></description>
+</item>
+<item>
   <title>Python Virtualenv Invoking Without Activate</title>
   <link>gopher://gopher.black/1/phlog/20210426-python-virtualenv-invoking-without-activate/</link>
   <pubdate>Mon, 26 Apr 2021 00:00:00 +0000</pubdate>
@@ -547,36 +596,6 @@ Taylor Swift (featuring tomasino) - TomasWillow
     gopher://gopher.black/1/phlog/20181225-resolutions
 2018 Resolution
     gopher://gopher.black/1/phlog/20180101-resolution
-</pre>]]></description>
-</item>
-<item>
-  <title>Seeing Colors</title>
-  <link>gopher://gopher.black/1/phlog/20201129-seeing-colors/</link>
-  <pubdate>Sun, 29 Nov 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-seeing colors
-November 29th, 2020
-----------------------------------------
-
-I don't know what possessed me to try, but I've been sitting here
-for the last five minutes trying not to see color. I stared at my
-Goodreads page (that's what was up at the time) and managed to get
-the color to fade away in parts at a time but no luck on the full
-color spectrum yet. The reds & greens were doable together, but
-the blue is harder. If I focus on just not seeing blue then the
-red pops back in.
-
-Please don't ask me to explain what I'm even doing to try this.
-The best way I can explain would be to say it's like blurring your
-eyes, but they stay focused. Not helpful, right? It's also much
-easier to do in the periphery than directly in the center of
-vision. I understand we have more cones in the center of vision
-than rods, so that's probably why. If I'm doing something to be
-selective about that in good ol' brain meats, that would make
-sense.
-
-Have you ever tried this? Any luck?
 </pre>]]></description>
 </item>
 </channel>

@@ -1,0 +1,41 @@
+i----------------------------------------		gopher.black	70
+ire: RSS		gopher.black	70
+iApril 29th, 2021		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+isloum just wrote about RSS [0] wondering what happend to it and		gopher.black	70
+iwhy nobody links to their feeds anymore. It's a good question.		gopher.black	70
+iI have an RSS feed on my blog and my labs blog, but I don't have		gopher.black	70
+ia link in the webpage to them. The <link rel='alternate' is in		gopher.black	70
+ithere.		gopher.black	70
+i		gopher.black	70
+0[0] sloum - RSS	/~sloum/phlog/20210428.txt	circumlunar.space	70
+i		gopher.black	70
+iI do publish the feed links on cosmic, but that's sort of		gopher.black	70
+ia byproduct of doing it on gopher where there's no link element to		gopher.black	70
+ido it behind the scenes. So why don't I link to them on more		gopher.black	70
+isites? I think it's partially habit. Browsers just used to expose		gopher.black	70
+iRSS feeds and subscription buttons so naturally in the browser		gopher.black	70
+iinterface I got used to it. When they stopped that I didn't		gopher.black	70
+iretroactively promote it on my pages.		gopher.black	70
+i		gopher.black	70
+iNow that I'm thinking about it actively, that's pretty stupid. I'm		gopher.black	70
+igoing to spend some time to add feed links back onto my pages		gopher.black	70
+isoon. The attack on RSS/Atom has been ongoing and should be fought		gopher.black	70
+ion all levels including individual action. Google Reader shutting		gopher.black	70
+idown and the major browsers removing feed reading were arguably		gopher.black	70
+ithe biggest blows to the standard, but the efforts haven't won out		gopher.black	70
+iyet. Podcasts have a stronghold still and there are still plenty		gopher.black	70
+iof readers out there. I'll do my part.		gopher.black	70
+i		gopher.black	70
+iIf you want my blog & labs feed, here they are to copy/paste:		gopher.black	70
+i		gopher.black	70
+i  https://blog.tomasino.org/index.xml		gopher.black	70
+i  https://labs.tomasino.org/index.xml		gopher.black	70
+i		gopher.black	70
+iOh, and this gopher phlog has a feed at:		gopher.black	70
+i		gopher.black	70
+i  gopher://gopher.black/0/rss.xml		gopher.black	70
+i		gopher.black	70
+iwhich you can reach via proxy or by piping it through curl if your		gopher.black	70
+irss reader can't do gopher.		gopher.black	70
