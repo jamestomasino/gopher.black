@@ -3,6 +3,29 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Irc Migration</title>
+  <link>gopher://gopher.black/1/phlog/20210519-irc-migration/</link>
+  <pubdate>Wed, 19 May 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+IRC migration
+May 19th, 2021
+----------------------------------------
+
+Wowza! Freenode is in meltdown. There's some major drama about
+a for-profit company snaking control from under the community.
+Well, the ircops revolted and all resigned and went to form a new
+network at libera.chat. I've moved my few channels over there and
+left freenode behind. You can find me in:
+
+  #stutter - for my browser speed-reading add-on
+  #gopher  - a more elegant weapon for a more civilized time
+  #gemini  - for unofficial chat
+
+Peace.
+</pre>]]></description>
+</item>
+<item>
   <title>Re Rss</title>
   <link>gopher://gopher.black/1/phlog/20210429-re-rss/</link>
   <pubdate>Thu, 29 Apr 2021 00:00:00 +0000</pubdate>
@@ -569,33 +592,6 @@ January 20th, 2021
 ----------------------------------------
 
 A tangible weight has been lifted from my chest.
-</pre>]]></description>
-</item>
-<item>
-  <title>Resolution</title>
-  <link>gopher://gopher.black/1/phlog/20201231-resolution/</link>
-  <pubdate>Thu, 31 Dec 2020 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Resolution
-December 31st, 2020
-----------------------------------------
-
-Be it resolved: 
-
-This year I shall have a statue built in my honor AND torn down
-in disgrace.
-
-Oh, and regarding that resolution from 2020... 
-Taylor Swift (featuring tomasino) - TomasWillow
-    https://tomasino.is/music/assorted/taylorswift-tomaswillow.mp3
-
-2020 Resolution
-    gopher://gopher.black/1/phlog/20200101-resolution
-2019 Resolution
-    gopher://gopher.black/1/phlog/20181225-resolutions
-2018 Resolution
-    gopher://gopher.black/1/phlog/20180101-resolution
 </pre>]]></description>
 </item>
 </channel>
