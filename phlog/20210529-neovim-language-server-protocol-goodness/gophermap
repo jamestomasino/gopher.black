@@ -1,0 +1,29 @@
+i----------------------------------------		gopher.black	70
+ineovim language server protocol goodness		gopher.black	70
+iMay 29th, 2021		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iYesterday was a big day for my text editor. Neovim 0.5 is about to		gopher.black	70
+idrop into full release and it has integrated the language server		gopher.black	70
+iprotocol (LSP) support natively. I went ahead and grabbed it ahead		gopher.black	70
+iof release and spent the day resetting my config with the new		gopher.black	70
+iplugins that take advantage of everything.		gopher.black	70
+i		gopher.black	70
+hNeovim 0.5	URL:https://github.com/neovim/neovim/milestone/19
+i		gopher.black	70
+iDon't worry, this post isn't going to deep-dive into my config or		gopher.black	70
+ianything. I just wanted to say how excited I am about LSP in		gopher.black	70
+igeneral. What a fantastic idea it is to decouple the language		gopher.black	70
+iinspection and tooling from the editor. As someone explained it,		gopher.black	70
+ithe programmers who use neovim to program in javascript are only		gopher.black	70
+ia subset of all javascript programmers. The same goes for VSCode,		gopher.black	70
+ior any IDE or editor. Why fragment your efforts at better		gopher.black	70
+ijavascript tooling by focusing on the specific tool. Better to		gopher.black	70
+ibuild it as an API and let all the tools consume it.		gopher.black	70
+i		gopher.black	70
+iI also went in on a thing called telescope which does what I was		gopher.black	70
+iusing FZF to do, but with a much prettier interface. It doesn't		gopher.black	70
+iaffect too much of my coding ability (not like LSP) but it's		gopher.black	70
+iaesthetically awesome and that has its place too.		gopher.black	70
+i		gopher.black	70
+hTelescope.nvim	URL:https://github.com/nvim-telescope/telescope.nvim

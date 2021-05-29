@@ -3,6 +3,44 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Neovim Language Server Protocol Goodness</title>
+  <link>gopher://gopher.black/1/phlog/20210529-neovim-language-server-protocol-goodness/</link>
+  <pubdate>Sat, 29 May 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+neovim language server protocol goodness
+May 29th, 2021
+----------------------------------------
+
+Yesterday was a big day for my text editor. Neovim 0.5 is about to
+drop into full release and it has integrated the language server
+protocol (LSP) support natively. I went ahead and grabbed it ahead
+of release and spent the day resetting my config with the new
+plugins that take advantage of everything.
+
+Neovim 0.5
+    https://github.com/neovim/neovim/milestone/19
+
+Don't worry, this post isn't going to deep-dive into my config or
+anything. I just wanted to say how excited I am about LSP in
+general. What a fantastic idea it is to decouple the language
+inspection and tooling from the editor. As someone explained it,
+the programmers who use neovim to program in javascript are only
+a subset of all javascript programmers. The same goes for VSCode,
+or any IDE or editor. Why fragment your efforts at better
+javascript tooling by focusing on the specific tool. Better to
+build it as an API and let all the tools consume it.
+
+I also went in on a thing called telescope which does what I was
+using FZF to do, but with a much prettier interface. It doesn't
+affect too much of my coding ability (not like LSP) but it's
+aesthetically awesome and that has its place too.
+
+Telescope.nvim
+    https://github.com/nvim-telescope/telescope.nvim
+</pre>]]></description>
+</item>
+<item>
   <title>Swimming Thoughts</title>
   <link>gopher://gopher.black/1/phlog/20210525-swimming-thoughts/</link>
   <pubdate>Tue, 25 May 2021 00:00:00 +0000</pubdate>
@@ -620,19 +658,6 @@ kids. No school work will get done and that's a joy in itself.
 Everyone is going to be on a crazy sugar rush. Good for them. :)
 
 
-</pre>]]></description>
-</item>
-<item>
-  <title>Inauguration</title>
-  <link>gopher://gopher.black/1/phlog/20210120-inauguration/</link>
-  <pubdate>Wed, 20 Jan 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-inauguration
-January 20th, 2021
-----------------------------------------
-
-A tangible weight has been lifted from my chest.
 </pre>]]></description>
 </item>
 </channel>
