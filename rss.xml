@@ -3,6 +3,59 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Driving Test Take 1</title>
+  <link>gopher://gopher.black/1/phlog/20210601-driving-test-take-1/</link>
+  <pubdate>Tue, 01 Jun 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+driving test take 1
+June 01st, 2021
+----------------------------------------
+
+I took my written driving test on Monday. I did not pass.
+
+This isn't a surprise, though. In fact, it's the norm! My wife
+also failed to pass on Monday and it was her second attempt. No
+one in the room passed during her first testing. Only one person
+passed on the day we took it together.
+
+Why is that? Well, it's a very hard test! The driving exam in
+Iceland covers a lot more material and subject matter than
+anything I saw in the United States in the various states I lived
+in. It also goes into greater detail on those topics and is
+incredibly pedantic. Do _you_ know the minimum mm depth tire tread
+can be to pass inspection? Do you know the maximum towing capacity
+for your driving license class? There are also quite a few
+questions about insurance policies, the various road and safety
+agencies and their roles, and even first aid.
+
+The reason we didn't pass, though, is not just because of the
+material, but the scoring itself. The test is 30 questions long
+with part A being the first 15 and mainly being focused on signage
+while part B is the second 15 and is focused on everything else.
+You are allowed two mistakes on part A and five mistakes on part
+B. Any mistakes unused on part A can be applied to part B, such
+that if you had no mistakes on A you can have up to 7 on B.
+
+But what constitutes a mistake? Ahh, here's where things get
+tricky. The questions are multiple choice and you mark a mistake
+for each incorrect response, not each incorrect question. Since
+each question has three choices that means you can get three
+mistakes per question!
+
+In fact, that's what I did to fail mine. I got everything correct
+on the test in both sections except for a single question on
+section A where I misidentified a road marking, choosing option
+"C" while the correct answer was "A & B". Thus, 3 mistakes on one
+question and a fail.
+
+I'll test again at the end of the month and hopefully pass this
+time around. Once that's done I still have to meet with a driving
+instructor, deal with their manditory lessons, and then finally be
+allowed to take the behind-the-wheel portion of the exam. Yeesh!
+</pre>]]></description>
+</item>
+<item>
   <title>Neovim Language Server Protocol Goodness</title>
   <link>gopher://gopher.black/1/phlog/20210529-neovim-language-server-protocol-goodness/</link>
   <pubdate>Sat, 29 May 2021 00:00:00 +0000</pubdate>
@@ -613,51 +666,6 @@ room and I know if I start missing classes I'm not going to keep
 up.
 
 Hurry up, nose!
-</pre>]]></description>
-</item>
-<item>
-  <title>Bun Day</title>
-  <link>gopher://gopher.black/1/phlog/20210213-bun-day/</link>
-  <pubdate>Sat, 13 Feb 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Bun Day
-February 13th, 2021
-----------------------------------------
-
-Monday is Bun Day here in Iceland. Bollur, the buns of the day,
-are sort of like cream puffs. Folks get jams and whipped cream and
-mix them together and stuff the buns to overflowing, then smother
-them in chocolate sauce. It's a healthy time!
-
-There's also a super-duper Icelandic tradition with bun day that
-many parents choose to not teach their kids. Early on Monday
-morning children in the know will wake up early, sneak into their
-parents' bedroom and WHACK WHACK WHACK them in their bed with
-sticks! However many whacks they get in before the parents get up
-is how many buns they get. Lovely!
-
-Following Bun Day is a sort of Fat Tuesday-like holiday that
-involves gorging yourself on all sorts of special foods that are
-terrible for you. I forget the name of that one, but it's nice
-too. 
-
-Finally we get to Ash Wednesday. Here in Iceland Ash Wednesday is
-the costume & candy holiday. Halloween is a relatively recent
-phenomenon here and not very popular mostly because they already
-have most of those traditions at the start of lent. Kids dress up
-in all sorts of costumes, go to school that way, and then later go
-around begging for candy. But here they don't go to individual
-homes and say "trick or treat". Instead they go to businesses and
-sing songs for their treats! If you head downtown to Reykjavik on
-Wednesday you'll see this in full swing. It's really cute and so
-strange to see bank-branded popcorn bags and the like.
-
-Needless to say the next 3 days are pretty much party-time for the
-kids. No school work will get done and that's a joy in itself.
-Everyone is going to be on a crazy sugar rush. Good for them. :)
-
-
 </pre>]]></description>
 </item>
 </channel>
