@@ -1,0 +1,53 @@
+i----------------------------------------		gopher.black	70
+italk talk		gopher.black	70
+iJune 25th, 2021		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI've got a talk daemon running on cosmic.voyage. That's right, the		gopher.black	70
+iold one-on-one real-time chat program 'talk(1)'. In fact, I've got		gopher.black	70
+iytalk(1) installed, which is even better. This morning I was		gopher.black	70
+italking about talk and realized I'd never seen an RFC for it. So		gopher.black	70
+iI went looking...		gopher.black	70
+i		gopher.black	70
+iAnd found nothing. There is no RFC for talk. At all. Others did		gopher.black	70
+isome searching too and came up with the same result. I _did_ find		gopher.black	70
+isome forums talking about their own search for and RFC and coming		gopher.black	70
+ito the same conclusion. As best I can tell, the only way to figure		gopher.black	70
+iout how it works is to look at the code running the clients and		gopher.black	70
+ithe servers and work backwards. [0]		gopher.black	70
+i		gopher.black	70
+h[0]Like this	URL:https://www.cs.columbia.edu/~hgs/internet/talk.html
+i		gopher.black	70
+iSo what? Well, in our little corner of internet history it seems		gopher.black	70
+ilike quite an oversight. How did this awesome little tool get		gopher.black	70
+imissed. It's mentioned by name in the netequette RFC [1] and		gopher.black	70
+idiscussed at length, but there's no implementation rules actually		gopher.black	70
+icodified anywhere. Wild!		gopher.black	70
+i		gopher.black	70
+h[1] RFC 1855	URL:https://datatracker.ietf.org/doc/html/rfc1855
+i		gopher.black	70
+iIt's also a missed opportunity to breath new life into something		gopher.black	70
+iancient. With a bit better documentation we could have new talk		gopher.black	70
+idaemons and clients in a heartbeat. Look at that first link above		gopher.black	70
+iand ask yourself how long it would take you to code your own today		gopher.black	70
+iin C or Go or Python or Lua or Perl or Forth or whatever your		gopher.black	70
+iparty language is? We could have sexy clients and robust servers		gopher.black	70
+inext week. With the recent finger revival discovery of users is		gopher.black	70
+isuper simple again in the tildeverse and other pubnixes. Layer in		gopher.black	70
+isome good ol' fashioned talk and now we're cooking with gas.		gopher.black	70
+i		gopher.black	70
+iAnd hey, since there's no bloody RFC to hold us back, why not slap		gopher.black	70
+isome TLS on that bad-boy and make a neotalk that's secure, runs on		gopher.black	70
+iUDP, has full unicode support, and I dunno... washes your car?		gopher.black	70
+i		gopher.black	70
+iSomeone out there needs a pet project. How about this challenge:		gopher.black	70
+i		gopher.black	70
+i  Write up the docs!		gopher.black	70
+i		gopher.black	70
+iSeriously! As the first step to help EVERYONE else, take a tour of		gopher.black	70
+isearch engine results, the links up above, and put together a mini		gopher.black	70
+iRFC-like doc on implementation. Share it around and lets see how		gopher.black	70
+imany new talk developments we can get this summer. The summer of		gopher.black	70
+italk!		gopher.black	70
+i		gopher.black	70
+hTalk Talk!	URL:https://www.youtube.com/watch?v=lLdvpFIPReA

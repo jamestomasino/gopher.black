@@ -3,6 +3,69 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Talk Talk</title>
+  <link>gopher://gopher.black/1/phlog/20210625-talk-talk/</link>
+  <pubdate>Fri, 25 Jun 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+talk talk
+June 25th, 2021
+----------------------------------------
+
+I've got a talk daemon running on cosmic.voyage. That's right, the
+old one-on-one real-time chat program 'talk(1)'. In fact, I've got
+ytalk(1) installed, which is even better. This morning I was
+talking about talk and realized I'd never seen an RFC for it. So
+I went looking...
+
+And found nothing. There is no RFC for talk. At all. Others did
+some searching too and came up with the same result. I _did_ find
+some forums talking about their own search for and RFC and coming
+to the same conclusion. As best I can tell, the only way to figure
+out how it works is to look at the code running the clients and
+the servers and work backwards. [0]
+
+[0]Like this
+    https://www.cs.columbia.edu/~hgs/internet/talk.html
+
+So what? Well, in our little corner of internet history it seems
+like quite an oversight. How did this awesome little tool get
+missed. It's mentioned by name in the netequette RFC [1] and
+discussed at length, but there's no implementation rules actually
+codified anywhere. Wild!
+
+[1] RFC 1855
+    https://datatracker.ietf.org/doc/html/rfc1855
+
+It's also a missed opportunity to breath new life into something
+ancient. With a bit better documentation we could have new talk
+daemons and clients in a heartbeat. Look at that first link above
+and ask yourself how long it would take you to code your own today
+in C or Go or Python or Lua or Perl or Forth or whatever your
+party language is? We could have sexy clients and robust servers
+next week. With the recent finger revival discovery of users is
+super simple again in the tildeverse and other pubnixes. Layer in
+some good ol' fashioned talk and now we're cooking with gas.
+
+And hey, since there's no bloody RFC to hold us back, why not slap
+some TLS on that bad-boy and make a neotalk that's secure, runs on
+UDP, has full unicode support, and I dunno... washes your car?
+
+Someone out there needs a pet project. How about this challenge:
+
+  Write up the docs!
+
+Seriously! As the first step to help EVERYONE else, take a tour of
+search engine results, the links up above, and put together a mini
+RFC-like doc on implementation. Share it around and lets see how
+many new talk developments we can get this summer. The summer of
+talk!
+
+Talk Talk!
+    https://www.youtube.com/watch?v=lLdvpFIPReA
+</pre>]]></description>
+</item>
+<item>
   <title>Re Christyotwisty 5 Questions June 2021</title>
   <link>gopher://gopher.black/1/phlog/20210603-re-christyotwisty-5-questions-june-2021/</link>
   <pubdate>Thu, 03 Jun 2021 00:00:00 +0000</pubdate>
@@ -542,183 +605,6 @@ Keep your calendar in plain text with Remind
     https://lifehacker.com/geek-to-live-keep-your-calendar-in-plain-text-with-rem-186661
 Roaring Penguin's Remind FAQ
     https://www.roaringpenguin.com/wiki/index.php/Remind_FAQ
-</pre>]]></description>
-</item>
-<item>
-  <title>Stallman</title>
-  <link>gopher://gopher.black/1/phlog/20210326-stallman/</link>
-  <pubdate>Fri, 26 Mar 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Stallman
-March 26th, 2021
-----------------------------------------
-
-Richard Stallman is back on the board of directors at the Free
-Software Foundation (FSF) after having resigned eighteen months
-ago under mounting public pressure for him to be removed for his
-controversial comments about consent in reference to Jeffrey
-Epstein sex-trafficking charges. 
-
-Virginia Roberts Giuffre was a 17 year old victim of Epstein who
-in her deposition stated that she was directed to have sex with
-Marvin Minsky, a member of the MIT faculty. In response to an MIT
-CSAIL (Computer Science and Artificial Intelligence Laboratory)
-email thread planning a protest at MIT over the institution's
-relationship with Epstein, Stallman raised issues with the term
-"assaulting", stating, "The word 'assaulting' presumes that he
-applied force or violence, in some unspecified way, but the
-article itself did say no such thing. Only that they had sex."
-
-In addition to the immediate backlash, statements from Stallman's
-blog added fuel to the flames. I am skeptical of the claim that
-voluntarily [sic] pedophilia harms children." (Stallman, 2006)
-
-In 2019 he later amended, "Through personal conversations in
-recent years, I've learned to understand how sex with a child can
-harm per psychologically. This changed my mind about the matter:
-I think adults should not do that. I am grateful for the
-conversations that enabled me to understand why."
-
-Though often accused of defending Epstein, Stallman has made it
-clear that he sees the man as a serial-rapist and condemns his
-acts. It is instead these statements surrounding the ideas of
-consent and sexual violence that have sparked the majority of the
-outrage.
-
-Many people feel it is appropriate to separate Stallman from the
-FSF and other libre software movements as these personal
-statements and views reflects negatively on that community and
-their efforts. Others see in him a champion unmatched in calling
-for libre software engagement and adoption. Many groups in the
-field have been forced to make a public stance in favor or against
-his involvement, such as Mozilla and the Tor Project [0].
-
-[0] Mozilla and Tor join calls to oust ...
-    https://www.fastcompany.com/90618666/mozilla-and-tor-join-calls-to-oust-richard-stallman-from-free-software-foundation
-
-                           - - -
-
-So what do I think? I think the man is a mixture of good ideas and
-bad. I think he's naturally brusque and his elevated position in
-his narrow community has fed his ego dangerously, as any power is
-wont to do. 
-
-I am also guilty of having been wrong in the past. I'm thankful
-that most of my wrongness isn't in permanent written form and
-I don't have enemies who seek out my own poor behavior in the past
-to drag it into the light today. It's hard enough to change your
-mind without being anchored to those past decisions through
-constant reminder.
-
-Stallman has lived his life in a tech world with tech solutions,
-logic, and a type of pseudo-logical rhetoric that can make his
-statements seem detached or disingenuous. It's something I see
-commonly in communities dominated by autistic people, though it's
-not limited to those or necessarily present among all autistics.
-Whatever the case, it doesn't mesh well with the highly emotional
-topics such as sexual predation. The tone itself harms, which is
-something I suspect Stallman is both unaware of and incapable of
-addressing. Coming from a white man in position of power adds to
-the harm and further alienates those who hear what he says. All
-this harm comes separate from and in addition to the comments
-themselves. He was rightfully argued against in that email list
-and I think the escalation of the issue into a public forum was
-necessary to balance the scales of power. Unfortunately in an
-institution like MIT and in a group like CSAIL the opinions of
-Richard Stallman are not in balance with the others speaking.
-
-We do not currently have a mechanism in our society to address
-these public social grievances of powerful people beyond seeking
-punishment through their employment, platform, sponsorship, and
-other mechanisms that enable their power. Our public speech is
-unbalanced in power in favor of the rich and powerful, and so some
-measures will necessarily be taken to counter it. 
-
-Is it right? Is it just? It is literally our only recourse. It's
-hard to make an ethical judgement without alternatives. I would
-love a world where there were other means of public censor.
-History doesn't provide us many options without blood to model
-after, though. Perhaps getting someone removed from a board of
-directors isn't such a bad course.
-
-And now that he has returned, just 18 months after the incident of
-note and without much change in public opinion, what are we to
-think? Is his short statement on his blog about learning that
-pedophilia is wrong sufficient to let him off the hook for his
-statements minimizing sexual abuse? No, I don't think so. That may
-address his 2006 statements, but not those regarding Virginia
-Roberts Giuffre.
-
-                           - - -
-
-But what of the FSF and libre software in general? Without
-Stallman at the helm will that effort fail?
-
-Here first I will make an ethical statement that libre software is
-not important when juxtaposed by the physical safety of a human
-being. It is not important when juxtaposed with the safety of
-minors, of women, or in relation to sexual abuse. If Richard
-Stallman was the one and only human being who could make libre
-software succeed or fail it is still not worth giving the man
-power if it leads toward the increase in actual harm to actual
-human beings.
-
-Thankfully Stallman isn't that important. He has done quite a bit
-of work in the field. That is unarguable. 
-
-In political theory there is the idea of the Overton window [1].
-There is a spectrum of political discourse from far extreme to
-moderate to far extreme in the other direction. The Overton window
-represents the scope along this spectrum of politically acceptable
-policies. Notably, though, is the need for actors that exceed the
-boundaries of this window to widen it in their given direction.
-For instance, an extreme leftist view allows for a more moderate
-leftist view to be politically acceptable. Without that extremist
-view the window will shift to the right and the moderate practice
-will seem extreme.
-
-[1] Overton window
-    gopher://gopherpedia.com/0/Overton window
-
-I think this idea is applicable to more than politics, or perhaps
-more than traditional politics. The politics of technology and
-thir place in the world has extremists and Richard Stallman is
-one. The idea that all software and hardware on a user's system
-must fit his libre definition is one such view. It enables us to
-have more reasonable discussions about the importance of the open
-source community, of public access to code, and intellectual
-property in general.
-
-For this reason I appreciate the Stallmans in the world, but not
-enough to give him a pass on other behavior. Thankfully we still
-have plenty more assholes expanding our Overton window. We don't
-need Stallman for that anymore.
-
-In some cases it is difficult to separate art from artist when the
-artist does something heinous. This is most often if the art
-represents a substantial and important cultural work, or if, as is
-more often the case, it is not an individual work but the work of
-many people. Take the Cosby Show as an example here. Do we
-write-off that television series because of the acts of Bill
-Cosby? That unjustly punishes all of the other actors, staff, and
-production crews that put their work into a very good program to
-spite one man. This is a difficult ethical choice. In the case of
-Richard Stallman it was fairly simple to punish the man and ignore
-the FSF itself 18 months ago. The choice of the board to reinstate
-him, however, now stains the rest of them with the conscious
-choice to value him over the harm his statements cause.
-
-So that's my extremely long-winded way of saying I agree with
-Mozilla and the Tor Project. We must censor Stallman and the FSF
-board of directors. The means of doing so is their removal from
-that position. Let it be done and done peacefully. Let them learn
-from it as Stallman learned that his 2006 statements were
-dangerous and damaging. Maybe by removing them from power others
-will learn as well. These ideas they're arguing are widening an
-Overton window around sexual consent that doesn't need widening.
-Lets quiet the extremists and bring that window to a healthier
-place.
 </pre>]]></description>
 </item>
 </channel>
