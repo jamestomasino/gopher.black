@@ -3,6 +3,50 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Apple Nonsense</title>
+  <link>gopher://gopher.black/1/phlog/20211102-apple-nonsense/</link>
+  <pubdate>Tue, 02 Nov 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+apple nonsense
+November 02nd, 2021
+----------------------------------------
+
+My son has in iPad. It's actually one that I nabbed from work when
+we left the states. It's his only tech device. He uses it and
+abuses it as only a kid can.
+
+I recently picked up an iPad for work. I build sales aid things
+that live on them and needed one for testing. That brought our
+total apple devices in the house to two, so I figured it was time
+to get us set up on the family stuff.
+
+I was logged into both iPads with my apple ID because my kid is
+a kid and didn't have his own. When I created the family thingy
+I added him and now he's got his own apple identity. The only
+problem is, the process didn't ask for a password creation. 
+
+I realized yesterday that both iPads are still under my ID, so
+I went to switch his to his ID and got stuck at the login screen.
+I didn't have a password for him, so I followed the link to reset
+it. After verifying the request via his email address and my phone
+(text) Apple informed me that I'd get a note about the reset in
+a few days.
+
+In a few days?
+
+Well I just got the email, a full day later, and I'm not
+impressed. Apparently someone from Apple is going to call my phone
+number on November 15th at a very specific time (quite late,
+actually). That's my reset process? Seriously? Apple, the richest
+company on Earth, and that's the plan?
+
+I've never been a fan of Apple. I just don't understand the appeal
+at all. Even the stuff they're supposed to be good at is utter
+shit. I really wish I could go from 2 devices to 0.
+</pre>]]></description>
+</item>
+<item>
   <title>Onlyfans</title>
   <link>gopher://gopher.black/1/phlog/20210820-onlyfans/</link>
   <pubdate>Fri, 20 Aug 2021 00:00:00 +0000</pubdate>
@@ -464,51 +508,6 @@ What about you? What do you do in these situations? Do you pip
 install binaries as your user without virtual environments for
 utilities or do you wrap them in a virtual environment somehow?
 How do you distribute your own projects?
-</pre>]]></description>
-</item>
-<item>
-  <title>Limited Resources</title>
-  <link>gopher://gopher.black/1/phlog/20210330-limited-resources/</link>
-  <pubdate>Tue, 30 Mar 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-limited resources
-March 30th, 2021
-----------------------------------------
-
-Tonight I set up resource limits on cosmic. Specifically I set up
-CPU and Memory limits for users. I don't get a lot of bad eggs
-amongst the voyagers, but it's easy to take a bigger slice of the
-pie than you intend on a tiny tilde. Someone had a newsreader
-running tonight that was accidentally using the entire 1024MB
-I have to offer.
-
-I wasn't sure how to set this up, so I did a little research and
-for once systemd came to the rescue. Here's what I did:
-
-----
-
-mkdir -p /etc/systemd/system/user-.slice.d
-
-cat > /etc/systemd/system/user-.slice.d/50-memory.conf << EOF
-[Slice]
-MemoryMax=80M
-CPUQuota=8%
-EOF
-
-sudo vim /etc/systemd/system.conf
-
-# uncomment and set the following values in that file:
-DefaultCPUAccounting=yes
-DefaultMemoryAccounting=yes
-
-systemctl daemon-reload
-
-----
-
-And that's it! I may tweak those quota values over time to make
-sure the system stays healthy but people can still use it. So far
-so good.
 </pre>]]></description>
 </item>
 </channel>
