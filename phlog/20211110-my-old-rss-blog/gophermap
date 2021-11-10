@@ -1,0 +1,48 @@
+i----------------------------------------		gopher.black	70
+iMy old RSS blog		gopher.black	70
+iNovember 10th, 2021		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iIn the mid-aughts I moved to Alaska and took on a role which,		gopher.black	70
+iamong other duties, had me overseeing the development of a massive		gopher.black	70
+idocumentation project for the state's electronic grant program.		gopher.black	70
+iThis documentation project needed to provide content in many		gopher.black	70
+iformats including PDFs and HTML. I was a big proponent of the web		gopher.black	70
+istandards movement at the time and saw an opportunity to build our		gopher.black	70
+icontent with XML and XSLT.		gopher.black	70
+i		gopher.black	70
+iThat led me to getting intimately familiar with transformations		gopher.black	70
+iand how to style them for various formats. It was pretty darn cool		gopher.black	70
+iand pretty powerful. Of course writing documentation directly in		gopher.black	70
+iXML has challenges. So I also wrote schemas for the different		gopher.black	70
+itypes of documents and set up Oxygen XML Editor with all those		gopher.black	70
+igoodies for our copywriters. It worked quite well!		gopher.black	70
+i		gopher.black	70
+iAt that same time I was also blogging a lot and thought to myself,		gopher.black	70
+i"Hey, RSS is an XML format. I bet I could just write that and		gopher.black	70
+igenerate my whole blog from it."		gopher.black	70
+i		gopher.black	70
+iSo I did.		gopher.black	70
+i		gopher.black	70
+iI manually authored one file, the RSS feed, in vim. I used Oxygen		gopher.black	70
+ihere and there to validate things and build the XSLTs for the blog		gopher.black	70
+ipages, book reviews, and even a commenting system. Later I figured		gopher.black	70
+iout how to integrate 3rd party commenting into it and added a tiny		gopher.black	70
+iPHP handler to add pagination and links to specific entries. At		gopher.black	70
+ithe heart, though, was just the RSS and XSLT.		gopher.black	70
+i		gopher.black	70
+iEventually I moved on from there to some other hot new thing, but		gopher.black	70
+iI have always been particularly proud of that. It worked natively		gopher.black	70
+iin Internet Explorer at the time and with a tiny helper script in		gopher.black	70
+iOpera.		gopher.black	70
+i		gopher.black	70
+iThe blog came up in conversation on Mastodon yesterday and on		gopher.black	70
+ia whim I looked at the Wayback Machine to see if it was still		gopher.black	70
+iaround. Sadly the CSS file wasn't cached there, but the blog		gopher.black	70
+iitself and the XSLT were! I'll include links to them below in case		gopher.black	70
+iyou want to check out the magic sauce.		gopher.black	70
+i		gopher.black	70
+iWhat sorts of crazy blogging platforms have you home-grown over		gopher.black	70
+ithe years? Phlogs and gemlogs are of interest too. I use my		gopher.black	70
+i"burrow" utility for gopher. I bet some of you have some pretty		gopher.black	70
+ifancy stuff by this point.		gopher.black	70

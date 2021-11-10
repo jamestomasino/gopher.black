@@ -3,6 +3,61 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>My Old Rss Blog</title>
+  <link>gopher://gopher.black/1/phlog/20211110-my-old-rss-blog/</link>
+  <pubdate>Wed, 10 Nov 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+My old RSS blog
+November 10th, 2021
+----------------------------------------
+
+In the mid-aughts I moved to Alaska and took on a role which,
+among other duties, had me overseeing the development of a massive
+documentation project for the state's electronic grant program.
+This documentation project needed to provide content in many
+formats including PDFs and HTML. I was a big proponent of the web
+standards movement at the time and saw an opportunity to build our
+content with XML and XSLT.
+
+That led me to getting intimately familiar with transformations
+and how to style them for various formats. It was pretty darn cool
+and pretty powerful. Of course writing documentation directly in
+XML has challenges. So I also wrote schemas for the different
+types of documents and set up Oxygen XML Editor with all those
+goodies for our copywriters. It worked quite well!
+
+At that same time I was also blogging a lot and thought to myself,
+"Hey, RSS is an XML format. I bet I could just write that and
+generate my whole blog from it."
+
+So I did.
+
+I manually authored one file, the RSS feed, in vim. I used Oxygen
+here and there to validate things and build the XSLTs for the blog
+pages, book reviews, and even a commenting system. Later I figured
+out how to integrate 3rd party commenting into it and added a tiny
+PHP handler to add pagination and links to specific entries. At
+the heart, though, was just the RSS and XSLT.
+
+Eventually I moved on from there to some other hot new thing, but
+I have always been particularly proud of that. It worked natively
+in Internet Explorer at the time and with a tiny helper script in
+Opera.
+
+The blog came up in conversation on Mastodon yesterday and on
+a whim I looked at the Wayback Machine to see if it was still
+around. Sadly the CSS file wasn't cached there, but the blog
+itself and the XSLT were! I'll include links to them below in case
+you want to check out the magic sauce.
+
+What sorts of crazy blogging platforms have you home-grown over
+the years? Phlogs and gemlogs are of interest too. I use my
+"burrow" utility for gopher. I bet some of you have some pretty
+fancy stuff by this point.
+</pre>]]></description>
+</item>
+<item>
   <title>Apple Nonsense</title>
   <link>gopher://gopher.black/1/phlog/20211102-apple-nonsense/</link>
   <pubdate>Tue, 02 Nov 2021 00:00:00 +0000</pubdate>
@@ -431,83 +486,6 @@ Oh, and this gopher phlog has a feed at:
 
 which you can reach via proxy or by piping it through curl if your
 rss reader can't do gopher.
-</pre>]]></description>
-</item>
-<item>
-  <title>Python Virtualenv Invoking Without Activate</title>
-  <link>gopher://gopher.black/1/phlog/20210426-python-virtualenv-invoking-without-activate/</link>
-  <pubdate>Mon, 26 Apr 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-python virtualenv invoking without activate
-April 26th, 2021
-----------------------------------------
-
-I like python. I do not like python packaging. I run into the same
-problem again and again: I want to make a useful tool like
-'burrow' that can be distributed and used by others (or myself on
-other systems). Inevitably I'll need to use other packages,
-though, so I'll need to pip-install those. I don't want to pollute
-the system, though, so I'd better create a virtual environment and
-install those there. So now I have my requirements.txt file and
-can do things inside this little container, but now what?
-
-Do I bundle this thing and put it in pip? Am I now expecting
-someone else will pip install it globally to run it on their
-system? Of course not, because everything python should be safely
-stored away in a virtual environment. But I don't want them to
-write a program that uses my program as a library. I just want to
-invoke it? Does that change the rules? Will my app's dependencies
-then pollute their system?
-
-And then I throw my hands in the air and give up and do something
-else.
-
-Well, recently I decided I wanted to work on a side-project on
-cosmic that khuxkm started in python: an anonymous remailer that
-actually works over email. We'd gone down this path in the past
-and it almost worked. I had motivation and wanted to see it
-through. Immediately I knew I was about to hit that problem from
-above, though. In fact, I was going to hit it with even more
-complications.
-
-See, in order to handle incoming mail and pass it off to a script
-I was using a feature of ~/.forward that lets you do that. The
-.forward file works just like the aliases system file, but only on
-the right-hand side of an alias definition. That means you can do
-more than just specify an email or emails to deliver the mail to,
-you can pipe it to a script like so:
-
-  |/home/anonhmmst/mailhandler/parse_email.py
-
-That leading pipe is important. It's also important to know that
-scripts invoked this way are passed the contents of the incoming
-mail, but invoked by the 'nobody' user. That's a security thing
-and for the best, but it complicated my script running.
-
-If I used the anonhmmst user and installed python packages for
-this parse_email.py script at the user-level they wouldn't work
-when invoked by nobody. I needed to set up a virtual environment
-to get everything bundled, but I also needed a way to invoke it
-without having to manually activate the virtual environment first.
-
-The solution turned out to be pretty simple:
-  - make the python script executable
-  - point the hashbang at the virtual environment python binary
-
-In my case:
-
-  #!/home/anonhmmst/mailhandler/env/bin/python3
-
-I had to do a bit more work on cosmic with the sudoers file to
-enable the nobody user to run some cosmic-specific scripts, but
-the virtual-environment setup was the big take-away. It doesn't
-solve all my python packaging woes, but it fixed this one nicely.
-
-What about you? What do you do in these situations? Do you pip
-install binaries as your user without virtual environments for
-utilities or do you wrap them in a virtual environment somehow?
-How do you distribute your own projects?
 </pre>]]></description>
 </item>
 </channel>
