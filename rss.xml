@@ -3,6 +3,413 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Five Questions Dec 2021</title>
+  <link>gopher://gopher.black/1/phlog/20211206-five-questions-dec-2021/</link>
+  <pubdate>Mon, 06 Dec 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+five questions (dec 2021)
+December 06th, 2021
+----------------------------------------
+
+1. How far in advance do you like to start planning things?
+
+This is quite variable. Speeches and presentations that don't
+require slides? Those I prefer to work on very briefly before
+I have to perform. The over-prep and dwelling on it increases my
+stress and doesn't make the delivery any better. But if I'm
+prepping a larger project or something that requires lots of
+pre-work, steps, 3rd parties, etc, then I try to get that done and
+out of the way as early as possible. For instance, my trip to
+visit family in the states next year is already arranged and
+everything booked except the plane tickets (since prices are time
+dependent).
+
+2. What do you hope happens in 2022?
+
+I would really love it if the vaccination levels across the globe
+help us bring COVID to a long-term managable level that doesn't
+result in waves of hospitalizations and deaths. The cascading
+effects of that would be huge and wonderful. I also hope 2022
+brings some nice moments with the family. The kid is at a great
+age right now and I'm really enjoying all the time we get to spend
+together.
+
+3. What challenges have you recently overcome?
+
+Hmm, I'm not sure. I've been fighting a sleep disorder recently
+and while it's not quite overcome, it's very close. I hope that
+wraps up soon.
+
+4. Seasonal traditions you're most excited about
+
+I'm a big christmas music fan and listen to it year round, but
+especially on repeat during this season. It brings be happy
+memories and sets a wonderful festive mood in the home. It reminds
+me not to work too hard and to spend time with the family.
+
+We've adopted several Icelandic traditions and added them to our
+own family ones. We leave a shoe in the window for each of the
+Yule Lads as they come to visit leading up to Christmas. They are
+thirteen trolls that visit one-a-night on the days leading up to
+Christmas Eve. Each has his own personality and will usually leave
+a little treat in your shoe if you've been good. If not, you might
+find a rotten potato in there instead. Wit has a bit of a beef
+with Door-Slammer, but they're making up. Last year he left Wit
+fake cat poop in his shoe.
+
+What else? Hmm... We have our stockings and tree set up of course.
+I put the tree up and Leah and Wit do the decorating. Then I put
+the star on top and it's all set. Presents slowly appear day by
+day leading up to the big day.
+
+Santa is a big deal here still. Wit knows that the real Santa is
+not the guy he sees at the malls. We've explained that he lives in
+Finnish Lapland above the arctic circle, which is why people refer
+to his home as the North Pole. We've seen the videos of him at
+home with his reindeer pulling the sleigh. We've also discussed
+how different cultures celebrate on Christmas Eve vs Christmas
+day, meaning Santa has 2 full nights to travel the globe, plus
+time zones to take advantage of. With proper planning it's
+basically 3 days of activity to get it all done, and only in
+predominantely Christian areas. Not such a big deal as the stories
+make it seem. Wit also knows that Santa doesn't wrap his presents.
+He leaves them loose by the tree.
+
+Finally, we exchange books on christmas eve in the faux
+jólabókaflöð tradition. The term actually refers to the publishing
+industry going cray-cray and releasing everything at once here for
+the holiday rush, but somehow it got memed into this make-believe
+story about Icelandic Christmas Eve. In reality Icelanders open
+their presents on Christmas Eve, not just books. Still, we liked
+the idea of it and since we still open presents on Christmas day,
+that lets us do the book & chocolate celebration the day before.
+
+There's one other tradition here where people all go out for a big
+Christmas feast. It's usually done via work, but there's family
+groups and friends groups that go out as well. Restaurants have
+a special menu for it and seats book up in August. Sadly we've not
+been able to try this yet as it's been shut down the last two
+years due to COVID.
+
+5. Are you good at directions and maps?
+
+Yeah, pretty good. I've got a great direction sense in the wild
+too, but I get turned around in cities.
+</pre>]]></description>
+</item>
+<item>
+  <title>My Old Rss Blog/rss2html.xsl</title>
+  <link>gopher://gopher.black/0/phlog/20211110-my-old-rss-blog/rss2html.xsl</link>
+  <pubdate>Wed, 10 Nov 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+		<xsl:param name="this"/>
+        <xsl:param name="prev"/>
+        <xsl:param name="next"/>
+        <xsl:param name="xml"/>
+
+        <xsl:output doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" encoding="UTF-8" indent="yes" method="xml"/>
+
+        <xsl:template match="/">
+                <html xmlns="http://www.w3.org/1999/xhtml">
+                        <head profile="http://gmpg.org/xfn/11">
+                                <title>
+                                        <xsl:value-of select="/rss/channel/title"/>
+                                </title>
+                                <!-- base href="http://www.tomasinoblog.com/" -->
+                                <meta content="{rss/channel/description}" name="description" />
+                                <meta content="Copyright © 2008 James Tomasino, All rights reserved." name="copyright" />
+                                <meta content="text/html; charset=utf-8" name="Content-Type" />
+                                <meta content="5 days" name="revisit-after" />
+                                <meta content="Tomasino, Blog, James Tomasino, aloneone, notmedia, henrythemoose, henry the moose" name="keywords" />
+                                <meta content="ALL" name="robots" />
+                                <meta content="Global" name="distribution" />
+                                <meta content="English" name="language" />
+                                <meta content="Web Page" name="doc-type" />
+                                <meta content="Living Document" name="doc-class" />
+                                <meta content="Copywritten Work" name="doc-rights" />
+                                <link href="global.css" media="all" rel="stylesheet" title="Simple Styles" type="text/css" />
+                                <link href="http://www.tomasinoblog.com/%7B$xml%7D" rel="alternate" title="{/rss/channel/title}" type="application/rss+xml" />
+				<link rel="openid.server" href="http://www.tomasinoblog.com/openid/MyID.config.php" />
+				<link rel="openid.delegate" href="http://www.tomasinoblog.com/openid/MyID.config.php" />
+                        </head>
+                        <body id="www-tomasinoblog-com">
+                                <div id="wrapper">
+                                        <!-- Title Bar -->
+                                        <div id="header">
+                                                <span id="feedtitle">
+                                                        <a accesskey="0" href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D">
+                                                                <xsl:value-of select="/rss/channel/title"/>
+                                                        </a>
+                                                </span>
+                                                <span id="desc">
+                                                        <xsl:value-of select="/rss/channel/description"/>
+                                                </span>
+                                        </div>
+                                        <!-- About this Feed -->
+                                        <div id="aboutThisFeed">
+                                                <div id="info" class="vcard">
+        						<span class="heading">Information</span>
+        						<xsl:for-each select="/rss/channel/image">
+        						
+        							<p>
+        								<img class="photo" alt="Blog Image" src="rss2html.xsl_files/url" />
+        							</p>
+        						
+        							<p>
+        								<span class="fn">James Tomasino</span>
+        								<span id="aboutTheAuthor">
+        									<xsl:value-of select="./description"/>
+        								</span>
+        							</p>
+        							
+        						</xsl:for-each>
+        							<span class="hidden">Info:</span>
+        							<span class="hidden tel">+14047712022</span>
+        							<span class="hidden email">james(YEAR)@jamestomasino.com</span>
+        							<span class="hidden adr">
+        								<span class="type">Home</span>
+        								<span class="street-address">493 N. Highland Ave. #25</span>
+        								<span class="locality">Atlanta</span>
+        								<span class="region">Georgia</span>
+        								<span class="postal-code">30307</span>
+        								<span class="country-name">USA</span>
+        							</span>
+        							<span class="hidden bday">Sun, 06 Jul 1980 11:03:00 -0500</span>
+        							<span class="hidden geo">
+        								<span class="latitude">33.767580</span>
+        								<span class="longitude">-84.352212</span>
+        							</span>
+        							
+        							
+        							<a class="badge url" href="http://www.tomasinoblog.com/" rel="me" title="Blog">
+        								<span class="badge-box">›››</span> Blog</a>
+        							<a class="badge" href="http://books.tomasinoblog.com/" title="Book Reviews">
+        								<span class="badge-box">›››</span> Book Reviews</a>
+        							<a class="badge" href="http://pray.tomasinoblog.com/" title="Spritual Exercises">
+        								<span class="badge-box">›››</span> Spritual Exercises</a>
+        							<a class="badge" href="http://rss2pdf.com/?url=http://www.tomasinoblog.com/{$xml}" title="PDF">
+        								<span class="badge-box">›››</span> PDF</a>
+        							<a class="badge" href="http://www.tomasinoblog.com/%7B$xml%7D" title="RSS">
+        								<span class="badge-box">›››</span> RSS</a>
+        							<a class="badge" href="http://flickr.com/photos/tomasino" title="Flickr">
+        								<span class="badge-box">›››</span> Flickr</a>
+        							<a class="badge" href="http://microformats.org/wiki/hcard" title="hCard">
+        								<span class="badge-box">›››</span> hCard</a>
+        							<a class="badge" href="http://validator.w3.org/check?uri=referer" title="xHTML Valid">
+        								<span class="badge-box">›››</span> xHTML Valid</a>
+        							<a class="badge" href="http://jigsaw.w3.org/css-validator/check/referer" title="CSS Valid">
+        								<span class="badge-box">›››</span> CSS Valid</a>
+        							<a class="icon" href="http://www.nanowrimo.org/eng/user/410643" rel="me">
+        									<img alt="NANOWRIMO 2008" src="rss2html.xsl_files/nanowrimo_wc.php" /></a>
+                                                </div>
+                                                <div id="xfn">
+                                                        <span class="heading">Friends Network</span>
+                                                        <a class="hidden" href="http://www.tomasinoblog.com/" rel="me">James Tomasino</a>
+                                                        <a href="http://musing.kennbivins.com/" rel="friend met">Kenn Bivins</a>
+                                                        <a href="http://mrks.livejournal.com/" rel="friend met">Markus Creasy</a>
+                                                        <a href="http://toolshed.wtfno.org/" rel="acquaintance met">Jeff D.</a>
+														<a href="http://geminigirl.wordpress.com/" rel="friend met">Sabrina Fowler</a>
+														<a href="http://kristinjannfischer.wordpress.com/" rel="friend met">Kristin Jann-Fischer</a>
+                                                        <a href="http://onlinegamers.org/" rel="friend met">John Lyden</a>
+														<a href="http://www.thehavingfunclub.org/blog/" rel="contact">Kim Miller</a>
+														<a href="http://veerle.duoh.com/" rel="contact">Veerle Pieters</a>
+														<a href="http://www.octagonfudge.blogspot.com/" rel="friend met">Guin Thompson</a>
+                                                        <a href="http://gardenstategoldenstate.blogspot.com/" rel="friend met">Christina Toms</a>
+                                                        <a href="http://brandon.zarzoza.com/" rel="friend met">Brandon Zarzoza</a>
+                                                        <a class="icon" href="http://gmpg.org/xfn">
+                                                                <img alt="XFN Friendly" src="rss2html.xsl_files/xfn-btn.gif" />
+                                                        </a>
+                                                </div>
+                                                <xsl:if test="count(/rss/channel/item)&gt;1">
+                                                        <div id="pastPosts">
+                                                                <span class="heading">Posts</span>
+                                                                <xsl:if test="$prev">
+                                                                        <span>
+                                                                                <a class="nextpost" href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D?page={$prev}">Next Page...</a>
+                                                                        </span>
+                                                                </xsl:if>
+
+                                                                <xsl:for-each select="/rss/channel/item">
+                                                                        <span>
+                                                                                <xsl:variable name="itemID">
+                                                                                        <xsl:value-of select="guid"/>
+                                                                                </xsl:variable>
+                                                                                <a href="http://www.tomasinoblog.com/?page={$this}#anc-{substring-after($itemID,%20'id=')}">
+                                                                                        <xsl:choose>
+                                                                                                <xsl:when test="not(title) or title = ''"> [Untitled] </xsl:when>
+                                                                                                <xsl:otherwise>
+                                                                                                        <xsl:choose>
+                                                                                                                <xsl:when test="string-length(title) &gt; 24">
+                                                                                                                        <xsl:value-of select="substring(title,1,24)"/>... </xsl:when>
+                                                                                                                <xsl:otherwise>
+                                                                                                                        <xsl:value-of select="title"/>
+                                                                                                                </xsl:otherwise>
+                                                                                                        </xsl:choose>
+                                                                                                </xsl:otherwise>
+                                                                                        </xsl:choose>
+                                                                                </a>
+                                                                        </span>
+                                                                </xsl:for-each>
+                                                                <xsl:if test="$next">
+                                                                        <span>
+                                                                                <a class="prevpost" href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D?page={$next}">Previous Page...</a>
+                                                                        </span>
+                                                                </xsl:if>
+                                                        </div>
+                                                </xsl:if>
+                                        </div>
+                                        <!-- Main -->
+                                        <div id="main">
+                                                <xsl:if test="(($prev) or ($next))">
+                                                        <div class="nav">
+                                                                <xsl:if test="$next">
+                                                                        <a href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D?page={$next}">Previous Page</a>
+                                                                        <xsl:if test="$prev"> / </xsl:if>
+                                                                </xsl:if>
+                                                                <xsl:if test="$prev">
+                                                                        <a href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D?page={$prev}">Next Page</a>
+                                                                </xsl:if>
+                                                        </div>
+                                                </xsl:if>
+                                                <!-- Items Loop -->
+                                                <xsl:for-each select="/rss/channel/item">
+                                                        <!-- Item -->
+                                                        <xsl:element name="div">
+                                                                <xsl:attribute name="class">item</xsl:attribute>
+                                                                <!-- Enclosure -->
+                                                                <xsl:for-each select="enclosure">
+                                                                        <span class="enclosure">
+                                                                                <a href="http://www.tomasinoblog.com/%7B@url%7D" title="Click to download a '{@type}' file of about {@length} bytes" type="{@type}">
+                                                                                        <img alt="Click to download a '{@type}' file of about {@length} bytes" src="rss2html.xsl_files/dl_icon.gif" width="35" height="36" border="0" />
+                                                                                </a>
+                                                                        </span>
+                                                                </xsl:for-each>
+                                                                <!-- Title -->
+                                                                <xsl:variable name="itemID">
+                                                                        <xsl:value-of select="guid"/>
+                                                                </xsl:variable>
+                                                                <xsl:element name="a">
+                                                                        <xsl:attribute name="href">
+                                                                                <xsl:value-of select="link"/>
+                                                                        </xsl:attribute>
+                                                                        <xsl:attribute name="class">title</xsl:attribute>
+                                                                        <xsl:attribute name="id">anc-<xsl:value-of select="substring-after($itemID, 'id=')"/>
+                                                                        </xsl:attribute>
+
+                                                                        <xsl:if test="position() &lt; 10">
+                                                                                <xsl:attribute name="accesskey">
+                                                                                        <xsl:value-of select="position()"/>
+                                                                                </xsl:attribute>
+                                                                        </xsl:if>
+
+                                                                        <xsl:choose>
+                                                                                <xsl:when test="not(title) or title = ''"> [Untitled] </xsl:when>
+                                                                                <xsl:otherwise>
+                                                                                        <xsl:value-of select="title"/>
+                                                                                </xsl:otherwise>
+                                                                        </xsl:choose>
+                                                                </xsl:element>
+                                                                <!-- Date -->
+                                                                <xsl:if test="pubDate">
+                                                                        <span class="pubDate">
+                                                                                <xsl:value-of select="pubDate"/>
+                                                                        </span>
+                                                                        <span class="category">
+                                                                                <xsl:if test="category"> ( <xsl:for-each select="category">
+                                                                                                <xsl:value-of select="."/> </xsl:for-each>) </xsl:if>
+                                                                        </span>
+                                                                </xsl:if>
+                                                                <!-- Description -->
+                                                                <xsl:if test="description">
+                                                                        <div class="description">
+                                                                                <xsl:value-of disable-output-escaping="yes" select="description"/>
+                                                                        </div>
+                                                                </xsl:if>
+                                                                <xsl:element name="a">
+                                                                        <xsl:attribute name="href">
+                                                                                <xsl:value-of select="comments"/>#disqus_thread
+                                                                        </xsl:attribute>
+                                                                        <xsl:attribute name="class">comments</xsl:attribute> Comment </xsl:element>
+                                                        </xsl:element>
+                                                </xsl:for-each>
+                                                <xsl:if test="(($prev) or ($next))">
+                                                        <xsl:element name="div">
+                                                                <xsl:attribute name="class">nav</xsl:attribute>
+                                                                <xsl:if test="$next">
+                                                                        <xsl:element name="a"><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link"/>?page=<xsl:value-of select="$next"/></xsl:attribute>Previous Page</xsl:element>
+                                                                        <xsl:if test="$prev"> / </xsl:if>
+                                                                </xsl:if>
+                                                                <xsl:if test="$prev">
+                                                                        <xsl:element name="a"><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link"/>?page=<xsl:value-of select="$prev"/></xsl:attribute>Next Page</xsl:element>
+                                                                </xsl:if>
+                                                        </xsl:element>
+                                                </xsl:if>
+                                        </div>
+                                        <!-- End Body -->
+                                        <div id="footer"> This blog is authored in plain-text <a href="http://en.wikipedia.org/wiki/RSS_(file_format)">
+                                                        <acronym title="Really Simple Syndication 2.0">RSS2.0</acronym>
+                                                </a> using <a href="http://www.oxygenxml.com/">&lt;oXygen/&gt;</a> and <a href="http://www.vim.org/">vi</a>. The content you see on this page is generated using <a href="http://en.wikipedia.org/wiki/XSL_Transformations">
+                                                        <acronym title="Extensible Stylesheet Language Transformation">XSLT</acronym>
+                                                </a>, <a href="http://en.wikipedia.org/wiki/PHP">PHP</a>, and <a href="http://en.wikipedia.org/wiki/CSS">
+                                                        <acronym title="Cascading Style Sheets">CSS</acronym>
+                                                </a>. All source code and assets are available for your review. Feel free to use anything without permission. <ul>
+                                                        <li>
+                                                                <a href="http://www.tomasinoblog.com/blog.xml">Blog <acronym title="Extensible Markup Language">XML</acronym> Source</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="http://www.tomasinoblog.com/books/books.xml">Book Reviews <acronym title="Extensible Markup Language">XML</acronym> Source</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="http://www.tomasinoblog.com/rss2html.xsl">
+                                                                        <acronym title="Extensible Stylesheet Language Transformation">XSLT</acronym>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="http://www.tomasinoblog.com/index.php.html">Blog PHP</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="http://www.tomasinoblog.com/comments.php.html">Blog Comments PHP</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="http://www.tomasinoblog.com/global.css">Blog <acronym title="Cascading Style Sheets">CSS</acronym>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="http://www.tomasinoblog.com/comments.css">Comments <acronym title="Cascading Style Sheets">CSS</acronym>
+                                                                </a>
+                                                        </li>
+
+                                                </ul>
+                                                <p>
+                                                        <span style="font-style: italic;">Any scripture quotations are taken from the NEW AMERICAN STANDARD BIBLE®, Copyright © 1960, 1962, 1963, 1968, 1971, 1972, 1973, 1975, 1977, 1995 by The Lockman
+                                                                Foundation. Used by permission.</span>
+                                                </p>
+                                        </div>
+                                </div>
+                                <script type="text/javascript">
+//<![CDATA[
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+        	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+        		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+        	}
+        }
+        document.write('<script type="text/javascript" src="http://disqus.com/forums/tomasinoblog/get_num_replies.js' + query + '"></' + 'script>');
+//]]>
+                                </script>
+                                
+                        </body>
+                </html>
+        </xsl:template>
+
+</xsl:stylesheet></pre>]]></description>
+</item>
+<item>
   <title>My Old Rss Blog</title>
   <link>gopher://gopher.black/1/phlog/20211110-my-old-rss-blog/</link>
   <pubdate>Wed, 10 Nov 2021 00:00:00 +0000</pubdate>
@@ -48,13 +455,16 @@ Opera.
 The blog came up in conversation on Mastodon yesterday and on
 a whim I looked at the Wayback Machine to see if it was still
 around. Sadly the CSS file wasn't cached there, but the blog
-itself and the XSLT were! I'll include links to them below in case
+itself and the XSLT were! I'll include a link below in case
 you want to check out the magic sauce.
 
 What sorts of crazy blogging platforms have you home-grown over
 the years? Phlogs and gemlogs are of interest too. I use my
 "burrow" utility for gopher. I bet some of you have some pretty
 fancy stuff by this point.
+
+rss2html.xsl
+    gopher://gopher.black/0rss2html.xsl
 </pre>]]></description>
 </item>
 <item>
@@ -414,78 +824,6 @@ sprinkle throughout. It'll be glorious.
 
 I can't wait to get back underwater tomorrow and continue thinking
 on it.
-</pre>]]></description>
-</item>
-<item>
-  <title>Irc Migration</title>
-  <link>gopher://gopher.black/1/phlog/20210519-irc-migration/</link>
-  <pubdate>Wed, 19 May 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-IRC migration
-May 19th, 2021
-----------------------------------------
-
-Wowza! Freenode is in meltdown. There's some major drama about
-a for-profit company snaking control from under the community.
-Well, the ircops revolted and all resigned and went to form a new
-network at libera.chat. I've moved my few channels over there and
-left freenode behind. You can find me in:
-
-  #stutter - for my browser speed-reading add-on
-  #gopher  - a more elegant weapon for a more civilized time
-  #gemini  - for unofficial chat
-
-Peace.
-</pre>]]></description>
-</item>
-<item>
-  <title>Re Rss</title>
-  <link>gopher://gopher.black/1/phlog/20210429-re-rss/</link>
-  <pubdate>Thu, 29 Apr 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-re: RSS
-April 29th, 2021
-----------------------------------------
-
-sloum just wrote about RSS [0] wondering what happend to it and
-why nobody links to their feeds anymore. It's a good question.
-I have an RSS feed on my blog and my labs blog, but I don't have
-a link in the webpage to them. The <link rel='alternate' is in
-there.
-
-[0] sloum - RSS
-    gopher://circumlunar.space/0/~sloum/phlog/20210428.txt
-
-I do publish the feed links on cosmic, but that's sort of
-a byproduct of doing it on gopher where there's no link element to
-do it behind the scenes. So why don't I link to them on more
-sites? I think it's partially habit. Browsers just used to expose
-RSS feeds and subscription buttons so naturally in the browser
-interface I got used to it. When they stopped that I didn't
-retroactively promote it on my pages.
-
-Now that I'm thinking about it actively, that's pretty stupid. I'm
-going to spend some time to add feed links back onto my pages
-soon. The attack on RSS/Atom has been ongoing and should be fought
-on all levels including individual action. Google Reader shutting
-down and the major browsers removing feed reading were arguably
-the biggest blows to the standard, but the efforts haven't won out
-yet. Podcasts have a stronghold still and there are still plenty
-of readers out there. I'll do my part.
-
-If you want my blog & labs feed, here they are to copy/paste:
-
-  https://blog.tomasino.org/index.xml
-  https://labs.tomasino.org/index.xml
-
-Oh, and this gopher phlog has a feed at:
-
-  gopher://gopher.black/0/rss.xml
-
-which you can reach via proxy or by piping it through curl if your
-rss reader can't do gopher.
 </pre>]]></description>
 </item>
 </channel>
