@@ -3,6 +3,92 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Scrobbles</title>
+  <link>gopher://gopher.black/1/phlog/20211210-scrobbles/</link>
+  <pubdate>Fri, 10 Dec 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+scrobbles
+December 10th, 2021
+----------------------------------------
+
+When Tidal first came out I jumped on it right away. I hadn't ever
+used a music subscription service before and I liked the hifi idea
+and also the higher artist payout rate than the competition.
+I stuck with it for a few months but ultimately felt it was too
+buggy and dropped it.
+
+Fast forward to this week. I decided I've been using Plex for free
+enough for several years that I should contribute financially.
+I have no real reason to get Plex Pass since it doesn't actually
+offer any features I felt I was missing, but what the heck. So
+I picked up the life-time Plex Pass and while I'm doing it
+I notice they're promoting Tidal.
+
+It's not part of Plex Pass itself, but the Tidal subscription has
+a discount and integrates with Plex. That sounded pretty solid,
+and they had a 30 day trial. I figure, lets pick it up and try out
+the holiday music. Maybe I'll discover new albums to join my
+collection!
+
+It was an easy setup and it's running well. I remembered that
+I saw Robert Plant and Allison Krauss have another team-up album
+that just came out (spotted the vinyl at the record shop on
+Saturday) so I checked it out (very good, like Raising Sand before
+it). I also tried out the new Tangerine Dream album (good for
+background, but boring for a focused listen). Overall I've been
+poking around more in an exploratory nature. 
+
+A quick aside…
+
+I prefer to listen to music by album rather track. It's one of
+a number of reasons I've never had much interest in Spotify.
+I really like the arrangement of an album. How did the artists and
+producers compile it together? Does it sweep through emotions or
+jostle them? How did it kick off and what track is batting
+clean-up? Is there a theme? There's just so much to it! I don't
+buy songs; I buy albums.
+
+But back to Tidal/Plex…
+
+I'm clicking around trying out all this new stuff and I have
+a moment of worry. You see, I don't really like subscription
+services. If I can pay a one-time-fee I'm much more likely to
+purchase, even if the cost seems cheaper to "rent" with a monthly
+charge. Tidal's monthly fee is going to annoy me sooner or later
+and I'm going to cancel it. When that happens there goes my
+history of my explorations. Boo.
+
+But wait! Scrobbles!
+
+That's right, there's things like LastFM that let you scrobble
+your plays to them so you can track them between services and
+devices and get insights into your listening habits. I love that!
+I have it configured for all my music players that support it on
+this laptop, but I never thought about it in Plex, let alone Tidal
+via Plex.
+
+A bit of searching revealed that both Plex and Tidal have options
+to link to LastFM (yes, I know there are open source alternatives
+like OpenFM and I have accounts there too, but most apps are
+hard-coded to support just LastFM, so I use it still). I added my
+links and now my glorious Christmas binge is scrobbling. But wait,
+there's a problem! I configured scrobbling for Tidal via their web
+music player. Plus I can play it through Plex as a player, so one
+of those two things should work, but they don't. I think it's
+broken. *sniffle*
+
+So that's sad and I feel robbed of my scrobbles. It's funny, but
+it actually makes me want to use Tidal less! If it doesn't
+scrobble does it even count? Haha. No, not that. It's not that
+I need credit for listening. I want that data so I can reference
+it later or get recommendations based on it. That's valuable to
+me! Boo.
+
+Maybe it'll get fixed soon. For now, back to Christmas.
+</pre>]]></description>
+</item>
+<item>
   <title>Distance</title>
   <link>gopher://gopher.black/1/phlog/20211209-distance/</link>
   <pubdate>Thu, 09 Dec 2021 00:00:00 +0000</pubdate>
@@ -773,44 +859,6 @@ I'll test again at the end of the month and hopefully pass this
 time around. Once that's done I still have to meet with a driving
 instructor, deal with their manditory lessons, and then finally be
 allowed to take the behind-the-wheel portion of the exam. Yeesh!
-</pre>]]></description>
-</item>
-<item>
-  <title>Neovim Language Server Protocol Goodness</title>
-  <link>gopher://gopher.black/1/phlog/20210529-neovim-language-server-protocol-goodness/</link>
-  <pubdate>Sat, 29 May 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-neovim language server protocol goodness
-May 29th, 2021
-----------------------------------------
-
-Yesterday was a big day for my text editor. Neovim 0.5 is about to
-drop into full release and it has integrated the language server
-protocol (LSP) support natively. I went ahead and grabbed it ahead
-of release and spent the day resetting my config with the new
-plugins that take advantage of everything.
-
-Neovim 0.5
-    https://github.com/neovim/neovim/milestone/19
-
-Don't worry, this post isn't going to deep-dive into my config or
-anything. I just wanted to say how excited I am about LSP in
-general. What a fantastic idea it is to decouple the language
-inspection and tooling from the editor. As someone explained it,
-the programmers who use neovim to program in javascript are only
-a subset of all javascript programmers. The same goes for VSCode,
-or any IDE or editor. Why fragment your efforts at better
-javascript tooling by focusing on the specific tool. Better to
-build it as an API and let all the tools consume it.
-
-I also went in on a thing called telescope which does what I was
-using FZF to do, but with a much prettier interface. It doesn't
-affect too much of my coding ability (not like LSP) but it's
-aesthetically awesome and that has its place too.
-
-Telescope.nvim
-    https://github.com/nvim-telescope/telescope.nvim
 </pre>]]></description>
 </item>
 </channel>
