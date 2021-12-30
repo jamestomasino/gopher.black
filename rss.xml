@@ -3,6 +3,42 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Bbs</title>
+  <link>gopher://gopher.black/1/phlog/20211230-bbs/</link>
+  <pubdate>Thu, 30 Dec 2021 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+BBS
+December 30th, 2021
+----------------------------------------
+
+I installed WWIV on one of my VMs. I walked through all the set up
+and got it all configured out of some spark of nostalgia. Then
+when it was done and ready to start adding content I decided I had
+no content I wanted to share in a BBS. I have enough channels for
+my creative outputs already. Too many, really.
+
+So I deleted it.
+
+It was too easy to conflate the installation and configuration of
+a BBS as "having a BBS" in my head. I wanted to recapture the
+feeling of the BBS days and the setup process faked its way into
+my day masquarading as a solution. The BBS experience was one of
+community, though, and of reaching out for a bit of nerdy contact
+that pierced a veil of separatation. 
+
+That veil doesn't exist anymore. The internet killed it. And so
+what is left to penetrate? I already have contact with you here.
+
+Do I add door games to this little corner of the internet and
+entice you with FIDONet access? Maybe I dust off Phrack archives
+or ANSi art galleries? With a lot of work I could decorate my
+space like the ones of my youth and possibly entice visitors for
+a drive-by of the museum I'd created, but that's still a pale
+approximation.
+</pre>]]></description>
+</item>
+<item>
   <title>Merry Christmas</title>
   <link>gopher://gopher.black/1/phlog/20211224-merry-christmas/</link>
   <pubdate>Fri, 24 Dec 2021 00:00:00 +0000</pubdate>
@@ -820,69 +856,6 @@ a prude and isn't afraid of sex-work. See?
                               Boobs
 
                            ( • )( • )
-</pre>]]></description>
-</item>
-<item>
-  <title>Talk Talk</title>
-  <link>gopher://gopher.black/1/phlog/20210625-talk-talk/</link>
-  <pubdate>Fri, 25 Jun 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-talk talk
-June 25th, 2021
-----------------------------------------
-
-I've got a talk daemon running on cosmic.voyage. That's right, the
-old one-on-one real-time chat program 'talk(1)'. In fact, I've got
-ytalk(1) installed, which is even better. This morning I was
-talking about talk and realized I'd never seen an RFC for it. So
-I went looking...
-
-And found nothing. There is no RFC for talk. At all. Others did
-some searching too and came up with the same result. I _did_ find
-some forums talking about their own search for and RFC and coming
-to the same conclusion. As best I can tell, the only way to figure
-out how it works is to look at the code running the clients and
-the servers and work backwards. [0]
-
-[0]Like this
-    https://www.cs.columbia.edu/~hgs/internet/talk.html
-
-So what? Well, in our little corner of internet history it seems
-like quite an oversight. How did this awesome little tool get
-missed. It's mentioned by name in the netequette RFC [1] and
-discussed at length, but there's no implementation rules actually
-codified anywhere. Wild!
-
-[1] RFC 1855
-    https://datatracker.ietf.org/doc/html/rfc1855
-
-It's also a missed opportunity to breath new life into something
-ancient. With a bit better documentation we could have new talk
-daemons and clients in a heartbeat. Look at that first link above
-and ask yourself how long it would take you to code your own today
-in C or Go or Python or Lua or Perl or Forth or whatever your
-party language is? We could have sexy clients and robust servers
-next week. With the recent finger revival discovery of users is
-super simple again in the tildeverse and other pubnixes. Layer in
-some good ol' fashioned talk and now we're cooking with gas.
-
-And hey, since there's no bloody RFC to hold us back, why not slap
-some TLS on that bad-boy and make a neotalk that's secure, runs on
-UDP, has full unicode support, and I dunno... washes your car?
-
-Someone out there needs a pet project. How about this challenge:
-
-  Write up the docs!
-
-Seriously! As the first step to help EVERYONE else, take a tour of
-search engine results, the links up above, and put together a mini
-RFC-like doc on implementation. Share it around and lets see how
-many new talk developments we can get this summer. The summer of
-talk!
-
-Talk Talk!
-    https://www.youtube.com/watch?v=lLdvpFIPReA
 </pre>]]></description>
 </item>
 </channel>
