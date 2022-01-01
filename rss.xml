@@ -3,6 +3,47 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Cheating At My Reading Goal</title>
+  <link>gopher://gopher.black/1/phlog/20220101-cheating-at-my-reading-goal/</link>
+  <pubdate>Sat, 01 Jan 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+cheating at my reading goal
+January 01st, 2022
+----------------------------------------
+
+A new year is here and a new reading goal is set. I'm sticking
+with my goal of 100 books like the last few years. It's attainable
+even if I hit a slump. Even so, to start my year off on a good
+note I like to read easy, quick stuff. Last year I read like 10-15
+books of this Witch P.I. series that's honestly pretty terrible,
+but I just tear through it. It helps that the books are cozy as
+hell and nothing serious is ever at stake more than a knitting
+contest.
+
+This year I was thinking about what series to binge to get ahead.
+I'm just getting started on the Jill Kismet series (I have the
+whole thing in an omnibus). I also have the Alex Verus series of
+which I've read book one and will likely binge quickly. But
+instead of either of those I realized that my Calibre library has
+page numbers in it (because I'm diligent about good data). So...
+I'm going to sort by shortest book and clean house on a bunch of
+novellas I've been sitting on for years. I have about 20 books
+under 50 pages! If I want to read a bunch of the Shadow stories
+this year I could do my entire 100 and stay under 150 pages each.
+Wild! Such cheating! Hahaha.
+
+I'll mix it up soon enough and I don't stop at 100 books, so I'm
+not really cheating anything. This is just a little mental trick
+to help me feel like I'm well invested in reading for the year. My
+own motivation wanes if I fall behind schedule and it becomes
+increasingly hard to pick up my Kindle. It's best to stay well
+ahead of goal.
+
+Anyway, here I go!
+</pre>]]></description>
+</item>
+<item>
   <title>Resolution</title>
   <link>gopher://gopher.black/1/phlog/20211230-resolution/</link>
   <pubdate>Thu, 30 Dec 2021 00:00:00 +0000</pubdate>
@@ -18,7 +59,7 @@ This year the name 'tomasino' will become a standard unit of
 measurement.
 
 2021 Resolution
-    gopher://gopher.black/1/phlog/20211231-resolution
+    gopher://gopher.black/1/phlog/20201231-resolution
 2020 Resolution
     gopher://gopher.black/1/phlog/20200101-resolution
 2019 Resolution
@@ -745,108 +786,6 @@ too, but I get turned around in cities.
         </xsl:template>
 
 </xsl:stylesheet></pre>]]></description>
-</item>
-<item>
-  <title>My Old Rss Blog</title>
-  <link>gopher://gopher.black/1/phlog/20211110-my-old-rss-blog/</link>
-  <pubdate>Wed, 10 Nov 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-My old RSS blog
-November 10th, 2021
-----------------------------------------
-
-In the mid-aughts I moved to Alaska and took on a role which,
-among other duties, had me overseeing the development of a massive
-documentation project for the state's electronic grant program.
-This documentation project needed to provide content in many
-formats including PDFs and HTML. I was a big proponent of the web
-standards movement at the time and saw an opportunity to build our
-content with XML and XSLT.
-
-That led me to getting intimately familiar with transformations
-and how to style them for various formats. It was pretty darn cool
-and pretty powerful. Of course writing documentation directly in
-XML has challenges. So I also wrote schemas for the different
-types of documents and set up Oxygen XML Editor with all those
-goodies for our copywriters. It worked quite well!
-
-At that same time I was also blogging a lot and thought to myself,
-"Hey, RSS is an XML format. I bet I could just write that and
-generate my whole blog from it."
-
-So I did.
-
-I manually authored one file, the RSS feed, in vim. I used Oxygen
-here and there to validate things and build the XSLTs for the blog
-pages, book reviews, and even a commenting system. Later I figured
-out how to integrate 3rd party commenting into it and added a tiny
-PHP handler to add pagination and links to specific entries. At
-the heart, though, was just the RSS and XSLT.
-
-Eventually I moved on from there to some other hot new thing, but
-I have always been particularly proud of that. It worked natively
-in Internet Explorer at the time and with a tiny helper script in
-Opera.
-
-The blog came up in conversation on Mastodon yesterday and on
-a whim I looked at the Wayback Machine to see if it was still
-around. Sadly the CSS file wasn't cached there, but the blog
-itself and the XSLT were! I'll include a link below in case
-you want to check out the magic sauce.
-
-What sorts of crazy blogging platforms have you home-grown over
-the years? Phlogs and gemlogs are of interest too. I use my
-"burrow" utility for gopher. I bet some of you have some pretty
-fancy stuff by this point.
-
-rss2html.xsl
-    gopher://gopher.black/0rss2html.xsl
-</pre>]]></description>
-</item>
-<item>
-  <title>Apple Nonsense</title>
-  <link>gopher://gopher.black/1/phlog/20211102-apple-nonsense/</link>
-  <pubdate>Tue, 02 Nov 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-apple nonsense
-November 02nd, 2021
-----------------------------------------
-
-My son has in iPad. It's actually one that I nabbed from work when
-we left the states. It's his only tech device. He uses it and
-abuses it as only a kid can.
-
-I recently picked up an iPad for work. I build sales aid things
-that live on them and needed one for testing. That brought our
-total apple devices in the house to two, so I figured it was time
-to get us set up on the family stuff.
-
-I was logged into both iPads with my apple ID because my kid is
-a kid and didn't have his own. When I created the family thingy
-I added him and now he's got his own apple identity. The only
-problem is, the process didn't ask for a password creation. 
-
-I realized yesterday that both iPads are still under my ID, so
-I went to switch his to his ID and got stuck at the login screen.
-I didn't have a password for him, so I followed the link to reset
-it. After verifying the request via his email address and my phone
-(text) Apple informed me that I'd get a note about the reset in
-a few days.
-
-In a few days?
-
-Well I just got the email, a full day later, and I'm not
-impressed. Apparently someone from Apple is going to call my phone
-number on November 15th at a very specific time (quite late,
-actually). That's my reset process? Seriously? Apple, the richest
-company on Earth, and that's the plan?
-
-I've never been a fan of Apple. I just don't understand the appeal
-at all. Even the stuff they're supposed to be good at is utter
-shit. I really wish I could go from 2 devices to 0.
-</pre>]]></description>
 </item>
 </channel>
 </rss>
