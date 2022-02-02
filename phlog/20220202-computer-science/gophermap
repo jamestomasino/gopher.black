@@ -1,0 +1,119 @@
+i----------------------------------------		gopher.black	70
+icomputer science		gopher.black	70
+iFebruary 02nd, 2022		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI came across one of those lists of free computer science classes		gopher.black	70
+icurated in a github gist or some other such place. I knocked it		gopher.black	70
+iaround in my tabs for a couple hours and let my mind go back to my		gopher.black	70
+iown CS education.		gopher.black	70
+i		gopher.black	70
+iI started at Rowan University in 1998 in the Computer Science		gopher.black	70
+idepartment following the coattails of a friend from Boy Scouts who		gopher.black	70
+ihad been doing well for a year already. In high school I didn't		gopher.black	70
+ireally have any direction at all or idea of what I wanted to do.		gopher.black	70
+iComputers happened to be a thing I was familiar with, spent a bit		gopher.black	70
+iof time on, and it appeared likely to have a future that paid		gopher.black	70
+iwell. My dad's only restriction on my choice was, "No art."		gopher.black	70
+i		gopher.black	70
+iHe had gone to Kent State and studied in the Visual Communications		gopher.black	70
+idepartment there and was unable to turn that into a career. He		gopher.black	70
+iinstead took the long way through a retail job and eventually into		gopher.black	70
+isales. Because of his experience he hoped to save me the trouble.		gopher.black	70
+i		gopher.black	70
+iThe thing is, had he not had that restriction I likely would have		gopher.black	70
+igone into some form of art education. It was the course track		gopher.black	70
+iI enjoyed most in school, continuously excelled in, and got me		gopher.black	70
+imotivated. But, in the long run the joke is on both of us. As I'll		gopher.black	70
+iexplain in a moment. But first, back to Computer Science!		gopher.black	70
+i		gopher.black	70
+iIn 1998 I got my start. I had some great introduction to		gopher.black	70
+iprogramming classes that dove right into C. I had a killer lab		gopher.black	70
+itechniques practical course that taught me the ins and outs of the		gopher.black	70
+icommand line, jobs, rediection of outputs, and all sorts of mighty		gopher.black	70
+icool things I use every day. I also had some heavy-duty math		gopher.black	70
+iclasses which bored the ever-living snot out of me.		gopher.black	70
+i		gopher.black	70
+iMy first semester went well. My second semester saw a marked dip		gopher.black	70
+iin my grades, though. I was getting involved in stuff that was		gopher.black	70
+itaking my focus away from class, and part way through that year		gopher.black	70
+iI developed an extreme clinical depression and insomnia. Entering		gopher.black	70
+imy sophomore years I find it difficult to relate details because		gopher.black	70
+iI have some intense memory loss due to the insomnia. I basically		gopher.black	70
+iaccomplished nothing is school, failed everything, and was on the		gopher.black	70
+iedge of academic probation when I somehow signed up to enlist in		gopher.black	70
+ithe US Navy. That gave me an excuse for a leave-of-asence from		gopher.black	70
+ischool (delaying repaying those loans!) and in a matter of weeks		gopher.black	70
+iI was gone.		gopher.black	70
+i		gopher.black	70
+iAll in all my computer science education is the equivalent of two		gopher.black	70
+ipretty solid semesters of foundations.		gopher.black	70
+i		gopher.black	70
+iIn the Navy I was a nuclear electronics technician, so I picked up		gopher.black	70
+imore skills in hardware which was really cool, but didn't do much		gopher.black	70
+ito further my computer expertise.		gopher.black	70
+i		gopher.black	70
+iFinally, after the Navy, I ended up returning to school and		gopher.black	70
+ibeginning anew at Indiana University. I transfered pretty much		gopher.black	70
+inothing from my first school as I wasn't going into a CS		gopher.black	70
+idepartment. I think 2 of my math classes may have worked and		gopher.black	70
+ithat's it. But, this time around I had a Navy work ethic and also		gopher.black	70
+ithe a limited time payment due to my medical discharge. The Navy		gopher.black	70
+ihad me covered for about 3 years of school, so I went to town.		gopher.black	70
+iI managed to go from nothing at all to a masters degree in those		gopher.black	70
+ithree years. Fun part about it? It was in this lovely new program		gopher.black	70
+ithat just launched called "New Media". It was, in fact, a visual		gopher.black	70
+icommunications degree + computers. Hah!		gopher.black	70
+i		gopher.black	70
+iSo, as I'm remember all this stuff I'm also lementing how I can		gopher.black	70
+iwhiz through and code really well and professionally at a senior		gopher.black	70
+ilevel in a few niche areas, but if you need skills that get past,		gopher.black	70
+isay, data structures and algorithms level, I never learned it.		gopher.black	70
+iSystems programming? No idea. Operating systems? Nope. Parallel		gopher.black	70
+icomputing? Huh?		gopher.black	70
+i		gopher.black	70
+iI'll sum it up this way: I never got to learn how to link to		gopher.black	70
+ia system library. Not sure what to do to make that happen.		gopher.black	70
+i		gopher.black	70
+iI can muddle around in about 15 languages, but without that		gopher.black	70
+iconceptual level to fall back on there's not a lot I can actually		gopher.black	70
+iDO outside of the web.		gopher.black	70
+i		gopher.black	70
+iSo yeah, I need more education. And here are all these free		gopher.black	70
+icourses. My formal education was a quarter century ago, so I'm not		gopher.black	70
+igoing to rely on memory. I've decided to start from the beginning.		gopher.black	70
+i		gopher.black	70
+iThe following is a list of courses with video lections I found		gopher.black	70
+iwhich roughly run in linear order. I may end up shuffling one or		gopher.black	70
+itwo things later on, but for now I'm just watching lectures one by		gopher.black	70
+ione and soaking it in. I'm pretty sure I won't need any note		gopher.black	70
+itaking for the first couple of courses, but we'll see.		gopher.black	70
+i		gopher.black	70
+hStanford CS106A - Programming Methodology	URL:https://see.stanford.edu/Course/CS106A
+hStanford CS106B - Programming Abstractions	URL:https://see.stanford.edu/Course/CS106B
+hStanford CS107 - Programming Paradigms	URL:https://see.stanford.edu/Course/CS107
+hStanford CS110 - Principals of Computer Systems	URL:https://web.stanford.edu/class/archive/cs/cs110/cs110.1202/
+hMIT - Mathematics for Computer Science	URL:https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/
+hWheaton - Discrete Mathematics and Functional Programming	URL:http://cs.wheaton.edu/~tvandrun/dmfp/
+hStanford CS161 - Design and Analysis of Algorithms 1	URL:https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V
+hStanford CS161 - Design and Analysis of Algorithms 2	URL:https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6
+hStanford CS261 - A second Course in Algorithms	URL:http://timroughgarden.org/w16/w16.html
+hStanford EE261 - The Fourier Transform and its Applications	URL:https://see.stanford.edu/Course/EE261
+hCMU 18-447 - Introduction to Computer Architecture	URL:https://www.youtube.com/playlist?list=PL5PHm2jkkXmhayPxddp9z5MixV8Q5Ty8u
+hCMU 15-418 - Parallel Computer Architecture and Programming	URL:http://15418.courses.cs.cmu.edu/spring2015/
+hCMU 15-721 - Database Systems	URL:https://www.youtube.com/playlist?list=PLSE8ODhjZXjbisIGOepfnlbfxeH7TW-8O
+hCSE 421/521 - Introduction to Operating Systems	URL:https://www.youtube.com/playlist?list=PLE6LEE8y2Jp-kbEcVR2W3vfx0Pdca0BD3
+hBerkeley - SICP Python	URL:https://cs61a.org/
+hMIT - SICP Scheme	URL:https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/index.htm
+i		gopher.black	70
+iThe last two entrants are both courses based around SICP. There's		gopher.black	70
+ithe famous Scheme original from MIT, but also one in Python which		gopher.black	70
+iI grok better. In April I'm picking up the Javascript SICP book		gopher.black	70
+itoo. Between two courses and a book in three different languages		gopher.black	70
+iI hope I'll be able to muddle my way through.		gopher.black	70
+i		gopher.black	70
+iI hope I finish it all. I think it's doable. I'll keep pressing		gopher.black	70
+iforward as best I can. If you read this and think about it at some		gopher.black	70
+ipoint in the future, feel free to ping me on IRC or Mastodon		gopher.black	70
+isometime and ask how I'm doing. Who knows, I may be stalled and		gopher.black	70
+ineed a little nudge back on track.		gopher.black	70

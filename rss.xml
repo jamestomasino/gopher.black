@@ -3,6 +3,148 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Computer Science</title>
+  <link>gopher://gopher.black/1/phlog/20220202-computer-science/</link>
+  <pubdate>Wed, 02 Feb 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+computer science
+February 02nd, 2022
+----------------------------------------
+
+I came across one of those lists of free computer science classes
+curated in a github gist or some other such place. I knocked it
+around in my tabs for a couple hours and let my mind go back to my
+own CS education.
+
+I started at Rowan University in 1998 in the Computer Science
+department following the coattails of a friend from Boy Scouts who
+had been doing well for a year already. In high school I didn't
+really have any direction at all or idea of what I wanted to do.
+Computers happened to be a thing I was familiar with, spent a bit
+of time on, and it appeared likely to have a future that paid
+well. My dad's only restriction on my choice was, "No art."
+
+He had gone to Kent State and studied in the Visual Communications
+department there and was unable to turn that into a career. He
+instead took the long way through a retail job and eventually into
+sales. Because of his experience he hoped to save me the trouble.
+
+The thing is, had he not had that restriction I likely would have
+gone into some form of art education. It was the course track
+I enjoyed most in school, continuously excelled in, and got me
+motivated. But, in the long run the joke is on both of us. As I'll
+explain in a moment. But first, back to Computer Science!
+
+In 1998 I got my start. I had some great introduction to
+programming classes that dove right into C. I had a killer lab
+techniques practical course that taught me the ins and outs of the
+command line, jobs, rediection of outputs, and all sorts of mighty
+cool things I use every day. I also had some heavy-duty math
+classes which bored the ever-living snot out of me.
+
+My first semester went well. My second semester saw a marked dip
+in my grades, though. I was getting involved in stuff that was
+taking my focus away from class, and part way through that year
+I developed an extreme clinical depression and insomnia. Entering
+my sophomore years I find it difficult to relate details because
+I have some intense memory loss due to the insomnia. I basically
+accomplished nothing is school, failed everything, and was on the
+edge of academic probation when I somehow signed up to enlist in
+the US Navy. That gave me an excuse for a leave-of-asence from
+school (delaying repaying those loans!) and in a matter of weeks
+I was gone.
+
+All in all my computer science education is the equivalent of two
+pretty solid semesters of foundations.
+
+In the Navy I was a nuclear electronics technician, so I picked up
+more skills in hardware which was really cool, but didn't do much
+to further my computer expertise.
+
+Finally, after the Navy, I ended up returning to school and
+beginning anew at Indiana University. I transfered pretty much
+nothing from my first school as I wasn't going into a CS
+department. I think 2 of my math classes may have worked and
+that's it. But, this time around I had a Navy work ethic and also
+the a limited time payment due to my medical discharge. The Navy
+had me covered for about 3 years of school, so I went to town.
+I managed to go from nothing at all to a masters degree in those
+three years. Fun part about it? It was in this lovely new program
+that just launched called "New Media". It was, in fact, a visual
+communications degree + computers. Hah!
+
+So, as I'm remember all this stuff I'm also lementing how I can
+whiz through and code really well and professionally at a senior
+level in a few niche areas, but if you need skills that get past,
+say, data structures and algorithms level, I never learned it.
+Systems programming? No idea. Operating systems? Nope. Parallel
+computing? Huh?
+
+I'll sum it up this way: I never got to learn how to link to
+a system library. Not sure what to do to make that happen.
+
+I can muddle around in about 15 languages, but without that
+conceptual level to fall back on there's not a lot I can actually
+DO outside of the web.
+
+So yeah, I need more education. And here are all these free
+courses. My formal education was a quarter century ago, so I'm not
+going to rely on memory. I've decided to start from the beginning.
+
+The following is a list of courses with video lections I found
+which roughly run in linear order. I may end up shuffling one or
+two things later on, but for now I'm just watching lectures one by
+one and soaking it in. I'm pretty sure I won't need any note
+taking for the first couple of courses, but we'll see.
+
+Stanford CS106A - Programming Methodology
+    https://see.stanford.edu/Course/CS106A
+Stanford CS106B - Programming Abstractions
+    https://see.stanford.edu/Course/CS106B
+Stanford CS107 - Programming Paradigms
+    https://see.stanford.edu/Course/CS107
+Stanford CS110 - Principals of Computer Systems
+    https://web.stanford.edu/class/archive/cs/cs110/cs110.1202/
+MIT - Mathematics for Computer Science
+    https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/
+Wheaton - Discrete Mathematics and Functional Programming
+    http://cs.wheaton.edu/~tvandrun/dmfp/
+Stanford CS161 - Design and Analysis of Algorithms 1
+    https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V
+Stanford CS161 - Design and Analysis of Algorithms 2
+    https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6
+Stanford CS261 - A second Course in Algorithms
+    http://timroughgarden.org/w16/w16.html
+Stanford EE261 - The Fourier Transform and its Applications
+    https://see.stanford.edu/Course/EE261
+CMU 18-447 - Introduction to Computer Architecture
+    https://www.youtube.com/playlist?list=PL5PHm2jkkXmhayPxddp9z5MixV8Q5Ty8u
+CMU 15-418 - Parallel Computer Architecture and Programming
+    http://15418.courses.cs.cmu.edu/spring2015/
+CMU 15-721 - Database Systems
+    https://www.youtube.com/playlist?list=PLSE8ODhjZXjbisIGOepfnlbfxeH7TW-8O
+CSE 421/521 - Introduction to Operating Systems
+    https://www.youtube.com/playlist?list=PLE6LEE8y2Jp-kbEcVR2W3vfx0Pdca0BD3
+Berkeley - SICP Python
+    https://cs61a.org/
+MIT - SICP Scheme
+    https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/index.htm
+
+The last two entrants are both courses based around SICP. There's
+the famous Scheme original from MIT, but also one in Python which
+I grok better. In April I'm picking up the Javascript SICP book
+too. Between two courses and a book in three different languages
+I hope I'll be able to muddle my way through.
+
+I hope I finish it all. I think it's doable. I'll keep pressing
+forward as best I can. If you read this and think about it at some
+point in the future, feel free to ping me on IRC or Mastodon
+sometime and ask how I'm doing. Who knows, I may be stalled and
+need a little nudge back on track.
+</pre>]]></description>
+</item>
+<item>
   <title>Cheating At My Reading Goal</title>
   <link>gopher://gopher.black/1/phlog/20220101-cheating-at-my-reading-goal/</link>
   <pubdate>Sat, 01 Jan 2022 00:00:00 +0000</pubdate>
@@ -475,317 +617,6 @@ years due to COVID.
 Yeah, pretty good. I've got a great direction sense in the wild
 too, but I get turned around in cities.
 </pre>]]></description>
-</item>
-<item>
-  <title>My Old Rss Blog/rss2html.xsl</title>
-  <link>gopher://gopher.black/0/phlog/20211110-my-old-rss-blog/rss2html.xsl</link>
-  <pubdate>Wed, 10 Nov 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-		<xsl:param name="this"/>
-        <xsl:param name="prev"/>
-        <xsl:param name="next"/>
-        <xsl:param name="xml"/>
-
-        <xsl:output doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" encoding="UTF-8" indent="yes" method="xml"/>
-
-        <xsl:template match="/">
-                <html xmlns="http://www.w3.org/1999/xhtml">
-                        <head profile="http://gmpg.org/xfn/11">
-                                <title>
-                                        <xsl:value-of select="/rss/channel/title"/>
-                                </title>
-                                <!-- base href="http://www.tomasinoblog.com/" -->
-                                <meta content="{rss/channel/description}" name="description" />
-                                <meta content="Copyright © 2008 James Tomasino, All rights reserved." name="copyright" />
-                                <meta content="text/html; charset=utf-8" name="Content-Type" />
-                                <meta content="5 days" name="revisit-after" />
-                                <meta content="Tomasino, Blog, James Tomasino, aloneone, notmedia, henrythemoose, henry the moose" name="keywords" />
-                                <meta content="ALL" name="robots" />
-                                <meta content="Global" name="distribution" />
-                                <meta content="English" name="language" />
-                                <meta content="Web Page" name="doc-type" />
-                                <meta content="Living Document" name="doc-class" />
-                                <meta content="Copywritten Work" name="doc-rights" />
-                                <link href="global.css" media="all" rel="stylesheet" title="Simple Styles" type="text/css" />
-                                <link href="http://www.tomasinoblog.com/%7B$xml%7D" rel="alternate" title="{/rss/channel/title}" type="application/rss+xml" />
-				<link rel="openid.server" href="http://www.tomasinoblog.com/openid/MyID.config.php" />
-				<link rel="openid.delegate" href="http://www.tomasinoblog.com/openid/MyID.config.php" />
-                        </head>
-                        <body id="www-tomasinoblog-com">
-                                <div id="wrapper">
-                                        <!-- Title Bar -->
-                                        <div id="header">
-                                                <span id="feedtitle">
-                                                        <a accesskey="0" href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D">
-                                                                <xsl:value-of select="/rss/channel/title"/>
-                                                        </a>
-                                                </span>
-                                                <span id="desc">
-                                                        <xsl:value-of select="/rss/channel/description"/>
-                                                </span>
-                                        </div>
-                                        <!-- About this Feed -->
-                                        <div id="aboutThisFeed">
-                                                <div id="info" class="vcard">
-        						<span class="heading">Information</span>
-        						<xsl:for-each select="/rss/channel/image">
-        						
-        							<p>
-        								<img class="photo" alt="Blog Image" src="rss2html.xsl_files/url" />
-        							</p>
-        						
-        							<p>
-        								<span class="fn">James Tomasino</span>
-        								<span id="aboutTheAuthor">
-        									<xsl:value-of select="./description"/>
-        								</span>
-        							</p>
-        							
-        						</xsl:for-each>
-        							<span class="hidden">Info:</span>
-        							<span class="hidden tel">+14047712022</span>
-        							<span class="hidden email">james(YEAR)@jamestomasino.com</span>
-        							<span class="hidden adr">
-        								<span class="type">Home</span>
-        								<span class="street-address">493 N. Highland Ave. #25</span>
-        								<span class="locality">Atlanta</span>
-        								<span class="region">Georgia</span>
-        								<span class="postal-code">30307</span>
-        								<span class="country-name">USA</span>
-        							</span>
-        							<span class="hidden bday">Sun, 06 Jul 1980 11:03:00 -0500</span>
-        							<span class="hidden geo">
-        								<span class="latitude">33.767580</span>
-        								<span class="longitude">-84.352212</span>
-        							</span>
-        							
-        							
-        							<a class="badge url" href="http://www.tomasinoblog.com/" rel="me" title="Blog">
-        								<span class="badge-box">›››</span> Blog</a>
-        							<a class="badge" href="http://books.tomasinoblog.com/" title="Book Reviews">
-        								<span class="badge-box">›››</span> Book Reviews</a>
-        							<a class="badge" href="http://pray.tomasinoblog.com/" title="Spritual Exercises">
-        								<span class="badge-box">›››</span> Spritual Exercises</a>
-        							<a class="badge" href="http://rss2pdf.com/?url=http://www.tomasinoblog.com/{$xml}" title="PDF">
-        								<span class="badge-box">›››</span> PDF</a>
-        							<a class="badge" href="http://www.tomasinoblog.com/%7B$xml%7D" title="RSS">
-        								<span class="badge-box">›››</span> RSS</a>
-        							<a class="badge" href="http://flickr.com/photos/tomasino" title="Flickr">
-        								<span class="badge-box">›››</span> Flickr</a>
-        							<a class="badge" href="http://microformats.org/wiki/hcard" title="hCard">
-        								<span class="badge-box">›››</span> hCard</a>
-        							<a class="badge" href="http://validator.w3.org/check?uri=referer" title="xHTML Valid">
-        								<span class="badge-box">›››</span> xHTML Valid</a>
-        							<a class="badge" href="http://jigsaw.w3.org/css-validator/check/referer" title="CSS Valid">
-        								<span class="badge-box">›››</span> CSS Valid</a>
-        							<a class="icon" href="http://www.nanowrimo.org/eng/user/410643" rel="me">
-        									<img alt="NANOWRIMO 2008" src="rss2html.xsl_files/nanowrimo_wc.php" /></a>
-                                                </div>
-                                                <div id="xfn">
-                                                        <span class="heading">Friends Network</span>
-                                                        <a class="hidden" href="http://www.tomasinoblog.com/" rel="me">James Tomasino</a>
-                                                        <a href="http://musing.kennbivins.com/" rel="friend met">Kenn Bivins</a>
-                                                        <a href="http://mrks.livejournal.com/" rel="friend met">Markus Creasy</a>
-                                                        <a href="http://toolshed.wtfno.org/" rel="acquaintance met">Jeff D.</a>
-														<a href="http://geminigirl.wordpress.com/" rel="friend met">Sabrina Fowler</a>
-														<a href="http://kristinjannfischer.wordpress.com/" rel="friend met">Kristin Jann-Fischer</a>
-                                                        <a href="http://onlinegamers.org/" rel="friend met">John Lyden</a>
-														<a href="http://www.thehavingfunclub.org/blog/" rel="contact">Kim Miller</a>
-														<a href="http://veerle.duoh.com/" rel="contact">Veerle Pieters</a>
-														<a href="http://www.octagonfudge.blogspot.com/" rel="friend met">Guin Thompson</a>
-                                                        <a href="http://gardenstategoldenstate.blogspot.com/" rel="friend met">Christina Toms</a>
-                                                        <a href="http://brandon.zarzoza.com/" rel="friend met">Brandon Zarzoza</a>
-                                                        <a class="icon" href="http://gmpg.org/xfn">
-                                                                <img alt="XFN Friendly" src="rss2html.xsl_files/xfn-btn.gif" />
-                                                        </a>
-                                                </div>
-                                                <xsl:if test="count(/rss/channel/item)&gt;1">
-                                                        <div id="pastPosts">
-                                                                <span class="heading">Posts</span>
-                                                                <xsl:if test="$prev">
-                                                                        <span>
-                                                                                <a class="nextpost" href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D?page={$prev}">Next Page...</a>
-                                                                        </span>
-                                                                </xsl:if>
-
-                                                                <xsl:for-each select="/rss/channel/item">
-                                                                        <span>
-                                                                                <xsl:variable name="itemID">
-                                                                                        <xsl:value-of select="guid"/>
-                                                                                </xsl:variable>
-                                                                                <a href="http://www.tomasinoblog.com/?page={$this}#anc-{substring-after($itemID,%20'id=')}">
-                                                                                        <xsl:choose>
-                                                                                                <xsl:when test="not(title) or title = ''"> [Untitled] </xsl:when>
-                                                                                                <xsl:otherwise>
-                                                                                                        <xsl:choose>
-                                                                                                                <xsl:when test="string-length(title) &gt; 24">
-                                                                                                                        <xsl:value-of select="substring(title,1,24)"/>... </xsl:when>
-                                                                                                                <xsl:otherwise>
-                                                                                                                        <xsl:value-of select="title"/>
-                                                                                                                </xsl:otherwise>
-                                                                                                        </xsl:choose>
-                                                                                                </xsl:otherwise>
-                                                                                        </xsl:choose>
-                                                                                </a>
-                                                                        </span>
-                                                                </xsl:for-each>
-                                                                <xsl:if test="$next">
-                                                                        <span>
-                                                                                <a class="prevpost" href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D?page={$next}">Previous Page...</a>
-                                                                        </span>
-                                                                </xsl:if>
-                                                        </div>
-                                                </xsl:if>
-                                        </div>
-                                        <!-- Main -->
-                                        <div id="main">
-                                                <xsl:if test="(($prev) or ($next))">
-                                                        <div class="nav">
-                                                                <xsl:if test="$next">
-                                                                        <a href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D?page={$next}">Previous Page</a>
-                                                                        <xsl:if test="$prev"> / </xsl:if>
-                                                                </xsl:if>
-                                                                <xsl:if test="$prev">
-                                                                        <a href="http://www.tomasinoblog.com/%7B/rss/channel/link%7D?page={$prev}">Next Page</a>
-                                                                </xsl:if>
-                                                        </div>
-                                                </xsl:if>
-                                                <!-- Items Loop -->
-                                                <xsl:for-each select="/rss/channel/item">
-                                                        <!-- Item -->
-                                                        <xsl:element name="div">
-                                                                <xsl:attribute name="class">item</xsl:attribute>
-                                                                <!-- Enclosure -->
-                                                                <xsl:for-each select="enclosure">
-                                                                        <span class="enclosure">
-                                                                                <a href="http://www.tomasinoblog.com/%7B@url%7D" title="Click to download a '{@type}' file of about {@length} bytes" type="{@type}">
-                                                                                        <img alt="Click to download a '{@type}' file of about {@length} bytes" src="rss2html.xsl_files/dl_icon.gif" width="35" height="36" border="0" />
-                                                                                </a>
-                                                                        </span>
-                                                                </xsl:for-each>
-                                                                <!-- Title -->
-                                                                <xsl:variable name="itemID">
-                                                                        <xsl:value-of select="guid"/>
-                                                                </xsl:variable>
-                                                                <xsl:element name="a">
-                                                                        <xsl:attribute name="href">
-                                                                                <xsl:value-of select="link"/>
-                                                                        </xsl:attribute>
-                                                                        <xsl:attribute name="class">title</xsl:attribute>
-                                                                        <xsl:attribute name="id">anc-<xsl:value-of select="substring-after($itemID, 'id=')"/>
-                                                                        </xsl:attribute>
-
-                                                                        <xsl:if test="position() &lt; 10">
-                                                                                <xsl:attribute name="accesskey">
-                                                                                        <xsl:value-of select="position()"/>
-                                                                                </xsl:attribute>
-                                                                        </xsl:if>
-
-                                                                        <xsl:choose>
-                                                                                <xsl:when test="not(title) or title = ''"> [Untitled] </xsl:when>
-                                                                                <xsl:otherwise>
-                                                                                        <xsl:value-of select="title"/>
-                                                                                </xsl:otherwise>
-                                                                        </xsl:choose>
-                                                                </xsl:element>
-                                                                <!-- Date -->
-                                                                <xsl:if test="pubDate">
-                                                                        <span class="pubDate">
-                                                                                <xsl:value-of select="pubDate"/>
-                                                                        </span>
-                                                                        <span class="category">
-                                                                                <xsl:if test="category"> ( <xsl:for-each select="category">
-                                                                                                <xsl:value-of select="."/> </xsl:for-each>) </xsl:if>
-                                                                        </span>
-                                                                </xsl:if>
-                                                                <!-- Description -->
-                                                                <xsl:if test="description">
-                                                                        <div class="description">
-                                                                                <xsl:value-of disable-output-escaping="yes" select="description"/>
-                                                                        </div>
-                                                                </xsl:if>
-                                                                <xsl:element name="a">
-                                                                        <xsl:attribute name="href">
-                                                                                <xsl:value-of select="comments"/>#disqus_thread
-                                                                        </xsl:attribute>
-                                                                        <xsl:attribute name="class">comments</xsl:attribute> Comment </xsl:element>
-                                                        </xsl:element>
-                                                </xsl:for-each>
-                                                <xsl:if test="(($prev) or ($next))">
-                                                        <xsl:element name="div">
-                                                                <xsl:attribute name="class">nav</xsl:attribute>
-                                                                <xsl:if test="$next">
-                                                                        <xsl:element name="a"><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link"/>?page=<xsl:value-of select="$next"/></xsl:attribute>Previous Page</xsl:element>
-                                                                        <xsl:if test="$prev"> / </xsl:if>
-                                                                </xsl:if>
-                                                                <xsl:if test="$prev">
-                                                                        <xsl:element name="a"><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link"/>?page=<xsl:value-of select="$prev"/></xsl:attribute>Next Page</xsl:element>
-                                                                </xsl:if>
-                                                        </xsl:element>
-                                                </xsl:if>
-                                        </div>
-                                        <!-- End Body -->
-                                        <div id="footer"> This blog is authored in plain-text <a href="http://en.wikipedia.org/wiki/RSS_(file_format)">
-                                                        <acronym title="Really Simple Syndication 2.0">RSS2.0</acronym>
-                                                </a> using <a href="http://www.oxygenxml.com/">&lt;oXygen/&gt;</a> and <a href="http://www.vim.org/">vi</a>. The content you see on this page is generated using <a href="http://en.wikipedia.org/wiki/XSL_Transformations">
-                                                        <acronym title="Extensible Stylesheet Language Transformation">XSLT</acronym>
-                                                </a>, <a href="http://en.wikipedia.org/wiki/PHP">PHP</a>, and <a href="http://en.wikipedia.org/wiki/CSS">
-                                                        <acronym title="Cascading Style Sheets">CSS</acronym>
-                                                </a>. All source code and assets are available for your review. Feel free to use anything without permission. <ul>
-                                                        <li>
-                                                                <a href="http://www.tomasinoblog.com/blog.xml">Blog <acronym title="Extensible Markup Language">XML</acronym> Source</a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="http://www.tomasinoblog.com/books/books.xml">Book Reviews <acronym title="Extensible Markup Language">XML</acronym> Source</a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="http://www.tomasinoblog.com/rss2html.xsl">
-                                                                        <acronym title="Extensible Stylesheet Language Transformation">XSLT</acronym>
-                                                                </a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="http://www.tomasinoblog.com/index.php.html">Blog PHP</a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="http://www.tomasinoblog.com/comments.php.html">Blog Comments PHP</a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="http://www.tomasinoblog.com/global.css">Blog <acronym title="Cascading Style Sheets">CSS</acronym>
-                                                                </a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="http://www.tomasinoblog.com/comments.css">Comments <acronym title="Cascading Style Sheets">CSS</acronym>
-                                                                </a>
-                                                        </li>
-
-                                                </ul>
-                                                <p>
-                                                        <span style="font-style: italic;">Any scripture quotations are taken from the NEW AMERICAN STANDARD BIBLE®, Copyright © 1960, 1962, 1963, 1968, 1971, 1972, 1973, 1975, 1977, 1995 by The Lockman
-                                                                Foundation. Used by permission.</span>
-                                                </p>
-                                        </div>
-                                </div>
-                                <script type="text/javascript">
-//<![CDATA[
-        var links = document.getElementsByTagName('a');
-        var query = '?';
-        for(var i = 0; i < links.length; i++) {
-        	if(links[i].href.indexOf('#disqus_thread') >= 0) {
-        		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-        	}
-        }
-        document.write('<script type="text/javascript" src="http://disqus.com/forums/tomasinoblog/get_num_replies.js' + query + '"></' + 'script>');
-//]]>
-                                </script>
-                                
-                        </body>
-                </html>
-        </xsl:template>
-
-</xsl:stylesheet></pre>]]></description>
 </item>
 </channel>
 </rss>
