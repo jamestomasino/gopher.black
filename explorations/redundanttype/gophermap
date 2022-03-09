@@ -1,41 +1,39 @@
-i----------------------------------------	
-iGopher Redundant Server Type	
-i----------------------------------------	
-i	
-iAccording to RFC 1436:	
-i  + Item is a redundant server	
-i	
-i  The information applies to a duplicated server.  The information	
-i  contained within is a duplicate of the primary server.  The primary	
-i  server is defined as the last DirEntity that is has a non-plus	
-i  "Type" field.  The client should use the transaction as defined by	
-i  the primary server Type field.	
-i	
-iMy interpretation is that the + entries are fallbacks for the	
-iprevious DirEntity type above it.  	
-i	
-iDirEntity in RFC 1436 is defined as:	
-i  DirEntity ::= Type User_Name Tab Selector Tab Host Tab Port CR-LF	
-i	
-iAs a fallback, it's unclear if the "User_Name" section of the	
-iredundant (+) DirEntity should display in addition to the primary	
-iDirEntity, or if only the primary should be shown and the	
-iredundant entries used by the client as fallback in case of	
-ia server error response. The UMN Gopher client seems to prefer	
-ithis later style, where only the primary DirEntity is visible to	
-ithe end user.	
-i	
-iWhat follows is a test implementation of the + type that can be	
-ireferenced by gopher client developers in their testing:	
-i	
-iType 1 Test with 4 redundancies	
-i	
+i----------------------------------------		gopher.black	70
+iGopher Redundant Server Type		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iAccording to RFC 1436:		gopher.black	70
+i  + Item is a redundant server		gopher.black	70
+i		gopher.black	70
+i  The information applies to a duplicated server.  The information		gopher.black	70
+i  contained within is a duplicate of the primary server.  The primary		gopher.black	70
+i  server is defined as the last DirEntity that is has a non-plus		gopher.black	70
+i  "Type" field.  The client should use the transaction as defined by		gopher.black	70
+i  the primary server Type field.		gopher.black	70
+i		gopher.black	70
+iMy interpretation is that the + entries are fallbacks for the		gopher.black	70
+iprevious DirEntity type above it.  		gopher.black	70
+i		gopher.black	70
+iDirEntity in RFC 1436 is defined as:		gopher.black	70
+i  DirEntity ::= Type User_Name Tab Selector Tab Host Tab Port CR-LF		gopher.black	70
+i		gopher.black	70
+iAs a fallback, it's unclear if the "User_Name" section of the		gopher.black	70
+iredundant (+) DirEntity should display in addition to the primary		gopher.black	70
+iDirEntity, or if only the primary should be shown and the		gopher.black	70
+iredundant entries used by the client as fallback in case of		gopher.black	70
+ia server error response. The UMN Gopher client seems to prefer		gopher.black	70
+ithis later style, where only the primary DirEntity is visible to		gopher.black	70
+ithe end user.		gopher.black	70
+i		gopher.black	70
+iWhat follows is a test implementation of the + type that can be		gopher.black	70
+ireferenced by gopher client developers in their testing:		gopher.black	70
+i		gopher.black	70
+iType 1 Test with 2 redundancies		gopher.black	70
+i		gopher.black	70
 1gopher.black	/
-+tomasino's gopherhole on sdf.org	/users/tomasino/	sdf.org	70
-+sdf mirror on gopher.club	/users/tomasino/	gopher.club	70
 +gopher.black's tilde.town backup	/~tomasino/	tilde.town	70
-i	
-iType 0 Test with 2 redundancies	
-i	
+i		gopher.black	70
+iType 0 Test with 2 redundancies		gopher.black	70
+i		gopher.black	70
 0gopher application development	/explorations/gopher-application-development.txt
 +gopher application development	/users/tomasino/explorations/gopher-application-development.txt	sdf.org	70
