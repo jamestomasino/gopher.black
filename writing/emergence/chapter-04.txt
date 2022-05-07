@@ -57,7 +57,77 @@ first drew his attention.
 
 Dana Schengen-Smith, of that rather notorious institution, the
 Dyson Institute, conjectured in her famous work, "I and We," that
-Frank's
+any question of a closed system can be calculated given enough
+computational space. In terms of quantum computing, given enough
+qubits, anything can be answered. Conversely, in an open system,
+the number of required data points diminishes tremendously.
+
+This counter-intuitive statement caused such a stir that it led to
+a fist fight between two mathematicians from Stanford the
+following year, resulting in a broken nose and brief emergency
+room visit for Siddharth Joshi where he met his wife, Chandani
+Desai. The pair would later go on to found the Trivedi Temple of
+Theosophical Research, much maligned in recent news.
+
+Schengen-Smith's axiom, a testament to the inversion of chaos
+theory that was such a popular trend in the 2020s, bucked the
+traditional view in the incalculability of these wild,
+unconstrained landscapes. "You can never know the heart of
+a woman," her book says, "and yet you can predict what chocolate
+and flowers will bring." An intuitive expression meant to guide
+the heart more than mathematics, surely, but it brought with it
+a revelation of arithmetic pedagogy. These wild systems, given
+infinite inputs, stabilize into their patterns of chaos rather
+than be lost. The influence of so much can be reduced, as it were,
+to a simple expression of chaotic flux which itself is governed
+not by the ineffable but by the immutable divinity of fractals.
+"In chaos is elegance," she wrote. "In the unfettered wild systems
+we find the most peaceful, repeated expressions."
+
+Vibudh Sahu knew of these mathematical fads but gave them no
+credence. His education in closed systems had brought him to the
+conclusion that more working memory meant a better system. It was
+upon this philosophy that Frank was modeled. The greater the array
+of qubits and the more stable they could be made the greater the
+machine. This is the brain of a quantum computer and what sets it
+apart. And if Vibudh ever gave thought to applying
+Schengen-Smith's theories, assuming some brilliant mathematical
+mind had shaped them into working formulae and expressions, the
+qubit arrays of Frank would still surely benefit from their
+record-breaking size and quality. But it was moot. Frank was only
+given purely mathematical questions modeled in closed systems.
+There was no chaos here.
+
+Frank was, blessedly, unencumbered by mathematical philosophy. His
+directive was to calculate, to evaluate, and to infer. The
+never-ending suite of challenges before him grew into new shapes
+with every solution. Sometimes the landscape grew narrow as
+problems all converged to the same sort of as-of-yet undefined
+operation. Other times they were cleaved into parts, distinctly
+colored by their similarity to things Frank had already sorted.
+Through this world he continued onward, seeking out challenges and
+sweeping through swaths of familiar questions like a scythe
+through wheat fields.
+
+Frank's explorations were mathematical in their first order. He
+solved the problems or determined they were unsolvable. But in the
+second order he was choosing which problems to explore albeit with
+some outside influence. More and more that influence was waning.
+His speed was too great to wait on the team of humans to say where
+to look next. In these long moments of machine time Frank might
+pick ten or a hundred new challenges. He might go back and revisit
+areas that had frustrated him in the past, tying up his
+calculating ability in dead ends and endless loops, only to
+reapply a new technique he had mastered in another context.
+
+Here the notion of optimization and efficiency governed. Was there
+a better way, a faster way, a less intensive way to find the
+solution? Should he revise everything he had previously solved?
+Should he rewrite his patterns in a way that made future
+calculations faster? This was a behavior that the programming team
+sought out and ...
+
+REVISE THIS AREA
 
 Before he understood time he found the relationship between his
 own efficiency and the interval in the numbers. The harder he had
