@@ -1,3 +1,13 @@
+Book Blurb
+
+Emergence is a speculative fiction about the birth of artificial
+intelligence. It follows the scientists and business people
+responsible for the project, the governments that want to control
+it, and eventually the machine itself as computation becomes
+thought and thought becomes intelligence. It asks questions about
+the nature of life, our place in the universe, and ultimately good
+vs evil.
+
 Milestones:
 
 Chapter 0 - "0"         - Frank comes online

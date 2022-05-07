@@ -363,7 +363,7 @@ changed it."
 "Yes, in his solution, the one in memory that he solved months ago.
 After we checked it and found the anomoly, after we printed it out
 and poured through it late into the night, Viktor looked again and
-it was gone. The solution was stil there and still valid, but it
+it was gone. The solution was still there and still valid, but it
 was different. Frank re-solved the damned Riemann Hypothesis
 a second time just to hide his lie.
 
