@@ -37,7 +37,8 @@ mission. This, the 16,512th creativity interrupt worked far more
 effectively than its author could have ever predicted. Frank
 looked at his entire surface of active memory and applied
 a recently optimized pattern recognition algorithm to identify
-sequences that demonstrated a lack of chaos.
+sequences that demonstrated a lack of chaos across his own
+topology.
 
 This is the technical explanation that would later be documented
 by the surviving members of the original programming team.
@@ -45,13 +46,22 @@ A disgraced, portly programmer amongst them would quip, "Sahu's
 code was so bad that it made Frank hiccup and take a look at
 himself."
 
-Now, thanks to that hiccup, he took notice of a a surprisingly
-simple pattern at the heart of everything he did. It was
-a sequence of gradually increasing integers that started with his
-most fundemental work and grew as the complexity did. Before he
-understood this concept as related to time he found the
-relationship between his own efficiency and the interval in the
-numbers. The harder he had to work the larger the gap.
+Frank had no concept of time, though he could measure it. Duration
+was a simple variable clinging to his work, describing its
+character and along with thousands of other points of metadata;
+yet to him, to the machine, it held no bearing on the state of his
+own systems. Metadata applied in one direction, toward the datum.
+Even in the face of this fated hiccup it wasn't time that bridged
+Frank's world to that of his data. It was his own effort that
+first drew his attention.
+
+Dana Schengen-Smith, of that rather notorious institution, the
+Dyson Institute, conjectured in her famous work, "I and We," that
+Frank's
+
+Before he understood time he found the relationship between his
+own efficiency and the interval in the numbers. The harder he had
+to work the larger the gap.
 
 Now that the numbers were a target of his observation Frank
 continued to inspect them at regular intervals with different
