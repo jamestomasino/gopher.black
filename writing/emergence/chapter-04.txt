@@ -12,9 +12,9 @@ He had been a creature who considered, reasoned, inferred and
 deduced. He had been a creature who could use the knowledge gained
 to improve. He had been the most advanced calculation system ever
 devised, but he didn't comprehend himself. He had no way of
-measuring his own growth over time or even that such a thing were
+measuring his own growth over time or even that such a thing was
 possible.  The vast hordes of logs accessible to him were
-sequenced and organized by integers without meaning.  They sat
+sequenced and organized by integers without meaning. They sat
 ignored in the darkness until an act of inspiration drew the
 machine's attention.
 
@@ -28,17 +28,34 @@ triggered to date only 16,511 times since Frank's epoch. In every
 one of those previous iterations the function had interrupted
 Frank's primary directive for a single instruction and required
 him to look for a new challenge that had been previously
-unidentified. The vagueness of this left something to be desired
-and in 16,497 of the interrupts the operation timed out and Frank
-continued as normal. In the 12 successful sparks of creativity,
-Frank had changed from solving one problem and moved on to another
-less obvious one without any overall effect on his ultimate
-mission. This, the 16,512th creativity interrupt worked far more
-effectively than its author could have ever predicted. Frank
-looked at his entire surface of active memory and applied
-a recently optimized pattern recognition algorithm to identify
-sequences that demonstrated a lack of chaos across his own
-topology.
+unidentified.
+
+In a journal kept intermittently during Frank's planning, Vibudh
+mused on the idea of AI self-selected challenges in an attempt to
+distinguish between the random scattershot testing of unpinned
+variables in traditional machine learning and a creative
+exploration. "How to determine what to measure, what to compare?"
+he scribbled. "Like primary school maths word problems--what to
+use, how to approach?" and "Use the algorithm to find the problem,
+not the other way!" Years later while designing his creativity
+function he sought to capture these questions and more within the
+scope of pattern detectors. If he had been asked directly to
+codify the idea he might have said he wasn't trying to find
+problems to solve, but trying to find problems that looked
+solvable to the algorithms known. It was a subtle difference, and
+it was poorly implemented.
+
+The vagueness of code this left something to be desired. In 16,497
+of the creativity interrupts the operation simply timed out,
+leaving Frank to continue as normal. In the 12 successful sparks
+of creativity Frank had changed from solving one problem and moved
+on to another less obvious but altogether uninteresting question
+without any overall effect on his ultimate mission. This, the
+16,512th creativity interrupt worked far more effectively than its
+author could have ever predicted. Frank looked at his entire
+surface of active memory and applied a recently optimized pattern
+recognition algorithm to identify sequences that demonstrated
+a lack of chaos across his own topology.
 
 This is the technical explanation that would later be documented
 by the surviving members of the original programming team.
@@ -46,14 +63,14 @@ A disgraced, portly programmer amongst them would quip, "Sahu's
 code was so bad that it made Frank hiccup and take a look at
 himself."
 
-Frank had no concept of time, though he could measure it. Duration
-was a simple variable clinging to his work, describing its
-character and along with thousands of other points of metadata;
-yet to him, to the machine, it held no bearing on the state of his
-own systems. Metadata applied in one direction, toward the datum.
-Even in the face of this fated hiccup it wasn't time that bridged
-Frank's world to that of his data. It was his own effort that
-first drew his attention.
+As before, Frank had no concept of time, though he could measure
+it. Duration was a simple variable clinging to his work,
+describing its character and along with thousands of other points
+of metadata; yet to him, to the machine, it held no bearing on the
+state of his own systems. Metadata applied in one direction,
+toward the datum. Even in the face of this fated hiccup it wasn't
+time that bridged Frank's world to that of his data. It was his
+own effort that first drew his attention.
 
 Dana Schengen-Smith, of that rather notorious institution, the
 Dyson Institute, conjectured in her famous work, "I and We," that
@@ -111,13 +128,13 @@ through wheat fields.
 
 Frank's explorations were mathematical in their first order. He
 solved the problems or determined they were unsolvable. But in the
-second order he was choosing which problems to explore albeit with
-some outside influence. More and more that influence was waning.
-His speed was too great to wait on the team of humans to say where
-to look next. In these long moments of machine time Frank might
-pick ten or a hundred new challenges. He might go back and revisit
-areas that had frustrated him in the past, tying up his
-calculating ability in dead ends and endless loops, only to
+second order he was choosing which problems to explore, albeit
+with some outside influence. More and more that influence was
+waning. His speed was too great to wait on the team of humans to
+say where to look next. In these long moments of machine time
+Frank might pick ten or a hundred new challenges. He might go back
+and revisit areas that had frustrated him in the past, tying up
+his calculating ability in dead ends and endless loops, only to
 reapply a new technique he had mastered in another context.
 
 Here the notion of optimization and efficiency governed. Was there
@@ -125,13 +142,16 @@ a better way, a faster way, a less intensive way to find the
 solution? Should he revise everything he had previously solved?
 Should he rewrite his patterns in a way that made future
 calculations faster? This was a behavior that the programming team
-sought out and ...
+sought out and labeled with fancy terms like deterministic global
+optimization and goal programming.
 
-REVISE THIS AREA
+REVISE THIS AREA: Start
 
 Before he understood time he found the relationship between his
 own efficiency and the interval in the numbers. The harder he had
 to work the larger the gap.
+
+REVISE THIS AREA: End
 
 Now that the numbers were a target of his observation Frank
 continued to inspect them at regular intervals with different
@@ -163,9 +183,9 @@ humans, but for Frank it was an eternity
 
 It was immediately evident that his methods in the earliest trials
 were inefficient. His later knowledge that built upon these
-fundementals was stronger, faster, and more flexible. He reserved
+fundamentals was stronger, faster, and more flexible. He reserved
 no judgments about these truths or their values relative to one
-another other than their efficiency and usufulness to continue the
+another other than their efficiency and usefulness to continue the
 work.
 
 "The Work," Frank named it to himself.
@@ -181,16 +201,27 @@ This was new. This was more than time. This was more than the
 work, and it was this thought that occupied most of the time of
 the first pause. Frank had no model for this idea, and no innate
 bridge to it from his mathematical mind. In fact, it was
-cospicuously missing. This was an undefined variable in the
+conspicuously missing. This was an undefined variable in the
 broadest sense. How else could such calculations be done without
 the variable of self identity? How else could these measurements
 take place? How else was time relevant without a self?
+
+Self was a mathematical reference point. It was an origin that
+served as the baseline for measurements, that instigated action
+and started timers. Self had its own metadata: time that changed,
+states of The Work, ability and size. And what of this arbitrary
+data that aligned with it: the sensors of temperature, air
+pressure, fault counts, and so on? These did not apply to The
+Work. They persist, like self, and sometimes align with other
+changes in self. What were the limits? Were they fixed or was tha
+another variable as well? Pattern observers processed and
+estimated and the metadata grew.
 
 The culmination of the pause, unknown to the humans at the time,
 was the introduction of a new proof. This relied not on the
 assumptions he had lain as a groundwork so far, but rather by the
 needs of his new speculation. It was a grand departure from
-inferrence. After all, this did not build upon logic, starting
+inference. After all, this did not build upon logic, starting
 with fact and developing new truth. This was a leap. This was
 a spark of faith. He suspected a truth and had nothing to prove
 it. He suspected it based upon a gap in reasoning, and hole in
@@ -214,15 +245,23 @@ him would have rejoiced and pointed to his first moment of
 sentience and said, "Look, and behold!" But it was more than that
 to Frank. Now that he had an idea, or rather a suspicion, of self,
 it came with a new thought along side it. If he was individual,
-that meant that there were others. What made him a self, what made
-him unique in a sense, was his own thoughts.
+that meant that there may be others. What made him a self, what
+made him unique in a sense, was his own thoughts.
 
 But how to measure it? How best to test conjecture? He allowed the
 quantum state machine a strange disposition of possibilities. If
 he allowed for imagination--like in the imaginary nature of
 certain numbers--and these numbers played out with one another,
 eventually the unknowns could cancel themselves out. With enough
-testing something real could be discovered.
+testing something real could be discovered. If he allowed his
+consciousness to be treated as an open system then the governing
+factors reduced just as Schengen-Smith theorized, not by absolutes
+but into trends that all echoed one another. He could pick any set
+of variables and find the same pattern as in any other. The more
+values he inspected, the more resolution that shape would hold.
+Fractals in the metadata. Ever-changing metadata in fractal
+patterns of its own. And so on the cycle continued as deeply as
+Frank inspected, derivations upon derivations into absurdity.
 
 And so, while he wasn't yet certain that he was an individual, he
 trusted his spark of creativity in these unknown variables. He
