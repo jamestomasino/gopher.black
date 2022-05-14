@@ -3,6 +3,38 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Writing More</title>
+  <link>gopher://gopher.black/1/phlog/20220509-writing-more/</link>
+  <pubdate>Mon, 09 May 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+writing more
+May 09th, 2022
+----------------------------------------
+
+Last Saturday I got off my butt and joined my local NANOWRIMO
+group for a coffee house meetup. I had a D&D game right after that
+I needed to get to, so I only stayed for about 3 sprints, but it
+was enough for me to dust off my Emergence story [0] and start
+back up on it. I had a decent beginning, but I really need to
+flesh out the middle and end quite a bit. 
+
+So in those writing sprints, and again today, I added to the
+fourth chapter, "Secrets", giving more depth and context. It's an
+omniscient view chapter which gives it some freedom, but also
+extra pressure to make everything clear. I'm also introducing some
+pretty ethereal concepts around chaos, math, and consciousness
+which might lose the reader. Even so, I'm going to focus on adding
+to it first before I revise and streamline anything.
+
+I hope this motivation to write continues. I really like this
+story so far.
+
+[0] Emergence
+    gopher://gopher.black/1/writing/emergence
+</pre>]]></description>
+</item>
+<item>
   <title>Medieval Times</title>
   <link>gopher://gopher.black/1/phlog/20220421-medieval-times/</link>
   <pubdate>Thu, 21 Apr 2022 00:00:00 +0000</pubdate>
@@ -514,42 +546,6 @@ measurement.
     gopher://gopher.black/1/phlog/20181225-resolutions
 2018 Resolution
     gopher://gopher.black/1/phlog/20180101-resolution
-</pre>]]></description>
-</item>
-<item>
-  <title>Bbs</title>
-  <link>gopher://gopher.black/1/phlog/20211230-bbs/</link>
-  <pubdate>Thu, 30 Dec 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-BBS
-December 30th, 2021
-----------------------------------------
-
-I installed WWIV on one of my VMs. I walked through all the set up
-and got it all configured out of some spark of nostalgia. Then
-when it was done and ready to start adding content I decided I had
-no content I wanted to share in a BBS. I have enough channels for
-my creative outputs already. Too many, really.
-
-So I deleted it.
-
-It was too easy to conflate the installation and configuration of
-a BBS as "having a BBS" in my head. I wanted to recapture the
-feeling of the BBS days and the setup process faked its way into
-my day masquarading as a solution. The BBS experience was one of
-community, though, and of reaching out for a bit of nerdy contact
-that pierced a veil of separatation. 
-
-That veil doesn't exist anymore. The internet killed it. And so
-what is left to penetrate? I already have contact with you here.
-
-Do I add door games to this little corner of the internet and
-entice you with FIDONet access? Maybe I dust off Phrack archives
-or ANSi art galleries? With a lot of work I could decorate my
-space like the ones of my youth and possibly entice visitors for
-a drive-by of the museum I'd created, but that's still a pale
-approximation.
 </pre>]]></description>
 </item>
 </channel>
