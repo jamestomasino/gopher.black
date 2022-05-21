@@ -1,3 +1,8 @@
                           "Unknown"
 
-[add more]
+[
+  David tries to shut down the program
+  Power is cut
+  The system is dead
+  Vibudh arrested? Kidnapped?
+]
