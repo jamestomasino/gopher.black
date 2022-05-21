@@ -390,11 +390,8 @@ point trying to change it.
 It would grow and learn and evolve and soon, very soon, it would
 be sentient. It would be alive. Yes, alive, dammit. If the press
 were going to use the word then he must embrace it or seem a fool.
-Besides, creating life didn't make you a king. It made you a god.
-
-There were steps left to take, surely. Little things to feed to
-the machine to ensure it stayed on track. But it was his just as
-surely as any of these other servants. And he had plans for Frank.
+Besides, creating life didn't make you a king, did it? No. It made
+you a god.
 
                                #
 
@@ -434,8 +431,9 @@ a peach colored fuzzy contraption over her hair. He wanted to call
 it a muff, but that sounded wrong. Perhaps it was just a fluff-hat
 or fluffcap. Muffcap? His face screwed up into a grimace of
 confusion and horror at himself and he completely lost track of
-his appraisal. The woman had moved up to the counter and Vibudh
-lost interest almost immediately.
+his assessment. The woman had moved up to the counter and Vibudh
+lost interest almost immediately. Didn't it have a Russian name?
+Ush-something?
 
 He had his book, something about a train murder, and he had his
 phone. He had stolen his way into one of the large comfortable
@@ -443,7 +441,7 @@ chairs with a small table to hold his cocoa and all was well.
 Putting in some effort, he placed his phone down on the table and
 focused on the book, realizing right away that he had no idea
 where he had left off. Vibudh was just beginning to flip backwards
-through the pages to find his place when he noticed his hat
+through the pages to find his place when he noticed his book
 wearing a pink muff. That was strange, and the voice that spoke
 was even stranger.
 
@@ -461,3 +459,9 @@ her mouth agape. He struggled to find a more dignified pose in the
 oversized chair than his lounging posture and the deep cushions
 would allow as he muttered nonsense and apologies. She laughed and
 it sounded just like those door chimes.
+
+[
+  Vibudh meets mystery woman, daughter of mysterious bad guy from
+  chapter 2. She tries to lure Vibudh into a relationship,
+  possibilities of getting info. Fallback plan is to kidnap him.
+]
