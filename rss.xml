@@ -3,6 +3,31 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Small Internet Survey</title>
+  <link>gopher://gopher.black/1/phlog/20220626-small-internet-survey/</link>
+  <pubdate>Sun, 26 Jun 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Small Internet Survey
+June 26th, 2022
+----------------------------------------
+
+I've put together a survey about the Small Internet (gopher,
+gemini, individual webpages, small community sites) and I would
+love your input. Please spend a few minutes and fill in your
+thoughts. I'm especially interested in the open response
+questions. This will help inform an upcoming conference talk I'll
+be giving at May Contain Hackers (MCH).
+
+Survey Link
+    https://cloud.tomasino.org/apps/forms/KakFXPSpgj5WD9zq
+MCH Website
+    https://mch2022.org
+My Talk at MCH
+    https://program.mch2022.org/mch2021-2020/talk/RPVQD8/
+</pre>]]></description>
+</item>
+<item>
   <title>Abortion</title>
   <link>gopher://gopher.black/1/phlog/20220626-abortion/</link>
   <pubdate>Sun, 26 Jun 2022 00:00:00 +0000</pubdate>
