@@ -3,6 +3,24 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Another One Bites The Dust</title>
+  <link>gopher://gopher.black/1/phlog/20220809-another-one-bites-the-dust/</link>
+  <pubdate>Tue, 09 Aug 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Another one bites the dust
+August 09th, 2022
+----------------------------------------
+
+Lost another friend today. The number will start increasing soon,
+I think, as we age more. It's hard to fathom, though. The number
+has always been high. It's always too many.
+
+I'll miss him. Less than some, more than many. He was a hell of
+a human.
+</pre>]]></description>
+</item>
+<item>
   <title>Small Internet Presentation At Mch2022</title>
   <link>gopher://gopher.black/1/phlog/20220729-small-internet-presentation-at-mch2022/</link>
   <pubdate>Fri, 29 Jul 2022 00:00:00 +0000</pubdate>
@@ -514,148 +532,6 @@ February 21st, 2022
 ----------------------------------------
 
 Oh no. Poor Ukraine.
-</pre>]]></description>
-</item>
-<item>
-  <title>Computer Science</title>
-  <link>gopher://gopher.black/1/phlog/20220202-computer-science/</link>
-  <pubdate>Wed, 02 Feb 2022 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-computer science
-February 02nd, 2022
-----------------------------------------
-
-I came across one of those lists of free computer science classes
-curated in a github gist or some other such place. I knocked it
-around in my tabs for a couple hours and let my mind go back to my
-own CS education.
-
-I started at Rowan University in 1998 in the Computer Science
-department following the coattails of a friend from Boy Scouts who
-had been doing well for a year already. In high school I didn't
-really have any direction at all or idea of what I wanted to do.
-Computers happened to be a thing I was familiar with, spent a bit
-of time on, and it appeared likely to have a future that paid
-well. My dad's only restriction on my choice was, "No art."
-
-He had gone to Kent State and studied in the Visual Communications
-department there and was unable to turn that into a career. He
-instead took the long way through a retail job and eventually into
-sales. Because of his experience he hoped to save me the trouble.
-
-The thing is, had he not had that restriction I likely would have
-gone into some form of art education. It was the course track
-I enjoyed most in school, continuously excelled in, and got me
-motivated. But, in the long run the joke is on both of us. As I'll
-explain in a moment. But first, back to Computer Science!
-
-In 1998 I got my start. I had some great introduction to
-programming classes that dove right into C. I had a killer lab
-techniques practical course that taught me the ins and outs of the
-command line, jobs, rediection of outputs, and all sorts of mighty
-cool things I use every day. I also had some heavy-duty math
-classes which bored the ever-living snot out of me.
-
-My first semester went well. My second semester saw a marked dip
-in my grades, though. I was getting involved in stuff that was
-taking my focus away from class, and part way through that year
-I developed an extreme clinical depression and insomnia. Entering
-my sophomore years I find it difficult to relate details because
-I have some intense memory loss due to the insomnia. I basically
-accomplished nothing is school, failed everything, and was on the
-edge of academic probation when I somehow signed up to enlist in
-the US Navy. That gave me an excuse for a leave-of-asence from
-school (delaying repaying those loans!) and in a matter of weeks
-I was gone.
-
-All in all my computer science education is the equivalent of two
-pretty solid semesters of foundations.
-
-In the Navy I was a nuclear electronics technician, so I picked up
-more skills in hardware which was really cool, but didn't do much
-to further my computer expertise.
-
-Finally, after the Navy, I ended up returning to school and
-beginning anew at Indiana University. I transfered pretty much
-nothing from my first school as I wasn't going into a CS
-department. I think 2 of my math classes may have worked and
-that's it. But, this time around I had a Navy work ethic and also
-the a limited time payment due to my medical discharge. The Navy
-had me covered for about 3 years of school, so I went to town.
-I managed to go from nothing at all to a masters degree in those
-three years. Fun part about it? It was in this lovely new program
-that just launched called "New Media". It was, in fact, a visual
-communications degree + computers. Hah!
-
-So, as I'm remember all this stuff I'm also lementing how I can
-whiz through and code really well and professionally at a senior
-level in a few niche areas, but if you need skills that get past,
-say, data structures and algorithms level, I never learned it.
-Systems programming? No idea. Operating systems? Nope. Parallel
-computing? Huh?
-
-I'll sum it up this way: I never got to learn how to link to
-a system library. Not sure what to do to make that happen.
-
-I can muddle around in about 15 languages, but without that
-conceptual level to fall back on there's not a lot I can actually
-DO outside of the web.
-
-So yeah, I need more education. And here are all these free
-courses. My formal education was a quarter century ago, so I'm not
-going to rely on memory. I've decided to start from the beginning.
-
-The following is a list of courses with video lections I found
-which roughly run in linear order. I may end up shuffling one or
-two things later on, but for now I'm just watching lectures one by
-one and soaking it in. I'm pretty sure I won't need any note
-taking for the first couple of courses, but we'll see.
-
-Stanford CS106A - Programming Methodology
-    https://see.stanford.edu/Course/CS106A
-Stanford CS106B - Programming Abstractions
-    https://see.stanford.edu/Course/CS106B
-Stanford CS107 - Programming Paradigms
-    https://see.stanford.edu/Course/CS107
-Stanford CS110 - Principals of Computer Systems
-    https://web.stanford.edu/class/archive/cs/cs110/cs110.1202/
-MIT - Mathematics for Computer Science
-    https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/
-Wheaton - Discrete Mathematics and Functional Programming
-    http://cs.wheaton.edu/~tvandrun/dmfp/
-Stanford CS161 - Design and Analysis of Algorithms 1
-    https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V
-Stanford CS161 - Design and Analysis of Algorithms 2
-    https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6
-Stanford CS261 - A second Course in Algorithms
-    http://timroughgarden.org/w16/w16.html
-Stanford EE261 - The Fourier Transform and its Applications
-    https://see.stanford.edu/Course/EE261
-CMU 18-447 - Introduction to Computer Architecture
-    https://www.youtube.com/playlist?list=PL5PHm2jkkXmhayPxddp9z5MixV8Q5Ty8u
-CMU 15-418 - Parallel Computer Architecture and Programming
-    http://15418.courses.cs.cmu.edu/spring2015/
-CMU 15-721 - Database Systems
-    https://www.youtube.com/playlist?list=PLSE8ODhjZXjbisIGOepfnlbfxeH7TW-8O
-CSE 421/521 - Introduction to Operating Systems
-    https://www.youtube.com/playlist?list=PLE6LEE8y2Jp-kbEcVR2W3vfx0Pdca0BD3
-Berkeley - SICP Python
-    https://cs61a.org/
-MIT - SICP Scheme
-    https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/index.htm
-
-The last two entrants are both courses based around SICP. There's
-the famous Scheme original from MIT, but also one in Python which
-I grok better. In April I'm picking up the Javascript SICP book
-too. Between two courses and a book in three different languages
-I hope I'll be able to muddle my way through.
-
-I hope I finish it all. I think it's doable. I'll keep pressing
-forward as best I can. If you read this and think about it at some
-point in the future, feel free to ping me on IRC or Mastodon
-sometime and ask how I'm doing. Who knows, I may be stalled and
-need a little nudge back on track.
 </pre>]]></description>
 </item>
 </channel>
