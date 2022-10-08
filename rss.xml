@@ -3,6 +3,200 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Another One Bites The Dust</title>
+  <link>gopher://gopher.black/1/phlog/20220809-another-one-bites-the-dust/</link>
+  <pubdate>Tue, 09 Aug 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Another one bites the dust
+August 09th, 2022
+----------------------------------------
+
+Lost another friend today. The number will start increasing soon,
+I think, as we age more. It's hard to fathom, though. The number
+has always been high. It's always too many.
+
+I'll miss him. Less than some, more than many. He was a hell of
+a human.
+</pre>]]></description>
+</item>
+<item>
+  <title>Small Internet Presentation At Mch2022</title>
+  <link>gopher://gopher.black/1/phlog/20220729-small-internet-presentation-at-mch2022/</link>
+  <pubdate>Fri, 29 Jul 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Small Internet Presentation at MCH2022
+July 29th, 2022
+----------------------------------------
+
+I'm back home from the Netherlands and MCH2022 (May Contain
+Hackers). It was a whirlwind and quite awesome. I'm just floored
+by how much stuff a bunch of volunteers can accomplish with
+motivation and creative hacking.
+
+The talks were amazing and most can now be found online on the CCC
+site. There was also an epic CTF game going on the whole week (I
+helped out in some lock picking challenges). The ad-hoc villages
+created by visitors were endless fun too. What a wild ride. I hope
+you all get the chance to attend one of these hacker camps in the
+future.
+
+I participated in one group panel discussion on social media,
+disinformation, and fascism that was really interesting, but not
+recorded. I also gave one of the curated stage presentations which
+was recorded [0].
+
+[0] Video of my Small Internet talk
+    https://media.ccc.de/v/mch2022-83-rocking-the-web-bloat-modern-gopher-gemini-and-the-small-internet
+
+My main talk was about the small internet, and specifically about
+gopher and gemini. It covers some framing for what people mean by
+the term small internet, what services and activities fall under
+the umbrella, and a bit of sentiment and behavior information from
+the survey I shared here earlier. Then I run through a quick
+technical overview of gopher and gemini, and finish off with
+a quick nod at pubnix and tildes. The questions from the audience
+were wonderful and I hope it broadens awareness of our fun little
+spaces. If you want to see the slides from the presentation,
+they're a Nuxt app I tossed together for the purpose and can be
+found here [1]:
+
+[1] Presentation Slides
+    https://small-internet-presentation.netlify.app
+
+I hope I get to go to another camp in the near future. Perhaps
+next time I'll discuss contract based dependency management [2].
+
+[2] CBDM Blog Post
+    https://labs.tomasino.org/contract-based-dependency-management/
+</pre>]]></description>
+</item>
+<item>
+  <title>Small Internet Survey</title>
+  <link>gopher://gopher.black/1/phlog/20220626-small-internet-survey/</link>
+  <pubdate>Sun, 26 Jun 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Small Internet Survey
+June 26th, 2022
+----------------------------------------
+
+I've put together a survey about the Small Internet (gopher,
+gemini, individual webpages, small community sites) and I would
+love your input. Please spend a few minutes and fill in your
+thoughts. I'm especially interested in the open response
+questions. This will help inform an upcoming conference talk I'll
+be giving at May Contain Hackers (MCH).
+
+Survey Link
+    https://cloud.tomasino.org/apps/forms/KakFXPSpgj5WD9zq
+MCH Website
+    https://mch2022.org
+My Talk at MCH
+    https://program.mch2022.org/mch2021-2020/talk/RPVQD8/
+</pre>]]></description>
+</item>
+<item>
+  <title>Abortion</title>
+  <link>gopher://gopher.black/1/phlog/20220626-abortion/</link>
+  <pubdate>Sun, 26 Jun 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Abortion
+June 26th, 2022
+----------------------------------------
+
+This is a post about my thoughts on abortion. It is personal and
+not intended to persuade. I'm writing it because I am, on
+occasion, asked about my opinion, and thought it helpful to write
+them down.
+
+Let this brief introduction serve as a content warning.
+
+* * * * *
+
+Let's start with the easy bits:
+
+There are times when an abortion is absolutely, unequivocally, and
+unambiguously the moral choice. For instance, if the fetus is
+non-viable or if the birth with result in the death of the fetus
+and parent. There is no grey area here. By performing a medical
+procedure we can help save life and reduce suffering.
+
+With that very basic example I thereby demonstrate that there is
+no right and ethical argument against abortion in all situations.
+The act itself cannot be considered evil for it can in some
+situations be used for good. We must look further at the situation
+and recognize that there's more to this than a black & white
+narrative. (Duh.)
+
+What situations affect the ethical choice for or against birth?
+There's a huge range of circumstances from family planning issues,
+to health, safety, abuse, and money. This is where I feel the
+opportunity is best to save lives and reduce suffering.
+
+Lets take just a few examples here:
+
+The teenagers who accidentally conceive -- currently face
+incredibly difficult life decisions while their own bodies and
+brains are still developing. The realities of modern America mean
+the potential for difficulties with families, poverty, lack of
+support for continued education, and lack of tooling and services
+for the child. 
+
+These things are addressable by our society. A world that embraces
+and supports these young people, provides the safety nets,
+childcare services, and opportunities to continue to improve
+themselves and the futures of their children would create an
+environment where the accidental pregnancy wouldn't come with such
+a sense of shock and fear. That would lead to less people seeing
+abortion as their only path.
+
+A family that's struggling to support the kids they have may see
+similar benefits if only social services are improved. The
+unexpected extra child is now not a fearful burden, but an
+opportunity.
+
+But there are other situations that we must face as a reality.
+Rape, incest, abusive relationships. Legislating against abortions
+further punishes the victims of these crimes and causes great
+suffering. It is undeniable. Forced birthing is quite literally
+a war crime and crime against humanity, as defined in the 1998
+Rome Statute of the International Criminal Court (ICC Statute). It
+is unconscionable to force women into this situation for the sake
+of a child's life: a child which after birth is given no further
+thought. It is a false display of moralism made at the cost of
+another.
+
+And finally, there are people who become pregnant who just don't
+want to be. There is no quandary for them. There is no situation
+change which would put them in a position to want to have a child.
+Here is the hardest of all situations for a third party to wrap
+their head around. The life of a child vs what appears to be
+nothing. But it's never nothing, is it? We are all complex
+creatures with a lifetime of thoughts and feelings that led to who
+we are today. These experiences are intricate, complicated, and
+carry a vast depth to them. These depths are plumbed in therapy by
+millions daily, and though issues may seem mundane to those in
+passing they are whirlwinds of vital importance that make or break
+people. Our glimpse at someone's situation is not even seeing the
+iceberg above the surface, let alone below. We don't even sense
+the chill in the air. We cannot understand from our vantage, and
+thus, as hard as it may be, we cannot decide for that person.
+
+I want there to be fewer abortions. I want a world that makes it
+safe for children to come into being and be cared for no matter
+what the situation of the parents. I want mental health services
+to be available to everyone who needs to talk because maybe, just
+maybe, some more people will say yes to the child.
+
+I am pro-life. I am against abortion. And yet, I believe it is
+absolutely wrong to legislate forced-births. We make abortion
+diminish through compassion in our society, not through fascism.
+</pre>]]></description>
+</item>
+<item>
   <title>Writing More</title>
   <link>gopher://gopher.black/1/phlog/20220509-writing-more/</link>
   <pubdate>Mon, 09 May 2022 00:00:00 +0000</pubdate>
@@ -338,214 +532,6 @@ February 21st, 2022
 ----------------------------------------
 
 Oh no. Poor Ukraine.
-</pre>]]></description>
-</item>
-<item>
-  <title>Computer Science</title>
-  <link>gopher://gopher.black/1/phlog/20220202-computer-science/</link>
-  <pubdate>Wed, 02 Feb 2022 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-computer science
-February 02nd, 2022
-----------------------------------------
-
-I came across one of those lists of free computer science classes
-curated in a github gist or some other such place. I knocked it
-around in my tabs for a couple hours and let my mind go back to my
-own CS education.
-
-I started at Rowan University in 1998 in the Computer Science
-department following the coattails of a friend from Boy Scouts who
-had been doing well for a year already. In high school I didn't
-really have any direction at all or idea of what I wanted to do.
-Computers happened to be a thing I was familiar with, spent a bit
-of time on, and it appeared likely to have a future that paid
-well. My dad's only restriction on my choice was, "No art."
-
-He had gone to Kent State and studied in the Visual Communications
-department there and was unable to turn that into a career. He
-instead took the long way through a retail job and eventually into
-sales. Because of his experience he hoped to save me the trouble.
-
-The thing is, had he not had that restriction I likely would have
-gone into some form of art education. It was the course track
-I enjoyed most in school, continuously excelled in, and got me
-motivated. But, in the long run the joke is on both of us. As I'll
-explain in a moment. But first, back to Computer Science!
-
-In 1998 I got my start. I had some great introduction to
-programming classes that dove right into C. I had a killer lab
-techniques practical course that taught me the ins and outs of the
-command line, jobs, rediection of outputs, and all sorts of mighty
-cool things I use every day. I also had some heavy-duty math
-classes which bored the ever-living snot out of me.
-
-My first semester went well. My second semester saw a marked dip
-in my grades, though. I was getting involved in stuff that was
-taking my focus away from class, and part way through that year
-I developed an extreme clinical depression and insomnia. Entering
-my sophomore years I find it difficult to relate details because
-I have some intense memory loss due to the insomnia. I basically
-accomplished nothing is school, failed everything, and was on the
-edge of academic probation when I somehow signed up to enlist in
-the US Navy. That gave me an excuse for a leave-of-asence from
-school (delaying repaying those loans!) and in a matter of weeks
-I was gone.
-
-All in all my computer science education is the equivalent of two
-pretty solid semesters of foundations.
-
-In the Navy I was a nuclear electronics technician, so I picked up
-more skills in hardware which was really cool, but didn't do much
-to further my computer expertise.
-
-Finally, after the Navy, I ended up returning to school and
-beginning anew at Indiana University. I transfered pretty much
-nothing from my first school as I wasn't going into a CS
-department. I think 2 of my math classes may have worked and
-that's it. But, this time around I had a Navy work ethic and also
-the a limited time payment due to my medical discharge. The Navy
-had me covered for about 3 years of school, so I went to town.
-I managed to go from nothing at all to a masters degree in those
-three years. Fun part about it? It was in this lovely new program
-that just launched called "New Media". It was, in fact, a visual
-communications degree + computers. Hah!
-
-So, as I'm remember all this stuff I'm also lementing how I can
-whiz through and code really well and professionally at a senior
-level in a few niche areas, but if you need skills that get past,
-say, data structures and algorithms level, I never learned it.
-Systems programming? No idea. Operating systems? Nope. Parallel
-computing? Huh?
-
-I'll sum it up this way: I never got to learn how to link to
-a system library. Not sure what to do to make that happen.
-
-I can muddle around in about 15 languages, but without that
-conceptual level to fall back on there's not a lot I can actually
-DO outside of the web.
-
-So yeah, I need more education. And here are all these free
-courses. My formal education was a quarter century ago, so I'm not
-going to rely on memory. I've decided to start from the beginning.
-
-The following is a list of courses with video lections I found
-which roughly run in linear order. I may end up shuffling one or
-two things later on, but for now I'm just watching lectures one by
-one and soaking it in. I'm pretty sure I won't need any note
-taking for the first couple of courses, but we'll see.
-
-Stanford CS106A - Programming Methodology
-    https://see.stanford.edu/Course/CS106A
-Stanford CS106B - Programming Abstractions
-    https://see.stanford.edu/Course/CS106B
-Stanford CS107 - Programming Paradigms
-    https://see.stanford.edu/Course/CS107
-Stanford CS110 - Principals of Computer Systems
-    https://web.stanford.edu/class/archive/cs/cs110/cs110.1202/
-MIT - Mathematics for Computer Science
-    https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/
-Wheaton - Discrete Mathematics and Functional Programming
-    http://cs.wheaton.edu/~tvandrun/dmfp/
-Stanford CS161 - Design and Analysis of Algorithms 1
-    https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V
-Stanford CS161 - Design and Analysis of Algorithms 2
-    https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6
-Stanford CS261 - A second Course in Algorithms
-    http://timroughgarden.org/w16/w16.html
-Stanford EE261 - The Fourier Transform and its Applications
-    https://see.stanford.edu/Course/EE261
-CMU 18-447 - Introduction to Computer Architecture
-    https://www.youtube.com/playlist?list=PL5PHm2jkkXmhayPxddp9z5MixV8Q5Ty8u
-CMU 15-418 - Parallel Computer Architecture and Programming
-    http://15418.courses.cs.cmu.edu/spring2015/
-CMU 15-721 - Database Systems
-    https://www.youtube.com/playlist?list=PLSE8ODhjZXjbisIGOepfnlbfxeH7TW-8O
-CSE 421/521 - Introduction to Operating Systems
-    https://www.youtube.com/playlist?list=PLE6LEE8y2Jp-kbEcVR2W3vfx0Pdca0BD3
-Berkeley - SICP Python
-    https://cs61a.org/
-MIT - SICP Scheme
-    https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/index.htm
-
-The last two entrants are both courses based around SICP. There's
-the famous Scheme original from MIT, but also one in Python which
-I grok better. In April I'm picking up the Javascript SICP book
-too. Between two courses and a book in three different languages
-I hope I'll be able to muddle my way through.
-
-I hope I finish it all. I think it's doable. I'll keep pressing
-forward as best I can. If you read this and think about it at some
-point in the future, feel free to ping me on IRC or Mastodon
-sometime and ask how I'm doing. Who knows, I may be stalled and
-need a little nudge back on track.
-</pre>]]></description>
-</item>
-<item>
-  <title>Cheating At My Reading Goal</title>
-  <link>gopher://gopher.black/1/phlog/20220101-cheating-at-my-reading-goal/</link>
-  <pubdate>Sat, 01 Jan 2022 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-cheating at my reading goal
-January 01st, 2022
-----------------------------------------
-
-A new year is here and a new reading goal is set. I'm sticking
-with my goal of 100 books like the last few years. It's attainable
-even if I hit a slump. Even so, to start my year off on a good
-note I like to read easy, quick stuff. Last year I read like 10-15
-books of this Witch P.I. series that's honestly pretty terrible,
-but I just tear through it. It helps that the books are cozy as
-hell and nothing serious is ever at stake more than a knitting
-contest.
-
-This year I was thinking about what series to binge to get ahead.
-I'm just getting started on the Jill Kismet series (I have the
-whole thing in an omnibus). I also have the Alex Verus series of
-which I've read book one and will likely binge quickly. But
-instead of either of those I realized that my Calibre library has
-page numbers in it (because I'm diligent about good data). So...
-I'm going to sort by shortest book and clean house on a bunch of
-novellas I've been sitting on for years. I have about 20 books
-under 50 pages! If I want to read a bunch of the Shadow stories
-this year I could do my entire 100 and stay under 150 pages each.
-Wild! Such cheating! Hahaha.
-
-I'll mix it up soon enough and I don't stop at 100 books, so I'm
-not really cheating anything. This is just a little mental trick
-to help me feel like I'm well invested in reading for the year. My
-own motivation wanes if I fall behind schedule and it becomes
-increasingly hard to pick up my Kindle. It's best to stay well
-ahead of goal.
-
-Anyway, here I go!
-</pre>]]></description>
-</item>
-<item>
-  <title>Resolution</title>
-  <link>gopher://gopher.black/1/phlog/20211230-resolution/</link>
-  <pubdate>Thu, 30 Dec 2021 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Resolution
-December 30th, 2021
-----------------------------------------
-
-Be it resolved:
-
-This year the name 'tomasino' will become a standard unit of
-measurement.
-
-2021 Resolution
-    gopher://gopher.black/1/phlog/20201231-resolution
-2020 Resolution
-    gopher://gopher.black/1/phlog/20200101-resolution
-2019 Resolution
-    gopher://gopher.black/1/phlog/20181225-resolutions
-2018 Resolution
-    gopher://gopher.black/1/phlog/20180101-resolution
 </pre>]]></description>
 </item>
 </channel>

@@ -24,7 +24,6 @@ iInterfaces		gopher.black	70
 1Hacker News	/hn	codevoid.de	70
 1Metafilter	/	gopher.metafilter.com	70
 1Gopher Bay	/	bay.parazy.de	666
-1BSD man pages	/	perso.pw	70
 7searx search	/searx.dcgi	me0w.net	70
 1ShadowGate MUD	/	shadowgate.org	70
 i		gopher.black	70
@@ -43,6 +42,9 @@ i                       |    |		gopher.black	70
 i                  _ \   _|    \    -_)   _| (_-<		gopher.black	70
 i                \___/ \__| _| _| \___| _|   ___/		gopher.black	70
 i		gopher.black	70
+i		gopher.black	70
+iRecipes, recipes, recipes		gopher.black	70
+1MOAR	/~bencollver/recipes/	tilde.pink	70
 i		gopher.black	70
 iAggregator, collections, projects, communities, lots more		gopher.black	70
 1magical.fish	/	magical.fish	70
@@ -74,8 +76,6 @@ iTextfiles.org mirror, San Antonio weather, other files		gopher.black	70
 i		gopher.black	70
 iImpressive collection of Catholic long-form writing		gopher.black	70
 1The Whole Christ	/users/jcrao	sdf.org	70
-i		gopher.black	70
-1enkiv2's Medium Posts on Gopher	enkiv2/medium-backup	fuckup.solutions	70
 i		gopher.black	70
 iVim learning, sound sampling and sequencing via code, unix knowledge		gopher.black	70
 1heavysquare.com	/	heavysquare.com	70
