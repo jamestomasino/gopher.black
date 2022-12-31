@@ -3,6 +3,33 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Resolution</title>
+  <link>gopher://gopher.black/1/phlog/20221231-resolution/</link>
+  <pubdate>Sat, 31 Dec 2022 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Resolution
+December 31st, 2022
+----------------------------------------
+
+Be it resolved:
+
+This year I will be responsible for an urgent travel advisory to
+the middle east.
+
+2022 Resolution
+    gopher://gopher.black/1/phlog/20211230-resolution
+2021 Resolution
+    gopher://gopher.black/1/phlog/20201231-resolution
+2020 Resolution
+    gopher://gopher.black/1/phlog/20200101-resolution
+2019 Resolution
+    gopher://gopher.black/1/phlog/20181225-resolutions
+2018 Resolution
+    gopher://gopher.black/1/phlog/20180101-resolution
+</pre>]]></description>
+</item>
+<item>
   <title>Another One Bites The Dust</title>
   <link>gopher://gopher.black/1/phlog/20220809-another-one-bites-the-dust/</link>
   <pubdate>Tue, 09 Aug 2022 00:00:00 +0000</pubdate>
@@ -519,19 +546,6 @@ stuff, or obscure things I dust off my tor browser and visit
 z-library.
 
 Anyway, not sure where I was going with this, but there ya go.
-</pre>]]></description>
-</item>
-<item>
-  <title>Ukraine</title>
-  <link>gopher://gopher.black/1/phlog/20220221-ukraine/</link>
-  <pubdate>Mon, 21 Feb 2022 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Ukraine
-February 21st, 2022
-----------------------------------------
-
-Oh no. Poor Ukraine.
 </pre>]]></description>
 </item>
 </channel>
