@@ -3,6 +3,60 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>New Years Cleanup</title>
+  <link>gopher://gopher.black/1/phlog/20230104-new-years-cleanup/</link>
+  <pubdate>Wed, 04 Jan 2023 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+new years cleanup
+January 04th, 2023
+----------------------------------------
+
+I went through moku-pona[0] to clean up some shenanigans today.
+A lovely person reached out to me to be added to the list (hi
+bandali! [1]) and while I was in there I noticed my perl stuff was
+acting up. I guess the XML parsing was broken, so I did some CPAN
+work and I think it's good again. I also noticed a handful of
+phlogs whose servers seem to be down. I trimmed them for now. If
+they return and want re-added I can do that later.
+
+Grex.org in particular is a challenge. That server has long
+periods of downtime, but usually comes back. I have a handful of
+people there in the list and I've left them for now. We'll see if
+it pops back online again at some point.
+
+- - - - -
+
+I've been really sick for the past few weeks. My son got the flu
+about a week before school let out. He was in bad shape and we
+nearly went to the hospital. Thankfully his fever broke, but by
+then my wife caught it, and then it was my turn. My flu, as per
+usual, developed into pneumonia and I'm still coming out of that
+funk. I think this cough will be with me a while yet.
+
+This weekend I'm going to try to record a new episode of Solarpunk
+Prompts [2], my podcast series about the movement. If you haven't
+checked it out before please do so. It's for writers, but many
+non-writers enjoy it as well. The episodes are only about 10
+minutes long. I recommend listening to the intro episode first as
+it lays out what the podcast is about and its reason for being.
+After that you can listen to the episodes in any order.
+
+Oh! The podcast is not only followable in podcast apps and RSS
+like normal, but you can also follow it on Fedi! Check out:
+@SolarpunkPrompts@podcast.tomasino.org
+
+I hope you all had a really great holiday and new year.
+
+[0] moku pona
+    gopher://gopher.black/1/moku-pona
+[1] bendali
+    gopher://kelar.org/1/~bandali/
+[2] Solarpunk Prompts
+    https://podcast.tomasino.org/@SolarpunkPrompts
+</pre>]]></description>
+</item>
+<item>
   <title>Resolution</title>
   <link>gopher://gopher.black/1/phlog/20221231-resolution/</link>
   <pubdate>Sat, 31 Dec 2022 00:00:00 +0000</pubdate>
@@ -493,59 +547,6 @@ feel like the right fit, personally. Maybe once a quarter or twice
 a year? It's a lovely ritual, though. If you have the opportunity
 to try it out I would recommend it. Try to be at peace and let go.
 It's surprisingly easy.
-</pre>]]></description>
-</item>
-<item>
-  <title>Buying Books</title>
-  <link>gopher://gopher.black/1/phlog/20220306-buying-books/</link>
-  <pubdate>Sun, 06 Mar 2022 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Buying Books
-March 06th, 2022
-----------------------------------------
-
-A fedi post from @DL6MHC@mastodon.radio I just read said:
-
-"I've started to abuse Amazon for browsing articles, getting
-inspirations, reading (hopefully non-fake) reviews and finding out
-what a solid price for an article is. Then I buy my stuff
-somewhere else."
-
-For years I would go to big booksellers like Barnes & Noble or
-Borders (before it shut down) to browse books and discover
-interesting things only to then purchase them online from Amazon
-where it was much cheaper. Sometimes I'd even purchase while I was
-still there browsing. I felt so clever.
-
-My battle then was against the big bookseller who came in and
-killed so many beloved tiny bookshops. Amazon was the scrappy
-alternative in my mind, and a means of revenge.
-
-These days I will browse Amazon for things, read reviews, gather
-intel, and then purchase else where, just like the fedi user
-above. I wish I could say that it was an act of will power and
-ethical justice at work, but it's mostly because ordering from
-Amazon to Iceland is prohibitively expensive.
-
-I take solace in the world of coffee, though. When Starbucks swept
-in and killed many of my beloved local coffee shops I did not bow
-down, but fought back by supporting those who remained or
-abstaining completely. When the third wave of coffee brought back
-the renaissance of local shops I was ready to dive right in. 
-
-But books... sadly, my options are less stellar. For one thing
-I try not to gather too many physical books. I can't move them
-easily or cheaply and I end up giving them away. So I favor ebooks
-or library books. Those I could still get cheaply from Amazon,
-I suppose. The general mentality that "Amazon isn't affordable"
-I've developed here seems to have clouded that issue in my head.
-I'm more likely to seek a 3rd party site, direct-from-author
-purchase, or grab from the library. For older works, out-of-print
-stuff, or obscure things I dust off my tor browser and visit
-z-library.
-
-Anyway, not sure where I was going with this, but there ya go.
 </pre>]]></description>
 </item>
 </channel>
