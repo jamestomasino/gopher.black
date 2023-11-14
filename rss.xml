@@ -3,6 +3,48 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>What A Year</title>
+  <link>gopher://gopher.black/1/phlog/20231114-what-a-year/</link>
+  <pubdate>Tue, 14 Nov 2023 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+What a year
+November 14th, 2023
+----------------------------------------
+
+What a year it's been. I've barely been on gopher or gemini at
+all. So much going on!
+
+What's eating up all my time? Well, at the start of the year it
+was work, and then getting sick, and then more work as we took on
+a whole extra client that we were pretty sure wasn't gonna stick
+around. That turned out to be correct, and by not staffing up to
+it we avoided having to fire a bunch of people, which I'm thankful
+for. But then I was spent as well.
+
+Summer happened, some travel, some not travel, things started
+settling. Then I traveled for work to a different client thing and
+got covid again. That sucked. My cough is mostly gone, finally.
+
+Then I decided to take Icelandic seriously and enrolled in the
+University of Iceland in a full-time college program. Now that's
+dominating my mornings all week every week, followed by my job
+dominating the afternoon and evenings. In the small gaps I get
+that aren't filled with study, I've been playing in a few TTRPG
+games. Well, running them, mostly, but that counts as play.
+
+I'm in my last regular week of classes now, and final exams are
+two & three weeks out. Then I have the holiday break before the
+second semester. Thankfully this is only a two semester program,
+so by June I'll be back to my own life again.
+
+Oh! and Season 2 of Solarpunk Prompts has started up. I'm writing
+and recording that somewhere in the middle of everything else.
+
+I miss you, gopher! I'll be back, I promise. *sigh*
+</pre>]]></description>
+</item>
+<item>
   <title>Riot Medicine</title>
   <link>gopher://gopher.black/1/phlog/20230618-riot-medicine/</link>
   <pubdate>Sun, 18 Jun 2023 00:00:00 +0000</pubdate>
@@ -31,9 +73,9 @@ designed to prep for the street environment.
 And finally there is a printable Basic First Aid zine.
 
 [0] Archives
-    gopher://gopher.black/1/archives
+    gopher://gopher.black/1/archive
 [0] Riot Medicine
-    gopher://gopher.black/1/archives/riotmedicine
+    gopher://gopher.black/1/archive/riotmedicine
 </pre>]]></description>
 </item>
 <item>
@@ -430,36 +472,6 @@ If there's a castle near you, go check it out! It's great for
 family reunions, birthday parties of all ages, or just a silly
 saturday night. I hope you have a great time and share your
 experience with us here.
-</pre>]]></description>
-</item>
-<item>
-  <title>Planet Of The Apes</title>
-  <link>gopher://gopher.black/1/phlog/20220320-planet-of-the-apes/</link>
-  <pubdate>Sun, 20 Mar 2022 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Planet of the Apes
-March 20th, 2022
-----------------------------------------
-
-I just watched the new-ish Planet of the Apes trilogy with my son.
-He loved them and so did I. I saw the second film a few years back
-and remember thinking it was just an incredible piece of
-filmmaking. The cinematography was brilliant, as was the acting,
-pacing, and the classic betrayal story. Now that I've finally seen
-the third I can say without reservation that it's one of the
-better trilogies of the 21st century. Matt Reeves contributions on
-2 and 3 are a marvel.
-
-If you are interested in seeing it, try and find subtitles for the
-ape-parts. It will help convey some of the depth of story.
-I watched subtitle-free the first time and while it's possible to
-follow and enjoy, there's a distance that grows between you and
-the apes.
-
-Also, there's something wonderfully cathartic about seeing these
-films and unreservedly rooting for the humans to all die already
-so the apes can inherit the Earth.
 </pre>]]></description>
 </item>
 </channel>
