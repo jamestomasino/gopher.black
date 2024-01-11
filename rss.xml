@@ -3,6 +3,27 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Doing A Whole Lot Of Nothing</title>
+  <link>gopher://gopher.black/1/phlog/20240111-doing-a-whole-lot-of-nothing/</link>
+  <pubdate>Thu, 11 Jan 2024 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Doing a whole lot of nothing
+January 11th, 2024
+----------------------------------------
+
+Today I've finally lightened up on meetings at work. Monday
+through Wednesday were just packed full of phone calls. So today
+I was excited to not have a ton of things interrupting my day. But
+lo and behold, I have been stricken by the not-give-a-shits.
+
+So I will not be accomplishing anything today. In fact, I'm gonna
+get away from the computer and go read a bit. Tonight I'll go to
+my hackerspace meetup, and then see a film. Tomorrow can be for
+work again.
+</pre>]]></description>
+</item>
+<item>
   <title>I Just Wanna Read</title>
   <link>gopher://gopher.black/1/phlog/20240108-i-just-wanna-read/</link>
   <pubdate>Mon, 08 Jan 2024 00:00:00 +0000</pubdate>
@@ -16,11 +37,16 @@ WHaaaaa!!
 
 (That's me crying)
 
-I don't wanna today. Gimme coffee, a nice warm blanket, and a mountain of books. I just want to read.
+I don't wanna today. Gimme coffee, a nice warm blanket, and
+a mountain of books. I just want to read.
 
-I just started on Being Arab and it's fascinating! I'm listening to Jin Yong's 3rd part of the Legend of the Condor Heroes as well. I love it so much.
+I just started on Being Arab and it's fascinating! I'm listening
+to Jin Yong's 3rd part of the Legend of the Condor Heroes as well.
+I love it so much.
 
-Once those are done I have hundreds and hundreds more. All the entertainment. All the adventures. But no... I need to get on conference calls like a sucker. Booooooo.
+Once those are done I have hundreds and hundreds more. All the
+entertainment. All the adventures. But no... I need to get on
+conference calls like a sucker. Booooooo.
 </pre>]]></description>
 </item>
 <item>
@@ -224,58 +250,6 @@ has always been high. It's always too many.
 
 I'll miss him. Less than some, more than many. He was a hell of
 a human.
-</pre>]]></description>
-</item>
-<item>
-  <title>Small Internet Presentation At Mch2022</title>
-  <link>gopher://gopher.black/1/phlog/20220729-small-internet-presentation-at-mch2022/</link>
-  <pubdate>Fri, 29 Jul 2022 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Small Internet Presentation at MCH2022
-July 29th, 2022
-----------------------------------------
-
-I'm back home from the Netherlands and MCH2022 (May Contain
-Hackers). It was a whirlwind and quite awesome. I'm just floored
-by how much stuff a bunch of volunteers can accomplish with
-motivation and creative hacking.
-
-The talks were amazing and most can now be found online on the CCC
-site. There was also an epic CTF game going on the whole week (I
-helped out in some lock picking challenges). The ad-hoc villages
-created by visitors were endless fun too. What a wild ride. I hope
-you all get the chance to attend one of these hacker camps in the
-future.
-
-I participated in one group panel discussion on social media,
-disinformation, and fascism that was really interesting, but not
-recorded. I also gave one of the curated stage presentations which
-was recorded [0].
-
-[0] Video of my Small Internet talk
-    https://media.ccc.de/v/mch2022-83-rocking-the-web-bloat-modern-gopher-gemini-and-the-small-internet
-
-My main talk was about the small internet, and specifically about
-gopher and gemini. It covers some framing for what people mean by
-the term small internet, what services and activities fall under
-the umbrella, and a bit of sentiment and behavior information from
-the survey I shared here earlier. Then I run through a quick
-technical overview of gopher and gemini, and finish off with
-a quick nod at pubnix and tildes. The questions from the audience
-were wonderful and I hope it broadens awareness of our fun little
-spaces. If you want to see the slides from the presentation,
-they're a Nuxt app I tossed together for the purpose and can be
-found here [1]:
-
-[1] Presentation Slides
-    https://small-internet-presentation.netlify.app
-
-I hope I get to go to another camp in the near future. Perhaps
-next time I'll discuss contract based dependency management [2].
-
-[2] CBDM Blog Post
-    https://labs.tomasino.org/contract-based-dependency-management/
 </pre>]]></description>
 </item>
 </channel>
