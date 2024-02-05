@@ -3,6 +3,135 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Re The State Of Gopher</title>
+  <link>gopher://gopher.black/1/phlog/20240205-re-the-state-of-gopher/</link>
+  <pubdate>Mon, 05 Feb 2024 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+re: The state of gopher
+February 05th, 2024
+----------------------------------------
+
+IanJ of gopher.icu wrote a quick rant on things that bother him
+about the current state of gopher[0]. In short, line length,
+misuse of type i, and escape codes for things like color
+deccoration. We run into this sort of gopher purism a lot in the
+bitreich community. It's not new, and it's also a perfectly fine
+opinion. I just don't share it.
+
+[0] The state of gopher
+    gopher://gopher.icu/0/phlog/Computing/The-state-of-gopher.md
+
+Lets talk about the three mentioned things in turn:
+
+First: Lines should be 70 charactes or fewer.
+
+This is indeed in the spec, and it was the impetus for my choosing
+sixty-seven as the line length I use here on gopher.black. But in
+general a line a line length of 80 or fewer characters won't cause
+problems for anyone on a desktop and a line length of 67 is still
+far too wide to be useful on mobile. So what are we to do?
+
+Some people forgo wrapping at all, assuming clients are capable of
+wrapping if they're sosphisticated. Others pick a comfortable
+middle-ground (often 80) and stick with it half out of convenience
+and half because it's good enough. Still others who use gopher on
+mobile choose to go crazy and use very narrow posts that fit those
+screens.
+
+To the spec it's wrong, but the spec doesn't have feelings. The
+spec doesn't use gopher. If someone is on their phone and very
+narrow lines make their use case better then that's absolutely the
+right call. At the end of the day it just isn't very important.
+
+
+Second: misuse of type-i
+
+From a historical perspective type i wasn't even in the spec, but
+it was already in widespread use in gopherspace within the first
+year of its launch. Clients adjusted, use adjusted. RFC-1436[1]
+never learned to time travel, though, and remains sadly silent on
+the topic. 
+
+[1] RFC-1436
+    gopher://gopher.black/0/archive/rfc/1436.txt
+
+Why use type i gophermaps for things like this phlog? It makes it
+easy to link to things, like the RFC above. I could drop in
+a gopher URL instead, but wait... those didn't exist when RFC-1436
+came out either. So should I instead list a selector, server, and
+port? Oh, I better indicate a type as well. No, that's silly. Even
+though the URL scheme came later it's a useful convention. It
+makes it easier for other people. See where I'm going?
+
+So why NOT use type i in this way? Well, two reasons. First, it's
+harder to lay out. Working in gophermaps is nasty business.
+I wrote a tool[2] to do it for me. Without that I wouldn't do it.
+It's easy to screw up and awful to edit later. Easier just to
+write plain text, and plain text is sufficient.
+
+[2] Burrow
+    https://github.com/jamestomasino/burrow
+
+And the second reason? Very old clients like the original UMN
+gopher client don't work well with them.
+
+Thankfully very few people use that client anynmore because it's
+pretty janky and has barely been maintained. Last I heard it was
+in search of a new maintainer, actually. And these days we have
+a wealth of new clients that are simply fantastic. We have the
+near-ubiquitous lynx which does a fair job, though notably is
+converting to HTML under the hood. But the bitreich community
+mentioned earlier has led to the creation of at least two gopher
+clients I know of that match that gopher purist philosophy. We
+also have VF-1, a lovely python client that inspired a fork for
+offline browsing of the whole small internet, and another fork for
+gemini. Bombadillo is fun, and there's my most recent favorite,
+phetch. Lots of options all with better features and better
+handling of gopherspace.
+
+For me, the benifits of being able to link within the documents
+outweighs the negatives. The format is subverted with my tooling,
+and I don't feel the need to lower my gopher content to an ancient
+client when there's so many easy alternatives available.
+
+
+Third: escape codes
+
+Here's I'll agree partially. gopherspace shouldn't assume terminal
+environments. Remember the phone users earlier? Generally speaking
+it's safer not to do so. But that being said, some places in
+gopher space are not just gopher holes. They're not just phlogs.
+They are art installations. They are pushing the boundaries of
+what's possible and what's decent because that's what art does.
+I am of course thinking primarily of cat's baud.baby[3] here, but
+there are some other gems around as well. They blow my mind when
+I see what can be created in this long forgotten corner of the
+internet. 
+
+[3] baud.baby
+    gopher://baud.baby/1/
+
+But it's only visible in certain ways! Yeah, that's true. You
+might stumble on there and go, "AHH! What a mess!" and miss out on
+the awesome. That'd be too bad. If that's the case you should grab
+phetch and try again. It's worth it. Maybe not for all of gopher,
+but for this particular thing. Keep doing what you're doing, cat.
+
+
+Gopher is a pretty cool thing. It's got limits that make it
+awesome because it forces us to focus on content most of the time.
+Those limits aren't the point, though. The place it leads us to
+are the point. If we disagree on some of the details getting
+there, so be it. After all, this is in UTF-8, not Latin-1 as the
+spec calls for which lets me do some great things, like share
+music for the shakuhachi[4].
+
+[4] Shakuhachi Music Guide
+    gopher://gopher.black/1/explorations/shakuhachi
+</pre>]]></description>
+</item>
+<item>
   <title>Renunciation</title>
   <link>gopher://gopher.black/1/phlog/20240203-renunciation/</link>
   <pubdate>Sat, 03 Feb 2024 00:00:00 +0000</pubdate>

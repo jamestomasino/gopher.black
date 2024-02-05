@@ -1,0 +1,117 @@
+i----------------------------------------		gopher.black	70
+ire: The state of gopher		gopher.black	70
+iFebruary 05th, 2024		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iIanJ of gopher.icu wrote a quick rant on things that bother him		gopher.black	70
+iabout the current state of gopher[0]. In short, line length,		gopher.black	70
+imisuse of type i, and escape codes for things like color		gopher.black	70
+ideccoration. We run into this sort of gopher purism a lot in the		gopher.black	70
+ibitreich community. It's not new, and it's also a perfectly fine		gopher.black	70
+iopinion. I just don't share it.		gopher.black	70
+i		gopher.black	70
+0[0] The state of gopher	/phlog/Computing/The-state-of-gopher.md	gopher.icu	70
+i		gopher.black	70
+iLets talk about the three mentioned things in turn:		gopher.black	70
+i		gopher.black	70
+iFirst: Lines should be 70 charactes or fewer.		gopher.black	70
+i		gopher.black	70
+iThis is indeed in the spec, and it was the impetus for my choosing		gopher.black	70
+isixty-seven as the line length I use here on gopher.black. But in		gopher.black	70
+igeneral a line a line length of 80 or fewer characters won't cause		gopher.black	70
+iproblems for anyone on a desktop and a line length of 67 is still		gopher.black	70
+ifar too wide to be useful on mobile. So what are we to do?		gopher.black	70
+i		gopher.black	70
+iSome people forgo wrapping at all, assuming clients are capable of		gopher.black	70
+iwrapping if they're sosphisticated. Others pick a comfortable		gopher.black	70
+imiddle-ground (often 80) and stick with it half out of convenience		gopher.black	70
+iand half because it's good enough. Still others who use gopher on		gopher.black	70
+imobile choose to go crazy and use very narrow posts that fit those		gopher.black	70
+iscreens.		gopher.black	70
+i		gopher.black	70
+iTo the spec it's wrong, but the spec doesn't have feelings. The		gopher.black	70
+ispec doesn't use gopher. If someone is on their phone and very		gopher.black	70
+inarrow lines make their use case better then that's absolutely the		gopher.black	70
+iright call. At the end of the day it just isn't very important.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iSecond: misuse of type-i		gopher.black	70
+i		gopher.black	70
+iFrom a historical perspective type i wasn't even in the spec, but		gopher.black	70
+iit was already in widespread use in gopherspace within the first		gopher.black	70
+iyear of its launch. Clients adjusted, use adjusted. RFC-1436[1]		gopher.black	70
+inever learned to time travel, though, and remains sadly silent on		gopher.black	70
+ithe topic. 		gopher.black	70
+i		gopher.black	70
+0[1] RFC-1436	/archive/rfc/1436.txt
+i		gopher.black	70
+iWhy use type i gophermaps for things like this phlog? It makes it		gopher.black	70
+ieasy to link to things, like the RFC above. I could drop in		gopher.black	70
+ia gopher URL instead, but wait... those didn't exist when RFC-1436		gopher.black	70
+icame out either. So should I instead list a selector, server, and		gopher.black	70
+iport? Oh, I better indicate a type as well. No, that's silly. Even		gopher.black	70
+ithough the URL scheme came later it's a useful convention. It		gopher.black	70
+imakes it easier for other people. See where I'm going?		gopher.black	70
+i		gopher.black	70
+iSo why NOT use type i in this way? Well, two reasons. First, it's		gopher.black	70
+iharder to lay out. Working in gophermaps is nasty business.		gopher.black	70
+iI wrote a tool[2] to do it for me. Without that I wouldn't do it.		gopher.black	70
+iIt's easy to screw up and awful to edit later. Easier just to		gopher.black	70
+iwrite plain text, and plain text is sufficient.		gopher.black	70
+i		gopher.black	70
+h[2] Burrow	URL:https://github.com/jamestomasino/burrow
+i		gopher.black	70
+iAnd the second reason? Very old clients like the original UMN		gopher.black	70
+igopher client don't work well with them.		gopher.black	70
+i		gopher.black	70
+iThankfully very few people use that client anynmore because it's		gopher.black	70
+ipretty janky and has barely been maintained. Last I heard it was		gopher.black	70
+iin search of a new maintainer, actually. And these days we have		gopher.black	70
+ia wealth of new clients that are simply fantastic. We have the		gopher.black	70
+inear-ubiquitous lynx which does a fair job, though notably is		gopher.black	70
+iconverting to HTML under the hood. But the bitreich community		gopher.black	70
+imentioned earlier has led to the creation of at least two gopher		gopher.black	70
+iclients I know of that match that gopher purist philosophy. We		gopher.black	70
+ialso have VF-1, a lovely python client that inspired a fork for		gopher.black	70
+ioffline browsing of the whole small internet, and another fork for		gopher.black	70
+igemini. Bombadillo is fun, and there's my most recent favorite,		gopher.black	70
+iphetch. Lots of options all with better features and better		gopher.black	70
+ihandling of gopherspace.		gopher.black	70
+i		gopher.black	70
+iFor me, the benifits of being able to link within the documents		gopher.black	70
+ioutweighs the negatives. The format is subverted with my tooling,		gopher.black	70
+iand I don't feel the need to lower my gopher content to an ancient		gopher.black	70
+iclient when there's so many easy alternatives available.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iThird: escape codes		gopher.black	70
+i		gopher.black	70
+iHere's I'll agree partially. gopherspace shouldn't assume terminal		gopher.black	70
+ienvironments. Remember the phone users earlier? Generally speaking		gopher.black	70
+iit's safer not to do so. But that being said, some places in		gopher.black	70
+igopher space are not just gopher holes. They're not just phlogs.		gopher.black	70
+iThey are art installations. They are pushing the boundaries of		gopher.black	70
+iwhat's possible and what's decent because that's what art does.		gopher.black	70
+iI am of course thinking primarily of cat's baud.baby[3] here, but		gopher.black	70
+ithere are some other gems around as well. They blow my mind when		gopher.black	70
+iI see what can be created in this long forgotten corner of the		gopher.black	70
+iinternet. 		gopher.black	70
+i		gopher.black	70
+1[3] baud.baby	/	baud.baby	70
+i		gopher.black	70
+iBut it's only visible in certain ways! Yeah, that's true. You		gopher.black	70
+imight stumble on there and go, "AHH! What a mess!" and miss out on		gopher.black	70
+ithe awesome. That'd be too bad. If that's the case you should grab		gopher.black	70
+iphetch and try again. It's worth it. Maybe not for all of gopher,		gopher.black	70
+ibut for this particular thing. Keep doing what you're doing, cat.		gopher.black	70
+i		gopher.black	70
+i		gopher.black	70
+iGopher is a pretty cool thing. It's got limits that make it		gopher.black	70
+iawesome because it forces us to focus on content most of the time.		gopher.black	70
+iThose limits aren't the point, though. The place it leads us to		gopher.black	70
+iare the point. If we disagree on some of the details getting		gopher.black	70
+ithere, so be it. After all, this is in UTF-8, not Latin-1 as the		gopher.black	70
+ispec calls for which lets me do some great things, like share		gopher.black	70
+imusic for the shakuhachi[4].		gopher.black	70
+i		gopher.black	70
+1[4] Shakuhachi Music Guide	/explorations/shakuhachi
