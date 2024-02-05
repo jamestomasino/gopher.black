@@ -18,7 +18,7 @@ iFirst: Lines should be 70 charactes or fewer.		gopher.black	70
 i		gopher.black	70
 iThis is indeed in the spec, and it was the impetus for my choosing		gopher.black	70
 isixty-seven as the line length I use here on gopher.black. But in		gopher.black	70
-igeneral a line a line length of 80 or fewer characters won't cause		gopher.black	70
+igeneral a line length of 80 or fewer characters won't cause		gopher.black	70
 iproblems for anyone on a desktop and a line length of 67 is still		gopher.black	70
 ifar too wide to be useful on mobile. So what are we to do?		gopher.black	70
 i		gopher.black	70
