@@ -3,6 +3,46 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>New Hire</title>
+  <link>gopher://gopher.black/1/phlog/20240208-new-hire/</link>
+  <pubdate>Thu, 08 Feb 2024 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+new hire
+February 08th, 2024
+----------------------------------------
+
+This week I hired a second guy for my team. The company is now
+about 30 full time employees so it was time to have a second
+person in the tech department. I got really lucky. I've got some
+really awesome guys that help us out with contract work but
+they're happy with that setup. They have full time gigs that leave
+them some room to dabble, so freelance brings in a sweet bonus. If
+they came on full time they'd be eating their own bonus money. No
+me gusta.
+
+Lucky for me I got a note from a fabulous person I used to work
+with way back when I lived in Atlanta. He was stuck between jobs
+and struggling and was looking for some contract help. I was more
+than happy to do that. Once we started working together I realized
+he was looking for a full time position still, had a fantastic set
+of skills that could help us, and I already knew he was grade-A
+awesome. We worked the numbers and stars aligned and he started
+full time with us this past Monday.
+
+Already it's been wonderful and he's still just beginning to come
+up to speed on all the various ins and outs of our architecture
+for all our different clients. He's inquisitive and approachable
+and all the rest of the company is excited to work with him. I'm
+overjoyed.
+
+We last worked together in 2008. Now we're on the team again after
+all this time. I guess if there's a lesson to share with you all
+about this it's that you should strive to always be awesome
+humans. Maybe it'll land you a job 16 years later!
+</pre>]]></description>
+</item>
+<item>
   <title>Re The State Of Gopher</title>
   <link>gopher://gopher.black/1/phlog/20240205-re-the-state-of-gopher/</link>
   <pubdate>Mon, 05 Feb 2024 00:00:00 +0000</pubdate>
@@ -28,7 +68,7 @@ First: Lines should be 70 charactes or fewer.
 
 This is indeed in the spec, and it was the impetus for my choosing
 sixty-seven as the line length I use here on gopher.black. But in
-general a line a line length of 80 or fewer characters won't cause
+general a line length of 80 or fewer characters won't cause
 problems for anyone on a desktop and a line length of 67 is still
 far too wide to be useful on mobile. So what are we to do?
 
@@ -387,60 +427,6 @@ And finally there is a printable Basic First Aid zine.
     gopher://gopher.black/1/archive
 [0] Riot Medicine
     gopher://gopher.black/1/archive/riotmedicine
-</pre>]]></description>
-</item>
-<item>
-  <title>New Years Cleanup</title>
-  <link>gopher://gopher.black/1/phlog/20230104-new-years-cleanup/</link>
-  <pubdate>Wed, 04 Jan 2023 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-new years cleanup
-January 04th, 2023
-----------------------------------------
-
-I went through moku-pona[0] to clean up some shenanigans today.
-A lovely person reached out to me to be added to the list (hi
-bandali! [1]) and while I was in there I noticed my perl stuff was
-acting up. I guess the XML parsing was broken, so I did some CPAN
-work and I think it's good again. I also noticed a handful of
-phlogs whose servers seem to be down. I trimmed them for now. If
-they return and want re-added I can do that later.
-
-Grex.org in particular is a challenge. That server has long
-periods of downtime, but usually comes back. I have a handful of
-people there in the list and I've left them for now. We'll see if
-it pops back online again at some point.
-
-- - - - -
-
-I've been really sick for the past few weeks. My son got the flu
-about a week before school let out. He was in bad shape and we
-nearly went to the hospital. Thankfully his fever broke, but by
-then my wife caught it, and then it was my turn. My flu, as per
-usual, developed into pneumonia and I'm still coming out of that
-funk. I think this cough will be with me a while yet.
-
-This weekend I'm going to try to record a new episode of Solarpunk
-Prompts [2], my podcast series about the movement. If you haven't
-checked it out before please do so. It's for writers, but many
-non-writers enjoy it as well. The episodes are only about 10
-minutes long. I recommend listening to the intro episode first as
-it lays out what the podcast is about and its reason for being.
-After that you can listen to the episodes in any order.
-
-Oh! The podcast is not only followable in podcast apps and RSS
-like normal, but you can also follow it on Fedi! Check out:
-@SolarpunkPrompts@podcast.tomasino.org
-
-I hope you all had a really great holiday and new year.
-
-[0] moku pona
-    gopher://gopher.black/1/moku-pona
-[1] bendali
-    gopher://kelar.org/1/~bandali/
-[2] Solarpunk Prompts
-    https://podcast.tomasino.org/@SolarpunkPrompts
 </pre>]]></description>
 </item>
 </channel>
