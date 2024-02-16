@@ -3,6 +3,32 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Home Alone</title>
+  <link>gopher://gopher.black/1/phlog/20240216-home-alone/</link>
+  <pubdate>Fri, 16 Feb 2024 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Home Alone
+February 16th, 2024
+----------------------------------------
+
+My wife and son are off to visit my mother-in-law in the states.
+I am home alone for the next week. It's been so long since I've
+been solo, I wonder if I'll forget how to do it.
+
+I started by making the environment feel more like my choice. I've
+pulled all the blinds closed and turned off all the lights. It's
+dark and cozy. I won't keep it this way, but for tonight we're
+going full hermit mode.
+
+I think I'll cook something slow, maybe with lentils. Something
+stew-like, warm, cozy. And in a few I'm going to put on a movie on
+my projector. And then another. And maybe another.
+
+Cozy-hermit-solo-mode Activate!
+</pre>]]></description>
+</item>
+<item>
   <title>New Hire</title>
   <link>gopher://gopher.black/1/phlog/20240208-new-hire/</link>
   <pubdate>Thu, 08 Feb 2024 00:00:00 +0000</pubdate>
@@ -393,40 +419,6 @@ Oh! and Season 2 of Solarpunk Prompts has started up. I'm writing
 and recording that somewhere in the middle of everything else.
 
 I miss you, gopher! I'll be back, I promise. *sigh*
-</pre>]]></description>
-</item>
-<item>
-  <title>Riot Medicine</title>
-  <link>gopher://gopher.black/1/phlog/20230618-riot-medicine/</link>
-  <pubdate>Sun, 18 Jun 2023 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Riot Medicine
-June 18th, 2023
-----------------------------------------
-
-I just added a page to my archives [0] area of this gopherhole for
-Riot Medicine [1], an open source medical guide for street medics.
-
-Riot Medicine is a full-length textbook that covers everything you
-need to become a medic. The 466 pages include organizing, medcine,
-equipment, and tactics. It is written for those with no medical
-training and no experience at protests, but medical practitioners
-and seasoned protesters will still find it useful.
-
-There's also a field guide: symptoms and treatments without
-theory, designed to be included in your field kit. Also available
-in Spanish.
-
-And there's a bridge guide for those already working in healthcare
-designed to prep for the street environment.
-
-And finally there is a printable Basic First Aid zine.
-
-[0] Archives
-    gopher://gopher.black/1/archive
-[0] Riot Medicine
-    gopher://gopher.black/1/archive/riotmedicine
 </pre>]]></description>
 </item>
 </channel>
