@@ -3,6 +3,43 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>The Endless Sick</title>
+  <link>gopher://gopher.black/1/phlog/20240325-the-endless-sick/</link>
+  <pubdate>Mon, 25 Mar 2024 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+The endless sick
+March 25th, 2024
+----------------------------------------
+
+Ugh, I'm so tired of being sick. I took a trip to the US for
+a weekend and brought back the flu. It raged for a few days and
+then settled into my lungs. Now it's nearly a month later and I'm
+still working up all the crap inside me.
+
+Cough Cough Cough
+
+I felt like an extra big dummy on Wednesday, though. I was talking
+to someone about the shakuhachi [0] and I sent them a link to some
+practice I had recorded a couple years ago [1]. The name of the
+recording was Breathing Exercises 2. And that's when it hit me!
+I used shakuhachi practice to strengthen my lungs and recover
+after covid. Why haven't I been doing it after this stupid flu?
+Complete idiot, this guy right here.
+
+[0] shakuhachi
+    gopher://gopher.black/1/explorations/shakuhachi
+[1] Breathing Exercises 2
+    https://soundcloud.com/jamestomasino/breathing-exercises-2
+
+Well, I've been good about putting in practice every day since
+then and while I'm still coughing my chest has started feeling
+more in control. The amount of phlegm I'm working up in
+increasing. Hopefully I'll feel good again in time for whatever
+next trip I need to take so I can get sick again.
+</pre>]]></description>
+</item>
+<item>
   <title>Home Alone</title>
   <link>gopher://gopher.black/1/phlog/20240216-home-alone/</link>
   <pubdate>Fri, 16 Feb 2024 00:00:00 +0000</pubdate>
@@ -377,48 +414,6 @@ The dance-craze of 2024 will be known as "The Tomasino".
     gopher://gopher.black/1/phlog/20181225-resolutions
 2018 Resolution
     gopher://gopher.black/1/phlog/20180101-resolution
-</pre>]]></description>
-</item>
-<item>
-  <title>What A Year</title>
-  <link>gopher://gopher.black/1/phlog/20231114-what-a-year/</link>
-  <pubdate>Tue, 14 Nov 2023 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-What a year
-November 14th, 2023
-----------------------------------------
-
-What a year it's been. I've barely been on gopher or gemini at
-all. So much going on!
-
-What's eating up all my time? Well, at the start of the year it
-was work, and then getting sick, and then more work as we took on
-a whole extra client that we were pretty sure wasn't gonna stick
-around. That turned out to be correct, and by not staffing up to
-it we avoided having to fire a bunch of people, which I'm thankful
-for. But then I was spent as well.
-
-Summer happened, some travel, some not travel, things started
-settling. Then I traveled for work to a different client thing and
-got covid again. That sucked. My cough is mostly gone, finally.
-
-Then I decided to take Icelandic seriously and enrolled in the
-University of Iceland in a full-time college program. Now that's
-dominating my mornings all week every week, followed by my job
-dominating the afternoon and evenings. In the small gaps I get
-that aren't filled with study, I've been playing in a few TTRPG
-games. Well, running them, mostly, but that counts as play.
-
-I'm in my last regular week of classes now, and final exams are
-two & three weeks out. Then I have the holiday break before the
-second semester. Thankfully this is only a two semester program,
-so by June I'll be back to my own life again.
-
-Oh! and Season 2 of Solarpunk Prompts has started up. I'm writing
-and recording that somewhere in the middle of everything else.
-
-I miss you, gopher! I'll be back, I promise. *sigh*
 </pre>]]></description>
 </item>
 </channel>
