@@ -3,6 +3,20 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Shitposting</title>
+  <link>gopher://gopher.black/1/phlog/20240522-shitposting/</link>
+  <pubdate>Wed, 22 May 2024 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Shitposting
+May 22nd, 2024
+----------------------------------------
+
+Don't forget to wet your dries, then dry your wets. That's the
+secret.
+</pre>]]></description>
+</item>
+<item>
   <title>Birthdays</title>
   <link>gopher://gopher.black/1/phlog/20240425-birthdays/</link>
   <pubdate>Thu, 25 Apr 2024 00:00:00 +0000</pubdate>
@@ -431,34 +445,6 @@ I love it so much.
 Once those are done I have hundreds and hundreds more. All the
 entertainment. All the adventures. But no... I need to get on
 conference calls like a sucker. Booooooo.
-</pre>]]></description>
-</item>
-<item>
-  <title>Resolution</title>
-  <link>gopher://gopher.black/1/phlog/20240102-resolution/</link>
-  <pubdate>Tue, 02 Jan 2024 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Resolution
-January 02nd, 2024
-----------------------------------------
-
-Be it resolved:
-
-The dance-craze of 2024 will be known as "The Tomasino".
-
-2023 Resolution
-    gopher://gopher.black/1/phlog/20221231-resolution
-2022 Resolution
-    gopher://gopher.black/1/phlog/20211230-resolution
-2021 Resolution
-    gopher://gopher.black/1/phlog/20201231-resolution
-2020 Resolution
-    gopher://gopher.black/1/phlog/20200101-resolution
-2019 Resolution
-    gopher://gopher.black/1/phlog/20181225-resolutions
-2018 Resolution
-    gopher://gopher.black/1/phlog/20180101-resolution
 </pre>]]></description>
 </item>
 </channel>
