@@ -3,6 +3,54 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Bye Bye Meta</title>
+  <link>gopher://gopher.black/1/phlog/20250122-bye-bye-meta/</link>
+  <pubdate>Wed, 22 Jan 2025 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Bye Bye Meta
+January 22nd, 2025
+----------------------------------------
+
+I nuked most of the content from my Facebook account today, and
+completely destroyed my Instagram account. But tomasino, why were
+you on Facebook? Great question, nerds.
+
+Iceland runs on Facebook. It's really weird. Well, not really if
+you consider that Iceland has been at the top of the charts of the
+most online citizens in the world almost nonstop since gopher came
+on the scene. It was number one for most of that time, but never
+really lower than 4th on the list. People here are really, really
+connected, and the circles are quite homogeneous. It's estimated
+that 91% of all Icelanders are on Facebook. And that causes some
+problems (obviously).
+
+Since they can assume you're on there, most businesses don't
+bother with websites. Restaurants, coffee shops, all of them, just
+a Facebook page. I can order Indian food over Facebook messenger.
+I signed my kid up for the summer farm camp over messenger. Worse,
+my son's school communications come via Facebook group. It's
+really not a practical option to not participate.
+
+So when we moved here I got sucked back in. My wife avoided it,
+and I took one for the team.
+
+But here we are in this darkest of timelines, and I can't justify
+giving Meta any more than they've already stolen. So what do I do?
+I become a ghost.
+
+I've deleted every bit of content I have on Facebook except a post
+telling people why and where else to find me. But I kept the
+account. I can see those school groups. I can book a table. I'll
+use end-to-end encryption when I need to use messenger, and then
+delete the chats anyway. Minimum viable engagement.
+
+Instagram though... there's no reason to have it. Boom, gone.
+
+I figured telling gopher was the best way to share. :)
+</pre>]]></description>
+</item>
+<item>
   <title>Resolution</title>
   <link>gopher://gopher.black/1/phlog/20250102-resolution/</link>
   <pubdate>Thu, 02 Jan 2025 00:00:00 +0000</pubdate>
@@ -17,13 +65,20 @@ Be it resolved:
 In the great year two thousand and twenty five I shall become the
 official spokesperson for a brand of luxury toilet paper.
 
-i 12024 Resolution› /phlog/20240102-resolution
-i 12023 Resolution› /phlog/20221231-resolution
-1 12022 Resolution› /phlog/20211230-resolution
-2 12021 Resolution› /phlog/20201231-resolution
-3 12020 Resolution› /phlog/20200101-resolution
-4 12019 Resolution› /phlog/20181225-resolutions
-5 12018 Resolution› /phlog/20180101-resolutio
+2024 Resolution
+    gopher://gopher.black/1/phlog/20240102-resolution
+2023 Resolution
+    gopher://gopher.black/1/phlog/20221231-resolution
+2022 Resolution
+    gopher://gopher.black/1/phlog/20211230-resolution
+2021 Resolution
+    gopher://gopher.black/1/phlog/20201231-resolution
+2020 Resolution
+    gopher://gopher.black/1/phlog/20200101-resolution
+2019 Resolution
+    gopher://gopher.black/1/phlog/20181225-resolutions
+2018 Resolution
+    gopher://gopher.black/1/phlog/20180101-resolution
 </pre>]]></description>
 </item>
 <item>
@@ -281,72 +336,6 @@ then and while I'm still coughing my chest has started feeling
 more in control. The amount of phlegm I'm working up in
 increasing. Hopefully I'll feel good again in time for whatever
 next trip I need to take so I can get sick again.
-</pre>]]></description>
-</item>
-<item>
-  <title>Home Alone</title>
-  <link>gopher://gopher.black/1/phlog/20240216-home-alone/</link>
-  <pubdate>Fri, 16 Feb 2024 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Home Alone
-February 16th, 2024
-----------------------------------------
-
-My wife and son are off to visit my mother-in-law in the states.
-I am home alone for the next week. It's been so long since I've
-been solo, I wonder if I'll forget how to do it.
-
-I started by making the environment feel more like my choice. I've
-pulled all the blinds closed and turned off all the lights. It's
-dark and cozy. I won't keep it this way, but for tonight we're
-going full hermit mode.
-
-I think I'll cook something slow, maybe with lentils. Something
-stew-like, warm, cozy. And in a few I'm going to put on a movie on
-my projector. And then another. And maybe another.
-
-Cozy-hermit-solo-mode Activate!
-</pre>]]></description>
-</item>
-<item>
-  <title>New Hire</title>
-  <link>gopher://gopher.black/1/phlog/20240208-new-hire/</link>
-  <pubdate>Thu, 08 Feb 2024 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-new hire
-February 08th, 2024
-----------------------------------------
-
-This week I hired a second guy for my team. The company is now
-about 30 full time employees so it was time to have a second
-person in the tech department. I got really lucky. I've got some
-really awesome guys that help us out with contract work but
-they're happy with that setup. They have full time gigs that leave
-them some room to dabble, so freelance brings in a sweet bonus. If
-they came on full time they'd be eating their own bonus money. No
-me gusta.
-
-Lucky for me I got a note from a fabulous person I used to work
-with way back when I lived in Atlanta. He was stuck between jobs
-and struggling and was looking for some contract help. I was more
-than happy to do that. Once we started working together I realized
-he was looking for a full time position still, had a fantastic set
-of skills that could help us, and I already knew he was grade-A
-awesome. We worked the numbers and stars aligned and he started
-full time with us this past Monday.
-
-Already it's been wonderful and he's still just beginning to come
-up to speed on all the various ins and outs of our architecture
-for all our different clients. He's inquisitive and approachable
-and all the rest of the company is excited to work with him. I'm
-overjoyed.
-
-We last worked together in 2008. Now we're on the team again after
-all this time. I guess if there's a lesson to share with you all
-about this it's that you should strive to always be awesome
-humans. Maybe it'll land you a job 16 years later!
 </pre>]]></description>
 </item>
 </channel>
