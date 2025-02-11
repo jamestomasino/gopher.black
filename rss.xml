@@ -3,6 +3,32 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Moving Domains</title>
+  <link>gopher://gopher.black/1/phlog/20250211-moving-domains/</link>
+  <pubdate>Tue, 11 Feb 2025 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Moving domains
+February 11th, 2025
+----------------------------------------
+
+I'm in the process of migrating away from Namesilo for my domain
+hosting. They've been good for me for a long time, but it's time
+to break my remaining connections with the US. I've picked OVH
+Cloud for the new registrar since they seem to have good TLD
+support. But I'll serve my DNS zones from 1984.is as I've been
+doing. I like them. It's very straight forward.
+
+I need to go back over my other recurring services and cancel more
+things. I used to have a big list, but I think I need to look at
+credit card bills now to piece them together. I just get this
+feeling that with the uncertainty in the US it'll be smart to keep
+myself lean.
+
+What about you? Are you doing anything with your services?
+</pre>]]></description>
+</item>
+<item>
   <title>Bye Bye Meta</title>
   <link>gopher://gopher.black/1/phlog/20250122-bye-bye-meta/</link>
   <pubdate>Wed, 22 Jan 2025 00:00:00 +0000</pubdate>
@@ -299,43 +325,6 @@ pop-up concerts. I have a holiday vacation day today, so it's
 going to be Fun Family Time™.
 
 Here we go!
-</pre>]]></description>
-</item>
-<item>
-  <title>The Endless Sick</title>
-  <link>gopher://gopher.black/1/phlog/20240325-the-endless-sick/</link>
-  <pubdate>Mon, 25 Mar 2024 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-The endless sick
-March 25th, 2024
-----------------------------------------
-
-Ugh, I'm so tired of being sick. I took a trip to the US for
-a weekend and brought back the flu. It raged for a few days and
-then settled into my lungs. Now it's nearly a month later and I'm
-still working up all the crap inside me.
-
-Cough Cough Cough
-
-I felt like an extra big dummy on Wednesday, though. I was talking
-to someone about the shakuhachi [0] and I sent them a link to some
-practice I had recorded a couple years ago [1]. The name of the
-recording was Breathing Exercises 2. And that's when it hit me!
-I used shakuhachi practice to strengthen my lungs and recover
-after covid. Why haven't I been doing it after this stupid flu?
-Complete idiot, this guy right here.
-
-[0] shakuhachi
-    gopher://gopher.black/1/explorations/shakuhachi
-[1] Breathing Exercises 2
-    https://soundcloud.com/jamestomasino/breathing-exercises-2
-
-Well, I've been good about putting in practice every day since
-then and while I'm still coughing my chest has started feeling
-more in control. The amount of phlegm I'm working up in
-increasing. Hopefully I'll feel good again in time for whatever
-next trip I need to take so I can get sick again.
 </pre>]]></description>
 </item>
 </channel>
