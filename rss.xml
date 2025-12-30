@@ -3,6 +3,38 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Resolution</title>
+  <link>gopher://gopher.black/1/phlog/20251230-resolution/</link>
+  <pubdate>Tue, 30 Dec 2025 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Resolution
+December 30th, 2025
+----------------------------------------
+
+Be it resolved:
+
+This year I will be listed as “deprecated.”
+
+2025 Resolution
+    gopher://gopher.black/1/phlog/20250102-resolution
+2024 Resolution
+    gopher://gopher.black/1/phlog/20240102-resolution
+2023 Resolution
+    gopher://gopher.black/1/phlog/20221231-resolution
+2022 Resolution
+    gopher://gopher.black/1/phlog/20211230-resolution
+2021 Resolution
+    gopher://gopher.black/1/phlog/20201231-resolution
+2020 Resolution
+    gopher://gopher.black/1/phlog/20200101-resolution
+2019 Resolution
+    gopher://gopher.black/1/phlog/20181225-resolutions
+2018 Resolution
+    gopher://gopher.black/1/phlog/20180101-resolution
+</pre>]]></description>
+</item>
+<item>
   <title>Moving Domains</title>
   <link>gopher://gopher.black/1/phlog/20250211-moving-domains/</link>
   <pubdate>Tue, 11 Feb 2025 00:00:00 +0000</pubdate>
@@ -280,51 +312,6 @@ May 22nd, 2024
 
 Don't forget to wet your dries, then dry your wets. That's the
 secret.
-</pre>]]></description>
-</item>
-<item>
-  <title>Birthdays</title>
-  <link>gopher://gopher.black/1/phlog/20240425-birthdays/</link>
-  <pubdate>Thu, 25 Apr 2024 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-birthdays
-April 25th, 2024
-----------------------------------------
-
-Today is my wife's birthday. We're heading into the city to find
-tacos, some vinyl, and see some art installations for Design
-March. Is Design March[0] a thing in other places? I'm really not
-sure if it's a local-only or if it's world-wide. It's pretty neat:
-art installations in March all over the city. Except it's April,
-almost May, but they didn't change the name. No idea why.
-
-[0] Design March
-    https://visitreykjavik.is/see-and-do/reykjavik-festival-city/design-march
-
-My friends Lejla and Natalia built an installation called
-InStability[1] which is about the earthquakes and detection systems
-in the Reykjanes penninusla where we live. The piece is a giant
-tactile map of the penninsula. You can touch the land anywhere
-with your finger to create an earthquake there. As you do so
-you'll see all of the earthquake detection sensors around the
-country light up as your shockwaves move across the surface. It's
-really cool and immersive, and I got to help a little bit!
-
-[1] InStability
-    https://www.honnunarmidstod.is/en/honnunarmars/dagskra/2024/o-stodugleiki-reykjanes-rumskar-102
-
-Assembly required a lot of textile work, and I'm apparently the
-local sewer. Over the course of a few nights we stitched a lot of
-capacitive and pressure-sensitive fabrics together in patches.
-I can't wait to see the final product on display later today.
-
-Today is also the first day of summer in Iceland, so it's a school
-holiday. We'll go see some parades and there will probably be
-pop-up concerts. I have a holiday vacation day today, so it's
-going to be Fun Family Time™.
-
-Here we go!
 </pre>]]></description>
 </item>
 </channel>
