@@ -1,0 +1,92 @@
+i----------------------------------------		gopher.black	70
+iHappy Easter		gopher.black	70
+iApril 05th, 2026		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iHappy Easter, gopher!		gopher.black	70
+i		gopher.black	70
+iI've been on a pretty good run with personal projects and hobbies		gopher.black	70
+ilately. Let me do a little round up!		gopher.black	70
+i		gopher.black	70
+ihttps://films.tomasino.org		gopher.black	70
+i		gopher.black	70
+iThis is my personal film rankings site. I had this idea a while		gopher.black	70
+iback to create a system to track my films and create a master list		gopher.black	70
+iof how I rate them. By using Glicko-2, the chess ELO scoring		gopher.black	70
+isystem, I can set films up in little tournaments where they're		gopher.black	70
+ipaired up 1v1 and I pick which one I prefer. Then the tourney		gopher.black	70
+iscoring rules shift them around with their new chess scores and my		gopher.black	70
+ilist gets more accurate over time. I've got this thing set up		gopher.black	70
+ipulling my watched films list from Trakt.tv, and that's connected		gopher.black	70
+ito my Plex. So it's pretty good at catching most of the films		gopher.black	70
+iI watch automatically. My tourney builder has lots of config		gopher.black	70
+ioptions, but the defaults are set up to priortize scoring films		gopher.black	70
+iI haven't rated much, or lately, so they get pulled into the		gopher.black	70
+irankings quickly. Also, when I input a new film it gets a baseline		gopher.black	70
+iELO based on critic rating, so I'm not scoring everything from 0,		gopher.black	70
+ibut drifting it off the norm per my own preferences. I'm really		gopher.black	70
+iproud of this one.		gopher.black	70
+i		gopher.black	70
+ihttps://www.hellshexagon.com		gopher.black	70
+i		gopher.black	70
+iHell's Hexagon is another film related site. This is a type of		gopher.black	70
+isix-degrees game where you connect film actors to one another		gopher.black	70
+ithrough shared films with other actors. Six degrees of Kevin Bacon		gopher.black	70
+ibeing the original impetus here. This hexagon approach is		gopher.black	70
+ia variant I came up with back in college with friends where you		gopher.black	70
+ineed to connect three actors through 3 specific movies in a big		gopher.black	70
+iring. You can't re-use actors or films and you're trying to get		gopher.black	70
+ithe fewest possible steps to complete the hexagon. It's		gopher.black	70
+isix-degrees on hard mode. Try it out! You are allowed to use sites		gopher.black	70
+ilike IMDb. That's fine. Treat it as open-book. Play with friends.		gopher.black	70
+iIt's more fun that way. Oh, and I set it up to get harder as the		gopher.black	70
+idays of the week approach Sundays, just like crossword puzzles.		gopher.black	70
+i		gopher.black	70
+ihttps://coach.tomasino.org		gopher.black	70
+i		gopher.black	70
+iMy Writing Coach app is one of the most robust open-source		gopher.black	70
+iprojects I've put together lately. It's free to sign up, but		gopher.black	70
+iyou'll want to bring your own API key to one of the major LLM		gopher.black	70
+iproviders. The tool will help you through directed practice on		gopher.black	70
+ifocused skills to grow in skill at your particular style of		gopher.black	70
+iwriting. I built it for myself to level up my own fiction writing,		gopher.black	70
+ibut it's good at business writing, marketing, grant proposals,		gopher.black	70
+ietc. You can have multiple goals if you want, but each has their		gopher.black	70
+iown pathway to growth. The AI/LLM use is minimal: forming prompts		gopher.black	70
+iinto clear english, and formatting the deterministic feedback on		gopher.black	70
+iyour writing into cogent forms and markup on your writing. The LLM		gopher.black	70
+idoesn't do the grading itself. You can also clone the repo and run		gopher.black	70
+iyour own. If you want, you can provide the LLM config for all		gopher.black	70
+iusers instead of enabling the per-user API keys. That might be		gopher.black	70
+inice for a small community.		gopher.black	70
+i		gopher.black	70
+ihttps://github.com/jamestomasino/beep		gopher.black	70
+i		gopher.black	70
+iBack in the early 2000s there was a project from Nullsoft called		gopher.black	70
+i'beep' that made computery noises when you did stuff on your		gopher.black	70
+icomputer. The more memory or cpu usage, the more beeps. This is my		gopher.black	70
+iattempt to recreate that effect. It's written in Ada, because		gopher.black	70
+ithat's cool. It works really well on linux. I have a homebrew		gopher.black	70
+iversion I'm working on for MacOS, but it's not working well yet.		gopher.black	70
+iI don't have a mac, so I've been coding it in the dark and asking		gopher.black	70
+ifriends to try it. I think I may have hit the end of that pathway,		gopher.black	70
+iso I'll consider that functionality on hold until I can get a Mac		gopher.black	70
+ior someone contributes to the project. Anyway, this is a toy app		gopher.black	70
+iand it doesn't do anything other than create fun vibes. Try it		gopher.black	70
+iout! I've not tried it on any BSDs yet. Someone let me know if it		gopher.black	70
+iworks.		gopher.black	70
+i		gopher.black	70
+ihttps://github.com/jamestomasino/vic-cipher		gopher.black	70
+i		gopher.black	70
+iBack in 2008-ish I wrote an encoder/decoder for the VIC Cipher in		gopher.black	70
+iFlash. The guy who wrote the date component i used in the encoder		gopher.black	70
+ireached out recently and asked if i'd ported it into any modern		gopher.black	70
+itools. I hadn't, so I did. Here it is as an npm package. It'll		gopher.black	70
+iwork with deno also. It's the coolest cipher in my opinion, and		gopher.black	70
+iworth playing with. Since it's hand solveable with the right		gopher.black	70
+iinstructions, it could make for an awesome thing to include in		gopher.black	70
+iyour ttrpg, especially if you use a spy setting. Enjoy.		gopher.black	70
+i		gopher.black	70
+iThere's also been some work on https://thehierophant.world and its		gopher.black	70
+irelated projects. I'll have to write more on that subject soon.		gopher.black	70
+iUntil then, enjoy the fun stuff!		gopher.black	70

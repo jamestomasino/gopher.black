@@ -3,6 +3,105 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Happy Easter</title>
+  <link>gopher://gopher.black/1/phlog/20260405-happy-easter/</link>
+  <pubdate>Sun, 05 Apr 2026 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Happy Easter
+April 05th, 2026
+----------------------------------------
+
+Happy Easter, gopher!
+
+I've been on a pretty good run with personal projects and hobbies
+lately. Let me do a little round up!
+
+https://films.tomasino.org
+
+This is my personal film rankings site. I had this idea a while
+back to create a system to track my films and create a master list
+of how I rate them. By using Glicko-2, the chess ELO scoring
+system, I can set films up in little tournaments where they're
+paired up 1v1 and I pick which one I prefer. Then the tourney
+scoring rules shift them around with their new chess scores and my
+list gets more accurate over time. I've got this thing set up
+pulling my watched films list from Trakt.tv, and that's connected
+to my Plex. So it's pretty good at catching most of the films
+I watch automatically. My tourney builder has lots of config
+options, but the defaults are set up to priortize scoring films
+I haven't rated much, or lately, so they get pulled into the
+rankings quickly. Also, when I input a new film it gets a baseline
+ELO based on critic rating, so I'm not scoring everything from 0,
+but drifting it off the norm per my own preferences. I'm really
+proud of this one.
+
+https://www.hellshexagon.com
+
+Hell's Hexagon is another film related site. This is a type of
+six-degrees game where you connect film actors to one another
+through shared films with other actors. Six degrees of Kevin Bacon
+being the original impetus here. This hexagon approach is
+a variant I came up with back in college with friends where you
+need to connect three actors through 3 specific movies in a big
+ring. You can't re-use actors or films and you're trying to get
+the fewest possible steps to complete the hexagon. It's
+six-degrees on hard mode. Try it out! You are allowed to use sites
+like IMDb. That's fine. Treat it as open-book. Play with friends.
+It's more fun that way. Oh, and I set it up to get harder as the
+days of the week approach Sundays, just like crossword puzzles.
+
+https://coach.tomasino.org
+
+My Writing Coach app is one of the most robust open-source
+projects I've put together lately. It's free to sign up, but
+you'll want to bring your own API key to one of the major LLM
+providers. The tool will help you through directed practice on
+focused skills to grow in skill at your particular style of
+writing. I built it for myself to level up my own fiction writing,
+but it's good at business writing, marketing, grant proposals,
+etc. You can have multiple goals if you want, but each has their
+own pathway to growth. The AI/LLM use is minimal: forming prompts
+into clear english, and formatting the deterministic feedback on
+your writing into cogent forms and markup on your writing. The LLM
+doesn't do the grading itself. You can also clone the repo and run
+your own. If you want, you can provide the LLM config for all
+users instead of enabling the per-user API keys. That might be
+nice for a small community.
+
+https://github.com/jamestomasino/beep
+
+Back in the early 2000s there was a project from Nullsoft called
+'beep' that made computery noises when you did stuff on your
+computer. The more memory or cpu usage, the more beeps. This is my
+attempt to recreate that effect. It's written in Ada, because
+that's cool. It works really well on linux. I have a homebrew
+version I'm working on for MacOS, but it's not working well yet.
+I don't have a mac, so I've been coding it in the dark and asking
+friends to try it. I think I may have hit the end of that pathway,
+so I'll consider that functionality on hold until I can get a Mac
+or someone contributes to the project. Anyway, this is a toy app
+and it doesn't do anything other than create fun vibes. Try it
+out! I've not tried it on any BSDs yet. Someone let me know if it
+works.
+
+https://github.com/jamestomasino/vic-cipher
+
+Back in 2008-ish I wrote an encoder/decoder for the VIC Cipher in
+Flash. The guy who wrote the date component i used in the encoder
+reached out recently and asked if i'd ported it into any modern
+tools. I hadn't, so I did. Here it is as an npm package. It'll
+work with deno also. It's the coolest cipher in my opinion, and
+worth playing with. Since it's hand solveable with the right
+instructions, it could make for an awesome thing to include in
+your ttrpg, especially if you use a spy setting. Enjoy.
+
+There's also been some work on https://thehierophant.world and its
+related projects. I'll have to write more on that subject soon.
+Until then, enjoy the fun stuff!
+</pre>]]></description>
+</item>
+<item>
   <title>Visiting The Us</title>
   <link>gopher://gopher.black/1/phlog/20260130-visiting-the-us/</link>
   <pubdate>Fri, 30 Jan 2026 00:00:00 +0000</pubdate>
@@ -280,41 +379,6 @@ aren't very high to keep it up, but we want to make the place make
 enough income so it's self sufficient.
 
 More to come!
-</pre>]]></description>
-</item>
-<item>
-  <title>Wegovy</title>
-  <link>gopher://gopher.black/1/phlog/20240604-wegovy/</link>
-  <pubdate>Tue, 04 Jun 2024 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Wegovy
-June 04th, 2024
-----------------------------------------
-
-I reached my heaviest weight ever last month and it coincided with
-some health stuff that led me to a cardiologist. I'm going to
-a follow-up today, in fact. Good news is that I'm not in danger
-right now. Bad news is I have heart disease. I've got a family
-history of it, and I'm overweight with borderline pre-diabetes,
-high blood pressure, and low fitness level. All not great.
-
-I've got some things in the works, though. I bought a desk
-treadmill about a month back and that's been really good for
-stepping me up in activity instead of sitting all day. My
-cardiologist prescribed me regular swimming as well. And finally,
-thanks to some info from a friend, I started Wegovy.
-
-It's one of those weight loss drugs, like Ozempic, but indicated
-specifically for weight loss, not diabetes. I'm in my fourth week
-now and I've been shedding weight steadily. The first week was
-awkward with some GI issues. It was so easy for my habits to have
-me overeat and then wretch. I've adapted well and will step up in
-dose size next week.
-
-So far so good. I've a long way to go, but shedding the weight
-will also help me as I increase my activity level again. Wish me
-luck.
 </pre>]]></description>
 </item>
 </channel>
