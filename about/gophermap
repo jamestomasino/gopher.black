@@ -29,12 +29,11 @@ igemini:         gemini://tilde.team/~tomasino		gopher.black	70
 igemini:         gemini://tomasino.org		gopher.black	70
 i		gopher.black	70
 iemail:          james@tomasino.org		gopher.black	70
-ifingerprint:    368CD75F5CD5F1E9A72F639F4E0FEB0E09DDD7DF		gopher.black	70
+ifingerprint:    B179 3DB1 0C91 C5B9 44AA  CEA0 CD32 2BF2 34FA 8812		gopher.black	70
 0public key	/about/james-tomasino.public.asc
 i		gopher.black	70
 i-----BEGIN GEEK CODE BLOCK-----		gopher.black	70
 iVersion: 3.12		gopher.black	70
 iGCC/H/L d- s-:+ a+ C++ U++ 		gopher.black	70
 iP++ L++++ W+++ N++ PGP++ t+ 5++ X++ 		gopher.black	70
-iR+++ tv+ b+++ D++ G- e+++ r+++		gopher.black	70
-i------END GEEK CODE BLOCK------		gopher.black	70
+iR+++ 		gopher.black	70
