@@ -3,11 +3,11 @@ i       _` |  _ \ _ \   \   -_)  _|  _ \ |  _` |  _| | /		gopher.black	70
 i     \__, |\___/.__/_| _|\___|_|_)_.__/_|\__,_|\__|_\_\		gopher.black	70
 i     ____/     _|		gopher.black	70
 i		gopher.black	70
-i     ==== Last Updated: May 09th, 2026 ====		gopher.black	70
+i     ==== Last Updated: May 20th, 2026 ====		gopher.black	70
 i		gopher.black	70
 1About	/about
 i		gopher.black	70
-i==== Content ====		gopher.black	70
+==== Content ====
 1Phlog	/phlog
 1Writing	/writing
 1Explorations	/explorations
@@ -17,24 +17,24 @@ i		gopher.black	70
 1Recipes	/recipebox
 1Games	/games
 i		gopher.black	70
-i==== Resources ====		gopher.black	70
+==== Resources ====
 1The Bible (ESV)	/bible
 1Archives	/archive
 i		gopher.black	70
-i==== Books ====		gopher.black	70
+==== Books ====
+2Book Reviews (Search)		gopher.black	105
 0Reading	/reading/currentbooks.txt
-0Read	/reading/recentbooks.txt
 i		gopher.black	70
-i==== External Resources ====		gopher.black	70
+==== External Resources ====
 1Phlogs	/phlogs
 1Gopher Places	/places
 1Web Places	/http
 i		gopher.black	70
-i==== Software and Tech Things ====		gopher.black	70
+==== Software and Tech Things ====
 hBurrow - Gopher Helper	URL:http://github.com/jamestomasino/burrow
 0Phlog RSS Feed	/rss.xml
 i		gopher.black	70
-i==== Websites ====		gopher.black	70
+==== Websites ====
 hAll Sites	URL:http://www.tomasino.org/
 hBlog	URL:http://blog.tomasino.org/
 hLabs Blog	URL:http://labs.tomasino.org/
