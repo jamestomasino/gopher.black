@@ -3,6 +3,76 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Christina S Five Questions October 2026</title>
+  <link>gopher://gopher.black/1/phlog/20261004-christina-s-five-questions-october-2026/</link>
+  <pubdate>Sun, 04 Oct 2026 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Christina's Five Questions October 2026
+October 04th, 2026
+----------------------------------------
+
+Christina's Five Questions
+    gopher://zaibatsu.circumlunar.space/0/~christina/2026-10-5Q.txt
+
+1. How best for a North American to plan deGoogling? Beyond easy
+fixes like installing F-Droid, using proxies for video watching,
+how much planning should a beginner do to migrate from a Gmail
+account, install a custom ROM, choose new alternative FOSS apps?
+
+I think anna answered this question better than I ever could. In
+general, I'd expect a lot of work, rough edges, annoying
+work-arounds. My advice would be similar to eating a Keto diet:
+don't try to replicate your current experiences with faux solves.
+Instead, embrace the lifestyle for what it is.
+
+2. What is your preference: hiking up a mountain, or reading a
+good novel?
+
+This one makes me a little bit sad. I still think of myself as a
+hiker, but the reality is I haven't been for 25 years. I loved it
+before the Navy, but my knee injuries are life-long and really do
+keep me from anything substantial. It's not elevation that's the
+issue, but uneven ground. Hiking in Iceland has been really hard.
+
+But, I read a lot. So I guess there's that. Reading a good novel
+is fantastic. I'm going to go do that in a minute.
+
+3. What were your horseback riding experiences? If none, have you
+ever caught a fish?
+
+I've ridden a horse a half dozen times. As a kid one stepped in a
+hole and threw my sister and I off. I managed to land on my feet
+while she landed in thorns. I've had slow walking horses on trail
+rides a few times. They're nice, if sorta boring. An early
+girlfriend was a horse jumper. Her horse hated me and chased me
+around her yard one time.
+
+I've never caught a fish with fishing equipment, but I did by
+noodling once!
+
+4. What is an activity that makes you feel alive? Have you
+repeatedly remained hyper for hours post-activity?
+
+I love so many hobbies this is tough to answer. A great ttrpg with
+friends is invigorating and leaves me wanting to go again. Board
+games can be like that too. I get that way with most creative
+pursuits as well, whether that be textiles or drawing. I'm not a
+very good painter, but I enjoy it. Writing can be taxing,
+frustrating, but also joyous and sucks me in deep.
+
+5. Adult citizens in my locality have the opportunity to vote in
+two elections this month. To what extent, if you are eligible to
+vote, do you research a candidate running for public office?
+
+We recently got the ability to vote in municipal elections here in
+Iceland and I took it seriously. I researched quite thoroughly
+before we voted. A lot of that info was online with the party
+websites, so it wasn't like I was trawling through microfiche to
+uncover secrets, but I did do a lot of reading.
+</pre>]]></description>
+</item>
+<item>
   <title>Should Homelessness Be Allowed To Exist</title>
   <link>gopher://gopher.black/1/phlog/20261003-should-homelessness-be-allowed-to-exist/</link>
   <pubdate>Sat, 03 Oct 2026 00:00:00 +0000</pubdate>
@@ -289,103 +359,6 @@ official spokesperson for a brand of luxury toilet paper.
     gopher://gopher.black/1/phlog/20181225-resolutions
 2018 Resolution
     gopher://gopher.black/1/phlog/20180101-resolution
-</pre>]]></description>
-</item>
-<item>
-  <title>Circumlunar Updates</title>
-  <link>gopher://gopher.black/1/phlog/20241003-circumlunar-updates/</link>
-  <pubdate>Thu, 03 Oct 2024 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-circumlunar updates
-October 03rd, 2024
-----------------------------------------
-
-I fixed solderpunk's circumlunar address a little while back
-because I noticed the top level domain info wasn't updating
-anymore, but the zaibatsu side was. Today dokuja pointed out the
-same thing was happening to him. So I just went through and
-updated all the phlogs that were at circumlunar.space to now be at
-zaibatsu.circumlunar.space, and lo! so many updates. Enjoy!
-
-moku-pona
-    gopher://gopher.black/1/moku-pona
-</pre>]]></description>
-</item>
-<item>
-  <title>Roophloch 2024</title>
-  <link>gopher://gopher.black/1/phlog/20240921-roophloch-2024/</link>
-  <pubdate>Sat, 21 Sep 2024 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-ROOPHLOCH 2024
-September 21st, 2024
-----------------------------------------
-
-It's ROOPHLOCH time, right? I'm pretty sure that's in september.
-Well, I hope so, cause this is a ROOPHLOCH post!
-
-I recently bought a cabin [0] and this weekend is the first the
-family is spending in it. My wife is up on the mountain behind us
-right now exploring some of the sheep trails that lead through the
-saddle. We hear there's a rumor of a mountain lake back there.
-Below me sits the valley lake and river. Off in the far distance
-to the south is Esja, the largest mountain in the capital region
-here in Iceland.
-
-[0] we bought a cabin
-    gopher://gopher.black/1/phlog/20240829-we-bought-a-cabin
-
-I'm on mobile internet here. I think that, together with the
-remoteness of the place warrants a ROOPHLOCH post. We have
-electricity and clean water utilities, but I also have a cistern
-fed by the mountain creek that runs through the property which is
-used to handle all the outside water needs: garden, mostly.
-
-It's a super cozy place, and very quiet. I took an 8 second
-exposure photo last night of the valley and still saw nothing but
-darkness. It gets proper dark here, which is going to be excellent
-for aurora viewing. It's also really great and inspiring for
-writing. The remoteness gives a quietude that lets the mind race
-with ideas. I'm going to put it some effort on the Solarpunk
-Prompts podcast [1] in a little bit.
-
-[1] Solarpunk Prompts
-    https://podcast.tomasino.org
-
-That series is coming to a close soon. I've got 7 or 8 more
-prompts lined up to write about and then record, and then I'll
-close it down as complete. But I'm not done talking about
-Solarpunk. I want to do something new on the subject. Maybe
-a discussion piece where I can interview people. Ideas are still
-percolating. I think the place I can be most helpful to the cause
-is in awareness, so interviews that amplify the voices of people
-making Solarpunk a reality today would be the best. But ideas are
-cheap. It's the doing that's hard. So lets see if I actually get
-this one off the ground.
-
-I think my track record for "getting stuff done" is pretty good.
-I'm not perfect at it. I had a zine idea that never really got
-anywhere, after all. But cosmic still exists, and tilde black had
-a good run. The podcast is real, and CYOA ran until a legal
-take-down. That's all in my favor. Sometimes I feel like I'm not
-really doing anything, though. I guess it's that whole comparison
-as the death of joy thingy. We can't all stand up in the face of
-cat's creations. :)
-
-Oh, non-sequitor: do you all know a good way to cut down on flies?
-The cabin has a lot of water sources nearby and a pretty large
-amount of native plants surrounding. The sunroom attracts flies
-and they eventually make their way inside. It's not at problem
-levels, but I'd like to minimize it. The former owner has a bug
-zapper and some fly paper out there, but I'm not sure if that
-helps or just attracts more. Isn't there something you can pour
-into stagnant water? or is that for mosquitos? We don't have those
-here (yay). Anyway, advice welcome.
-
-That's it for now. I'm gonna go use this fancy-ass espresso maker
-that came with the place and make a cappucino and sit on the deck
-with my Dashiell Hammett book. Enjoy, gophs.
 </pre>]]></description>
 </item>
 </channel>
