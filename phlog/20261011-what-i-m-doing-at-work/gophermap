@@ -1,0 +1,120 @@
+i----------------------------------------		gopher.black	70
+iWhat I'm doing at work		gopher.black	70
+iOctober 11th, 2026		gopher.black	70
+i----------------------------------------		gopher.black	70
+i		gopher.black	70
+iI don't write about work very much. That's probably for the best.		gopher.black	70
+iWork is something I do out of need to provide. I have so many		gopher.black	70
+ipassion hobbies and interest they should be the focus of my		gopher.black	70
+iwriting here. Still, I think I'm pretty good at my job and I take		gopher.black	70
+isome satisfaction in doing things I think are interesting when		gopher.black	70
+iI can.		gopher.black	70
+i		gopher.black	70
+iAs a brief reminder, I work in healthcare marketing. I am		gopher.black	70
+ia managing partner of an agency devoted to that, and my domain is		gopher.black	70
+iwhat we call Solutions. That includes things like tech, analytics,		gopher.black	70
+istrategy, and media. I'm responsible for overseeing those things		gopher.black	70
+iat a very strategic level, setting policy, direction, staffing our		gopher.black	70
+isenior team, and playing a role in some of our higher-level client		gopher.black	70
+irelationships. Occasionally I get to play in the weeds, helping to		gopher.black	70
+icraft a program to address as strategic need, or even building		gopher.black	70
+isome custom software.		gopher.black	70
+i		gopher.black	70
+iRight now I'm working on something that falls in the later		gopher.black	70
+icategory. It's related to AI (boo). In marketing, you see, we're		gopher.black	70
+ivery concerned with how to reach audiences with our messaging.		gopher.black	70
+iWhether I'm talking about a patient and teaching them about		gopher.black	70
+ia savings card program for a drug, or sharing disease state		gopher.black	70
+iinformation with a doctor on emerging publications, we need to be		gopher.black	70
+iable to get that message to them at the right moment. There's		gopher.black	70
+ia lot of systems involved in that, and there's no one single		gopher.black	70
+ipathway. One of the major emerging methods is with AI.		gopher.black	70
+i		gopher.black	70
+iWhen people perform a search on Google, Gemini is there (with		gopher.black	70
+ia weak model) to give an AI answer overview. Believe it or not,		gopher.black	70
+ithat has changed the relationship with search engines quite		gopher.black	70
+iconsiderably on its own. If you consider how many people don't go		gopher.black	70
+ito a traditional search engine at all anymore, preferring to ask		gopher.black	70
+iChatGPT or Claude their questions, that new reality shifts even		gopher.black	70
+imore.		gopher.black	70
+i		gopher.black	70
+iNow this isn't an all-or-nothing change. Overall, total search		gopher.black	70
+ivolume has increased on the web over the last few years, but		gopher.black	70
+iclick-through engagement on branded websites has gone down. The		gopher.black	70
+idifference is hypothesized to live in the AI middle-ground. When		gopher.black	70
+ian LLM gives you an answer, it doesn't give you a list of links		gopher.black	70
+iwhich it's determined to have high authority on the subject you're		gopher.black	70
+isearching. It gives you an amalgomation of the data it's trained		gopher.black	70
+iupon as a direct statement. Instead of links, it gives you		gopher.black	70
+ia narrative.		gopher.black	70
+i		gopher.black	70
+iIn the healthcare space this is dangerous for a lot of obvious		gopher.black	70
+ireasons. You don't want your machine telling you to eat glue on		gopher.black	70
+ipizza, right? So there was some public outcry when these things		gopher.black	70
+istarted, and the AI companys responded by being responsible and		gopher.black	70
+iputting real safeguards in place which source only from the most		gopher.black	70
+itrustworthy information on the--yeah, that's bullshit. They		gopher.black	70
+iresponded by adding a post-response guard system:		gopher.black	70
+i		gopher.black	70
+i1) Identify that the question relates to a health topic		gopher.black	70
+i		gopher.black	70
+i2) Inject an invisible guard prompt into the LLM to avoid giving		gopher.black	70
+i   dangerous advice that's been identified in a previously		gopher.black	70
+i   reported pattern.		gopher.black	70
+i		gopher.black	70
+i3) Read the response text and run a second query out to find		gopher.black	70
+i   citations from a list of trustworthy sources which seem to		gopher.black	70
+i   related to the content being shown.		gopher.black	70
+i		gopher.black	70
+i4) Profit.		gopher.black	70
+i		gopher.black	70
+iYeah, that's right. They make up the citations after the response		gopher.black	70
+iis written. I've got some research that shows between 50-90% of		gopher.black	70
+imedical queries aren't fully supported by their citations.		gopher.black	70
+iA Stanford study called it a "facade of trustworthiness".		gopher.black	70
+i		gopher.black	70
+iSo what is impacting the answers? Overwhelmingly it's social media		gopher.black	70
+icontent, just from sheer volume of information and the structured		gopher.black	70
+ilinking of that content being easy to use for training. It's also		gopher.black	70
+ifrustratingly easy to use social media to poison that AI to say		gopher.black	70
+iwhat you want[0].		gopher.black	70
+i		gopher.black	70
+h[0] 404 Media article on AI poisoning	URL:https://www.404media.co/it-is-trivially-easy-to-use-reddit-to-manipulate-ai-search-research-suggests/
+i		gopher.black	70
+iSo, that sorta sucks, right? For humans, I mean. I hope it gets		gopher.black	70
+ibetter. I hope the frontier model business structures collapse		gopher.black	70
+iunder their own weight, and data center projects fail, and we get		gopher.black	70
+inew leaders who think about more than their own pocket. But that's		gopher.black	70
+inot the focus of this post. This is about my capitalism job, where		gopher.black	70
+iI need to figure out how to deal with this changing reality for		gopher.black	70
+imarketing.		gopher.black	70
+i		gopher.black	70
+iSo what am I doing? I'm focusing on the answers the LLMs give us.		gopher.black	70
+iNot the citations they claim, not the number of times key words		gopher.black	70
+iappear, or the sentiment of the posts, but the actual lexicon. I'm		gopher.black	70
+icomparing that with our other work in Social Listening and media		gopher.black	70
+ireporting, SEO/SEM data, and more. I'm focused on the public		gopher.black	70
+inarrative being shared by humans and machines about a brand or		gopher.black	70
+itopic. And then I'm doing real textual analysis work on that		gopher.black	70
+icontent to determine if it's stable across queries, wording, LLM		gopher.black	70
+imodels, channels, and time. I'm looking at whether it's aligning		gopher.black	70
+iwith the brand narrative the client is trying to share. Where are		gopher.black	70
+ithe gaps?		gopher.black	70
+i		gopher.black	70
+iThis lexicon analysis work is fun. There's a lot of math and		gopher.black	70
+ifiguring out what's actually useful is an interesting hard		gopher.black	70
+ichallenge. In the end this will surface a new type of landscape		gopher.black	70
+ianalysis for our analytics and strategy teams to dig into and plot		gopher.black	70
+iout new marketing efforts. How do we steer those conversations?		gopher.black	70
+iHow do we address misinformation? Oh, and this is a real and valid		gopher.black	70
+iuse case! My industry is often the subject of deserved criticism,		gopher.black	70
+ibut there are legitimately people involved who want to make sure		gopher.black	70
+ifactual, well-researched health information is reaching the		gopher.black	70
+iaudience.		gopher.black	70
+i		gopher.black	70
+iAnyway, that's my latest project. It won't be published publicly.		gopher.black	70
+iWe'll have this as a custom tool we offer to our clients,		gopher.black	70
+idifferent than the GEO auditing tools out there, and a unique		gopher.black	70
+ivalue we can bring. Eventually the market will change again, or		gopher.black	70
+iothers will start doing something similar, but we'll just think		gopher.black	70
+iabout what to build next to stay ahead.		gopher.black	70

@@ -3,6 +3,134 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>What I M Doing At Work</title>
+  <link>gopher://gopher.black/1/phlog/20261011-what-i-m-doing-at-work/</link>
+  <pubdate>Sun, 11 Oct 2026 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+What I'm doing at work
+October 11th, 2026
+----------------------------------------
+
+I don't write about work very much. That's probably for the best.
+Work is something I do out of need to provide. I have so many
+passion hobbies and interest they should be the focus of my
+writing here. Still, I think I'm pretty good at my job and I take
+some satisfaction in doing things I think are interesting when
+I can.
+
+As a brief reminder, I work in healthcare marketing. I am
+a managing partner of an agency devoted to that, and my domain is
+what we call Solutions. That includes things like tech, analytics,
+strategy, and media. I'm responsible for overseeing those things
+at a very strategic level, setting policy, direction, staffing our
+senior team, and playing a role in some of our higher-level client
+relationships. Occasionally I get to play in the weeds, helping to
+craft a program to address as strategic need, or even building
+some custom software.
+
+Right now I'm working on something that falls in the later
+category. It's related to AI (boo). In marketing, you see, we're
+very concerned with how to reach audiences with our messaging.
+Whether I'm talking about a patient and teaching them about
+a savings card program for a drug, or sharing disease state
+information with a doctor on emerging publications, we need to be
+able to get that message to them at the right moment. There's
+a lot of systems involved in that, and there's no one single
+pathway. One of the major emerging methods is with AI.
+
+When people perform a search on Google, Gemini is there (with
+a weak model) to give an AI answer overview. Believe it or not,
+that has changed the relationship with search engines quite
+considerably on its own. If you consider how many people don't go
+to a traditional search engine at all anymore, preferring to ask
+ChatGPT or Claude their questions, that new reality shifts even
+more.
+
+Now this isn't an all-or-nothing change. Overall, total search
+volume has increased on the web over the last few years, but
+click-through engagement on branded websites has gone down. The
+difference is hypothesized to live in the AI middle-ground. When
+an LLM gives you an answer, it doesn't give you a list of links
+which it's determined to have high authority on the subject you're
+searching. It gives you an amalgomation of the data it's trained
+upon as a direct statement. Instead of links, it gives you
+a narrative.
+
+In the healthcare space this is dangerous for a lot of obvious
+reasons. You don't want your machine telling you to eat glue on
+pizza, right? So there was some public outcry when these things
+started, and the AI companys responded by being responsible and
+putting real safeguards in place which source only from the most
+trustworthy information on the--yeah, that's bullshit. They
+responded by adding a post-response guard system:
+
+1) Identify that the question relates to a health topic
+
+2) Inject an invisible guard prompt into the LLM to avoid giving
+   dangerous advice that's been identified in a previously
+   reported pattern.
+
+3) Read the response text and run a second query out to find
+   citations from a list of trustworthy sources which seem to
+   related to the content being shown.
+
+4) Profit.
+
+Yeah, that's right. They make up the citations after the response
+is written. I've got some research that shows between 50-90% of
+medical queries aren't fully supported by their citations.
+A Stanford study called it a "facade of trustworthiness".
+
+So what is impacting the answers? Overwhelmingly it's social media
+content, just from sheer volume of information and the structured
+linking of that content being easy to use for training. It's also
+frustratingly easy to use social media to poison that AI to say
+what you want[0].
+
+[0] 404 Media article on AI poisoning
+    https://www.404media.co/it-is-trivially-easy-to-use-reddit-to-manipulate-ai-search-research-suggests/
+
+So, that sorta sucks, right? For humans, I mean. I hope it gets
+better. I hope the frontier model business structures collapse
+under their own weight, and data center projects fail, and we get
+new leaders who think about more than their own pocket. But that's
+not the focus of this post. This is about my capitalism job, where
+I need to figure out how to deal with this changing reality for
+marketing.
+
+So what am I doing? I'm focusing on the answers the LLMs give us.
+Not the citations they claim, not the number of times key words
+appear, or the sentiment of the posts, but the actual lexicon. I'm
+comparing that with our other work in Social Listening and media
+reporting, SEO/SEM data, and more. I'm focused on the public
+narrative being shared by humans and machines about a brand or
+topic. And then I'm doing real textual analysis work on that
+content to determine if it's stable across queries, wording, LLM
+models, channels, and time. I'm looking at whether it's aligning
+with the brand narrative the client is trying to share. Where are
+the gaps?
+
+This lexicon analysis work is fun. There's a lot of math and
+figuring out what's actually useful is an interesting hard
+challenge. In the end this will surface a new type of landscape
+analysis for our analytics and strategy teams to dig into and plot
+out new marketing efforts. How do we steer those conversations?
+How do we address misinformation? Oh, and this is a real and valid
+use case! My industry is often the subject of deserved criticism,
+but there are legitimately people involved who want to make sure
+factual, well-researched health information is reaching the
+audience.
+
+Anyway, that's my latest project. It won't be published publicly.
+We'll have this as a custom tool we offer to our clients,
+different than the GEO auditing tools out there, and a unique
+value we can bring. Eventually the market will change again, or
+others will start doing something similar, but we'll just think
+about what to build next to stay ahead.
+</pre>]]></description>
+</item>
+<item>
   <title>Back To Cosmic</title>
   <link>gopher://gopher.black/1/phlog/20261008-back-to-cosmic/</link>
   <pubdate>Thu, 08 Oct 2026 00:00:00 +0000</pubdate>
@@ -335,54 +463,6 @@ feeling that with the uncertainty in the US it'll be smart to keep
 myself lean.
 
 What about you? Are you doing anything with your services?
-</pre>]]></description>
-</item>
-<item>
-  <title>Bye Bye Meta</title>
-  <link>gopher://gopher.black/1/phlog/20250122-bye-bye-meta/</link>
-  <pubdate>Wed, 22 Jan 2025 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Bye Bye Meta
-January 22nd, 2025
-----------------------------------------
-
-I nuked most of the content from my Facebook account today, and
-completely destroyed my Instagram account. But tomasino, why were
-you on Facebook? Great question, nerds.
-
-Iceland runs on Facebook. It's really weird. Well, not really if
-you consider that Iceland has been at the top of the charts of the
-most online citizens in the world almost nonstop since gopher came
-on the scene. It was number one for most of that time, but never
-really lower than 4th on the list. People here are really, really
-connected, and the circles are quite homogeneous. It's estimated
-that 91% of all Icelanders are on Facebook. And that causes some
-problems (obviously).
-
-Since they can assume you're on there, most businesses don't
-bother with websites. Restaurants, coffee shops, all of them, just
-a Facebook page. I can order Indian food over Facebook messenger.
-I signed my kid up for the summer farm camp over messenger. Worse,
-my son's school communications come via Facebook group. It's
-really not a practical option to not participate.
-
-So when we moved here I got sucked back in. My wife avoided it,
-and I took one for the team.
-
-But here we are in this darkest of timelines, and I can't justify
-giving Meta any more than they've already stolen. So what do I do?
-I become a ghost.
-
-I've deleted every bit of content I have on Facebook except a post
-telling people why and where else to find me. But I kept the
-account. I can see those school groups. I can book a table. I'll
-use end-to-end encryption when I need to use messenger, and then
-delete the chats anyway. Minimum viable engagement.
-
-Instagram though... there's no reason to have it. Boom, gone.
-
-I figured telling gopher was the best way to share. :)
 </pre>]]></description>
 </item>
 </channel>
