@@ -3,6 +3,38 @@
 <link>gopher://gopher.black/</link>
 <description>Tomasino's Gopher Hole</description>
 <item>
+  <title>Shakuhachi Is Calling</title>
+  <link>gopher://gopher.black/1/phlog/20261016-shakuhachi-is-calling/</link>
+  <pubdate>Fri, 16 Oct 2026 00:00:00 +0000</pubdate>
+  <description><![CDATA[<pre>
+----------------------------------------
+Shakuhachi is calling
+October 16th, 2026
+----------------------------------------
+
+My hobbies are legion, but my interest and attention rotates
+through them in a meandering path. I wish I could hold that
+attention still in one place a bit longer, and I also wish the
+wandering followed a predictable path. Alas, no such luck.
+
+I was recently hyped back on my shorthand practice and managed to
+get through a difficult reading threshold. But that has waned.
+I have supplies for bookbinding now, and I really should move on
+that hobby since I intend to use it for gift giving this
+Christmas, but it hasn't claimed me yet. Maybe this weekend?
+
+The one that I feel bubbling back to the surface is my shakuhachi,
+the Japanese bamboo flute. It's been quiet for most of this year.
+Now I can hear it in my dreams. I think about where it's waiting.
+I've had the itch to pick it up come the past few nights, just too
+late to do so without being a nuisance to neighbors. I think it's
+time.
+
+Are you like this? Do you cycle through things, or can you hold
+steady to a hobby for longer than 2 months at a time?
+</pre>]]></description>
+</item>
+<item>
   <title>What I M Doing At Work</title>
   <link>gopher://gopher.black/1/phlog/20261011-what-i-m-doing-at-work/</link>
   <pubdate>Sun, 11 Oct 2026 00:00:00 +0000</pubdate>
@@ -437,32 +469,6 @@ This year I will be listed as “deprecated.”
     gopher://gopher.black/1/phlog/20181225-resolutions
 2018 Resolution
     gopher://gopher.black/1/phlog/20180101-resolution
-</pre>]]></description>
-</item>
-<item>
-  <title>Moving Domains</title>
-  <link>gopher://gopher.black/1/phlog/20250211-moving-domains/</link>
-  <pubdate>Tue, 11 Feb 2025 00:00:00 +0000</pubdate>
-  <description><![CDATA[<pre>
-----------------------------------------
-Moving domains
-February 11th, 2025
-----------------------------------------
-
-I'm in the process of migrating away from Namesilo for my domain
-hosting. They've been good for me for a long time, but it's time
-to break my remaining connections with the US. I've picked OVH
-Cloud for the new registrar since they seem to have good TLD
-support. But I'll serve my DNS zones from 1984.is as I've been
-doing. I like them. It's very straight forward.
-
-I need to go back over my other recurring services and cancel more
-things. I used to have a big list, but I think I need to look at
-credit card bills now to piece them together. I just get this
-feeling that with the uncertainty in the US it'll be smart to keep
-myself lean.
-
-What about you? Are you doing anything with your services?
 </pre>]]></description>
 </item>
 </channel>
